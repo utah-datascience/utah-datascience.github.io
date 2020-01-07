@@ -1,1 +1,1 @@
-# datascience-utah-jamstack-argon
+# Utah Data Science Center

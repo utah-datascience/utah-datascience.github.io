@@ -1,16 +1,16 @@
 {
     "copy"           : "AppSeed. All rights reserved.", 
-    "email"          : "support@appseed.us",
+    "email"          : "",
     "design"         : "Argon Design by Creative-Tim",
 
-    "seo_title"      : "JAMstack App - Argon Design by Creative-Tim | AppSeed",
-    "seo_desc"       : "JAMstack app with Argon Design crafted by top Creative-Tim.",
+    "seo_title"      : "Utah Center for Data Science",
+    "seo_desc"       : "Utah Center for Data Science",
 
-    "product"        : "https://github.com/app-generator/jamstack-argon-design-system", 
-    "github"         : "https://github.com/app-generator/jamstack-argon-design-system",
-    "facebook"       : "https://facebook.com/webappseed",
-    "twitter"        : "https://twitter.com/webappseed",
-    "support"        : "https://appseed.us/support",
+    "product"        : "https://github.com/utah-datascience/utah-datascience.github.io", 
+    "github"         : "https://github.com/utah-datascience/utah-datascience.github.io",
+    "facebook"       : "",
+    "twitter"        : "",
+    "support"        : "https://github.com/utah-datascience/utah-datascience.github.io",
     "discord"        : "https://discord.gg/fZC6hup",
 
     "LAST_KEY" : "NA"

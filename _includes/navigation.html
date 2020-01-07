@@ -1,7 +1,8 @@
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
       <div class="container">
         <a class="navbar-brand mr-lg-5" href="{{ "/index.html" | relative_url }}">
-          <img src="{{ "/assets/img/brand/white.png" | relative_url }}">
+          <!-- <img src="{{ "/assets/img/brand/white.png" | relative_url }}"> -->
+          Utah Center for Data Science
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -11,7 +12,10 @@
             <div class="row">
               <div class="col-6 collapse-brand">
                 <a href="{{ "/index.html" | relative_url }}">
+                  <!--
                   <img src="{{ "/assets/img/brand/blue.png" | relative_url }}">
+                  -->
+                 
                 </a>
               </div>
               <div class="col-6 collapse-close">
@@ -23,7 +27,29 @@
             </div>
           </div>
           <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Academic Programs
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Data Science Club
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Data Science Day
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Data Science Seminar
+              </a>
+            </li>
+
+            <!--
+ <li class="nav-item dropdown">
               <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
                 <i class="ni ni-ui-04 d-lg-none"></i>
                 <span class="nav-link-inner--text">Official Docs</span>
@@ -73,10 +99,14 @@
                 <a href="{{ "/components.html" | relative_url }}" class="dropdown-item">UI Kit Components</a>
               </div>
             </li>
+
+            -->
+           
           </ul>
           {% assign data = site.data.data %}
           <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-          
+          <!--
+
             <li class="nav-item">
               <a class="nav-link nav-link-icon" href="{{ data.facebook }}" 
                  data-toggle="tooltip" title="AppSeed on Facebook">
@@ -85,6 +115,7 @@
               </a>
             </li>
 
+          -->
             <li class="nav-item">
               <a class="nav-link nav-link-icon" href="{{ data.twitter }}" 
                  data-toggle="tooltip" title="AppSeed on Twitter">
@@ -92,7 +123,7 @@
                 <span class="nav-link-inner--text d-lg-none">Twitter</span>
               </a>
             </li>
-
+<!--
             <li class="nav-item d-none d-lg-block ml-lg-4">
               <a href="{{ data.github }}" class="btn btn-neutral btn-icon">
                 <span class="btn-inner--icon">
@@ -101,6 +132,8 @@
                 <span class="nav-link-inner--text">Get Sources</span>
               </a>
             </li>
+-->
+
           </ul>
         </div>
       </div>
