@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include header.html %}
+</head>
+
+<body>
+  <header class="header-global">
+    {% include navigation.html %}
+  </header>
+
+  <main class="profile-page">
+    {{ content}}
+  </main>
+  
+  {% include footer.html %}
+  {% include scripts.html %}
+</body>
+</html>
