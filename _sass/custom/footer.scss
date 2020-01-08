@@ -1,0 +1,25 @@
+
+.footer.has-cards {
+    overflow: hidden;
+    padding-top: 0px;
+    margin-top: 0px;
+    position: relative;
+    background: transparent;
+    pointer-events: none;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 600px;
+        height: 2000px;
+        background: theme-color("secondary");
+        transform: skew(0,-8deg);
+    }
+
+    .container {
+        pointer-events: auto;
+        position: relative;
+    }
+}
