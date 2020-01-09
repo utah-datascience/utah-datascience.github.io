@@ -2,6 +2,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Utah Center for Data Science" # the name of your site, e.g. ACME Corp.
 
+collections:
+  programs:
+    output: false
+  
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
