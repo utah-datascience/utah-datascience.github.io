@@ -4,5 +4,8 @@ _site
 Gemfile*
 .jekyll-cache
 
+# VS code
+.vscode
+
 # windows
 [Dd]esktop.ini
