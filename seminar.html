@@ -1,5 +1,8 @@
 ---
 title: Data Science Seminar
+excerpt: >
+    Description. Description. Description. Description. Description.
+    Description. Description. Description. Description. Description.
 ---
 
 <!DOCTYPE html>
@@ -60,53 +63,15 @@ title: Data Science Seminar
         {% include navigation.html %}
     </header>
     <main>
-        {% assign data = site.data.data %}
-        <div class="position-relative">
-            <!-- Hero for FREE version -->
-            <section class="section section-lg section-hero section-shaped">
-        
-                <!-- Background circles -->
-                <div class="shape shape-style-1 shape-primary">
-                    <span class="span-150"></span>
-                    <span class="span-50"></span>
-                    <span class="span-50"></span>
-                    <span class="span-75"></span>
-                    <span class="span-100"></span>
-                    <span class="span-75"></span>
-                    <span class="span-50"></span>
-                    <span class="span-100"></span>
-                    <span class="span-50"></span>
-                    <span class="span-100"></span>
-                </div>
-        
-                <div class="container shape-container d-flex align-items-center py-lg">
-                    <div class="col px-0">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-lg-6 text-center">
-                                <h1 class="display-3 text-white">
-                                    {{ page.title }}
-                                </h1>
-                                <p class="lead text-white">Descriptions Descriptions Descriptions Descriptions Descriptions
-                                    Descriptions Descriptions.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- SVG separator -->
-                <div class="separator separator-bottom separator-skew zindex-100">
-                    <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-                    </svg>
-                </div>
-            </section>
-        </div>
-        <section class="section section-components pb-0">
+        {% include page__hero_center.html %}
+        <section class="section">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div id='loading'>loading...</div>
-                        <div id='calendar'></div>
+                <div class="card card-profile shadow px-4 py-4 mt--300">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div id='loading'>loading...</div>
+                            <div id='calendar'></div>
+                        </div>
                     </div>
                 </div>
             </div>
