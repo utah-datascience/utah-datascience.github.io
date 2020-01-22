@@ -13,7 +13,7 @@ feature_row:
     badge:
       - certification
       - degree
-    color: primary
+    color: default
   - icon: fa fa-university
     title: Data Day
     excerpt: The 2019 Data Science Day will be held on October 18, 2019. More details to follow.
@@ -23,7 +23,7 @@ feature_row:
     badge:
       - research
       - conference
-    color: success
+    color: default
   - icon: fa fa-users
     title: Data Science Club
     excerpt: The data science club helps students learn about data science and machine learning through tutorial, presentations, and applications.
@@ -34,7 +34,7 @@ feature_row:
       - tutorial
       - presentation
       - application
-    color: warning
+    color: default
 ---
 
 {% include feature_row.html %}
