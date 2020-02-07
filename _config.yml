@@ -5,6 +5,8 @@ title: "Utah Center for Data Science" # the name of your site, e.g. ACME Corp.
 collections:
   programs:
     output: false
+  members:
+    output: false
   
 
 # Exclude from processing.
