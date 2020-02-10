@@ -6,18 +6,12 @@ excerpt: >
   Description. Description. Description. Description. Description.
 ---
 
-{% assign members = site.members | sort: 'date' %}
-{% for member in members %}
-<div class="row justify-content-center pb-4">
-  <div class="col-lg-12 d-flex">
-    <div class="col-lg-3">
-      <img src="{{ '/assets/img/members/' | relative_url }}{{ member.pic }}" alt="Picture of {{ member.name }}" class="img-fluid rounded shadow" style="width: 200px;">
-    </div>
-    <div class="col-lg-9">
-      <h4><a href="{{ member.link }}" class="btn-link text-primary">{{ member.name }}</a></h4>
-      <h6>{{ member.title }}</h6>
-      <span class="description">{{ member.content | markdownify }}</span>
-    </div>
-  </div>
-</div>
-{% endfor %}
+
+<h3 class="display-3 text-center mb-3">Core Members</h3>
+
+{% assign members_list = site.members | where: "type", "core"  | sort: 'date' %}
+{% include members_list.html members_list = members_list %}
+
+<h3 class="display-3 text-center mb-3">Affiliated Members</h3>
+{% assign members_list = site.members | where: "type", "affiliated"  | sort: 'date' %}
+{% include members_list.html members_list = members_list %}

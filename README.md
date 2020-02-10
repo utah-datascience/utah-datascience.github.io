@@ -16,7 +16,7 @@ bundle exec jekyll serve
 ## Content Edit
 
 ### Members
-Add/delete/edit .md files in `_members` folder to add/delete/edit members. Put member's picture in `./assets/img/members/`, then only use pic filename for `pic` field in member's .md file.
+Add/delete/edit .md files in `_members` folder to add/delete/edit members. 
 
 ### progrmas
 Add/delete/edit .md files in `_progrmas` folder to add/delete/edit members.
