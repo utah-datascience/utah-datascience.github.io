@@ -1,8 +1,7 @@
 ---
 layout: home
 excerpt: >
-  Description. Description. Description. Description. Description.
-  Description. Description. Description. Description. Description.
+  This center leads, organizes, and manages data science resources and research efforts at the University of Utah.  Its members advance the fundamental principles and practice of data science through research, applications, and community engagement.  
 feature_row:
   - icon: ni ni-hat-3
     title: Academic Programs
