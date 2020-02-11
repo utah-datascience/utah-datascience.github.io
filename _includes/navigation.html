@@ -27,17 +27,12 @@
             </div>
           </div>
           <!-- menu content -->
+         
           <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link" href="{{ "/programs.html" | relative_url }}">
-                <i class="ni ni-hat-3 d-lg-inline"></i>
-                <span class="nav-link-inner--text">Academic Programs</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ '/club.html' | relative_url }}">
-                <i class="fa fa-users d-lg-inline"></i>
-                <span class="nav-link-inner--text">Data Science Club</span>
+              <a class="nav-link" href="{{ '/seminar.html' | relative_url }}">
+                <i class="fa fa-calendar d-lg-inline"></i>
+                <span class="nav-link-inner--text">Data Science Seminar</span>
               </a>
             </li>
             <li class="nav-item">
@@ -47,20 +42,21 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ '/seminar.html' | relative_url }}">
-                <i class="fa fa-calendar d-lg-inline"></i>
-                <span class="nav-link-inner--text">Data Science Seminar</span>
+              <a class="nav-link" href="{{ '/club.html' | relative_url }}">
+                <i class="fa fa-users d-lg-inline"></i>
+                <span class="nav-link-inner--text">Data Science Club</span>
               </a>
             </li>
-            <!--<li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fa fa-users d-lg-inline"></i>
-                <span class="nav-link-inner--text">Members</span>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ "/programs.html" | relative_url }}">
+                <i class="ni ni-hat-3 d-lg-inline"></i>
+                <span class="nav-link-inner--text">Academic Programs</span>
               </a>
-            </li>-->
+            </li>
+        
           </ul>
           {% assign data = site.data.data %}
-          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+          <!-- <ul class="navbar-nav align-items-lg-center ml-lg-auto">
             <li class="nav-item">
               <a class="nav-link nav-link-icon" target="_blank" href="{{ data.twitter }}" 
                  data-toggle="tooltip" title="@UUDataScience">
@@ -68,7 +64,7 @@
                 <span class="nav-link-inner--text d-lg-none">Twitter</span>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </nav>
