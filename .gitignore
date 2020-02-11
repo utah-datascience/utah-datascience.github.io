@@ -9,3 +9,6 @@ Gemfile*
 
 # windows
 [Dd]esktop.ini
+
+# mac
+.DS_Store

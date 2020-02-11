@@ -12,3 +12,11 @@ To serve the website locally, run
 ```shell
 bundle exec jekyll serve
 ```
+
+## Content Edit
+
+### Members
+Add/delete/edit .md files in `_members` folder to add/delete/edit members. 
+
+### progrmas
+Add/delete/edit .md files in `_progrmas` folder to add/delete/edit members.
