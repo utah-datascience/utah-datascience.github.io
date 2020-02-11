@@ -7,6 +7,4 @@ link: http://www.cs.utah.edu/~bhaskara/
 pic: http://www.cs.utah.edu/~bhaskara/aditya_p2.jpg
 ---
 
-His research interests include:
-* Theoretical computer science: design and analysis of algorithms, approximation algorithms for optimization problems, spectral methods.
-* Machine learning: complexity of learning, design of provably efficient learning algorithms, robustness in machine learning.
+His research interests include theoretical computer science, specifically the design and analysis of algorithms, approximation algorithms for optimization problems, spectral methods; and machine learning, such as complexity of learning, design of provably efficient learning algorithms, robustness in machine learning.
