@@ -1,3 +1,29 @@
 h1.text-red{
     color: #cc3333 !important;
 }
+
+h1.text-white{
+    color: #fff !important;
+}
+
+.primary-ex{
+    font-weight: 400;
+    font-size: medium;
+    margin-top: 0em;
+}
+
+.secondary-ex{
+    font-weight: 500;
+    font-size: medium;
+    margin-top: 0em;
+}
+
+.secondary-ex a{
+    color:#17191d !important;
+    font-weight: 600;
+}
+
+.secondary-ex a:hover{
+    color:#cc3333 !important;
+    font-weight: 600;
+}
