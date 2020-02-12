@@ -19,7 +19,7 @@ The UCDS is led by a director, with the assistance of associate directors and th
 
 ---
 
-### By Law
+### By Laws
 
 [Governance Roles](./assets/file/UCDS-Elections[7996].pdf)
 
