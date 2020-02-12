@@ -15,3 +15,11 @@ excerpt: >
 <h3 class="display-3 text-center mb-3">Affiliated Members</h3>
 {% assign members_list = site.members | where: "type", "affiliated"  | sort: 'date' %}
 {% include members_list.html members_list = members_list %}
+
+---
+
+### By Law
+
+[Governance Roles](./assets/file/UCDS-Elections[7996].pdf)
+
+[Membership Plans](./assets/file/UCDS-Affiliate[7995].pdf)
