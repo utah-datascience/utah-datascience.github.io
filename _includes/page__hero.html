@@ -1,0 +1,35 @@
+{% assign data = site.data.data %}
+
+{% capture img_path %}{{ page.header.background-image | default: '/assets/img/header-background/lauren-pandolfi-zD5ry8Up83M-unsplash.jpg' | relative_url }}{% endcapture %}
+
+<div class="position-relative">
+    <!-- shape Hero -->
+    <section class="section section-lg section-shaped pb-250">
+        <div class="page__hero" style="background-image: url('{{ img_path }}');"></div>
+        <div class="container py-lg-md d-flex">
+            <div class="col px-0">
+                <div class="row{% if page.header.align == center %} text-center justify-content-center{% endif %}">
+                    <div class="col-lg-8">
+                       <!-- <h1 class="display-3 text-white"> --> 
+                        <h1 class="display-3 text-{% if page.header.title-color %}{{ page.header.title-color }}{% else %}white{% endif %}">
+                            {{ page.header.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+                        </h1>
+                        {% if page.header.excerpt %}
+                        <p class="lead  text-{% if page.header.excerpt-color %}{{ page.header.excerpt-color }}{% else %}white{% endif %} primary-ex">
+                            {{ page.header.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}
+                        </p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SVG separator -->
+        <div class="separator separator-bottom separator-skew">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </section>
+    <!-- 1st Hero Variation -->
+</div>

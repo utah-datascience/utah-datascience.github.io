@@ -2,11 +2,13 @@
 layout: default
 ---
 
-{% include page__hero_left_secondary.html %}
+{% if page.header %}
+  {% include page__hero.html %}
+{% endif %}
 
 <section class="section">
   <div class="container">
-    <div class="card card-profile shadow px-4 py-4 mt--300">
+    <div class="card card-profile shadow px-4 py-4" style="margin-top: -350px">
         {{ content }}
     </div>
   </div>

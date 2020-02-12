@@ -1,8 +1,11 @@
 ---
 layout: single
 title: Get Involved
-excerpt: >
-  Data Science is a new discipline interacting with science, engineering, and industry in many ways. Find out how to get involved in our many efforts.
+header:
+  title: Get Involved
+  excerpt: >
+    Data Science is a new discipline interacting with science, engineering, and industry in many ways. Find out how to get involved in our many efforts.
+  background-image: /assets/img/header-background/zion-shorter.jpg
 ---
 
 # How to Get Involved

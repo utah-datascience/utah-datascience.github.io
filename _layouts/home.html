@@ -2,6 +2,8 @@
 layout: default
 ---
 
-{% include page__hero_left.html %}
+{% if page.header %}
+    {% include page__hero.html %}
+{% endif %}
 
 {{ content }}
