@@ -5,6 +5,10 @@ h1.text-red{
 h1.text-white{
     color: #fff !important;
 }
+.container-secondary{
+    padding-bottom:0em !important;
+
+}
 
 .primary-ex{
     font-weight: 400;
@@ -13,14 +17,19 @@ h1.text-white{
 }
 
 .secondary-ex{
-    font-weight: 500;
+    font-weight: 200;
     font-size: medium;
-    margin-top: 0em;
+    margin-bottom: 3em;
+    border-bottom: .0625rem solid #e9ecef !important;
+
+    // font-weight: 500;
+    // font-size: large;
+    // margin-top: 0em;
 }
 
 .secondary-ex a{
     color:#17191d !important;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .secondary-ex a:hover{
