@@ -1,3 +1,38 @@
 h1.text-red{
     color: #cc3333 !important;
 }
+
+h1.text-white{
+    color: #fff !important;
+}
+.container-secondary{
+    padding-bottom:0em !important;
+
+}
+
+.primary-ex{
+    font-weight: 400;
+    font-size: medium;
+    margin-top: 0em;
+}
+
+.secondary-ex{
+    font-weight: 200;
+    font-size: medium;
+    margin-bottom: 3em;
+    border-bottom: .0625rem solid #e9ecef !important;
+
+    // font-weight: 500;
+    // font-size: large;
+    // margin-top: 0em;
+}
+
+.secondary-ex a{
+    color:#17191d !important;
+    font-weight: 400;
+}
+
+.secondary-ex a:hover{
+    color:#cc3333 !important;
+    font-weight: 600;
+}

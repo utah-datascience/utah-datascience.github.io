@@ -5,18 +5,17 @@
         <div class="shape shape-style-1 shape-dark-secondary">
             <!-- <div class="shape shape-style-1 shape-primary"> -->
         </div>
-        <div class="container py-lg-md d-flex">
+        <div class="container py-lg-md d-flex container-secondary">
             <div class="col px-0">
                 <div class="row">
-                    <div class="col-lg-9">
+                    <div class="col-lg-8">
                        <!-- <h1 class="display-3 text-white"> --> 
-                        <h1 class="display-3 text-red">
+                        <h1 class="display-3 text-white">
                             {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
                         </h1>
-                       <!-- <img src="{{ "/assets/img/brand/ucds-wordmark-light.png" | relative_url }}"> --> 
-                        <p class="lead  text-black">
+                        <!-- <p class="lead  text-black secondary-ex">
                             {{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
