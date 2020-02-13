@@ -1,0 +1,63 @@
+{% include full_calendar.html %}
+<!--
+<script src="{{ '/assets/js/fullcalendar-custom-view.js' | relative_url }}"></script>
+-->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+
+      plugins: ['interaction', 'list', 'googleCalendar', 'fullcalendarCustomView'],
+      
+      header: false,
+      height: 170,
+      // defaultView: 'custom', // the name of a generic view
+      // duration: { weeks: 3 },
+      defaultView: 'listWeek2',
+      views: {
+        listWeek2: {
+          type: 'list',
+          duration: { weeks: 2 },
+          listDayFormat: { month: 'long', day: 'numeric', year: 'numeric', weekday: 'long' } // like "Monday, January 1, 2016"
+        }
+      },
+
+      // To make your own Google API key, follow the directions here:
+      // http://fullcalendar.io/docs/google_calendar/
+      googleCalendarApiKey: 'AIzaSyBq6TTVUkWGCs0vmGh1XlIuGn0w5dCtbsA',
+
+      events: 'ekol7ulqm14nv155angut2rlfo@group.calendar.google.com',
+
+      eventClick: function (arg) {
+        // opens events in a popup window
+        window.open(arg.event.url, 'google-calendar-event', 'width=700,height=600');
+
+        arg.jsEvent.preventDefault() // don't navigate in main tab
+      },
+
+      loading: function (bool) {
+        document.getElementById('loading').style.display =
+          bool ? 'block' : 'none';
+      }
+
+    });
+
+    calendar.render();
+  });
+
+</script>
+<style>
+  #loading {
+    display: none;
+  }
+</style>
+
+<section class="section bg-secondary">
+  <div class="container">
+    <h2 class="mb-4">Upcoming Seminar Talks</h2>
+    <div id='loading'>loading...</div>
+    <div id='calendar' class="mb-3"></div>
+    <a href="{{ '/seminar.html' | relative_url }}" class="">View more</a>
+  </div>
+</section>

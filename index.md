@@ -42,3 +42,5 @@ feature_row:
 ---
 
 {% include feature_row.html %}
+
+{% include next_talks.html %}
