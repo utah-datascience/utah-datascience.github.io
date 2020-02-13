@@ -24,19 +24,27 @@ header:
 
             var calendar = new FullCalendar.Calendar(calendarEl, {
 
-                plugins: ['interaction', 'dayGrid', 'list', 'googleCalendar'],
+                plugins: ['interaction', 'list', 'googleCalendar'],
 
                 header: {
                     left: 'prev,next, today',
                     center: 'title',
-                    right: ''
+                    right: 'listWeek8, listYear'
                 },
 
                 defaultView: 'listWeek8',
                 views: {
                     listWeek8: {
                         type: 'list',
-                        duration: { weeks: 8 }
+                        buttonText: '8 weeks',
+                        duration: { weeks: 8 },
+                        listDayFormat: { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }
+                    },
+                    listYear: {
+                        type: 'list',
+                        buttonText: 'Year',
+                        duration: { year: 1 },
+                        listDayFormat: { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }
                     }
                 },
 
