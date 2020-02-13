@@ -29,16 +29,24 @@ header:
                 header: {
                     left: 'prev,next, today',
                     center: 'title',
-                    right: 'dayGridMonth,listYear'
+                    right: ''
                 },
 
-                defaultView: 'listYear',
+                defaultView: 'listWeek8',
+                views: {
+                    listWeek8: {
+                        type: 'list',
+                        duration: { weeks: 8 }
+                    }
+                },
 
                 // To make your own Google API key, follow the directions here:
                 // http://fullcalendar.io/docs/google_calendar/
                 googleCalendarApiKey: 'AIzaSyBq6TTVUkWGCs0vmGh1XlIuGn0w5dCtbsA',
 
                 events: 'ekol7ulqm14nv155angut2rlfo@group.calendar.google.com',
+
+                startParam: 'today',
 
                 eventClick: function (arg) {
                     // opens events in a popup window
