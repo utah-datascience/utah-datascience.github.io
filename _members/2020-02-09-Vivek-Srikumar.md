@@ -1,5 +1,6 @@
 ---
-name: Vivek Srikumar (Associate Director of Student-Engagement)
+name: Vivek Srikumar
+role: Associate Director of Student-Engagement
 title: |
     Assistant Professor, School of Computing, University of Utah
 type: core

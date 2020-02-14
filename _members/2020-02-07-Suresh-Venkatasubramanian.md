@@ -1,5 +1,6 @@
 ---
-name: Suresh Venkatasubramanian (Associate Director of Research)
+name: Suresh Venkatasubramanian
+role: Associate Director of Research
 title: |
     Professor, School of Computing, University of Utah
 type: core

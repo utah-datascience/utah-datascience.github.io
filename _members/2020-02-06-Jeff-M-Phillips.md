@@ -1,5 +1,6 @@
 ---
-name: Jeff M. Phillips (Director)
+name: Jeff M. Phillips
+role: Director
 title: |
     Associate Professor, School of Computing, University of Utah
 type: core
