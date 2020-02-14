@@ -57,7 +57,7 @@ feature_row:
  <h1>News <span class="left-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1>
 
   <ul class="post-list">
-    {% for post in site.posts limit:4 %}
+    {% for post in site.news limit:4 %}
       <li class="post-list-item">
 		   <div class="right-text">{{ post.date | date: "%-d %b %Y" }}</div>
         <div class="post-list-title">
