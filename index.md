@@ -49,4 +49,31 @@ feature_row:
 
 {% include feature_row.html %}
 
+
+<section class="section section-lg pt-lg-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+ <h1>News <span class="left-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1>
+
+  <ul class="post-list">
+    {% for post in site.posts limit:4 %}
+      <li class="post-list-item">
+		   <div class="right-text">{{ post.date | date: "%-d %b %Y" }}</div>
+        <div class="post-list-title">
+          {{ post.title }}
+        </div>
+        <div class="post-list-excerpt">
+		  {{ post.content | truncatewords: 160 }}
+        </div>
+  		<div><a class="post-list-link" href="{{ site.baseurl }}{{ post.url }}">More...</a></div>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="all-news-link"><a href="news">See All News</a></div>
+ </div>
+ </div>
+ </div>
+ </section>
+
 {% include next_talks.html %}

@@ -3,10 +3,18 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Utah Center for Data Science" # the name of your site, e.g. ACME Corp.
 
 collections:
+  posts:
+    output: true
   programs:
     output: false
   members:
-    output: false
+    output: true
+
+
+show_drafts         : true
+limit_posts         : 0
+future              : true
+unpublished         : true
   
 
 # Exclude from processing.

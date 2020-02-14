@@ -12,3 +12,6 @@ Gemfile*
 
 # mac
 .DS_Store
+
+#pycharm
+.idea
