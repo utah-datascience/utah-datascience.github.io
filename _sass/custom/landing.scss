@@ -1,7 +1,7 @@
 
 
 h1.text-red{
-    color: #cc3333 !important;
+    color: $utah-red !important;
 }
 
 h1.text-white{
@@ -35,6 +35,6 @@ h1.text-white{
 }
 
 .secondary-ex a:hover{
-    color:#cc3333 !important;
+    color:$utah-red !important;
     font-weight: 600;
 }
