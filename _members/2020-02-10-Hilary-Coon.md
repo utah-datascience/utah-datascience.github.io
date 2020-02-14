@@ -1,4 +1,5 @@
 ---
+key: coon
 name: Hilary Coon
 title: |
     Adjunct Professor, Biomedical Informatics, University of Utah

@@ -1,4 +1,5 @@
 ---
+key: joshi
 name: Sarang Joshi
 title: |
     Professor, Biomedical Engineering, University of Utah

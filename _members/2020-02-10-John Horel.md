@@ -1,4 +1,5 @@
 ---
+key: horel
 name: John Horel
 title: |
     Professor, Department of Atmospheric Sciences, University of Utah

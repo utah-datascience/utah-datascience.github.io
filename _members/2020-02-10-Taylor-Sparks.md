@@ -1,4 +1,5 @@
 ---
+key: sparks
 name: Taylor D. Sparks
 title: |
     Associate Professor and Associate Chair, Department of Materials Science and Engineering, University of Utah
