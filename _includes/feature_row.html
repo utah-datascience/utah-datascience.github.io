@@ -14,16 +14,16 @@
             <div class="col-lg-4">
               <div class="card card-lift--hover shadow border-0">
                 <div class="card-body py-5">
-                  <div class="icon icon-shape icon-shape-{{ f.color }} rounded-circle mb-4">
+                  <div class="icon icon-shape icon-shape-{{ f.icon_color}} rounded-circle mb-4">
                     <i class="{{ f.icon }}"></i>
                   </div>
                   <h6 class="text-{{ f.color }} text-uppercase">{{ f.title }}</h6>
                   <p class="description mt-3">{{ f.excerpt | markdownify }}</p>
-                  <div>
+                  <!-- <div>
                     {% for b in f.badge %}
-                      <span class="badge badge-pill badge-{{ f.color }}">{{ b }}</span>
+                      <span class="badge badge-pill badge-{{ f.badge_color }}">{{ b }}</span>
                     {% endfor %}
-                  </div>
+                  </div> -->
                   <a href="{{ f_url }}" class="btn btn-{{ f.color }} {{ f.btn_class }}">{{ f.btn_label }}</a>
                 </div>
               </div>
