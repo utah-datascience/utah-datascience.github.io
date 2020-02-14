@@ -6,7 +6,7 @@ title: |
     Adjunct Professor, Computer Science, University of Utah
 type: affiliated
 link: http://www.sci.utah.edu/~tolga/
-pic: http://www.sci.utah.edu/~tolga/rc_images/tasdizen.jpg
+pic: assets/img/member_photos/t_tasdizen.png
 ---
 
 Research Summary:

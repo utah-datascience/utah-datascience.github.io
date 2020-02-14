@@ -5,7 +5,7 @@ title: |
     Faculty Member, David Eccles School of Business, University of Utah
 type: affiliated
 link: http://gkmc.utah.edu/people/olivia/intro.htm
-pic: http://gkmc.utah.edu/people/olivia/osheng.jpg
+pic: assets/img/member_photos/o_sheng.png
 ---
 
 Research Areas:
