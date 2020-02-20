@@ -32,7 +32,7 @@ As a faculty/researcher on campus, would you like to be come an [core or affilia
 ## Industry
 
 We encourage and look forward to stronger ties with the local and national data science industry.
-  - Give a talk about data science developments, collaboration opportunities, and/or internship/jobs at your company in the data science seminar, email datasci@utah.edu. We ask $100 to cover the cost of pizza for the event.
-  - Give a talk directly to the students group. Email dataclub.uofu@gmail.com to get involved. We ask $100 to cover the cost of pizza (to do so, coordinate with datasci@utah.edu).
+  - Give a talk about technical data science developments and/or collaboration opportunities in the data science seminar.  Students will appreciate a small advertisement (5-10 minutes) about internships/jobs.   Email datasci@utah.edu. We ask $100 to cover the cost of pizza for the event.
+  - Give a talk directly to the students group: demo some data science technology and/or describe exciting job and intership opportunities.  Email dataclub.uofu@gmail.com to get involved. We ask $100 to cover the cost of pizza (to do so, coordinate with datasci@utah.edu).
   - Have an idea to sponsor another event: a hack-a-thon, a CV workshop, a demo, or something grander, contact datasci@utah.edu.  
   - There will be opportunities posted here to get involved in the upcoming [Data Science Day](./dataday.html). In the mean time, to show interest, contact the [Director of Outreach](./members.html).
