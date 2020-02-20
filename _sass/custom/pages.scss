@@ -6,3 +6,9 @@
     height: 100%;
     background-size: cover;
 }
+
+.white-bg{
+    background-color: rgba($color: #fff, $alpha: 0.70) !important;
+    padding: 1.5rem !important;
+    border-radius: .25rem !important;
+}

@@ -7,7 +7,7 @@
     <section class="section section-lg section-shaped pb-250">
         <div class="page__hero" style="background-image: url('{{ img_path }}');"></div>
         <div class="container py-lg-md d-flex">
-            <div class="col px-0">
+            <div class="col px-0 {% if page.header.bg-fill %}{{ page.header.bg-fill }}{% else %}{% endif %}">
                 <div class="row{% if page.header.align == center %} text-center justify-content-center{% endif %}">
                     <div class="col-lg-8">
                        <!-- <h1 class="display-3 text-white"> --> 

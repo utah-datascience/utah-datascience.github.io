@@ -7,6 +7,7 @@ header:
     This center leads, organizes, and manages data science resources and research efforts at the University of Utah.  Its members advance the fundamental principles and practice of data science through research, applications, and community engagement.
   excerpt-color: black
   align: left
+  bg-fill: white-bg
 feature_row:
   - icon: ni ni-hat-3
     title: Academic Programs
