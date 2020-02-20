@@ -8,4 +8,4 @@ link: https://faculty.utah.edu/u0986122-Harish_Kumar_Maringanti/research/index.h
 pic: assets/img/member_photos/h_maringanti.jpg
 ---
 
-
+Digital Media
