@@ -1,4 +1,5 @@
 ---
+key: dawson
 name: Kyle S. Dawson
 title: |
     Associate Professor, Physics And Astronomy, University of Utah

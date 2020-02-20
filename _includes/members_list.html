@@ -12,6 +12,9 @@
         </div>
         <div class="col-lg-9">
             <h4><a href="{{ member.link }}" target="_blank" class="btn-link text-primary">{{ member.name }}</a></h4>
+            {% if member.role %}
+            <h5>{{member.role}}</h5>
+            {% endif %}
             <h6>{{ member.title | newline_to_br }}</h6>
             <p>{{ member.content | markdownify }}</p>
         </div>

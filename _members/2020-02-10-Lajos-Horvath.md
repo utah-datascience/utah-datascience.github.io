@@ -1,4 +1,5 @@
 ---
+key: horvath
 name: Lajos Horvath
 title: |
     Professor, Department of Mathematics, University of Utah

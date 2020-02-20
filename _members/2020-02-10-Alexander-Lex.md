@@ -1,4 +1,5 @@
 ---
+key: lex
 name: Alexander Lex
 title: |
     Assistant Professor, Computer Science, University of Utah

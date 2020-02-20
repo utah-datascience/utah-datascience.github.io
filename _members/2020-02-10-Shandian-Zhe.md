@@ -1,4 +1,5 @@
 ---
+key: zhe
 name: Shandian Zhe
 title: |
     Assistant Professor, School of Computing, University of Utah

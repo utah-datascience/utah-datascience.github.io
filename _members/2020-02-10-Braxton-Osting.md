@@ -1,4 +1,5 @@
 ---
+key: osting
 name: Braxton Osting
 title: |
     Associate Professor, Department of Mathematics, University of Utah

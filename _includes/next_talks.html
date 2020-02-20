@@ -1,63 +1,36 @@
-{% include full_calendar.html %}
-<!--
-<script src="{{ '/assets/js/fullcalendar-custom-view.js' | relative_url }}"></script>
--->
+<!-- For google calendar integration -->
+<script src="https://cdn.jsdelivr.net/npm/moment@2/moment.min.js"></script>
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="{{ '/assets/js/fetchGoogleCalendar.js' | relative_url }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/10.0.0/markdown-it.min.js"></script>
+
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var calendarEl = document.getElementById('calendar');
+  var maxResults = 1;  // for fetchGoogleCalendarEvents() in fetchGoogleCalendar.js
 
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-
-      plugins: ['interaction', 'list', 'googleCalendar', 'fullcalendarCustomView'],
-      
-      header: false,
-      height: 170,
-      // defaultView: 'custom', // the name of a generic view
-      // duration: { weeks: 3 },
-      defaultView: 'listWeek2',
-      views: {
-        listWeek2: {
-          type: 'list',
-          duration: { weeks: 2 },
-          listDayFormat: { month: 'long', day: 'numeric', year: 'numeric', weekday: 'long' } // like "Monday, January 1, 2016"
-        }
-      },
-
-      // To make your own Google API key, follow the directions here:
-      // http://fullcalendar.io/docs/google_calendar/
-      googleCalendarApiKey: 'AIzaSyBq6TTVUkWGCs0vmGh1XlIuGn0w5dCtbsA',
-
-      events: 'ekol7ulqm14nv155angut2rlfo@group.calendar.google.com',
-
-      eventClick: function (arg) {
-        // opens events in a popup window
-        window.open(arg.event.url, 'google-calendar-event', 'width=700,height=600');
-
-        arg.jsEvent.preventDefault() // don't navigate in main tab
-      },
-
-      loading: function (bool) {
-        document.getElementById('loading').style.display =
-          bool ? 'block' : 'none';
-      }
-
-    });
-
-    calendar.render();
-  });
-
-</script>
-<style>
-  #loading {
-    display: none;
+  // fetchGoogleCalendarEvents() in fetchGoogleCalendar.js will call show(items) after success.
+  function show(items) {
+    entry = items[0]
+    var startsAt = moment(entry.start.dateTime).format('dddd, MMMM DD, h:mma');
+    var endsAt = moment(entry.end.dateTime).format("h:mma");
+    var calendarHTML = `<div ><a href="${entry.htmlLink}" target="_blank"><h4>${entry.summary}</h4></a></div>`;
+    calendarHTML += '<table class="description">';
+    calendarHTML += `<tr><th class="text-muted">When</th><td style="padding-left:5px">${startsAt} - ${endsAt}</td></tr>`;
+    calendarHTML += `<tr><th class="text-muted">Where</th><td style="padding-left:5px">${entry.location}</td></tr>`;
+    calendarHTML += '</table>';
+    var md = window.markdownit();
+    var description = md.render(entry.description);
+    calendarHTML += `<div class="mt-3"><p style="white-space: pre-wrap;">${description}</p></div>`;
+    $('#calendar').html(calendarHTML);
   }
-</style>
+
+  // Loads the JavaScript client library and invokes `start` afterwards.
+  gapi.load('client', fetchGoogleCalendarEvents);
+</script>
 
 <section class="section bg-secondary">
   <div class="container">
     <h2 class="mb-4">Upcoming Seminar Talks</h2>
-    <div id='loading'>loading...</div>
-    <div id='calendar' class="mb-3"></div>
-    <a href="{{ '/seminar.html' | relative_url }}" class="">View more</a>
+    <div id="calendar"></div>
+    <a href="{{ '/seminar.html' | relative_url }}" class="">See All Talks</a>
   </div>
 </section>
