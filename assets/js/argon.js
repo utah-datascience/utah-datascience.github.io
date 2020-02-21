@@ -44,7 +44,7 @@ $(document).ready(function() {
     // Headroom - show/hide navbar on scroll
     if($('.headroom')[0]) {
         var headroom  = new Headroom(document.querySelector("#navbar-main"), {
-            offset: 300,
+            offset: 100,
             tolerance : {
                 up : 30,
                 down : 30
