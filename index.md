@@ -1,7 +1,7 @@
 ---
 layout: home
 header:
-  title: {{ site.title }}
+  title: Utah Center For Data Science
   title-color: default
   excerpt: >
     This center leads, organizes, and manages data science resources and research efforts at the University of Utah.  Its members advance the fundamental principles and practice of data science through research, applications, and community engagement.
@@ -58,7 +58,7 @@ feature_row:
  <h1>News <span class="left-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1>
 
   <ul class="post-list">
-   {% assign news = site.news | sort: 'date' %}
+   {% assign news = site.posts | sort: 'date' %}
     {% for post in news reversed limit:4 %}
       <li class="post-list-item">
 		   <div class="right-text">{{ post.date | date: "%-d %b %Y" }}</div>

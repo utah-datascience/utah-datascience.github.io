@@ -1,28 +1,52 @@
 ---
 layout: default
-title: Post
 ---
 
-<div class="home">
+{%- assign excerpt = page.date | date: "%b %-d, %Y" -%}
 
-  <div class="banner">
-  </div>
+{% if page.header %}
+  {% include page__hero.html %}
+{% endif %}
 
-  <article class="post-content-main">
-
-<h1>News <span class="left-icon"><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i></a></span></h1>
-  <ul class="post-list">
-      <li class="post-list-item">
-		<div class="right-text">{{ page.date | date: "%-d %b %Y" }}</div>
-        <span class="post-list-title">
-          {{ page.title }}
-        </span>
-        <span class="post-list-excerpt">
+<section class="section mt--300">
+  <div class="container">
+    <div class="card card-profile shadow px-4 py-4">
+      <article class="post-content-main">
+        <header class="post-header">
+          <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+          <p class="post-meta">
+            {%- assign date_format = "%b %-d, %Y" -%}
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {{ page.date | date: date_format }}
+            </time>
+            {%- if page.modified_date -%}
+            ~
+            {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+            <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+              {{ mdate | date: date_format }}
+            </time>
+            {%- endif -%}
+            {%- if page.author -%}
+              • {% for author in page.author %}
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                  <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+                {%- if forloop.last == false %}, {% endif -%}
+              {% endfor %}
+            {%- endif -%}
+          </p>
+        </header>
+        <hr />
+        <div class="post-content e-content" itemprop="articleBody">
           {{ content }}
-        </span>
-      </li>
-  </ul>
-  <div class="all-news-link"><a class="all-news-link" href="{{ site.baseurl }}/news">See All News</a></div>
-</article>
-
-</div>
+        </div>
+        <hr />
+        {%- if site.disqus.shortname -%}
+          {%- include disqus_comments.html -%}
+        {%- endif -%}
+      </article>
+    </div>
+    <nav class="mt-5">
+      <a href="{{ '/news' | relative_url }}">See All News</a>
+    </nav>
+  </div>
+</section>

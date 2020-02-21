@@ -10,10 +10,11 @@
             <div class="col px-0 {% if page.header.bg-fill %}{{ page.header.bg-fill }}{% else %}{% endif %}">
                 <div class="row{% if page.header.align == center %} text-center justify-content-center{% endif %}">
                     <div class="col-lg-8">
-                       <!-- <h1 class="display-3 text-white"> --> 
+                        {% if page.header.title %}
                         <h1 class="display-3 text-{% if page.header.title-color %}{{ page.header.title-color }}{% else %}white{% endif %}">
-                            {{ page.header.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+                            {{ page.header.title | markdownify | remove: "<p>" | remove: "</p>" }}
                         </h1>
+                        {% endif %}
                         {% if page.header.excerpt %}
                         <p class="lead  text-{% if page.header.excerpt-color %}{{ page.header.excerpt-color }}{% else %}white{% endif %} primary-ex">
                             {{ page.header.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}

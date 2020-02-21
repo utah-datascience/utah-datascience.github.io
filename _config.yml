@@ -3,19 +3,21 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Utah Center for Data Science" # the name of your site, e.g. ACME Corp.
 
 collections:
-  news:
-    output: true
   programs:
     output: false
   members:
-    output: true
+    output: false
+    sort_by: key
 
-
-show_drafts         : true
-limit_posts         : 0
-future              : true
-unpublished         : true
-  
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      header:
+        background-image: /assets/img/header-background/zion-shorter.jpg
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
