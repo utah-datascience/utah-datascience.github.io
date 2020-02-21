@@ -1,6 +1,6 @@
 {% for member in include.members_list %}
 <div class="row justify-content-center pb-4">
-    <div class="col-lg-12 d-flex">
+    <div class="col-lg-12 d-flex row">
         <div class="col-lg-3">
             {% if member.pic contains "://" %}
             {% capture img_path %}{{ member.pic }}{% endcapture %}
