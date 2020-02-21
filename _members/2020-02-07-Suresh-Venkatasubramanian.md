@@ -6,7 +6,7 @@ title: |
     Professor, School of Computing, University of Utah
 type: leadership
 link: http://www.cs.utah.edu/~suresh/index.html
-pic: assets/img/member_photos/suresh.png
+pic: assets/img/member_photos/suresh.jpg
 ---
 
 I'm interested in the problem of *algorithmic fairness*: ensuring that in a world of automated decision-making, decisions that get made about us and for us are fair, accountable and transparent.
