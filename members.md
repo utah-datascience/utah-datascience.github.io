@@ -7,17 +7,17 @@ header:
 ---
 
 
-<h3 class="display-3 mb-3">Leadership</h3>
+## Leadership
 
 {% assign members_list = site.members | where: "type", "leadership"  | sort: 'key' %}
 {% include members_list.html members_list = members_list %}
 
-<h3 class="display-3 mb-3">Core Members</h3>
+## Core Members
 
 {% assign members_list = site.members | where: "type", "core"  | sort: 'key' %}
 {% include members_list.html members_list = members_list %}
 
-<h3 class="display-3 mb-3">Affiliated Members</h3>
+## Affiliated Members
 {% assign members_list = site.members | where: "type", "affiliated"  | sort: 'key' %}
 {% include members_list.html members_list = members_list %}
 

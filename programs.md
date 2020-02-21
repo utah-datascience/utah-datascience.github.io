@@ -14,7 +14,7 @@ header:
   <div class="col-lg-12">
     <h3>{{ program.name }}</h3>
     {{ program.content | markdownify }}
-    <a href="{{ program.link }}" class="btn-link text-primary">Show more</a>
+    <a href="{{ program.link }}">Show more</a>
   </div>
 </div>
 {% endfor %}

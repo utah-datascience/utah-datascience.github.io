@@ -1,0 +1,27 @@
+/**
+ * Headings
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    color: $utah-red;
+}
+
+
+/**
+ * Links
+ */
+
+a {
+    color: $utah-red;
+    text-decoration: none;
+    &:hover {
+        color: $utah-red;
+        text-decoration: underline;
+    }
+}
