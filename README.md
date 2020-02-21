@@ -23,14 +23,13 @@ Add/delete/edit .md files in `_progrmas` folder to add/delete/edit members.
 
 ## Page header
 * header:
-  * title: Header Title, default: Utah Center for Data Science
+  * title: Header Title, default: None
   * title-color: white|red, default: white
-  * excerpt: >
-        Excerpt/Discription of this page.
-        default: None
+  * excerpt: >  
+        Excerpt to show under title, default: None
   * excerpt-color: white|black, default: white
   * align: center|left, default: center
-  * background-image: default: /assets/img/header-background/lauren-pandolfi-zD5ry8Up83M-unsplash.jpg
+  * background-image: default: /assets/img/header-background/lauren-pandolfi-midium.jpg
 
 ## Layout
 * home
