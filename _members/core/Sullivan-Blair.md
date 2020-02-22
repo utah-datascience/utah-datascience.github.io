@@ -1,10 +1,9 @@
 ---
-key: sullivan
 name: Blair Sullivan
 title: |
     Associate Professor, School of Computing, University of Utah
     Adjunct Faculty, Department of Computer Science, North Carolina State University
-type: core
+role: Core Member
 link: https://www.cs.utah.edu/~sullivan/#!/
 pic: assets/img/member_photos/bdsullivan.jpg
 ---

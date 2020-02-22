@@ -7,7 +7,6 @@ collections:
     output: false
   members:
     output: false
-    sort_by: key
 
 defaults:
   -

@@ -1,9 +1,8 @@
 ---
-key: horel
 name: John Horel
 title: |
     Professor, Department of Atmospheric Sciences, University of Utah
-type: affiliated
+role: Affiliated Member
 link: http://home.chpc.utah.edu/~u0035056/home/
 pic: assets/img/member_photos/John_Horel.png
 ---

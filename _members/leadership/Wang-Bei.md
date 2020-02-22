@@ -1,11 +1,9 @@
 ---
-key: wang
-name: Bei Wang 
+name: Bei Wang
 role: Associate Director of Outreach
 title: |
     Assistant Professor, School of Computing, University of Utah
     Faculty member, Scientific Computing and Imaging (SCI) Institute, University of Utah
-type: leadership
 link: http://www.sci.utah.edu/~beiwang/
 pic: assets/img/member_photos/Bei3.png
 ---

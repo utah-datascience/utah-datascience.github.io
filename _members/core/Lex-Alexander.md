@@ -1,10 +1,9 @@
 ---
-key: lex
 name: Alexander Lex
 title: |
     Assistant Professor, Computer Science, University of Utah
     Faculty Member, Scientific Computing and Imaging (SCI) Institute, University of Utah
-type: core
+role: Core Member
 link: https://vdl.sci.utah.edu/team/lex/
 pic: assets/img/member_photos/alex2.png
 ---

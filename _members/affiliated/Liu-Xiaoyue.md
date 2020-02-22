@@ -1,10 +1,9 @@
 ---
-key: liu
 name: Xiaoyue Liu
 title: |
     Professional Engineer, State of Utah
     Associate Professor, Civil And Environmental Engin, University of Utah
-type: affiliated
+role: Affiliated Member
 link: https://faculty.utah.edu/u0918933-XIAOYUE_CATHY_LIU/hm/index.hml
 pic: assets/img/member_photos/x_liu.png
 ---

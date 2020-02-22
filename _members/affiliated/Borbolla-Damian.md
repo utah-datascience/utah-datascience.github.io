@@ -1,9 +1,8 @@
 ---
-key: borbolla
 name: Damian Borbolla
 title: |
     Assistant Professor (Clinical), Biomedical Informatics, University of Utah
-type: affiliated
+role: Affiliated Member
 link: https://medicine.utah.edu/faculty/mddetail.php?facultyID=u6002470
 pic: assets/img/member_photos/borbolla,damien.png
 ---

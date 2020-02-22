@@ -1,11 +1,10 @@
 ---
-key: tasdizen
 name: Tolga Tasdizen
 title: |
     Professor, Electrical and Computer Engineering, University of Utah
     Faculty Member, Scientific Computing and Imaging Institute, University of Utah
     Adjunct Professor, Computer Science, University of Utah
-type: affiliated
+role: Affiliated Member
 link: http://www.sci.utah.edu/~tolga/
 pic: assets/img/member_photos/t_tasdizen.png
 ---

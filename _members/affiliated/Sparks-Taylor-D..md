@@ -1,10 +1,9 @@
 ---
-key: sparks
 name: Taylor D. Sparks
 title: |
     Associate Professor and Associate Chair, Department of Materials Science and Engineering, University of Utah
     Director, Materials Characterization Laboratory, University of Utah
-type: affiliated
+role: Affiliated Member
 link: https://my.eng.utah.edu/~sparks/
 pic: assets/img/member_photos/t_sparks.png
 ---

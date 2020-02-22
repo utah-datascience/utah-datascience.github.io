@@ -1,9 +1,8 @@
 ---
-key: osting
 name: Braxton Osting
 title: |
     Associate Professor, Department of Mathematics, University of Utah
-type: core
+role: Core Member
 link: https://www.math.utah.edu/~osting/
 pic: assets/img/member_photos/braxtonThumb.png
 ---
