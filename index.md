@@ -78,4 +78,11 @@ feature_row:
  </div>
  </section>
 
-{% include next_talks.html %}
+<section class="section bg-secondary">
+  <div class="container">
+    <h2 class="mb-4">Upcoming Seminar Talk</h2>
+    {% include next_talks.html %}
+    <a href="{{ '/seminar.html' | relative_url }}" class="">See All Talks</a>
+  </div>
+</section>
+
