@@ -10,18 +10,28 @@ header:
   background-image: /assets/img/header-background/zion-shorter.jpg
 ---
 
-{%comment%}
 ### Highlights
-<div style="display: flex; flex-flow: row wrap;">
-  {% for image in site.static_files %}
-    {% if image.path contains "2019highlights" %}
-      <img src="{{ image.path }}" alt="2019 dataday highlith" width="40%" style="flex: 50%;"/>
-    {% endif %}
-  {% endfor %}
+<style>
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 230px;
+  height: 153px;
+}
+</style>
+<div>
+{% for image in site.static_files %}
+  {% if image.path contains "2019highlights" %}
+  <div class="gallery">
+  <img src="{{ image.path }}" alt="2019 dataday highlith" width="100%" />
+  </div>
+  {% endif %}
+{% endfor %}
 </div>
-{%endcomment%}
 
-#### Past Data Science Days
+---
+
+### Past Data Science Days
 {% assign events = site.pages | where:"categories","dataday" |sort: "date" | reverse %}
 {% for eventpage in events %}
 * [{{ eventpage.title }}]({{ eventpage.url }})
