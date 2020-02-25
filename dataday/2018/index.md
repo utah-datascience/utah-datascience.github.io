@@ -1,11 +1,10 @@
 ---
-layout: single
 title: 2018 Data Science Day
+header:
+  title: <img src="./img/UDSD18.png" alt="2018 Data Science Day" height="300">
 categories: dataday
-permalink: /dataday/2018/
+date: 2018-09-14
 ---
-
-![2018 Data Science Day](./img/UDSD18.png){: width=150 height=100}
 
 # 2018 Data Science Day
 

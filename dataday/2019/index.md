@@ -1,11 +1,10 @@
 ---
-layout: single
 title: 2019 Data Science Day
+header:
+  title: <img src="./img/dataday-logo-2019.png" alt="2018 Data Science Day">
 categories: dataday
-permalink: /dataday/2019/
+date: 2019-10-18
 ---
-
-![2019 Data Science Day logo](./img/dataday-logo-2019.png){: .align-center}
 
 # 2019 Data Science Day
 

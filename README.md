@@ -55,7 +55,7 @@ Add/delete/edit .md files in `_progrmas` folder to add/delete/edit members.
         Excerpt to show under title, default: None
   * excerpt-color: white|black, default: white
   * align: center|left, default: center
-  * background-image: default: /assets/img/header-background/lauren-pandolfi-midium.jpg
+  * background-image: default: /assets/img/header-background/zion-shorter.jpg
 
 ## Layout
 * home

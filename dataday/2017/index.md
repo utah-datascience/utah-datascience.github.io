@@ -1,11 +1,10 @@
 ---
-layout: single
 title: 2017 Data Science Day
+header:
+  title: <img src="./img/UDSD07-logo.png" alt="2017 Data Science Day" height="230">
 categories: dataday
-permalink: /dataday/2017/
+date: 2017-01-13
 ---
-
-![2017 Data Science Day](./img/UDSD07-logo.png)
 
 # 2017 Data Science Day
 
