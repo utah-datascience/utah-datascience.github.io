@@ -6,6 +6,17 @@ header:
   background-image: /assets/img/header-background/zion-shorter.jpg
 ---
 
+<style>
+img.member {
+  width: 200px;
+  height: 286px;
+  object-fit: cover;
+  /* black and white */
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+</style>
+
 {% assign roles = "Director,Associate Director of Research,Associate Director of Outreach,Associate Director of Student-Engagement,Core Member,Affiliated Member" | split: "," %}
 
 {% for role in roles %}
@@ -21,8 +32,7 @@ header:
       {% capture img_path %}{{ member.pic | relative_url }}{% endcapture %}
       {% endif %}
       <a href="{{ member.link }}" target="_blank">
-      <img src="{{ img_path }}" alt="Picture of {{ member.name }}" class="img-fluid rounded shadow"
-          style="width: 100%; max-width: 200px;">
+      <img src="{{ img_path }}" alt="Picture of {{ member.name }}" class="rounded shadow member">
         </a>
     </div>
     <div class="col-lg-9">

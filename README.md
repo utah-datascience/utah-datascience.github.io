@@ -40,7 +40,7 @@ The available variables are:
 | role     | Under which role to diplay the member. |
 | title    | Title of the member to be display under the name. Using block style indicator `|` to keep newlines between multiline. |
 | link     | The link for the photo and name. |
-| pic      | The photo of the member. |
+| pic      | The photo of the member. It can be an exist link to an image, or a path to the image. |
 
 > **_NOTE:_**  The subfolders (affiliated, core, and leadership) under `_members` is meaningless, they exist only for convenient maintaining. To show member under a role, the role variable in the YAML _front matter_ block has to be signed with a right role.
 
