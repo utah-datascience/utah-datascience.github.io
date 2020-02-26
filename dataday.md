@@ -11,23 +11,7 @@ header:
 ---
 
 ### Highlights
-<style>
-div.gallery {
-  margin: 5px;
-  float: left;
-  width: 230px;
-  height: 153px;
-}
-</style>
-<div>
-{% for image in site.static_files %}
-  {% if image.path contains "2019highlights" %}
-  <div class="gallery">
-  <img src="{{ image.path }}" alt="2019 dataday highlith" width="100%" />
-  </div>
-  {% endif %}
-{% endfor %}
-</div>
+{% include image_gallary.html %}
 
 ---
 
