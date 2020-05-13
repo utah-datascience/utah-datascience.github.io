@@ -6,15 +6,39 @@ header:
   excerpt: |
     Our mission is to help students learn about data science and machine learning through tutorials, presentations from industry professionals, and hands-on experience.
     
-    [join our mailing list](http://mailman.cs.utah.edu/mailman/listinfo/datascience)
-    {: class="btn btn-neutral"}
+    [join our mailing list](http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar)
+    {: class="btn btn-neutral"}    
   
-  background-image: /assets/img/header-background/zion-shorter.jpg
+  background-image: /assets/img/header-background/zion-shorter.jpg  
+
 ---
+
+<style>
+img {
+  width: 200px;
+  height: 286px;
+  object-fit: cover;
+}
+</style>
+
+## [Summer Seminar Series](/club/summer-seminar-series)
+<div style="margin-bottom: 1rem">
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
+      <img src="/assets/img/club_photos/n_gupta.png" alt="Picture of Nitish Gupta" class="rounded shadow member">
+    </div>
+    <div class="col-lg-9">
+        <h4><a href="https://nitishgupta.github.io/" target="_blank">Nitish Gupta</a></h4>
+        <h6>Presenting May 14, 2020 @ 12 PM MDT</h6>
+        <h6>Title: Neural Module Networks for Reasoning over Text. Abstract <a href="/club/summer-seminar-series" target="_blank" style="text-decoration:underline;">here</a>.</h6>
+        <p>Nitish is a senior PhD student in Computer Science at the University of Pennsylvania pursuing research in NLP. He is advised by Prof. Dan Roth and co-advised by Prof. Sameer Singh, UCI. Nitish's research focuses on developing structured models for grounded language understanding, primarily in the context of making machines understand and answer questions against text. He is particularly interested in models that perform reasoning by understanding the compositional nature of language, and are able to provide a formal semantic parse and an explanation about their predictions. For more details you can visit <a href="https://nitishgupta.github.io/" target="_blank">https://nitishgupta.github.io/</a>.</p>
+    </div>
+  </div>
+</div>
 
 ## Want to get in touch with us?
 
-We'd love for you to reach out to us about any events you'd like to happen, ideas you have, or interest you have in becoming involved in club leadership! To contact us directly, email Kori South at [korianns@ymail.com](mailto:korianns@ymail.com).
+We'd love for you to reach out to us about any events you'd like to happen, ideas you have, or interest you have in becoming involved in club leadership! To contact us directly, email Vivek Gupta at [keviv9@gmail.com](mailto:keviv9@gmail.com) Kori South at [korianns@ymail.com](mailto:korianns@ymail.com).
 
 ---
 
