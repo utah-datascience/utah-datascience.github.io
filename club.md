@@ -39,7 +39,7 @@ img.speaker {
 
 ## Want to get in touch with us?
 
-We'd love for you to reach out to us about any events you'd like to happen, ideas you have, or interest you have in becoming involved in club leadership! To contact us directly, email Vivek Gupta at [keviv9@gmail.com](mailto:keviv9@gmail.com) Kori South at [korianns@ymail.com](mailto:korianns@ymail.com).
+We'd love for you to reach out to us about any events you'd like to happen, ideas you have, or interest you have in becoming involved in club leadership! To contact us directly, email Vivek Gupta at [keviv9@gmail.com](mailto:keviv9@gmail.com) or Kori South at [korianns@ymail.com](mailto:korianns@ymail.com).
 
 ---
 
