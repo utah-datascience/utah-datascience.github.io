@@ -6,9 +6,12 @@ header:
   excerpt: |
     Our mission is to help students learn about data science and machine learning through tutorials, presentations from industry professionals, and hands-on experience.
     
-    [join our mailing list](http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar)
-    {: class="btn btn-neutral"}    
-  
+    <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank">join our mailing list</a>
+    {: class="btn btn-neutral" }
+    <br>
+    
+    [coordinators](/club/coordinators)
+    {: class="btn btn-neutral"}  
 ---
 
 <style>
@@ -27,13 +30,14 @@ img.speaker {
     </div>
     <div class="col-lg-9">
         <h4><a href="https://nitishgupta.github.io/" target="_blank">Nitish Gupta</a></h4>
-        <h6>Presenting Friday, May 15, 2020 @ 12 PM MDT. Poster <a href="assets/img/club_photos/NitishGupta.pdf" target="_blank" style="text-decoration:underline;">here</a></h6>
+        <h6>Presenting Thursday, May 14, 2020 @ 12 PM MDT</h6>
         <h6>Zoom Link: <a href="" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email</h6>
         <h6>Title: Neural Module Networks for Reasoning over Text. Abstract <a href="/club/summer-seminar-series" target="_blank" style="text-decoration:underline;">here</a>.</h6>
         <p>Nitish is a senior PhD student in Computer Science at the University of Pennsylvania pursuing research in NLP. He is advised by Prof. Dan Roth and co-advised by Prof. Sameer Singh, UCI. Nitish's research focuses on developing structured models for grounded language understanding, primarily in the context of making machines understand and answer questions against text. He is particularly interested in models that perform reasoning by understanding the compositional nature of language, and are able to provide a formal semantic parse and an explanation about their predictions. For more details you can visit <a href="https://nitishgupta.github.io/" target="_blank">https://nitishgupta.github.io/</a>.</p>
     </div>
   </div>
 </div>
+
 
 ## Want to get in touch with us?
 
