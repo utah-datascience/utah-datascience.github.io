@@ -1,0 +1,45 @@
+# Template for adding speakers
+#- filename:
+#  name: 
+#  personal_site: 
+#  img:
+#  date: 
+#  venue:
+#  time: 
+#  title: 
+#  bio:
+#  abstract:
+
+- filename: anirbit-mukherjee
+  name: Anirbit Mukherjee
+  personal_site: https://sites.google.com/view/anirbit/home
+  img: /assets/img/club_photos/a_mukherjee.jpg
+  date: May 21, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Understanding training of depth 2 nets under minimal distributional assumptions and data poisoning attacks
+  bio: >
+    Anirbit, is a (final) year Ph.D. student in applied mathematics at the Johns Hopkins University advised by Prof. Amitabh Basu. He specializes in deep-learning theory and has been awarded 2 fellowships from JHU for this research, "Walter L.Robb Fellowship" and the inaugural "Mathematical Institute for Data Science Fellowship." Earlier, he was a researcher in Quantum Field Theory, while doing his undergrad in physics at the Chennai Mathematical Institute (CMI) and masters in theoretical physics at the Tata Institute of Fundamental Research (TIFR). For more details, you can visit his <a href="https://sites.google.com/view/anirbit/home" target="_blank">website</a>.
+  abstract: >
+    The question of provable training of neural nets is mathematically extremely challenging and vastly open. Over the last year, we have investigated certain special cases at depth 2 and have given provable guarantees in regimes hitherto unexplored. Our results probe the particularly challenging trifecta of having finitely large nets, while not tying the data to any specific distribution and while having an adversarial attack.
+    <br><br>
+    We will try to cover 3 of our results in this talk : (a) analysis of a simple stochastic algorithm which near-optimally provably trains a single ReLU gate in the realizable setting as well as under a data poisoning attack using only mild distributional assumptions, (b) showing that noise assisted gradient descent on a ReLU gate can be proven to be "diffusive" in nature without having to make any distributional assumptions beyond realizability and lastly (c) we demonstrate a class of iterative non-gradient algorithms ("Neuro-Tron") which can train a class of "singe filter" depth 2 nets under a data poisoning attack on true realizable labels s.t the error in the recovered weights scales inversely with the width above a certain finite threshold. This provably brings to light the advantage of having a large width when defending against an adversarial attack.
+    <br><br>
+    This talk will is based on our recently released two part series of works,
+    <ul>
+    <li>Part 1: <a href="https://arxiv.org/abs/2005.01699" target="_blank">https://arxiv.org/abs/2005.01699</a></li>
+    <li>Part 2: <a href="https://arxiv.org/abs/2005.04211" target="_blank">https://arxiv.org/abs/2005.04211</a></li>
+    </ul>
+  
+- filename: nitish-gupta
+  name: Nitish Gupta
+  personal_site: https://nitishgupta.github.io/
+  img: /assets/img/club_photos/n_gupta.png
+  date: May 14, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Neural Module Networks for Reasoning over Text
+  bio: >
+    Nitish is a senior PhD student in Computer Science at the University of Pennsylvania pursuing research in NLP. He is advised by Prof. Dan Roth and co-advised by Prof. Sameer Singh, UCI. Nitish's research focuses on developing structured models for grounded language understanding, primarily in the context of making machines understand and answer questions against text. He is particularly interested in models that perform reasoning by understanding the compositional nature of language, and are able to provide a formal semantic parse and an explanation about their predictions. For more details you can visit <a href="https://nitishgupta.github.io/" target="_blank">https://nitishgupta.github.io/</a>.
+  abstract: >
+    Answering compositional questions that require multiple steps of reasoning against text is challenging, especially when they involve discrete, symbolic operations. In this talk, I will outline the challenges in learning these models for non-synthetic questions on open-domain text, where a model needs to deal with the diversity of natural language and perform a broad range of reasoning. I will present our interpretable and modular neuro-symbolic approach based on neural module networks (NMNs) and show how we extend NMNs by: (a) introducing modules that reason over a paragraph of text, performing symbolic reasoning over numbers and dates in a probabilistic and differentiable manner; and (b) proposing unsupervised auxiliary loss to help learning. In conclusion, I will present our recent work on methods for achieving faithfull interpretations in such compositional models and challenges for future research.

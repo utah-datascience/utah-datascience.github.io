@@ -23,17 +23,24 @@ img.speaker {
 </style>
 
 ## [Summer Seminar Series](/club/summer-seminar-series)
+
+<!-- Upcoming speaker. Assumes the next speaker is always at the top of the yml file -->
+{% assign speaker = site.data.summer_speakers['2020'][0] %}
 <div style="margin-bottom: 1rem">
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/club_photos/n_gupta.png" alt="Picture of Nitish Gupta" class="rounded shadow speaker">
+      <img src="{{ speaker.img }}" alt="Picture of {{ speaker.name }}" class="rounded shadow speaker">
     </div>
     <div class="col-lg-9">
-        <h4><a href="https://nitishgupta.github.io/" target="_blank">Nitish Gupta</a></h4>
-        <h6>Presenting Thursday, May 14, 2020 @ 12 PM MDT</h6>
-        <h6>Zoom Link: <a href="" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email</h6>
-        <h6>Title: Neural Module Networks for Reasoning over Text. Abstract <a href="/club/summer-seminar-series" target="_blank" style="text-decoration:underline;">here</a>.</h6>
-        <p>Nitish is a senior PhD student in Computer Science at the University of Pennsylvania pursuing research in NLP. He is advised by Prof. Dan Roth and co-advised by Prof. Sameer Singh, UCI. Nitish's research focuses on developing structured models for grounded language understanding, primarily in the context of making machines understand and answer questions against text. He is particularly interested in models that perform reasoning by understanding the compositional nature of language, and are able to provide a formal semantic parse and an explanation about their predictions. For more details you can visit <a href="https://nitishgupta.github.io/" target="_blank">https://nitishgupta.github.io/</a>.</p>
+        {% if speaker.personal_site != null %}
+          <h4><a href="{{ speaker.personal_site }}" target="_blank">{{ speaker.name }}</a></h4>
+        {% else %}
+          {{ speaker.name }}
+        {% endif %}
+        <h6>Presenting {{ speaker.date }} @ {{ speaker.time }} MDT</h6>
+        <h6>Venue: {{ speaker.venue }}</h6>
+        <h6>Title: {{ speaker.title }} Abstract <a href="{{ speaker.filename | prepend: "/club/sss-2020/" }}" target="_blank" style="text-decoration:underline;">here</a>.</h6>
+        <p>{{ speaker.bio }}</p>
     </div>
   </div>
 </div>

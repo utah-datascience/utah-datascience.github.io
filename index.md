@@ -25,7 +25,7 @@ feature_row:
   - icon: fa fa-university
     title: Data Day
     excerpt: The 2019 Data Science Day will be held on October 18, 2019. More details to follow.
-    url: #
+    url: /dataday.html
     btn_label: View details &raquo;
     btn_class: mt-4
     badge:
@@ -37,7 +37,7 @@ feature_row:
   - icon: fa fa-users
     title: Data Science Club
     excerpt: The data science club helps students learn about data science and machine learning through tutorial, presentations, and applications.
-    url: #
+    url: /club.html
     btn_label: View details &raquo;
     btn_class: mt-4
     badge:

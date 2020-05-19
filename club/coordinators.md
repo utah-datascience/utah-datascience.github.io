@@ -59,7 +59,7 @@ img.default {
   <h2 style="margin-bottom: 1rem">Associate Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/club_photos/ClubLogo.png" alt="Picture of Todd Derrick" class="rounded shadow default">
+      <img src="/assets/img/club_photos/Todd.jpeg" alt="Picture of Todd Derrick" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
         <h4>Todd Derrick</h4>
