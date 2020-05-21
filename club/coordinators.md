@@ -87,13 +87,12 @@ img.default {
   <h2 style="margin-bottom: 1rem">Associate Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/club_photos/ClubLogo.png" alt="Picture of Pranav Rajan" class="rounded shadow default">
+      <img src="/assets/img/club_photos/Pranav.jpeg" alt="Picture of Pranav Rajan" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
         <h4>Pranav Rajan</h4>
         <h6>Undergraduate Student</h6>
-      <p>Pranav Rajan is a rising senior studying computer science with an emphasis in visual computing. His interests include data visualization, data analysis, full stack development and graphics.<br><br>Pranav was inspired to pursue further knowledge in data science after taking classes with Professor Jeff Phillips and Professor Alex Lex in data mining and visualization. He is excited to start the Utah Data Science Club speaker series and promote data science at the University of Utah.
-</p>
+      <p>Pranav Rajan is a rising senior studying computer science with an emphasis in visual computing. His interests include data visualization, data analysis, full stack development and graphics. Pranav was inspired to further knowledge in data science after taking classes with Professor Jeff Phillips and Professor Alex Lex in data mining and visualization. When not at the computer, you can find him listening to classical and jazz music, reading The New Yorker, searching for cool visualizations and participating in some kind of outdoor activity. Pranav is excited to start the Utah Data Science Talk Series and promote data science at the University of Utah.</p>
     </div>
   </div>
 </div>

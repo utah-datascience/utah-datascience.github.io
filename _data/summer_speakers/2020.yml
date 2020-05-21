@@ -1,5 +1,6 @@
 # Template for adding speakers
 #- filename:
+#  poster:
 #  name: 
 #  personal_site: 
 #  img:
@@ -11,6 +12,7 @@
 #  abstract:
 
 - filename: anirbit-mukherjee
+  poster: /assets/img/club_photos/SSS-2020-02.pdf
   name: Anirbit Mukherjee
   personal_site: https://sites.google.com/view/anirbit/home
   img: /assets/img/club_photos/a_mukherjee.jpg
@@ -32,6 +34,7 @@
     </ul>
   
 - filename: nitish-gupta
+  poster: ~
   name: Nitish Gupta
   personal_site: https://nitishgupta.github.io/
   img: /assets/img/club_photos/n_gupta.png

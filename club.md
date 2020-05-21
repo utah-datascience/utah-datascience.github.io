@@ -26,10 +26,16 @@ img.speaker {
 
 <!-- Upcoming speaker. Assumes the next speaker is always at the top of the yml file -->
 {% assign speaker = site.data.summer_speakers['2020'][0] %}
+
 <div style="margin-bottom: 1rem">
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="{{ speaker.img }}" alt="Picture of {{ speaker.name }}" class="rounded shadow speaker">
+      <center>
+        <img src="{{ speaker.img }}" alt="Picture of {{ speaker.name }}" class="rounded shadow speaker">
+        {% if speaker.poster != null %}
+          <p>Click <a href="{{ speaker.poster }}" target="_blank">here</a> for poster</p>
+        {% endif %}
+      </center>
     </div>
     <div class="col-lg-9">
         {% if speaker.personal_site != null %}
@@ -55,6 +61,11 @@ We'd love for you to reach out to us about any events you'd like to happen, idea
 ## Resources
 
 Below are some resources to help you on your journey to learn data science! These resources only scratch the surface, so if you come across anything you find useful or enlightening please reach out to the club leadership so we can put it here.
+
+### FREE Summer 2020 Coursera Subscription
+* The University of Utah's Office of Continuing Education & Community Engagement is providing free Coursera Subscriptions to all students and employees. Registration is open until July 31. Register [here](https://continue.utah.edu/coursera).
+
+
 
 ### Python Introduction
 * [Google for Education Python Introduction](https://developers.google.com/edu/python/)

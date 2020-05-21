@@ -33,7 +33,12 @@ img.speaker {
 <div style="margin-bottom: 1rem">
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="{{ speaker.img }}" alt="Picture of {{ speaker.name }}" class="rounded shadow speaker">
+      <center>
+        <img src="{{ speaker.img }}" alt="Picture of {{ speaker.name }}" class="rounded shadow speaker">
+        {% if speaker.poster != null %}
+          <p>Click <a href="{{ speaker.poster }}" target="_blank">here</a> for poster</p>
+        {% endif %}
+      </center>
     </div>
     <div class="col-lg-9">
         <h2>
@@ -53,7 +58,7 @@ img.speaker {
   <div class="row" style="margin-bottom: 1rem">
     <h6>Talk Title: {{ speaker.title }}</h6>
   </div>
-  
+
   <!-- Row for abstract -->
   <div class="row" style="margin-bottom: 1rem">
     <h6>Abstract: </h6>
