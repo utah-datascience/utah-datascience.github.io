@@ -11,6 +11,18 @@
 #  bio:
 #  abstract:
 
+- filename: eunice-jun
+  poster: /assets/img/club_photos/SSS-2020-03.pdf
+  name: Eunice Jun
+  personal_site: https://homes.cs.washington.edu/~emjun/
+  img: /assets/img/club_photos/e_jun.png
+  date: May 29, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: "Tea: A High-level Language and Runtime System for Automating Statistical Analysis"
+  bio: Eunice Jun is a PhD student in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. Her research focuses on developing new tools and methods for conducting valid and reproducible statistical analyses. She hopes to make conducting valid data analyses easy (and fun) for end-users. She incorporates methods and techniques from human-computer interaction, programming languages, software engineering, and data science. Her work has been supported by a UW CSE Wilma Bradley Fellowship and an NSF Graduate Research Fellowship.
+  abstract: Current statistical tools place the burden of valid, reproducible statistical analyses on the user. Users must have deep knowledge of statistics to not only identify their research questions, hypotheses, and domain assumptions but also select valid statistical tests for their hypotheses. As quantitative data become increasingly available in all disciplines, data analysis will continue to become a common task for people who may not have statistical expertise. Tea, a high-level declarative language for automating statistical test selection and execution, abstracts the details of analyses from users, empowering them to perform valid analyses by expressing their goals and domain knowledge. In this talk, I will discuss the design and implementation of Tea, lessons learned through the process, and other related ongoing work at the University of Washington. *<b>The talk is designed to be friendly for a non-technical audience with many opportunities for technical, conceptual, and other research-related questions.</b>*
+
 - filename: anirbit-mukherjee
   poster: /assets/img/club_photos/SSS-2020-02.pdf
   name: Anirbit Mukherjee

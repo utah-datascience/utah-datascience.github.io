@@ -1,7 +1,7 @@
 ---
-title: Summer Seminar Series
+title: Summer Seminar Speaker
 header:
-  title: Summer Seminar Series
+  title: Summer Seminar Speaker
   excerpt: |
     Join our mailing list to receive the Seminar Zoom links via email.
     
@@ -25,9 +25,11 @@ img.speaker {
 }
 </style>
 
-<!-- The table of speakers -->
-{% for speaker in site.data.summer_speakers['2020'] %}
-{% assign more_info = speaker.filename | prepend: "/club/sss-2020/" %}
+<center><a href="/club/summer-seminar-series"><<< Return to Summer Seminar Series</a></center>
+<br>
+
+{% assign name = page.name | replace: ".md", "" | downcase %}
+{% assign speaker = site.data.summer_speakers['2020'] | where: "filename", name | first %}
 <div style="margin-bottom: 1rem">
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
@@ -39,19 +41,27 @@ img.speaker {
       </center>
     </div>
     <div class="col-lg-9">
-        <h4>
+        <h2>
         {% if speaker.personal_site != null %}
         <a href="{{speaker.personal_site}}" target="_blank">{{speaker.name}}</a>
         {% else %}
         {{speaker.name}}
         {% endif %}
-        </h4>
+        </h2>
         <h6>Presenting {{ speaker.date }} @ {{ speaker.time }} MDT</h6>
-        <h6>Venue: {{ speaker.venue }}</h6>
-        <h6>Title: {{ speaker.title }}. Click <a href="{{ more_info }}" style="text-decoration:underline;">here</a> for more info.</h6>
-        <p>{{ speaker.bio }}</p>
+        <p><div style="color:#cc3333; font-weight:bold; display:inline;">Venue: </div>{{ speaker.venue }}</p>
+        <p><div style="color:#cc3333; font-weight:bold; display:inline;">Bio: </div>{{speaker.bio}}</p>        
     </div>
   </div>
+
+  <!-- Row for title -->
+  <div class="row" style="margin-bottom: 1rem">
+    <h6>Talk Title: {{ speaker.title }}</h6>
+  </div>
+
+  <!-- Row for abstract -->
+  <div class="row" style="margin-bottom: 1rem">
+    <h6>Abstract: </h6>
+    <p>{{speaker.abstract}}</p>
+  </div>
 </div>
----
-{% endfor %}
