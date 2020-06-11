@@ -11,6 +11,21 @@
 #  bio:
 #  abstract:
 
+- filename: arpita-biswas
+  poster: /assets/img/club_photos/SSS-2020-04.pdf
+  name: Arpita Biswas
+  personal_site: https://sites.google.com/view/arpitabiswas/
+  img: /assets/img/club_photos/a_biswas.jpg
+  date: June 12, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 11:30 am
+  title: Two-Sided Fairness Guarantees for Recommendation Systems (<a href="https://arxiv.org/pdf/2002.10764.pdf" target = "_blank" style="text-decoration:underline;">arXiv</a>)
+  bio: >
+    Arpita Biswas is a Google Ph.D. Fellow at the Department of Computer Science and Automation, Indian Institute of Science. Her broad areas of interest include Game Theory, Optimization, and Machine Learning. She is presently looking at problems in Computational Social Choice Theory and Fairness in Machine Learning. Prior to her Ph.D., she worked as a Research Engineer at Xerox Research Centre India. Her work spans several research spaces such as multi-agent learning, incentive mechanisms, facility location, planning and scheduling, etc. Thus far, she has worked on problems arising from real-world scenarios like online crowd-sourcing, resource allocation, dynamic pricing in transportation, and ride-sharing. More details about her can be obtained at <a href href="https://sites.google.com/view/arpitabiswas/" target="_blank">https://sites.google.com/view/arpitabiswas/</a>.
+  abstract: >
+    Major B2C eCommerce websites (such as Amazon, Spotify, Swiggy) can be thought of as two-sided platforms, with customers on one side and producers on the other. Traditionally, recommendation protocols of these platforms are customer-centric---focusing on maximizing  customer satisfaction by tailoring the recommendation according to the personalized preferences of individual customers. However, this may lead to unfair distribution of exposure among the producers and adversely impact their well-being. As more and more people depend on such platforms to earn a living, it is important to strike a balance between fairness among the producers and customer satisfaction. The problem of two-sided fairness in recommendation can be formulated as a matroid constrained fair allocation problem. This problem naturally captures a number of other resource-allocation applications, including budgeted course allocation, graph partition, and allocation of cloud computing resources. Our main contribution is to develop polynomial time algorithms for fair allocation of indivisible items (with formal guarantees on fairness and feasibility) in several practical scenarios which can be formulated as matroid constrained problems.<br><br>
+    In this talk, I’ll start by motivating the problem and then defining some popular fairness notions. Next, I’ll discuss the matroid constrained fair allocation problem, and show how the solutions can be applied to ensure two-sided fair recommendation. I’ll conclude by listing down some open problems.
+
 - filename: eunice-jun
   poster: /assets/img/club_photos/SSS-2020-03.pdf
   name: Eunice Jun
@@ -20,8 +35,10 @@
   venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
   time: 12:00 pm
   title: "Tea: A High-level Language and Runtime System for Automating Statistical Analysis"
-  bio: Eunice Jun is a PhD student in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. Her research focuses on developing new tools and methods for conducting valid and reproducible statistical analyses. She hopes to make conducting valid data analyses easy (and fun) for end-users. She incorporates methods and techniques from human-computer interaction, programming languages, software engineering, and data science. Her work has been supported by a UW CSE Wilma Bradley Fellowship and an NSF Graduate Research Fellowship.
-  abstract: Current statistical tools place the burden of valid, reproducible statistical analyses on the user. Users must have deep knowledge of statistics to not only identify their research questions, hypotheses, and domain assumptions but also select valid statistical tests for their hypotheses. As quantitative data become increasingly available in all disciplines, data analysis will continue to become a common task for people who may not have statistical expertise. Tea, a high-level declarative language for automating statistical test selection and execution, abstracts the details of analyses from users, empowering them to perform valid analyses by expressing their goals and domain knowledge. In this talk, I will discuss the design and implementation of Tea, lessons learned through the process, and other related ongoing work at the University of Washington. *<b>The talk is designed to be friendly for a non-technical audience with many opportunities for technical, conceptual, and other research-related questions.</b>*
+  bio: >
+    Eunice Jun is a PhD student in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. Her research focuses on developing new tools and methods for conducting valid and reproducible statistical analyses. She hopes to make conducting valid data analyses easy (and fun) for end-users. She incorporates methods and techniques from human-computer interaction, programming languages, software engineering, and data science. Her work has been supported by a UW CSE Wilma Bradley Fellowship and an NSF Graduate Research Fellowship.
+  abstract: >
+    Current statistical tools place the burden of valid, reproducible statistical analyses on the user. Users must have deep knowledge of statistics to not only identify their research questions, hypotheses, and domain assumptions but also select valid statistical tests for their hypotheses. As quantitative data become increasingly available in all disciplines, data analysis will continue to become a common task for people who may not have statistical expertise. Tea, a high-level declarative language for automating statistical test selection and execution, abstracts the details of analyses from users, empowering them to perform valid analyses by expressing their goals and domain knowledge. In this talk, I will discuss the design and implementation of Tea, lessons learned through the process, and other related ongoing work at the University of Washington. *<b>The talk is designed to be friendly for a non-technical audience with many opportunities for technical, conceptual, and other research-related questions.</b>*
 
 - filename: anirbit-mukherjee
   poster: /assets/img/club_photos/SSS-2020-02.pdf
