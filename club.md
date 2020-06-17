@@ -41,7 +41,7 @@ img.speaker {
         {% if speaker.personal_site != null %}
           <h4><a href="{{ speaker.personal_site }}" target="_blank">{{ speaker.name }}</a></h4>
         {% else %}
-          {{ speaker.name }}
+          <h4>{{ speaker.name }}</h4>
         {% endif %}
         <h6>Presenting {{ speaker.date }} @ {{ speaker.time }} MDT</h6>
         <h6>Venue: {{ speaker.venue }}</h6>
