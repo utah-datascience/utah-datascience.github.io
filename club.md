@@ -45,7 +45,7 @@ img.speaker {
         {% endif %}
         <h6>Presenting {{ speaker.date }} @ {{ speaker.time }} MDT</h6>
         <h6>Venue: {{ speaker.venue }}</h6>
-        <h6>Title: {{ speaker.title }} Abstract <a href="{{ speaker.filename | prepend: "/club/sss-2020/" }}" target="_blank" style="text-decoration:underline;">here</a>.</h6>
+        <h6>Title: {{ speaker.title }}. Abstract <a href="{{ speaker.filename | prepend: "/club/sss-2020/" }}" target="_blank" style="text-decoration:underline;">here</a>.</h6>
         <p>{{ speaker.bio }}</p>
     </div>
   </div>

@@ -11,6 +11,22 @@
 #  bio:
 #  abstract:
 
+- filename: sambaran-bandyopadhyay
+  poster: /assets/img/club_photos/SSS-2020-06.pdf
+  name: Sambaran Bandyopadhyay
+  personal_site: ~
+  img: /assets/img/club_photos/s_bandyopadhyay.png
+  date: June 26, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Graph Representation Learning in the Presence of Outliers
+  bio: >
+    Sambaran Bandyopadhyay is an Advisory Research Engineer at IBM Research, India. He is also a final year PhD student at the department of Computer Science and Automation at Indian Institute of Science, Bangalore. Sambaran has published his research works in top tier AI conferences such as AAAI, IJCAI, KDD, WSDM, ICAPS, ECAI etc. and also has 8 patents filed to USPTO. He has been a member of the technical program committee of several AI conferences such as NeurIPS, ICML, AAAI, ECML-PKDD, etc.
+  abstract: >
+    Graph representation learning has received significant interest in the machine learning community. Different types of algorithms such as skip-gram based optimization, matrix factorization, deep-autoencoders and more recently, graph neural networks are proposed in the literature. Analysis of outliers in a graph is important as all real-life networks contain outlier nodes. A (community) outlier in a graph is a node which violets the overall community structure of the graph. Recent studies have shown that outlier nodes can affect the embeddings of other regular nodes in a graph. Further, their embeddings can get mixed easily with other regular nodes, which makes it difficult to detect them by post-processing. So, it is important to reduce the effect of outlier nodes on the embeddings of other nodes in a graph and detect them in an integrated way.<br><br>
+    In this talk, we will characterize different types of outliers present in an attributed graph. We discuss some recent approaches which integrate outlier detection and network embedding into a single framework, and hence minimize the effect of outliers on the embeddings of regular nodes in a graph. We would also present a set of experimental results to motivate the problem and to show the usefulness of such integrated approaches.
+
+
 - filename: ayan-mukhopadhyay
   poster: /assets/img/club_photos/SSS-2020-05.pdf
   name: Ayan Mukhopadhyay
