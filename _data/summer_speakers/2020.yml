@@ -11,6 +11,23 @@
 #  bio:
 #  abstract:
 
+- filename: shruti-rijhwani
+  poster: /assets/img/club_photos/SSS-2020-07.pdf
+  name: Shruti Rijhwani
+  personal_site: ~
+  img: /assets/img/club_photos/s_rijhwani.jpg
+  date: July 2, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 3:00 pm
+  title: >
+    Entity Linking for Low-Resource Languages
+  bio: >
+    Shruti Rijhwani is a PhD student at Carnegie Mellon University. Her primary research interest is multilingual natural language processing, with a focus on low-resource and endangered languages. Her research is supported by a Bloomberg Data Science Ph.D. Fellowship. Much of her published work focuses on improving named entity recognition and entity linking for low-resource languages and domains.
+  abstract: >
+    Entity linking is the task of associating a named entity with its corresponding entry in a structured knowledge base (such as Wikipedia or Freebase). Entity linking is an important component for the automatic understanding of natural language documents. While entity linking systems for languages such as English and Spanish are well-developed, the performance in low-resource languages is significantly worse.<br><br>
+    In this talk, we discuss existing methods for entity linking and the associated challenges of adapting them to low-resource languages. We then present a suite of methods developed for entity linking that does not rely heavily on resources in the target language. Through a variety of experiments, we show the success of our proposed methods on multiple languages, including extremely low-resource languages such as Tigrinya, Oromo, Lao and Uyghur.
+
+
 - filename: sambaran-bandyopadhyay
   poster: /assets/img/club_photos/SSS-2020-06.pdf
   name: Sambaran Bandyopadhyay
