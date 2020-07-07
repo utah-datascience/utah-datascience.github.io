@@ -4,9 +4,10 @@ on:
     types:
       - opened
       - edited
+      - reopened
   schedule:
     # See https://crontab.guru/ for details on scheduling
-    - cron: 10 * * * *
+    - cron: 1 0 * * *
 
 jobs:
   merge_schedule:
