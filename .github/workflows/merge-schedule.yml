@@ -6,7 +6,7 @@ on:
       - edited
   schedule:
     # See https://crontab.guru/ for details on scheduling
-    - cron: 40 * * * *
+    - cron: 45 * * * *
 
 jobs:
   merge_schedule:
