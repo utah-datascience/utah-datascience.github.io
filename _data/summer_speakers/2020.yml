@@ -11,6 +11,23 @@
 #  bio:
 #  abstract:
 
+- filename: unnat-jain
+  poster: /assets/img/club_photos/SSS-2020-08.pdf
+  name: Unnat Jain
+  personal_site:  https://unnat.github.io
+  img: /assets/img/club_photos/u_jain.JPG
+  date: July 10, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 11:00 am
+  title: >
+    Collaborative Embodied Agents
+  bio: >
+    Unnat is a Ph.D. student in Computer Science at UIUC working with Alex Schwing and Svetlana Lazebnik. Within computer vision and machine learning, he is currently looking into developing communicative embodied agents and interpreting their communication. He spent summers at Allen Institute for AI and Facebook AI Research as a research intern.<br><br>
+    Previously, he completed his MS in Computer Science at UIUC with the best thesis award and featured in the Siebel Scholars Class of 2018. Prior to joining Illinois, Unnat graduated with the Director’s Gold Medal from the Indian Institute of Technology, Kanpur. He was also awarded the Cadence Gold Medal for the best research thesis across all engineering departments. Learn more about Unnat at <a href="https://unnat.github.io/" target="_blank">https://unnat.github.io/</a>.
+  abstract: >
+    Recently we have seen an exciting confluence of fields to solve problems at the intersection of computer vision, reinforcement learning, and language understanding. Specifically, after achieving high accuracy on passive and curated datasets, computer vision researchers have moved to solve vision in interactive agents or embodied settings. However, current embodied agent research and tasks are narrowly focused on building AI for a single agent which is contrary to human interaction. Consequently, this talk will focus on building a collaborative framework for multiple embodied agents to solve demanding real-world tasks.<br><br>
+    If you are interested in learning about the interplay of RL and vision, multi-agent RL algorithms, or seeing what agents “talk” while collaborating to solve tasks -- join in for the talk. The relevant papers can be found on Unnat’s webpage: <a href="https://unnat.github.io/" target="_blank">https://unnat.github.io/</a>.
+
 - filename: shruti-rijhwani
   poster: /assets/img/club_photos/SSS-2020-07.pdf
   name: Shruti Rijhwani
