@@ -39,4 +39,17 @@ img.default {
       <p>Pikachu is often shocked. Pikachu is always best boi.</p>
     </div>
   </div>
+  
+  <div style="margin-bottom: 1rem">
+  <h2 style="margin-bottom: 1rem">Associate Coordinator</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
+      <img src="/assets/img/club_photos/ClubLogo.png" alt="Picture of Pikachu II" class="rounded shadow default">
+    </div>
+    <div class="col-lg-9">
+        <h4>Pikachu II</h4>
+        <h6>Electric Boogaloo</h6>
+      <p>Pikachu 2? Pikachu Who? Pikachu me and Pikachu you!</p>
+    </div>
+  </div>
 </div>
