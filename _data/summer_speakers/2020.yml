@@ -11,6 +11,24 @@
 #  bio:
 #  abstract:
 
+- filename: satwik-kottur 
+  poster: /assets/img/club_photos/SSS-2020-09.pdf
+  name: Satwik Kottur
+  personal_site: ~
+  img: /assets/img/club_photos/s_kottur.jpg
+  date: July 17, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Visual Dialog - Towards Communicative Visual Agents
+  bio: >
+    Satwik Kottur is a research scientist at Facebook AI Applied Research (FAIAR), Menlo Park. He recently obtained his PhD degree (2019) from the Department of Electrical and Computer Engineering at Carnegie Mellon University, advised by Prof. José M. F. Moura; and his undergraduate degree from the Indian Institute of Technology Bombay, India (2014).<br><br>
+    His research interests are in solving high-level multimodal AI problems, specifically at the intersection of language and vision. His recent works explore communicative visual agents, which interact with humans in natural language about visual content. In the past, he has worked on problems related to video surveillance, scalable machine learning, and learning grounded word representations.<br><br>
+    He has been the recipient of the Snap Inc. Fellowship (2018), best paper award (EMNLP 2017, short paper), best reviewer award (NeurIPS 2017), and Carnegie Institute of Technology (CIT) Dean’s Fellowship (2014).
+  abstract: >
+    Humans interact with artificial intelligence (AI) systems on a day-to-day basis, for example, through natural language (search queries), speech (voice assistant), vision (face recognition), etc. However, the next generation of AI systems will need to go beyond these interactions and be able to hold a meaningful dialog with humans in natural language about visual content.<br><br>
+    In this talk, I will motivate and study such ‘Communicative Visual Agents’ through the novel task of visual dialog, which requires an agent to answer a series of questions grounded in an image, using the dialog history as context. Specifically, the talk will: (a) formalize visual dialog, laying emphasis on the role of dataset and objective evaluation to benchmark progress, (b) describe explicit reasoning models for visual dialog, and, (c) extend visual dialog to goal-driven, visual agents that have ubiquitous applications.
+
+
 - filename: unnat-jain
   poster: /assets/img/club_photos/SSS-2020-08.pdf
   name: Unnat Jain
