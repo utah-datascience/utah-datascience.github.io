@@ -11,6 +11,30 @@
 #  bio:
 #  abstract:
 
+- filename: daniel-preotiuc-pietro
+  poster: /assets/img/club_photos/SSS-2020-11.pdf
+  name: Daniel Preotiuc-Pietro
+  personal_site: https://www.preotiuc.ro/
+  img: /assets/img/club_photos/d_preotiuc-pietro.jpg
+  date: July 31, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Making sense of Twitter @ Bloomberg
+  bio: >
+    Daniel Preotiuc-Pietro is a Senior Research Scientist and team lead at Bloomberg LP, where he works on analyzing and building models for real-world large scale news mining and information extraction. His research interests are focused on understanding the social and temporal aspects of text, especially from social media, with applications in domains such as Social Psychology, Law, Political Science and Journalism. Several of his research studies were featured in popular press including the 
+    <a href="http://www.washingtonpost.com/news/wonkblog/wp/2015/10/23/what-you-do-on-twitter-reveals-how-much-money-you-make/" target="_blank">Washington Post</a>, 
+    <a href="http://www.bbc.com/news/technology-37727387" target="_blank">BBC</a>, 
+    <a href="https://www.newscientist.com/article/2089283-what-your-social-media-profile-photo-says-about-your-personality/" target="_blank">New Scientist</a>, 
+    <a href="http://www.scientificamerican.com/article/tweets-reveal-a-twitter-user-s-income-bracket/" target="_blank">Scientific American</a> or 
+    <a href="https://fivethirtyeight.com/features/political-twitter-is-no-place-for-moderates/" target="_blank">FiveThirtyEight</a>. He is a co-organizer of the 
+    <a href="http://nllpw.org/" target="_blank">Natural Legal Language Processing workshop series</a>. 
+    Prior to joining Bloomberg LP, Daniel was a postdoctoral researcher at the University of Pennsylvania with the interdisciplinary 
+    <a href="http://wwbp.org/" target="_blank">World Well Being Project</a> 
+    and obtained his PhD in Natural Language Processing and Machine Learning at the University of Sheffield, UK. 
+  abstract: >
+    The Bloomberg Terminal has provided ways for investors and journalists to sift through and understand the immense volume of tweets and discover financially-relevant content ever since the SEC approved the use of Twitter for company disclosures back in 2013. In the first part of the talk, I will showcase how tweets impact financial markets and how Bloomberg is using Natural Language Processing methods to identify financially relevant tweets that move the markets. Our processing pipeline feeds directly to clients, journalists in the newsroom and powers several news analytic products offered by the company including trending companies and consumer sentiment for publicly traded equities.<br><br>
+    However, understanding user pragmatic intent in individual tweets would allow us to gain deeper insights and enable new applications. I will present several recent research studies focused on understanding intent including identifying complaints and the roles with which vulgarity is used in social media and how these can help improve applications such as sentiment analysis and hate speech detection.
+
 - filename: shirley-wu
   poster: /assets/img/club_photos/SSS-2020-10.pdf
   name: Shirley Wu
