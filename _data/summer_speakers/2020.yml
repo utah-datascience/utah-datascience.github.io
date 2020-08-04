@@ -11,6 +11,21 @@
 #  bio:
 #  abstract:
 
+- filename: jeff-phillips
+  poster: /assets/img/club_photos/SSS-2020-12.pdf
+  name: Jeff Phillips
+  personal_site: http://www.cs.utah.edu/~jeffp/
+  img: /assets/img/club_photos/j_phillips.jpg
+  date: August 7, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: A Primer on the Geometry in Machine Learning
+  bio: >
+    Jeff M. Phillips is an Associate Professor in the School of Computing at the University of Utah, and is the director of the Utah Center for Data Science.  His research focuses on algorithms for data science, a burgeoning area that includes data mining, machine learning, data management, visualization, statistics, and in his view computational geometry. He has particular interest in specialized topics including matrix sketching, coresets, kernel density estimates, and the geometry of word vector embeddings. His work is supported by an NSF CAREER Award and several other grants from NSF. He earned his PhD in Computer Science at Duke University in 2009, and a BS in Computer Science and BA in Mathematics from Rice University in 2003. At the Utah School of Computing he serves as the Director of the Data Science Program which oversees most educational programs related to computational aspects of data science at the university. As part of this role, he helped create the Data Management and Analysis track, a graduate certificate in data science, a Bachelors in Data Science, and more similar offerings on the way.
+  abstract: >
+    Machine Learning is a discipline filled with many simple geometric algorithms, the central task of which is usually classification. These varied approaches all take as input a set of n points in d dimensions, each with a label. In learning, the goal is to use this input data to build a function which predicts a label accurately on new data drawn from the same unknown distribution as the input data. The main difference in the many algorithms is largely a result of the chosen class of functions considered. This talk will take a quick tour through many approaches from simple to complex and modern, and show the geometry inherent at each step. Pit stops will include connections to geometric data structures, duality, random projections, range spaces, and coresets.
+    
+
 - filename: daniel-preotiuc-pietro
   poster: /assets/img/club_photos/SSS-2020-11.pdf
   name: Daniel Preotiuc-Pietro
