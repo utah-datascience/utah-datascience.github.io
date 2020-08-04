@@ -110,3 +110,35 @@ img.default {
     </div>
   </div>
 </div>
+
+___________________________________________________________
+
+<div style="margin-bottom: 1rem">
+<h2 style="margin-bottom: 1rem">Faculty Mentor</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
+      <img src="/assets/img/member_photos/vivek.png" alt="Picture of Vivek Srikumar" class="rounded shadow coordinator">
+    </div>
+    <div class="col-lg-9">
+        <h4>Vivek Srikumar</h4>
+        <h6>Associate Director of Student-Engagement, Utah Center for Data Science</h6>
+        <h6>Associate Professor, School of Computing, University of Utah</h6>
+      <p>His research deals with Machine Learning and Natural Language Processing.</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 1rem">
+<h2 style="margin-bottom: 1rem">Faculty Mentor</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
+      <img src="/assets/img/member_photos/jeff.png" alt="Picture of Jeff Phillips" class="rounded shadow coordinator">
+    </div>
+    <div class="col-lg-9">
+        <h4>Jeff Phillips</h4>
+        <h6>Director, Utah Center for Data Science</h6>
+        <h6>Associate Professor, School of Computing, University of Utah</h6>
+      <p>He specializes in designing algorithms for data science. This includes work in geometric data analysis, data mining, scaling to big data, spatial statistics, databases, and machine learning. His recent focus has been on understanding word vector embeddings, large-scale spatial statistics, approximations in kernel methods, and developing new streaming algorithms for core tasks in data analysis.</p>
+    </div>
+  </div>
+</div>
