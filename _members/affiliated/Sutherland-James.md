@@ -3,7 +3,7 @@ name: James Sutherland
 title: |
     Professor, Chemical Engineering, University of Utah
     Associate Chair, Chemical Engineering
-role: Affiliated Member
+role: Affiliated Members
 link: https://sutherland.che.utah.edu/
 pic: assets/img/member_photos/jcs_picture_1_tight-e1437622540971.png
 ---

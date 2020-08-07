@@ -3,7 +3,7 @@ name: Zac Imel
 title: |
     Associate Professor, Educational Psychology, University of Utah
     Adjunct Associate Professor, Psychiatry, University of Utah
-role: Affiliated Member
+role: Affiliated Members
 link: https://www.psychtxscilab.com/
 pic: assets/img/member_photos/z_imel.png
 ---

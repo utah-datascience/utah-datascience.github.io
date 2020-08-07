@@ -3,7 +3,7 @@ name: Sarang Joshi
 title: |
     Professor, Biomedical Engineering, University of Utah
     Faculty Member, Scientific Computing and Imaging (SCI) Institute, University of Utah
-role: Affiliated Member
+role: Affiliated Members
 link: https://www.sci.utah.edu/people/sjoshi.html
 pic: assets/img/member_photos/s_joshi.png
 ---
