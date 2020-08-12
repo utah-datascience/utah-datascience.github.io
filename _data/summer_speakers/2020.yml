@@ -11,6 +11,22 @@
 #  bio:
 #  abstract:
 
+- filename: vivek-srikumar
+  poster: /assets/img/club_photos/SSS-2020-13.pdf
+  name: Vivek Srikumar
+  personal_site: https://svivek.com/
+  img: /assets/img/club_photos/v_srikumar.jpg
+  date: August 14, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Fads, Fallacies and Fantasies in the Name of Machine Learning
+  bio: > 
+    Vivek Srikumar is associate assistant professor in the School of Computing at the University of Utah.  His research lies in the areas of natural learning processing and machine learning and has primarily been driven by questions arising from the need to reason about textual data with limited explicit supervision and to scale NLP to large problems. His work has been published in various AI, NLP and machine learning venues and has been recognized by paper awards from EMNLP and CoNLL. His work has been supported by awards from NSF, BSF, and NIH, and also from several companies.. He obtained his Ph.D. from the University of Illinois at Urbana-Champaign in 2013 and was a post-doctoral scholar at Stanford University.
+  abstract: >
+    The pervasiveness of machine learning, and artificial intelligence powered by it, is clear from even a cursory overview of the last several years of academic literature and mainstream technology reporting.
+    The goal of this talk is to provoke thought and discussions about the future of the field. To this end, I will talk about how, as a field, applied machine learning may be starting to bind itself into an intellectual monoculture. In particular, I will describe specific blinders that we may find hard to shake off: (a) the obsession with ranking and leaderboarding, (b) the assumption that purely data-driven computing is always the right answer, and (c) the excessive focus on clean toy problems in lieu of working with real data. Along the way, we will see several examples of questions that we may be able to think about if we cast aside these blinders.
+
+
 - filename: jeff-phillips
   poster: /assets/img/club_photos/SSS-2020-12.pdf
   name: Jeff Phillips
