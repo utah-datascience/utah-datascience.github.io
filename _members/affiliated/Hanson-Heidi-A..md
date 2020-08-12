@@ -7,7 +7,7 @@ title: |
     Co-Leader CTSA Early Life Exposures Working Group, Clinical and Tranlational Science Awards, Lifespan Domain Task Force
     Research Assistant Professor, Family And Preventive Medicine
     Assistant Professor, Surgery
-role: Affiliated Member
+role: Affiliated Members
 link: https://faculty.utah.edu/u0008154-Heidi_A_Hanson/contact/index.hml
 pic: assets/img/member_photos/h_hanson.jpg
 ---

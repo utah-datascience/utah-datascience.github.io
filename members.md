@@ -17,7 +17,7 @@ img.member {
 }
 </style>
 
-{% assign roles = "Director,Associate Director of Research,Associate Director of Outreach,Associate Director of Student-Engagement,Core Member,Affiliated Member" | split: "," %}
+{% assign roles = "Director,Associate Director of Research,Associate Director of Outreach,Associate Director of Student-Engagement,Core Members,Affiliated Members" | split: "," %}
 
 {% for role in roles %}
 <div style="margin-bottom: 1rem">
