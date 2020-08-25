@@ -26,13 +26,13 @@ img.speaker {
 </style>
 
 <!-- The table of speakers -->
-{% for speaker in site.data.summer_speakers['2020'] %}
-{% assign more_info = speaker.filename | prepend: "/club/sss-2020/" %}
+{% for speaker in site.data.club_speakers['summer_2020'] %}
+{% assign more_info = speaker.filename | prepend: "/club/speakers/summer_2020/" %}
 <div style="margin-bottom: 1rem">
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <center>
-        <img src="{{ speaker.img }}" alt="Picture of {{ speaker.name }}" class="rounded shadow speaker">
+        <img src="{{ speaker.img }}" alt="Picture of {{ speaker.speaker_name }}" class="rounded shadow speaker">
         {% if speaker.poster != null %}
           <p>Click <a href="{{ speaker.poster }}" target="_blank">here</a> for poster</p>
         {% endif %}
@@ -41,9 +41,9 @@ img.speaker {
     <div class="col-lg-9">
         <h4>
         {% if speaker.personal_site != null %}
-        <a href="{{speaker.personal_site}}" target="_blank">{{speaker.name}}</a>
+        <a href="{{ speaker.personal_site }}" target="_blank">{{ speaker.speaker_name }}</a>
         {% else %}
-        {{speaker.name}}
+        {{ speaker.speaker_name }}
         {% endif %}
         </h4>
         <h6>Presenting {{ speaker.date }} @ {{ speaker.time }} MDT</h6>

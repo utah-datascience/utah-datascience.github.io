@@ -1,7 +1,7 @@
 # Template for adding speakers
 #- filename:
 #  poster:
-#  name: 
+#  speaker_name: 
 #  personal_site: 
 #  img:
 #  date: 
@@ -13,7 +13,7 @@
 
 - filename: vivek-srikumar
   poster: /assets/img/club_photos/SSS-2020-13.pdf
-  name: Vivek Srikumar
+  speaker_name: Vivek Srikumar
   personal_site: https://svivek.com/
   img: /assets/img/club_photos/v_srikumar.jpg
   date: August 14, 2020
@@ -29,7 +29,7 @@
 
 - filename: jeff-phillips
   poster: /assets/img/club_photos/SSS-2020-12.pdf
-  name: Jeff Phillips
+  speaker_name: Jeff Phillips
   personal_site: http://www.cs.utah.edu/~jeffp/
   img: /assets/img/club_photos/j_phillips.jpg
   date: August 7, 2020
@@ -44,7 +44,7 @@
 
 - filename: daniel-preotiuc-pietro
   poster: /assets/img/club_photos/SSS-2020-11.pdf
-  name: Daniel Preotiuc-Pietro
+  speaker_name: Daniel Preotiuc-Pietro
   personal_site: https://www.preotiuc.ro/
   img: /assets/img/club_photos/d_preotiuc-pietro.jpg
   date: July 31, 2020
@@ -68,7 +68,7 @@
 
 - filename: shirley-wu
   poster: /assets/img/club_photos/SSS-2020-10.pdf
-  name: Shirley Wu
+  speaker_name: Shirley Wu
   personal_site: https://sxywu.com/
   img: /assets/img/club_photos/s_wu.jpg
   date: July 23, 2020
@@ -82,7 +82,7 @@
 
 - filename: satwik-kottur 
   poster: /assets/img/club_photos/SSS-2020-09.pdf
-  name: Satwik Kottur
+  speaker_name: Satwik Kottur
   personal_site: ~
   img: /assets/img/club_photos/s_kottur.jpg
   date: July 17, 2020
@@ -100,7 +100,7 @@
 
 - filename: unnat-jain
   poster: /assets/img/club_photos/SSS-2020-08.pdf
-  name: Unnat Jain
+  speaker_name: Unnat Jain
   personal_site:  https://unnat.github.io
   img: /assets/img/club_photos/u_jain.JPG
   date: July 10, 2020
@@ -117,7 +117,7 @@
 
 - filename: shruti-rijhwani
   poster: /assets/img/club_photos/SSS-2020-07.pdf
-  name: Shruti Rijhwani
+  speaker_name: Shruti Rijhwani
   personal_site: ~
   img: /assets/img/club_photos/s_rijhwani.jpg
   date: July 2, 2020
@@ -134,7 +134,7 @@
 
 - filename: sambaran-bandyopadhyay
   poster: /assets/img/club_photos/SSS-2020-06.pdf
-  name: Sambaran Bandyopadhyay
+  speaker_name: Sambaran Bandyopadhyay
   personal_site: ~
   img: /assets/img/club_photos/s_bandyopadhyay.png
   date: June 26, 2020
@@ -150,7 +150,7 @@
 
 - filename: ayan-mukhopadhyay
   poster: /assets/img/club_photos/SSS-2020-05.pdf
-  name: Ayan Mukhopadhyay
+  speaker_name: Ayan Mukhopadhyay
   personal_site: ~
   img: /assets/img/club_photos/a_mukhopadhyay.jpg
   date: June 19, 2020
@@ -164,7 +164,7 @@
 
 - filename: arpita-biswas
   poster: /assets/img/club_photos/SSS-2020-04.pdf
-  name: Arpita Biswas
+  speaker_name: Arpita Biswas
   personal_site: https://sites.google.com/view/arpitabiswas/
   img: /assets/img/club_photos/a_biswas.jpg
   date: June 12, 2020
@@ -179,7 +179,7 @@
 
 - filename: eunice-jun
   poster: /assets/img/club_photos/SSS-2020-03.pdf
-  name: Eunice Jun
+  speaker_name: Eunice Jun
   personal_site: https://homes.cs.washington.edu/~emjun/
   img: /assets/img/club_photos/e_jun.png
   date: May 29, 2020
@@ -193,7 +193,7 @@
 
 - filename: anirbit-mukherjee
   poster: /assets/img/club_photos/SSS-2020-02.pdf
-  name: Anirbit Mukherjee
+  speaker_name: Anirbit Mukherjee
   personal_site: https://sites.google.com/view/anirbit/home
   img: /assets/img/club_photos/a_mukherjee.jpg
   date: May 21, 2020
@@ -215,7 +215,7 @@
   
 - filename: nitish-gupta
   poster: ~
-  name: Nitish Gupta
+  speaker_name: Nitish Gupta
   personal_site: https://nitishgupta.github.io/
   img: /assets/img/club_photos/n_gupta.png
   date: May 14, 2020
