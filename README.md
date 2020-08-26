@@ -62,3 +62,13 @@ Add/delete/edit .md files in `_progrmas` folder to add/delete/edit members.
   Designed for landing page, does not defined a content box.
 * single
   Designed for content page, predefined a content box to include all content in a white backgound card.
+  
+## Scheduling Website Changes
+
+You can schedule a website change to occur at 00:01 any day by doing the following:
+
+1. Create a branch where you will make your changes.
+2. On your branch, make your changes and test them.
+3. Once you’re ready, you need to submit a Pull Request. At the very bottom of your Pull Request description, add `/schedule yyyy-mm-dd`. Your change will be merged to master at ~12:01 am on this date.
+
+This scheduler is implemented using the Merge Schedule GitHub Action. More information on this can be found [here](https://github.com/marketplace/actions/merge-schedule).

@@ -3,7 +3,7 @@ name: Olivia Sheng
 title: |
     Emma Eccles Jones Presidential Chair, Information Systems, University of Utah
     Faculty Member, David Eccles School of Business, University of Utah
-role: Affiliated Member
+role: Affiliated Members
 link: http://gkmc.utah.edu/people/olivia/intro.htm
 pic: assets/img/member_photos/o_sheng.png
 ---

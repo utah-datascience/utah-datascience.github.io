@@ -2,7 +2,7 @@
 name: Joel R. Brownstein
 title: |
     Research Associate Professor, Physics And Astronomy, University of Utah
-role: Affiliated Member
+role: Affiliated Members
 link: http://www.physics.utah.edu/~joelbrownstein/
 pic: assets/img/member_photos/joelbrownstein.png
 ---

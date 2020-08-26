@@ -1,0 +1,228 @@
+# Template for adding speakers
+#- filename:
+#  poster:
+#  name: 
+#  personal_site: 
+#  img:
+#  date: 
+#  venue:
+#  time: 
+#  title: 
+#  bio:
+#  abstract:
+
+- filename: vivek-srikumar
+  poster: /assets/img/club_photos/SSS-2020-13.pdf
+  name: Vivek Srikumar
+  personal_site: https://svivek.com/
+  img: /assets/img/club_photos/v_srikumar.jpg
+  date: August 14, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Fads, Fallacies and Fantasies in the Name of Machine Learning
+  bio: > 
+    Vivek Srikumar is associate assistant professor in the School of Computing at the University of Utah.  His research lies in the areas of natural learning processing and machine learning and has primarily been driven by questions arising from the need to reason about textual data with limited explicit supervision and to scale NLP to large problems. His work has been published in various AI, NLP and machine learning venues and has been recognized by paper awards from EMNLP and CoNLL. His work has been supported by awards from NSF, BSF, and NIH, and also from several companies.. He obtained his Ph.D. from the University of Illinois at Urbana-Champaign in 2013 and was a post-doctoral scholar at Stanford University.
+  abstract: >
+    The pervasiveness of machine learning, and artificial intelligence powered by it, is clear from even a cursory overview of the last several years of academic literature and mainstream technology reporting.
+    The goal of this talk is to provoke thought and discussions about the future of the field. To this end, I will talk about how, as a field, applied machine learning may be starting to bind itself into an intellectual monoculture. In particular, I will describe specific blinders that we may find hard to shake off: (a) the obsession with ranking and leaderboarding, (b) the assumption that purely data-driven computing is always the right answer, and (c) the excessive focus on clean toy problems in lieu of working with real data. Along the way, we will see several examples of questions that we may be able to think about if we cast aside these blinders.
+
+
+- filename: jeff-phillips
+  poster: /assets/img/club_photos/SSS-2020-12.pdf
+  name: Jeff Phillips
+  personal_site: http://www.cs.utah.edu/~jeffp/
+  img: /assets/img/club_photos/j_phillips.jpg
+  date: August 7, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: A Primer on the Geometry in Machine Learning
+  bio: >
+    Jeff M. Phillips is an Associate Professor in the School of Computing at the University of Utah, and is the director of the Utah Center for Data Science.  His research focuses on algorithms for data science, a burgeoning area that includes data mining, machine learning, data management, visualization, statistics, and in his view computational geometry. He has particular interest in specialized topics including matrix sketching, coresets, kernel density estimates, and the geometry of word vector embeddings. His work is supported by an NSF CAREER Award and several other grants from NSF. He earned his PhD in Computer Science at Duke University in 2009, and a BS in Computer Science and BA in Mathematics from Rice University in 2003. At the Utah School of Computing he serves as the Director of the Data Science Program which oversees most educational programs related to computational aspects of data science at the university. As part of this role, he helped create the Data Management and Analysis track, a graduate certificate in data science, a Bachelors in Data Science, and more similar offerings on the way.
+  abstract: >
+    Machine Learning is a discipline filled with many simple geometric algorithms, the central task of which is usually classification. These varied approaches all take as input a set of n points in d dimensions, each with a label. In learning, the goal is to use this input data to build a function which predicts a label accurately on new data drawn from the same unknown distribution as the input data. The main difference in the many algorithms is largely a result of the chosen class of functions considered. This talk will take a quick tour through many approaches from simple to complex and modern, and show the geometry inherent at each step. Pit stops will include connections to geometric data structures, duality, random projections, range spaces, and coresets.
+    
+
+- filename: daniel-preotiuc-pietro
+  poster: /assets/img/club_photos/SSS-2020-11.pdf
+  name: Daniel Preotiuc-Pietro
+  personal_site: https://www.preotiuc.ro/
+  img: /assets/img/club_photos/d_preotiuc-pietro.jpg
+  date: July 31, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Making sense of Twitter @ Bloomberg
+  bio: >
+    Daniel Preotiuc-Pietro is a Senior Research Scientist and team lead at Bloomberg LP, where he works on analyzing and building models for real-world large scale news mining and information extraction. His research interests are focused on understanding the social and temporal aspects of text, especially from social media, with applications in domains such as Social Psychology, Law, Political Science and Journalism. Several of his research studies were featured in popular press including the 
+    <a href="http://www.washingtonpost.com/news/wonkblog/wp/2015/10/23/what-you-do-on-twitter-reveals-how-much-money-you-make/" target="_blank">Washington Post</a>, 
+    <a href="http://www.bbc.com/news/technology-37727387" target="_blank">BBC</a>, 
+    <a href="https://www.newscientist.com/article/2089283-what-your-social-media-profile-photo-says-about-your-personality/" target="_blank">New Scientist</a>, 
+    <a href="http://www.scientificamerican.com/article/tweets-reveal-a-twitter-user-s-income-bracket/" target="_blank">Scientific American</a> or 
+    <a href="https://fivethirtyeight.com/features/political-twitter-is-no-place-for-moderates/" target="_blank">FiveThirtyEight</a>. He is a co-organizer of the 
+    <a href="http://nllpw.org/" target="_blank">Natural Legal Language Processing workshop series</a>. 
+    Prior to joining Bloomberg LP, Daniel was a postdoctoral researcher at the University of Pennsylvania with the interdisciplinary 
+    <a href="http://wwbp.org/" target="_blank">World Well Being Project</a> 
+    and obtained his PhD in Natural Language Processing and Machine Learning at the University of Sheffield, UK. 
+  abstract: >
+    The Bloomberg Terminal has provided ways for investors and journalists to sift through and understand the immense volume of tweets and discover financially-relevant content ever since the SEC approved the use of Twitter for company disclosures back in 2013. In the first part of the talk, I will showcase how tweets impact financial markets and how Bloomberg is using Natural Language Processing methods to identify financially relevant tweets that move the markets. Our processing pipeline feeds directly to clients, journalists in the newsroom and powers several news analytic products offered by the company including trending companies and consumer sentiment for publicly traded equities.<br><br>
+    However, understanding user pragmatic intent in individual tweets would allow us to gain deeper insights and enable new applications. I will present several recent research studies focused on understanding intent including identifying complaints and the roles with which vulgarity is used in social media and how these can help improve applications such as sentiment analysis and hate speech detection.
+
+- filename: shirley-wu
+  poster: /assets/img/club_photos/SSS-2020-10.pdf
+  name: Shirley Wu
+  personal_site: https://sxywu.com/
+  img: /assets/img/club_photos/s_wu.jpg
+  date: July 23, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Data Driven Art & Visualization
+  bio: >
+    Shirley Wu is an award-winning creative focused on data-driven art and visualizations.  She has worked with clients such as Google, The Guardian, SFMOMA, and NBC Universal to develop custom, highly interactive data visualizations.  She combines her love of art, math, and code into colorful, compelling narratives that push the boundaries of the web.  Her work can be found at <a href="https://sxywu.com/" target="_blank">sxywu.com</a>.
+  abstract: >
+    From visualizing a pandemic in game form (<a href="https://peopleofthepandemicgame.com/" target="_blank">here</a>), to creating awesome interactive art from Hamilton lyrics (<a href="https://pudding.cool/2017/03/hamilton/index.html" target="_blank">here</a>), Shirley Wu has done it all. In her talk, Shirley will tell us all about the art of telling stories with data. She'll walk us through some of her favourite and most adventurous projects, and how her work and mindset have evolved over time. Shirley recently restarted her <em>dataviz with shirley</em> Twitch livestream, where she explains and walks through her personal project ideas, from the data collection stage to a visualization. The series is streamed on Wednesdays and Fridays from 2:00pm - 3:00pm PST on <a href="https://www.twitch.tv/sxywu" target="_blank">her Twitch</a> and archived on youtube <a href="https://www.youtube.com/channel/UC4yYE5Qo1cOMeeALjvRDxYw" target="_blank">here</a>.
+
+- filename: satwik-kottur 
+  poster: /assets/img/club_photos/SSS-2020-09.pdf
+  name: Satwik Kottur
+  personal_site: ~
+  img: /assets/img/club_photos/s_kottur.jpg
+  date: July 17, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Visual Dialog - Towards Communicative Visual Agents
+  bio: >
+    Satwik Kottur is a research scientist at Facebook AI Applied Research (FAIAR), Menlo Park. He recently obtained his PhD degree (2019) from the Department of Electrical and Computer Engineering at Carnegie Mellon University, advised by Prof. José M. F. Moura; and his undergraduate degree from the Indian Institute of Technology Bombay, India (2014).<br><br>
+    His research interests are in solving high-level multimodal AI problems, specifically at the intersection of language and vision. His recent works explore communicative visual agents, which interact with humans in natural language about visual content. In the past, he has worked on problems related to video surveillance, scalable machine learning, and learning grounded word representations.<br><br>
+    He has been the recipient of the Snap Inc. Fellowship (2018), best paper award (EMNLP 2017, short paper), best reviewer award (NeurIPS 2017), and Carnegie Institute of Technology (CIT) Dean’s Fellowship (2014).
+  abstract: >
+    Humans interact with artificial intelligence (AI) systems on a day-to-day basis, for example, through natural language (search queries), speech (voice assistant), vision (face recognition), etc. However, the next generation of AI systems will need to go beyond these interactions and be able to hold a meaningful dialog with humans in natural language about visual content.<br><br>
+    In this talk, I will motivate and study such ‘Communicative Visual Agents’ through the novel task of visual dialog, which requires an agent to answer a series of questions grounded in an image, using the dialog history as context. Specifically, the talk will: (a) formalize visual dialog, laying emphasis on the role of dataset and objective evaluation to benchmark progress, (b) describe explicit reasoning models for visual dialog, and, (c) extend visual dialog to goal-driven, visual agents that have ubiquitous applications.
+
+
+- filename: unnat-jain
+  poster: /assets/img/club_photos/SSS-2020-08.pdf
+  name: Unnat Jain
+  personal_site:  https://unnat.github.io
+  img: /assets/img/club_photos/u_jain.JPG
+  date: July 10, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 11:00 am
+  title: >
+    Collaborative Embodied Agents
+  bio: >
+    Unnat is a Ph.D. student in Computer Science at UIUC working with Alex Schwing and Svetlana Lazebnik. Within computer vision and machine learning, he is currently looking into developing communicative embodied agents and interpreting their communication. He spent summers at Allen Institute for AI and Facebook AI Research as a research intern.<br><br>
+    Previously, he completed his MS in Computer Science at UIUC with the best thesis award and featured in the Siebel Scholars Class of 2018. Prior to joining Illinois, Unnat graduated with the Director’s Gold Medal from the Indian Institute of Technology, Kanpur. He was also awarded the Cadence Gold Medal for the best research thesis across all engineering departments. Learn more about Unnat at <a href="https://unnat.github.io/" target="_blank">https://unnat.github.io/</a>.
+  abstract: >
+    Recently we have seen an exciting confluence of fields to solve problems at the intersection of computer vision, reinforcement learning, and language understanding. Specifically, after achieving high accuracy on passive and curated datasets, computer vision researchers have moved to solve vision in interactive agents or embodied settings. However, current embodied agent research and tasks are narrowly focused on building AI for a single agent which is contrary to human interaction. Consequently, this talk will focus on building a collaborative framework for multiple embodied agents to solve demanding real-world tasks.<br><br>
+    If you are interested in learning about the interplay of RL and vision, multi-agent RL algorithms, or seeing what agents “talk” while collaborating to solve tasks -- join in for the talk. The relevant papers can be found on Unnat’s webpage: <a href="https://unnat.github.io/" target="_blank">https://unnat.github.io/</a>.
+
+- filename: shruti-rijhwani
+  poster: /assets/img/club_photos/SSS-2020-07.pdf
+  name: Shruti Rijhwani
+  personal_site: ~
+  img: /assets/img/club_photos/s_rijhwani.jpg
+  date: July 2, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 3:00 pm
+  title: >
+    Entity Linking for Low-Resource Languages
+  bio: >
+    Shruti Rijhwani is a PhD student at Carnegie Mellon University. Her primary research interest is multilingual natural language processing, with a focus on low-resource and endangered languages. Her research is supported by a Bloomberg Data Science Ph.D. Fellowship. Much of her published work focuses on improving named entity recognition and entity linking for low-resource languages and domains.
+  abstract: >
+    Entity linking is the task of associating a named entity with its corresponding entry in a structured knowledge base (such as Wikipedia or Freebase). Entity linking is an important component for the automatic understanding of natural language documents. While entity linking systems for languages such as English and Spanish are well-developed, the performance in low-resource languages is significantly worse.<br><br>
+    In this talk, we discuss existing methods for entity linking and the associated challenges of adapting them to low-resource languages. We then present a suite of methods developed for entity linking that does not rely heavily on resources in the target language. Through a variety of experiments, we show the success of our proposed methods on multiple languages, including extremely low-resource languages such as Tigrinya, Oromo, Lao and Uyghur.
+
+
+- filename: sambaran-bandyopadhyay
+  poster: /assets/img/club_photos/SSS-2020-06.pdf
+  name: Sambaran Bandyopadhyay
+  personal_site: ~
+  img: /assets/img/club_photos/s_bandyopadhyay.png
+  date: June 26, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Graph Representation Learning in the Presence of Outliers
+  bio: >
+    Sambaran Bandyopadhyay is an Advisory Research Engineer at IBM Research, India. He is also a final year PhD student at the department of Computer Science and Automation at Indian Institute of Science, Bangalore. Sambaran has published his research works in top tier AI conferences such as AAAI, IJCAI, KDD, WSDM, ICAPS, ECAI etc. and also has 8 patents filed to USPTO. He has been a member of the technical program committee of several AI conferences such as NeurIPS, ICML, AAAI, ECML-PKDD, etc.
+  abstract: >
+    Graph representation learning has received significant interest in the machine learning community. Different types of algorithms such as skip-gram based optimization, matrix factorization, deep-autoencoders and more recently, graph neural networks are proposed in the literature. Analysis of outliers in a graph is important as all real-life networks contain outlier nodes. A (community) outlier in a graph is a node which violets the overall community structure of the graph. Recent studies have shown that outlier nodes can affect the embeddings of other regular nodes in a graph. Further, their embeddings can get mixed easily with other regular nodes, which makes it difficult to detect them by post-processing. So, it is important to reduce the effect of outlier nodes on the embeddings of other nodes in a graph and detect them in an integrated way.<br><br>
+    In this talk, we will characterize different types of outliers present in an attributed graph. We discuss some recent approaches which integrate outlier detection and network embedding into a single framework, and hence minimize the effect of outliers on the embeddings of regular nodes in a graph. We would also present a set of experimental results to motivate the problem and to show the usefulness of such integrated approaches.
+
+
+- filename: ayan-mukhopadhyay
+  poster: /assets/img/club_photos/SSS-2020-05.pdf
+  name: Ayan Mukhopadhyay
+  personal_site: ~
+  img: /assets/img/club_photos/a_mukhopadhyay.jpg
+  date: June 19, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 11:30 am
+  title: Robust Incident Forecasting and Response
+  bio: >
+    Ayan Mukhopadhyay is a Post-Doctoral Research Fellow at the Stanford Intelligent Systems Lab at Stanford University, USA. His research interests include multi-agent systems, robust machine learning and decision-making under uncertainty. He was awarded the 2019 CARS post-doctoral fellowship by the Center of Automotive Research at Stanford (CARS). Before joining Stanford, he finished his PhD at Vanderbilt University’s Computational Economics Research Lab. His doctoral thesis was nominated for the Victor Lesser Distinguished Dissertation Award 2020. His work on urban emergency response management has been covered in the Government Technology Magazine, Financial Times, multiple global smart city summits, and received a best paper award at ICLR’s AI for Social Good Workshop.
+  abstract: >
+    Emergency response to spatial-temporal incidents like crimes and accidents is a major challenge in today’s world. This talk will focus on two problems in this context. In the first segment, we will look at how robust machine learning models can help combat crimes like illegal poaching. While there are a variety of incident prediction models available to identify spatial-temporal patterns in such incidents, they fail to take attacker evasion into account. Specifically, poachers can shift their spatial preferences for committing crimes by observing patrols. This talk will present a general framework that models the interaction between off-the-shelf machine learning algorithms and attackers as a Stackelberg game. We will look at how such a game model works and how it can be solved to design patrol strategies. In the second segment, the talk will focus on how creating decentralized multi-agent approaches can improve emergency response in urban areas.
+
+- filename: arpita-biswas
+  poster: /assets/img/club_photos/SSS-2020-04.pdf
+  name: Arpita Biswas
+  personal_site: https://sites.google.com/view/arpitabiswas/
+  img: /assets/img/club_photos/a_biswas.jpg
+  date: June 12, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 11:30 am
+  title: Two-Sided Fairness Guarantees for Recommendation Systems (<a href="https://arxiv.org/pdf/2002.10764.pdf" target = "_blank" style="text-decoration:underline;">arXiv</a>)
+  bio: >
+    Arpita Biswas is a Google Ph.D. Fellow at the Department of Computer Science and Automation, Indian Institute of Science. Her broad areas of interest include Game Theory, Optimization, and Machine Learning. She is presently looking at problems in Computational Social Choice Theory and Fairness in Machine Learning. Prior to her Ph.D., she worked as a Research Engineer at Xerox Research Centre India. Her work spans several research spaces such as multi-agent learning, incentive mechanisms, facility location, planning and scheduling, etc. Thus far, she has worked on problems arising from real-world scenarios like online crowd-sourcing, resource allocation, dynamic pricing in transportation, and ride-sharing. More details about her can be obtained at <a href href="https://sites.google.com/view/arpitabiswas/" target="_blank">https://sites.google.com/view/arpitabiswas/</a>.
+  abstract: >
+    Major B2C eCommerce websites (such as Amazon, Spotify, Swiggy) can be thought of as two-sided platforms, with customers on one side and producers on the other. Traditionally, recommendation protocols of these platforms are customer-centric---focusing on maximizing  customer satisfaction by tailoring the recommendation according to the personalized preferences of individual customers. However, this may lead to unfair distribution of exposure among the producers and adversely impact their well-being. As more and more people depend on such platforms to earn a living, it is important to strike a balance between fairness among the producers and customer satisfaction. The problem of two-sided fairness in recommendation can be formulated as a matroid constrained fair allocation problem. This problem naturally captures a number of other resource-allocation applications, including budgeted course allocation, graph partition, and allocation of cloud computing resources. Our main contribution is to develop polynomial time algorithms for fair allocation of indivisible items (with formal guarantees on fairness and feasibility) in several practical scenarios which can be formulated as matroid constrained problems.<br><br>
+    In this talk, I’ll start by motivating the problem and then defining some popular fairness notions. Next, I’ll discuss the matroid constrained fair allocation problem, and show how the solutions can be applied to ensure two-sided fair recommendation. I’ll conclude by listing down some open problems.
+
+- filename: eunice-jun
+  poster: /assets/img/club_photos/SSS-2020-03.pdf
+  name: Eunice Jun
+  personal_site: https://homes.cs.washington.edu/~emjun/
+  img: /assets/img/club_photos/e_jun.png
+  date: May 29, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: "Tea: A High-level Language and Runtime System for Automating Statistical Analysis"
+  bio: >
+    Eunice Jun is a PhD student in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. Her research focuses on developing new tools and methods for conducting valid and reproducible statistical analyses. She hopes to make conducting valid data analyses easy (and fun) for end-users. She incorporates methods and techniques from human-computer interaction, programming languages, software engineering, and data science. Her work has been supported by a UW CSE Wilma Bradley Fellowship and an NSF Graduate Research Fellowship.
+  abstract: >
+    Current statistical tools place the burden of valid, reproducible statistical analyses on the user. Users must have deep knowledge of statistics to not only identify their research questions, hypotheses, and domain assumptions but also select valid statistical tests for their hypotheses. As quantitative data become increasingly available in all disciplines, data analysis will continue to become a common task for people who may not have statistical expertise. Tea, a high-level declarative language for automating statistical test selection and execution, abstracts the details of analyses from users, empowering them to perform valid analyses by expressing their goals and domain knowledge. In this talk, I will discuss the design and implementation of Tea, lessons learned through the process, and other related ongoing work at the University of Washington. *<b>The talk is designed to be friendly for a non-technical audience with many opportunities for technical, conceptual, and other research-related questions.</b>*
+
+- filename: anirbit-mukherjee
+  poster: /assets/img/club_photos/SSS-2020-02.pdf
+  name: Anirbit Mukherjee
+  personal_site: https://sites.google.com/view/anirbit/home
+  img: /assets/img/club_photos/a_mukherjee.jpg
+  date: May 21, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Understanding training of depth 2 nets under minimal distributional assumptions and data poisoning attacks
+  bio: >
+    Anirbit, is a (final) year Ph.D. student in applied mathematics at the Johns Hopkins University advised by Prof. Amitabh Basu. He specializes in deep-learning theory and has been awarded 2 fellowships from JHU for this research, "Walter L.Robb Fellowship" and the inaugural "Mathematical Institute for Data Science Fellowship." Earlier, he was a researcher in Quantum Field Theory, while doing his undergrad in physics at the Chennai Mathematical Institute (CMI) and masters in theoretical physics at the Tata Institute of Fundamental Research (TIFR). For more details, you can visit his <a href="https://sites.google.com/view/anirbit/home" target="_blank">website</a>.
+  abstract: >
+    The question of provable training of neural nets is mathematically extremely challenging and vastly open. Over the last year, we have investigated certain special cases at depth 2 and have given provable guarantees in regimes hitherto unexplored. Our results probe the particularly challenging trifecta of having finitely large nets, while not tying the data to any specific distribution and while having an adversarial attack.
+    <br><br>
+    We will try to cover 3 of our results in this talk : (a) analysis of a simple stochastic algorithm which near-optimally provably trains a single ReLU gate in the realizable setting as well as under a data poisoning attack using only mild distributional assumptions, (b) showing that noise assisted gradient descent on a ReLU gate can be proven to be "diffusive" in nature without having to make any distributional assumptions beyond realizability and lastly (c) we demonstrate a class of iterative non-gradient algorithms ("Neuro-Tron") which can train a class of "singe filter" depth 2 nets under a data poisoning attack on true realizable labels s.t the error in the recovered weights scales inversely with the width above a certain finite threshold. This provably brings to light the advantage of having a large width when defending against an adversarial attack.
+    <br><br>
+    This talk will is based on our recently released two part series of works,
+    <ul>
+    <li>Part 1: <a href="https://arxiv.org/abs/2005.01699" target="_blank">https://arxiv.org/abs/2005.01699</a></li>
+    <li>Part 2: <a href="https://arxiv.org/abs/2005.04211" target="_blank">https://arxiv.org/abs/2005.04211</a></li>
+    </ul>
+  
+- filename: nitish-gupta
+  poster: ~
+  name: Nitish Gupta
+  personal_site: https://nitishgupta.github.io/
+  img: /assets/img/club_photos/n_gupta.png
+  date: May 14, 2020
+  venue: Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email
+  time: 12:00 pm
+  title: Neural Module Networks for Reasoning over Text
+  bio: >
+    Nitish is a senior PhD student in Computer Science at the University of Pennsylvania pursuing research in NLP. He is advised by Prof. Dan Roth and co-advised by Prof. Sameer Singh, UCI. Nitish's research focuses on developing structured models for grounded language understanding, primarily in the context of making machines understand and answer questions against text. He is particularly interested in models that perform reasoning by understanding the compositional nature of language, and are able to provide a formal semantic parse and an explanation about their predictions. For more details you can visit <a href="https://nitishgupta.github.io/" target="_blank">https://nitishgupta.github.io/</a>.
+  abstract: >
+    Answering compositional questions that require multiple steps of reasoning against text is challenging, especially when they involve discrete, symbolic operations. In this talk, I will outline the challenges in learning these models for non-synthetic questions on open-domain text, where a model needs to deal with the diversity of natural language and perform a broad range of reasoning. I will present our interpretable and modular neuro-symbolic approach based on neural module networks (NMNs) and show how we extend NMNs by: (a) introducing modules that reason over a paragraph of text, performing symbolic reasoning over numbers and dates in a probabilistic and differentiable manner; and (b) proposing unsupervised auxiliary loss to help learning. In conclusion, I will present our recent work on methods for achieving faithfull interpretations in such compositional models and challenges for future research.

@@ -3,7 +3,7 @@ name: Feifei Li
 title: |
     Professor, Computer Science, University of Utah
     ACM Distinguished Scientist
-role: Core Member
+role: Core Members
 link: http://www.cs.utah.edu/~lifeifei/
 pic: assets/img/member_photos/li.png
 ---

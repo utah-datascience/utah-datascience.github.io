@@ -5,7 +5,7 @@ title: |
     Director, Pedigree and Population Resource (Utah Population Database), Population Sciences, Huntsman Cancer Institute
     Adjunct Professor, Sociology Department, University of Utah
     Adjunct Professor, Biomedical Informatics, University of Utah
-role: Affiliated Member
+role: Affiliated Members
 link: https://faculty.utah.edu/u0030780-KEN_R_SMITH,_PhD/hm/index.hml
 pic: https://faculty.utah.edu/bytes/image.hml?id=u0030780&fullsize=true
 ---

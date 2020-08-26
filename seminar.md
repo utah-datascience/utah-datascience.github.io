@@ -15,6 +15,8 @@ header:
   background-image: /assets/img/header-background/zion-shorter.jpg
 ---
 
+We have canceled the remaining talks for the Spring 2020 semester due to the COVID-19 related shutdowns.  We hope we are able to have these restart in the Fall 2020 semester.  
+
 ## Next Seminar Talk
 {% include next_talks.html %}
 
