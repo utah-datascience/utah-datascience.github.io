@@ -1,3 +1,5 @@
+<div id="nextTalk"></div>
+
 <!-- For google calendar integration -->
 <script src="https://cdn.jsdelivr.net/npm/moment@2/moment.min.js"></script>
 <script src="https://apis.google.com/js/api.js"></script>
@@ -19,12 +21,10 @@
     calendarHTML += '</table>';
     var md = window.markdownit();
     var description = md.render(entry.description);
-    calendarHTML += `<div class="mt-3"><p style="white-space: pre-wrap;">${description}</p></div>`;
+    calendarHTML += `<div class="mt-3">${entry.description}</div>`;
     $('#nextTalk').html(calendarHTML);
   }
 
   // Loads the JavaScript client library and invokes `start` afterwards.
   gapi.load('client', fetchGoogleCalendarEvents);
 </script>
-
-<div id="nextTalk"></div>
