@@ -39,19 +39,26 @@ img.flier {
 			<div>
 			<h5>- Engineering Club Rush</h5>
 			Next on the slate for us at the Data Science Club is 
-			<a href="https://www.coe.utah.edu/students/current/club-rush/" target="_blank">Fall Engineering Club Rush</a>! Please join Todd, Serena, and Kori on Tuesday, Sept 1, 2020 @ 12:30 pm - 2:00 pm to learn more about our plans for this semester! You can find the Zoom link to our online table <a href="https://www.coe.utah.edu/students/current/club-rush/" target="_blank">here</a>.<br><br>
-			<h5>- Our First Social!</h5>
-			We'll be having an open Skribbl Social for students to learn more about the club and get some social interaction in during these isolating times. The date and Zoom link are TBD, but we hope to see you there (virtually)!
+			<a href="https://www.coe.utah.edu/students/current/club-rush/" target="_blank">Fall Engineering Club Rush</a>! Please join Kori & Todd on Tuesday, Sept 1, 2020 @ 12:30pm - 2:00pm to learn more about our plans for this semester! You can find the Zoom link to our online table <a href="https://www.coe.utah.edu/students/current/club-rush/" target="_blank">here</a>.<br><br>
+			<h5>- Fall Seminar Series</h5>
+			Our Fall Seminar Series is going to be merged with the public <a href="/seminar.html">UCDS Seminars</a> this semester. Talks are on Fridays, from 11:50am - 1:10pm and you can even get credit for going to them if you register for CS 7941. Our very own Vivek Gupta will be the first speaker <b>this Friday, August 26th</b>!
 			</div>
 		</div>
 	</div>
 </div>
 
+## Ready to Join?
+Thanks for the interest! We always welcome new members! Here's what you need to do to join us:
+* Join our Discord server [here](https://discordapp.com/channels/686300607564349586/709140651958206556/713477265333420082){: target="_blank"}
+* Take [this survey](https://docs.google.com/forms/d/e/1FAIpQLSf5sL5fB_Q06g3U_XQE_Sdx9ctwqCsdTOrTYUQE57Ie7GvgHA/viewform?usp=sf_link){: target="_blank"} for new and interested folx
+* Join our mailing list by following the instructions [here](http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar){: target="_blank"}
+* Do a happy dance! You're in!
+
+---
+
 ## Want to get in touch with us?
 
 We'd love for you to reach out to us about any events you'd like to happen, ideas you have, or interest you have in becoming involved in club leadership! To contact us directly, email Vivek Gupta at [keviv9@gmail.com](mailto:keviv9@gmail.com) or Kori South at [korianns@ymail.com](mailto:korianns@ymail.com).
-
----
 
 ## Resources
 

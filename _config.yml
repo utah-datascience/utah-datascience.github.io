@@ -7,22 +7,6 @@ collections:
     output: false
   members:
     output: false
-    
-plugins:
-  - jekyll-datapage-generator
-  
-# Specifies the automatic page generation for club speakers
-page_gen:
-# Comment back in once we have a fall speaker
-#- data: 'club_speakers.fall_2020'
-#  template: 'speaker'
-#  name: 'filename'
-#  dir: 'club/speakers/fall_2020'
-
-- data: 'club_speakers.summer_2020'
-  template: 'speaker'
-  name: 'filename'
-  dir: 'club/speakers/summer_2020'
 
 defaults:
   -
