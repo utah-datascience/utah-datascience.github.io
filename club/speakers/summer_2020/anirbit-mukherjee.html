@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="author" content="UCDS">
+<title>Understanding training of depth 2 nets under minimal distributional assumptions and data poisoning attacks - Utah Center for Data Science</title>
+<!-- Favicon -->
+<link rel="icon" href="/assets/img/brand/logo-favicon.png" type="image/png">
+<!-- Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+<!-- Icons -->
+<link rel="stylesheet" href="/assets/vendor/nucleo/css/nucleo.css">
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.min.css">
+<!-- Argon CSS -->
+<link rel="stylesheet" type="text/css" href="/assets/css/argon.css?v=1.0.1">
+<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+
+  </head>
+  <body>
+    <header class="header-global">
+          <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+      <div class="container">
+        <a class="navbar-brand mr-lg-4" href="/index.html">
+          <img src="/assets/img/brand/ucds-wordmark-dark.png">
+        </a>
+        <!-- Small menu button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+          aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global">
+          <!-- Small menu header -->
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="/index.html">
+                  <img src="/assets/img/brand/ucds-wordmark-light.png">
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
+                  aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- menu content -->
+         
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/members.html">
+                <i class="fa fa-address-card d-lg-inline"></i>
+                <span class="nav-link-inner--text">Members</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dataday.html">
+                <i class="fa fa-university d-lg-inline"></i>
+                <span class="nav-link-inner--text">Events</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/programs.html">
+                <i class="ni ni-hat-3 d-lg-inline"></i>
+                <span class="nav-link-inner--text">Programs</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/seminar.html">
+                <i class="fa fa-calendar d-lg-inline"></i>
+                <span class="nav-link-inner--text">Seminar</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/club.html">
+                <i class="fa fa-users d-lg-inline"></i>
+                <span class="nav-link-inner--text">Clubs</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/involve.html">
+                <i class="fa fa-briefcase d-lg-inline"></i>
+                <span class="nav-link-inner--text">Get Involved</span>
+              </a>
+            </li>
+          </ul>
+          <!-- <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+          
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" target="_blank" href="https://twitter.com/UUDataScience" 
+                 data-toggle="tooltip" title="@UUDataScience">
+                <i class="fa fa-twitter-square"></i>
+                <span class="nav-link-inner--text d-lg-none">Twitter</span>
+              </a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>
+
+    </header>  
+    <main>
+      
+  
+
+
+
+<div class="position-relative">
+    <!-- shape Hero -->
+    <section class="section section-lg section-shaped pb-250">
+        <div class="page__hero" style="background-image: url('/assets/img/header-background/zion-shorter.jpg');"></div>
+        <div class="container py-lg-md d-flex">
+            <div class="col px-0 ">
+                <div class="row text-center justify-content-center">
+                    <div class="col-lg-8">
+                        
+                        <h1 class="display-3 text-white">
+                            Summer Seminar Speaker
+
+                        </h1>
+                        
+                        
+                        <p class="lead  text-white primary-ex">
+                            Join our mailing list to receive the Seminar Zoom links via email.
+
+<p class="btn btn-neutral"><a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank">join our mailing list</a>
+<br />
+
+<p class="btn btn-neutral"><a href="https://www.youtube.com/playlist?list=PLMsvlws5lSAb2cIyqmb7Ae7_omPK0m9hK" target="_blank">Seminar Recordings</a>
+<br />
+
+<p class="btn btn-neutral"><a href="/club/coordinators">coordinators</a>
+
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SVG separator -->
+        <div class="separator separator-bottom separator-skew">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </section>
+    <!-- 1st Hero Variation -->
+</div>
+
+
+<section class="section pt-lg-0 mt--250">
+	<div class="container">
+		<div class="card card-profile shadow px-4 py-4">
+			<!-- Image styling -->
+			<style>
+				img.speaker {
+					width: 200px;
+					height: 286px;
+					object-fit: cover;
+				}
+			</style>
+
+			<center><a href="/club/summer-seminar-series"><<< Return to Summer Seminar Series</a></center>
+			<br>
+
+			<div style="margin-bottom: 1rem">
+				<div class="row" style="margin-bottom: 1rem">
+					<div class="col-lg-3">
+						<center>
+							<img src="/assets/img/club_photos/a_mukherjee.jpg" alt="Picture of Anirbit Mukherjee" class="rounded shadow speaker">
+						</center>
+					</div>
+					<div class="col-lg-9" style="display: flex; align-items:center;">
+						<div>
+							<h2>
+							
+								<a href="https://sites.google.com/view/anirbit/home" target="_blank">Anirbit Mukherjee</a>
+							
+							</h2>
+							<h6>Presenting May 21, 2020 @ 12:00 pm MDT</h6>
+							<p><div style="color:#cc3333; font-weight:bold; display:inline;">Venue: </div>Zoom Video Call - <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank" style="text-decoration:underline;">Subscribe to our Mailing List</a> to receive the link via email</p>
+							
+							<h6 style="display: inline;">Poster:</h6>
+							
+								<p style="display: inline;">See PDF <a href="/assets/img/club_photos/SSS-2020-02.pdf" target="_blank">here</a></p>
+							
+						</div>
+					</div>
+				</div>
+				
+				<hr />
+
+
+				<!-- Row for title -->
+				<div class="row" style="margin-bottom: 1rem">
+					<div class="col-lg">
+						<h6>Talk Title: Understanding training of depth 2 nets under minimal distributional assumptions and data poisoning attacks</h6>
+						<h6 style="display: inline;">Abstract:</h6>
+						<p style="display: inline;">The question of provable training of neural nets is mathematically extremely challenging and vastly open. Over the last year, we have investigated certain special cases at depth 2 and have given provable guarantees in regimes hitherto unexplored. Our results probe the particularly challenging trifecta of having finitely large nets, while not tying the data to any specific distribution and while having an adversarial attack. <br><br> We will try to cover 3 of our results in this talk : (a) analysis of a simple stochastic algorithm which near-optimally provably trains a single ReLU gate in the realizable setting as well as under a data poisoning attack using only mild distributional assumptions, (b) showing that noise assisted gradient descent on a ReLU gate can be proven to be "diffusive" in nature without having to make any distributional assumptions beyond realizability and lastly (c) we demonstrate a class of iterative non-gradient algorithms ("Neuro-Tron") which can train a class of "singe filter" depth 2 nets under a data poisoning attack on true realizable labels s.t the error in the recovered weights scales inversely with the width above a certain finite threshold. This provably brings to light the advantage of having a large width when defending against an adversarial attack. <br><br> This talk will is based on our recently released two part series of works, <ul> <li>Part 1: <a href="https://arxiv.org/abs/2005.01699" target="_blank">https://arxiv.org/abs/2005.01699</a></li> <li>Part 2: <a href="https://arxiv.org/abs/2005.04211" target="_blank">https://arxiv.org/abs/2005.04211</a></li> </ul>
+</p>
+						<br><br>
+						
+						<h6 style="display: inline;">Bio:</h6>
+						<p style="display: inline;">Anirbit, is a (final) year Ph.D. student in applied mathematics at the Johns Hopkins University advised by Prof. Amitabh Basu. He specializes in deep-learning theory and has been awarded 2 fellowships from JHU for this research, "Walter L.Robb Fellowship" and the inaugural "Mathematical Institute for Data Science Fellowship." Earlier, he was a researcher in Quantum Field Theory, while doing his undergrad in physics at the Chennai Mathematical Institute (CMI) and masters in theoretical physics at the Tata Institute of Fundamental Research (TIFR). For more details, you can visit his <a href="https://sites.google.com/view/anirbit/home" target="_blank">website</a>.
+</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+    </main>
+    <footer>
+      <div class="container">
+  <hr>
+  
+  <div class="row align-items-center justify-content-md-between">
+    <div class="col-lg-6 social-media-list">
+      <a href="mailto:datasci@utah.edu">
+          <i class="fa fa-envelope"></i> datasci@utah.edu
+      </a>
+&nbsp; &nbsp; &nbsp;
+        <a target="_blank" href="https://twitter.com/UUDataScience"
+          data-toggle="tooltip" data-original-title="@UUDataScience">
+        <i class="fa fa-twitter"></i> @UUDataScience
+      </a>
+    </div>
+
+    <div class="footer-logo">
+      <a href="/index.html">
+        <img src="/assets/img/brand/UlogoHv1-1200px.png">
+      </a>
+    </div>
+  </div>
+  <div class="row align-items-center col-sm-10">Copyright &copy; 2019-2020 the Utah Center for Data Science. All content on this website is licensed under the
+            <a href="http://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution license (CC BY).</a> &nbsp; Last updated on August 26, 2020.</div>
+</div>
+
+    </footer>
+      <!-- Core -->
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="/assets/vendor/popper/popper.min.js"></script>
+  <script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="/assets/vendor/headroom/headroom.min.js"></script>
+  <!-- Optional JS -->
+  <script src="/assets/vendor/onscreen/onscreen.min.js"></script>
+  <script src="/assets/vendor/nouislider/js/nouislider.min.js"></script>
+  <script src="/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <!-- Argon JS -->
+  <script src="/assets/js/argon.js?v=1.0.1"></script>
+
+  </body>
+</html>

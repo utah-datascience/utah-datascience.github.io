@@ -1,0 +1,84 @@
+---
+layout: default
+title: Summer Seminar Speaker
+header:
+  title: Summer Seminar Speaker
+  excerpt: |
+    Join our mailing list to receive the Seminar Zoom links via email.
+    
+    <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank">join our mailing list</a>
+    {: class="btn btn-neutral" }
+    <br>
+    
+    <a href="https://www.youtube.com/playlist?list=PLMsvlws5lSAb2cIyqmb7Ae7_omPK0m9hK" target="_blank">Seminar Recordings</a>
+    {: class="btn btn-neutral" }
+    <br>
+    
+    [coordinators](/club/coordinators)
+    {: class="btn btn-neutral" }
+---
+
+{% if page.header %}
+  {% include page__hero.html %}
+{% endif %}
+
+<section class="section pt-lg-0 mt--250">
+	<div class="container">
+		<div class="card card-profile shadow px-4 py-4">
+			<!-- Image styling -->
+			<style>
+				img.speaker {
+					width: 200px;
+					height: 286px;
+					object-fit: cover;
+				}
+			</style>
+
+			<center><a href="/club/summer-seminar-series"><<< Return to Summer Seminar Series</a></center>
+			<br>
+
+			<div style="margin-bottom: 1rem">
+				<div class="row" style="margin-bottom: 1rem">
+					<div class="col-lg-3">
+						<center>
+							<img src="{{ page.img }}" alt="Picture of {{ page.speaker_name }}" class="rounded shadow speaker">
+						</center>
+					</div>
+					<div class="col-lg-9" style="display: flex; align-items:center;">
+						<div>
+							<h2>
+							{% if page.personal_site != null %}
+								<a href="{{page.personal_site}}" target="_blank">{{ page.speaker_name }}</a>
+							{% else %}
+								{{ page.speaker_name }}
+							{% endif %}
+							</h2>
+							<h6>Presenting {{ page.date }} @ {{ page.time }} MDT</h6>
+							<p><div style="color:#cc3333; font-weight:bold; display:inline;">Venue: </div>{{ page.venue }}</p>
+							
+							<h6 style="display: inline;">Poster:</h6>
+							{% if page.poster != null %}
+								<p style="display: inline;">See PDF <a href="{{ page.poster }}" target="_blank">here</a></p>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+				
+				{{ "---" | markdownify }}
+
+				<!-- Row for title -->
+				<div class="row" style="margin-bottom: 1rem">
+					<div class="col-lg">
+						<h6>Talk Title: {{ page.title }}</h6>
+						<h6 style="display: inline;">Abstract:</h6>
+						<p style="display: inline;">{{ page.abstract }}</p>
+						<br><br>
+						
+						<h6 style="display: inline;">Bio:</h6>
+						<p style="display: inline;">{{ page.bio }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

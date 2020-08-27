@@ -45,12 +45,12 @@ img.default {
   <h2 style="margin-bottom: 1rem">Associate Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/club_photos/Serena.jpeg" alt="Picture of Serena Aeschilman" class="rounded shadow coordinator">
+      <img src="/assets/img/club_photos/serena.jpg" alt="Picture of Serena Aeschilman" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
         <h4>Serena Aeschilman</h4>
         <h6>Undergraduate Student</h6>
-      <p>Serena is a double major in Computer Science and Economics. She hopes to make a change by running for Congress, here in Utah, in 2024. She believes that there aren’t enough people in the government advocating for technology and wants to encourage more renewable energy supplies with the enegy demanding world we live in. She wants to be the first female with a Computer Science degree in the House of Representatives.</p>
+      <p>Serena is very ambitious. She is involved with many women in cs groups. She hopes to make a change by running for Congress in 2024. She believes that there aren’t enough people in the government advocating for technology and hopes to be the first female with a Computer Science degree in the House of Representatives. In her free time, Serena is a performing aerial acrobat. She is also a happy dog mom to a pup named Astro. Serena is very friendly, so don't hesitate to approach her in person or online if you need anything. If you want to get involved with some of the organizations she is involved with, reach out to her!</p>
     </div>
   </div>
 </div>
@@ -123,7 +123,7 @@ ___________________________________________________________
         <h4>Vivek Srikumar</h4>
         <h6>Associate Director of Student-Engagement, Utah Center for Data Science</h6>
         <h6>Associate Professor, School of Computing, University of Utah</h6>
-      <p>His research deals with Machine Learning and Natural Language Processing.</p>
+        <p>Vivek is a researcher whose focus lies in the domains of Natural Language Processing and Machine Learning. His research focuses on solving and exploring problems that arise when engineers try to scale NLP solutions to large problems, and when they try to teach a computer to reason about textual data with limited explicit supervision. His work has been published in various AI, NLP and machine learning venues and has been recognized by paper awards from EMNLP and CoNLL. His work has been supported by awards from the NSF, the BSF, the NIH, and several companies. He obtained his Ph.D. from the University of Illinois at Urbana-Champaign in 2013 and was a post-doctoral scholar at Stanford University.</p>
     </div>
   </div>
 </div>
@@ -138,7 +138,7 @@ ___________________________________________________________
         <h4>Jeff Phillips</h4>
         <h6>Director, Utah Center for Data Science</h6>
         <h6>Associate Professor, School of Computing, University of Utah</h6>
-      <p>He specializes in designing algorithms for data science. This includes work in geometric data analysis, data mining, scaling to big data, spatial statistics, databases, and machine learning. His recent focus has been on understanding word vector embeddings, large-scale spatial statistics, approximations in kernel methods, and developing new streaming algorithms for core tasks in data analysis.</p>
+        <p>Jeff specializes in designing algorithms for data science. This includes work in geometric data analysis, data mining, scaling to big data, spatial statistics, databases, and machine learning. His recent focus has been on understanding word vector embeddings, large-scale spatial statistics, approximations in kernel methods, and developing new streaming algorithms for core tasks in data analysis.</p>
     </div>
   </div>
 </div>
