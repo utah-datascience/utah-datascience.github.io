@@ -49,7 +49,7 @@ img.flier {
 
 ## Ready to Join?
 Thanks for the interest! We always welcome new members! Here's what you need to do to join us:
-* Join our Discord server [here](https://discordapp.com/channels/686300607564349586/709140651958206556/713477265333420082){: target="_blank"}
+* Join our Discord server [here](https://discord.gg/ySnSzRq){: target="_blank"}
 * Take [this survey](https://docs.google.com/forms/d/e/1FAIpQLSf5sL5fB_Q06g3U_XQE_Sdx9ctwqCsdTOrTYUQE57Ie7GvgHA/viewform?usp=sf_link){: target="_blank"} for new and interested folx
 * Join our mailing list by following the instructions [here](http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar){: target="_blank"}
 * Do a happy dance! You're in!
