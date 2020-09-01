@@ -6,8 +6,8 @@ header:
   excerpt: |
     Our mission is to help students learn about data science and machine learning through tutorials, presentations from industry professionals, and hands-on experience.
     
-    <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank">join our mailing list</a>
-    {: class="btn btn-neutral" }
+    [mailing list](http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar){: target="_blank"}
+    {: class="btn btn-neutral"}
     <br>
     
     [coordinators](/club/coordinators)
@@ -41,7 +41,7 @@ img.flier {
 			Next on the slate for us at the Data Science Club is 
 			<a href="https://www.coe.utah.edu/students/current/club-rush/" target="_blank">Fall Engineering Club Rush</a>! Please join Kori & Todd on Tuesday, Sept 1, 2020 @ 12:30pm - 2:00pm to learn more about our plans for this semester! You can find the Zoom link to our online table <a href="https://www.coe.utah.edu/students/current/club-rush/" target="_blank">here</a>.<br><br>
 			<h5>- Fall Seminar Series</h5>
-			Our Fall Seminar Series is going to be merged with the public <a href="/seminar.html">UCDS Seminars</a> this semester. Talks are on Fridays, from 11:50am - 1:10pm and you can even get credit for going to them if you register for CS 7941. Our very own Vivek Gupta will be the first speaker <b>this Friday, August 28th</b>!
+			Our Fall Seminar Series is going to be merged with the public <a href="/seminar.html">UCDS Seminars</a> this semester. Talks are on Fridays, from 11:50am - 1:10pm and you can even get credit for going to them if you register for CS 7941!
 			</div>
 		</div>
 	</div>
@@ -64,8 +64,9 @@ We'd love for you to reach out to us about any events you'd like to happen, idea
 
 Below are some resources to help you on your journey to learn data science! These resources only scratch the surface, so if you come across anything you find useful or enlightening please reach out to the club leadership so we can put it here.
 
-##### Our Summer Seminar Series Recordings
-<p style="margin-top: 0px;">Check out our <a href="/club/summer-seminar-series">Summer Seminar Series</a>. We recorded all of the talks for your viewing pleasure!</p>
+##### Our Seminar Recordings
+* Check out the ongoing UCDS Seminar [here](/seminar.html)! Recordings can be found [here](https://www.youtube.com/playlist?list=PLMsvlws5lSAYvUeDbu7xg526nTirjhIBQ){: target="_blank"}.
+* Check out our 2020 Summer Seminar Series [here](/club/summer-seminar-series). We [recorded](https://www.youtube.com/playlist?list=PLMsvlws5lSAb2cIyqmb7Ae7_omPK0m9hK){: target="_blank"} all of the talks for your viewing pleasure!
 
 ##### Python Introduction Resources
 * [Google for Education Python Introduction](https://developers.google.com/edu/python/){:target="_blank"}

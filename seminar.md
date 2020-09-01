@@ -6,7 +6,7 @@ header:
   excerpt: |
     Thursdays 12:15 to 1:30, MEB 3147, pizza served.
     
-    [poster](../assets/file/Spr20-poster-v2.pdf)
+    [recordings](https://www.youtube.com/playlist?list=PLMsvlws5lSAYvUeDbu7xg526nTirjhIBQ){: target="_blank"}
     {: class="btn btn-neutral"}
     [mailing list](http://mailman.cs.utah.edu/mailman/listinfo/UCDS-seminar)
     {: class="btn btn-neutral"}
