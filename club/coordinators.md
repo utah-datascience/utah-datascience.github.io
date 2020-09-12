@@ -45,7 +45,7 @@ img.default {
   <h2 style="margin-bottom: 1rem">Associate Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/club_photos/serena.jpg" alt="Picture of Serena Aeschilman" class="rounded shadow coordinator">
+      <img src="/assets/img/club_photos/Serena.jpg" alt="Picture of Serena Aeschilman" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
         <h4>Serena Aeschilman</h4>

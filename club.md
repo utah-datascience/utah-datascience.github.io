@@ -28,24 +28,23 @@ img.flier {
 </style>
 
 ## Coming Up
-<!-- <div style="margin-bottom: 1rem">
+<div style="margin-bottom: 1rem">
 	<div class="row" style="margin-bottom: 1rem">
 		<div class="col-lg-5">
-			<center><img class="shadow rounded flier" src="/assets/img/club_photos/club-rush.gif" alt="Club Rush Poster"/>
+			<center><img class="shadow rounded flier" src="/assets/img/club_photos/social-01-skribbl-mini.gif" alt="Skribbl Social Poster"/>
 			</center>
 			<br>
 		</div>
 		<div class="col-lg-7" style="display: flex; align-items:center;">
 			<div>
+				<h5>- Skribbl Social</h5>
+				Coming up next is our Skribbl Social on <b>Sept. 18, 2020 @ 4PM MT.</b> Join our mailing list to get the Zoom link. We look forward to seeing y'all there! Full poster <a href="/assets/img/club_photos/social-01-skribbl.pdf" target="_blank">here</a>.<br><br>
 				<h5>- Fall Seminar Series</h5>
 				Our Fall Seminar Series is going to be merged with the public <a href="/seminar.html">UCDS Seminars</a> this semester. Talks are on Fridays, from 11:50am - 1:10pm and you can even get credit for going to them if you register for CS 7941!
 			</div>
 		</div>
 	</div>
-</div> -->
-
-##### Fall Seminar Series
-Our Fall Seminar Series is going to be merged with the public <a href="/seminar.html">UCDS Seminars</a> this semester. Talks are on Fridays, from 11:50am - 1:10pm and you can even get credit for going to them if you register for CS 7941!
+</div>
 
 ## Ready to Join?
 Thanks for the interest! We always welcome new members! Here's what you need to do to join us:
