@@ -4,7 +4,7 @@ title: Data Science Club
 header:
   title: Data Science Club
   excerpt: |
-    Our mission is to help students learn about data science and machine learning through tutorials, presentations from industry professionals, and hands-on experience.
+    Our mission is to help students of all skill levels (first year to PhD) learn about data science and machine learning through tutorials, presentations from industry professionals, and hands-on experience.
     
     [mailing list](http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar){: target="_blank"}
     {: class="btn btn-neutral"}
