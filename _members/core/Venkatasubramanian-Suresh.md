@@ -1,6 +1,6 @@
 ---
 name: Suresh Venkatasubramanian
-role: Associate Director of Research
+role: Core Members
 title: |
     Professor, School of Computing, University of Utah
 link: http://www.cs.utah.edu/~suresh/index.html
