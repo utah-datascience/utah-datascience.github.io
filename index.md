@@ -24,7 +24,7 @@ feature_row:
     badge_color: default
   - icon: fa fa-university
     title: Data Day
-    excerpt: The 2019 Data Science Day will be held on October 18, 2019. More details to follow.
+    excerpt: There will be no Data Science Day in 2020 due to the pandemic.  See past highlights.
     url: /dataday.html
     btn_label: View details &raquo;
     btn_class: mt-4
