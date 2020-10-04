@@ -31,14 +31,14 @@ img.flier {
 <div style="margin-bottom: 1rem">
 	<div class="row" style="margin-bottom: 1rem">
 		<div class="col-lg-5">
-			<center><img class="shadow rounded flier" src="/assets/img/club_photos/social-01-skribbl-mini.gif" alt="Skribbl Social Poster"/>
+			<center><img class="shadow rounded flier" src="/assets/img/club_photos/workshop-01-python-mini.gif" alt="Intro Python Workshop Poster"/>
 			</center>
 			<br>
 		</div>
 		<div class="col-lg-7" style="display: flex; align-items:center;">
 			<div>
-				<h5>- Skribbl Social</h5>
-				Coming up next is our Skribbl Social on <b>Sept. 18, 2020 @ 4PM MT.</b> Join our mailing list to get the Zoom link. We look forward to seeing y'all there! Full poster <a href="/assets/img/club_photos/social-01-skribbl.pdf" target="_blank">here</a>.<br><br>
+				<h5>- Intro Python Workshop</h5>
+				Coming up next is our Intro Python Workshop on <b>Oct. 9, 2020 @ 4PM MT.</b> This will be led by Tajen Freeman and Kori South, and will cover the basics of Python, from installation to basic code. Join our mailing list to get the Zoom link. We look forward to seeing y'all there!<br><br>
 				<h5>- Fall Seminar Series</h5>
 				Our Fall Seminar Series is going to be merged with the public <a href="/seminar.html">UCDS Seminars</a> this semester. Talks are on Fridays, from 11:50am - 1:10pm and you can even get credit for going to them if you register for CS 7941!
 			</div>
@@ -46,10 +46,10 @@ img.flier {
 	</div>
 </div>
 
+
 ## Ready to Join?
 Thanks for the interest! We always welcome new members! Here's what you need to do to join us:
 * Join our Discord server [here](https://discord.gg/ySnSzRq){: target="_blank"}
-* Take [this survey](https://docs.google.com/forms/d/e/1FAIpQLSf5sL5fB_Q06g3U_XQE_Sdx9ctwqCsdTOrTYUQE57Ie7GvgHA/viewform?usp=sf_link){: target="_blank"} for new and interested folx
 * Join our mailing list by following the instructions [here](http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar){: target="_blank"}
 * Do a happy dance! You're in!
 
