@@ -31,14 +31,14 @@ img.flier {
 <div style="margin-bottom: 1rem">
 	<div class="row" style="margin-bottom: 1rem">
 		<div class="col-lg-5">
-			<center><img class="shadow rounded flier" src="/assets/img/club_photos/workshop-01-python-mini.gif" alt="Intro Python Workshop Poster"/>
+			<center><img class="shadow rounded flier" src="/assets/img/club_photos/social-02-qa-mini.gif" alt="Intro Python Workshop Poster"/>
 			</center>
 			<br>
 		</div>
 		<div class="col-lg-7" style="display: flex; align-items:center;">
 			<div>
-				<h5>- Intro Python Workshop</h5>
-				Coming up next is our Intro Python Workshop on <b>Oct. 9, 2020 @ 4PM MT.</b> This will be led by Tajen Freeman and Kori South, and will cover the basics of Python, from installation to basic code. Join our mailing list to get the Zoom link. We look forward to seeing y'all there!<br><br>
+				<h5>- October Social</h5>
+                We are having a social lead by two of our officers, this <b>Friday, Oct. 23 @ 5PM</b>! Come chat with them and ask about their experiences in data science! If you don't have questions, come mingle with others with an interest in data science! Join our mailing list or Discord Server to get the Zoom link. We look forward to seeing y'all there!<br><br>
 				<h5>- Fall Seminar Series</h5>
 				Our Fall Seminar Series is going to be merged with the public <a href="/seminar.html">UCDS Seminars</a> this semester. Talks are on Fridays, from 11:50am - 1:10pm and you can even get credit for going to them if you register for CS 7941!
 			</div>
