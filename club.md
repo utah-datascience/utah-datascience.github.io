@@ -31,14 +31,14 @@ img.flier {
 <div style="margin-bottom: 1rem">
 	<div class="row" style="margin-bottom: 1rem">
 		<div class="col-lg-5">
-			<center><img class="shadow rounded flier" src="/assets/img/club_photos/alberto-cairo-mini.gif" alt="Alberto Cairo Poster"/>
+			<center><img class="shadow rounded flier" src="/assets/img/club_photos/workshop-02.gif" alt="Intro to Web-scraping Flier"/>
 			</center>
 			<br>
 		</div>
 		<div class="col-lg-7" style="display: flex; align-items:center;">
 			<div>
-				<h5>- Data Visualization: How to Make Good Decisions</h5>
-                University of Miami's Alberto Cairo will be presenting <em>Data Visualization: How to Make Good Decisions</em>, this <b>Friday, Oct. 30 @ 3:30PM</b>! Join our mailing list or Discord Server to get the Zoom link. We look forward to seeing y'all there! More info <a href="/club/alberto-cairo.html">here</a>.<br><br>
+				<h5>- Intro to Web-Scraping Workshop</h5>
+                Tajen Freeman and Kori South will be leading an Intro to Web-scraping Workshop in Python this <b>Friday, Nov. 20 @ 5:00PM</b>! Join our mailing list or Discord Server to get the Zoom link. We look forward to seeing y'all there!<br><br>
 				<h5>- Fall Seminar Series</h5>
 				Our Fall Seminar Series is going to be merged with the public <a href="/seminar.html">UCDS Seminars</a> this semester. Talks are on Fridays, from 11:50am - 1:10pm and you can even get credit for going to them if you register for CS 7941!
 			</div>
