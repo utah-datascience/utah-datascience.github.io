@@ -4,10 +4,10 @@ title: Data Science Seminar
 header:
   title: Data Science Seminar
   excerpt: |
-    Fridays 11:50am to 1:10pm, Zoom
+    Fridays 1:50pm to 3:00pm, Zoom
     
-    [poster](/assets/file/Fall20-poster.pdf){: target="_blank"}
-    {: class="btn btn-neutral"}
+    <!--[poster](/assets/file/Fall20-poster.pdf){: target="_blank"}
+    {: class="btn btn-neutral"}-->
     [mailing list](http://mailman.cs.utah.edu/mailman/listinfo/UCDS-seminar)
     {: class="btn btn-neutral"}
     [Calendar](https://calendar.google.com/calendar?cid=ZWtvbDd1bHFtMTRudjE1NWFuZ3V0MnJsZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
