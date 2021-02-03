@@ -31,16 +31,16 @@ img.flier {
 <div style="margin-bottom: 1rem">
 	<div class="row" style="margin-bottom: 1rem">
 		<div class="col-lg-5">
-			<center><img class="shadow rounded flier" src="/assets/img/club_photos/workshop-02.gif" alt="Intro to Web-scraping Flier"/>
+			<center><img class="shadow rounded flier" src="/assets/img/club_photos/opening-social-mini.gif" alt="Opening Social Flier"/>
 			</center>
 			<br>
 		</div>
 		<div class="col-lg-7" style="display: flex; align-items:center;">
 			<div>
-				<h5>- Intro to Web-Scraping Workshop</h5>
-                Tajen Freeman and Kori South will be leading an Intro to Web-scraping Workshop in Python this <b>Friday, Nov. 20 @ 5:00PM</b>! Join our mailing list or Discord Server to get the Zoom link. We look forward to seeing y'all there!<br><br>
-				<h5>- Fall Seminar Series</h5>
-				Our Fall Seminar Series is going to be merged with the public <a href="/seminar.html">UCDS Seminars</a> this semester. Talks are on Fridays, from 11:50am - 1:10pm and you can even get credit for going to them if you register for CS 7941!
+				<h5>- Opening Social</h5>
+                Kori, Todd & Serena will host our opening social this <b>Friday, Feb. 5 @ 5:00PM</b>! Join our mailing list or Discord Server to get the Zoom link. It's BYOFB (Bring Your Own Fancy Beverage), and we look forward to seeing y'all there!<br><br>
+				<h5>- A Talk with Bamboo HR</h5>
+				We'll be hosting Alan from BambooHR on <b>Feb. 12 @ 3:30PM</b>, who'll be talking about how they use AI to help a business feel more like a friend to customers. (Poster <a target="_blank" href="/assets/img/club_photos/bamboohr.pdf">here</a>.) We'll have an open Q&A after the talk. Students of all levels are welcome!
 			</div>
 		</div>
 	</div>
@@ -67,6 +67,9 @@ Below are some resources to help you on your journey to learn data science! Thes
 ##### Our Seminar Recordings
 * Check out the ongoing UCDS Seminar [here](/seminar.html)! Recordings can be found [here](https://www.youtube.com/playlist?list=PLMsvlws5lSAYvUeDbu7xg526nTirjhIBQ){: target="_blank"}.
 * Check out our 2020 Summer Seminar Series [here](/club/summer-seminar-series). We [recorded](https://www.youtube.com/playlist?list=PLMsvlws5lSAb2cIyqmb7Ae7_omPK0m9hK){: target="_blank"} all of the talks for your viewing pleasure!
+
+##### Resources for Finding Data Science Progams
+* [Data Science Programs](https://www.datascienceprograms.org/){:target="_blank"} - This is a comprehensive guide for Data Science that includes career profiles, licensing and certification data by state, interviews with Data Science professionals, and occupational outlooks for the industry.
 
 ##### Python Introduction Resources
 * [Google for Education Python Introduction](https://developers.google.com/edu/python/){:target="_blank"}
