@@ -27,26 +27,24 @@ img.flier {
 }
 </style>
 
+<!--
 ## Coming Up
 <div style="margin-bottom: 1rem">
 	<div class="row" style="margin-bottom: 1rem">
 		<div class="col-lg-5">
-			<center><img class="shadow rounded flier" src="/assets/img/club_photos/opening-social-mini.gif" alt="Opening Social Flier"/>
+			<center><img class="shadow rounded flier" src="/assets/img/club_photos/ClubLogo.png" alt="Data Science Club Logo"/>
 			</center>
 			<br>
 		</div>
 		<div class="col-lg-7" style="display: flex; align-items:center;">
 			<div>
-				<h5>- Opening Social</h5>
-                Kori, Todd & Serena will host our opening social this <b>Friday, Feb. 5 @ 5:00PM</b>! Join our mailing list or Discord Server to get the Zoom link. It's BYOFB (Bring Your Own Fancy Beverage), and we look forward to seeing y'all there!<br><br>
-				<h5>- A Talk with Bamboo HR</h5>
-				We'll be hosting Alan from BambooHR on <b>Feb. 12 @ 3:30PM</b>, who'll be talking about how they use AI to help a business feel more like a friend to customers. (Poster <a target="_blank" href="/assets/img/club_photos/bamboohr.pdf">here</a>.) We'll have an open Q&A after the talk. Students of all levels are welcome!
+				<h5>- TBD</h5>
+                We don't have any thing planned right now, but stay tuned for our upcoming social and Data Visualization workshop!<br><br>
 			</div>
 		</div>
 	</div>
 </div>
-
-
+-->
 
 ## Ready to Join?
 Thanks for the interest! We always welcome new members! Here's what you need to do to join us:
@@ -65,7 +63,8 @@ We'd love for you to reach out to us about any events you'd like to happen, idea
 Below are some resources to help you on your journey to learn data science! These resources only scratch the surface, so if you come across anything you find useful or enlightening please reach out to the club leadership so we can put it here.
 
 ##### Our Seminar Recordings
-* Check out the ongoing UCDS Seminar [here](/seminar.html)! Recordings can be found [here](https://www.youtube.com/playlist?list=PLMsvlws5lSAYvUeDbu7xg526nTirjhIBQ){: target="_blank"}.
+* [UCDS Seminar, Spring 2021](https://youtube.com/playlist?list=PLMsvlws5lSAb4i3Aa14Xf3Cajm4BCToVR){: target="_blank"}.
+* [UCDS Seminar, Fall 2020](https://www.youtube.com/playlist?list=PLMsvlws5lSAYvUeDbu7xg526nTirjhIBQ){: target="_blank"}.
 * Check out our 2020 Summer Seminar Series [here](/club/summer-seminar-series). We [recorded](https://www.youtube.com/playlist?list=PLMsvlws5lSAb2cIyqmb7Ae7_omPK0m9hK){: target="_blank"} all of the talks for your viewing pleasure!
 
 ##### Resources for Finding Data Science Progams
