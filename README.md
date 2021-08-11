@@ -6,19 +6,20 @@ Original theme: https://jamstack-argon-design.appseed.us/index.html
 For the first time, after installing ruby-dev, install jekyll:
 ```shell
 gem install jekyll bundler
-bundle install
 ```
 To serve the website locally, run
 ```shell
-bundle exec jekyll serve
+jekyll serve
 ```
 
 ## Content Edit
 
 ### Members
-Add/delete/edit .md files in `_members` folder to add/delete/edit members.
+Add/delete/edit .md files in `_members` directory to add/delete/edit members. 
 
-Members in the same role are sorted by the file name. Please name them in format `Lastname-Firstname-Middlename.md`. Here is an example file content:
+`Director, Associate Director of Research, ...` are called *roles*, order and available values for role are hard coded in `members.md` file.
+
+Members in the same role are sorted by the file name. Please name them in the format like `Lastname-Firstname-Middlename.md`. Here is an example file content:
 
 ```YAML
 ---
@@ -37,12 +38,12 @@ The available variables are:
 | Variable | Description |
 | -------- | ------------- |
 | name     | The name of the member to be shown.    |
-| role     | Under which role to diplay the member. |
+| role     | Under which role to diplay the member. Available values are hard coded in `members.md` file.|
 | title    | Title of the member to be display under the name. Using block style indicator `|` to keep newlines between multiline. |
 | link     | The link for the photo and name. |
 | pic      | The photo of the member. It can be an exist link to an image, or a path to the image. |
 
-> **_NOTE:_**  The subfolders (affiliated, core, and leadership) under `_members` is meaningless, they exist only for convenient maintaining. To show member under a role, the role variable in the YAML _front matter_ block has to be signed with a right role.
+> **_NOTE:_**  The subfolders (affiliated, core, and leadership) under `_members` have no effects. They exist only for organizing these files. To show member under a role, set the role variable in its .md file with a right value.
 
 ### progrmas
 Add/delete/edit .md files in `_progrmas` folder to add/delete/edit members.
