@@ -3,10 +3,14 @@
 Original theme: https://jamstack-argon-design.appseed.us/index.html
 
 ## Local run
-For the first time, install [jekyll](https://jekyllrb.com/docs/installation/):
-To serve the website locally, run
+* For the first time, install [jekyll](https://jekyllrb.com/docs/installation/), if windows, you may need further run `bundle add webrick`.
+Then run
 ```shell
-jekyll serve
+bundle install
+```
+* To serve the website locally, run
+```shell
+bundle exec jekyll serve
 ```
 
 ## Content Edit
