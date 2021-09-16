@@ -3,6 +3,7 @@ title: Coordinators
 header:
   title: Club Coordinators
   excerpt: |
+    Coordinators are listed in alphabetical order by last name.
   
     <a href="http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar" target="_blank">join our mailing list</a>
     {: class="btn btn-neutral" }
@@ -42,7 +43,7 @@ img.default {
 </div>
 
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Associate Coordinator</h2>
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <img src="/assets/img/club_photos/Serena.jpg" alt="Picture of Serena Aeschilman" class="rounded shadow coordinator">
@@ -56,7 +57,7 @@ img.default {
 </div>
 
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Associate Coordinator</h2>
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <img src="/assets/img/club_photos/Todd.jpeg" alt="Picture of Todd Derrick" class="rounded shadow coordinator">
@@ -70,7 +71,7 @@ img.default {
 </div>
 
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Associate Coordinator</h2>
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <img src="/assets/img/club_photos/Tajen.png" alt="Picture of Tajen Freeman" class="rounded shadow coordinator">
@@ -83,7 +84,7 @@ img.default {
   </div>
 </div>
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Associate Coordinator</h2>
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <img src="/assets/img/club_photos/Pranav.jpeg" alt="Picture of Pranav Rajan" class="rounded shadow coordinator">
@@ -98,7 +99,7 @@ img.default {
 
 
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Associate Coordinator</h2>
+  <h2 style="margin-bottom: 1rem">President</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <img src="/assets/img/club_photos/Kori.jpeg" alt="Picture of Kori South" class="rounded shadow coordinator">
@@ -117,13 +118,13 @@ ___________________________________________________________
 <h2 style="margin-bottom: 1rem">Faculty Mentor</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/member_photos/vivek.png" alt="Picture of Vivek Srikumar" class="rounded shadow coordinator">
+      <img src="/assets/img/member_photos/little.png" alt="Picture of Professor Anna Little" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
-        <h4>Vivek Srikumar</h4>
+        <h4>Anna Little</h4>
         <h6>Associate Director of Student-Engagement, Utah Center for Data Science</h6>
-        <h6>Associate Professor, School of Computing, University of Utah</h6>
-        <p>Vivek is a researcher whose focus lies in the domains of Natural Language Processing and Machine Learning. His research focuses on solving and exploring problems that arise when engineers try to scale NLP solutions to large problems, and when they try to teach a computer to reason about textual data with limited explicit supervision. His work has been published in various AI, NLP and machine learning venues and has been recognized by paper awards from EMNLP and CoNLL. His work has been supported by awards from the NSF, the BSF, the NIH, and several companies. He obtained his Ph.D. from the University of Illinois at Urbana-Champaign in 2013 and was a post-doctoral scholar at Stanford University.</p>
+        <h6>Assistant Professor, Department of Mathematics, University of Utah</h6>
+        <p>Anna’s research focus is developing and analyzing novel methods for finding structure in noisy, high-dimensional data using tools from probability, random matrix theory, graph theory, linear algebra, harmonic analysis, and machine learning. Although she am a mathematician by training, she also pursues inter-disciplinary collaborations where she can utilize tools from machine learning in domain specific areas including RNA data analysis and cybersecurity.</p>
     </div>
   </div>
 </div>

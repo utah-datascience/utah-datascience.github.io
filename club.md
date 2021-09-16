@@ -25,26 +25,32 @@ img.flier {
   height: 350px;
   object-fit: cover;
 }
+img.big-flier {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
 </style>
 
-<!--
 ## Coming Up
 <div style="margin-bottom: 1rem">
 	<div class="row" style="margin-bottom: 1rem">
-		<div class="col-lg-5">
-			<center><img class="shadow rounded flier" src="/assets/img/club_photos/ClubLogo.png" alt="Data Science Club Logo"/>
+		<div class="col-lg-6">
+			<center><img class="shadow rounded big-flier" src="/assets/img/club_photos/movie-night-mini.gif" alt="Movie Night Mini Flier"/>
 			</center>
 			<br>
 		</div>
-		<div class="col-lg-7" style="display: flex; align-items:center;">
+		<div class="col-lg-6" style="display: flex; align-items:center;">
 			<div>
-				<h5>- TBD</h5>
-                We don't have any thing planned right now, but stay tuned for our upcoming social and Data Visualization workshop!<br><br>
+				<h5><em>The Imitation Game</em> Movie Night</h5>
+				Sept. 27, 2021 @ 5PM MT, MEB 3147.<br><br>
+				<em>The Imitation Game</em> is a movie about Alan Turing, who is widely recognized as the father of theoretical computing. For more information about the movie, check out the movie's <a href="https://www.imdb.com/title/tt2084970/" target="_blank">IMDB page</a>.<br><br>
+				We are partnering with Amazon Prime Student to host this event, and they will be providing awesome snacks for us! Learn more about Amazon Prime Student and the excellent discounts students can receive through it <a href="https://primestudent.co/uofutah2" target="_blank">here</a>.
+                <br><br>
 			</div>
 		</div>
 	</div>
 </div>
--->
 
 ## Ready to Join?
 Thanks for the interest! We always welcome new members! Here's what you need to do to join us:
@@ -56,7 +62,7 @@ Thanks for the interest! We always welcome new members! Here's what you need to 
 
 ## Want to get in touch with us?
 
-We'd love for you to reach out to us about any events you'd like to happen, ideas you have, or interest you have in becoming involved in club leadership! To contact us directly, email Vivek Gupta at [keviv9@gmail.com](mailto:keviv9@gmail.com) or Kori South at [korianns@ymail.com](mailto:korianns@ymail.com).
+We'd love for you to reach out to us about any events you'd like to happen, ideas you have, or interest you have in becoming involved in club leadership! To contact us directly, email the club at [uofudatascienceclub@gmail.com](mailto:uofudatascienceclub@gmail.com).
 
 ## Resources
 
