@@ -53,10 +53,18 @@ img.big-flier {
 </div>
 
 ## Ready to Join?
-Thanks for the interest! We always welcome new members! Here's what you need to do to join us:
+
+Thanks for the interest! We always welcome new members!
+
+To officially become a member, here's what you need to do:
+
+* Join us on GetInvolved [here](https://getinvolved.utah.edu/organization/datascienceclub){: target="_blank"}
+
+To get updates about club events and happenings:
+
 * Join our Discord server [here](https://discord.gg/ySnSzRq){: target="_blank"}
 * Join our mailing list by following the instructions [here](http://mailman.cs.utah.edu/mailman/listinfo/ucds-seminar){: target="_blank"}
-* Do a happy dance! You're in!
+* Follow us on Instagram [@uudatascience](https://www.instagram.com/uudatascience/){: target="_blank"}
 
 ---
 
