@@ -83,6 +83,7 @@ img.default {
     </div>
   </div>
 </div>
+
 <div style="margin-bottom: 1rem">
   <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
@@ -97,6 +98,19 @@ img.default {
   </div>
 </div>
 
+<div style="margin-bottom: 1rem">
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
+      <img src="/assets/img/club_photos/Ayushi_Sharma.JPG" alt="Picture of Ayushi Sharma" class="rounded shadow coordinator">
+    </div>
+    <div class="col-lg-9">
+        <h4>Ayushi Sharma</h4>
+        <h6>Undergraduate Student</h6>
+      <p>Ayushi is a Computer Science Master's student at the University of Utah. She is an ardent learner who aims to solve problems efficiently. Problem-solving and Algorithms are the space where she locates her most grounded inclination. In 2018 she completed her bachelor's in Computer Science from the National Institute of Technology at Hamirpur, INDIA. After that, she had worked for three years for Oracle Financial Analytical Application - Enterprise Risk and Finance. She loves to paint, draw doodles, and owns an Instagram handle( @thedoodlish) to showcase her art. Ayushi is a potter head and is always up for a discussion on Algorithms and Harry Potter Series.</p>
+    </div>
+  </div>
+</div>
 
 <div style="margin-bottom: 1rem">
   <h2 style="margin-bottom: 1rem">President</h2>
