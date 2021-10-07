@@ -32,20 +32,6 @@ img.default {
   <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/club_photos/Vivek.jpg" alt="Picture of Vivek Gupta" class="rounded shadow coordinator">
-    </div>
-    <div class="col-lg-9">
-        <h4>Vivek Gupta</h4>
-        <h6>PhD Student</h6>
-      <p>Vivek is a PhD student at the School of Computing, University of Utah. Previously, he was working as a Research Fellow in Microsoft Research Lab, India, in Machine Learning and Natural Language Processing group. He graduated as a dual degree student in the Department of Computer Science and Engineering at IIT Kanpur in 2016. He is broadly interested in research in the field of Machine Learning and Natural Language Processing. He was the first coordinator of Special Interest in Machine Learning (SIGML), IIT Kanpur. To know more about his current research interest, you can visit his webpage <a href="https://vgupta123.github.io/" target="_blank">here</a>.</p>
-    </div>
-  </div>
-</div>
-
-<div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Coordinator</h2>
-  <div class="row" style="margin-bottom: 1rem">
-    <div class="col-lg-3">
       <img src="/assets/img/club_photos/Serena.jpg" alt="Picture of Serena Aeschilman" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
@@ -83,6 +69,21 @@ img.default {
     </div>
   </div>
 </div>
+
+<div style="margin-bottom: 1rem">
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
+      <img src="/assets/img/club_photos/Vivek.jpg" alt="Picture of Vivek Gupta" class="rounded shadow coordinator">
+    </div>
+    <div class="col-lg-9">
+        <h4>Vivek Gupta</h4>
+        <h6>PhD Student</h6>
+      <p>Vivek is a PhD student at the School of Computing, University of Utah. Previously, he was working as a Research Fellow in Microsoft Research Lab, India, in Machine Learning and Natural Language Processing group. He graduated as a dual degree student in the Department of Computer Science and Engineering at IIT Kanpur in 2016. He is broadly interested in research in the field of Machine Learning and Natural Language Processing. He was the first coordinator of Special Interest in Machine Learning (SIGML), IIT Kanpur. To know more about his current research interest, you can visit his webpage <a href="https://vgupta123.github.io/" target="_blank">here</a>.</p>
+    </div>
+  </div>
+</div>
+
 <div style="margin-bottom: 1rem">
   <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
@@ -97,6 +98,34 @@ img.default {
   </div>
 </div>
 
+<div style="margin-bottom: 1rem">
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
+      <img src="/assets/img/club_photos/Ayushi_Sharma.JPG" alt="Picture of Kori South" class="rounded shadow coordinator">
+    </div>
+    <div class="col-lg-9">
+        <h4>Ayushi Sharma</h4>
+        <h6>Undergraduate Student</h6>
+      <p>Ayushi is a Computer Science Master's student at the University of Utah. She is an ardent learner who aims to solve problems efficiently. Problem-solving and Algorithms are the space where she locates her most grounded inclination. In 2018 she completed her bachelor's in Computer Science from the National Institute of Technology at Hamirpur, INDIA. After that, she had worked for three years for Oracle Financial Analytical Application - Enterprise Risk and Finance. She loves to paint, draw doodles, and owns an Instagram handle( @thedoodlish) to showcase her art. Ayushi is a potter head and is always up for a discussion on Algorithms and Harry Potter Series.
+</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 1rem">
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
+      <img src="/assets/img/club_photos/BryceHalf.jpg" alt="Picture of Kori South" class="rounded shadow coordinator">
+    </div>
+    <div class="col-lg-9">
+        <h4>Bryce Shoemaker</h4>
+        <h6>Undergraduate Student</h6>
+      <p>Bryce is a first year Data Science major at the University of Utah. He has an extreme interest in anything computer based. Such examples include coding, gaming, and computer building. Bryce also loves anything sci-fi and fantasy. This includes Starwars, Warhammer 40k, and Dungeon and Dragons. If someone is interested in anything Star Wars, Warhammer, or D&D related he’d be more than happy to explain any of the three to you! On another note, Bryce also loves to draw and paint on both paper and Photoshop! Outside of the indoor activities, Bryce also loves to mountain bike, hike, camp, and go hunting. </p>
+    </div>
+  </div>
+</div>
 
 <div style="margin-bottom: 1rem">
   <h2 style="margin-bottom: 1rem">President</h2>
