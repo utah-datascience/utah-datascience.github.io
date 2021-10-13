@@ -36,7 +36,7 @@ img.default {
     </div>
     <div class="col-lg-9">
         <h4>Serena Aeschilman</h4>
-        <h6>Undergraduate Student</h6>
+        <h6>Master Student</h6>
       <p>Serena is very ambitious. She is involved with many women in cs groups. She hopes to make a change by running for Congress in 2024. She believes that there aren’t enough people in the government advocating for technology and hopes to be the first female with a Computer Science degree in the House of Representatives. In her free time, Serena is a performing aerial acrobat. She is also a happy dog mom to a pup named Astro. Serena is very friendly, so don't hesitate to approach her in person or online if you need anything. If you want to get involved with some of the organizations she is involved with, reach out to her!</p>
     </div>
   </div>
@@ -92,7 +92,7 @@ img.default {
     </div>
     <div class="col-lg-9">
         <h4>Pranav Rajan</h4>
-        <h6>Undergraduate Student</h6>
+        <h6>Master Student</h6>
       <p>Pranav Rajan is a fourth year Computer Science major. He is interested in building software/tools that help people obtain insight and communicate different kinds of data. Pranav is passionate about the multidisciplinary aspect of data science and hopes to share this enthusiasm with the club. When not at the computer, you can find him listening to all kinds of music, reading The New Yorker, searching for cool visualizations and participating in some kind of outdoor activity.</p>
     </div>
   </div>
