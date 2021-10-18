@@ -178,7 +178,7 @@ img.default {
     <div class="col-lg-9">
         <h4>Anna Bell</h4>
         <h6>Undergraduate Student</h6>
-      <p>Lorem Ipsum</p><!--TODO: Anna Bio -->
+      <p></p><!--TODO: Anna Bio -->
     </div>
   </div>
 </div>
