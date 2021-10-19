@@ -29,20 +29,6 @@ img.default {
 
 <!-- The table of Coordinators -->
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">President</h2>
-  <div class="row" style="margin-bottom: 1rem">
-    <div class="col-lg-3">
-      <img src="/assets/img/club_photos/Kori.jpeg" alt="Picture of Kori South" class="rounded shadow coordinator">
-    </div>
-    <div class="col-lg-9">
-        <h4>Kori South</h4>
-        <h6>Undergraduate Student</h6>
-      <p>Kori is a Computer Science major with an emphasis in Entertainment Arts and Engineering. She grew up in rural Jamaica, and moved to Utah for college. Kori is passionate about Computing Education Research, Data Science, and their overlap. She is writing a book with her mother, Janette Kaloo, about Janette's experience with Stage III Breast Cancer. They hope to have it done by the end of the year!</p>
-    </div>
-  </div>
-</div>
-
-<div style="margin-bottom: 1rem">
   <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
@@ -52,6 +38,20 @@ img.default {
         <h4>Serena Aeschilman</h4>
         <h6>Undergraduate Student</h6>
       <p>Serena is very ambitious. She is involved with many women in cs groups. She hopes to make a change by running for Congress in 2024. She believes that there aren’t enough people in the government advocating for technology and hopes to be the first female with a Computer Science degree in the House of Representatives. In her free time, Serena is a performing aerial acrobat. She is also a happy dog mom to a pup named Astro. Serena is very friendly, so don't hesitate to approach her in person or online if you need anything. If you want to get involved with some of the organizations she is involved with, reach out to her!</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 1rem">
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
+      <img src="/assets/img/club_photos/ClubLogo.png" alt="Picture of Anna Bell" class="rounded shadow coordinator"><!--TODO: Anna Pic -->
+    </div>
+    <div class="col-lg-9">
+        <h4>Anna Bell</h4>
+        <h6>Undergraduate Student</h6>
+      <p><!--TODO: Anna Bio --></p>
     </div>
   </div>
 </div>
@@ -102,6 +102,34 @@ img.default {
   <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
+      <img src="/assets/img/club_photos/Owen_Koppe.jpg" alt="Picture of Owen Koppe" class="rounded shadow coordinator">
+    </div>
+    <div class="col-lg-9">
+        <h4>Owen Koppe</h4>
+        <h6>Undergraduate Student</h6>
+      <p>Owen Koppe is a freshman double majoring in Computer Science and Applied Mathematics. He is particularly interested in how data science can be applied to social justice issues and how it can be used to shape public policy. Owen has worked as a summer fellow at the Quantitative Institute for the Study of Inclusion, Diversity and Equity where he got to see how data science is being applied to social justice problems. In his free time Owen races mountain bikes and runs ultra marathons.</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 1rem">
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
+      <img src="/assets/img/club_photos/Ari_Lacanienta.jpg" alt="Picture of Ari Lacanienta" class="rounded shadow coordinator"><!--TODO: Ari Pic -->
+    </div>
+    <div class="col-lg-9">
+        <h4>Ari Lacanienta</h4>
+        <h6>Undergraduate Student</h6>
+      <p>Ari Lacanienta is studying Data Science at the University of Utah. His main fields of interest are Machine Learning and Artificial Intelligence, although he is easily distracted by his many side projects. He currently works in software development, and when he isn’t writing code he loves to read, compose music, and hang out with friends.</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 1rem">
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
       <img src="/assets/img/club_photos/Pranav.jpeg" alt="Picture of Pranav Rajan" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
@@ -142,43 +170,15 @@ img.default {
 </div>
 
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <h2 style="margin-bottom: 1rem">President</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/club_photos/Ari_Lacanienta.jpg" alt="Picture of Ari Lacanienta" class="rounded shadow coordinator"><!--TODO: Ari Pic -->
+      <img src="/assets/img/club_photos/Kori.jpeg" alt="Picture of Kori South" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
-        <h4>Ari Lacanienta</h4>
+        <h4>Kori South</h4>
         <h6>Undergraduate Student</h6>
-      <p>Ari Lacanienta is studying Data Science at the University of Utah. His main fields of interest are Machine Learning and Artificial Intelligence, although he is easily distracted by his many side projects. He currently works in software development, and when he isn’t writing code he loves to read, compose music, and hang out with friends.</p>
-    </div>
-  </div>
-</div>
-
-<div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Coordinator</h2>
-  <div class="row" style="margin-bottom: 1rem">
-    <div class="col-lg-3">
-      <img src="/assets/img/club_photos/Owen_Koppe.jpg" alt="Picture of Owen Koppe" class="rounded shadow coordinator">
-    </div>
-    <div class="col-lg-9">
-        <h4>Owen Koppe</h4>
-        <h6>Undergraduate Student</h6>
-      <p>Owen Koppe is a freshman double majoring in Computer Science and Applied Mathematics. He is particularly interested in how data science can be applied to social justice issues and how it can be used to shape public policy. Owen has worked as a summer fellow at the Quantitative Institute for the Study of Inclusion, Diversity and Equity where he got to see how data science is being applied to social justice problems. In his free time Owen races mountain bikes and runs ultra marathons.</p>
-    </div>
-  </div>
-</div>
-
-<div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Coordinator</h2>
-  <div class="row" style="margin-bottom: 1rem">
-    <div class="col-lg-3">
-      <img src="/assets/img/club_photos/ClubLogo.png" alt="Picture of Anna Bell" class="rounded shadow coordinator"><!--TODO: Anna Pic -->
-    </div>
-    <div class="col-lg-9">
-        <h4>Anna Bell</h4>
-        <h6>Undergraduate Student</h6>
-      <p></p><!--TODO: Anna Bio -->
+      <p>Kori is a Computer Science major with an emphasis in Entertainment Arts and Engineering. She grew up in rural Jamaica, and moved to Utah for college. Kori is passionate about Computing Education Research, Data Science, and their overlap. She is writing a book with her mother, Janette Kaloo, about Janette's experience with Stage III Breast Cancer. They hope to have it done by the end of the year!</p>
     </div>
   </div>
 </div>
