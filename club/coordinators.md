@@ -46,12 +46,12 @@ img.default {
   <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/club_photos/ClubLogo.png" alt="Picture of Anna Bell" class="rounded shadow coordinator"><!--TODO: Anna Pic -->
+      <img src="/assets/img/club_photos/Anna_Belle.jpg" alt="Picture of Anna Bell" class="rounded shadow coordinator"><!--TODO: Anna Pic -->
     </div>
     <div class="col-lg-9">
         <h4>Anna Bell</h4>
         <h6>Undergraduate Student</h6>
-      <p><!--TODO: Anna Bio --></p>
+      <p>Anna is a Data Science major. She participates in research at the School of Computing. Some of her interests are NLP and bioinformatics. She also likes to play the piano and go hiking year-round with her husky.</p>
     </div>
   </div>
 </div>
@@ -116,7 +116,7 @@ img.default {
   <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/club_photos/Ari_Lacanienta.jpg" alt="Picture of Ari Lacanienta" class="rounded shadow coordinator"><!--TODO: Ari Pic -->
+      <img src="/assets/img/club_photos/Ari_Lacanienta.jpg" alt="Picture of Ari Lacanienta" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
         <h4>Ari Lacanienta</h4>
