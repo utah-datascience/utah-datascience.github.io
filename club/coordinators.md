@@ -46,6 +46,20 @@ img.default {
   <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
+      <img src="/assets/img/club_photos/Anna_Belle.jpg" alt="Picture of Anna Bell" class="rounded shadow coordinator"><!--TODO: Anna Pic -->
+    </div>
+    <div class="col-lg-9">
+        <h4>Anna Bell</h4>
+        <h6>Undergraduate Student</h6>
+      <p>Anna is a Data Science major. She participates in research at the School of Computing. Some of her interests are NLP and bioinformatics. She also likes to play the piano and go hiking year-round with her husky.</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 1rem">
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
       <img src="/assets/img/club_photos/Todd.jpeg" alt="Picture of Todd Derrick" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
@@ -88,6 +102,34 @@ img.default {
   <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
+      <img src="/assets/img/club_photos/Owen_Koppe.jpg" alt="Picture of Owen Koppe" class="rounded shadow coordinator">
+    </div>
+    <div class="col-lg-9">
+        <h4>Owen Koppe</h4>
+        <h6>Undergraduate Student</h6>
+      <p>Owen Koppe is a freshman double majoring in Computer Science and Applied Mathematics. He is particularly interested in how data science can be applied to social justice issues and how it can be used to shape public policy. Owen has worked as a summer fellow at the Quantitative Institute for the Study of Inclusion, Diversity and Equity where he got to see how data science is being applied to social justice problems. In his free time Owen races mountain bikes and runs ultra marathons.</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 1rem">
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
+      <img src="/assets/img/club_photos/Ari_Lacanienta.jpg" alt="Picture of Ari Lacanienta" class="rounded shadow coordinator">
+    </div>
+    <div class="col-lg-9">
+        <h4>Ari Lacanienta</h4>
+        <h6>Undergraduate Student</h6>
+      <p>Ari Lacanienta is studying Data Science at the University of Utah. His main fields of interest are Machine Learning and Artificial Intelligence, although he is easily distracted by his many side projects. He currently works in software development, and when he isn’t writing code he loves to read, compose music, and hang out with friends.</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 1rem">
+  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <div class="row" style="margin-bottom: 1rem">
+    <div class="col-lg-3">
       <img src="/assets/img/club_photos/Pranav.jpeg" alt="Picture of Pranav Rajan" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
@@ -102,7 +144,7 @@ img.default {
   <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/club_photos/Ayushi_Sharma.JPG" alt="Picture of Kori South" class="rounded shadow coordinator">
+      <img src="/assets/img/club_photos/Ayushi_Sharma.JPG" alt="Picture of Ayushi Sharma" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
         <h4>Ayushi Sharma</h4>
@@ -117,7 +159,7 @@ img.default {
   <h2 style="margin-bottom: 1rem">Coordinator</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
-      <img src="/assets/img/club_photos/BryceHalf.jpg" alt="Picture of Kori South" class="rounded shadow coordinator">
+      <img src="/assets/img/club_photos/BryceHalf.jpg" alt="Picture of Bryce Shoemaker" class="rounded shadow coordinator">
     </div>
     <div class="col-lg-9">
         <h4>Bryce Shoemaker</h4>
