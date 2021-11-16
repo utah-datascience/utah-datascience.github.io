@@ -10,9 +10,7 @@ header:
   background-image: /assets/img/header-background/zion-shorter.jpg
 ---
 
-### No Data Day in 2020
-
-**The UCDS will not organize a 2020 Data Science Day.**  Due to the pandemic, unsafeness of large gatherings, and lack of a worthy online alternative, we have decided not to pursue a Data Science Day this year.  We look forward for future opportunities to run in person (or suitable virtual) events in the near future.    
+The UCDS is planning to host an in-person Data Science Day on January 14, 2022 at the Union Ball Room (if the pandemic cooperates).  Contact datasci@utah.edu if you are interested to participate.  More details forthcoming. 
 
 ---
 
