@@ -10,6 +10,8 @@ header:
   background-image: /assets/img/header-background/zion-shorter.jpg
 ---
 
+### Data Science Day 2022
+
 The UCDS is planning to host an in-person Data Science Day on January 14, 2022 at the Union Ball Room (if the pandemic cooperates).  Contact datasci@utah.edu if you are interested to participate.  More details forthcoming. 
 
 ---
