@@ -8,6 +8,11 @@ Then run
 ```shell
 bundle install
 ```
+* If failed because of gem version incompatible, try
+```shell
+bundle update
+```
+This will update `Gemfile.lock`.
 * To serve the website locally, run
 ```shell
 bundle exec jekyll serve
