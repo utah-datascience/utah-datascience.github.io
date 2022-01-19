@@ -11,7 +11,7 @@ header:
 ### Blurb
 The UofU datathon4justice is aimed at introducing undergraduates to the use of quantitative methods to address social issues. The main event is a weekend-long datathon in which teams will tackle environmental justice problems relevant to our SLC community, featuring: keynote addresses by the founders of the Institute for the Quantitative Study of Inclusion, Diversity, and Equity (QSIDE), as well as local activists and researchers studying environmental [stuff]; and consultants from data science, environmental studies, and social justice to answer questions and support teams in their projects. A number of preparatory workshops will be offered leading up to the main event; these workshops will cover a range of programming and data science topics, from introductory Python through specialized data processing toolboxes. Finally, teams will have two opportunities to present their work: first in a special datathon4justice session at the Undergraduate Research Symposium, second at the SQuARED Justice conference.
 
-### Datathon 2022
+### Dates and Details
 * Date: March 25-26
 * Format: hybrid
 * Schedule:
