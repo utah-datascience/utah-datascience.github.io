@@ -16,8 +16,8 @@ The UofU datathon4justice is aimed at introducing undergraduates to the use of q
 * Format: hybrid
 * Schedule:
   * Friday March 25
-    * 5.00-5.30pm - Keynote by Jude Higdon and Chad Topaz of QSIDE (in-person for some, otherwise streamed?)
-    * 5.30-6.00pm - Keynote by activist/scientists related to problem/data (in-person for some, otherwise streamed?)
+    * 5.00-5.30pm - Keynote by Jude Higdon and Chad Topaz of QSIDE
+    * 5.30-6.00pm - Keynote by activist/scientists related to problem/data
     * 6.00pm-9.00pm - Group work time, with coaches available to answer questions
   * Saturday March 26
     * 9.00am - 12.00pm - Group work time, with coaches available to answer questions
@@ -25,6 +25,29 @@ The UofU datathon4justice is aimed at introducing undergraduates to the use of q
     * 3.30pm - 4.15pm - Keynote by activist/scientists related to problem/data
     * 4.15pm - 4.30pm - Wrap-up by organizers, next-steps, etc. 
   * Tuesday April 5
-    * 10.45am - 12.15pm - Presentations by groups at the Undergrad Research Symposium (https://our.utah.edu/events/undergraduate-research-symposium/)
+    * 10.45am - 12.15pm - Presentations by groups at the [Undergrad Research Symposium](https://our.utah.edu/events/undergraduate-research-symposium/).
   * Saturday April 16
-SQuARED Justice conference - groups can also present results here (https://qsideinstitute.org/events/data-4-justice-conference/), OUR has funding for participants as well.
+[SQuARED Justice conference](https://qsideinstitute.org/events/data-4-justice-conference/), where students are also invited to present their work.
+
+### Workshops
+This series of workshops will give participants an introduction to programming and data analysis in preparation for the Datathon4Justice. Each workshop will be self-contained explorations of the Python programming language, from an introduction to programming up to advanced data analysis packages useful for the datathon.
+
+To register, please fill out [this short form](https://forms.gle/9qg7gLZHGnitxSuX9). The workshop will be offered in a hybrid format, with in-person registration will be capped to 20 people based on registration order.
+
+#### Schedule
+* Beginner python for non-STEM/crash-course
+  * Day/time: Wednesday Feb 23, 4:30 - 5:30 PM MST
+  * Room: LCB 115
+  * Abstract: Our first workshop will be geared towards those interested in the Datathon4Justice and have no background in computer science. We will begin with basic operations and variable types, then discuss control flows and functions. The goal is to introduce attendees to the language and structure of programming so that attendees can more effectively communicate with teammates. 
+* Data analysis and special packages in Python
+  * Day/time: Wednesday Mar 2, 4:30 - 5:30 PM MST
+  * Room: LCB 115
+  * Abstract: This workshop will introduce key packages in Python for data analysis. These packages will be used to read, manipulate, and plot data. This workshop will also discuss best practices for presentation of data in a report. Participants new to programming will get a sense for the advantages of analyzing data using programming languages over spreadsheets.
+* Introduction to exploratory data analysis with a suicide dataset
+  * Day/time: Wednesday March 16, 4:30 - 5:30 PM MST
+  * Room: LCB 115
+  * Abstract: This workshop will introduce exploratory data analysis which involves performing the initial investigation of a data set to begin to understand what questions the data set can answer. A real world sucide data set will be explored to showcase graphical and non graphical techniques used for exploratory data analysis. This workshop will provide participants the opportunity to apply the Python and data analysis skills they gained in the previous workshops to real world data.
+* Special topic
+  * Day/time: Wednesday March 23, 4:30 - 5:30 PM MST
+  * Room: LCB 115
+  * Abstract: Exact topics TBD. Options for the workshop include an exploration of the dataset to be used in the competition and advanced Python packages potentially applicable to the dataset.
