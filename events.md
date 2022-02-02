@@ -9,7 +9,14 @@ header:
 ---
 
 ### Blurb
-The UofU datathon4justice is aimed at introducing undergraduates to the use of quantitative methods to address social issues. The main event is a weekend-long datathon in which teams will tackle environmental justice problems relevant to our SLC community, featuring: keynote addresses by the founders of the Institute for the Quantitative Study of Inclusion, Diversity, and Equity (QSIDE), as well as local activists and researchers studying environmental [stuff]; and consultants from data science, environmental studies, and social justice to answer questions and support teams in their projects. A number of preparatory workshops will be offered leading up to the main event; these workshops will cover a range of programming and data science topics, from introductory Python through specialized data processing toolboxes. Finally, teams will have two opportunities to present their work: first in a special datathon4justice session at the Undergraduate Research Symposium, second at the SQuARED Justice conference.
+The UofU datathon4justice is aimed at introducing undergraduates to the use of quantitative methods to address social justice questions. The main event is a weekend-long datathon in which teams will tackle environmental justice problems relevant to our SLC community, featuring: keynote addresses by the founders of the Institute for the Quantitative Study of Inclusion, Diversity, and Equity (QSIDE); presentations from activists and researchers looking at local environmental justice questions; and team support from consultants in data science, environmental studies, and social justice. A number of preparatory workshops will be offered leading up to the main event; these workshops will cover a range of programming and data science topics, from introductory Python through specialized data processing toolboxes. Finally, teams will have two opportunities to present their work: first in a special datathon4justice session at the Undergraduate Research Symposium, second at the SQuARED Justice conference.
+
+The datathon has 3 main parts:
+* Preparatory workshops before the event,
+* The main datathon, with keynote addresses and team work time and support,
+* Opportunities to present your work.
+
+All are welcome to attend the preparatory workshops without taking part in the datathon; see the "Workshops" section for registration information. For those interested in taking part in the datathon, registration will open soon.
 
 ### Dates and Details
 * Date: March 25-26
@@ -34,7 +41,7 @@ This series of workshops will give participants an introduction to programming a
 
 To register, please fill out [this short form](https://forms.gle/9qg7gLZHGnitxSuX9). The workshop will be offered in a hybrid format, with in-person registration will be capped to 20 people based on registration order.
 
-#### Schedule
+#### Workshop Schedule
 * Beginner python for non-STEM/crash-course
   * Day/time: Wednesday Feb 23, 4:30 - 5:30 PM MST
   * Room: LCB 115
@@ -51,3 +58,8 @@ To register, please fill out [this short form](https://forms.gle/9qg7gLZHGnitxSu
   * Day/time: Wednesday March 23, 4:30 - 5:30 PM MST
   * Room: LCB 115
   * Abstract: Exact topics TBD. Options for the workshop include an exploration of the dataset to be used in the competition and advanced Python packages potentially applicable to the dataset.
+  
+### Datathon Format: 
+The theme for this datathon is environmental justice. Teams will be provided data and questions sourced from environmental science researchers as well as local groups studying air quality and public health, from an equity lens, in the Salt Lake City metro area. The questions will be presented in a tiered-format to match teams’ entry levels in data science and social justice: (1) low-entry level problems performing exploratory data analysis and study validation, (2) medium-entry level problems for more experienced teams interested in exploring more novel aspects, including starting to address open-ended questions, and (3) high-entry level problems for experienced data scientists and activists, aimed at providing highly motivated teams an entry point into active environmental justice research.
+
+Data and questions will be released shortly before the event, along with consultant schedules and contact means for the weekend.
