@@ -19,7 +19,22 @@ bundle exec jekyll serve
 ```
 
 ## Content Edit
+### Images in markdown
+To center the image and avoid big images overflow, you can specify the class `img-fluid` for the image by appending `{:class="img-fluid"}`, like
+```markdown
+![alt text](/path/to/image.jpg){:class="img-fluid"}
+```
+`img-fluid` class has been defined as `display: block; margin: auto; max-width: 90%; height: auto`.
+### Image as a figure
+We have a figure template for adding a figure to any page. Example code is:
+```html
+{% include figure.html
+src="/assets/img/theme/team-1-800x800.jpg"
+max-width="500px"
+caption="The caption of the figure." %}
+```
 
+## Notes for specific pages.
 ### Members
 Add/delete/edit .md files in `_members` directory to add/delete/edit members. 
 

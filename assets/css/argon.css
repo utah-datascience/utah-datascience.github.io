@@ -515,7 +515,9 @@ mark,
 }
 
 .img-fluid {
-    max-width: 100%;
+    display: block;
+    margin: auto;
+    max-width: 90%;
     height: auto
 }
 
@@ -529,16 +531,18 @@ mark,
     height: auto
 }
 
-.figure {
-    display: inline-block
+figure {
+    display: inline-block;
+    text-align: center
 }
 
-.figure-img {
+figure>img {
     margin-bottom: .5rem;
-    line-height: 1
+    line-height: 1;
+    width:80%
 }
 
-.figure-caption {
+figure>figcaption {
     font-size: 90%;
     color: #8898aa
 }
