@@ -1,24 +1,26 @@
-<div class="container">
-  <hr>
+<div class="container footer">
   {% assign data = site.data.data %}
-  <div class="row align-items-center justify-content-md-between">
-    <div class="col-lg-6 social-media-list">
-      <a href="mailto:{{ data.email }}">
-          <i class="fa fa-envelope"></i> {{data.email}}
-      </a>
-&nbsp; &nbsp; &nbsp;
-        <a target="_blank" href="{{ data.twitter }}"
-          data-toggle="tooltip" data-original-title="@UUDataScience">
-        <i class="fa fa-twitter"></i> @UUDataScience
-      </a>
+  <hr>
+  <div class="row">
+    <div class="col-12 col-md-8 col-lg-9">
+        <div class="col-12 social-media-list">
+          <a href="mailto:{{ data.email }}">
+              <i class="fa fa-envelope"></i> {{data.email}}
+          </a>
+          &nbsp; &nbsp; &nbsp;
+          <a target="_blank" href="{{ data.twitter }}"
+              data-toggle="tooltip" data-original-title="@UUDataScience">
+            <i class="fa fa-twitter"></i> @UUDataScience
+          </a>
+        </div>
+        <div class="col-12">Copyright &copy; 2019-{{ site.time | date: '%Y' }} the Utah Center for Data Science. All content on this website is licensed under the
+          <a href="http://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution license (CC BY).</a> &nbsp; Last updated on {{ site.time | date: '%B %d, %Y' }}.
+        </div>
     </div>
-
-    <div class="footer-logo">
+    <div class="col-12 col-md-4 col-lg-3 footer-logo">
       <a href="{{ "/index.html" | relative_url }}">
         <img src="{{ "/assets/img/brand/UlogoHv1-1200px.png" | relative_url }}">
       </a>
     </div>
   </div>
-  <div class="row align-items-center col-sm-10">Copyright &copy; 2019-{{ site.time | date: '%Y' }} the Utah Center for Data Science. All content on this website is licensed under the
-            <a href="http://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution license (CC BY).</a> &nbsp; Last updated on {{ site.time | date: '%B %d, %Y' }}.</div>
 </div>
