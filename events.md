@@ -24,19 +24,19 @@ Acknowledgements: this Datathon is made possible by support from the Office of U
 * Date: March 25-26
 * Format: hybrid
 * Schedule:
-  * Friday March 25
+  * Friday March 25 (location: WEB 1230)
     * 5.00pm - 5.10pm - Overview and announcements
     * 5.10pm - 5.35pm - Keynote by Jude Higdon and Chad Topaz of QSIDE
     * 5.35pm - 6.00pm - Keynote by activist/scientists related to problem/data
     * 6.00pm - 9.00pm - Group work time, with coaches available to answer questions
-  * Saturday March 26
+  * Saturday March 26 (location: WEB various rooms)
     * 9.00am - 12.00pm - Group work time, with coaches available to answer questions
     * 1.00pm - 3.30pm - Group work time, with coaches available to answer questions
     * 3.30pm - 4.15pm - Keynote by activist/scientists related to problem/data
     * 4.15pm - 4.30pm - Wrap-up by organizers, next-steps, etc. 
-  * Tuesday April 5
+  * Tuesday April 5 (location: Union Building or virtual)
     * 10.45am - 12.15pm - Presentations by groups at the [Undergrad Research Symposium](https://our.utah.edu/events/undergraduate-research-symposium/).
-  * Friday April 22
+  * Friday April 22 (location: virtual)
     * 10.00am - 6.00pm ET - [SQuARED Justice conference](https://qsideinstitute.org/events/square-conference/), where students are also invited to present their work during the poster session.
 
 ### Workshops
@@ -65,13 +65,13 @@ To register for the preparatory workshops, please fill out [this short form](htt
 ### Datathon
 The theme for this datathon is environmental justice. Teams will be provided data and questions sourced from environmental science researchers as well as local groups studying light pollution and public health, from an equity lens, in the Salt Lake City metro area. The questions will be presented in a tiered-format to match teams’ entry levels in data science and social justice: (1) low-entry level problems performing exploratory data analysis and study validation, (2) medium-entry level problems for more experienced teams interested in exploring more novel aspects, including starting to address open-ended questions, and (3) high-entry level problems for experienced data scientists and activists, aimed at providing highly motivated teams an entry point into active environmental justice research.
 
-To register for the actual datathon, please fill out [this short form](https://forms.gle/ZPxMbVXgKjBXuZaq6). Rooms/space for teamwork will be provided on a first-come-first-serve basis, so be sure to register early! **Registration is open until March 11, 2022**.
+To register for the actual datathon, please fill out [this short form](https://forms.gle/ZPxMbVXgKjBXuZaq6). Rooms in WEB are reserved and will be provided to teams on a first-come-first-serve basis, so be sure to register early! **Registration is open until March 11, 2022**.
 
 Data and questions will be released shortly before the event, along with consultant schedules and contact means for the weekend.
 
 ### COVID policy
 
-Events are live and in-person. The keynote addresses will be live and in-person (room TBD), and recorded. To support in-person participation during the datathon, we will provide hand sanitizer, masks, and a spacious setup.
+Events are live and in-person. The keynote addresses will be live and in-person, and recorded. To support in-person participation during the datathon, we will provide hand sanitizer, masks, and a spacious setup.
 
 ![Office of Undergraduate Research, The University of Utah]({{ '/dataday/datathon/assets/OUR_Logo.jpg' | relative_url }}){:class="img-fluid"}
 
