@@ -23,9 +23,9 @@ feature_row:
     icon_color: default
     badge_color: default
   - icon: fa fa-university
-    title: Data Day
-    excerpt: There will be no Data Science Day in 2020 due to the pandemic.  See past highlights.
-    url: /dataday.html
+    title: Datathon4Justice
+    excerpt: The UofU datathon4justice (March 25-26), registration is now open.
+    url: /events.html
     btn_label: View details &raquo;
     btn_class: mt-4
     badge:

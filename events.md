@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Events
+date: 2022-03-25
 header:
   title: Datathon
   excerpt: >
@@ -73,7 +74,7 @@ Data and questions will be released shortly before the event, along with consult
 
 Events are live and in-person. The keynote addresses will be live and in-person, and recorded. To support in-person participation during the datathon, we will provide hand sanitizer, masks, and a spacious setup.
 
-![Office of Undergraduate Research, The University of Utah]({{ '/dataday/datathon/assets/OUR_Logo.jpg' | relative_url }}){:class="img-fluid"}
+![Office of Undergraduate Research, The University of Utah]({{ '/events/2022_datathon/assets/OUR_Logo.jpg' | relative_url }}){:class="img-fluid"}
 
 ---
 
