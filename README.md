@@ -4,19 +4,19 @@ Original theme: https://jamstack-argon-design.appseed.us/index.html
 
 ## Local run
 * For the first time, install [jekyll](https://jekyllrb.com/docs/installation/), if windows, you may need further run `bundle add webrick`.
-Then run
-```shell
-bundle install
-```
+  Then run follow in the project root.
+  ```shell
+  bundle install
+  ```
 * If failed because of gem version incompatible, try
-```shell
-bundle update
-```
+  ```shell
+  bundle update
+  ```
 This will update `Gemfile.lock`.
 * To serve the website locally, run
-```shell
-bundle exec jekyll serve
-```
+  ```shell
+  bundle exec jekyll serve
+  ```
 
 ## Content Edit
 ### Images in markdown
