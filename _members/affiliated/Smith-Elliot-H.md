@@ -3,7 +3,7 @@ name: Elliot H Smith
 title: |
     Assistant Professor, Neurosurgery Department, University of Utah
 role: Affiliated Members
-link: https://medicine.utah.edu/faculty/mddetail.php?facultyID=u0280902
+link: www.neurosmiths.org
 pic: assets/img/member_photos/ElliotHSmith.jpg
 ---
 
