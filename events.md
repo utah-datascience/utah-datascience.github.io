@@ -19,7 +19,7 @@ The datathon has 3 main parts:
 
 All are welcome to attend the preparatory workshops without taking part in the datathon; see the "Workshops" section for more information (including the registration link). For those interested in taking part in the datathon, see the "Datathon" section.
 
-** The data is now available to participants, and can be found here:** [https://github.com/hamiltonw/uofu-datathon4justice](https://github.com/hamiltonw/uofu-datathon4justice)
+**The data is now available to participants, and can be found here:** [https://github.com/hamiltonw/uofu-datathon4justice](https://github.com/hamiltonw/uofu-datathon4justice)
 
 Acknowledgements: this datathon is made possible by support from the UofU Office of Undergraduate Research and the Utah Center for Data Science.
 
