@@ -17,7 +17,7 @@ The 2022 Data Science Day has been canceled due to the pandemic.
 ---
 
 ### Past Highlights
-{% include image_gallary.html %}
+{% include image_gallary.html folder="assets/img/dataday/2019highlights"%}
 
 ---
 
