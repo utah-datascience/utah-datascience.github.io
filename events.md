@@ -80,6 +80,11 @@ Events are live and in-person. The keynote addresses will be live and in-person,
 
 ---
 
+### Highlights
+{% include image_gallary.html folder="events/2022_datathon/assets/highlights"%}
+
+---
+
 ### Past Events
 {% assign events = site.pages | where:"categories","dataday" |sort: "date" | reverse %}
 {% for eventpage in events %}
