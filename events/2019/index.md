@@ -48,9 +48,15 @@ below to present a poster or demo at the Utah Data Science Day 2019.
 We will have three talks featuring MasterControl, Zencastr and Recursion
 Pharmaceuticals, followed by a general Q&A about data science in the industry.
 
-----
-
 [2019 Data Science Day poster](./img/Poster-dataday.pdf)
+
+
+---
+
+### Highlights
+{% include image_gallary.html folder="assets/img/dataday/2019highlights"%}
+
+----
 
 ### Previously
 
