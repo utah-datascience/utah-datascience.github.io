@@ -4,7 +4,7 @@ title: Data Science Seminar
 header:
   title: Data Science Seminar
   excerpt: |
-    Fridays 1:50pm to 3:00pm, Zoom
+    Wednesdays 10:30 - 11:45, MEB 3147
     
     [poster](/assets/file/spr21-seminar-poster.pdf){: target="_blank"}
     {: class="btn btn-neutral"}
