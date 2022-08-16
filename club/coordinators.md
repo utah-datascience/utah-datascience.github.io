@@ -65,7 +65,7 @@ img.default {
     <div class="col-lg-9">
         <h4>Todd Derrick</h4>
         <h6>Undergraduate Student</h6>
-      <p>Todd is a CS major and will be graduating next spring. Todd loves boardgames, movies, anime, and is fascinated by data compression and cryptography, especially when it comes to old school methods of encryption/comunication (vigenere ciphers, scytales, hydraulic telegraphs and polybius squares). Todd is always down for a movie night or giving show suggestions.
+      <p>Todd is a CS major and will be graduating next spring. Todd loves boardgames, movies, anime, and is fascinated by data compression and cryptography, especially when it comes to old school methods of encryption/comunication (vigenere ciphers, scytales, hydraulic telegraphs and polybius squares). Todd is always down for a movie night or giving show suggestions.</p>
       
         
       “I knew nothing which meant I was in the best position to learn.” 
@@ -87,7 +87,7 @@ img.default {
          
         
         “If you're always on time, it implies that you never have anything better you should be doing.”
-― Brandon Sanderson </p>
+― Brandon Sanderson 
        <p> https://www.linkedin.com/in/tajenfreeman/</p>
     </div>
   </div>
