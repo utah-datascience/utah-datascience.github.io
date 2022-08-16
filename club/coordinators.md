@@ -29,7 +29,7 @@ img.default {
 
 <!-- The table of Coordinators -->
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <h2 style="margin-bottom: 1rem">Alumni</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <img src="/assets/img/club_photos/Serena.jpg" alt="Picture of Serena Aeschilman" class="rounded shadow coordinator">
@@ -57,7 +57,7 @@ img.default {
 </div>
 
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <h2 style="margin-bottom: 1rem">Alumni</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <img src="/assets/img/club_photos/Todd.jpeg" alt="Picture of Todd Derrick" class="rounded shadow coordinator">
@@ -65,13 +65,17 @@ img.default {
     <div class="col-lg-9">
         <h4>Todd Derrick</h4>
         <h6>Undergraduate Student</h6>
-      <p>Todd is a CS major and will be graduating next spring. Todd loves boardgames, movies, anime, and is fascinated by data compression and cryptography, especially when it comes to old school methods of encryption/comunication (vigenere ciphers, scytales, hydraulic telegraphs and polybius squares). Todd is always down for a movie night or giving show suggestions.</p>
+      <p>Todd is a CS major and will be graduating next spring. Todd loves boardgames, movies, anime, and is fascinated by data compression and cryptography, especially when it comes to old school methods of encryption/comunication (vigenere ciphers, scytales, hydraulic telegraphs and polybius squares). Todd is always down for a movie night or giving show suggestions.
+      
+        
+      “I knew nothing which meant I was in the best position to learn.” 
+― Unknown</p>
     </div>
   </div>
 </div>
 
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <h2 style="margin-bottom: 1rem">Alumni</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <img src="/assets/img/club_photos/Tajen.png" alt="Picture of Tajen Freeman" class="rounded shadow coordinator">
@@ -79,7 +83,12 @@ img.default {
     <div class="col-lg-9">
         <h4>Tajen Freeman</h4>
         <h6>Undergraduate Student</h6>
-      <p>Tajen Freeman has been interested in data science since he was a teenager, when he watched a computer program beat one of the world's best players at a board game called Go. A computer science major now, his interests lean mostly toward machine learning. Outside of comptuer science, Tajen is a textbook nerd. He loves fantasy, games of all kinds, and especially anything that can be treated as a puzzle.</p>
+      <p>Tajen Freeman has been interested in data science since he was a teenager, when he watched a computer program beat one of the world's best players at a board game called Go. A computer science major now, his interests lean mostly toward machine learning. Outside of comptuer science, Tajen is a textbook nerd. He loves fantasy, games of all kinds, and especially anything that can be treated as a puzzle. </p>
+         
+        
+        “If you're always on time, it implies that you never have anything better you should be doing.”
+― Brandon Sanderson </p>
+       <p> https://www.linkedin.com/in/tajenfreeman/</p>
     </div>
   </div>
 </div>
@@ -127,7 +136,7 @@ img.default {
 </div>
 
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <h2 style="margin-bottom: 1rem">Alumni</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <img src="/assets/img/club_photos/Pranav.jpeg" alt="Picture of Pranav Rajan" class="rounded shadow coordinator">
@@ -135,7 +144,7 @@ img.default {
     <div class="col-lg-9">
         <h4>Pranav Rajan</h4>
         <h6>Master Student</h6>
-      <p>Pranav Rajan is a fourth year Computer Science major. He is interested in building software/tools that help people obtain insight and communicate different kinds of data. Pranav is passionate about the multidisciplinary aspect of data science and hopes to share this enthusiasm with the club. When not at the computer, you can find him listening to all kinds of music, reading The New Yorker, searching for cool visualizations and participating in some kind of outdoor activity.</p>
+      <p>Pranav Rajan received his BS in Computer Science and MS Computing: Human Centered-Computing with a focus in systems and data visualization in December 2022. Together with Kori South, Tajen Freeman, Todd Derrick and Serena Aeschilman he helped start the Utah Data Science Club in Spring 2020 and organize guest speakers with Vivek Gupta. Pranav helped design and run the D3 workshop with Kori South during the 2020-2021 school year as well as organize the guest speaker talks given by Alberto Cairo, Shirley Wu and Eunice Jun. Pranav's favorite memory from the club was meeting and hosting Alberto Cairo, Shirley Wu and Eunice Jun. He would also like to thank the following professors from the School of Computing and Center for Data Science for inspiring his interests in visualization and data analysis: Professor Jeff Phillips, Professor Bei-Wang Phillips, Professor Alex Lex, Professor Miriah Meyer and Professor Chris Johnson.</p>
     </div>
   </div>
 </div>
@@ -156,7 +165,7 @@ img.default {
 </div>
 
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">Coordinator</h2>
+  <h2 style="margin-bottom: 1rem">President</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <img src="/assets/img/club_photos/BryceHalf.jpg" alt="Picture of Bryce Shoemaker" class="rounded shadow coordinator">
@@ -170,7 +179,7 @@ img.default {
 </div>
 
 <div style="margin-bottom: 1rem">
-  <h2 style="margin-bottom: 1rem">President</h2>
+  <h2 style="margin-bottom: 1rem">Alumni</h2>
   <div class="row" style="margin-bottom: 1rem">
     <div class="col-lg-3">
       <img src="/assets/img/club_photos/Kori.jpeg" alt="Picture of Kori South" class="rounded shadow coordinator">
