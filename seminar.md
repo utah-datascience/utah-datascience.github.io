@@ -6,8 +6,6 @@ header:
   excerpt: |
     Wednesdays 10:30 - 11:45, MEB 3147
     
-    [poster](/assets/file/spr21-seminar-poster.pdf){: target="_blank"}
-    {: class="btn btn-neutral"}
     [mailing list](http://mailman.cs.utah.edu/mailman/listinfo/UCDS-seminar)
     {: class="btn btn-neutral"}
     [Calendar](https://calendar.google.com/calendar?cid=ZWtvbDd1bHFtMTRudjE1NWFuZ3V0MnJsZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
