@@ -4,7 +4,7 @@ title: Data Science Seminar
 header:
   title: Data Science Seminar
   excerpt: |
-    Wednesdays 10:30 - 11:45, MEB 3147
+    Wednesdays 10:30 - 11:45, MEB 3780
     
     [mailing list](http://mailman.cs.utah.edu/mailman/listinfo/UCDS-seminar)
     {: class="btn btn-neutral"}
