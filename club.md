@@ -36,17 +36,17 @@ img.big-flier {
 <div style="margin-bottom: 1rem">
 	<div class="row" style="margin-bottom: 1rem">
 		<div class="col-lg-6">
-			<center><img class="shadow rounded big-flier" src="/assets/img/club_photos/movie-night-mini.gif" alt="Movie Night Mini Flier"/>
+			<center><img class="shadow rounded big-flier" src="/assets/img/club_photos/lucid-and-data-science-club-meet-and-greet-oct-3-2022.png" alt="Lucid Meet and Greet poster"/>
 			</center>
 			<br>
 		</div>
 		<div class="col-lg-6" style="display: flex; align-items:center;">
 			<div>
-				<h5><em>The Imitation Game</em> Movie Night</h5>
-				Sept. 27, 2021 @ 5PM MT, MEB 3147.<br><br>
-				<em>The Imitation Game</em> is a movie about Alan Turing, who is widely recognized as the father of theoretical computing. For more information about the movie, check out the movie's <a href="https://www.imdb.com/title/tt2084970/" target="_blank">IMDB page</a>.<br><br>
-				We are partnering with Amazon Prime Student to host this event, and they will be providing awesome snacks for us! Learn more about Amazon Prime Student and the excellent discounts students can receive through it <a href="https://primestudent.co/uofutah2" target="_blank">here</a>.
-                <br><br>
+				<h5>Lucid Meet and Greet</h5>
+				Oct. 3, 2022 from 11:30am MT - 12:30pm MT, WEB Catmull Gallery.<br><br>
+				<!--  -->
+        <p>Starting out in the industry as a new software engineer can be a daunting task. From navigating huge code bases to dealing with emergencies in the production system, it can feel overwhelming.</p>
+        <p>Come meet with a group of engineers from Lucid, the makers of Lucidchart and Lucidspark, to chat about what it's like to work in the industry and how to set yourself up for success.</p>
 			</div>
 		</div>
 	</div>
