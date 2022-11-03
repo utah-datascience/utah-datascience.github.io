@@ -14,6 +14,17 @@ date: 2023-01-13
 
 **Sponsored By**: Utah Center for Data Science
 
+----
+
+<div class="row">
+  <div class="col-md-3">
+  <a href="./assets/data-science-day-save-the-date.pdf" download>
+      <img src="imgs/data-science-day-save-the-date.jpg" width="100%"/>
+  </a>
+  </div>
+</div>
+
+----
 ## Participation
 
 We welcome all students, staff, and faculty at the University of Utah who wish to participate Utah Data Science Day 2023 to send us a note of interest on [datasci@utah.edu](mailto:datasci@utah.edu).
