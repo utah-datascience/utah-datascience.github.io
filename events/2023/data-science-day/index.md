@@ -12,7 +12,7 @@ date: 2023-01-13
 
 * **Location**: [Union Ballroom](https://g.page/unionuofu)
 
-**Sponsored By**: Utah Center for Data Science
+**Organized by**: Utah Center for Data Science and the [One Utah Data Science Hub](https://research.utah.edu/utah-data-science.php)
 
 ----
 
