@@ -12,14 +12,22 @@ date: 2023-01-13
 
 * **Location**: [Union Ballroom](https://g.page/unionuofu)
 
+* **Register [here](https://docs.google.com/forms/d/e/1FAIpQLSe95Eymcg2-pd7rs92ysrm2Qw4uVRVS9mDsPiFf027Nc9IDSQ/viewform?usp=sf_link)**
+
 **Organized by**: Utah Center for Data Science and the [One Utah Data Science Hub](https://research.utah.edu/utah-data-science.php)
 
 ----
 
-<div class="row">
+<div class="row" style="justify-content: center;">
   <div class="col-md-3">
   <a href="./assets/data-science-day-save-the-date.pdf" download>
       <img src="imgs/data-science-day-save-the-date.jpg" width="100%"/>
+  </a>
+  </div>
+
+  <div class="col-md-3">
+  <a href="./assets/sponsorship-opportunity.pdf" download>
+      <img src="imgs/sponsorship-opportunity.jpg" width="100%"/>
   </a>
   </div>
 </div>
