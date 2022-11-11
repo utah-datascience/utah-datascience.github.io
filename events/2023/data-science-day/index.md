@@ -22,7 +22,7 @@ date: 2023-01-13
   <div class="col-md-3 text-center">
   <a href="./assets/data-science-day-save-the-date.pdf" download>
     <div class="h5">
-      save the data
+      Save the date
     </div>
       <img src="imgs/data-science-day-save-the-date.jpg" width="100%"/>
   </a>
@@ -31,7 +31,7 @@ date: 2023-01-13
   <div class="col-md-3 text-center">
   <a href="./assets/sponsorship-opportunity.pdf" download>
     <div class="h5">
-      industry involvement
+      Industry involvement
     </div>
       <img src="imgs/sponsorship-opportunity.jpg" width="100%"/>
   </a>
@@ -40,7 +40,7 @@ date: 2023-01-13
   <div class="col-md-3 text-center">
   <a href="./assets/2023 Data Science Day - Research Expo.pdf" download>
     <div class="h5">
-      research expo
+      Research expo
     </div>
     <img src="./imgs/2023 Data Science Day - Research Expo.jpg" width="100%"/>
   </a>
