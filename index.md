@@ -23,8 +23,8 @@ feature_row:
     icon_color: default
     badge_color: default
   - icon: fa fa-university
-    title: Datathon4Justice
-    excerpt: The UofU datathon4justice (March 25-26), registration is now open.
+    title: 2023 Data Science Day
+    excerpt: 2023 Data Science Day is scheduled Friday January 13, 2023, registration is now open.
     url: /events.html
     btn_label: View details &raquo;
     btn_class: mt-4
