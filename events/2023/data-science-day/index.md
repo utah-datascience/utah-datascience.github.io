@@ -50,8 +50,7 @@ date: 2023-01-13
 ----
 ## Participation
 
-We welcome all students, staff, and faculty at the University of Utah who wish to participate Utah Data Science Day 2023 to send us a note of interest on [datasci@utah.edu](mailto:datasci@utah.edu).
-
+We welcome all students, staff, and faculty at the University of Utah to participate Utah Data Science Day 2023.  Please register [here](https://docs.google.com/forms/d/e/1FAIpQLSe95Eymcg2-pd7rs92ysrm2Qw4uVRVS9mDsPiFf027Nc9IDSQ/viewform?usp=sf_link).  If you have any questions, contact us at [datasci@utah.edu](datasci@utah.edu).
 
 ----
 ## Schedule
