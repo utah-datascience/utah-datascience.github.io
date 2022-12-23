@@ -20,11 +20,11 @@ date: 2023-01-13
 
 <div class="row" style="justify-content: center;">
   <div class="col-md-3 text-center">
-  <a href="./assets/data-science-day-save-the-date.pdf" download>
+  <a href="./assets/data-science-day-schedule.pdf" download>
     <div class="h5">
-      Save the date
+      Schedule
     </div>
-      <img src="imgs/data-science-day-save-the-date.jpg" width="100%"/>
+      <img src="imgs/data-science-day-schedule.jpg" width="100%"/>
   </a>
   </div>
 
@@ -54,17 +54,19 @@ We welcome all students, staff, and faculty at the University of Utah who wish t
 
 
 ----
-## Agenda (Tentative)
+## Schedule
 
-| 09:00 AM - 10:00 AM |   | Set up available for poster session                                      |
-| 10:00 AM - 10:45 AM |   | Short Research Talks                                                     |
+See the [schedule poster](./assets/data-science-day-schedule.pdf) for more information about our speakers.
+
+
+| 09:00 AM - 10:00 AM |   | Event Registration & Breakfast                                           |
+| 10:00 AM - 10:45 AM |   | Research Highlights                                                      |
 | 10:45 AM - 11:30 AM |   | Industry Panel                                                           |
-| 11:30 AM - 12:00 PM |   | Lunch (sponsor talks)                                                    |
+| 11:30 AM - 12:00 PM |   | Lunch                                                                    |
 | 12:00 PM - 01:00 PM |   | Keynote (Jeff Leek)  45 min talk + 15 Q&A                                |
 | 01:00 PM - 03:00 PM |   |  Research Expo (posters, demos, information booths)                      |
 | 01:00 PM - 02:00 PM |   | Career Fair Set-up (encourage industry participants to view posters etc) |
 | 02:00 PM - 05:30 PM |   | Career Fair                                                              |
-
 
 ----
 
