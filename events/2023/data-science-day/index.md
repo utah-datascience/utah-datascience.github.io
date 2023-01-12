@@ -72,7 +72,7 @@ See the [schedule poster](./assets/data-science-day-schedule.pdf) for more infor
 |  |  | &nbsp;&nbsp;- Learn about ongoing projects, find collaborators |
 | 01:00 PM - 02:00 PM |  | Career Fair Set-up (encourage industry participants to view posters etc) |
 | 02:00 PM - 05:30 PM |  | Career Fair |
-|  |  | &nbsp;&nbsp;- Companies include our event sponsors: Sorenson, Recursion, BioMerieux, TaxBit |
+|  |  | &nbsp;&nbsp;- Companies include our event sponsors: Sorenson, Recursion, BioMerieux |
 
 ----
 
@@ -98,7 +98,7 @@ Jeff is Chief Data Officer, Vice President, and J Orin Edson Foundation Chair of
 
 ### Career Fair
 
-Attend the career fair to meet with companies including our sponsors: Sorenson, Recursion, BioMerieux, TaxBit
+Attend the career fair to meet with companies including our sponsors: Sorenson, Recursion, BioMerieux
 
 <img src="imgs/sponsors.png" alt="Sponsor logos for data science day 2023" width="100%" />
 
