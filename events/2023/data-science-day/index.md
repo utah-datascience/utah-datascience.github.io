@@ -50,23 +50,29 @@ date: 2023-01-13
 ----
 ## Participation
 
-We welcome all students, staff, and faculty at the University of Utah who wish to participate Utah Data Science Day 2023 to send us a note of interest on [datasci@utah.edu](mailto:datasci@utah.edu).
-
+We welcome all students, staff, and faculty at the University of Utah to participate Utah Data Science Day 2023.  Please register [here](https://docs.google.com/forms/d/e/1FAIpQLSe95Eymcg2-pd7rs92ysrm2Qw4uVRVS9mDsPiFf027Nc9IDSQ/viewform?usp=sf_link).  If you have any questions, contact us at [datasci@utah.edu](datasci@utah.edu).
 
 ----
 ## Schedule
 
 See the [schedule poster](./assets/data-science-day-schedule.pdf) for more information about our speakers.
 
-
-| 09:00 AM - 10:00 AM |   | Event Registration & Breakfast                                           |
-| 10:00 AM - 10:45 AM |   | Research Highlights                                                      |
-| 10:45 AM - 11:30 AM |   | Industry Panel                                                           |
-| 11:30 AM - 12:00 PM |   | Lunch                                                                    |
-| 12:00 PM - 01:00 PM |   | Keynote (Jeff Leek)  45 min talk + 15 Q&A                                |
-| 01:00 PM - 03:00 PM |   |  Research Expo (posters, demos, information booths)                      |
-| 01:00 PM - 02:00 PM |   | Career Fair Set-up (encourage industry participants to view posters etc) |
-| 02:00 PM - 05:30 PM |   | Career Fair                                                              |
+|  |  |  |
+|---|---|---|
+| 09:00 AM - 10:00 AM |  | Event Registration & Breakfast |
+| 10:00 AM - 10:45 AM |  | Research Highlights<br> |
+|  |  | &nbsp;&nbsp;- **Kate Issacs**<br>&nbsp;&nbsp;&nbsp;&nbsp;Associate Professor - SCI Institute & Kahlert School of Computing<br>&nbsp;&nbsp;&nbsp;&nbsp;*Visualizing Environmental and Socioeconomic Data to Combat Health Disparities*<br>&nbsp;&nbsp;- **Jacob Hochhalter**<br>&nbsp;&nbsp;&nbsp;&nbsp;Assistant Professor - Mechanical Engineering<br>&nbsp;&nbsp;&nbsp;&nbsp;*Scientific Machine Learning for Interpretable Material Models*<br>&nbsp;&nbsp;- **Nina DeLacy**<br>&nbsp;&nbsp;&nbsp;&nbsp;Assistant Professor - Huntsman Mental Health Institute & Department of Psychiatry<br>&nbsp;&nbsp;&nbsp;&nbsp;*Addressing the mental health crisis: From data to information* |
+| 10:45 AM - 11:30 AM |  | Industry Panel |
+|  |  | &nbsp;&nbsp;- **Levi Thatcher, PhD**<br>&nbsp;&nbsp;&nbsp;&nbsp;Senior Director, Data Science<br>&nbsp;&nbsp;&nbsp;&nbsp;Pluralsight<br>&nbsp;&nbsp;- **Peter McLean, PhD**<br>&nbsp;&nbsp;&nbsp;&nbsp;Director, Data Science<br>&nbsp;&nbsp;&nbsp;&nbsp;Recursion<br>&nbsp;&nbsp;- **Jes Ford, PhD**<br>&nbsp;&nbsp;&nbsp;&nbsp;Senior Machine Learning Engineer<br>&nbsp;&nbsp;&nbsp;&nbsp;Cash App |
+| 11:30 AM - 12:00 PM |  | Lunch |
+| 12:00 PM - 01:00 PM |  | Keynote by |
+|  |  | &nbsp;&nbsp;- **Jeff Leek**<br>&nbsp;&nbsp;&nbsp;&nbsp;45 min talk + 15 Q&A |
+| 01:00 PM - 03:00 PM |  |  Research Expo |
+|  |  | &nbsp;&nbsp;- Dozens of posters, demos, and information booths |
+|  |  | &nbsp;&nbsp;- Learn about ongoing projects, find collaborators |
+| 01:00 PM - 02:00 PM |  | Career Fair Set-up (encourage industry participants to view posters etc) |
+| 02:00 PM - 05:30 PM |  | Career Fair |
+|  |  | &nbsp;&nbsp;- Companies include our event sponsors: Sorenson, Recursion, BioMerieux |
 
 ----
 
@@ -89,6 +95,12 @@ Jeff is Chief Data Officer, Vice President, and J Orin Edson Foundation Chair of
 
 </div>
 </div>
+
+### Career Fair
+
+Attend the career fair to meet with companies including our sponsors: Sorenson, Recursion, BioMerieux
+
+<img src="imgs/sponsors.png" alt="Sponsor logos for data science day 2023" width="100%" />
 
 
 ----

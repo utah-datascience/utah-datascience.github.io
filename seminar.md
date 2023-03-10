@@ -4,7 +4,7 @@ title: Data Science Seminar
 header:
   title: Data Science Seminar
   excerpt: |
-    Wednesdays 10:30 - 11:45, WEB 3780, [Zoom](https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09)
+    Wednesdays 10:30 - 11:45, MEB 3147, [Zoom](https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09)
     
     [mailing list](http://mailman.cs.utah.edu/mailman/listinfo/UCDS-seminar)
     {: class="btn btn-neutral"}
@@ -26,3 +26,4 @@ header:
 
 ## All Seminar Talks
 {% include full_calendar.html %}
+lo
