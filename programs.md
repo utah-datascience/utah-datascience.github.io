@@ -8,13 +8,13 @@ header:
   background-image: /assets/img/header-background/zion-shorter.jpg
 ---
 
-{% assign programs = site.programs | sort: 'date' | reverse %}
+{% assign programs = site.programs | sort: 'name' %}
 {% for program in programs %}
 <div class="row justify-content-center pb-4">
   <div class="col-lg-12">
     <h3>{{ program.name }}</h3>
     {{ program.content | markdownify }}
-    <a href="{{ program.link }}">Show more</a>
+    <a href="{{ program.link }}" target="_blank" rel="noopener noreferrer">Show more</a>
   </div>
 </div>
 {% endfor %}
@@ -22,7 +22,7 @@ header:
 <div class="pt-4 border-top text-center">
   <div class="row justify-content-center">
     <div class="col-lg-9">
-      <p><I>Disclaimer:</I> This page is under construction. If have a Utah course or program that we have
+      <p><I>Disclaimer:</I> This page is under construction. If you find a Utah course or program that we have
       not listed here, please contact us at the email address below and we will include it here.</p>
     </div>
   </div>
