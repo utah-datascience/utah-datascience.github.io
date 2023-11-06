@@ -1,7 +1,7 @@
 ---
 title: 2024 Data Science Day
 header:
-  title: <img src="../../2023/data-science-day/imgs/dataday-logo-2023.png" alt="2024 Data Science Day">
+  title: <img src="./assets/dataday-logo-2024.png" alt="2024 Data Science Day">
 categories: dataday
 date: 2024-01-12
 ---
