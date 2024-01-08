@@ -27,11 +27,11 @@ date: 2024-01-12
   </div> -->
 
   <div class="col-md-4 text-center">
-  <a href="./assets/UDSD2024-AgendaTentative.pdf" download>
+  <a href="./assets/UDSD2024-Program.pdf" download>
     <div class="h5">
         Agenda
     </div>
-    <img src="./assets/UDSD2024-AgendaTentative.jpg" width="100%"/>
+    <img src="./assets/UDSD2024-Program.jpg" width="100%"/>
   </a>
   </div>
 </div>
