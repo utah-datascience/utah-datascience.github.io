@@ -7,24 +7,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/10.0.0/markdown-it.min.js"></script>
 
 <script>
-  var maxResults = 1;  // for fetchGoogleCalendarEvents() in fetchGoogleCalendar.js
+  var maxResults = 1; // for fetchGoogleCalendarEvents() in fetchGoogleCalendar.js
 
   // fetchGoogleCalendarEvents() in fetchGoogleCalendar.js will call show(items) after success.
   function show(items) {
-    entry = items[0]
-    var startsAt = moment(entry.start.dateTime).format('dddd, MMMM DD, h:mma');
+    entry = items[0];
+    var startsAt = moment(entry.start.dateTime).format("dddd, MMMM DD, h:mma");
     var endsAt = moment(entry.end.dateTime).format("h:mma");
     var calendarHTML = `<div ><a href="${entry.htmlLink}" target="_blank"><h4>${entry.summary}</h4></a></div>`;
     calendarHTML += '<table class="description">';
     calendarHTML += `<tr><th class="text-muted">When</th><td style="padding-left:5px">${startsAt} - ${endsAt}</td></tr>`;
     calendarHTML += `<tr><th class="text-muted">Where</th><td style="padding-left:5px">${entry.location}</td></tr>`;
-    calendarHTML += '</table>';
+    calendarHTML += "</table>";
     var md = window.markdownit();
-    var description = md.render(entry.description);
-    calendarHTML += `<div class="mt-3">${entry.description}</div>`;
-    $('#nextTalk').html(calendarHTML);
+    var description =
+      typeof entry.description === "string"
+        ? md.render(entry.description)
+        : md.render("");
+    calendarHTML += `<div class="mt-3">${description}</div>`;
+    $("#nextTalk").html(calendarHTML);
   }
 
   // Loads the JavaScript client library and invokes `start` afterwards.
-  gapi.load('client', fetchGoogleCalendarEvents);
+  gapi.load("client", fetchGoogleCalendarEvents);
 </script>
