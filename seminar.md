@@ -4,8 +4,8 @@ title: Data Science Seminar
 header:
   title: Data Science Seminar
   excerpt: |
-    Wednesdays 10:30 - 11:45, [FASB 295](http://map.utah.edu/index.html?code=FASB), [Zoom](https://utah.zoom.us/j/91737198805?pwd=Z1o2SzE4OVRodVhDWWExOTdVcUs5Zz09)
-    
+    Wednesdays 1:30pm - 2:30pm, [GC 2560](https://map.utah.edu/index.html?code=GC), [Zoom](https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09)
+
     [mailing list](http://mailman.cs.utah.edu/mailman/listinfo/UCDS-seminar)
     {: class="btn btn-neutral"}
     [Calendar](https://calendar.google.com/calendar?cid=ZWtvbDd1bHFtMTRudjE1NWFuZ3V0MnJsZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
@@ -14,6 +14,7 @@ header:
 ---
 
 ## Next Seminar Talk
+
 {% include next_talks.html %}
 
 <h2 style="margin-top: 32px;">Seminar Recordings</h2>
@@ -25,5 +26,5 @@ header:
 ---
 
 ## All Seminar Talks
+
 {% include full_calendar.html %}
-lo
