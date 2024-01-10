@@ -17,7 +17,9 @@
     var calendarHTML = `<div ><a href="${entry.htmlLink}" target="_blank"><h4>${entry.summary}</h4></a></div>`;
     calendarHTML += '<table class="description">';
     calendarHTML += `<tr><th class="text-muted">When</th><td style="padding-left:5px">${startsAt} - ${endsAt}</td></tr>`;
-    calendarHTML += `<tr><th class="text-muted">Where</th><td style="padding-left:5px">${entry.location}</td></tr>`;
+    calendarHTML += `<tr><th class="text-muted">Where</th><td style="padding-left:5px">${
+      entry.location ?? "See Above"
+    }</td></tr>`;
     calendarHTML += "</table>";
     var md = window.markdownit();
     var description =
