@@ -23,9 +23,9 @@ feature_row:
     icon_color: default
     badge_color: default
   - icon: fa fa-university
-    title: 2024 Data Science Day
-    excerpt: 2024 Data Science Day is scheduled Friday January 12, 2024, registration is now open.
-    url: /events/2024/data-science-day/
+    title: 2025 Data Science & AI Day
+    excerpt: 2025 Data Science & AI Day is scheduled Friday January 24, 2025.
+    url: /events/2025/data-science-day/
     btn_label: View details &raquo;
     btn_class: mt-4
     badge:
