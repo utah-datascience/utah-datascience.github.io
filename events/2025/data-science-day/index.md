@@ -10,7 +10,7 @@ date: 2025-01-24
 
 - **Date**: Friday, Jan 24, 2025
 - **Location**: [Union Ballroom](https://g.page/unionuofu)
-- **Register [here](https://bit.ly/udsd-2024)**
+- **Registration: TBA**
 
 **Organized by**: Utah Center for Data Science
 
