@@ -1,12 +1,12 @@
 ---
-title: 2025 Data Science Day
+title: 2025 Data Science & AI Day
 header:
-  title: <img src="./assets/dataday-logo-2024.png" alt="2024 Data Science Day">
+  title: <img src="./assets/dataday-logo-2024.png" alt="2024 Data Science & AI Day">
 categories: dataday
 date: 2025-01-24
 ---
 
-# 2025 Data Science Day
+# 2025 Data Science & AI Day
 
 - **Date**: Friday, Jan 24, 2025
 - **Location**: [Union Ballroom](https://g.page/unionuofu)
