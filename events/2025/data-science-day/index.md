@@ -19,6 +19,6 @@ date: 2025-01-24
 
 ## Participation
 
-We welcome all students, staff, and faculty at the University of Utah to participate Utah Data Science Day 2025. If you have any questions, contact us at [datasci@utah.edu](datasci@utah.edu).
+We welcome all students, staff, and faculty at the University of Utah to participate Utah Data Science & AI Day 2025. If you have any questions, contact us at [datasci@utah.edu](datasci@utah.edu).
 
 ---
