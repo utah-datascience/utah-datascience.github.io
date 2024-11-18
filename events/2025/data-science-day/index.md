@@ -1,7 +1,7 @@
 ---
 title: 2025 Data Science & AI Day
 header:
-  title: <img src="./assets/dataday-logo-2024.png" alt="2024 Data Science & AI Day">
+  title: <img src="./assets/DS+AI-D25.png" alt="2025 Data Science & AI Day">
 categories: dataday
 date: 2025-01-24
 ---
