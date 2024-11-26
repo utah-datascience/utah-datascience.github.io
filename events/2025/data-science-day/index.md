@@ -21,6 +21,8 @@ date: 2025-01-24
 
 10am - 1pm : Data Science & AI Career Expo
 
+11am - 1:30pm : Poster / Info Booth Session
+
 1-2pm : Networking Lunch
 
 2-3pm : Keynote: **Where is RobotGPT?** by [Dieter Fox](https://homes.cs.washington.edu/~fox/)
