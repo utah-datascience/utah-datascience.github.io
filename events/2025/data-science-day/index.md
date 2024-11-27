@@ -11,6 +11,7 @@ date: 2025-01-24
 - **Date**: Friday, Jan 24, 2025
 - **Location**: [Union Ballroom](https://g.page/unionuofu)
 - **Registration: [on handshake](https://utah.joinhandshake.com/career_fairs/53705/student_preview)**
+- **Present: [a poster/booth](https://forms.gle/3nYDiEwDFQY1GP6FA)**
 
 **Organized by**: Utah Center for Data Science
 
@@ -19,9 +20,9 @@ date: 2025-01-24
 
 ## Tentative Schedule
 
-10am - 1pm : Data Science & AI Career Expo
+10am - 1pm : Data Science & AI Career Expo  [**[register](https://utah.joinhandshake.com/career_fairs/53705/student_preview)**]
 
-11am - 1:30pm : Poster / Info Booth Session
+11am - 1:30pm : Poster / Info Booth Session [**[sign up](https://forms.gle/3nYDiEwDFQY1GP6FA)**]
 
 1-2pm : Networking Lunch
 
@@ -38,6 +39,8 @@ We welcome all students, staff, and faculty at the University of Utah to partici
 [Student Registration](https://utah.joinhandshake.com/career_fairs/53705/student_preview) for Data Science & AI Career Expo 
 
 [Employer Registration](https://app.joinhandshake.com/career_fairs/53705/employer_preview) for Data Science & AI Career Expo
+
+[Sign-up to present](https://forms.gle/3nYDiEwDFQY1GP6FA) a poster or information booth
 
 ---
 
