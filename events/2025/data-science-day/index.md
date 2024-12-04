@@ -11,7 +11,7 @@ date: 2025-01-24
 - **Date**: Friday, Jan 24, 2025
 - **Location**: [Union Ballroom](https://g.page/unionuofu)
 - **Registration: [on handshake](https://utah.joinhandshake.com/career_fairs/53705/student_preview)**
-- **Present: [a poster/booth](https://forms.gle/3nYDiEwDFQY1GP6FA)**
+- **Present: [a poster/booth](https://forms.gle/3nYDiEwDFQY1GP6FA)**  ( <-- or just register to attend here w/o handshake)
 
 **Organized by**: Utah Center for Data Science
 
@@ -20,15 +20,13 @@ date: 2025-01-24
 
 ## Tentative Schedule
 
-10am - 1pm : Data Science & AI Career Expo  [**[register](https://utah.joinhandshake.com/career_fairs/53705/student_preview)**]
-
-11am - 1:30pm : Poster / Info Booth Session [**[sign up](https://forms.gle/3nYDiEwDFQY1GP6FA)**]
-
-1-2pm : Networking Lunch
-
-2-3pm : Keynote: **Where is RobotGPT?** by [Dieter Fox](https://homes.cs.washington.edu/~fox/)
-
-3-4pm : Research Highlights
+| Time | Event | Link |
+| ----- | --------- | --- |
+| 10am - 1pm | Data Science & AI Career Expo | [**[register](https://utah.joinhandshake.com/career_fairs/53705/student_preview)**] |
+| 11am - 1:30pm | Poster / Info Booth Session | [**[sign up](https://forms.gle/3nYDiEwDFQY1GP6FA)**] |
+| 1-2pm | Networking Lunch | |
+| 2-3pm | Keynote: **Where is RobotGPT?** | by [Dieter Fox](https://homes.cs.washington.edu/~fox/) |
+| 3-4pm | Research Highlights | |
 
 ---
 
@@ -40,7 +38,8 @@ We welcome all students, staff, and faculty at the University of Utah to partici
 
 [Employer Registration](https://app.joinhandshake.com/career_fairs/53705/employer_preview) for Data Science & AI Career Expo
 
-[Sign-up to present](https://forms.gle/3nYDiEwDFQY1GP6FA) a poster or information booth
+[Sign-up to present](https://forms.gle/3nYDiEwDFQY1GP6FA) a poster or information booth \
+Also use this to register without using handshake (if not attending career fair)
 
 ---
 
