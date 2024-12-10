@@ -1,8 +1,8 @@
 ---
 layout: single
-title: Data Science Seminar
+title: Data Science & AI Lecture Series
 header:
-  title: Data Science Seminar
+  title: Data Science & AI Lecture Series
   excerpt: |
     Fridays 1:30pm - 2:30pm, WEB L112, [Zoom](https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09)
 
@@ -13,7 +13,7 @@ header:
   background-image: /assets/img/header-background/zion-shorter.jpg
 ---
 
-## Next Seminar Talk
+## Next Talk in Lecture Series
 
 {% include next_talks.html %}
 
@@ -25,6 +25,6 @@ header:
 
 ---
 
-## All Seminar Talks
+## All Talks
 
 {% include full_calendar.html %}
