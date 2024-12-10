@@ -4,7 +4,7 @@ title: Data Science Seminar
 header:
   title: Data Science Seminar
   excerpt: |
-    Tuesdays 12:30pm - 1:30pm, WEB 1230, [Zoom](https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09)
+    Fridays 1:30pm - 2:30pm, WEB L112, [Zoom](https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09)
 
     [mailing list](http://mailman.cs.utah.edu/mailman/listinfo/UCDS-seminar)
     {: class="btn btn-neutral"}
