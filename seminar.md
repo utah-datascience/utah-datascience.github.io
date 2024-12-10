@@ -13,6 +13,8 @@ header:
   background-image: /assets/img/header-background/zion-shorter.jpg
 ---
 
+This weekly lecture series covers technical developments in data science & AI, as well as its applications to different domains, industry, and policy. It is intended for a wide audience.  Everyone is welcome to attend.  
+
 ## Next Talk in Lecture Series
 
 {% include next_talks.html %}
