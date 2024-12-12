@@ -1,7 +1,7 @@
 ---
 name: Blair Sullivan
 title: |
-    Associate Professor, School of Computing, University of Utah
+    Professor, Kahlert School of Computing, University of Utah
     Adjunct Faculty, Department of Computer Science, North Carolina State University
 role: Associate Director of Research
 link: https://www.cs.utah.edu/~sullivan/#!/
