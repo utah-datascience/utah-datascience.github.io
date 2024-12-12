@@ -1,7 +1,7 @@
 ---
 name: Aditya Bhaskara
 title: |
-    Assistant Professor, School of Computing, University of Utah
+    Associate Professor, Kahlert School of Computing, University of Utah
 role: Core Members
 link: http://www.cs.utah.edu/~bhaskara/
 pic: assets/img/member_photos/aditya_p2.png
