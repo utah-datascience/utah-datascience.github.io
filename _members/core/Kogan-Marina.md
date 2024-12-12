@@ -1,7 +1,7 @@
 ---
 name: Marina Kogan
 title: |
-    Assistant Professor, School of Computing, University of Utah
+    Assistant Professor, Kahlert School of Computing, University of Utah
 role: Core Members
 link: http://www.mkoganresearch.com/
 pic: assets/img/member_photos/kogan-marina.png
