@@ -2,7 +2,7 @@
 name: Vivek Srikumar
 role: Core Members
 title: |
-    Associate Professor, School of Computing, University of Utah
+    Associate Professor, Kahlert School of Computing, University of Utah
 link: https://svivek.com/
 pic: assets/img/member_photos/vivek.png
 ---
