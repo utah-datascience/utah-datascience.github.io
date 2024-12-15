@@ -1,5 +1,5 @@
 ---
-name: El Kindi REzig
+name: El Kindi Rezig
 title: |
     Assistant Professor, Kahlert School of Computing, University of Utah
 role: Core Members
