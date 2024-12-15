@@ -5,7 +5,7 @@ title: |
     Senior Research Scientist, NVIDIA
 role: Core Members
 link: https://robot-learning.cs.utah.edu/thermans
-pic: assets/img/member_photos/hermans-tucker.png
+pic: assets/img/member_photos/hermans-tucker.jpeg
 ---
 
 Tucker’s research focuses on learning, planning, and perception for autonomous robot manipulation. Tucker has broad expertise in using probabilistic techniques for learning and inference on physical systems.
