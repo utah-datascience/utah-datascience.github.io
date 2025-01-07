@@ -27,9 +27,9 @@ date: 2025-01-24
 | 1-2pm | Networking Lunch | |
 | 2-3pm | Keynote: **Where is RobotGPT?** | by [Dieter Fox](https://homes.cs.washington.edu/~fox/) |
 | 3-4pm | Research Highlights | |
-|       | AI for Computer Vision | [Ziad Al-Halah](https://users.cs.utah.edu/~ziad/) |
+|       | AI in Computer Vision | [Ziad Al-Halah](https://users.cs.utah.edu/~ziad/) |
 |       | DS of Human Mobility | [Xiaoyue Cathy Liu](https://sites.google.com/view/xiaoyuecathyliu/) |
-|       | TBA | TBA | 
+|       | ML for Astronomy | Shiqi Yu | 
 
 ---
 
