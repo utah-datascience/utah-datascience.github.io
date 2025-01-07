@@ -26,10 +26,10 @@ date: 2025-01-24
 | 11am - 1:30pm | Poster / Info Booth Session | [**[sign up](https://forms.gle/3nYDiEwDFQY1GP6FA)**] |
 | 1-2pm | Networking Lunch | |
 | 2-3pm | Keynote: **Where is RobotGPT?** | by [Dieter Fox](https://homes.cs.washington.edu/~fox/) |
-| 3-4pm | Research Highlights | |
-|       | AI in Computer Vision | [Ziad Al-Halah](https://users.cs.utah.edu/~ziad/) |
-|       | DS of Human Mobility | [Xiaoyue Cathy Liu](https://sites.google.com/view/xiaoyuecathyliu/) |
-|       | ML for Astronomy | Shiqi Yu | 
+| 3-4pm | <ins>Research Highlights</ins>: | |
+|       | - AI in Computer Vision | [Ziad Al-Halah](https://users.cs.utah.edu/~ziad/) |
+|       | - DS of Human Mobility | [Xiaoyue Cathy Liu](https://sites.google.com/view/xiaoyuecathyliu/) |
+|       | - ML for Astronomy | Shiqi Yu | 
 
 ---
 
