@@ -60,3 +60,24 @@ In this talk, I will discuss approaches to generating large datasets for trainin
 Dieter Fox is Senior Director of Robotics Research at NVIDIA and Professor in the Allen School of Computer Science & Engineering at the University of Washington, where he heads the UW Robotics and State Estimation Lab. Dieter's research is in robotics and artificial intelligence, with a focus on learning and perception applied to problems such as robot manipulation, mapping, and object detection and tracking. He has published more than 200 technical papers and is the co-author of the textbook “Probabilistic Robotics”. He is a Fellow of the IEEE, AAAI, and ACM, and recipient of the 2020 IEEE Pioneer in Robotics and Automation Award and the 2023 IJCAI John McCarthy Award.  He was an editor of the IEEE Transactions on Robotics, program co-chair of the 2008 AAAI Conference on Artificial Intelligence, and program chair of the 2013 Robotics: Science and Systems conference.
 
 
+---
+
+<div class="row" style="justify-content: center;">
+  <div class="col-md-4 text-center">
+  <a href="./assets/DS+AIday2025.pdf" download>
+    <img src="./assets/DS+AIday2025.jpeg" width="100%"/>
+  </a>
+  </div>
+</div>
+
+---
+
+### Previous Events
+
+- [Data Science Day 2024](../../2024/data-science-day)
+- [Data Science Day 2023](../../2023/data-science-day)
+- [Datathon 2022](../../datathon/2022)
+- [Data Science Day 2019](../../2019)
+- [Data Science Day 2018](../../2018)
+- [Data Science Day 2017](../../2017)
+
