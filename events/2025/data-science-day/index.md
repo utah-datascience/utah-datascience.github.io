@@ -11,7 +11,7 @@ date: 2025-01-24
 - **Date**: Friday, Jan 24, 2025
 - **Location**: [Union Ballroom](https://g.page/unionuofu)
 - **Registration: [on handshake](https://utah.joinhandshake.com/career_fairs/53705/student_preview)**
-- **Present: [a poster/booth](https://forms.gle/3nYDiEwDFQY1GP6FA)**  ( <-- or just register to attend here w/o handshake)
+- **Present: [a poster/booth/register](https://forms.gle/3nYDiEwDFQY1GP6FA)**  ( <-- or just register to attend here w/o handshake)
 
 **Organized by**: Utah Center for Data Science
 
