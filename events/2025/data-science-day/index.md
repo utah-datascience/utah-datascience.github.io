@@ -18,13 +18,13 @@ date: 2025-01-24
 
 ---
 
-## Tentative Schedule
+## Schedule
 
 | Time | Event | Link |
 | ----- | --------- | --- |
 | 10am - 1pm | Data Science & AI Career Expo | [**[register](https://utah.joinhandshake.com/career_fairs/53705/student_preview)**] |
 | 11am - 1:30pm | Poster / Info Booth Session | [**[sign up](https://forms.gle/3nYDiEwDFQY1GP6FA)**] |
-| 1-2pm | Networking Lunch | |
+| 1-2pm | Networking Lunch | pizza on patio |
 | 2-3pm | Keynote: **Where is RobotGPT?** | by [Dieter Fox](https://homes.cs.washington.edu/~fox/) |
 | 3-4pm | <ins>Research Highlights</ins>: | |
 |       | - AI in Computer Vision | [Ziad Al-Halah](https://users.cs.utah.edu/~ziad/) |
