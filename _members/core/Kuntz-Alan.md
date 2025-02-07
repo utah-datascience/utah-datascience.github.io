@@ -6,4 +6,4 @@ role: Core Members
 link: https://users.cs.utah.edu/~adk/
 ---
 
-He is a computer scientist and roboticist with a research focus in robot motion planning, autonomous systems, AI, and robot design optimization. He is particularly passionate about applications for robots in healthcare and surgery. Alan leads an interdisciplinary research lab focussing on robotics and computational methods with medical applications.
+Alan Kuntz leads a highly interdisciplinary research lab consisting of computer scientists, mechanical engineers, electrical and computer engineers, and applied mathematicians. His research focuses on the design of automation and machine learning methods for robots and on the mechanical design and control of novel robotic systems with healthcare applications.
