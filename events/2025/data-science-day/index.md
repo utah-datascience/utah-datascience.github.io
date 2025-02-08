@@ -72,6 +72,12 @@ Dieter Fox is Senior Director of Robotics Research at NVIDIA and Professor in th
 
 ---
 
+### Media
+
+- [2025 DATA SCIENCE & AI DAY SEES OVER 200 ATTENDEES, KEYNOTE SPEAKER FROM NVIDIA](https://www.cs.utah.edu/2025-data-science-ai-day-sees-over-200-attendees-keynote-speaker-from-nvidia/)
+
+---
+
 ### Previous Events
 
 - [Data Science Day 2024](../../2024/data-science-day)
