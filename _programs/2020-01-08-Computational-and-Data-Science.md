@@ -3,4 +3,4 @@ name: Computational and Data Science
 link: http://pmst.utah.edu/computational-and-data-science-program-of-study/
 ---
 
-The Computational Science Track incorporates coursework from different mathematical disciplines to reflect the breadth of computational and data science employed to solve real-world problems. The degree program is offered through the College of Science with students earning the Master of Science and Technology (MST) in Computational Science.
+A master's in Computational and Data Science from the interdisciplinary Professional Science Master's (PSM) program. Students may focus more on math and statistics or take advanced coursework in computer science, with the possibility of earning the Graduate Certificate in Deep Learning concurrently. Along with graduate level STEM classes, PSM students complete coursework in project management, business development, policy, etc, to prepare for careers outside academia.  
