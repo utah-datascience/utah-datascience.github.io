@@ -6,7 +6,7 @@ header:
   excerpt: |
     Fridays 1:30pm - 2:30pm, WEB L112, [Zoom](https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09)
 
-    [mailing list](http://mailman.cs.utah.edu/mailman/listinfo/UCDS-seminar)
+    [mailing list](https://mailman.cs.utah.edu/mailman3/lists/ucds-seminar.cs.utah.edu/)
     {: class="btn btn-neutral"}
     [Calendar](https://calendar.google.com/calendar?cid=ZWtvbDd1bHFtMTRudjE1NWFuZ3V0MnJsZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
     {: class="btn btn-neutral"}
