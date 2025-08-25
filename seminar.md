@@ -4,7 +4,7 @@ title: Data Science & AI Lecture Series
 header:
   title: Data Science & AI Lecture Series
   excerpt: |
-    Wednesdays 11 - 12am, LNCO 1100, [Zoom](https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09)
+    Wednesdays 11 - 12am, LNCO 1100, [Zoom](https://utah.zoom.us/j/7824755969?pwd=SUplL1EwUmU0TE5JRkhyQ2dtNmsvdz09)
 
     [mailing list](https://mailman.cs.utah.edu/mailman3/lists/ucds-seminar.cs.utah.edu/)
     {: class="btn btn-neutral"}
