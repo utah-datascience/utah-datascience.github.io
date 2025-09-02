@@ -7,6 +7,8 @@ on:
     # Wednesday at 8 AM MST (15:00 UTC) - MST is UTC-7
     - cron: '0 15 * * 3'
   workflow_dispatch: # Allow manual triggering for testing
+  pull_request: # Run in dry-mode for PRs
+  push: # Run in dry-mode for commits
 
 jobs:
   post-to-bluesky:
@@ -32,5 +34,12 @@ jobs:
         BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
         GOOGLE_CALENDAR_API_KEY: ${{ secrets.GOOGLE_CALENDAR_API_KEY }}
       run: |
-        python .github/scripts/post_to_bluesky.py
+        # Determine if this is a dry run (for PRs and pushes)
+        if [[ "${{ github.event_name }}" == "pull_request" || "${{ github.event_name }}" == "push" ]]; then
+          echo "Running in dry-mode (PR/push event) - will only generate and display the message"
+          python .github/scripts/post_to_bluesky.py --dry-run
+        else
+          echo "Running in posting mode (scheduled/manual trigger) - will post to Bluesky"
+          python .github/scripts/post_to_bluesky.py
+        fi
       continue-on-error: true  # Don't fail the workflow if Bluesky credentials aren't set up yet

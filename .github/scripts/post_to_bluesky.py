@@ -8,6 +8,7 @@ import os
 import sys
 import json
 import requests
+import argparse
 from datetime import datetime, timezone
 from dateutil import parser
 import logging
@@ -167,13 +168,19 @@ def format_event_message(event):
 
 def main():
     """Main function to orchestrate the calendar fetch and Bluesky post"""
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description="Post Utah Data Science Center events to Bluesky")
+    parser.add_argument("--dry-run", action="store_true", 
+                       help="Generate and display the message without posting to Bluesky")
+    args = parser.parse_args()
+    
     # Get environment variables
     bluesky_username = os.getenv("BLUESKY_USERNAME")
     bluesky_password = os.getenv("BLUESKY_PASSWORD")
     google_api_key = os.getenv("GOOGLE_CALENDAR_API_KEY")
     
-    # Check if credentials are provided
-    if not bluesky_username or not bluesky_password:
+    # In dry-run mode, we don't need Bluesky credentials
+    if not args.dry_run and (not bluesky_username or not bluesky_password):
         logger.warning("Bluesky credentials not provided. Skipping post.")
         logger.info("This is expected until the Bluesky credentials are added to GitHub secrets.")
         logger.info("To add credentials, set BLUESKY_USERNAME and BLUESKY_PASSWORD in GitHub repository secrets.")
@@ -190,6 +197,17 @@ def main():
     
     # Format the message
     message = format_event_message(next_event)
+    
+    if args.dry_run:
+        logger.info("DRY RUN MODE - Message would be posted to Bluesky:")
+        print("\n" + "="*60)
+        print("BLUESKY POST PREVIEW")
+        print("="*60)
+        print(message)
+        print("="*60)
+        logger.info("Dry run completed successfully")
+        return
+    
     logger.info(f"Formatted message: {message}")
     
     # Post to Bluesky
