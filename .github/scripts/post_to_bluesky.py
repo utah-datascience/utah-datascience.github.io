@@ -44,8 +44,8 @@ class BlueSkyPoster:
             logger.error(f"Failed to authenticate with Bluesky: {e}")
             return False
     
-    def post_message(self, message):
-        """Post a message to Bluesky"""
+    def post_message(self, message, facets=None):
+        """Post a message to Bluesky with optional richtext facets"""
         if not self.session:
             logger.error("Not authenticated. Call authenticate() first.")
             return False
@@ -59,14 +59,20 @@ class BlueSkyPoster:
             
             # Create the post record
             now = datetime.now(timezone.utc).isoformat()
+            record = {
+                "$type": "app.bsky.feed.post",
+                "text": message,
+                "createdAt": now
+            }
+            
+            # Add facets if provided (for rich text links)
+            if facets:
+                record["facets"] = facets
+                
             post_data = {
                 "repo": self.session["did"],
                 "collection": "app.bsky.feed.post",
-                "record": {
-                    "$type": "app.bsky.feed.post",
-                    "text": message,
-                    "createdAt": now
-                }
+                "record": record
             }
             
             response = requests.post(post_url, headers=headers, json=post_data)
@@ -117,16 +123,56 @@ class GoogleCalendarFetcher:
             logger.error(f"Failed to fetch calendar events: {e}")
             return None
 
-def format_event_message(event):
+def create_richtext_facets(text, link_text, url):
+    """Create Bluesky richtext facets for linking text to a URL"""
+    # Find the position of the link text in the message
+    start_pos = text.find(link_text)
+    if start_pos == -1:
+        return None
+        
+    end_pos = start_pos + len(link_text)
+    
+    facets = [{
+        "index": {
+            "byteStart": len(text[:start_pos].encode('utf-8')),
+            "byteEnd": len(text[:end_pos].encode('utf-8'))
+        },
+        "features": [{
+            "$type": "app.bsky.richtext.facet#link",
+            "uri": url
+        }]
+    }]
+    
+    return facets
+
+def format_event_message(event, posting_day="unknown"):
     """Format the event data into a Bluesky post message"""
     if not event:
-        return "Join us for our next Utah Data Science Center event! Check our website for details: https://datascience.utah.edu/seminar"
+        return ""  # Return empty string when no event found
     
     # Extract event details
     title = event.get("summary", "Utah Data Science Event")
     description = event.get("description", "")
     location = event.get("location", "")
     html_link = event.get("htmlLink", "")
+    
+    # Extract speaker from description or title
+    speaker = ""
+    if description:
+        # Try to extract speaker from common patterns
+        import re
+        speaker_patterns = [
+            r"Speaker:?\s*([^\n\r]+)",
+            r"Presenter:?\s*([^\n\r]+)",
+            r"by\s+([^\n\r]+)",
+        ]
+        for pattern in speaker_patterns:
+            match = re.search(pattern, description, re.IGNORECASE)
+            if match:
+                speaker = match.group(1).strip()
+                # Clean up any trailing periods or extra whitespace
+                speaker = speaker.rstrip('.')
+                break
     
     # Parse start time
     start_time = None
@@ -136,10 +182,26 @@ def format_event_message(event):
         elif "date" in event["start"]:
             start_time = parser.parse(event["start"]["date"])
     
-    # Format the message
-    message_parts = ["🔬 Join us for our next Utah Data Science Center event!"]
+    # Determine timing context based on posting day and event day
+    now = datetime.now()
+    timing_prefix = "🔬 Join us for our next Utah Data Science Center event!"
     
-    message_parts.append(f"\n📅 {title}")
+    if start_time:
+        event_day = start_time.strftime("%A")
+        if posting_day == "monday" and event_day == "Wednesday":
+            timing_prefix = f"🔬 Join us {event_day}, {start_time.strftime('%b %d')} for our next Utah Data Science Center event!"
+        elif posting_day == "wednesday" and start_time.date() == now.date():
+            timing_prefix = "🔬 Join us today for our Utah Data Science Center event!"
+        elif start_time:
+            timing_prefix = f"🔬 Join us {event_day}, {start_time.strftime('%b %d')} for our next Utah Data Science Center event!"
+    
+    # Format the message
+    message_parts = [timing_prefix]
+    
+    message_parts.append(f"\n\n📅 {title}")
+    
+    if speaker:
+        message_parts.append(f"\n👤 Speaker: {speaker}")
     
     if start_time:
         formatted_time = start_time.strftime("%A, %B %d at %I:%M %p")
@@ -152,17 +214,22 @@ def format_event_message(event):
     if description and description.strip():
         # Remove markdown and HTML tags for a cleaner description
         clean_desc = description.replace("*", "").replace("**", "").replace("#", "")
-        # Take first sentence or first 100 characters
-        if len(clean_desc) > 100:
-            clean_desc = clean_desc[:100] + "..."
-        message_parts.append(f"\n\n{clean_desc}")
+        # Take first sentence or first 100 characters, avoiding speaker info
+        lines = clean_desc.split('\n')
+        desc_text = ""
+        for line in lines:
+            if not any(keyword in line.lower() for keyword in ['speaker:', 'presenter:', 'by ']):
+                desc_text = line.strip()
+                break
+        
+        if desc_text and len(desc_text) > 100:
+            desc_text = desc_text[:100] + "..."
+        if desc_text:
+            message_parts.append(f"\n\n{desc_text}")
     
-    message_parts.append(f"\n\n🔗 More info: https://datascience.utah.edu/seminar")
+    message_parts.append(f"\n\nMore details here")  # This will be linked using richtext facets
     
-    if html_link:
-        message_parts.append(f"\n📅 Calendar: {html_link}")
-    
-    message_parts.append("\n\n#DataScience #Utah #AI #MachineLearning")
+    message_parts.append("\n\n#datascience #ai #Utah #MachineLearning")
     
     return "".join(message_parts)
 
@@ -191,12 +258,38 @@ def main():
         google_api_key = "AIzaSyBq6TTVUkWGCs0vmGh1XlIuGn0w5dCtbsA"
         logger.info("Using fallback Google Calendar API key")
     
-    # Fetch the next event
-    calendar_fetcher = GoogleCalendarFetcher(google_api_key)
-    next_event = calendar_fetcher.get_next_event()
+    # Determine posting day context
+    current_day = datetime.now().strftime("%A").lower()
+    posting_day = "unknown"
+    if current_day == "monday":
+        posting_day = "monday"
+    elif current_day == "wednesday":
+        posting_day = "wednesday"
+    
+    # Fetch the next event with graceful error handling
+    try:
+        calendar_fetcher = GoogleCalendarFetcher(google_api_key)
+        next_event = calendar_fetcher.get_next_event()
+    except Exception as e:
+        logger.error(f"Failed to fetch calendar data (this may be due to network restrictions): {e}")
+        if args.dry_run:
+            logger.info("DRY RUN MODE - Would attempt to fetch calendar data")
+            logger.info("No event data available for preview due to network restrictions")
+            return
+        else:
+            logger.warning("Skipping post due to calendar fetch failure")
+            return
     
     # Format the message
-    message = format_event_message(next_event)
+    message = format_event_message(next_event, posting_day)
+    
+    # If no event found and message is empty, skip posting
+    if not message:
+        logger.info("No upcoming events found. Skipping post.")
+        return
+    
+    # Create richtext facets for the "here" link
+    facets = create_richtext_facets(message, "here", "https://datascience.utah.edu/seminar")
     
     if args.dry_run:
         logger.info("DRY RUN MODE - Message would be posted to Bluesky:")
@@ -204,6 +297,14 @@ def main():
         print("BLUESKY POST PREVIEW")
         print("="*60)
         print(message)
+        if facets:
+            print("\nRichtext Links:")
+            for facet in facets:
+                start = facet["index"]["byteStart"]
+                end = facet["index"]["byteEnd"]
+                link_text = message.encode('utf-8')[start:end].decode('utf-8')
+                url = facet["features"][0]["uri"]
+                print(f"  '{link_text}' -> {url}")
         print("="*60)
         logger.info("Dry run completed successfully")
         return
@@ -214,7 +315,7 @@ def main():
     poster = BlueSkyPoster(bluesky_username, bluesky_password)
     
     if poster.authenticate():
-        success = poster.post_message(message)
+        success = poster.post_message(message, facets)
         if success:
             logger.info("Successfully completed Bluesky post workflow")
         else:
