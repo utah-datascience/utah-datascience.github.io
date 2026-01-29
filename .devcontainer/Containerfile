@@ -1,0 +1,23 @@
+FROM ubuntu:22.04
+
+# Avoid prompts during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ruby-full \
+    build-essential \
+    zlib1g-dev \
+    git \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set up gem installation directory to avoid permission issues
+ENV GEM_HOME="/usr/local/bundle"
+ENV PATH="$GEM_HOME/bin:$PATH"
+
+# Install Jekyll and Bundler
+RUN gem install jekyll bundler
+
+# Set working directory
+WORKDIR /workspaces

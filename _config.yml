@@ -1,6 +1,10 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Utah Center for Data Science" # the name of your site, e.g. ACME Corp.
+encoding: utf-8
+
+# Disable the default primer theme from github-pages
+theme: null
 
 collections:
   programs:

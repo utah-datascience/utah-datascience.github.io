@@ -2,7 +2,7 @@
 name: El Kindi Rezig
 title: |
     Assistant Professor, Kahlert School of Computing, University of Utah
-role: Core Members
+role: Associate Director of Research
 link: https://elkindi.github.io/
 pic: assets/img/member_photos/rezig-elkindi.jpeg
 ---

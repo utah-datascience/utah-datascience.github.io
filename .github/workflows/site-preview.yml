@@ -1,0 +1,45 @@
+name: Jekyll Site PR Preview
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: "pages-${{ github.head_ref }}"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Jekyll site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-site
+          path: ./_site
+
+  # Post artifact link in PR comments
+  post-artifact:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post artifact link
+        uses: CDCgov/cfa-actions/post-artifact@main
+        with:
+          artifact-name: jekyll-site
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
