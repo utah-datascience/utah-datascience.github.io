@@ -1,0 +1,17 @@
+{
+  "name": "Utah Data Science Jekyll",
+  "build": {
+    "dockerfile": "Containerfile"
+  },
+  "postCreateCommand": "bundle install",
+  "forwardPorts": [4000],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "shopify.ruby-lsp",
+        "sissel.shopify-liquid"
+      ]
+    }
+  },
+  "remoteUser": "root"
+}

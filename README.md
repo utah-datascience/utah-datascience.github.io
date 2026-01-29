@@ -18,6 +18,8 @@ This will update `Gemfile.lock`.
   bundle exec jekyll serve
   ```
 
+You can also use `make setup`, `make serve`, `make build`, etc. Run `make help` to see all available targets.
+
 ## Content Edit
 ### Images in markdown
 To center the image and avoid big images overflow, you can specify the class `img-fluid` for the image by appending `{:class="img-fluid"}`, like
