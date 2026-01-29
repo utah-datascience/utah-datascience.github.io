@@ -1,0 +1,45 @@
+name: Post to Bluesky
+
+on:
+  schedule:
+    # Monday at 9 AM MST (16:00 UTC) - MST is UTC-7
+    - cron: '0 16 * * 1'
+    # Wednesday at 8 AM MST (15:00 UTC) - MST is UTC-7
+    - cron: '0 15 * * 3'
+  workflow_dispatch: # Allow manual triggering for testing
+  pull_request: # Run in dry-mode for PRs
+  push: # Run in dry-mode for commits
+
+jobs:
+  post-to-bluesky:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests python-dateutil
+        
+    - name: Post to Bluesky
+      env:
+        BLUESKY_USERNAME: ${{ secrets.BLUESKY_USERNAME }}
+        BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
+        GOOGLE_CALENDAR_API_KEY: ${{ secrets.GOOGLE_CALENDAR_API_KEY }}
+      run: |
+        # Determine if this is a dry run (for PRs and pushes)
+        if [[ "${{ github.event_name }}" == "pull_request" || "${{ github.event_name }}" == "push" ]]; then
+          echo "Running in dry-mode (PR/push event) - will only generate and display the message"
+          python .github/scripts/post_to_bluesky.py --dry-run
+        else
+          echo "Running in posting mode (scheduled/manual trigger) - will post to Bluesky"
+          python .github/scripts/post_to_bluesky.py
+        fi
+      continue-on-error: true  # Don't fail the workflow if Bluesky credentials aren't set up yet
