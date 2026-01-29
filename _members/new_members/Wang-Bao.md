@@ -1,7 +1,7 @@
 ---
 name: Bao Wang
 title: |
-    Assistant Professor, Department of Mathemathics, University of Utah
+    Assistant Professor, Department of Mathematics, University of Utah
     Faculty, Scientific Computing and Imaging Institute
 role: Core Members
 link: https://www.math.utah.edu/~bwang/

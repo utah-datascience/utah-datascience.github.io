@@ -11,7 +11,7 @@ help: ## Show this help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  %-15s %s\n", $$1, $$2}'
 
 setup: ## Install Ruby dependencies
-	bundle install 
+	bundle install
 
 serve: ## Start the Jekyll development server
 	bundle exec jekyll serve
