@@ -2,7 +2,7 @@
 name: Anna Little
 title: |
     Assistant Professor, Department of Mathematics, University of Utah
-role: Associate Director of Student-Engagement
+role: Core Members
 link: https://www.anna-little.com
 pic: assets/img/member_photos/little.png
 ---

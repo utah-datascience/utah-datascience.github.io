@@ -1,6 +1,6 @@
 ---
 name: Bei Wang
-role: Associate Director of Outreach
+role: Core Members
 title: |
     Associate Professor, Kahlert School of Computing, University of Utah
     Scientific Computing and Imaging (SCI) Institute, University of Utah

@@ -1,10 +1,10 @@
 ---
 name: Alexander Lex
 title: |
-    Associate Professor, Kahlert Computer Science, University of Utah
     Scientific Computing and Imaging (SCI) Institute, University of Utah
+    Professor of Human Computer Interaction at the Institute of Human Centred Computing, Graz University of Technology
 role: Core Members
-link: https://vdl.sci.utah.edu/team/lex/
+link: https://www.visdesignlab.net/
 pic: assets/img/member_photos/alex2.png
 ---
 
