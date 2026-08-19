@@ -1,7 +1,7 @@
 ---
 name: George Vega Yon
 title: |
-    Research Assistant Professor, Division of Epidemiology, University of Utah School of Medicine
+    Research Associate Professor, Division of Epidemiology, University of Utah School of Medicine
     Adjunct Assistant Professor, Department of Population Health Sciences, University of Utah School of Medicine
 role: Associate Director of Communications
 link: https://ggvy.cl
