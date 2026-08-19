@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "\""
 zoom: "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 canceled: false
+tags: ["deep learning", "machine learning", "natural language processing", "society & policy"]
 speakers:
   - name: "Debanjan Mahata"
     affiliation: "Moody Analytics"

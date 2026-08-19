@@ -9,6 +9,7 @@ end_time: "1:10 PM"
 series: "Data Science Seminar"
 zoom: "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09"
 canceled: false
+tags: ["causal inference", "health & medicine", "statistics"]
 speakers:
   - name: "Daniel Scharfstein"
     affiliation: "Utah, Population Health Sciences"

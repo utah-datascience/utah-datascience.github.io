@@ -1,6 +1,6 @@
 ---
 layout: "talk"
-title: "Talks will be held in LNCO 1100, and also streamed via the following Zoom link"
+title: "Talk by Vivek Srikumar"
 date: "2025-11-19 11:00:00 -0700"
 permalink: "/talks/2025-11-19-vivek-srikumar/"
 slug: "2025-11-19-vivek-srikumar"

@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["networks & graphs", "visualization"]
 abstract = """
 Hypergraphs capture multi-way relationships in data, and they have
 consequently seen a number of applications in higher-order network

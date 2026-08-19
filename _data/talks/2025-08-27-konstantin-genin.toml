@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/7824755969?pwd=SUplL1EwUmU0TE5JRkhyQ2dtNmsvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = []
 abstract = ""
 
 [[speakers]]

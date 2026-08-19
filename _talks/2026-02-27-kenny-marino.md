@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "WEB L112"
 zoom: "https://utah.zoom.us/j/85983626630"
 canceled: false
+tags: ["large language models", "natural language processing", "robotics"]
 speakers:
   - name: "Kenny Marino"
     bio: "Kenneth Marino joined the Kahlert School of Computing at the University of Utah as an Assistant Professor in Fall 2025. His research focuses on integrating multimodal language models into embodied agent problems, including computer use, games, and robotics. Previously, he was a Research Scientist at Google DeepMind in NYC, where he worked on retrieval and embodied reasoning with language. He earned his PhD in 2021 from Carnegie Mellon University, advised by Abhinav Gupta, with a thesis on incorporating semantic knowledge into embodied systems. He received his undergraduate degree from the Georgia Institute of Technology."

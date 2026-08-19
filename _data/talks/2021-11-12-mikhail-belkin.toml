@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["deep learning", "machine learning", "optimization", "statistics"]
 abstract = """
 Recent empirical successes of deep learning have exposed significant gaps in our
 fundamental understanding of learning and optimization mechanisms.

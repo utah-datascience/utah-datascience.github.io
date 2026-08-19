@@ -11,6 +11,7 @@ zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT
 slides = ""
 recording = ""
 canceled = false
+tags = ["biology & genomics", "computer vision", "data management", "deep learning"]
 abstract = """
 Documents are often the format of choice for knowledge sharing and preservation in business and science, within which are tables that capture most of the critical data. Unfortunately, most documents are stored and distributed as PDF or scanned images, which fail to preserve table formatting.
 Recent vision-based deep learning approaches have been proposed to address this gap, but most still cannot achieve state-of-the-art results.

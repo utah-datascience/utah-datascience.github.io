@@ -9,6 +9,7 @@ end_time: "2:30 PM"
 series: "Data Science & AI Lecture Series"
 location: "WEB 3780"
 canceled: false
+tags: ["climate & environment", "geospatial"]
 speakers:
   - name: "Chengbin Deng"
     bio: "Dr. Chengbin Deng is an Associate Professor in the Department of Geography and Environmental Sustainability and Director of the Center for Spatial Analysis at the University of Oklahoma (OU). His research focuses on advancing AI for environmental monitoring, with an emphasis on integrating Earth observation, geospatial data, and decision systems to address challenges in climate, hazards, and urban environments. His work has been supported by major federal agencies including NASA, the U.S. National Science Foundation, and USGS, where he serves as Principal Investigator on multiple externally funded projects. He has been recognized among the World’s Top 2% Scientists by Stanford University and Elsevier and received the Outstanding Research Award from the College of Atmospheric and Geographic Sciences at OU. Currently, Dr. Deng serves on NASA Land Cover and Land Use Change Science Team, and is Advisor of NASA FINESST Future Investigator and an NSF EPSCoR RII Research Fellow."

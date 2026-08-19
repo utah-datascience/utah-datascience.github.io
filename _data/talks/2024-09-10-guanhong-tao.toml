@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["privacy & security"]
 abstract = """
 Abstract
 Artificial Intelligence (AI) has been integrated into various sectors, such as facial recognition and autonomous driving. But are the security and safety of these AI-enabled systems fully ensured? In this talk, I will present various vulnerabilities in these systems. My presentation will cover novel optimization techniques for identifying and mitigating backdoor vulnerabilities in both white-box and black-box settings, achieving substantial improvements in performance. I will share insights into the nature of backdoors and their presence in pre-trained models. Finally, I will conclude with an outlook on our recent exploration of the security of emerging AI techniques, such as generative AI.

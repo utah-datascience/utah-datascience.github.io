@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "LNCO 1100"
 zoom: "https://utah.zoom.us/j/81370106930?pwd=5rAKB2C2SrgkOprGOGuAtzeF5xxbbT.1"
 canceled: true
+tags: ["large language models"]
 speakers:
   - name: "Kenneth Marino"
 speaker_names: "Kenneth Marino"

@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory", "education", "society & policy"]
 abstract = """
 The Cardinality Estimation/Distinct Elements problem is to approximate
 the number of distinct elements in a data stream using a small
@@ -33,8 +34,6 @@ optimal space/communication).
 Joint work with Dingyu Wang.
 
 ========
-
-Talks will be held in WEB L112, and also streamed via the following Zoom link: https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1
 """
 
 [[speakers]]

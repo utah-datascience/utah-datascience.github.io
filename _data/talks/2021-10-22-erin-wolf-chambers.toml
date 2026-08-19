@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
 slides = ""
 recording = ""
 canceled = false
+tags = []
 abstract = """
 Analysis of 3d shapes is a core problem in many fields, and there are
 many tools from topology and geometry that can provide insight and

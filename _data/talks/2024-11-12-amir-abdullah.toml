@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["large language models", "natural language processing"]
 abstract = "Amir is an active researcher in mechanistic interpretability, opening the blackbox of large language models to reverse engineer the inner workings and analyze internal representations.. In this talk, he will discuss his paper in NeuIPS 2024 on interpreting reward models in language models using sparse autoencoders on internal representations. Further, Amir will introduce followup work studying whether internal representations can be transferred between large language models."
 
 [[speakers]]

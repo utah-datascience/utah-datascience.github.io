@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "Virtual:"
 zoom: "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 canceled: false
+tags: ["health & medicine", "society & policy"]
 speakers:
   - name: "Echo Warner"
     affiliation: "Utah Nursing, HCI"

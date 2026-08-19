@@ -9,6 +9,7 @@ end_time: "4:00 PM"
 series: "Data Science Seminar"
 location: "WEB 1250"
 canceled: false
+tags: ["machine learning"]
 speakers:
   - name: "Jeff Phillips"
     affiliation: "Utah SoC"

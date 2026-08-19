@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "WEB 3780 (Evans)"
 zoom: "https://utah.zoom.us/j/85983626630"
 canceled: false
+tags: ["data management", "large language models", "natural language processing", "visualization"]
 speakers:
   - name: "Juliana Freire"
     website: "https://engineering.nyu.edu/faculty/juliana-freire"

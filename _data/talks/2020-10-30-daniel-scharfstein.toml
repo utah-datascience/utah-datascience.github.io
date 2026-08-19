@@ -11,6 +11,7 @@ zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT
 slides = ""
 recording = ""
 canceled = false
+tags = ["causal inference", "health & medicine", "statistics"]
 abstract = "In this talk, I will discuss the theory of semiparametrics that I use to estimate causal effects at root-n rates. Estimators of these effects depend on estimators of nuisance parameters that can be estimated at rates slower than root-n; I provide sufficient conditions for these rates. I will seek advice on the machine learning estimation techniques that satisfy these conditions. I will illustrate the theory in the context of estimating the causal contrast of two competing treatments based on data from a comprehensive cohort study in which clinically eligible individuals are ﬁrst asked to enroll in a randomized trial and, if they refuse, are then asked to enroll in a parallel observational study in which they can choose treatment according to their own preference."
 
 [[speakers]]

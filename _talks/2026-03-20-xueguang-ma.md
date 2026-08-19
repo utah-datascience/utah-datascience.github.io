@@ -9,6 +9,7 @@ end_time: "11:00 AM"
 series: "Data Science & AI Lecture Series"
 location: "MEB 3147 (LCR)"
 canceled: false
+tags: ["large language models", "natural language processing"]
 speakers:
   - name: "Xueguang Ma"
     website: "https://mxueguang.github.io/"

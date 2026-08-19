@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["human-centered computing", "networks & graphs", "visualization"]
 abstract = "Data visualization, the display of data through graphs, charts, maps, and diagrams, is a skill in great demand in many disciplines, from the sciences to communication or business analytics. However, visualization is often misunderstood. For instance, it's often taught as the application of a series of strict rules. This talk argues that visualization is more akin to writing: yes, we do need to understand visualization's grammar but, beyond that, visualization design is flexible, and can't be based on rules that are set in stone. Instead, designers need to develop a good decision-making framework based on asking themselves a series of questions."
 
 [[speakers]]

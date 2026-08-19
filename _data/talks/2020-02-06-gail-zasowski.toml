@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["physics & astronomy"]
 abstract = "The stars in the night sky have inspired questions about our place in the Universe throughout history. The development of telescopes showed us that the stars visible to the naked eye are but a tiny fraction of their vast numbers within our own Galaxy, and revealed energy signatures invisible to the human senses. We now know that there are billions of stars in our galaxy, billions of galaxies in our Universe, and nearly 14 billion years of cosmic evolution that have led to where and what we are today. As the volume of astronomical data grows at an ever quickening rate, new discoveries increasingly come from careful mining and analysis of existing data, often used in unforeseen ways. This talk will describe some of the major unanswered questions in astrophysics, and how new data-driven analysis techniques are uncovering new insights into solving them."
 
 [[speakers]]

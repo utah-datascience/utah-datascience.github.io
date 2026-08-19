@@ -9,6 +9,7 @@ end_time: "5:00 PM"
 series: "Data Science & AI Lecture Series"
 location: "LCB 222"
 canceled: false
+tags: ["machine learning", "physics & astronomy"]
 speakers:
   - name: "Bogdan Raita"
 speaker_names: "Bogdan Raita"

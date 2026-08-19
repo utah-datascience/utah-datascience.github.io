@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["large language models", "machine learning", "natural language processing"]
 abstract = "Generative capabilities of large language models have grown beyond the wildest imagination of the broader AI research community, leading many to speculate whether these successes may be attributed to the training data or model design. I will present some work from my group which sheds light on understanding LLMs by studying their generative behavior, successes and shortcomings. First, I will show that standard inference algorithms work well because of the particular design behind LLMs. Next, I will discuss recently found successes and failures of LLMs on a combination of tasks, requiring world and domain-specific knowledge, linguistic capabilities and awareness of human and social utility. Overall, these findings paint a partial yet complex picture of our understanding of LLMs and provide a guide to the next steps forward."
 
 [[speakers]]

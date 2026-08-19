@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["health & medicine", "machine learning"]
 abstract = "Drug dosing is an important application of AI, which can be formulated as a Reinforcement Learning (RL) problem, since every individual’s drug dosing requirement is different. In this talk, we will talk about two major challenges of using RL for drug dosing: delayed and prolonged effects of medications, which break the Markov assumption of the RL framework. We will talk about an approach to solve this problem in a model free reinforcement learning setting, talk further about the challenges of deploying it in real life and sketch the outline of a more realistic Model Based Reinforcement Learning (MBRL) solution to it."
 
 [[speakers]]

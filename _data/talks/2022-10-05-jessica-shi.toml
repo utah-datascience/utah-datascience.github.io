@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory", "education", "networks & graphs"]
 abstract = """
 We study the nucleus decomposition problem, which has been shown to be useful in finding dense substructures in graphs. We present a novel parallel algorithm that is efficient both in theory and in practice. Our algorithm achieves a work complexity matching the best sequential algorithm while also having low depth (parallel running time), which significantly improves upon the only existing parallel nucleus decomposition algorithm (Sariyuce et al., PVLDB 2018). The key to the theoretical efficiency of our algorithm is a new lemma that bounds the amount of work done when peeling cliques from the graph, combined with the use of theoretically-efficient parallel algorithms for clique listing and bucketing.
 

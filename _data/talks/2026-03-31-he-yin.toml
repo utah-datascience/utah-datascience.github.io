@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["climate & environment", "geospatial", "machine learning", "society & policy"]
 abstract = """
 Landscapes around the world are changing rapidly, with important consequences for sustainability, climate resilience, and society. Yet monitoring these changes across regions and scales remains difficult. In this talk, I present a research program that combines multi-sensor Earth observation, geospatial artificial intelligence (GeoAI), and land system science to better understand how land systems are changing, what drives those changes, and why they matter.
 

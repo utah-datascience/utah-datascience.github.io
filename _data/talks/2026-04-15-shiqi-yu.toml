@@ -11,6 +11,7 @@ zoom = "https://utexas.zoom.us/j/84742203545?pwd=lUosaf3T6bkIS1QAaIQYHYiiClE2ZP.
 slides = ""
 recording = ""
 canceled = false
+tags = ["deep learning", "machine learning", "physics & astronomy"]
 abstract = "Accurate parameter estimation in X-ray astronomy typically relies on traditional methods, such as likelihood-based spectral fitting, which can be computationally prohibitive as model complexity and data dimensionality increase. In this talk, I present a neural network-based framework designed to bypass iterative fitting by directly mapping spectral observations to physical parameters. Using the Circinus galaxy as a benchmark, we demonstrate how architectures trained on synthetic data from theoretical models can recover intrinsic properties, such as column density and torus geometry, with both high speed and high precision. This approach maintains the physical rigor required for broadband analysis with multiple telescopes while significantly reducing inference time. I will discuss the challenges and resolutions associated with training and predicting on multi-instrument data, as well as the potential for these AI-driven methods to enable large-scale systematic studies across various astrophysical sources and other scientific applications."
 
 [[speakers]]

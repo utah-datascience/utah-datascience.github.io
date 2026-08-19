@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["education", "fairness & ethics", "large language models"]
 abstract = "In this talk, Chenglu will examine the rapidly evolving field of artificial intelligence in education (AIED) by focusing on three key research gaps: agentic AI needs, FAccT (fairness, accountability, and transparency) challenges, and issues related to computing supremacy. He will illustrate these challenges through his current project, ALTER-Math (AI-augmented Learning by Teaching to Enhance and Renovate Math Learning), a $10M initiative designed to accelerate middle school math learning using generative AI-powered solutions. Additionally, Chenglu will discuss his contributions to advancing learning and teaching through the development, evaluation, and dissemination of FAccT AI cyberinfrastructure. Finally, he will outline promising future directions for research and collaboration in this dynamic field."
 
 [[speakers]]

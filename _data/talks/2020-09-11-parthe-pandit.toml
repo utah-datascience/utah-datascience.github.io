@@ -11,6 +11,7 @@ zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory", "deep learning", "machine learning", "optimization"]
 abstract = """
 At the heart of Machine Learning lies the question of generalizability of learned models over previously unseen data. While over-parameterized models based on neural networks are now ubiquitous in machine learning applications, our understanding of their generalization capabilities remains incomplete. This task is made harder by the non-convexity of the underlying estimation/learning problems.
 

@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "MEB 3147 and Zoom"
 zoom: "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
 canceled: false
+tags: ["human-centered computing", "machine learning", "visualization"]
 speakers:
   - name: "Julia Silge"
     affiliation: "RStudio"

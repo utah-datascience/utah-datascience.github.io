@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "WEB 3780"
 zoom: "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 canceled: false
+tags: ["biology & genomics", "health & medicine", "human-centered computing"]
 speakers:
   - name: "Elliot Smith"
     affiliation: "Utah Neurology"

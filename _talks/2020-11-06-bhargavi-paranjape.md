@@ -1,6 +1,6 @@
 ---
 layout: "talk"
-title: "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09 (https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09"
+title: "An Information Bottleneck Approach for Rationale Extraction"
 date: "2020-11-06 11:50:00 -0700"
 permalink: "/talks/2020-11-06-bhargavi-paranjape/"
 slug: "2020-11-06-bhargavi-paranjape"
@@ -9,6 +9,7 @@ end_time: "1:10 PM"
 series: "Data Science Seminar"
 zoom: "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09"
 canceled: false
+tags: ["education", "fairness & ethics", "natural language processing"]
 speakers:
   - name: "Bhargavi Paranjape"
     affiliation: "University of Washington"

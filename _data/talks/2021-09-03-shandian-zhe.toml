@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["optimization"]
 abstract = """
 Multi-fidelity learning involves using training examples at different fidelities or resolutions. High-fidelity examples are of high-quality but often are much more costly to collect than inaccurate, low-fidelity examples. How to retrieve and leverage examples at multiple fidelities is the key to reduce the learning cost while maximizing efficiency.
 

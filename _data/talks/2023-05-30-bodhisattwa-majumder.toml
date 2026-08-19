@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/96538050936"
 slides = ""
 recording = ""
 canceled = false
+tags = ["fairness & ethics", "natural language processing"]
 abstract = """
 Artificial intelligence (AI) has shown remarkable effectiveness in knowledge-seeking applications (e.g., for recommendations and explanations). However, the increasing expectation of more trust, accessibility, and anthropomorphism in these AI systems requires the underlying components (dialog models, LLMs, classifiers) to be adaptive and adequately knowledge grounded. In reality, the outputs of the constituent models often lack commonsense, explanations, and subjectivity, which motivates us to ask the question: what can we achieve by redesigning AI systems to start with individual needs?
 

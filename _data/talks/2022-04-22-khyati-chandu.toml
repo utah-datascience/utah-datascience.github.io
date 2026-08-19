@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["computer vision", "education", "machine learning", "natural language processing"]
 abstract = """
 Humans inherently learn from and interact with multiple views of information, be it various modalities or languages. So, the expectations from contemporary and 21st-century technology are a testimony to the increasing need to model these multiview contexts better. Natural language generation plays a pivotal role in communicating these contexts in human-understandable languages. This talk brings together both of these transformative technologies to make strides toward a longstanding dream of human-like multiview narrative generation. The critical challenge is identifying the natural-sounding properties of long-form texts and modeling them in tandem with visual contexts. I present anchors for grounding three such properties including content (relevance), structure (coherence), and surface form realization (expression), and anchors them with relevant visual contexts. These anchors also provide us with human interpretable handles for controlling these properties.
 

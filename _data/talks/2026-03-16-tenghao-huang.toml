@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["large language models"]
 abstract = "Open-ended, human-like intelligence requires flexibility, proactivity, and social intelligence: we must learn subjective goals and adapt to novel, complex scenarios. . Current AI systems struggle to learn these behaviors because reward signals are unclear, task context information is incomplete, and the environment lacks observability. I outline a research agenda focused on building agentic learning systems that operate under such uncertainty. (1) Instead of enumerating task-specific heuristics, I propose training AI systems through self-play in an adversarial setting, where models learn by interacting, critiquing, and improving against dynamically evolving counterparts. (2) I equip agents with the ability to proactively gather missing information when task context is incomplete and 3) I reconstruct environment representations through memory to support long-horizon agentic reasoning. Together, I will show, these techniques enable AI systems to learn abstract objectives in tasks as varied as creative writing, multi-agent coordination and long-horizon problem solving, enhancing the creativity, usefulness, and strategic helpfulness of agents in open-ended environments."
 
 [[speakers]]

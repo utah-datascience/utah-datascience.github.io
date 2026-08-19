@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "MEB 3147"
 zoom: "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 canceled: false
+tags: ["large language models", "natural language processing"]
 speakers:
   - name: "Ana Marsovic"
     affiliation: "Utah SoC"

@@ -11,6 +11,7 @@ zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT
 slides = ""
 recording = ""
 canceled = false
+tags = ["machine learning", "natural language processing"]
 abstract = """
 Recognizing affective states is essential for narrative text
 understanding and for applications such as conversational dialogue,

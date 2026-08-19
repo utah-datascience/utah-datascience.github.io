@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "WEB L112"
 zoom: "https://utah.zoom.us/j/85983626630"
 canceled: false
+tags: ["human-centered computing", "society & policy", "visualization"]
 speakers:
   - name: "Andrew McNutt"
     bio: "Andrew McNutt is an assistant professor at University of Utah’s Kahlert School of Computing and Scientific Computing and Imaging Institute. His research lives in the union of human computer interaction, visualization, and programming interfaces. It considers topics like creative coding, domain-specific languages, theories of visualization, and critical theory. He completed his PhD at University of Chicago, and a Post Doc at University of Washington. His work is funded by the NSF and is a Seibel Foundation Scholar. His work has won awards at top visualization and HCI conferences."

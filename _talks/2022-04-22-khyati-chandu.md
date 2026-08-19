@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "WEB 1250 and Zoom"
 zoom: "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 canceled: false
+tags: ["computer vision", "education", "machine learning", "natural language processing"]
 speakers:
   - name: "Khyati Chandu"
     affiliation: "Meta AI"

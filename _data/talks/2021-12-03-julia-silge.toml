@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["human-centered computing", "machine learning", "visualization"]
 abstract = "Visual representations of data inform how machine learning practitioners think, understand, and decide. Before charts are ever used for outward communication about a ML system, they are used by the system designers and operators themselves as a tool to make better modeling choices. Practitioners use visualization, from very familiar statistical graphics to creative and less standard plots, at the points of most important human decisions when other ways to validate those decisions can be difficult. Visualization approaches are used to understand both the data that serves as input for machine learning and the models that practitioners create. In this talk, learn about the process of building a ML model in the real world, how and when practitioners use visualization to make more effective choices, and considerations for ML visualization tooling."
 
 [[speakers]]

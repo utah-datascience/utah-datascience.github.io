@@ -9,6 +9,7 @@ end_time: "11:45 AM"
 series: "Data Science Seminar"
 location: "WEB 3780"
 canceled: false
+tags: ["networks & graphs", "visualization"]
 speakers:
   - name: "Bei Wang Phillips"
     affiliation: "Utah SoC/SCI"

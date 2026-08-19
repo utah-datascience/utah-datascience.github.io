@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "MEB 3147 (LCR)"
 zoom: "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 canceled: false
+tags: ["deep learning", "fairness & ethics", "machine learning", "statistics"]
 speakers:
   - name: "Anirudh Goyal of Montreal"
     website: "https://anirudh9119.github.io/"

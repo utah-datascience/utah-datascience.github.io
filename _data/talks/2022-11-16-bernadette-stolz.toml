@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["biology & genomics"]
 abstract = "In the first part of this talk, I will showcase how persistent homology can be used to spatially characterise structural abnormality in tumour blood vessel networks. More specifically, I will show that the number of vessel loops and their distribution in these networks change over time when tumours undergo treatment with vascular targeting agents and radiation therapy. In the second part of the talk, I will speak about applications of local persistent homology. I will show how local persistent homology can be used to select landmarks from large and noisy data sets. In contrast to existing methods, this subsampling process is robust to outliers and is developed specifically for persistent homology. I will further introduce a novel method that can detect geometric anomalies, such as intersections or boundaries, in point cloud data sampled from intersecting surfaces. This detection is based on the computation of persistent homology in local annular neighbourhoods around points and is less sensitive to the size of the local neighbourhood and surface curvature than an existing method."
 
 [[speakers]]

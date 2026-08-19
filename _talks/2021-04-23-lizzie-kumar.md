@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "Virtual"
 zoom: "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz09"
 canceled: false
+tags: ["algorithms & theory", "fairness & ethics", "machine learning"]
 speakers:
   - name: "Lizzie Kumar"
     affiliation: "Utah"

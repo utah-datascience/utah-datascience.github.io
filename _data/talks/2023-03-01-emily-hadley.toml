@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["fairness & ethics", "society & policy"]
 abstract = "In the last decade, big data research studies have proliferated and, in some cases, offered considerable promise for humanity. Yet, numerous incidents have documented that without safeguards, this same research can reproduce and amplify existing societal biases and disparities. Given the increased public awareness of structural racism, bias based on race and ethnicity in big data research is particularly concerning. Big data researchers can mitigate the risk of perpetuating bias based on race and ethnicity by intentionally incorporating best practices that reduce or eliminate racial biases. We synthesize key findings and applied recommendations from over 140 sources for addressing race and ethnicity bias in big data research. We discuss considerations when planning a big data project, including identifying study motivations, centering participatory involvement, and addressing key concerns regarding race and ethnicity in big data collection and quality. We detail issues related to proxy discrimination, algorithmic audits, data completeness, and the Big Data Paradox. We provide real-world examples of advancing racial equity and addressing bias and share recommendations for additional resources and opportunities for further investigation."
 
 [[speakers]]

@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 zoom: "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz09"
 slides: "https://rajeshjayaram.com/EarthMoverCJLW.pdf"
 canceled: false
+tags: ["algorithms & theory", "data management", "machine learning"]
 speakers:
   - name: "Rajesh Jayaram"
     affiliation: "CMU"

@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["education", "fairness & ethics"]
 abstract = "Artificial intelligence (AI) is increasingly integrated into educational contexts, reshaping how teachers and students generate and interpret visual representations such as diagrams, illustrations, and data visualizations. While AI offers efficiency and flexibility, it also introduces inaccuracies and misleading interpretations that can undermine learning. In this talk, I present a research program centered on supporting the responsible use of AI in visual-based teaching and learning by promoting visual literacy. Grounded in design-based research, I design and evaluate AI-augmented learning environment where educators and students engage with AI-generated outputs as critical inquirers. This work shows that these approaches improved interpretive accuracy, deepened reasoning about visual representations, and reduce over-reliance on AI. Together, this work contributes design principles for fostering responsible AI use in visual-based educational contexts."
 
 [[speakers]]

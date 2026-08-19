@@ -9,11 +9,12 @@ end_time: "3:00 PM"
 series: "Data Science Seminar"
 zoom: "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
 canceled: false
+tags: ["algorithms & theory", "deep learning", "machine learning", "networks & graphs"]
 speakers:
   - name: "C. Seshadhri"
     affiliation: "UC Santa Cruz"
     website: "https://users.soe.ucsc.edu/~sesh/"
-    bio: "C. Seshadhri (Sesh) is a professor of Computer Science at the University of California, Santa Cruz. Prior to joining UCSC, he was a researcher at Sandia National Labs, Livermore. His primary interests are in theoretical computer science and the mathematical foundations of big data algorithms. His work spans many areas: sublinear algorithms, graph algorithms, graph modeling, scalable computation, and data mining. In the theory world, his work has resolved numerous open problems in property testing and sublinear algorithms. A number of his papers in the interface of TCS and applied algorithms have received paper awards at KDD, WWW, ICDM, SDM, and WSDM. He received the 2019 SDM/IBM Early Career Award for Excellence in Data Analytics.\n\nhttps://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09 (https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09)\n"
+    bio: "C. Seshadhri (Sesh) is a professor of Computer Science at the University of California, Santa Cruz. Prior to joining UCSC, he was a researcher at Sandia National Labs, Livermore. His primary interests are in theoretical computer science and the mathematical foundations of big data algorithms. His work spans many areas: sublinear algorithms, graph algorithms, graph modeling, scalable computation, and data mining. In the theory world, his work has resolved numerous open problems in property testing and sublinear algorithms. A number of his papers in the interface of TCS and applied algorithms have received paper awards at KDD, WWW, ICDM, SDM, and WSDM. He received the 2019 SDM/IBM Early Career Award for Excellence in Data Analytics."
 speaker_names: "C. Seshadhri"
 source_file: "_data/talks/2021-09-24-c-seshadhri.toml"
 generated: true

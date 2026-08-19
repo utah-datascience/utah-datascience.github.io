@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["health & medicine", "statistics"]
 abstract = "Quantitative analysis of shapes is contingent upon defining a metric in the space of shapes to compare shapes and perform shape statistics. A growing consensus in the field that such a metric should be adapted to the specific population under investigation, begging for learning such a metric in a data-driven manner. This talk will cover a state-of-art data-driven approach for statistical shape modeling that provides unbiased, objective, and intuitive evaluation of geometric shapes, emphasizing anatomical structures reconstructed from volumetric images. I will talk about how we applied shape analysis to clinical and scientific questions in various ways. I will also highlight the role of machine learning in mitigating critical bottlenecks and significant barriers to making shape modeling a robust tool for on-demand clinical diagnostics and streamlining its adoption in research and practice. I will end with a future outlook for shape modeling to enable more complex and diverse modeling scenarios."
 
 [[speakers]]

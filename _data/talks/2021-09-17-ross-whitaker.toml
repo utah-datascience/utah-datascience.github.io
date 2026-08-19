@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["climate & environment", "geospatial", "statistics"]
 abstract = """
 This talk describes an air quality mapping system that is currently deployed in the Salt Lake Valley. We begin with the motivations for the system and then briefly describe the cyberphysical infrastructure. We then review the Gaussian process modeling approach we are using and discuss several important practical considerations around challenges of data wrangling and numerical implementations. We present some examples of AQ estimates associated with specific events of bad air quality. Finally we talk about current directions in research associated with this approach.
 

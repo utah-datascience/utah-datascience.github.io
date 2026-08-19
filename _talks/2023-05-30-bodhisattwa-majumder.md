@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "Where: MEB 3147 Large Conference Room Simcast:  (Meeting ID: 965 3805 0936, Passcode: 404653)"
 zoom: "https://utah.zoom.us/j/96538050936"
 canceled: false
+tags: ["fairness & ethics", "natural language processing"]
 speakers:
   - name: "Bodhisattwa Majumder"
     affiliation: "UCSD"

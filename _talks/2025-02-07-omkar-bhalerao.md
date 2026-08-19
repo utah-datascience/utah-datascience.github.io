@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "WEB L112"
 zoom: "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 canceled: false
+tags: ["algorithms & theory", "data management", "networks & graphs"]
 speakers:
   - name: "Omkar Bhalerao"
 speaker_names: "Omkar Bhalerao"

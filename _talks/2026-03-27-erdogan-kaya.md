@@ -9,6 +9,7 @@ end_time: "11:30 AM"
 series: "Data Science & AI Lecture Series"
 location: "Evans Conference room (WEB 3780)"
 canceled: false
+tags: ["education", "fairness & ethics", "robotics"]
 speakers:
   - name: "Erdogan Kaya"
     bio: "Dr. Kaya holds a joint appointment with the College of Education and the Division of Data Science at the University of Texas at Arlington. He is an assistant professor of computing education with a Ph.D. in Curriculum and Instruction, a B.S. in Chemical Engineering, an M.S. in Computer Science and Engineering, and an M.S. in Machine Learning Engineering from George Mason University. His research focuses on AI literacy, computational thinking, and computing education through equity lenses. He has secured more than $5 million in external research funding from NSF, Amazon, and Google, and has developed projects including the Educate AI curriculum, the Rural AI initiative, and the Compose with AI platform. Dr. Kaya advocates for research, teaching, and learning as a unified enterprise that benefits students and society. He has received numerous teaching awards, including the NCWIT Aspirations in Computing Educator Award and the ASEE Southeastern Section Outstanding New Teacher Award, and has contributed to educational outreach programs including Code.org and FIRST Robotics competitions."

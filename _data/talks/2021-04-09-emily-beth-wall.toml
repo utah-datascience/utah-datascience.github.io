@@ -11,6 +11,7 @@ zoom = "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz
 slides = ""
 recording = ""
 canceled = false
+tags = ["fairness & ethics", "visualization"]
 abstract = """
 Visual Analytics combines the complementary strengths of humans (perception and sensemaking capabilities) and machines (fast and accurate information processing). However, people are susceptible to inherent limitations and biases, including cognitive biases (e.g., anchoring bias), social biases borne of cultural stereotypes and prejudices (e.g., gender bias), and perceptual biases (e.g., illusions). These biases can impact data analysis and decision making in critical ways, leading to inaccurate or inefficient choices, or even propagating long-standing institutional and systemic biases.
 

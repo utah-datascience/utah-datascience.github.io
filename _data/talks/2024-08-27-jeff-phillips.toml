@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory"]
 abstract = """
 Spatial trajectories, often represented as a sequence of spatial positions, are a standard way to represent human mobility patterns. They also are used to represent motion patterns including for animals, drones, or last-mile rentals (e-scooters). However, these trajectories are notoriously difficult to work with as they overlap and can stretch long distances.
 In this talk we discuss a sketch (the minDist Sketch) that makes just about any data analysis on trajectories tasks simple and efficient. This first considers spatial trajectories as an abstract shape, and then maps them to a high-dimensional Euclidean space as a vector. We can show recovery, pseudo-metric, and metric properties of this representation. Variants can include direction information, or traits like velocity and acceleration.

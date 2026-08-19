@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "WEB 1230"
 zoom: "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 canceled: false
+tags: ["computer vision", "data management", "natural language processing", "visualization"]
 speakers:
   - name: "Vivek Gupta"
     affiliation: "ASU & UCDS alumni"

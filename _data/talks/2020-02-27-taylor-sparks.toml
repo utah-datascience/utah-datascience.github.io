@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory", "machine learning", "physics & astronomy"]
 abstract = """
 New materials are required to address many of the energy, environmental, and technological needs of the present and future. Materials Informatics, or the application of data science techniques to solve materials research challenges, is expected to play a key role in materials development and discovery given the infinite palette available for new materials. Interestingly, the requirements and tasks of Materials Informatics do not always overlap with general machine learning. Therefore, adopting existing data science tools including visualization, algorithms, featurization schemas etc may not provide the ideal outcomes for the specific needs of Materials Informatics.
 

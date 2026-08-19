@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["fairness & ethics", "networks & graphs", "society & policy"]
 abstract = """
 Simple measures of scholarly productivity and prominence vary enormously across both individual scientists and institutions -- but to what degree do these inequalities represent genuine meritocratic differences vs. systemic biases that limit scientific progress?
 

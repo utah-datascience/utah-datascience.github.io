@@ -17,6 +17,7 @@ import datetime as dt
 import glob
 import json
 import os
+import re
 import sys
 import tomllib
 from zoneinfo import ZoneInfo
@@ -120,9 +121,13 @@ def load_talk(path: str) -> dict:
     starts_at = dt.datetime.combine(date, start or dt.time(13, 30), tzinfo=TZ)
 
     slug = talk.get("slug") or os.path.splitext(source)[0]
+    # a page headed "TBA" helps nobody; name it after whoever gave the talk
+    title = str(talk["title"]).strip()
+    if re.fullmatch(r"(?i)tba|tbd", title):
+        title = "Talk by " + ", ".join(speaker["name"] for speaker in speakers)
     front = {
         "layout": "talk",
-        "title": talk["title"],
+        "title": title,
         "date": starts_at.strftime("%Y-%m-%d %H:%M:%S %z"),
         "permalink": f"/talks/{slug}/",
         "slug": slug,

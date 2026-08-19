@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "WEB L112"
 zoom: "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 canceled: false
+tags: ["algorithms & theory", "robotics"]
 speakers:
   - name: "Tucker Hermans"
     affiliation: "UU KSoC, NVIDIA"
@@ -24,5 +25,3 @@ generated: true
 Probabilistic inference, the problem of estimating a distribution given data, has been a central pillar of robotic algorithms for more than two decades. Inference techniques have defined the de facto standard for robotic localization, mapping, system calibration, and online error estimation for mobile robots. Academic work has shown how these same inference problem formulations and algorithms can be used to solve problems of planning and control.
 
 In this talk I will discuss how probabilistic inference techniques can be extended for use in robotic manipulation where models may come either from engineering first-principles or in the form of large neural networks. I will then give a brief dedication of Stein variational inference, a recent nonparametric technique for probabilistic inference that is easily parallelized on modern GPUs providing much faster inference times compared to more traditional Markov chain Monte Carlo methods. I will then show a few different applications of using Stein variational inference from my lab, including planning to goal distributions, adaptive control of magnetic manipulation, and generating diverse data for training from real-world robot failures.
-
-Talks will be held in WEB L112, and also streamed via the following Zoom link: https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1

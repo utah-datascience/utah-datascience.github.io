@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory", "biology & genomics", "health & medicine"]
 abstract = "1/2 of men and 1/3 of women will face cancer, a disease of the whole 3B-nucleotide genome. But, despite the availability of open-source data and the $100/1-hour genome, genetic tests remain limited to one to a few hundred genes. Therefore, the prognosis, diagnosis, and treatment of cancer remain unchanged. This is due to the lack of suitable AI/ML. I will describe work in my lab inventing AI/ML that connects the whole genome with a patient’s survival and response to treatment. Our algorithms discover accurate, precise, and interpretable predictors, applicable to the general population, from as few as 50–100 patients. Our predictors outperform all other indicators, where they exist. All other methods miss them. I will describe my international retrospective clinical trial, which validated a genome-wide pattern in tumors from glioblastoma brain cancer patients as the best predictor of life expectancy and response to standard of care. We discovered this, and predictors in, e.g., adult lung, ovarian, and uterine adenocarcinoma tumors and pediatric nerve neuroblastoma tumors, in public data, proving that the algorithms and predictors are uniquely suited to personalized medicine. I will also describe work translating the algorithms and predictors to the clinic."
 
 [[speakers]]

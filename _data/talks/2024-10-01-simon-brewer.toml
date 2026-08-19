@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["biology & genomics", "climate & environment", "statistics"]
 abstract = "Ongoing climate change has the potential to impact a variety of physical, biological and social systems, and there is increasing concern that these changes may be sufficient to result in these systems crossing tipping points, effectively undergoing irreversible changes in state. For slow turnover systems, such as forest ecosystems, understanding the likelihood and ramifications of these state changes is challenging due to the relative short observational record. Sedimentary records of ecosystem change offer an alternative data source with a wide temporal and spatial scope, but are inherently noisy and high dimensional. Self-organizing maps provide a data-driven way to visualize nonlinear patterns in these data, and to identify past ecosystem states and state transitions. The results are used to build a simple Markov model illustrating the probability and directionality of these transitions."
 
 [[speakers]]

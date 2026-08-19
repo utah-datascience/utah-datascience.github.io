@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["causal inference", "computer vision", "deep learning", "machine learning"]
 abstract = """
 Artificial Intelligence (AI) has achieved remarkable progress and is increasingly integrated across a wide range of fields, fueling what many describe as the fourth industrial revolution. However, behind this widespread enthusiasm lie fundamental limitations. Today’s AI systems face three major challenges: (1) an insatiable demand for large-scale labeled data, (2) limited trustworthiness due to inadequate uncertainty quantification, and (3) poor generalization across domains. These challenges cannot be addressed simply by scaling data and computation; instead, they require foundational advances in theory and methodology.
 

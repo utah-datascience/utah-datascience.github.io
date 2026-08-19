@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["large language models", "natural language processing", "robotics", "statistics"]
 abstract = "Generative models, such as large language models and diffusion models, have tremendously increased the scope of problems that AI can address. As such, there is a significant trend toward incorporating generative AI to automate tasks across computing and more broadly, from controlling robotics systems, to software generation and testing, to searching over scientific knowledge. However, there remains a significant formalization gap between the domain knowledge, theories, and logical and semantic constraints that are vital to applications, and the statistical patterns over natural data represented by large generative models. In this talk, I will demonstrate how we can systematically bridge this formalization gap towards more trustworthy AI. First, drawing from examples and applications in my research, I will show how we can utilize suitable intermediate representations of probability distributions to bridge between formal language and generative models at scale. Then, I will discuss how these practical methods are underpinned by my work advancing the mathematical and computational foundations underlying these tractable representations of probability distributions."
 
 [[speakers]]

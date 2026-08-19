@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["natural language processing"]
 abstract = "In this talk, we will focus on a simple approach that uses logic to improve neural model performance for natural language processing (NLP) tasks. Many downstream NLP tasks involve domain knowledge that can be easily stated in logical forms. We argue that we can use such knowledge to improve model learning. This results in better data efficiency, i.e., a model that performs better with less annotation. To this end, we propose frameworks that integrate domain knowledge, expressed as declarative constraints, with neural models. We show that such integration substantially improves state-of-the-art neural models in a variety of NLP tasks. To facilitate using our frameworks, we will also propose a PyTorch library that unifies differentiable tensor operations and logical operations."
 
 [[speakers]]

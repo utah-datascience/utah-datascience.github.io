@@ -11,12 +11,11 @@ zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["networks & graphs", "society & policy"]
 abstract = """
 In this talk, we will go over a few recent results on dense subgraph discovery. We aim to discover 'many' dense subgraphs of 'reasonable size' in real-world networks. We show that by leveraging triadic structure in graphs, one can do this efficiently without complicated distributional assumptions on the input. Our techniques bridge an important gap: most existing theory considers the setting where the number of pieces is a constant, whereas techniques that produce `satisfactory' decompositions rarely have density guarantees (and indeed, often give sparse, poorly connected subgraphs). We offer a community detection flavor to our results: we provide a new metric for the 'goodness' of communities in terms of density and show that the spectrum of graph matrices implies the existence of communities.
 
 A key goal of this talk is to unpack the several phrases in quotes in the preceding paragraph and offer some perspectives on why these are important (and sometimes difficult!). We also provide an algorithm that (provably) decomposes large social networks into dense subgraphs in minutes on regular laptops, and, time permitting, discuss the setting of overlapping subgraph detection using similar techniques.
-
-Talks will be held in WEB L112, and also streamed via the following Zoom link: https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1
 """
 
 [[speakers]]

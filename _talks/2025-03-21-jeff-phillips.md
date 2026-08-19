@@ -1,6 +1,6 @@
 ---
 layout: "talk"
-title: "Data Science & AI Lecture Series"
+title: "Robust High-Dimensional Mean Estimation With Low Data Size"
 date: "2025-03-21 13:30:00 -0600"
 permalink: "/talks/2025-03-21-jeff-phillips/"
 slug: "2025-03-21-jeff-phillips"
@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "WEB L112"
 zoom: "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 canceled: false
+tags: ["natural language processing"]
 speakers:
   - name: "Jeff Phillips"
     affiliation: "UU KSoC"

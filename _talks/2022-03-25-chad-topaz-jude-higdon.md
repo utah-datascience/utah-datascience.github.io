@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "WEB 1250"
 zoom: "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 canceled: false
+tags: ["fairness & ethics", "statistics"]
 speakers:
   - name: "Chad Topaz"
     affiliation: "QSIDE"

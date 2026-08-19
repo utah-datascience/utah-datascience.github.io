@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 zoom: "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz09"
 slides: "https://www.aclweb.org/anthology/2020.aacl-main.71.pdf"
 canceled: false
+tags: ["machine learning", "natural language processing"]
 speakers:
   - name: "Vivek Gupta"
     affiliation: "University of Utah"

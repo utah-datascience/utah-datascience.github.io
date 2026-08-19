@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory", "biology & genomics", "networks & graphs"]
 abstract = """
 Graphs are everywhere: social networks, protein interaction networks, citation networks, epidemic spread networks. Applications that use these graphs have progressively become more sophisticated, relying on getting fast and accurate solutions to graph-theoretic problems, many of which are NP-Hard. However, the sizes of today's graphs easily run into millions of vertices and edges, if not more. As a result, many classic algorithms are infeasible for such graphs.
 

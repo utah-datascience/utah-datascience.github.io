@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["machine learning"]
 abstract = """
 At research intensive universities, libraries have traditionally supported data science activities in various ways including acquiring datasets that researchers need, hosting workshops and training sessions on data science tools, and offering data support tools for creation of persistent identifiers(dois), etc. At Marriott Library, in addition to supporting data science programs on campus, we have embarked on a suite of data science projects to add value to our culturally-rich collections. Our efforts are focused on enriching our collection data, and making this collection data available for computational use (collections as data [1]) so that developers, scientists, and digital humanists can programmatically interact with the data in myriad ways and undertake projects related to data mining & text analysis, advanced visualizations, and geospatial analysis. In this presentation, I will talk about two specific projects - Utah Digital Newspapers [2] and machine learning meets archives [3] - to highlight these efforts.
 

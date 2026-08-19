@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["climate & environment", "geospatial"]
 abstract = "Environmental systems are becoming more complex, dynamic, and tightly connected to human activities, yet much of our current work remains focused on isolated models or static mapping. In this talk, a framework will be present and discussed that uses AI to move beyond observation toward a more integrated understanding of environmental systems. The central idea is to link geospatial data, models, and real-world decisions so that environmental information can better reflect changing conditions across space and time while remaining meaningful for researchers and stakeholders. By drawing on some recent federally supported projects, this talk will show how this framework can capture large scale environmental dynamics, account for social and local context, and support more informed decision processes in various settings, ranging from urban systems to extreme events. Instead of using AI just as a tool, this work views it as part of a broader system that shapes how environmental problems are understood and acted, with the goal of advancing a more adaptive and practical form of environmental intelligence."
 
 [[speakers]]

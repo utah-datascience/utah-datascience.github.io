@@ -11,6 +11,7 @@ zoom = "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory", "fairness & ethics", "machine learning"]
 abstract = "As the public seeks greater accountability and transparency from machine learning algorithms, the research literature on methods to explain algorithms and their outputs has rapidly expanded. Feature importance, or the practice of assigning quantitative importance values to the input features of a machine learning model, form a popular class of such methods. Much of the research on feature importance rests on formalizations that attempt to capture universally desirable properties. We investigate the ways in which epistemic values are implicitly embedded in these methods and analyze the ways in which they conflict with ideas from feminist philosophy. We offer some suggestions on how to conduct research on explanations that respects feminist epistemic values, taking into account the importance of social context, the epistemic privileges of subjugated knowers, and adopting more interactional ways of knowing."
 
 [[speakers]]

@@ -11,6 +11,7 @@ zoom = "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory"]
 abstract = "Offline k-means clustering was studied extensively and algorithms with a constant approximation are available. However, online clustering is still uncharted. New factors come into play: the ordering of the dataset and whether the number of points, n, is known in advance or not. Their exact effects are unknown. In this work, we focus on the online setting where the decisions are irreversible: after a point arrives the algorithm needs to decide whether to take the point as a center or not, and this decision is final. How many centers are needed and sufficient to achieve constant approximation in this setting? We show upper and lower bounds for all the different cases. These bounds are exactly the same up to a constant, thus achieving optimal bounds. For example, for k-means cost with constant k>1 and random order, Θ(logn) centers are enough to achieve a constant approximation, while the mere a priori knowledge of n reduces the number of centers to a constant. These bounds hold for any distance function that obeys a triangle-type inequality."
 
 [[speakers]]

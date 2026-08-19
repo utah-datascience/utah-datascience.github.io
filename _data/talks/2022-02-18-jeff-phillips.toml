@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["machine learning"]
 abstract = "I plan to talk about some new results on some very fundamental (but overlooked) theory questions in classification. First, how fast can you find a linear classifier that eps-approximates the optimal one in terms of miss-classification? Second, if you want to preserve a Euclidean margin between perfectly classified points for a polynomial classifier, how many samples do you need?"
 
 [[speakers]]

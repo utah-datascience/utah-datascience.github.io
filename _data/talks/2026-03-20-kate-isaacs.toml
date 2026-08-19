@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/85983626630"
 slides = ""
 recording = ""
 canceled = false
+tags = ["visualization"]
 abstract = "Data visualizations are used throughout the data science process to facilitate the exploratory analysis and to report results. Frequently, these uses are neither separate nor solitary, acting as a medium for data science teams to collaboratively reason about data. This team-based data science work is often fast-paced and involves several forms of non-digital communication. I will discuss how we leverage gesture, sketch, and speech to create support for common meetings around data, specifically collaborative remote meetings and informal presentations, to aid this aspect of data science work. Then, focusing on the wider dissemination of results, I will discuss findings regarding the public's views on the use of data and AI in science videos."
 
 [[speakers]]

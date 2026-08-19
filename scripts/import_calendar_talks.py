@@ -39,7 +39,12 @@ DATA_DIR = os.path.join(ROOT, "_data", "talks")
 
 # Boilerplate that shows up in the calendar summaries and is not part of a title.
 SERIES_NOISE = [
+    "Utah Center for Data Science Seminar",
+    "Data Science & AI Lecture Series",
+    "Data Science and AI Lecture Series",
+    "Data Science Lecture Series",
     "UCDS+AI Lecture Series",
+    "UCDS Lecture Series",
     "UCDS+AI Seminar",
     "UCDS + AI Seminar",
     "Data Science and AI Seminar",
@@ -48,6 +53,14 @@ SERIES_NOISE = [
     "Data Seminar",
     "UCDS Seminar",
 ]
+
+# summaries sometimes name the series (or an event) where a speaker should be
+NOT_A_PERSON_RE = re.compile(
+    r"(?i)^(?:the\s+)?(?:utah\s+center\s+for\s+)?data\s+science\b|"
+    r"lecture\s+series|\bseminars?\b|information\s+session|\borientation\b|"
+    r"^speakers?$|\b(?:data\s+science|ai)\s*(?:\+\s*ai\s*)?day\b|"
+    r"^(?:spring|summer|fall|winter)\s*'?\d*$",
+)
 
 CANCELED_RE = re.compile(r"\[?\b(cancell?ed|postponed)\b\]?", re.I)
 SKIP_SUMMARY_RE = re.compile(
@@ -155,6 +168,8 @@ BOILERPLATE_LINE_RE = re.compile(
     r"\s*(?:seminar|lecture series)?\s*$|"
     r"^(?:ucds|ucds\+ai)\b.*$|"
     r"^join zoom meeting$|^meeting id\b|^passcode\b|^one tap mobile$|"
+    r"^zoom\s*(link|info)\b|^talks? will be held\b|.*streamed via the following.*|"
+    r"^\(?https?://\S+.*$|.*\bzoom\b[^\n]*https?://.*|"
     r"^dial by your location$|^\+?\d[\d\s().,*#+-]{6,}$|^find your local number|"
     r"^join by (?:sip|h\.?323)$|^\d{3} \d{4} \d{4}$|^[\s.*#-]+$|"
     r"^time:\s.*(?:mountain time|am|pm)\b.*$|"
@@ -215,8 +230,11 @@ def clean_summary(summary: str) -> str:
     for noise in SERIES_NOISE:
         text = re.sub(re.escape(noise), "|", text, flags=re.I)
     text = re.sub(r"\s*[-–—]{2,}\s*", "|", text)
+    text = re.sub(r"\s+[-–—]\s+", "|", text)
+    # "Data Science Lecture Series. Speaker: Mihai Budiu, Feldera"
+    text = re.sub(r"(?i)(?:^|\|)\s*\.?\s*(?:speakers?|presenters?)\s*:\s*", "|", text)
     text = re.sub(r"\s+@\s+", "|", text)
-    parts = [p.strip(" -–—:|@\t") for p in text.split("|")]
+    parts = [p.strip(" .-–—:|@\t") for p in text.split("|")]
     return "|".join(p for p in parts if p)
 
 
@@ -247,16 +265,21 @@ def split_speaker_and_title(summary: str) -> tuple[str, str]:
     return clean_name(speaker), clean_title(title)
 
 
+CONNECTOR_WORDS = {"and", "de", "del", "der", "van", "von", "la", "bin", "y"}
+
+
 def looks_like_person(text: str) -> bool:
     core = re.sub(r"\(.*?\)", "", text).strip()
     if not core or len(core) > 60:
         return False
+    if re.search(r"[:;]|\d", core):  # "Data Visualization 101" is a title, not a name
+        return False
     words = core.split()
-    if not 1 < len(words) <= 5:
+    if not 1 < len(words) <= 6:
         return False
-    if re.search(r"[:;]", core):
-        return False
-    return all(w[0].isupper() or not w[0].isalpha() for w in words)
+    return all(
+        w[0].isupper() or not w[0].isalpha() or w.lower() in CONNECTOR_WORDS for w in words
+    )
 
 
 def split_name_affiliation(text: str) -> tuple[str, str]:
@@ -352,6 +375,7 @@ def render_toml(talk: dict) -> str:
         f'slides = {toml_str(talk["slides"])}',
         f'recording = {toml_str(talk["recording"])}',
         f'canceled = {"true" if talk["canceled"] else "false"}',
+        "tags = []",
         f'abstract = {toml_str(talk["abstract"])}',
         "",
     ]
@@ -458,6 +482,8 @@ def event_to_talk(event: dict) -> dict | None:
     bio = clean_block(sections.get("bio", ""))
 
     if not name or re.match(r"(?i)^(speaker\s*)?(tba|tbd)\b", name):
+        return None
+    if NOT_A_PERSON_RE.search(name):  # "Data Science Lecture Series", "Sandia Information Session", ...
         return None
 
     speakers = []

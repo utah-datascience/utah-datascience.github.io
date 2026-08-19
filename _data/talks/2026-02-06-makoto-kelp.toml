@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/85983626630"
 slides = ""
 recording = ""
 canceled = false
+tags = ["climate & environment", "machine learning", "optimization"]
 abstract = "Global climate and Earth system models rarely include comprehensive atmospheric chemistry because of its high computational cost. A bottleneck is the chemical solver that integrates the large-dimensional coupled systems of kinetic equations describing the chemical mechanism. In recent years, machine learning (ML) methods have been proposed as a potentially transformative approach to reducing this cost by replacing traditional solvers with fast emulators. However, early efforts showed that ML-based chemical solvers often suffer from rapid error growth and instability. In this talk, I will review the evolving landscape of ML for atmospheric chemistry modeling over the past decade and how its trajectory mirrors broader developments in climate and weather AI. I begin with detailing how to achieve stable emulation in 0-D box models and then show how these principles translate to complex global atmospheric models. I conclude by discussing the current state of ML for modeling atmospheric chemistry and outlining how mechanistic interpretability in geospatial foundation models may offer a promising future line of inquiry."
 
 [[speakers]]

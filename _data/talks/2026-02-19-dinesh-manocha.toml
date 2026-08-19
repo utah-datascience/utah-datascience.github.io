@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["machine learning", "physics & astronomy", "robotics"]
 abstract = "In the last few decades, most robotics success stories have been limited to structured or controlled environments. A major challenge is to develop robot systems that can operate in complex or unstructured environments corresponding to homes, dense traffic, outdoor terrains, public places, etc. In this talk, we give an overview of our ongoing work on developing robust planning and navigation technologies that use recent advances in computer vision, sensor technologies, machine learning, and motion planning algorithms. We present new methods that utilize multi-modal observations from an RGB camera, 3D LiDAR, and robot odometry for scene perception, along with deep reinforcement learning for reliable planning. The latter is also used to compute dynamically feasible and spatial aware velocities for a robot navigating among mobile obstacles and uneven terrains. We have integrated these methods with wheeled robots, home robots, and legged platforms and highlight their performance in crowded indoor scenes, home environments, and dense outdoor terrains."
 
 [[speakers]]

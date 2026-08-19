@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = []
 abstract = ""
 
 [[speakers]]

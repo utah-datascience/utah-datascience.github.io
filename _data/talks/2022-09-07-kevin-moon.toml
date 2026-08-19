@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["deep learning", "machine learning", "visualization"]
 abstract = "The manifold assumption has been used in many machine learning applications to combat the curse of dimensionality. Most manifold learning methods are unsupervised and typically focus on preserving the dominant structure and variation in the data. In many cases, we wish to analyze the data in a supervised setting with respect to expert-provided data labels. Most supervised manifold learning methods exaggerate the separation between data points of different classes, distorting the true structure of the data. In this talk, I will present RF-PHATE, a supervised dimensionality reduction method that preserves the true structure of the variables that are relevant for the supervised task. RF-PHATE is based upon a diffusion process applied to random forest proximities and is well-suited for data visualization. I will then show how to improve the scalability of RF-PHATE and any other manifold learning algorithm and perform out of sample extension using geometry regularized autoencoders (GRAE)."
 
 [[speakers]]

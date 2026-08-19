@@ -10,6 +10,7 @@ series: "Data Science Seminar"
 location: "MEB 3147"
 zoom: "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
 canceled: false
+tags: ["deep learning", "fairness & ethics", "natural language processing", "visualization"]
 speakers:
   - name: "Jeff Phillips"
     affiliation: "University of Utah"

@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/81370106930?pwd=5rAKB2C2SrgkOprGOGuAtzeF5xxbbT.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["geospatial"]
 abstract = """
 It is an astonishing fact about the world today that no one can say precisely how many people actually live on our planet, even though it would presumably be useful to have such information to plan for climate change and disaster risk management, among other things. Luckily for us, demographers and spatial data scientists are keenly aware of this problem and have devised sophisticated methods for interpolating population in these regions based on their built area, typically measured using remote sensing technology.
 

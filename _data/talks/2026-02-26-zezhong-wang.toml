@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["climate & environment", "health & medicine", "human-centered computing", "visualization"]
 abstract = "In today’s data-saturated world, people are facing an “infodemic” of information overload. As public demand to interpret and use data grows, so does the urgency to rethink how we help broader audiences engage with data in meaningful ways. This talk explores how we can reconnect data with its storytelling roots to support understanding and agency. Dr. Wang will present research at the intersection of visual design, data visualization, and human-computer interaction, showing how interdisciplinary collaboration can open up new modes of communication. He will share empirical findings on how visual data narratives, such as data comics, can improve comprehension and engagement, as well as methods for crafting visual data stories that connect data to context and lived experience. Examples will draw from cross-disciplinary projects in environmental and healthcare data storytelling. The talk will conclude with future directions toward embedding narrative-driven data experiences into everyday tasks and decision-making."
 
 [[speakers]]

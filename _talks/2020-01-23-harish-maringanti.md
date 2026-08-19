@@ -9,6 +9,7 @@ end_time: "1:30 PM"
 series: "Data Science Seminar"
 location: "MEB 3147"
 canceled: false
+tags: ["machine learning"]
 speakers:
   - name: "Harish Maringanti"
     affiliation: "Associate Dean for IT & Digital Library Services, Marriott Library"

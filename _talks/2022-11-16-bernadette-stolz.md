@@ -9,6 +9,7 @@ end_time: "11:45 AM"
 series: "Data Science Seminar"
 zoom: "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 canceled: false
+tags: ["biology & genomics"]
 speakers:
   - name: "Bernadette Stolz"
     affiliation: "Oxford"

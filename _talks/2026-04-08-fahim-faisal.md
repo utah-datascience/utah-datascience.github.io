@@ -9,6 +9,7 @@ end_time: "11:00 AM"
 series: "Data Science & AI Lecture Series"
 location: "WEB 3780"
 canceled: false
+tags: ["fairness & ethics", "large language models", "natural language processing", "society & policy"]
 speakers:
   - name: "Fahim Faisal"
     bio: "Fahim Faisal is a final-year Ph.D. candidate in the Department of Computer Science at George Mason University, where he is a member of the GMU NLP Lab under the supervision of Dr. Antonios Anastasopoulos. His research focuses on adapting language models for low-resource and underrepresented languages, spanning both the creation of linguistic resources and the systematic evaluation of state-of-the-art large language models (LLMs) across language varieties and dialects. His work also examines how modern LLMs handle domain- and policy-specific safety alignment, multilingual reasoning, and cultural disparities embedded in language modeling. His research is driven by the overarching goal of democratizing AI and NLP, ensuring that users from all linguistic, cultural, and demographic backgrounds receive equitable utility from advances in machine intelligence. His work DialectBench received the Best Social Impact Award at ACL 2024, recognizing its contribution to inclusive and socially responsible NLP research."

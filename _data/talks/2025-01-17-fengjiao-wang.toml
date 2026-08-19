@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["machine learning"]
 abstract = "Self-supervised and Semi-supervised learning (SSL) on tabular data is an understudied topic. Despite some attempts, there are two major challenges: 1. Imbalanced nature in the tabular dataset; 2. The one-hot encoding used in these methods becomes less efficient for high-cardinality categorical features. To cope with the challenges, we propose SAWTab which uses a target encoding method, Conditional Probability Representation (CPR), for efficient representation in the input space of categorical features. We improve this representation by incorporating the unlabeled samples through pseudo-labels. Furthermore, we propose a Smooth Adaptive Weighting mechanism in the target encoding to mitigate the issue of noisy and biased pseudo-labels. Experimental results on various datasets and comparisons with existing frameworks show that SAWTab yields best test accuracy on all datasets. We find that pseudo-labels can help improve the input space representation in the SSL setting, which enhances the generalization of the learning algorithm."
 
 [[speakers]]

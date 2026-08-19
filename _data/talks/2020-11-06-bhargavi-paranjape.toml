@@ -1,7 +1,7 @@
 # Imported from the seminar Google Calendar -- please review and complete.
 
 [talk]
-title = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09 (https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09"
+title = "An Information Bottleneck Approach for Rationale Extraction"
 date = 2020-11-06
 start_time = "11:50"
 end_time = "13:10"
@@ -11,6 +11,7 @@ zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT
 slides = ""
 recording = ""
 canceled = false
+tags = ["education", "fairness & ethics", "natural language processing"]
 abstract = "Decisions of complex models for language understanding can be explained by limiting the inputs they are provided to a relevant sub-sequence of the original text — a rationale. Models that condition predictions on a concise rationale, while being more interpretable, tend to be less accurate than models that are able to use the entire context. In this paper, we show that it is possible to better manage the trade-off between concise explanations and high task accuracy by optimizing abound on the Information Bottleneck (IB) objective. Our approach jointly learns an explainer that predicts sparse binary masks over input sentences without explicit supervision and an end-task predictor that considers only the residual sentences. Using IB, we derive a learning objective that allows direct control of mask sparsity levels through a tunable sparse prior. Experiments on the ERASER benchmark demonstrate significant gains over previous work for both task performance and agreement with human rationales"
 
 [[speakers]]

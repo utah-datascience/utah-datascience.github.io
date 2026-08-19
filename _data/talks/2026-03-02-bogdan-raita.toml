@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["machine learning", "physics & astronomy"]
 abstract = "We use the theory of linear pde systems with constant coefficients (Malgrange, Palamodov, Pommaret, Sturmfels) to implement a machine learning algorithm which generates solutions to arbitrary linear pdes. Since we preprocess the equations with computer algebra, our methods are applicable to arbitrary pde systems, irrespective of type (elliptic, hyperbolic, etc.) or order. We test our method for classical equations (wave, heat, Laplace) and discuss future applications to equations describing wave-related phenomena, for example direct and inverse problems involving Maxwellâ€™s system and the elasticity equations."
 
 [[speakers]]

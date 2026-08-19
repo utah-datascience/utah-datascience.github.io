@@ -9,6 +9,7 @@ end_time: "3:00 PM"
 series: "Data Science Seminar"
 zoom: "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
 canceled: false
+tags: ["algorithms & theory", "computer vision"]
 speakers:
   - name: "Michael Yeh"
     affiliation: "Visa Research"

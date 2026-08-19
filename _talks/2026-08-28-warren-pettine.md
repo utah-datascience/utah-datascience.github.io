@@ -9,6 +9,7 @@ end_time: "2:30 PM"
 series: "Data Science & AI Lecture Series"
 location: "WEB 2250"
 canceled: false
+tags: ["biology & genomics"]
 speakers:
   - name: "Warren Pettine"
     affiliation: "UU Psychiatry & MTN"

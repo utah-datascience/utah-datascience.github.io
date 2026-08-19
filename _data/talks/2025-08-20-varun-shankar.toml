@@ -11,6 +11,7 @@ zoom = "http://utah.zoom.us/my/vsutah"
 slides = ""
 recording = ""
 canceled = false
+tags = []
 abstract = ""
 
 [[speakers]]

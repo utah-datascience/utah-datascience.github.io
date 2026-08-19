@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["visualization"]
 abstract = "Topological features provide multi-scale summaries of the behavior of continuous data from diverse applications ranging from astrophysics to medicine. Nevertheless, computing them robustly is challenging due to numerical precision issues. A promising strategy is to first convert the input to a discrete representation that satisfies criteria introduced by Forman's discrete Morse theory. While numerous approaches exist to discretize the restricted case of gradient fields from scalar data, state-of-the-art algorithms for the general case of vector fields require expensive optimization procedures. In this talk, I will present recent work that uses local evaluation to create discrete vector fields in linear time from two-dimensional, triangulated vector fields. I will also frame this work within my contributions to the Topological ToolKit (TTK), an open source software platform for topological data analysis, led by collaborators at UPMC Sorbonne."
 
 [[speakers]]

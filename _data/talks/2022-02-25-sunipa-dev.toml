@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["fairness & ethics", "natural language processing"]
 abstract = "Large language models are commonly used in different paradigms of natural language processing and machine learning, and are known for their efficiency as well as their overall lack of interpretability. Their data driven approach for emulating human language often results in human biases being encoded and even amplified, potentially leading to cyclic propagation of representational and allocational harm. We discuss in this talk some aspects of detecting, evaluating, and mitigating biases and associated harms in a holistic, inclusive, and culturally-aware manner. In particular, we discuss the disparate impact on society of common language tools that are not inclusive of all gender identities."
 
 [[speakers]]

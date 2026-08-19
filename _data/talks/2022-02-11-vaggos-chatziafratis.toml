@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["deep learning"]
 abstract = """
 Given a target function f, how large must a neural network be in order to approximate f?
 Understanding the representational power of Deep Neural Networks (DNNs) and how their structural properties (e.g., depth, width, type of activation unit) affect the functions they can compute, has been an important yet challenging question in approximation theory and deep learning even in the early days of AI.

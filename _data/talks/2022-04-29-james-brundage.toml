@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["health & medicine", "machine learning"]
 abstract = "Supervised deep learning (DL) has become an increasingly common tool for advanced analysis of the electrocardiogram (ECG). These methods rely heavily on labeled datasets, in which there is a clinical annotation for each ECG. However, real world ECG datasets may not contain enough labeled recordings to facilitate robust feature extraction, preventing DL analysis for clinical problems with small datasets. Self-supervised learning (SSL) seeks to utilize cheaply labeled or unlabeled data to improve performance in a supervised learning task. This process consists of first training a model on a primary task with cheap data labels, followed by a second training process which attempts to learn the downstream task by initializing with weights learned from the first. While SSL has become a popular tool in many machine learning domains, it is only starting to be used in ECG based machine learning. Here, we demonstrate the progress we have made in applying SSL approaches to detect low left ventricular ejection fraction, a complex ECG detection task, using data extracted from the University of Utah."
 
 [[speakers]]

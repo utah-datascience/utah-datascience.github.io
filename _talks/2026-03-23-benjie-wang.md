@@ -9,6 +9,7 @@ end_time: "11:00 AM"
 series: "Data Science & AI Lecture Series"
 location: "WEB 3780"
 canceled: false
+tags: ["large language models", "natural language processing", "robotics", "statistics"]
 speakers:
   - name: "Benjie Wang"
     bio: "Benjie Wang is a postdoctoral researcher in the Statistical and Relational Artificial Intelligence (StarAI) lab in the Computer Science Department at UCLA. Dr. Wang's research interests are in artificial intelligence, including deep generative models, probabilistic machine learning, sequence and language modeling, and formal reasoning. His work develops theory-driven and scalable methods for understanding and controlling generative models, by studying the mathematical foundations, architecture, and manipulation of representations of high-dimensional probability distributions.\n\nPreviously, he was a research fellow at the Simons Institute for the Theory of Computing at UC Berkeley in Fall 2023. Dr. Wang obtained his DPhil in Computer Science from the University of Oxford advised by Prof. Marta Kwiatkowska in 2023, his MSc in Statistical Science from the University of Oxford in 2019, and his BA in Mathematics from the University of Cambridge in 2018.\n"

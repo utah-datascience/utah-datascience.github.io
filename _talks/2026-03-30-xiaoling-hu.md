@@ -9,6 +9,7 @@ end_time: "11:00 AM"
 series: "Data Science & AI Lecture Series"
 location: "WEB 3780"
 canceled: false
+tags: ["computer vision", "health & medicine", "machine learning"]
 speakers:
   - name: "Xiaoling Hu"
     bio: "Xiaoling Hu is a postdoctoral research fellow at Harvard Medical School. He received his Ph.D. in Computer Science from Stony Brook University. His research focuses on Machine Learning for Healthcare, with an emphasis on developing core AI/ML algorithms for healthcare applications. His work has been published in leading venues across machine learning, computer vision, and medical imaging, including NeurIPS, ICLR, AISTATS, CVPR, ICCV, ECCV, Medical Image Analysis, and MICCAI. Several of his papers have been selected for oral or spotlight presentations. Xiaoling has organized multiple tutorials and workshops at top-tier conferences and served as Area Chairs for venues such as NeurIPS, CVPR, AISTATS, and MICCAI. He is also a recipient of the prestigious Catacosinos Fellowship, awarded to SBU graduate students with exceptional research achievements."

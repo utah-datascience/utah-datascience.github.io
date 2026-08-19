@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "WEB L112"
 zoom: "https://utah.zoom.us/j/85983626630"
 canceled: false
+tags: ["visualization"]
 speakers:
   - name: "Kate Isaacs"
     bio: "Kate Isaacs is an Associate Professor in the Kahlert School of Computing and the Scientific Computing an Imaging Institute at the University of Utah. She received her Ph.D. in computer science from the University of California, Davis and has undergraduate degrees in computer science, mathematics, and physics. She publishes in data visualization, high performance computing, and human-centered computing venues, with interests in complex analysis scenarios, such as those arising from research and data science teams. She has received an NSF CAREER award, a Department of Energy Early Career Research Program award, and a Presidential Early Career Award for Scientists and Engineers (PECASE)."

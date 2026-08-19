@@ -9,6 +9,7 @@ end_time: "3:00 PM"
 series: "Data Science Seminar"
 zoom: "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz09"
 canceled: false
+tags: ["machine learning", "privacy & security"]
 speakers:
   - name: "Yaoqing Yang"
     affiliation: "UC Berkeley"

@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["climate & environment"]
 abstract = """
 From the inception of numerical weather prediction in the 1950’s, atmospheric scientists have stretched the envelope on the hardware and procedures available to write, store, and use data on mass storage systems. The opportunities now to rely on cloud resources to process, access, and disseminate environmental data offer improved capabilities for data science applications in the atmospheric sciences but also introduce complexities for university researchers.
 

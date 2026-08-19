@@ -9,6 +9,7 @@ end_time: "2:00 PM"
 series: "Data Science & AI Lecture Series"
 location: "WEB 3780"
 canceled: false
+tags: ["education", "fairness & ethics"]
 speakers:
   - name: "Jihyun Rho"
     bio: "Jihyun Rho is a Postdoctoral Researcher at the University of Florida. She earned her Ph.D. in the Learning Sciences program in the Department of Educational Psychology at the University of Wisconsin–Madison. Her research uses design-based research and learning analytics to design and evaluate AI-augmented learning environments for visual-based learning. She studies how learners and educators interact with AI-generated representations, combining qualitative analysis of interaction processes with experimental approaches to examine learning outcomes, reasoning, and reliance on AI. Her scholarship appears in leading journals and conferences in learning sciences and AI in education."

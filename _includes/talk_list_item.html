@@ -1,0 +1,30 @@
+{%- comment -%}
+One row in the /talks/ listing. `include.talk` is a document from the `talks`
+collection. The data-* attributes are what the search and filters on that page
+read, so anything searchable has to end up in `data-search`.
+{%- endcomment -%}
+{%- assign talk = include.talk -%}
+{%- capture speaker_names -%}
+  {%- for speaker in talk.speakers -%}{{ speaker.name }}{% unless forloop.last %}|{% endunless %}{%- endfor -%}
+{%- endcapture -%}
+{%- capture affiliations -%}
+  {%- for speaker in talk.speakers -%}{{ speaker.affiliation }} {% endfor -%}
+{%- endcapture -%}
+{%- capture searchable -%}
+  {{ talk.title }} {{ talk.speaker_names }} {{ affiliations }} {{ talk.tags | join: " " }}
+  {{ talk.location }} {{ talk.series }} {{ talk.date | date: "%B %Y %Y-%m-%d" }}
+  {{ talk.content | strip_html | strip_newlines }}
+{%- endcapture -%}
+<li class="talk-item"
+  data-year="{{ talk.date | date: "%Y" }}"
+  data-tags="{{ talk.tags | join: "|" | escape }}"
+  data-speakers="{{ speaker_names | downcase | escape }}"
+  data-search="{{ searchable | strip_newlines | downcase | escape }}">
+  <span class="talk-date text-muted">{{ talk.date | date: "%b %-d, %Y" }}</span>
+  <a href="{{ talk.url | relative_url }}">{{ talk.title }}</a>
+  &mdash; {{ talk.speaker_names }}
+  {% if talk.canceled %}<span class="badge badge-danger">Canceled</span>{% endif %}
+  {% if talk.recording %}<a href="{{ talk.recording }}" target="_blank" rel="noopener">[recording]</a>{% endif %}
+  {% if talk.slides %}<a href="{{ talk.slides }}" target="_blank" rel="noopener">[slides]</a>{% endif %}
+  {% if talk.tags %}<div class="talk-item-tags">{{ talk.tags | join: " &middot; " }}</div>{% endif %}
+</li>

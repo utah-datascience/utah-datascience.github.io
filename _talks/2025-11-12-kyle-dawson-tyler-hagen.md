@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "WEB 3780"
 zoom: "https://utexas.zoom.us/j/87159746528?pwd=ouQu8lN9ARbb6aRFpvdf6Ddb1Oqa8B.1"
 canceled: false
+tags: ["machine learning", "physics & astronomy"]
 speakers:
   - name: "Kyle Dawson"
     website: "https://profiles.faculty.utah.edu/u0634757"

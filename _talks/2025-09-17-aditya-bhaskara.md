@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "LNCO 1100"
 zoom: "https://utah.zoom.us/j/81370106930?pwd=5rAKB2C2SrgkOprGOGuAtzeF5xxbbT.1"
 canceled: false
+tags: ["optimization"]
 speakers:
   - name: "Aditya Bhaskara"
 speaker_names: "Aditya Bhaskara"

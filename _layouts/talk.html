@@ -117,13 +117,25 @@ layout: default
           {% if speaker.role or speaker.affiliation %}
           <h6 class="text-muted">{{ speaker.role }}{% if speaker.role and speaker.affiliation %}, {% endif %}{{ speaker.affiliation }}</h6>
           {% endif %}
+          {% if speaker.website %}
+          <p class="mb-2">
+            <a href="{{ speaker.website }}" target="_blank" rel="noopener">
+              <i class="fa fa-external-link"></i> {{ speaker.website | remove: "https://" | remove: "http://" | remove_first: "www." | split: "/" | first }}
+            </a>
+          </p>
+          {% endif %}
           {% if speaker.bio %}<p>{{ speaker.bio | markdownify }}</p>{% endif %}
         </div>
       </div>
       {% endfor %}
 
       {% if page.tags %}
-      <p class="text-muted">Tags: {{ page.tags | join: ", " }}</p>
+      <p class="text-muted">
+        Tags:
+        {% for tag in page.tags %}
+        <a class="badge badge-secondary" href="{{ '/talks/' | relative_url }}?tag={{ tag | url_encode }}">{{ tag }}</a>
+        {% endfor %}
+      </p>
       {% endif %}
 
       <hr />

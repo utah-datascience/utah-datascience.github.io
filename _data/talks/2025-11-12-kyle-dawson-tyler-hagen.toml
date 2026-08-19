@@ -11,6 +11,7 @@ zoom = "https://utexas.zoom.us/j/87159746528?pwd=ouQu8lN9ARbb6aRFpvdf6Ddb1Oqa8B.
 slides = ""
 recording = ""
 canceled = false
+tags = ["machine learning", "physics & astronomy"]
 abstract = """
 The Dark Energy Spectroscopic Instrument (DESI) has concluded three years of observation, leading to the largest spectroscopic galaxy sample ever produced. In combination with other cosmological probes, these measurements reveal hints of new physics beyond the standard cosmological model. In this talk, we will first present the observations and key measurements that led to these new constraints. We will then describe the role that neural networks and random forests play in this analysis and our tests of these machine learning algorithms against more physically-motivated, linear models.
 

@@ -11,6 +11,7 @@ zoom = "https://utexas.zoom.us/j/84742203545?pwd=lUosaf3T6bkIS1QAaIQYHYiiClE2ZP.
 slides = ""
 recording = ""
 canceled = false
+tags = ["large language models", "natural language processing"]
 abstract = """
 Controlling the behavior of large language models at inference time is an increasingly important problem. In this talk, I present a simple and unified approach to steering model behavior based on activation geometry. By learning a single classifier over hidden representations, we can derive directions that control multiple attributes such as helpfulness, style, or safety, and compose them dynamically without retraining.
 This framework enables flexible, low cost control of model outputs and highlights a geometric view of representation space beyond fixed linear directions. I will discuss empirical results showing how this approach supports multi attribute control in practice, and briefly outline how such steering mechanisms can be useful in scientific settings where reliable and interpretable model behavior is critical. Our recent followup work suggests that similar activation level interventions can extend across modalities, enabling systematic analysis and control in text to image models through composable operations.

@@ -9,6 +9,7 @@ end_time: "11:00 AM"
 series: "Data Science & AI Lecture Series"
 location: "WEB 3780 (Evans)"
 canceled: false
+tags: ["large language models"]
 speakers:
   - name: "Tenghao Huang"
     bio: "Tenghao Huang is a Ph.D. candidate in Computer Science at the University of Southern California. His research focuses on proactive and agentic AI systems for open-ended tasks, including social world models that simulate how conversations unfold and how decisions emerge from social interaction. His work is recognized by an EMNLP Outstanding Paper Award, an ISI Viterbi Fellowship, and has received media coverage from leading technology presses such as MIT Technology and Microsoft’s Future of Work. He has served as Area Chair roles for ACL, EMNLP, NAACL conferences and has organized a tutorial on Creative Planning with LLMs at NAACL 2025."

@@ -8,6 +8,7 @@ start_time: "3:30 PM"
 end_time: "4:30 PM"
 series: "Data Science Seminar"
 canceled: false
+tags: ["human-centered computing", "networks & graphs", "visualization"]
 speakers:
   - name: "Alberto Cairo"
     bio: "Alberto Cairo is a journalist and designer with many years of experience leading graphics and visualization teams in several countries. He is the Knight Chair at the School of Communication of the University of Miami, where he teaches courses on infographics and data visualization. He is also director of the Center for Visualization at UM’s Institute for Data Science and Computing, and a Faculty Fellow at the Abess Center for Ecosystem Science and Policy.In the past decade, Cairo has taught and consulted in nearly thirty countries, working for Microsoft, Google, the U.S. National Guard, and many other companies and institutions. Cairo has also written for The New York Times and Scientific American magazine and he is the author of numerous books, the latest one being 'How Charts Lie: Getting Smarter About Visual Information' (W.W. Norton, 2019)"

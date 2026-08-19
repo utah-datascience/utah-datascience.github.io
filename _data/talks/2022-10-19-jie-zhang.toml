@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["fairness & ethics", "statistics"]
 abstract = """
 Models satisfying Min-max fairness minimizes maximum group specific losses, so that the model has a more equitable performance over all groups. Benefit of min-max fair models over other fairness notions and models include it levels up: meaning it only degrades performance of a group if the degradation improves performance on the worst off group.
 

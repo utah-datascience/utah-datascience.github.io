@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/85983626630"
 slides = ""
 recording = ""
 canceled = false
+tags = ["human-centered computing", "society & policy", "visualization"]
 abstract = "Interfaces—whether they are for data analysis, programming, or any other activities—exist within specific communities of practice. The norms and standards of those groups inscribe themselves in the form of those tools; implicitly driving what is and is not possible. In this talk I will explore how linters (a spell checker-like tool used in programming) can be used to interrogate this arrangement. In doing so I will describe recent and on-going efforts relating to application of linters to a variety of domains, including visualization, color palettes, and social media posts. Through this discussion, I will argue that using linters as a critical lens allows us to examine the technological world around us in a new light (offering new opportunities for research and design), and therein explore the values that we manifest in our tool design and selection."
 
 [[speakers]]

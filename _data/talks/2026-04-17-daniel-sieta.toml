@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/85983626630"
 slides = ""
 recording = ""
 canceled = false
+tags = ["computer vision", "robotics"]
 abstract = "Despite recent advances, learning-based robot manipulation systems often require large demonstration datasets and degrade in cluttered or deformable environments. This talk presents diffusion-based multimodal data augmentation methods that synthesize consistent observations and action labels. By augmenting limited demonstrations, these approaches substantially reduce data requirements and enable robust manipulation in complex, real-world settings."
 
 [[speakers]]

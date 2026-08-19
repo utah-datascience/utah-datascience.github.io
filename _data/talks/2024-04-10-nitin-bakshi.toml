@@ -1,0 +1,38 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Service Operations for Justice-On-Time: A Data-Driven Queueing Approach"
+date = 2024-04-10
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = ""
+zoom = "https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["fairness & ethics", "society & policy"]
+abstract = """
+Limited resources in the judicial system can lead to costly delays, stunted economic development, and even failure to deliver justice. Using the Supreme Court of India as an exemplar for such resource-constrained settings, we apply ideas from service operations to study delay. Specifically, court dynamics constitute a case-management queue, whereby each case may experience multiple service encounters spread across time, but all are necessarily with the same server. Our goal is to elucidate the drivers of congestion, focusing on metrics such as the expected case-disposition time (delay) and expected number of cases awaiting adjudication (pendency), and leverage this understanding to recommend operational interventions.
+
+We employ data-driven calibrated simulations to model the analytically intractable case-management queue. The life cycle of a case comprises two stages: pre-admission (before determining its merit for detailed hearings) and post-admission. Our methodology allows us to capture the queueing dynamics in which the judges are shared resources across the two stages. It also permits modeling of holiday capacity, which is flexibly tailored to address any surplus work that spills over from the regular year. We find that the second stage of this judicial queue is overloaded, but holiday capacity creates a perception of stability by steadying performance metrics.
+
+The sources of inefficiency that drive congestion include a misalignment between scheduling guidelines and judicial capacity, coupled with the requirement to schedule hearings in advance. Together, these factors inhibit utilization of shared capacity across the two-stage judicial queue. We demonstrate how interventions that account for these inefficiencies can successfully tackle judicial delay. In particular, scheduling to improve the allocation of time across pre- and post-admission cases can cut down the expected delay by as much as 65%.
+"""
+
+[[speakers]]
+name = "Nitin Bakshi"
+affiliation = "Utah"
+website = ""
+photo = ""
+bio = """
+Dr Nitin Bakshi is department chair and Professor of Operations and Information Systems at the David Eccles School of Business, University of Utah. He focuses his research on the management of disruption risk in operations and supply-chain management, with an emphasis on “low-probability high-consequence” events. He is currently investigating how to manage reporting of accident precursors to enhance safety in dangerous operations, and exploring new frontiers related to efficiency in judicial operations.
+
+He holds a B. Tech. in Electrical Engineering from IIT Bombay; an M.S. in Management Science from Stanford University; and a Ph.D. in Applied Economics from the Wharton School, University of Pennsylvania. Dr Bakshi has previously worked as a manager for Unilever and as an Algorithm Design Engineer for SmartOps Inc. Before joining the University of Utah he served on the faculty at the London Business School.
+"""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "2k3lnrqsa9aki2hp8d1d9lqdir@google.com"
+imported_on = 2026-08-18
+needs_review = true

@@ -11,6 +11,7 @@ zoom = "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz
 slides = "https://rajeshjayaram.com/EarthMoverCJLW.pdf"
 recording = ""
 canceled = false
+tags = ["algorithms & theory", "data management", "machine learning"]
 abstract = """
 The Earth Mover Distance (EMD) between two multi-sets A,B in R^d of size s is the min-cost of bipartite matchings between points in A and B, where cost is measured by distance between points. In this talk, we discuss a classic divide-and-conquer algorithm known as Quadtree for approximating EMD.
 We give a new analysis of the Quadtree, showing that it gives a Õ(log s) approximation. This improves on the previous known O(min{log s , log d} * log s)-approximation of Andoni, Indyk, and Krauthgamer [SODA 08], and Backurs, Dong, Indyk, Razenshteyn, and Wagner (ICML 20).

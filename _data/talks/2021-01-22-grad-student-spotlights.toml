@@ -11,6 +11,7 @@ zoom = "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz
 slides = ""
 recording = ""
 canceled = false
+tags = ["data management", "fairness & ethics"]
 abstract = """
 Archit Rathore: Exploring the Shape of Activations - A BERT case studyBenwei Shi: At-the-time and Back-in-time Persistent Sketches
 Joe Vinu: What all it takes for Performant Deep Nets to be Reliable and Fair?

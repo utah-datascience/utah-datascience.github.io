@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["computer vision", "robotics"]
 abstract = "Modern computer vision models have excelled on several tasks and beaten several benchmarks. However, many of these models have avoided the mathematical and principled approaches to computer vision, resulting in sub-optimal performance and issues with interpretability. This talk will re-introduce mathematical modeling for computer vision tasks such as facial landmark localization and monocular 3D object detection for autonomous driving. In particular, we discuss the joint estimation of location, uncertainty, and visibility for facial landmark detection and introduce a mathematically differentiable NMS for monocular 3D detection. The mathematical modeling enables end-to-end learning in these tasks, resulting in improved performance."
 
 [[speakers]]

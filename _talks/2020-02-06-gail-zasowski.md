@@ -9,6 +9,7 @@ end_time: "1:30 PM"
 series: "Data Science Seminar"
 location: "MEB 3147"
 canceled: false
+tags: ["physics & astronomy"]
 speakers:
   - name: "Gail Zasowski"
     affiliation: "Utah Physics & Astronomy"

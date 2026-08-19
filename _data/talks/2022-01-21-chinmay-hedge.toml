@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["deep learning", "privacy & security"]
 abstract = "As deep neural networks become ever more pervasive, so too are concerns surrounding users' data privacy. Curiously, standard cryptographic encryption approaches for guaranteeing data privacy do not interact well with traditional neural network models. In this talk, I will (a) outline why standard networks are not encryption-efficient, (b) suggest two new approaches for designing deep networks that do support efficient and secure inference, and (c) show results instantiating these approaches on real-world use cases."
 
 [[speakers]]

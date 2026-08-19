@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["large language models", "natural language processing"]
 abstract = "Retrieval is the critical way of accessing information in people’s daily lives. Retrieval applications include search engines, conversational shopping assistants, or when asked about 2+3=?, human brains do retrieval instead of reasoning. In this talk, I’ll briefly go through the history of representation learning in retrieval, from Bag-of-Words representations to the latest dense and learned sparse retrieval algorithms. Increasingly, people go to ChatGPT or other large language models for information seeking instead of search engines. With this existential crisis in mind, I will talk about the role of retrieval in LLM era, specifically, retrieval-augmented generation, strengths, weaknesses and open problems."
 
 [[speakers]]

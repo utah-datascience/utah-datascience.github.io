@@ -9,6 +9,7 @@ end_time: "11:30 AM"
 series: "Data Science & AI Lecture Series"
 location: "Evans Conference Room (WEB 3780)"
 canceled: false
+tags: ["visualization"]
 speakers:
   - name: "Josh Levine"
     bio: "Joshua A. Levine is an associate professor in the Department of Computer Science at University of Arizona. Prior to starting at Arizona in 2016, he was an assistant professor at Clemson University from 2012 to 2016, and he is a postdoctoral alumnus of the University of Utah’s SCI Institute, 2009 to 2012. He is a recipient of the 2018 DOE Early Career award. He received his PhD in Computer Science from The Ohio State University in 2009 after completing BS degrees in Computer Engineering and Mathematics in 2003 and an MS in Computer Science in 2004 from Case Western Reserve University. His research and teaching interests include visualization, topological analysis, geometric modeling, and computer graphics."

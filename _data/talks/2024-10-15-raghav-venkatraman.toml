@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory", "networks & graphs", "statistics"]
 abstract = """
 This talk is focused on obtaining minmax estimation rates for the "manifold learning" problem. Given N data points hypothesized to be i.i.d (independent and identically distributed) samples of a nice density (from within a reasonable class of densities) on a nice manifold (from within some class of nice manifolds of known intrinsic dimension d), the manifold learning problem boils down to estimating certain statistics of this "ground truth" manifold, such as the first few eigenmodes of the Laplace Beltrami operator on the manifold. The minmax estimation problem further asks: given N such data points, among all estimators of the desired statistics (say, a particular eigenvalue and associated eigenfunctions in a suitable norm), which one achieves the smallest maximum expected risk, and how does this minmax risk scale in N and the intrinsic dimension d of the manifold?
 

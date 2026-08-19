@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "Dinosaur Room (CSC 206)"
 zoom: "https://utexas.zoom.us/j/84742203545?pwd=lUosaf3T6bkIS1QAaIQYHYiiClE2ZP.1"
 canceled: false
+tags: ["large language models", "natural language processing"]
 speakers:
   - name: "Amirali Abdullah"
     bio: "Amirali Abdullah is a Lead AI Researcher at Thoughtworks Inc and a Research Advisor at Martian Learning. His research focuses on the interpretability and control of large language models, with particular emphasis on activation-level steering, representation geometry, and the structure of learned features."

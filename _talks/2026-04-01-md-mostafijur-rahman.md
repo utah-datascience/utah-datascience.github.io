@@ -9,6 +9,7 @@ end_time: "11:30 AM"
 series: "Data Science & AI Lecture Series"
 location: "WEB 3780"
 canceled: false
+tags: ["health & medicine", "machine learning"]
 speakers:
   - name: "Md Mostafijur Rahman"
     bio: "Md Mostafijur Rahman is a Ph.D. candidate at The University of Texas at Austin, advised by Radu Marculescu. His research sits at the intersection of AI, biomedical imaging, and computer vision, with a focus on building efficient, reliable, and scalable AI systems for deployment in healthcare under real-world constraints. His work has been translated to practice through research internships at GE Healthcare, the National Institutes of Health (NIH), and Bosch Research. He has published over 20 peer-reviewed papers in venues including CVPR, NeurIPS, MICCAI, and ICCV, with several works selected for Spotlight and Oral presentations. His research contributions have been recognized by the NIH Summer IRTA Fellowship, the Texas Health Catalyst Award, and the Discovery to Impact Award."

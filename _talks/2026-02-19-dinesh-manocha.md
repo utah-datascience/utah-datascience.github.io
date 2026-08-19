@@ -9,6 +9,7 @@ end_time: "4:30 PM"
 series: "Data Science & AI Lecture Series"
 location: "WEB 3780"
 canceled: false
+tags: ["machine learning", "physics & astronomy", "robotics"]
 speakers:
   - name: "Dinesh Manocha"
     bio: "Prof. Dinesh Manocha is Paul Chrisman-Iribe Chair in Computer Science & ECE and Distinguished University Professor at University of Maryland College Park. His research interests include virtual environments, physics-based modeling, and robotics. His group has developed several software packages that are standard and licensed to 60+ commercial vendors. He has published more than 850 papers & supervised 63 PhD dissertations. He is a Fellow of AAAI, AAAS, ACM, IEEE, and NAI and member of ACM SIGGRAPH and IEEE VR Academies, and Bézier Award from Solid Modeling Association. He received the Distinguished Alumni Award from IIT Delhi the Distinguished Career in Computer Science Award from Washington Academy of Sciences. He was a co-founder of Impulsonic, a developer of physics-based audio simulation technologies, which was acquired by Valve Inc in November of 2016."

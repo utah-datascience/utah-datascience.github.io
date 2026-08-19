@@ -9,6 +9,7 @@ end_time: "5:00 PM"
 series: "Data Science & AI Lecture Series"
 location: "MLIB 1110 | Zoom: 890 9876 9672, Passcode: 156565"
 canceled: false
+tags: ["climate & environment", "society & policy"]
 speakers:
   - name: "Dick Sadler"
 speaker_names: "Dick Sadler"

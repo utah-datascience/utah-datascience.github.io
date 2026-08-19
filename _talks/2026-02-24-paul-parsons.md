@@ -9,6 +9,7 @@ end_time: "11:30 AM"
 series: "Data Science & AI Lecture Series"
 location: "WEB 3780"
 canceled: false
+tags: ["human-centered computing", "visualization"]
 speakers:
   - name: "Paul Parsons"
     bio: "Paul Parsons is an Associate Professor in the School of Applied and Creative Computing at Purdue University. His research focuses on interactive visualization systems and interfaces and how they are designed and used in complex sociotechnical settings. His work at the intersection of design practice and data visualization has been recognized with an NSF CAREER award and a recent IEEE VIS best-paper recognition. His broader research program has also been supported by NSF and NASA funding. His work appears in leading venues such as IEEE TVCG and ACM CHI. He leads the Design, Visualization, & Cognition (DVC) Lab, where his group studies how practitioners think, create, and collaborate in data-rich domains shaped by uncertainty, complexity, and ambiguity, drawing on perspectives such as design cognition, judgment and decision-making, and joint cognitive systems. He collaborates widely across disciplines at Purdue and beyond, including through the NSF-funded Cyberinfrastructure Center of Excellence SGX3 and the NASA-funded Resilient Extra Terrestrial Habitats Institute (RETHi)."

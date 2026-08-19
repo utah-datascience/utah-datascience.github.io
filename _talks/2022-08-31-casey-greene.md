@@ -1,6 +1,6 @@
 ---
 layout: "talk"
-title: "TBA"
+title: "Talk by Casey Greene"
 date: "2022-08-31 10:30:00 -0600"
 permalink: "/talks/2022-08-31-casey-greene/"
 slug: "2022-08-31-casey-greene"

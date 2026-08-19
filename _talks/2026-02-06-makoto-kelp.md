@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "WEB L112"
 zoom: "https://utah.zoom.us/j/85983626630"
 canceled: false
+tags: ["climate & environment", "machine learning", "optimization"]
 speakers:
   - name: "Makoto Kelp"
     bio: "Makoto Kelp is an Assistant Professor in the Department of Atmospheric Sciences and a Fellow in the Wilkes Center for Climate Science & Policy at the University of Utah. His research focuses on the intersections of atmospheric chemistry, fires, and human-environmental systems, with an emphasis on using data-driven methods and machine learning techniques. He earned his PhD from Harvard University and conducted his Post Doc at Stanford University as a NOAA Climate & Global Change Fellow."

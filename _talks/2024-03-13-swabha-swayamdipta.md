@@ -8,6 +8,7 @@ start_time: "1:30 PM"
 end_time: "2:30 PM"
 series: "Data Science Seminar"
 canceled: false
+tags: ["large language models", "machine learning", "natural language processing"]
 speakers:
   - name: "Swabha Swayamdipta"
     affiliation: "USC"

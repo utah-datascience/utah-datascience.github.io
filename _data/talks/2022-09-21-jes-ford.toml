@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["machine learning"]
 abstract = "Code Review is an integral part of software development, but many teams don’t have similar processes in place for the development and deployment of Machine Learning (ML) models. I will motivate the decision to create a Model Review process, starting from the principles of transparency, reproducibility, and knowledge sharing. MLflow is a useful Python package to help simplify and automate much of the tracking necessary to create detailed records of machine learning experiments. Much of this talk will be spent introducing this tool, and demonstrating the core MLflow Tracking functionality. I’ll discuss how my team is currently running a Model Review process for any ML models that we push to production, and how we use MLflow to streamline this work and learn from each other."
 
 [[speakers]]

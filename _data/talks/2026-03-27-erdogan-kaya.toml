@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["education", "fairness & ethics", "robotics"]
 abstract = "This talk examines a foundational question in computational STEM education: to what extent can targeted interventions improve pre-service elementary teachers’ computational thinking teaching efficacy beliefs? I present a study of pre-service elementary teachers who participated in a three-week CT intervention integrating EV3 robotics, Code.org, and Zoombinis. Using the CTTEBI in a pre-post design, results show significant gains in personal CT teaching efficacy, pointing to important directions for future work. I then present my current AI education research program, including the “Educate AI” project developing AI literacy curriculum through linguistically inclusive elementary robotics, the Rural AI project integrating AI concepts for rural upper elementary students, and the Compose with AI platform guiding grades 4-8 students in critically evaluating AI-generated content. I will also discuss my emerging research agenda, including several NSF proposals under review focused on AI literacy across K-16 settings. I close with a vision for how University of Utah’s collaborative structure across the Scientific Computing and Imaging (SCI) Institute, Department of Educational Psychology, College of Education, and partner departments represents an ideal ecosystem to advance this agenda."
 
 [[speakers]]

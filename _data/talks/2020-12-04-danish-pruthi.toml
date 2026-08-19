@@ -11,6 +11,7 @@ zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT
 slides = ""
 recording = ""
 canceled = false
+tags = ["education"]
 abstract = "I would present a brief overview of the state of research in explainability and its evaluation (or lack thereof). Then, I would offer a new lens into explanations, viewing them as a communication channel between a teacher and a student. This view enables us to quantitatively evaluate different attribution methods in a principled way at scale. Shifting gears, in the second part of the talk, I would introduce new techniques to supplement predictions with evidence to enable stakeholders to verify the outcomes readily."
 
 [[speakers]]

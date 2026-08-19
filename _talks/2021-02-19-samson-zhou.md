@@ -8,6 +8,7 @@ start_time: "2:00 PM"
 end_time: "3:00 PM"
 series: "Data Science Seminar"
 canceled: false
+tags: ["algorithms & theory", "statistics"]
 speakers:
   - name: "Samson Zhou"
     affiliation: "CMU"

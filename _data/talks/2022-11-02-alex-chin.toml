@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["society & policy"]
 abstract = "The status of the rider and driver distributions and how they interact in a two-sided marketplace has implications for market efficiency and policy-making. As such, accurately characterizing the supply-demand state of Lyft's marketplace is a crucial task. I will describe how this task can be framed in terms of an asymmetric optimal transport problem that yields a multi-resolution view of the supply-demand state and how it varies both spatially and temporally. I will then discuss how this approach can be incorporated into applications such as policy optimization and machine learning prediction problems. Time permitting I will also discuss other science efforts we have at Lyft."
 
 [[speakers]]

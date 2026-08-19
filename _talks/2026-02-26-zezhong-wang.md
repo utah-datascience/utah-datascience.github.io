@@ -9,6 +9,7 @@ end_time: "11:30 AM"
 series: "Data Science & AI Lecture Series"
 location: "Evans Conference Room (WEB 3780)"
 canceled: false
+tags: ["climate & environment", "health & medicine", "human-centered computing", "visualization"]
 speakers:
   - name: "Zezhong Wang"
     bio: "Dr. Zezhong Wang is currently a Postdoctoral Fellow at the Interactive Experiences Lab (ixLab) at Simon Fraser University, Canada, working with Dr. Sheelagh Carpendale. His research integrates visual design, data visualization, and HCI to foster public engagement with data. He holds a PhD from the University of Edinburgh (2022), where his dissertation, Creating Data Comics for Data-Driven Storytelling, received an IEEE VGTC Best Visualization Dissertation Award Honorable Mention in 2023. Zezhong actively engages in interdisciplinary collaboration, working alongside artists, computer scientists, healthcare professionals, and environmental scientists to bridge the gap between complex data and human experience."

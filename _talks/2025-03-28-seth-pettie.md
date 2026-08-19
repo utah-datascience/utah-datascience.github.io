@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "WEB L112"
 zoom: "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 canceled: false
+tags: ["algorithms & theory", "education", "society & policy"]
 speakers:
   - name: "Seth Pettie"
     affiliation: "U Michigan CS"
@@ -42,5 +43,3 @@ optimal space/communication).
 Joint work with Dingyu Wang.
 
 ========
-
-Talks will be held in WEB L112, and also streamed via the following Zoom link: https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1

@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory", "biology & genomics"]
 abstract = "Despite the huge variety of data types and goals in data science, there is usually an underlying signal-to-noise ratio that governs the difficulty of the data science task. Analysis of this signal-to-noise ratio leads to important insights about sample size requirements and the impact of the data dimension, which are consistent across various data models and tasks. This talk will illustrate these universal insights in three specific contexts: (1) density-based clustering via graph embeddings, (2) clustering mixture models via multidimensional scaling, and (3) signal recovery from noisy data. The underlying data models are motivated by applications such as imaging, particle physics, single-cell RNA sequencing, and cryo-electron microscopy."
 
 [[speakers]]

@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
 slides = ""
 recording = ""
 canceled = false
+tags = ["health & medicine", "society & policy", "statistics"]
 abstract = "Public sequence data offers many opportunities for reuse, exploration, and discovery. What happens if you make it really, really easy to search the content of all the public microbiome data sets? It turns out you can enable some interesting science, but you also need to address many technical, social, and policy issues. In this talk I’ll showcase some of our results from being able to search everything, everywhere, all at once; describe our current efforts; and discuss the possible opportunities and challenges of petabyte-scale sequence search."
 
 [[speakers]]

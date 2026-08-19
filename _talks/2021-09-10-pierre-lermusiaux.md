@@ -9,10 +9,11 @@ end_time: "3:00 PM"
 series: "Data Science Seminar"
 zoom: "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
 canceled: false
+tags: ["algorithms & theory", "machine learning", "statistics"]
 speakers:
   - name: "Pierre Lermusiaux"
     website: "http://meche.mit.edu/people/faculty/pierrel@mit.edu"
-    bio: "Abhinav is a 5th year Ph.D. candidate in Mechanical Engineering and Computation at MIT. He received his Bachelor's degree and Master's degree in Mechanical Engineering from the Indian Institute of Technology, Kanpur. At MIT he was a fellow of the MIT-Tata Center for Technology & Design from 2018-20, and recipient of the 2020-21 MathWorks Mechanical Engineering Fellowship.Abhinav is currently developing state-of-the-art scientific machine learning algorithms, with applications to predictive ocean modeling. Apart from his present work, he has specifically worked on uncertainty quantification, data assimilation, Bayesian model learning, and optimal sampling for high-dimensional systems. The algorithms he develops are problem agnostic and can be widely applied. He believes that his unique background in mechanical engineering, applied mathematics, machine learning, and computing position him to identify and implement cross-disciplinary solutions to problems.\n\nhttps://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09 (https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09)\n"
+    bio: "Abhinav is a 5th year Ph.D. candidate in Mechanical Engineering and Computation at MIT. He received his Bachelor's degree and Master's degree in Mechanical Engineering from the Indian Institute of Technology, Kanpur. At MIT he was a fellow of the MIT-Tata Center for Technology & Design from 2018-20, and recipient of the 2020-21 MathWorks Mechanical Engineering Fellowship.Abhinav is currently developing state-of-the-art scientific machine learning algorithms, with applications to predictive ocean modeling. Apart from his present work, he has specifically worked on uncertainty quantification, data assimilation, Bayesian model learning, and optimal sampling for high-dimensional systems. The algorithms he develops are problem agnostic and can be widely applied. He believes that his unique background in mechanical engineering, applied mathematics, machine learning, and computing position him to identify and implement cross-disciplinary solutions to problems."
 speaker_names: "Pierre Lermusiaux"
 source_file: "_data/talks/2021-09-10-pierre-lermusiaux.toml"
 generated: true

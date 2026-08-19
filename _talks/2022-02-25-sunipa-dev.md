@@ -9,6 +9,7 @@ end_time: "4:00 PM"
 series: "Data Science Seminar"
 zoom: "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
 canceled: false
+tags: ["fairness & ethics", "natural language processing"]
 speakers:
   - name: "Sunipa Dev"
     affiliation: "Google Research"

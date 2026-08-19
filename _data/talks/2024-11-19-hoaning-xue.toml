@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
 slides = ""
 recording = ""
 canceled = false
+tags = ["computer vision"]
 abstract = "There’s a gap in understanding how people process multimodal information collectively, despite extensive research on the effects of individual multimodal features and the rapid advances in computer vision. This gap is increasingly relevant as short video platforms emerge as major information sources and influence public opinion. In this talk, I present findings from a project that combines a data-driven approach with social scientific theories to investigate how multimodal features in short videos impact audience engagement and attitude change. This research is grounded in the theoretical framework of Message Sensation Value (MSV) to theorize and quantify how multimodal features in short videos capture attention and affect information processing. This project includes two studies: (1) a computational model of MSV that predicts video engagement from 11 multimodal features across a dataset of 15,000 short videos from three popular short video platforms; second, an online experiment examining the attentional mechanism underlying the persuasive effects of MSV in short videos on message credibility and attitude change. This project provides a useful framework and computational tool for short video research."
 
 [[speakers]]

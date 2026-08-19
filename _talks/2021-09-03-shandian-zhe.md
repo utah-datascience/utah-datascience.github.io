@@ -9,6 +9,7 @@ end_time: "3:00 PM"
 series: "Data Science Seminar"
 location: "MEB 3147"
 canceled: false
+tags: ["optimization"]
 speakers:
   - name: "Shandian Zhe"
     affiliation: "Utah SoC"

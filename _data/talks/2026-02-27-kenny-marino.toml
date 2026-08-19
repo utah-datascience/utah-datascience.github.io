@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/85983626630"
 slides = ""
 recording = ""
 canceled = false
+tags = ["large language models", "natural language processing", "robotics"]
 abstract = "Are so-called \"AI Agents\" a fad or a potentially impactful research area enabled by the rapid progress in large language models? In this talk I will try to strip away the marketing copy and look at what an agent actually is, returning to the classical understanding of the word, and investigate how powerful new language models can present new opportunities for research in embodied decision making. We begin by recounting the places where language models have been useful in agent-like problems, then looking at the emerging environments for investigating VLM/LLM agents including computer use and robotics, and finally discussing the frontier research challenges of LLM agents."
 
 [[speakers]]

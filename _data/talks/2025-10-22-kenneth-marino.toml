@@ -11,6 +11,7 @@ zoom = "https://utah.zoom.us/j/81370106930?pwd=5rAKB2C2SrgkOprGOGuAtzeF5xxbbT.1"
 slides = ""
 recording = ""
 canceled = true
+tags = ["large language models"]
 abstract = ""
 
 [[speakers]]

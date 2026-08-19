@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["causal inference", "health & medicine", "human-centered computing", "large language models"]
 abstract = "Foundation models are increasingly deployed in high-stakes domains, yet their scale and opacity challenge traditional notions of AI interpretability. In this talk, I present two complementary strategies for human-centered interpretability: reasoning through concepts and probing through counterfactuals. I first present MiMICRI, a visualization tool developed with doctors at Cleveland Clinic that enables them to interactively create counterfactual medical images to examine how anatomical changes influence model predictions. By grounding explanations in domain-relevant visual features, this tool helps experts reason about model behavior using their established medical knowledge. Next, I will introduce Concept2Concept, a framework for auditing text-to-image models by characterizing their outputs as distributions over named, interpretable concepts. By analyzing the metrics of concept frequency, stability, and co-occurrence, we uncover hidden and sometimes harmful associations in image generation models and real-world training datasets. Finally, I conclude with my research agenda for developing new visualization tools and theoretical foundations that address the ongoing challenges of auditing and aligning the foundation models of today."
 
 [[speakers]]

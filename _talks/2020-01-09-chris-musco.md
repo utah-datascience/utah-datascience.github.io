@@ -9,6 +9,7 @@ end_time: "1:30 PM"
 series: "Data Science Seminar"
 location: "MEB 3147"
 canceled: false
+tags: ["algorithms & theory", "machine learning", "statistics"]
 speakers:
   - name: "Chris Musco"
     affiliation: "NYU"

@@ -1,6 +1,6 @@
 ---
 layout: "talk"
-title: "Talks will be held in LNCO 1100, and also streamed via the following Zoom link"
+title: "Talk by Bei Wang Phillips"
 date: "2025-09-10 11:00:00 -0600"
 permalink: "/talks/2025-09-10-bei-wang-phillips/"
 slug: "2025-09-10-bei-wang-phillips"

@@ -10,6 +10,7 @@ series: "Data Science & AI Lecture Series"
 location: "WEB L112"
 zoom: "https://utah.zoom.us/j/85983626630"
 canceled: false
+tags: ["computer vision", "robotics"]
 speakers:
   - name: "Daniel Sieta"
     affiliation: "USC"

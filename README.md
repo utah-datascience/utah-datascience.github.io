@@ -125,6 +125,35 @@ Why TOML plus a generator? GitHub Pages builds Jekyll in safe mode, so custom
 plugins (which could read TOML at build time) are not available: the pages have
 to be generated ahead of time and committed.
 
+#### Tags and searching
+
+Each record carries a `tags` list drawn from a fixed vocabulary (about twenty
+topics: `machine learning`, `visualization`, `health & medicine`, and so on --
+the full list lives at the top of `scripts/tag_talks.py`). The `/talks/` page
+uses them for its filters, so free-form tags would only fragment the results:
+stick to the vocabulary, or add a term to the vocabulary first.
+
+`scripts/tag_talks.py` fills in tags automatically by matching a talk's title,
+abstract, and speaker bio against that vocabulary:
+
+```shell
+python3 scripts/tag_talks.py --dry-run   # show what it would pick
+python3 scripts/tag_talks.py             # fill in records with no tags yet
+python3 scripts/tag_talks.py --report    # tag counts across all talks
+```
+
+It never touches a record that already has tags, so anything you set by hand
+wins. Tagging by hand is perfectly fine too -- just edit `tags` in the TOML.
+
+`/talks/` searches and filters entirely in the browser, with no index to build
+and no service to run: the page ships every talk as a list item carrying its
+searchable text in a `data-search` attribute, and the JavaScript at the bottom
+of `talks.md` hides the ones that do not match. Readers can search across every
+field (title, speaker, affiliation, abstract, location, date), filter by tag,
+speaker, or year, and land on a pre-filtered view via a link such as
+`/talks/?tag=robotics` or `/talks/?speaker=Anna%20Fariha`. Without JavaScript
+the full list still renders; only the filter controls are hidden.
+
 #### Seeding records from the Google Calendar
 
 `scripts/import_calendar_talks.py` reads the series' public Google Calendar and

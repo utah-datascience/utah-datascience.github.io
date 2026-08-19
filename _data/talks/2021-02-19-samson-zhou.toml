@@ -11,6 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
+tags = ["algorithms & theory", "statistics"]
 abstract = """
 We introduce difference estimators for data stream computation, which provide approximations to F(v)-F(u) for frequency vectors v,u and a given function F. We show how to use such estimators to carefully trade error for memory in an iterative manner. The function F is generally non-linear, and we give the first difference estimators for the frequency moments F_p for p between 0 and 2, as well as for integers p>2. Using these, we resolve a number of central open questions in adversarial robust streaming and sliding window models.
 
