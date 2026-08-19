@@ -1,0 +1,50 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Everything you always wanted to know about Cardinality"
+date = 2025-03-28
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB L112"
+zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
+slides = ""
+recording = ""
+canceled = false
+tags = ["algorithms & theory", "education", "society & policy"]
+abstract = """
+The Cardinality Estimation/Distinct Elements problem is to approximate
+the number of distinct elements in a data stream using a small
+probabilistic data structure called a "sketch". This problem has been
+studied for 40 years, has many industrial applications, and is
+featured prominently in most courses on Big Data algorithmics. It is
+therefore a real puzzle to explain why research on this popular and
+fundamental problem has been unusually slow.
+
+This talk presents a complete history of the Cardinality Estimation
+problem from Flajolet and Martin's seminal 1983 paper to the present,
+and includes an account of how the research community became
+fractured, delaying many natural developments by decades. I will
+present our recent efforts to achieve information-theoretically
+optimal cardinality sketches, which draws on two notions of
+"information" developed in the 20th century: Fisher information
+(governing optimal point estimation) and Shannon entropy (governing
+optimal space/communication).
+
+Joint work with Dingyu Wang.
+
+========
+"""
+
+[[speakers]]
+name = "Seth Pettie"
+affiliation = "U Michigan CS"
+website = "https://web.eecs.umich.edu/~pettie/"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4E8CAE38-B3D7-4A6F-988F-B75BA6C93098"
+imported_on = 2026-08-18
+needs_review = true

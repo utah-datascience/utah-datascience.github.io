@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Tight Bounds for Adversarially Robust Streams and Sliding Windows via Difference Estimators"
+date = 2021-02-19
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = ""
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["algorithms & theory", "statistics"]
+abstract = """
+We introduce difference estimators for data stream computation, which provide approximations to F(v)-F(u) for frequency vectors v,u and a given function F. We show how to use such estimators to carefully trade error for memory in an iterative manner. The function F is generally non-linear, and we give the first difference estimators for the frequency moments F_p for p between 0 and 2, as well as for integers p>2. Using these, we resolve a number of central open questions in adversarial robust streaming and sliding window models.
+
+For both models, we obtain algorithms for norm estimation whose dependence on epsilon is 1/epsilon^2, which shows, up to logarithmic factors, that there is no overhead over the standard insertion-only data stream model for these problems.
+"""
+
+[[speakers]]
+name = "Samson Zhou"
+affiliation = "CMU"
+website = ""
+photo = ""
+bio = "Samson is a postdoctoral researcher at Carnegie Mellon University, hosted by David P. Woodruff. He received his PhD from Purdue, where he was advised by Greg Frederickson and Elena Grigorescu. He spent a year as a postdoctoral researcher at Indiana University, hosted by Grigory Yaroslavtsev. His research focuses on the theoretical foundations of data science, including sublinear algorithms with an emphasis on streaming algorithms, machine learning, and numerical linear algebra."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4mruo6knu7djmmv8mfub2hfadi@google.com"
+imported_on = 2026-08-18
+needs_review = true

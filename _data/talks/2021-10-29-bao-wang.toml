@@ -1,0 +1,33 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "How Differential Equations and Random Graph Insights Benefit Deep Learning"
+date = 2021-10-29
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["algorithms & theory", "deep learning", "networks & graphs"]
+abstract = """
+We will present recent results on developing new deep learning algorithms leveraging differential equations and random graph insights.
+First, we will present a new class of continuous-depth deep neural networks that were motivated by the ODE limit of the classical momentum method, named heavy-ball neural ODEs (HBNODEs). HBNODEs enjoy two properties that imply practical advantages over NODEs: (i) The adjoint state of an HBNODE also satisfies an HBNODE, accelerating both forward and backward ODE solvers, thus significantly accelerate learning and improve the utility of the trained models. (ii) The spectrum of HBNODEs is well structured, enabling effective learning of long-term dependencies from complex sequential data.
+Second, we will extend HBNODE to graph learning leveraging diffusion on graphs, resulting in new algorithms for deep graph learning. The new algorithms are more accurate than existing deep graph learning algorithms and more scalable to deep architectures, and also suitable for learning at low labeling rate regimes. Moreover, we will present a fast multipole method-based efficient attention mechanism for modeling graph nodes interactions.
+Third, if time permits, we will discuss building an efficient and reliable overlay network for decentralized federated learning based on the random graph theory.
+"""
+
+[[speakers]]
+name = "Bao Wang"
+affiliation = "Utah Math, SCI"
+website = "http://www.math.utah.edu/~bwang/index.html"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "9FC6B798-1BF5-49C1-A760-08701CF251B3+ZOOMMEETINGNUMBER:93778940103"
+imported_on = 2026-08-18
+needs_review = true

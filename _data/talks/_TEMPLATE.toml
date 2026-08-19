@@ -1,0 +1,40 @@
+# Copy this file to _data/talks/YYYY-MM-DD-speaker-name.toml and fill it in.
+# Files whose name starts with "_" are ignored by the generator.
+#
+# After editing, run `make talks` to (re)generate the page under _talks/,
+# and commit both the TOML file and the generated markdown.
+
+[talk]
+title = "Title of the talk"
+date = 2026-09-04            # required, YYYY-MM-DD (Mountain Time)
+start_time = "13:30"         # 24h clock; defaults to 13:30 if omitted
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB L112"
+zoom = "https://utah.zoom.us/j/85983626630"
+slides = ""                  # link to slides, once available
+recording = ""               # link to the YouTube recording, once available
+paper = ""                   # optional link to a related paper
+tags = []                    # optional, e.g. ["machine learning", "visualization"]
+canceled = false
+# slug = "custom-url-slug"   # optional; defaults to this file's name
+abstract = """
+The abstract, in markdown. Triple-quoted strings can span several
+paragraphs.
+"""
+
+# Repeat the [[speakers]] block for talks with more than one speaker.
+[[speakers]]
+name = "Speaker Name"
+affiliation = "Department, University"
+role = ""                    # e.g. "Assistant Professor"
+website = "https://example.edu/~speaker"
+photo = ""                   # /assets/img/talk_photos/... or an external URL
+email = ""
+bio = """
+A short bio, in markdown.
+"""
+
+# Optional bookkeeping; ignored when building the page.
+[meta]
+source = "manual"

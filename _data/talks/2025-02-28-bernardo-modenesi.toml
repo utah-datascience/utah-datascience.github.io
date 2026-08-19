@@ -1,0 +1,33 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Unveiling Hidden Patterns in Agent Behavior with Discrete-Choice and Network Theory"
+date = 2025-02-28
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB L112"
+zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
+slides = ""
+recording = ""
+canceled = false
+tags = ["algorithms & theory", "fairness & ethics", "large language models", "machine learning"]
+abstract = """
+Many datasets in data science stem from agents repeatedly making choices over time, with each choice leading to an observable outcome. In this talk, I introduce a novel approach to uncover latent agent heterogeneity, enhancing both our understanding of agent behavior and causal inference estimation. By combining discrete choice models with network theory, we develop a method to measure agent similarity based on their choice patterns. This results in a network-based unsupervised clustering technique that groups agents with similar behaviors—offering an interpretable alternative to black-box clustering models while maintaining explicit estimation assumptions. I will illustrate our approach using labor market data, where workers (agents) and jobs (choices) form a bipartite network, with worker-job matches represented as edges. By clustering workers based on their job choices, we can infer unobserved worker skills—a crucial factor in economic analysis. Through Bayesian estimation, we reveal latent worker groups, improving predictions of labor market outcomes and measuring labor market discrimination more effectively than models relying only on observable characteristics. This seminar will detail our methodological framework, estimation strategy, and practical applications for understanding and predicting agent-choice dynamics.
+
+Bonus project:
+In the final portion of the talk, I will pivot to a more informal discussion of a preliminary 'Model Ensemble Approach to Assessing Discrimination in Machine Learning Models' in the space of algorithmic fairness.
+"""
+
+[[speakers]]
+name = "Bernardo Modenesi"
+affiliation = "UU BioStats"
+website = "https://sites.google.com/view/bmodenesi"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4E8CAE38-B3D7-4A6F-988F-B75BA6C93098"
+imported_on = 2026-08-18
+needs_review = true

@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Finding signals of genome mutation in the noise of DNA sequencing error"
+date = 2022-11-30
+start_time = "10:30"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "WEB 3780"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["biology & genomics"]
+abstract = "The research in our laboratory is focused on the application of computational methods to develop a deeper understanding of genetic variation in diverse contexts. Modern experimental methods allow us to examine entire genomes with exquisite detail. Perhaps not surprisingly, staggering complexity is revealed as we look more closely at how genetic variation (both inherited and somatic) contributes to phenotypes. Modern genomic technologies necessitate efficient approaches for exploring, manipulating and comparing large genomic datasets. We develop such methods so that we and others may apply them to experiments investigating the impact of genetic variation on human disease, evolution, and somatic differentiation. Genome research is difficult - we strive to develop computational means that make it easier."
+
+[[speakers]]
+name = "Aaron Quinlan"
+affiliation = "Utah Human Genetics"
+website = "http://quinlanlab.org"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "F4F316F8-30D6-4274-8E19-4C9D755200DE"
+imported_on = 2026-08-18
+needs_review = true

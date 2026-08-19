@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Towards Reinforcement Learning for Precision Drug Dosing"
+date = 2023-04-19
+start_time = "10:45"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["health & medicine", "machine learning"]
+abstract = "Drug dosing is an important application of AI, which can be formulated as a Reinforcement Learning (RL) problem, since every individual’s drug dosing requirement is different. In this talk, we will talk about two major challenges of using RL for drug dosing: delayed and prolonged effects of medications, which break the Markov assumption of the RL framework. We will talk about an approach to solve this problem in a model free reinforcement learning setting, talk further about the challenges of deploying it in real life and sketch the outline of a more realistic Model Based Reinforcement Learning (MBRL) solution to it."
+
+[[speakers]]
+name = "Sumana Basu"
+affiliation = "McGill University"
+website = "https://scholar.google.com/citations?view_op=view_org&hl=en&org=13784427342582529234"
+photo = ""
+bio = "Sumana is a PhD student at McGill University (Mila), researching Deep Reinforcement Learning in Healthcare. Her work focuses on applying Reinforcement Learning to Autonomous Drug Dosing. She completed her Masters at Mila, where she studied deep learning for predicting Alzheimer's disease progression. She has also interned in the past at Meta AI (FAIR) on the fastMRI Active Acquisition project, using Reinforcement Learning to accelerate MRI acquisition, and will be interning at Microsoft Research Labs coming summer, on exploring Reinforcement Learning for optimizing genetic perturbation in Cancer Treatment."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "EFA7C0AA-5911-4AA0-A36D-53125411A131"
+imported_on = 2026-08-18
+needs_review = true

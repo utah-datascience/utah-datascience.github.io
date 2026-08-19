@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Big Data, Big Universe: Data-Driven Discoveries in Astrophysics"
+date = 2020-02-06
+start_time = "12:15"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["physics & astronomy"]
+abstract = "The stars in the night sky have inspired questions about our place in the Universe throughout history. The development of telescopes showed us that the stars visible to the naked eye are but a tiny fraction of their vast numbers within our own Galaxy, and revealed energy signatures invisible to the human senses. We now know that there are billions of stars in our galaxy, billions of galaxies in our Universe, and nearly 14 billion years of cosmic evolution that have led to where and what we are today. As the volume of astronomical data grows at an ever quickening rate, new discoveries increasingly come from careful mining and analysis of existing data, often used in unforeseen ways. This talk will describe some of the major unanswered questions in astrophysics, and how new data-driven analysis techniques are uncovering new insights into solving them."
+
+[[speakers]]
+name = "Gail Zasowski"
+affiliation = "Utah Physics & Astronomy"
+website = "http://www.physics.utah.edu/~zasowski/"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "42t5o0blhd85v46a8f5h2s2dba_R20200116T191500@google.com"
+imported_on = 2026-08-18
+needs_review = true

@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "TopoAct: Exploring the Shape of Activations in Deep Learning"
+date = 2020-02-20
+start_time = "12:15"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["deep learning", "machine learning"]
+abstract = "Deep neural networks such as GoogLeNet and ResNet have achieved superhuman performance in tasks like image classification. To understand how such superior performance is achieved, we can probe a trained deep neural network by studying neuron activations, that is, combinations of neuron firings, at any layer of the network in response to a particular input. With a large set of input images, we aim to obtain a global view of what neurons detect by studying their activations. We ask the following questions: What is the shape of the space of activations? That is, what is the organizational principle behind neuron activations, and how are the activations related within a layer and across layers? Applying tools from topological data analysis, we present TopoAct, a visual exploration system used to study topological summaries of activation vectors for a single layer as well as the evolution of such summaries across multiple layers. We present visual exploration scenarios using TopoAct that provide valuable insights towards learned representations of an image classifier."
+
+[[speakers]]
+name = "Bei Wang"
+affiliation = "Utah SoC, SCI"
+website = "http://www.sci.utah.edu/~beiwang/"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "42t5o0blhd85v46a8f5h2s2dba_R20200116T191500@google.com"
+imported_on = 2026-08-18
+needs_review = true

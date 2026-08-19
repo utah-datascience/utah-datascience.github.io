@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Epistemic values in feature importance methods: Lessons from feminist epistemology"
+date = 2021-04-23
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = "Virtual"
+zoom = "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["algorithms & theory", "fairness & ethics", "machine learning"]
+abstract = "As the public seeks greater accountability and transparency from machine learning algorithms, the research literature on methods to explain algorithms and their outputs has rapidly expanded. Feature importance, or the practice of assigning quantitative importance values to the input features of a machine learning model, form a popular class of such methods. Much of the research on feature importance rests on formalizations that attempt to capture universally desirable properties. We investigate the ways in which epistemic values are implicitly embedded in these methods and analyze the ways in which they conflict with ideas from feminist philosophy. We offer some suggestions on how to conduct research on explanations that respects feminist epistemic values, taking into account the importance of social context, the epistemic privileges of subjugated knowers, and adopting more interactional ways of knowing."
+
+[[speakers]]
+name = "Lizzie Kumar"
+affiliation = "Utah"
+website = ""
+photo = ""
+bio = "Lizzie Kumar is a second-year Computing Ph.D. student advised by Suresh Venkatasubramanian at the University of Utah where her work has previously been supported by the ARCS Foundation. She is interested in the practice of analyzing the social impact of machine learning systems and developing responsible AI law and policy. Previously, she developed risk models on the Data Science team at MassMutual while completing her M.S. in Computer Science at the University of Massachusetts, and also holds a B.A. in Mathematics from Scripps College."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4isdaa3q7kil2psmp7b3vqb3su@google.com"
+imported_on = 2026-08-18
+needs_review = true

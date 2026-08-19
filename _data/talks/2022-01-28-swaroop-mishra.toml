@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Towards the Development of Models that Learn New Tasks from Instructions"
+date = 2022-01-28
+start_time = "15:00"
+end_time = "16:00"
+series = "Data Science Seminar"
+location = "MEB 3147 (LCR)"
+zoom = "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["education"]
+abstract = ""
+
+[[speakers]]
+name = "Swaroop Mishra"
+affiliation = "ASU, Ph.D. Student"
+website = ""
+photo = ""
+bio = "Swaroop Mishra is a 3rd year Ph.D. student at Arizona State University. He finished his Masters from IIT Kanpur in 2016. He worked as a Software Engineer for 2 years at MathWorks and as a Technical Consultant for 1 year at the Information Technology Research Academy, Ministry of Electronics and Information Technology, Govt. of India before starting his Ph.D. He did a research internship with Allen AI and has been collaborating with them for the past year."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "EB206A01-E8F7-49FE-926B-ADBC53D718C4"
+imported_on = 2026-08-18
+needs_review = true

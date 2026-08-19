@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Improving Data Efficiency of Neural Models using Logic"
+date = 2022-04-08
+start_time = "15:00"
+end_time = "16:00"
+series = "Data Science Seminar"
+location = "MEB 3147 (LCR)"
+zoom = "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["natural language processing"]
+abstract = "In this talk, we will focus on a simple approach that uses logic to improve neural model performance for natural language processing (NLP) tasks. Many downstream NLP tasks involve domain knowledge that can be easily stated in logical forms. We argue that we can use such knowledge to improve model learning. This results in better data efficiency, i.e., a model that performs better with less annotation. To this end, we propose frameworks that integrate domain knowledge, expressed as declarative constraints, with neural models. We show that such integration substantially improves state-of-the-art neural models in a variety of NLP tasks. To facilitate using our frameworks, we will also propose a PyTorch library that unifies differentiable tensor operations and logical operations."
+
+[[speakers]]
+name = "Tao Li"
+affiliation = "Google Research"
+website = ""
+photo = ""
+bio = "Tao Li is interested in on Natural Language Processing and Machine Learning. He is currently a Research Engineer at Google Research working. Earlier this year, He graduated as a PhD at the the U’s School of Computing where he was advised by Prof. Vivek Srikumar. He was also a MS graduate at the U back in 2014. Besides school, he had research internships at AI2, Amazon A9, and Philips Research."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "EB206A01-E8F7-49FE-926B-ADBC53D718C4"
+imported_on = 2026-08-18
+needs_review = true

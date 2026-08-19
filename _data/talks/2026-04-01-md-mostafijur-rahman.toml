@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Efficient and Reliable AI for Real-World Healthcare Deployment"
+date = 2026-04-01
+start_time = "10:30"
+end_time = "11:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 3780"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["health & medicine", "machine learning"]
+abstract = "Healthcare is one of the highest-impact domains for AI, yet reliable deployment at scale remains difficult. To truly improve patient care and clinical workflows, AI must operate under real clinical constraints, not just in ideal lab settings. In practice, deployment is limited by high compute and memory costs, scarce labeled data, and distribution shifts across sites and time. Many clinically important findings are also rare and long-tailed, which makes generalization especially challenging. My research makes deployability a design objective by developing methods that stay accurate under strict resource and data constraints. In this talk, I will first discuss high-performance lightweight deep learning architectures built by redesigning core building blocks. I will then present training-time generative supervision strategies that improve data efficiency and generalization to rare and long-tailed cases with no inference overhead. I will conclude with a forward-looking direction toward real-time perception for surgical assistance, where reliable performance under strict constraints is non-negotiable."
+
+[[speakers]]
+name = "Md Mostafijur Rahman"
+affiliation = ""
+website = ""
+photo = ""
+bio = "Md Mostafijur Rahman is a Ph.D. candidate at The University of Texas at Austin, advised by Radu Marculescu. His research sits at the intersection of AI, biomedical imaging, and computer vision, with a focus on building efficient, reliable, and scalable AI systems for deployment in healthcare under real-world constraints. His work has been translated to practice through research internships at GE Healthcare, the National Institutes of Health (NIH), and Bosch Research. He has published over 20 peer-reviewed papers in venues including CVPR, NeurIPS, MICCAI, and ICCV, with several works selected for Spotlight and Oral presentations. His research contributions have been recognized by the NIH Summer IRTA Fellowship, the Texas Health Catalyst Award, and the Discovery to Impact Award."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "EFFFD488-93B9-4050-9268-5ADF6E6F5E70"
+imported_on = 2026-08-18
+needs_review = true

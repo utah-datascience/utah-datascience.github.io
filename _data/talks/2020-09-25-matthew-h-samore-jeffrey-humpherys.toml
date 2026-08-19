@@ -1,0 +1,35 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Learning to care"
+date = 2020-09-25
+start_time = "11:50"
+end_time = "13:10"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09"
+slides = ""
+recording = ""
+canceled = false
+tags = []
+abstract = ""
+
+[[speakers]]
+name = "Matthew H. Samore"
+affiliation = "Utah Epidemiology"
+website = "https://scholar.google.com/citations?user=QOM1UpUAAAAJ&hl=en"
+photo = ""
+bio = ""
+
+[[speakers]]
+name = "Jeffrey Humpherys"
+affiliation = "Utah Epidemiology"
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "25im2jdereukeqbrt5oequoank_R20200904T175000@google.com"
+imported_on = 2026-08-18
+needs_review = true

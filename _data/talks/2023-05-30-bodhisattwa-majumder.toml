@@ -1,0 +1,34 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "User-centric Natural Language Processing"
+date = 2023-05-30
+start_time = "15:00"
+end_time = "16:30"
+series = "Data Science Seminar"
+location = "Where: MEB 3147 Large Conference Room Simcast:  (Meeting ID: 965 3805 0936, Passcode: 404653)"
+zoom = "https://utah.zoom.us/j/96538050936"
+slides = ""
+recording = ""
+canceled = false
+tags = ["fairness & ethics", "natural language processing"]
+abstract = """
+Artificial intelligence (AI) has shown remarkable effectiveness in knowledge-seeking applications (e.g., for recommendations and explanations). However, the increasing expectation of more trust, accessibility, and anthropomorphism in these AI systems requires the underlying components (dialog models, LLMs, classifiers) to be adaptive and adequately knowledge grounded. In reality, the outputs of the constituent models often lack commonsense, explanations, and subjectivity, which motivates us to ask the question: what can we achieve by redesigning AI systems to start with individual needs?
+
+Ideally, an assistive AI system must be aware of the surrounding world, produce faithful explanations, and align with the user's preferences. In this talk, I will discuss a post-hoc knowledge-injection technique that enriches the dialog responses at the decoding time and promotes achieving conversational goals. Then, I will explore how to elevate existing AI systems using a unified framework to map low-level and abstractive explanations by background knowledge. Finally, I will hint at a user-centric interventionist approach that can help users obtain more equitable predictions backed by faithful explanations as compared to a black-box counterpart. I will conclude with the future possibilities and societal impacts of next-generation user-centric systems.
+
+bodhi_flyer.png
+"""
+
+[[speakers]]
+name = "Bodhisattwa Majumder"
+affiliation = "UCSD"
+website = "http://nlp.cs.utah.edu/"
+photo = ""
+bio = "Bodhisattwa Prasad Majumder (https://www.majumderb.com/) recently received his Ph.D. in Computer Science from UC San Diego and was advised by Prof. Julian McAuley. His research goal is to build safe, trustworthy, and user-centric interactive systems. He previously spent time at the Allen Institute of AI, Google AI, Microsoft Research, and FAIR (Meta AI), along with collaborations from U of Oxford, U of British Columbia, and the Alan Turing Institute. His work has been recognized by the UCSD CSE Doctoral Award for Research, Adobe Research Fellowship, Qualcomm Innovation Fellowship, and Highlights of ACM RecSys, among many awards and several media coverages. In 2019, Bodhi led UCSD in the finals of the Amazon Alexa Prize. He also co-authored a best-selling NLP book with O’Reilly Media that is being adopted in universities internationally."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "2216ru1s1mq9h665i4cbdm1f9q@google.com"
+imported_on = 2026-08-18
+needs_review = true

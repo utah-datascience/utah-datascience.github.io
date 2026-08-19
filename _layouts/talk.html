@@ -1,0 +1,149 @@
+---
+layout: default
+---
+
+{%- assign talk_time = page.date | date: "%s" | plus: 0 -%}
+{%- assign now = site.time | date: "%s" | plus: 0 -%}
+{%- if page.canceled -%}
+  {%- assign status = "canceled" -%}
+{%- elsif talk_time > now -%}
+  {%- assign status = "upcoming" -%}
+{%- else -%}
+  {%- assign status = "past" -%}
+{%- endif -%}
+
+<div class="position-relative">
+  <section class="section section-lg section-shaped pb-250">
+    <div class="page__hero"
+      style="background-image: url('{{ page.header.background-image | default: "/assets/img/header-background/zion-shorter.jpg" | relative_url }}');"></div>
+    <div class="container py-lg-md d-flex">
+      <div class="col px-0">
+        <div class="row">
+          <div class="col-lg-9">
+            <p class="lead text-white mb-1">{{ page.series | default: "Data Science &amp; AI Lecture Series" }}</p>
+            <h1 class="display-4 text-white">{{ page.title }}</h1>
+            <p class="lead text-white primary-ex mb-0">
+              {{ page.speaker_names }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="separator separator-bottom separator-skew">
+      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+  </section>
+</div>
+
+<section class="section pt-lg-0 mt--250">
+  <div class="container">
+    <div class="card card-profile shadow px-4 py-4">
+
+      <style>
+        img.talk-speaker {
+          width: 150px;
+          height: 200px;
+          object-fit: cover;
+        }
+        .talk-meta th {
+          text-align: left;
+          padding-right: 1rem;
+          white-space: nowrap;
+          vertical-align: top;
+        }
+        .talk-meta td { vertical-align: top; }
+      </style>
+
+      <p><a href="{{ '/talks' | relative_url }}">&lt;&lt;&lt; All talks</a></p>
+
+      {% if status == "canceled" %}
+      <p><span class="badge badge-danger">Canceled</span></p>
+      {% elsif status == "upcoming" %}
+      <p><span class="badge badge-success">Upcoming</span></p>
+      {% endif %}
+
+      <table class="talk-meta mb-4">
+        <tr>
+          <th>When</th>
+          <td>
+            {{ page.date | date: "%A, %B %-d, %Y" }}{% if page.start_time %}, {{ page.start_time }}{% if page.end_time %} &ndash; {{ page.end_time }}{% endif %} (MT){% endif %}
+          </td>
+        </tr>
+        {% if page.location %}
+        <tr><th>Where</th><td>{{ page.location }}</td></tr>
+        {% endif %}
+        {%- comment -%}
+        Zoom links are only useful (and only worth publishing) while a talk is
+        still ahead of us; past talks keep the link in their TOML record.
+        {%- endcomment -%}
+        {% if page.zoom and status == "upcoming" %}
+        <tr><th>Zoom</th><td><a href="{{ page.zoom }}" target="_blank" rel="noopener">Join online</a></td></tr>
+        {% endif %}
+      </table>
+
+      {% if page.slides or page.recording or page.paper %}
+      <p>
+        {% if page.slides %}<a class="btn btn-neutral" href="{{ page.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+        {% if page.recording %}<a class="btn btn-neutral" href="{{ page.recording }}" target="_blank" rel="noopener">Recording</a>{% endif %}
+        {% if page.paper %}<a class="btn btn-neutral" href="{{ page.paper }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+      </p>
+      {% endif %}
+
+      {% if content != "" %}
+      <h2>Abstract</h2>
+      {{ content }}
+      {% endif %}
+
+      <h2>{% if page.speakers.size > 1 %}Speakers{% else %}Speaker{% endif %}</h2>
+      {% for speaker in page.speakers %}
+      <div class="row mb-4">
+        {% if speaker.photo %}
+        <div class="col-lg-3">
+          {% if speaker.photo contains "://" %}
+          {% capture speaker_img %}{{ speaker.photo }}{% endcapture %}
+          {% else %}
+          {% capture speaker_img %}{{ speaker.photo | relative_url }}{% endcapture %}
+          {% endif %}
+          <img src="{{ speaker_img }}" alt="Picture of {{ speaker.name }}" class="rounded shadow talk-speaker">
+        </div>
+        {% endif %}
+        <div class="{% if speaker.photo %}col-lg-9{% else %}col-lg-12{% endif %}">
+          <h4 class="mb-0">
+            {% if speaker.website %}<a href="{{ speaker.website }}" target="_blank" rel="noopener">{{ speaker.name }}</a>{% else %}{{ speaker.name }}{% endif %}
+          </h4>
+          {% if speaker.role or speaker.affiliation %}
+          <h6 class="text-muted">{{ speaker.role }}{% if speaker.role and speaker.affiliation %}, {% endif %}{{ speaker.affiliation }}</h6>
+          {% endif %}
+          {% if speaker.website %}
+          <p class="mb-2">
+            <a href="{{ speaker.website }}" target="_blank" rel="noopener">
+              <i class="fa fa-external-link"></i> {{ speaker.website | remove: "https://" | remove: "http://" | remove_first: "www." | split: "/" | first }}
+            </a>
+          </p>
+          {% endif %}
+          {% if speaker.bio %}<p>{{ speaker.bio | markdownify }}</p>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+
+      {% if page.tags %}
+      <p class="text-muted">
+        Tags:
+        {% for tag in page.tags %}
+        <a class="badge badge-secondary" href="{{ '/talks/' | relative_url }}?tag={{ tag | url_encode }}">{{ tag }}</a>
+        {% endfor %}
+      </p>
+      {% endif %}
+
+      <hr />
+      <p class="text-muted">
+        Part of the <a href="{{ '/seminar' | relative_url }}">{{ page.series | default: "Data Science &amp; AI Lecture Series" }}</a>.
+        Something wrong on this page? Edit
+        <a href="https://github.com/{{ site.repository | default: 'utah-datascience/utah-datascience.github.io' }}/blob/master/{{ page.source_file }}">{{ page.source_file }}</a>.
+      </p>
+    </div>
+  </div>
+</section>

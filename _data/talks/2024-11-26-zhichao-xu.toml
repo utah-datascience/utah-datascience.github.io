@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Representation Learning for IR and Role of Retrieval in LLM Era"
+date = 2024-11-26
+start_time = "12:30"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "WEB 1230"
+zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
+slides = ""
+recording = ""
+canceled = false
+tags = ["large language models", "natural language processing"]
+abstract = "Retrieval is the critical way of accessing information in people’s daily lives. Retrieval applications include search engines, conversational shopping assistants, or when asked about 2+3=?, human brains do retrieval instead of reasoning. In this talk, I’ll briefly go through the history of representation learning in retrieval, from Bag-of-Words representations to the latest dense and learned sparse retrieval algorithms. Increasingly, people go to ChatGPT or other large language models for information seeking instead of search engines. With this existential crisis in mind, I will talk about the role of retrieval in LLM era, specifically, retrieval-augmented generation, strengths, weaknesses and open problems."
+
+[[speakers]]
+name = "Zhichao Xu"
+affiliation = "Utah KSoC"
+website = "https://zhichaoxu-utah.github.io/"
+photo = ""
+bio = "Zhichao Xu is a final year Ph.D. student in Kahlert School of Computing, University of Utah. He is affiliated with UtahNLP lab and TDAVIS lab, advised by Prof. Bei Wang Philips and Prof. Vivek Srikumar. His main research interests include efficient NLP methods, web search & information retrieval. He has published in major IR venues such as TheWebConf, SIGIR, WSDM, CIKM, ICTIR and NLP venues such as NAACL and EMNLP."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4u5bj5j0jouhse93h9s044844t@google.com"
+imported_on = 2026-08-18
+needs_review = true

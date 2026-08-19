@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Scalability Challenges in Large-Scale Sequence Search"
+date = 2022-09-28
+start_time = "10:30"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "WEB 3780"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["biology & genomics", "data management"]
+abstract = "Sequence-level searches on large collections of RNA sequencing experiments, such as the NCBI Sequence Read Archive (SRA), would enable one to ask many questions about the expression or variation of a given transcript in a population. Building an efficient and scalable sequence search index at the scale of SRA data is a challenging task and requires fundamental innovations in compression and scalable indexing. Recently, several tools have been proposed to index and search through SRA data but they offer various trade-offs in terms of space, speed, updatability, and accuracy. In this talk, I will present Mantis, a fast, exact, and updatable sequence search index. Mantis uses recent advancements in fast and compact hash tables, domain-specific data compression techniques, and scalable indexing to build a scalable and updatable index and supports fast sequence searches on ~40K experiments (>100TB) in size from SRA."
+
+[[speakers]]
+name = "Prashant Pandey"
+affiliation = "Utah SoC"
+website = "https://prashantpandey.github.io"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "F4F316F8-30D6-4274-8E19-4C9D755200DE"
+imported_on = 2026-08-18
+needs_review = true

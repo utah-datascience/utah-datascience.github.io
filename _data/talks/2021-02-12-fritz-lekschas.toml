@@ -1,0 +1,45 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Visual Pattern Exploration At and Across Scales"
+date = 2021-02-12
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["biology & genomics", "geospatial", "machine learning", "visualization"]
+abstract = """
+Visually exploring data is a powerful approach to discover,
+understand, and interpret novel or not-well defined patterns. It
+allows us to gain insights and generate hypotheses for subsequent
+analyses. However, visual exploration can become challenging when the
+patterns of interest are sparsely-distributed, several orders of
+magnitude smaller than the entire dataset, or detected with high
+uncertainty. In this talk, I will discuss challenges in visually
+exploring multi-modal and multi-scale data, and present new
+visualization systems for efficiently browsing, comparing, and finding
+patterns in the context of genomic, geospatial, and time-series data.
+Specifically, I will describe a web platform for browsing multi-modal
+and multi-scale datasets, as well as their guided navigation. I will
+present a generalized framework and toolkit for interactively
+arranging, grouping, and aggregating thousands of pattern instances.
+And I will demonstrate how interactive visual machine learning can
+enhance our ability to find patterns effectively.
+"""
+
+[[speakers]]
+name = "Fritz Lekschas"
+affiliation = "Harvard"
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "6t3vaf2b4krthj70ntv2s5snfb@google.com"
+imported_on = 2026-08-18
+needs_review = true

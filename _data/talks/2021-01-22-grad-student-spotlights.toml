@@ -1,0 +1,33 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "1. Introduction and Logistics"
+date = 2021-01-22
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["data management", "fairness & ethics"]
+abstract = """
+Archit Rathore: Exploring the Shape of Activations - A BERT case studyBenwei Shi: At-the-time and Back-in-time Persistent Sketches
+Joe Vinu: What all it takes for Performant Deep Nets to be Reliable and Fair?
+Brian Lavallee: Rounding Out Structural Rounding
+Vivek Gupta: Inference on Tables as Semi-Structured Data
+"""
+
+[[speakers]]
+name = "Grad Student Spotlights"
+affiliation = "10-minute talks by 4 current graduate students"
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "55bhk7qcmf0fjahlntbinoquue@google.com"
+imported_on = 2026-08-18
+needs_review = true

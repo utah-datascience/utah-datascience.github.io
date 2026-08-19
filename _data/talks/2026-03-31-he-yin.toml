@@ -1,0 +1,36 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Advancing GeoAI and Earth observation for environmental monitoring"
+date = 2026-03-31
+start_time = "10:45"
+end_time = "11:45"
+series = "Data Science & AI Lecture Series"
+location = "Evans Conference room (WEB 3780)"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["climate & environment", "geospatial", "machine learning", "society & policy"]
+abstract = """
+Landscapes around the world are changing rapidly, with important consequences for sustainability, climate resilience, and society. Yet monitoring these changes across regions and scales remains difficult. In this talk, I present a research program that combines multi-sensor Earth observation, geospatial artificial intelligence (GeoAI), and land system science to better understand how land systems are changing, what drives those changes, and why they matter.
+
+I begin by presenting my studies using satellite image time series to map land use change and, in collaboration with environmental scientists and ecologists, to examine its implications for carbon sequestration and biodiversity. These studies also reveal key limitations of conventional remote sensing approaches, including sensor constraints, limited transferability, and scarce training data. I then show how these challenges motivate my more recent work in sensor fusion, physics-informed machine learning, and deep learning with very-high-resolution imagery — applied to problems ranging from irrigation water use and wildfire-invasive species interactions to conflict-induced environmental damage. I conclude by discussing the broader goal of building GeoAI models for environmental monitoring that are informed by physical processes, transferable across contexts, and useful for real-world decision-making.
+"""
+
+[[speakers]]
+name = "He Yin"
+affiliation = ""
+website = ""
+photo = ""
+bio = """
+Dr. He Yin is an Associate Professor in the Department of Geography at Kent State University and Director of the Remote Sensing and Land Science Lab. He earned his PhD in Geography from Humboldt University of Berlin and completed postdoctoral training at the University of Wisconsin–Madison.
+
+His research combines geospatial artificial intelligence (GeoAI), Earth observation, and interdisciplinary methods to monitor landscape change and assess its environmental and societal impacts. He serves as principal investigator on projects supported by NASA, the National Science Foundation, Lawrence Livermore National Laboratory, and the Center for International Forestry Research, and currently advises the United Nations Environment Programme (UNEP) and the United Nations Office for Project Services (UNOPS). His work has received the European Space Agency Earth Observation Excellence Team Award (2025) and the American Association of Geographers Media Achievement Award (2026).
+"""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "C62FB35B-E0E0-4D66-9ED2-9306D3E58CBB"
+imported_on = 2026-08-18
+needs_review = true

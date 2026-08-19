@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "The Curious Case of Figurative Language"
+date = 2022-02-04
+start_time = "15:00"
+end_time = "16:00"
+series = "Data Science Seminar"
+location = "MEB 3147 (LCR)"
+zoom = "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["natural language processing"]
+abstract = "Despite the ubiquity of figurative language across various forms of speech and writing, the vast majority of NLP research focuses primarily on literal language. Figurative language is challenging because of its implicit nature. In this talk, I will specifically focus on the following questions: 1) Can large language models understand/interpret them? 2) Can computers generate figurative language?"
+
+[[speakers]]
+name = "Tuhin Chakrabarty"
+affiliation = "Columbia University, Ph.D Student"
+website = ""
+photo = ""
+bio = "Tuhin is a Ph.D. student at Columbia University (based in NYC) advised by Smaranda Muresan and an Amazon Ph.D. fellow. Tuhin's interests are language understanding and generation especially non-literal languages, which require world knowledge or commonsense reasoning"
+
+[meta]
+source = "google-calendar"
+calendar_uid = "EB206A01-E8F7-49FE-926B-ADBC53D718C4"
+imported_on = 2026-08-18
+needs_review = true

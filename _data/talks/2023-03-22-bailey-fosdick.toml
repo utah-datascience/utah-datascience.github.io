@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Modeling Infection Fatality Rates to Assess the Burden of COVID-19 in Developing Countries"
+date = 2023-03-22
+start_time = "10:45"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["statistics"]
+abstract = "COVID-19 spread quickly around the world after first being discovered in China in late 2019. It has had devastating impacts, however its impacts, both in terms of infection prevalence and fatalities, have been non-uniformly distributed worldwide. While early studies focused on COVID-19 infection and fatality rates in high-income countries, much less attention has been given to the impacts of COVID-19 in developing countries. In this work, we systematically reviewed the literature to identify all COVID-19 serology studies conducted by early 2021 using population representative samples. We developed a Bayesian hierarchical model for simultaneously modeling serology and death data to make inference on age-specific seroprevalence and age-specific infection fatality rates. This model directly accounts for conventional sampling uncertainty, as well as uncertainty about the serological test assay sensitivity and specificity. Through a careful analysis of data from over thirty developing countries, we found seroprevalence in many developing country locations was markedly higher than in high-income countries early in the pandemic and age-specific infection fatality rates were roughly twice as high as that in high-income countries."
+
+[[speakers]]
+name = "Bailey Fosdick"
+affiliation = "CU Anschutz"
+website = "https://www.baileyfosdick.com"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "9C979B8F-372B-48DA-AF62-A3707E54913E"
+imported_on = 2026-08-18
+needs_review = true

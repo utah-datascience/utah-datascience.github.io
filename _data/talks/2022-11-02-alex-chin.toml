@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Quantifying supply-demand imbalance in ridesharing systems"
+date = 2022-11-02
+start_time = "10:30"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "WEB 3780"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["society & policy"]
+abstract = "The status of the rider and driver distributions and how they interact in a two-sided marketplace has implications for market efficiency and policy-making. As such, accurately characterizing the supply-demand state of Lyft's marketplace is a crucial task. I will describe how this task can be framed in terms of an asymmetric optimal transport problem that yields a multi-resolution view of the supply-demand state and how it varies both spatially and temporally. I will then discuss how this approach can be incorporated into applications such as policy optimization and machine learning prediction problems. Time permitting I will also discuss other science efforts we have at Lyft."
+
+[[speakers]]
+name = "Alex Chin"
+affiliation = "Lyft"
+website = "http://alexchin.com"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "F4F316F8-30D6-4274-8E19-4C9D755200DE"
+imported_on = 2026-08-18
+needs_review = true

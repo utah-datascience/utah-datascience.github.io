@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Towards High-Performance Machine Learning on the Edge"
+date = 2020-11-13
+start_time = "11:50"
+end_time = "13:10"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["algorithms & theory", "machine learning", "privacy & security"]
+abstract = "Modern day distributed technologies, such as mobile systems and the Internet of Things (IoT), enable the global integration of heterogeneous smart devices via wireless networks. A common characteristic across these technologies is their ability to collect and communicate continuously streaming data. The generation of high bandwidth data makes machine learning (ML) and artificial intelligence (AI) appealing for processing, reasoning, and predicting about the environment, but low network latency requirements make offloading intelligence to the cloud undesirable. This raises an important question: how can we design, develop and evaluate ML algorithms that perform beyond predictive accuracy (e.g., generalizable, explainable, privacy-aware, and efficient) while being accessible and scalable in resource-constrained edge environments? In this talk, I will cover two aspects, explainability and privacy, when deploying such ML models in modern distributed technologies. The focus of the talk will be two-fold: (1) counterfactual evaluation of the explanations generated using saliency maps in deep reinforcement learning for applications such as autonomous vehicles, and (2) privacy implications of personalized ML models in context-aware mobility applications. The talk will be concluded with a discussion on where the future of ML lies in evolving distributed technologies."
+
+[[speakers]]
+name = "Akanksha Atrey"
+affiliation = "UMass"
+website = "https://akanksha-atrey.github.io"
+photo = ""
+bio = "Akanksha Atrey is a Ph.D. student in the College of Information and Computer Sciences at the University of Massachusetts Amherst. She is a member of the Laboratory of Advanced Software Systems, where she is advised by Prof. Prashant Shenoy. Her research interests lie at the intersection of machine learning, edge computing, and privacy with a focus on applications in IoT and mobile computing. Her work seeks to make machine learning more available, usable, and scalable for applications in edge systems. Prior to joining UMass, she was a software engineer at IBM where she worked on the IBM z/OS Mainframe. In 2016, she received her Bachelor of Science degree in Mathematics and Computer Science from the State University of New York at Albany. Among her achievements, she has been named a CRA-W Research Scholar, received an Honorable Mention for the NSF Graduate Research Fellowship Program, and received the Lori A. Clarke Scholarship in Computer Science."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "25im2jdereukeqbrt5oequoank_R20200904T175000@google.com"
+imported_on = 2026-08-18
+needs_review = true

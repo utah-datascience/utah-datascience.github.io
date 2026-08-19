@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Concepts and Counterfactuals: Human-Centered Interpretability in the Age of Foundation Models"
+date = 2026-03-03
+start_time = "10:30"
+end_time = "11:30"
+series = "Data Science & AI Lecture Series"
+location = "Evans Conference Room (WEB 3780)"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["causal inference", "health & medicine", "human-centered computing", "large language models"]
+abstract = "Foundation models are increasingly deployed in high-stakes domains, yet their scale and opacity challenge traditional notions of AI interpretability. In this talk, I present two complementary strategies for human-centered interpretability: reasoning through concepts and probing through counterfactuals. I first present MiMICRI, a visualization tool developed with doctors at Cleveland Clinic that enables them to interactively create counterfactual medical images to examine how anatomical changes influence model predictions. By grounding explanations in domain-relevant visual features, this tool helps experts reason about model behavior using their established medical knowledge. Next, I will introduce Concept2Concept, a framework for auditing text-to-image models by characterizing their outputs as distributions over named, interpretable concepts. By analyzing the metrics of concept frequency, stability, and co-occurrence, we uncover hidden and sometimes harmful associations in image generation models and real-world training datasets. Finally, I conclude with my research agenda for developing new visualization tools and theoretical foundations that address the ongoing challenges of auditing and aligning the foundation models of today."
+
+[[speakers]]
+name = "Grace Guo"
+affiliation = ""
+website = ""
+photo = ""
+bio = "Grace Guo is a Postdoctoral Fellow at Harvard University’s School of Engineering and Applied Sciences (SEAS). She received her Ph.D. in Human-Centered Computing from the Georgia Institute of Technology, where she was advised by Alex Endert. Her research sits at the intersection of visualization, explainable AI, and human-centered machine learning, with a focus on how AI interpretability tools can be designed for domain experts. To this end, Grace has collaborated with experts across healthcare, education, immunobiology, astrophysics, and causal analytics. She has previously worked at the Pacific Northwest National Laboratory and IBM Research, where she was awarded the IBM PhD Fellowship for her work on developing CausalVis. In her free time, she enjoys reading science fiction and mystery novels."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "7DC50148-CB01-4044-8C4C-44CB4C52ADB3"
+imported_on = 2026-08-18
+needs_review = true

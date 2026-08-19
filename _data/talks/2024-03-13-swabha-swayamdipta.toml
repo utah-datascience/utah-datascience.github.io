@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Understanding LLMs through their Generative Behavior, Successes and Shortcomings"
+date = 2024-03-13
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science Seminar"
+location = ""
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["large language models", "machine learning", "natural language processing"]
+abstract = "Generative capabilities of large language models have grown beyond the wildest imagination of the broader AI research community, leading many to speculate whether these successes may be attributed to the training data or model design. I will present some work from my group which sheds light on understanding LLMs by studying their generative behavior, successes and shortcomings. First, I will show that standard inference algorithms work well because of the particular design behind LLMs. Next, I will discuss recently found successes and failures of LLMs on a combination of tasks, requiring world and domain-specific knowledge, linguistic capabilities and awareness of human and social utility. Overall, these findings paint a partial yet complex picture of our understanding of LLMs and provide a guide to the next steps forward."
+
+[[speakers]]
+name = "Swabha Swayamdipta"
+affiliation = "USC"
+website = ""
+photo = ""
+bio = "Swabha Swayamdipta is an Assistant Professor of Computer Science and a Gabilan Assistant Professor at the University of Southern California. Her research interests are in natural language processing and machine learning, with a primary interest in the estimation of dataset quality, understanding and evaluation of generative models of language, and using language technologies to understand social behavior. At USC, Swabha leads the Data, Interpretability, Language and Learning (DILL) Lab. She received her PhD from Carnegie Mellon University, followed by a postdoc at the Allen Institute for AI. Her work has received outstanding paper awards at ICML 2022, NeurIPS 2021 and an honorable mention for the best paper at ACL 2020. Her research is supported by awards from the Allen Institute for AI and Intel Labs."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "2g56aj3sae8vcjlcj8on851db8@google.com"
+imported_on = 2026-08-18
+needs_review = true

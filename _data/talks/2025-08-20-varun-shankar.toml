@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Kernel Methods for Operator Learning"
+date = 2025-08-20
+start_time = "11:00"
+end_time = "12:00"
+series = "Data Science & AI Lecture Series"
+location = "LNCO 1100"
+zoom = "http://utah.zoom.us/my/vsutah"
+slides = ""
+recording = ""
+canceled = false
+tags = []
+abstract = ""
+
+[[speakers]]
+name = "Varun Shankar"
+affiliation = "Title: Kernel Methods for Operator Learning"
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "7B3802E7-14CE-46F9-9F98-759FAD9F938A"
+imported_on = 2026-08-18
+needs_review = true
