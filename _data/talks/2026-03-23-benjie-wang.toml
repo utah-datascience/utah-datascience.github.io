@@ -1,0 +1,31 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Bridging the Formalization Gap for Generative AI"
+date = 2026-03-23
+start_time = "10:00"
+end_time = "11:00"
+series = "Data Science & AI Lecture Series"
+location = "WEB 3780"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "Generative models, such as large language models and diffusion models, have tremendously increased the scope of problems that AI can address. As such, there is a significant trend toward incorporating generative AI to automate tasks across computing and more broadly, from controlling robotics systems, to software generation and testing, to searching over scientific knowledge. However, there remains a significant formalization gap between the domain knowledge, theories, and logical and semantic constraints that are vital to applications, and the statistical patterns over natural data represented by large generative models. In this talk, I will demonstrate how we can systematically bridge this formalization gap towards more trustworthy AI. First, drawing from examples and applications in my research, I will show how we can utilize suitable intermediate representations of probability distributions to bridge between formal language and generative models at scale. Then, I will discuss how these practical methods are underpinned by my work advancing the mathematical and computational foundations underlying these tractable representations of probability distributions."
+
+[[speakers]]
+name = "Benjie Wang"
+affiliation = ""
+website = ""
+photo = ""
+bio = """
+Benjie Wang is a postdoctoral researcher in the Statistical and Relational Artificial Intelligence (StarAI) lab in the Computer Science Department at UCLA. Dr. Wang's research interests are in artificial intelligence, including deep generative models, probabilistic machine learning, sequence and language modeling, and formal reasoning. His work develops theory-driven and scalable methods for understanding and controlling generative models, by studying the mathematical foundations, architecture, and manipulation of representations of high-dimensional probability distributions.
+
+Previously, he was a research fellow at the Simons Institute for the Theory of Computing at UC Berkeley in Fall 2023. Dr. Wang obtained his DPhil in Computer Science from the University of Oxford advised by Prof. Marta Kwiatkowska in 2023, his MSc in Statistical Science from the University of Oxford in 2019, and his BA in Mathematics from the University of Cambridge in 2018.
+"""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "0903B995-B210-4B5E-9219-3897231C5A84"
+imported_on = 2026-08-18
+needs_review = true

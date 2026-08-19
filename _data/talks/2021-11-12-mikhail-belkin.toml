@@ -1,0 +1,44 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "From classical statistics to modern deep learning"
+date = 2021-11-12
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+Recent empirical successes of deep learning have exposed significant gaps in our
+fundamental understanding of learning and optimization mechanisms.
+Modern best practices for model selection are in direct contradiction to the methodologies
+suggested by classical analyses. Similarly, the efficiency of SGD-based local methods
+used in training modern models, appeared at odds with the standard intuitions on optimization.
+
+First, I will present evidence, empirical and mathematical, that necessitates
+revisiting classical statistical notions, such as over-fitting. I will continue to discuss the emerging
+understanding of generalization, and, in particular, the "double descent" risk curve, which extends
+the classical U-shaped generalization curve beyond the point of interpolation.
+
+Second, I will discuss why the landscapes of over-parameterized neural networks are
+generically never convex, even locally. Instead they satisfy the Polyak-Lojasiewicz (PL)
+condition across most of the parameter space instead, presents an powerful framework for optimization in general over-parameterized models and allows SGD-type methods to converge to a global minimum.
+
+While our understanding has significantly grown in the last few years, a key piece of the puzzle remains -- how does optimization align with statistics to form the complete mathematical picture of modern ML?
+"""
+
+[[speakers]]
+name = "Mikhail Belkin"
+affiliation = ""
+website = "http://misha.belkin-wang.org"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "9FC6B798-1BF5-49C1-A760-08701CF251B3+ZOOMMEETINGNUMBER:93778940103"
+imported_on = 2026-08-18
+needs_review = true

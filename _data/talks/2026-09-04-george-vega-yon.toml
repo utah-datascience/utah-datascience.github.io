@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Data Science of Tracking Measles in Utah"
+date = 2026-09-04
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 2250"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = ""
+
+[[speakers]]
+name = "George Vega Yon"
+affiliation = "UU Epidemiology"
+website = "https://medicine.utah.edu/faculty/george-g-vega-yon"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "C76F38E7-9637-4FBE-A45E-F1673A54287A"
+imported_on = 2026-08-18
+needs_review = true

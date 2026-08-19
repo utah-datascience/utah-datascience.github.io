@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Data Visualization: How to Make Good Decisions"
+date = 2020-10-30
+start_time = "15:30"
+end_time = "16:30"
+series = "Data Science Seminar"
+location = ""
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "Data visualization, the display of data through graphs, charts, maps, and diagrams, is a skill in great demand in many disciplines, from the sciences to communication or business analytics. However, visualization is often misunderstood. For instance, it's often taught as the application of a series of strict rules. This talk argues that visualization is more akin to writing: yes, we do need to understand visualization's grammar but, beyond that, visualization design is flexible, and can't be based on rules that are set in stone. Instead, designers need to develop a good decision-making framework based on asking themselves a series of questions."
+
+[[speakers]]
+name = "Alberto Cairo"
+affiliation = ""
+website = ""
+photo = ""
+bio = "Alberto Cairo is a journalist and designer with many years of experience leading graphics and visualization teams in several countries. He is the Knight Chair at the School of Communication of the University of Miami, where he teaches courses on infographics and data visualization. He is also director of the Center for Visualization at UM’s Institute for Data Science and Computing, and a Faculty Fellow at the Abess Center for Ecosystem Science and Policy.In the past decade, Cairo has taught and consulted in nearly thirty countries, working for Microsoft, Google, the U.S. National Guard, and many other companies and institutions. Cairo has also written for The New York Times and Scientific American magazine and he is the author of numerous books, the latest one being 'How Charts Lie: Getting Smarter About Visual Information' (W.W. Norton, 2019)"
+
+[meta]
+source = "google-calendar"
+calendar_uid = "5s6i1fjsvem8lctt89djp8t9a9@google.com"
+imported_on = 2026-08-18
+needs_review = true

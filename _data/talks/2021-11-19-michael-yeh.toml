@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Towards a Near Universal Time Series Data Mining Tool: Introducing the Matrix Profile"
+date = 2021-11-19
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
+slides = ""
+recording = ""
+canceled = false
+abstract = "Matrix profile is a data structure that annotates a time series by recording the location of and the distance to the nearest neighbors of each subsequences in the time series. The matrix profile stores such information in an efficient and easy-to-access fashion and can be used in a variety of data mining tasks like motif/discord discovery, semantic segmentation, and clustering. In this talk, I will 1) introduce what matrix profile is, 2) discuss the computational challenge associated with matrix profile, and 3) show how it can be used in different time series data mining tasks."
+
+[[speakers]]
+name = "Michael Yeh"
+affiliation = "Visa Research"
+website = "https://mcyeh.github.io/"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "9FC6B798-1BF5-49C1-A760-08701CF251B3+ZOOMMEETINGNUMBER:93778940103"
+imported_on = 2026-08-18
+needs_review = true

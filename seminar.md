@@ -19,6 +19,8 @@ This weekly lecture series covers technical developments in data science & AI, a
 
 {% include next_talks.html %}
 
+[See all talks](/talks/){: class="btn btn-neutral"}
+
 <h2 style="margin-top: 32px;">Seminar Recordings</h2>
 <p style="margin-top: 0px;">Check out our seminar recordings here:</p>
 * [Spring 2021 Seminar Recordings](https://youtube.com/playlist?list=PLMsvlws5lSAb4i3Aa14Xf3Cajm4BCToVR){: target="_blank"}
@@ -27,6 +29,15 @@ This weekly lecture series covers technical developments in data science & AI, a
 
 ---
 
-## All Talks
+## Upcoming Talks
+
+{% include next_talks.html count=5 %}
+
+Every talk we host gets its own page with the abstract, speaker bio, slides, and
+(when available) the recording: browse the [full talk archive](/talks/).
+
+## Calendar
+
+Add the series to your own calendar, or browse it by week:
 
 {% include full_calendar.html %}

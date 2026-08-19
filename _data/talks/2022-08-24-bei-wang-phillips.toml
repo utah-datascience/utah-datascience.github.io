@@ -1,0 +1,40 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "On Hypergraph Analysis and Visualization"
+date = 2022-08-24
+start_time = "10:30"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "WEB 3780"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+Hypergraphs capture multi-way relationships in data, and they have
+consequently seen a number of applications in higher-order network
+analysis, computer vision, geometry processing, and machine learning.
+In this talk, I will discuss hypergraph analysis and visualization.
+In particular, I will focus on developing the theoretical foundations
+in studying the space
+of hypergraphs using ingredients from optimal transport.
+
+This talk is
+based on joint works
+with Youjia Zhou, Archit Rathore, Emilie Purvine, Samir Chowdhury, Tom
+Needham, and Ethan Semrad.
+"""
+
+[[speakers]]
+name = "Bei Wang Phillips"
+affiliation = "Utah SoC/SCI"
+website = "http://www.sci.utah.edu/~beiwang/"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "DE624136-76EB-41DB-AAC2-8BBBA498B70A"
+imported_on = 2026-08-18
+needs_review = true

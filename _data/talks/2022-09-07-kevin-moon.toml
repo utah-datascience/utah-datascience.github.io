@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Scalable supervised manifold learning with random forests and neural networks"
+date = 2022-09-07
+start_time = "10:30"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "WEB 3780"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+abstract = "The manifold assumption has been used in many machine learning applications to combat the curse of dimensionality. Most manifold learning methods are unsupervised and typically focus on preserving the dominant structure and variation in the data. In many cases, we wish to analyze the data in a supervised setting with respect to expert-provided data labels. Most supervised manifold learning methods exaggerate the separation between data points of different classes, distorting the true structure of the data. In this talk, I will present RF-PHATE, a supervised dimensionality reduction method that preserves the true structure of the variables that are relevant for the supervised task. RF-PHATE is based upon a diffusion process applied to random forest proximities and is well-suited for data visualization. I will then show how to improve the scalability of RF-PHATE and any other manifold learning algorithm and perform out of sample extension using geometry regularized autoencoders (GRAE)."
+
+[[speakers]]
+name = "Kevin Moon"
+affiliation = "USU"
+website = "https://sites.google.com/a/umich.edu/kevin-r-moon/home"
+photo = ""
+bio = "Kevin Moon is an assistant professor at Utah State University in the department of mathematics and statistics. He received his B.S. and M.S. in Electrical Engineering from BYU while focusing on signal processing with minors in economics and math. He then received an M.S. in Mathematics and a PhD in Electrical Engineering from the University of Michigan where he worked with Dr. Alfred Hero on the problem of nonparametric estimation of distributional functionals. Prior to joining USU in 2018, he worked with Dr. Smita Krishnaswamy and Dr. Ronald Coifman as a postdoc at Yale University in the Genetics department and the Applied Math program where he developed methods for data visualization and exploratory data analysis with a focus in biomedical applications. His current research focuses on the development of theory and applications in machine learning, big data, information theory, deep learning, and data science in general. Applications of interest include biology (including medical), finance, ecology, engineering, and navigation."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "F4F316F8-30D6-4274-8E19-4C9D755200DE"
+imported_on = 2026-08-18
+needs_review = true

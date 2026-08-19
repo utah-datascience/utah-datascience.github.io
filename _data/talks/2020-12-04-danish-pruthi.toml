@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "A Tale of Evidence and Explanations"
+date = 2020-12-04
+start_time = "11:50"
+end_time = "13:10"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09"
+slides = ""
+recording = ""
+canceled = false
+abstract = "I would present a brief overview of the state of research in explainability and its evaluation (or lack thereof). Then, I would offer a new lens into explanations, viewing them as a communication channel between a teacher and a student. This view enables us to quantitatively evaluate different attribution methods in a principled way at scale. Shifting gears, in the second part of the talk, I would introduce new techniques to supplement predictions with evidence to enable stakeholders to verify the outcomes readily."
+
+[[speakers]]
+name = "Danish Pruthi"
+affiliation = "LTI, CMU"
+website = "https://www.cs.cmu.edu/~ddanish/"
+photo = ""
+bio = "Danish Pruthi is a senior Ph.D. student at School of Computer Science in Carnegie Mellon University. Broadly, his research aims to enable machines to understand and explain natural language phenomena. He completed his bachelors degree in computer science from BITS Pilani, Pilani in 2015. He has also spent time doing research at Google AI, Facebook AI Research, Microsoft Research, and Indian Institute of Science. He is a recipient of the Siebel Scholarship, and CMU Presidential Fellowship."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "25im2jdereukeqbrt5oequoank_R20200904T175000@google.com"
+imported_on = 2026-08-18
+needs_review = true

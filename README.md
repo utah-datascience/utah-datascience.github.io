@@ -68,6 +68,77 @@ The available variables are:
 
 > **_NOTE:_**  The subfolders (affiliated, core, and leadership) under `_members` have no effects. They exist only for organizing these files. To show member under a role, set the role variable in its .md file with a right value.
 
+### Talks
+
+Every talk in the Data Science & AI Lecture Series has its own page on the site
+(for example `/talks/2026-09-04-george-vega-yon/`). Those pages are **generated**;
+the source of truth for each talk is a TOML file in `_data/talks/`.
+
+To add a talk:
+
+1. Copy `_data/talks/_TEMPLATE.toml` to `_data/talks/YYYY-MM-DD-speaker-name.toml`
+   and fill it in. The file name becomes the page URL, so keep the
+   `date-speaker` shape.
+2. Run `make talks` (equivalently `python3 scripts/generate_talks.py`). This
+   writes `_talks/YYYY-MM-DD-speaker-name.md`.
+3. Commit **both** the TOML file and the generated markdown, and open a pull
+   request. CI (`.github/workflows/talks.yml`) re-runs the generator and fails if
+   the two are out of sync.
+
+Updating a talk later (adding slides, a recording link, or a speaker photo) is
+the same loop: edit the TOML, run `make talks`, commit both files.
+
+The generated pages are wired into the site automatically:
+
+* `seminar.md` shows the next talk and the next few upcoming talks.
+* `/talks/` (`talks.md`) lists everything, upcoming first, then past talks by year.
+
+A minimal record looks like this:
+
+```toml
+[talk]
+title = "Data Science of Tracking Measles in Utah"
+date = 2026-09-04
+start_time = "13:30"
+end_time = "14:30"
+location = "WEB 2250"
+zoom = "https://utah.zoom.us/j/85983626630"
+abstract = """
+What the talk is about, in markdown.
+"""
+
+[[speakers]]
+name = "George Vega Yon"
+affiliation = "Division of Epidemiology, University of Utah"
+website = "https://ggvy.cl"
+bio = """
+A short bio, in markdown.
+"""
+```
+
+Only `[talk] title`, `[talk] date`, and one `[[speakers]] name` are required;
+everything else is optional and simply omitted from the page when empty. Add a
+`[[speakers]]` block per speaker for joint talks, and set `canceled = true`
+rather than deleting a record for a talk that did not happen.
+
+Why TOML plus a generator? GitHub Pages builds Jekyll in safe mode, so custom
+plugins (which could read TOML at build time) are not available: the pages have
+to be generated ahead of time and committed.
+
+#### Seeding records from the Google Calendar
+
+`scripts/import_calendar_talks.py` reads the series' public Google Calendar and
+writes TOML records for talks that do not have one yet:
+
+```shell
+make import-talks             # or: python3 scripts/import_calendar_talks.py
+```
+
+Calendar descriptions are free-form, so this is best effort — imported records
+are marked `needs_review = true` under `[meta]` and should be checked (titles,
+affiliations, and abstracts especially) before they are considered final. It
+never overwrites an existing file unless you pass `--overwrite`.
+
 ### progrmas
 Add/delete/edit .md files in `_progrmas` folder to add/delete/edit members.
 

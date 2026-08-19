@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Model Review: Improving Transparency, Reproducibility, & Knowledge Sharing using MLflow"
+date = 2022-09-21
+start_time = "10:30"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "WEB 3780"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "Code Review is an integral part of software development, but many teams don’t have similar processes in place for the development and deployment of Machine Learning (ML) models. I will motivate the decision to create a Model Review process, starting from the principles of transparency, reproducibility, and knowledge sharing. MLflow is a useful Python package to help simplify and automate much of the tracking necessary to create detailed records of machine learning experiments. Much of this talk will be spent introducing this tool, and demonstrating the core MLflow Tracking functionality. I’ll discuss how my team is currently running a Model Review process for any ML models that we push to production, and how we use MLflow to streamline this work and learn from each other."
+
+[[speakers]]
+name = "Jes Ford"
+affiliation = "Cash App"
+website = "http://jesford.github.io"
+photo = ""
+bio = "Jes Ford is a sponsored snowboarder turned astrophysicist turned data scientist. She enjoys applying Python data science tools to a wide variety of problems, and teaching skills and best practices to others. Jes completed her PhD in Physics at UBC Vancouver in 2015, and did a Postdoc in Data Science at the University of Washington under Jake VanderPlas. Currently based in Salt Lake City, she works remotely for Cash App (Block) as a Senior Machine Learning Engineer, and previously held local data science positions at Recursion and Backcountry. Jes spends her free time exploring the Wasatch mountains on snowboard, mountain bike, and foot. She has been involved in organizing the Salt Lake PyLadies chapter and the local Women in Data Science Conference, and is always looking for fun ways to be a part of her local tech community."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "F4F316F8-30D6-4274-8E19-4C9D755200DE"
+imported_on = 2026-08-18
+needs_review = true

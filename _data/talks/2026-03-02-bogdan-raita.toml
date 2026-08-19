@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Solving Linear PDE by Machine Learning and Commutative Algebra"
+date = 2026-03-02
+start_time = "16:00"
+end_time = "17:00"
+series = "Data Science & AI Lecture Series"
+location = "LCB 222"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "We use the theory of linear pde systems with constant coefficients (Malgrange, Palamodov, Pommaret, Sturmfels) to implement a machine learning algorithm which generates solutions to arbitrary linear pdes. Since we preprocess the equations with computer algebra, our methods are applicable to arbitrary pde systems, irrespective of type (elliptic, hyperbolic, etc.) or order. We test our method for classical equations (wave, heat, Laplace) and discuss future applications to equations describing wave-related phenomena, for example direct and inverse problems involving Maxwellâ€™s system and the elasticity equations."
+
+[[speakers]]
+name = "Bogdan Raita"
+affiliation = ""
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "5EAB83C5-371B-40F6-BA6A-B1D707AF721C"
+imported_on = 2026-08-18
+needs_review = true

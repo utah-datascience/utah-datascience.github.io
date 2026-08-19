@@ -6,11 +6,18 @@ encoding: utf-8
 # Disable the default primer theme from github-pages
 theme: null
 
+# Talk pages are dated in the future by design (that is what "upcoming" means),
+# and Jekyll hides future-dated documents unless this is set.
+future: true
+
 collections:
   programs:
     output: false
   members:
     output: false
+  # One page per talk, generated from _data/talks/*.toml by scripts/generate_talks.py.
+  talks:
+    output: true
 
 defaults:
   -
@@ -34,6 +41,8 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - Makefile
+  - scripts
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/

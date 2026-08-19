@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Unbiased Learning to Rank: Theory and Practice"
+date = 2020-01-30
+start_time = "12:15"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "Implicit feedback (e.g., user clicks) is an important source of data for modern search engines. While heavily biased, it is cheap to collect and particularly useful for user-centric retrieval applications such as search ranking. Therefore, a learning-to-rank algorithm that can effectively learn from implicit user feedback without affected by its inherent biases could fundamentally change the design of ranking systems and significantly improve the quality of modern search engines. To develop an unbiased learning-to-rank system with biased feedback, previous studies have focused on constructing probabilistic graphical models (e.g., click models) with user behavior hypothesis to extract and train ranking systems with unbiased relevance signals. Recently, a novel counterfactual learning framework that estimates and adopts examination propensity for unbiased learning to rank has attracted much attention. In this talk, we aim to provide an overview of the fundamental mechanism for unbiased learning to rank. We describe the theory behind existing frameworks, and give instructions on how to conduct unbiased learning to rank in practice."
+
+[[speakers]]
+name = "Qingyao Ai"
+affiliation = "Utah SoC"
+website = "http://ir.aiqingyao.org/"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "42t5o0blhd85v46a8f5h2s2dba_R20200116T191500@google.com"
+imported_on = 2026-08-18
+needs_review = true

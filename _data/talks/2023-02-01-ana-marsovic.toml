@@ -1,0 +1,31 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "“AI” That Masters Language Could Reason about Negation"
+date = 2023-02-01
+start_time = "10:45"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+abstract = "We have experienced firsthand the growing impact that AI technologies like ChatGPT have. It is agreed upon that risks involving such technologies must be managed. This is at a glance akin to how people handle safety-critical systems in, e.g., aviation. However, the rigorous principles of safety engineering are not easily applicable to AI technologies. AI-backed solutions are obscured in AI’s internals, and the exact requirements for AI safety are unverifiable since they are neither defined nor regulated. One technique that has emerged as a step to measure an aspect of AI safety is to construct data that represents a specific phenomenon that a safe model must handle well, and that has no spurious correlations. Low performance on the dataset is undesired.In this talk, I’ll focus on one common linguistic phenomenon, negation, without which the full power of human language-based communication cannot be realized. I will show how we carefully constructed a question-answering dataset, CondaQA, to study how well current models (described by the New York Time Magazine as “mastering language”) reason about negated statements. An InstructGPT model (the latest GPT model before Nov 28, 2022) combined with chain-of-thought prompting achieves 66.28% accuracy and 27.28% consistency on CondaQA, way behind human accuracy of 91.94% and consistency of 81.58%."
+
+[[speakers]]
+name = "Ana Marsovic"
+affiliation = "Utah SoC"
+website = "https://www.anamarasovic.com"
+photo = ""
+bio = """
+Ana Marasović is an Assistant Professor in the Kahlert School of Computing at the University of Utah. Her primary research interests are at the confluence of NLP, explainable AI, and multimodality. She aims to rigorously validate AI technologies and make human interaction with AI more intuitive. She was a Young Investigator at the Allen Institute for AI from 2019–2022. During that time, she also had a courtesy appointment in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. She obtained her PhD in 2019 from Heidelberg University.
+
+Name pronunciation: Ah-nah Mara-so-veetch, with “Mara” as the actress “Mara Wilson”
+"""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "31771BA2-4E2B-4FF4-91EC-04D6A8318D65"
+imported_on = 2026-08-18
+needs_review = true

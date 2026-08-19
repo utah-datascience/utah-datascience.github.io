@@ -1,0 +1,33 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Air Quality Mapping Using Sensor Networks and Statistical Regression"
+date = 2021-09-17
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+This talk describes an air quality mapping system that is currently deployed in the Salt Lake Valley. We begin with the motivations for the system and then briefly describe the cyberphysical infrastructure. We then review the Gaussian process modeling approach we are using and discuss several important practical considerations around challenges of data wrangling and numerical implementations. We present some examples of AQ estimates associated with specific events of bad air quality. Finally we talk about current directions in research associated with this approach.
+
+COI Disclaimer: Ross Whitaker has a financial interest in the company Tetrad, which has business interests related to the technologies in this talk.
+
+MEB 3147
+"""
+
+[[speakers]]
+name = "Ross Whitaker"
+affiliation = "Utah SoC & SCI"
+website = "http://www.cs.utah.edu/~whitaker/"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "9FC6B798-1BF5-49C1-A760-08701CF251B3+ZOOMMEETINGNUMBER:93778940103"
+imported_on = 2026-08-18
+needs_review = true

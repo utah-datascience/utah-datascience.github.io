@@ -1,0 +1,57 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Identifying Affective Events and the Reasons for their Polarity"
+date = 2020-10-02
+start_time = "11:50"
+end_time = "13:10"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09"
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+Recognizing affective states is essential for narrative text
+understanding and for applications such as conversational dialogue,
+summarization, and sarcasm recognition. Many tools have been developed
+to recognize explicit expressions of sentiment, but affective states
+can also be inferred from events. This talk will focus on "affective
+events", which are generally desirable or undesirable experiences that
+implicitly suggest an affective state for the experiencer. For
+example, buying a home is usually desirable and associated with a
+positive affective state, but being laid off is undesirable and
+associated with a negative state. First, we will describe a weakly
+supervised learning method to induce affective events from a text
+corpus by optimizing for semantic consistency. Second, we aim to
+characterize affective events based on Human Needs Categories, which
+often explain people's motivations, goals, and desires. We will
+present a co-training model for Human Needs categorization that uses
+an event expression classifier and an event context classifier to
+learn from both labeled and unlabeled texts.
+"""
+
+[[speakers]]
+name = "Ellen Riloff"
+affiliation = "Utah Computer Science"
+website = "http://www.cs.utah.edu/~riloff/"
+photo = ""
+bio = """
+Ellen Riloff is a Professor in the School of Computing at the
+University of Utah. Her primary research area is natural language
+processing, with an emphasis on information extraction, affective text
+analysis, semantic class induction, and bootstrapping methods that
+learn from unannotated texts. Prof. Riloff has served as the General
+Chair for the EMNLP 2018 conference, Program Co-Chair for the NAACL
+HLT 2012 and CoNLL 2004 conferences, on the NAACL Executive Board for
+2004-2005 and 2017-2018, the Computational Linguistics Editorial
+Board, and the Transactions of the Association for Computational
+Linguistics (TACL) Editorial Board. In 2018, Prof. Riloff was named a
+Fellow of the Association for Computational Linguistics (ACL).
+"""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "25im2jdereukeqbrt5oequoank_R20200904T175000@google.com"
+imported_on = 2026-08-18
+needs_review = true

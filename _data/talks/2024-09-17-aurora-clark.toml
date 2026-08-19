@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "The Importance of Shape in Chemistry Data"
+date = 2024-09-17
+start_time = "12:30"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "WEB 1230"
+zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
+slides = ""
+recording = ""
+canceled = false
+abstract = "Data in the field of Chemistry has heavily leveraged graph theory representations within data science applications. However, there is a rich geometric and topological structure of many chemical systems (and their data) that has been less employed for feature optimization, dimensionality reduction, and predictive models. Within this discussion I will highlight some recent work and interests that seek to employ computational topology and geometry within chemistry data sets from molecular dynamics simulations – both in the context of ensemble average and temporally evolving data sets."
+
+[[speakers]]
+name = "Aurora Clark"
+affiliation = ""
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4u5bj5j0jouhse93h9s044844t@google.com"
+imported_on = 2026-08-18
+needs_review = true

@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Navigating Advances and Inflections in Machine Learning for Atmospheric Chemistry Modeling"
+date = 2026-02-06
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB L112"
+zoom = "https://utah.zoom.us/j/85983626630"
+slides = ""
+recording = ""
+canceled = false
+abstract = "Global climate and Earth system models rarely include comprehensive atmospheric chemistry because of its high computational cost. A bottleneck is the chemical solver that integrates the large-dimensional coupled systems of kinetic equations describing the chemical mechanism. In recent years, machine learning (ML) methods have been proposed as a potentially transformative approach to reducing this cost by replacing traditional solvers with fast emulators. However, early efforts showed that ML-based chemical solvers often suffer from rapid error growth and instability. In this talk, I will review the evolving landscape of ML for atmospheric chemistry modeling over the past decade and how its trajectory mirrors broader developments in climate and weather AI. I begin with detailing how to achieve stable emulation in 0-D box models and then show how these principles translate to complex global atmospheric models. I conclude by discussing the current state of ML for modeling atmospheric chemistry and outlining how mechanistic interpretability in geospatial foundation models may offer a promising future line of inquiry."
+
+[[speakers]]
+name = "Makoto Kelp"
+affiliation = ""
+website = ""
+photo = ""
+bio = "Makoto Kelp is an Assistant Professor in the Department of Atmospheric Sciences and a Fellow in the Wilkes Center for Climate Science & Policy at the University of Utah. His research focuses on the intersections of atmospheric chemistry, fires, and human-environmental systems, with an emphasis on using data-driven methods and machine learning techniques. He earned his PhD from Harvard University and conducted his Post Doc at Stanford University as a NOAA Climate & Global Change Fellow."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "B1C723AE-9C16-4580-A062-83F2FBCB6C78"
+imported_on = 2026-08-18
+needs_review = true

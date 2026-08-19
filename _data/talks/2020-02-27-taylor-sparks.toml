@@ -1,0 +1,33 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "New Algorithms, Descriptors, and Machine Learning Techniques Tailored to the Challenges of Materials Informatics"
+date = 2020-02-27
+start_time = "12:15"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+New materials are required to address many of the energy, environmental, and technological needs of the present and future. Materials Informatics, or the application of data science techniques to solve materials research challenges, is expected to play a key role in materials development and discovery given the infinite palette available for new materials. Interestingly, the requirements and tasks of Materials Informatics do not always overlap with general machine learning. Therefore, adopting existing data science tools including visualization, algorithms, featurization schemas etc may not provide the ideal outcomes for the specific needs of Materials Informatics.
+
+In this talk I will focus on some of our recent work to bring tailored data science approaches to actual materials research problems. Specifically, I will introduce how we have created an attention-based neural network architecture for the prediction of materials properties. We show that this novel algorithm outperforms other methods in the absence of chemical information, even when the statistical and ensemble learning techniques are given domain-specific chemical knowledge about the materials.
+
+Dr. Sparks is an Associate Professor and Associate Chair of the Materials Science and Engineering Department at the University of Utah. He is originally from Utah and an alumni of the department he now teaches in. Before graduate school he worked at Ceramatec Inc. He did his MS in Materials at UCSB and his PhD in Applied Physics at Harvard University in David Clarke’s laboratory and then did a postdoc with Ram Seshadri in the Materials Research Laboratory at UCSB. His current research centers on the discovery, synthesis, characterization, and properties of new materials for energy applications. He is a pioneer in the emerging field of materials informatics whereby big data, data mining, and machine learning are leveraged to solve challenges in materials science. He also hosts a podcast entitled “Materialism” where he discusses the past, present, and future of Materials Science.
+"""
+
+[[speakers]]
+name = "Taylor Sparks"
+affiliation = "Utah Materials Science & Engineering"
+website = "https://my.eng.utah.edu/~sparks/"
+photo = ""
+bio = "Dr. Sparks is an Associate Professor and Associate Chair of the Materials Science and Engineering Department at the University of Utah. He is originally from Utah and an alumni of the department he now teaches in. Before graduate school he worked at Ceramatec Inc. He did his MS in Materials at UCSB and his PhD in Applied Physics at Harvard University in David Clarke’s laboratory and then did a postdoc with Ram Seshadri in the Materials Research Laboratory at UCSB. His current research centers on the discovery, synthesis, characterization, and properties of new materials for energy applications. He is a pioneer in the emerging field of materials informatics whereby big data, data mining, and machine learning are leveraged to solve challenges in materials science. He also hosts a podcast entitled “Materialism” where he discusses the past, present, and future of Materials Science."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "42t5o0blhd85v46a8f5h2s2dba_R20200116T191500@google.com"
+imported_on = 2026-08-18
+needs_review = true

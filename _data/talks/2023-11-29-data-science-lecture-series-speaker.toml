@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Framework for Parallel Hierarchical Agglomerative Clustering"
+date = 2023-11-29
+start_time = "10:30"
+end_time = "11:45"
+series = "Data Science & AI Lecture Series"
+location = "FASB 295"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "We study the hierarchical clustering problem, where the goal is to produce a dendrogram that represents clusters at varying scales of a data set. We propose the ParChain framework for designing parallel hierarchical agglomerative clustering (HAC) algorithms, and using the framework we obtain novel parallel algorithms for the complete linkage, average linkage, and Ward's linkage criteria. Compared to most previous parallel HAC algorithms, which require quadratic memory, our new algorithms require only linear memory, and are scalable to large data sets. ParChain is based on our parallelization of the nearest-neighbor chain algorithm, and enables multiple clusters to be merged on every round. We introduce two key optimizations that are critical for efficiency: a range query optimization that reduces the number of distance computations required when finding nearest neighbors of clusters, and a caching optimization that stores a subset of previously computed distances, which are likely to be reused. Experimentally, we show that our highly-optimized implementations using 48 cores with two-way hyper-threading achieve 5.8--110.1x speedup over state-of-the-art parallel HAC algorithms and achieve 13.75--54.23x self-relative speedup. Compared to state-of-the-art algorithms, our algorithms require up to 237.3x less space. Our algorithms are able to scale to data set sizes with tens of millions of points, which previous algorithms are not able to handle."
+
+[[speakers]]
+name = "Data Science Lecture Series. Speaker"
+affiliation = ""
+website = ""
+photo = ""
+bio = "Shangdi is a PhD student at MIT Department of Electrical Engineering and Computer Science, advised by professor Julian Shun. Her research focuses on parallel algorithms for graph and metric data clustering. Shangdi received her BSc in Computer Science and Operations Research from Cornell University and MSc in Computer Science from MIT."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "00m7j5ijbqpjopd1erulkvqqjj_R20230830T163000@google.com"
+imported_on = 2026-08-18
+needs_review = true

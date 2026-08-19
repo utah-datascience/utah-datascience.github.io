@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Low-rank Subspaces for Unsupervised Entity Linking"
+date = 2020-11-20
+start_time = "11:50"
+end_time = "13:10"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09"
+slides = ""
+recording = ""
+canceled = false
+abstract = "Entity linking is an important problem with many applications. Most previous solutions were designed for settings where annotated training data is available, which is, however, not the case in numerous domains. We propose a light-weight and scalable entity linking method, Eigenthemes, that relies solely on the availability of entity names and a referent knowledge base. Eigenthemes exploits the fact that the entities that are truly mentioned in a document (the ``gold entities'') tend to form a semantically dense subset of the set of all candidate entities in the document. Geometrically speaking, when representing entities as vectors via some given embedding, the gold entities tend to lie in a low-rank subspace of the full embedding space. Eigenthemes identifies this subspace using the singular value decomposition and scores candidate entities according to their proximity to the subspace. Extensive experiments on benchmark datasets from a variety of real-world domains showcase the effectiveness of our approach."
+
+[[speakers]]
+name = "Akhil Arora"
+affiliation = "EPFL"
+website = ""
+photo = ""
+bio = "Akhil Arora is a PhD student affiliated with the Data Science Lab (dlab) at EPFL. Prior to this, Akhil spent close to five years in industry working with the research labs of American Express and Xerox. Akhil’s research interests include large scale data management, graph mining, and machine learning. He is a recipient of the prestigious “EDIC Doctoral Fellowship” for the academic year 2018-19, and the “Most Reproducible Paper” award at SIGMOD 2018. He has published his research in prestigious data mining and database conferences, served as a reviewer, and co-organized workshops in these conferences."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "25im2jdereukeqbrt5oequoank_R20200904T175000@google.com"
+imported_on = 2026-08-18
+needs_review = true

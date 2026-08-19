@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Talks will be held in LNCO 1100, and also streamed via the following Zoom link"
+date = 2025-09-10
+start_time = "11:00"
+end_time = "12:00"
+series = "Data Science & AI Lecture Series"
+location = "LNCO 1100"
+zoom = "https://utah.zoom.us/j/81370106930?pwd=5rAKB2C2SrgkOprGOGuAtzeF5xxbbT.1"
+slides = ""
+recording = ""
+canceled = false
+abstract = ""
+
+[[speakers]]
+name = "Bei Wang Phillips"
+affiliation = ""
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "_6t136e1g692jeb9h6h1kab9k6p33ib9p8osjgb9n6kskcga47533icpo84_R20250903T170000@google.com"
+imported_on = 2026-08-18
+needs_review = true

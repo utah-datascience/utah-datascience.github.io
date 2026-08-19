@@ -1,0 +1,31 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Putting Parameterization into Practice"
+date = 2023-01-25
+start_time = "10:45"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+Graphs are everywhere: social networks, protein interaction networks, citation networks, epidemic spread networks. Applications that use these graphs have progressively become more sophisticated, relying on getting fast and accurate solutions to graph-theoretic problems, many of which are NP-Hard. However, the sizes of today's graphs easily run into millions of vertices and edges, if not more. As a result, many classic algorithms are infeasible for such graphs.
+
+Fortunately, real-world graphs across different domains show a lot of common characteristics such as an abundance of triangles, low average distance between vertices (small-world property), low degeneracy (a measure of the sparsity of edges) etc. which we can leverage to design algorithms that are provably efficient given those parameters. I will demonstrate this in the context of clique counting and decomposition of graphs, which has applications in community detection, spam detection, fraud detection, gene module detection etc. The new algorithms not only massively improve the performance in practice but also improve our theoretical understanding of real-world graphs and help to bridge the gap between theory and practice.
+"""
+
+[[speakers]]
+name = "Shweta Jain"
+affiliation = "Utah SoC"
+website = "https://sjain12.github.io"
+photo = ""
+bio = "Shweta Jain is a Computing Innovation Fellow (CIFellow) at the University of Utah working with Prof. Blair D. Sullivan. She was previously a postdoc at the University of Illinois, Urbana-Champaign and prior to that she completed her Ph.D. in Computer Science at the University of California, Santa Cruz (UCSC), advised by Prof. Seshadhri Comandur. Her research interests are in graph mining, parameterized algorithms, randomized and approximation algorithms, and algorithms for massive data and the goal of her research is to use these tools to design algorithms that work well in practice and have provable guarantees. Her work has been recognized by two Best Paper Awards, the SIGKDD Best Dissertation Runner-Up Award 2021, and the Best Dissertation Award 2020 of the Computer Science Department at UCSC. She was also chosen as a Rising Star of EECS 2020."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "B29C877B-91F5-4381-8AAC-922C420AB72B"
+imported_on = 2026-08-18
+needs_review = true

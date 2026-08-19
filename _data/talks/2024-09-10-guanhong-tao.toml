@@ -1,0 +1,30 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Are AI-enabled Systems Safe and Secure?"
+date = 2024-09-10
+start_time = "12:30"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "WEB 1230"
+zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+Abstract
+Artificial Intelligence (AI) has been integrated into various sectors, such as facial recognition and autonomous driving. But are the security and safety of these AI-enabled systems fully ensured? In this talk, I will present various vulnerabilities in these systems. My presentation will cover novel optimization techniques for identifying and mitigating backdoor vulnerabilities in both white-box and black-box settings, achieving substantial improvements in performance. I will share insights into the nature of backdoors and their presence in pre-trained models. Finally, I will conclude with an outlook on our recent exploration of the security of emerging AI techniques, such as generative AI.
+"""
+
+[[speakers]]
+name = "Guanhong Tao"
+affiliation = ""
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4u5bj5j0jouhse93h9s044844t@google.com"
+imported_on = 2026-08-18
+needs_review = true

@@ -1,0 +1,33 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Randomized FunctionalAnalysis"
+date = 2020-01-09
+start_time = "12:15"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+Sketching and subsampling are central algorithmic tools in scaling statisticalmethods to very large datasets. These techniques seek to quickly compress datadown to a compact set of informative features or examples, which can then beprocessed in place of the original data, at much lower computational cost. Thecentral question of this talk is what sketching methods can teach us abouteffective machine learning and data analysis in the small data regime. Inapplications where high quality data examples remain a rare luxury, can ourknowledge of data sketching guide more efficient initial data collection?
+
+We study this problem by focusing specifically on techniques for large matrixcomputations. In the field of randomized numerical linear algebra, importancesampling has emerged as an important tool for dataset compression. Statisticalleverage scores and related measures are used to judge the importance of rowsor columns in a matrix, which are then non-uniformly subsampled, leading tofaster algorithms for regression, low-rank approximation, kernel methods, andmany other data problems.
+
+I will introduce a simple generalization of leverage score sampling to infinitedimensional linear operators and show the potential of this generalization indeveloping sample efficient algorithms for small data applications.Specifically, I will survey a number of recent results on robust polynomialcurve fitting, bandlimited function interpolation, off-grid sparse Fouriertransforms, and sample efficient covariance estimation. I will illustrateconnections between these new results and classical tools in approximationtheory and signal processing, and will discuss several open researchdirections.
+"""
+
+[[speakers]]
+name = "Chris Musco"
+affiliation = "NYU"
+website = "https://www.chrismusco.com"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "42t5o0blhd85v46a8f5h2s2dba@google.com"
+imported_on = 2026-08-18
+needs_review = true

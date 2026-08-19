@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Orientation"
+date = 2024-01-10
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = ""
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = ""
+
+[[speakers]]
+name = "Data Science Lecture Series"
+affiliation = "Spring 24"
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4635tcck8huo0hjfo9fn1jp7ol@google.com"
+imported_on = 2026-08-18
+needs_review = true

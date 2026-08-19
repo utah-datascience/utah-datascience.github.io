@@ -1,0 +1,35 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Meritocracy or systemic bias? Untangling the drivers the productivity and prominence among scientists"
+date = 2023-02-08
+start_time = "10:45"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+Simple measures of scholarly productivity and prominence vary enormously across both individual scientists and institutions -- but to what degree do these inequalities represent genuine meritocratic differences vs. systemic biases that limit scientific progress?
+
+In this talk, I'll describe a sequence of results that substantially untangle the underlying systemic drivers of productivity and prominence among scientists. First, I'll show that productivity and prominence are, to a significant degree, environmental variables such that the prestige of a scientist's working environment drives their individual productivity, largely by providing larger research groups to elite scientists. Second, I'll describe a network-based generative model of individual productivity and prominence that untangles these measures from their underlying collaboration networks. These models corroborate the labor-advantage hypothesis of elite institutions, and also reveal both that gendered differences in the productivity and prominence of mid-career researchers can be largely explained by gendered differences in coauthorship networks, and that these networks are partially transferable from senior to junior collaborators. Hence, collaboration networks, and the systemic factors that shape them, play a critical role in driving scholarly inequalities in science, and suggest that these networks are an important form of unequally distributed social capital that shapes who makes what scientific discoveries. I'll close with a discussion of policies that could potentially mitigate the unequal distribution of this social capital and help both diversify the academy and broaden its contributions to society.
+"""
+
+[[speakers]]
+name = "Aaron Clauset"
+affiliation = "UC Boulder"
+website = "https://www.colorado.edu/cs/aaron-clauset"
+photo = ""
+bio = """
+Aaron Clauset is a Professor in the Department of Computer Science and the BioFrontiers Institute at the University of Colorado Boulder, and is External Faculty at the Santa Fe Institute. He received a PhD in Computer Science, with distinction, from the University of New Mexico, a BS in Physics, with honors, from Haverford College, and was an Omidyar Fellow at the prestigious Santa Fe Institute. In 2016, he was awarded the Erdos-Renyi Prize in Network Science, and since 2017, he has been a Deputy Editor responsible for the Social, Computing, and Interdisciplinary Sciences at Science Advances.
+
+Clauset is an internationally recognized expert on network science, data science, and machine learning for complex systems. His research program is around two general themes: identifying fundamental principles of the organization and behavior of complex social and biological systems, and developing approaches for using data and computation to illuminate those ideas. A recent major focus of this work has been on the "science of science," where he studies the shape, origins, and consequences of social and epistemic inequalities on scientific careers, productivity, the spread of ideas, and the composition of the scientific workforce. His research results have appeared in many prestigious scientific venues, including Nature, Science, PNAS, SIAM Review, Science Advances, Nature Communications, AAAI, and ICDM. His work has been covered in the popular press by Quanta Magazine, the Wall Street Journal, The Economist, Discover Magazine, Wired, the Boston Globe and The Guardian.
+"""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "24519C76-7D93-4F65-A4B4-2D165951C6FB"
+imported_on = 2026-08-18
+needs_review = true

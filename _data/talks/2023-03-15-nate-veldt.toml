@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Measuring homophily in group interactions: hypergraph models and combinatorial impossibilities"
+date = 2023-03-15
+start_time = "10:45"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+abstract = "Homophily is the well-known sociological principle that people tend to connect with others who are similar to them, or more informally: \"birds of a feather flock together.\" Although many social interactions occur in groups, homophily is typically measured using a graph, which only accounts for interactions involving two individuals. This talk will present a new hypergraph framework for more directly measuring homophily in group settings. Our measures highlight natural patterns in group homophily that appear with gender in scientific collaboration and political affiliation in legislative bill cosponsorship, and also reveal distinctive gender distributions in group photographs, all of which cannot be fully captured by graph-based measures. We will also discuss subtle combinatorial limits and impossibilities that arise when measuring homophily in hypergraphs, which are completely independent of human behavior and must be properly accounted for in order to understand how homophily can (and cannot) be manifested in group interactions."
+
+[[speakers]]
+name = "Nate Veldt"
+affiliation = "Texas A&M"
+website = "https://veldt.engr.tamu.edu"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "66247255-5B4E-4099-8DFC-472B2C18FDC8"
+imported_on = 2026-08-18
+needs_review = true

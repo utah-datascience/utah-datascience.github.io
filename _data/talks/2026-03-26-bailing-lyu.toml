@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Navigating the Human-AI Nexus in Education: Bridging Cognitive Science, Learning Analytics, and Intelligent Systems"
+date = 2026-03-26
+start_time = "10:30"
+end_time = "11:30"
+series = "Data Science & AI Lecture Series"
+location = "Evans Conference room (WEB 3780)"
+zoom = "https://utah.zoom.us/j/87171666093"
+slides = ""
+recording = ""
+canceled = false
+abstract = "Artificial intelligence is increasingly transforming education, reshaping how students engage with learning and how instructors design and deliver instruction. However, critical gaps remain in the field of AI in Education (AIED): (1) a frequent lack of grounding in the cognitive and learning sciences when developing AI pedagogical tools, (2) a \"black box\" regarding how students process and interact with AI-supported environments, and (3) a limited emphasis on meaningful human involvement in how AI is applied in practice. This talk presents a series of research projects on AI-augmented learning and teaching that address these gaps by integrating cognitive science into AI-powered educational technologies, examining human-AI interaction, and centering human agency in their application. Specifically, using teachable agents as an example, it will discuss (1) how pedagogical AI can be designed using theoretically grounded learning principles, (2) how students' learning processes unfold in these environments, and (3) how educators and learners can actively leverage AI to co-create and navigate engaging experiences that enhance learning outcomes. Employing experimental research, learning analytics, and educational data mining, these studies examine the intersection of human cognition and AI-driven learning. By aligning AI with evidence-based pedagogical strategies, this work advances our understanding of how intelligent technologies can foster deeper learning, positive learning experiences, personalized instruction, and adaptive support across diverse educational contexts."
+
+[[speakers]]
+name = "Bailing Lyu"
+affiliation = ""
+website = ""
+photo = ""
+bio = "Dr. Bailing Lyu is an Assistant Professor at Auburn University, specializing in AI-driven educational technologies, learning analytics, and cognitive learning sciences. She earned her Ph.D. in Educational Psychology from Pennsylvania State University and subsequently served as a postdoctoral researcher at the University of Utah, focusing on conversational AI. Her research explores how AI can be designed and applied across both student-facing and instructor-facing contexts. For students, she focuses on designing AI systems that foster cognitive engagement while enhancing interest, motivation, and emotional experiences. In parallel, she investigates how AI can empower instructors to develop instructional and AI-embedded materials, such as generative interactive visuals, that make abstract concepts more concrete, accessible, and engaging. Methodologically, she applies learning analytics, educational data mining, and experimental research to study interactions with these multimodal resources. Her impactful work has contributed to large-scale funded projects, including the $10 million ALTER-Math initiative (supported by the Schmidt, Gates, and Walton Family Foundations) as well as several NSF-funded projects. A highly productive scholar, Dr. Lyu has an extensive publication record with 24 submitted or published journal articles and over 40 conference presentations advancing the future of AI in education."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "B321A7B0-A0C4-4F09-9053-9F72C727820D"
+imported_on = 2026-08-18
+needs_review = true

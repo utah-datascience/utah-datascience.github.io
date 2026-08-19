@@ -1,0 +1,36 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "An Improved Analysis of the Quadtree for High Dimensional EMD"
+date = 2021-02-26
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz09"
+slides = "https://rajeshjayaram.com/EarthMoverCJLW.pdf"
+recording = ""
+canceled = false
+abstract = """
+The Earth Mover Distance (EMD) between two multi-sets A,B in R^d of size s is the min-cost of bipartite matchings between points in A and B, where cost is measured by distance between points. In this talk, we discuss a classic divide-and-conquer algorithm known as Quadtree for approximating EMD.
+We give a new analysis of the Quadtree, showing that it gives a Õ(log s) approximation. This improves on the previous known O(min{log s , log d} * log s)-approximation of Andoni, Indyk, and Krauthgamer [SODA 08], and Backurs, Dong, Indyk, Razenshteyn, and Wagner (ICML 20).
+
+We also give new space efficient sketching and streaming algorithms for estimating EMD with the improved approximation factor. The main conceptual contribution is an analytical framework for studying the Quadtree which goes beyond worst-case distortion of randomized tree embeddings.
+
+Based on a joint work with Xi Chen, Amit Levi, and Erik Waingarten.
+
+Paper: https://rajeshjayaram.com/EarthMoverCJLW.pdf (https://rajeshjayaram.com/EarthMoverCJLW.pdf)
+"""
+
+[[speakers]]
+name = "Rajesh Jayaram"
+affiliation = "CMU"
+website = "https://rajeshjayaram.com/EarthMoverCJLW.pdf"
+photo = ""
+bio = "Rajesh Jayaram is a PhD student at Carnegie Mellon University, advised by David Woodruff. His research focuses on the design of sketching algorithms, especially streaming and distributed algorithms, for problems in big-data. A central theme of his work is the usage of sketching techniques to speed up algorithmic tasks across various applications, such as in machine learning, optimization, databases, and numerical linear algebra. Additionally, he is interested in aspects of robustness in machine learning and streaming. His work in sketching has received two Best Paper Awards at the Symposium on Principles of Database Systems (PODS) in 2019 and 2020."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "74coomn4fvfpv0avekrihuvbbc@google.com"
+imported_on = 2026-08-18
+needs_review = true

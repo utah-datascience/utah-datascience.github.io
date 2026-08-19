@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Monotone Implicit Graph Neural Networks for Long-Range Dependency Learning"
+date = 2023-03-29
+start_time = "10:45"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+abstract = "From social networks to chemical engineering, deep graph neural networks play an instrumental role in advancing our industrial and scientific frontier. Of particular interest are networks which can learn long range dependencies in a scalable and expressive manner. In this talk, we will delve into the power of deep learning on graphs, with a focus on implicit graph neural networks (IGNNs) and their scalability. We will also discuss how monotone operator theory enhances the expressivity of IGNNs, overcoming a crucial obstacle to learning long-range dependencies. By doing so, monotone IGNNs can significantly improve graph learning and have the potential to make breakthroughs in various fields."
+
+[[speakers]]
+name = "Justin Baker"
+affiliation = "Utah Math & SCI"
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "313AB60F-2B8F-4271-80F1-86D4D96A031D"
+imported_on = 2026-08-18
+needs_review = true

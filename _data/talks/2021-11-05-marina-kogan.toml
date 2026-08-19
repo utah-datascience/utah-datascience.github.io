@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Sequence-based approaches as human-centered data science methods for crisis informatics"
+date = 2021-11-05
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
+slides = ""
+recording = ""
+canceled = false
+abstract = "Social media platforms have been increasingly used by the public in crisis situations, partly because they upend the traditional top-down broadcasting model of risk communication. Instead, social media platforms facilitate a two-way information exchange between the official response channels and the general public, enabling more participatory crisis communication, as well as coordination and self-organization among the public. In this more complex information ecosystem, understanding the flow of information is crucial to supporting those affected and preventing malicious actors from capitalizing on the uncertainty. However, the study of such information flows is challenging, because the high-tempo, high-volume convergent nature of crisis events produces vast amounts of social media data, necessitating the use of the data science methods. On the other hand, to glean meaningful insight from the crisis-related social media activity, it is necessary to use methods that account for the complex social context of the user activity. In this talk I will show how the Human-Centered Data Science (HCDS) provides methodological approaches that both harness the power of computational methods and account for the highly situated nature of social media activity in disruption. I will focus on sequence-based approaches as examples of HCDS methods in two empirical studies: analysis of attention-garnering information during a natural disaster and investigation of behavioral signatures in coordinated information operations."
+
+[[speakers]]
+name = "Marina Kogan"
+affiliation = "Utah SoC"
+website = "http://www.mkoganresearch.com"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "9FC6B798-1BF5-49C1-A760-08701CF251B3+ZOOMMEETINGNUMBER:93778940103"
+imported_on = 2026-08-18
+needs_review = true

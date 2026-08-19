@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Interpreting Learned Feedback Patterns in Large Language Models"
+date = 2024-11-12
+start_time = "12:30"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "WEB 1230"
+zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
+slides = ""
+recording = ""
+canceled = false
+abstract = "Amir is an active researcher in mechanistic interpretability, opening the blackbox of large language models to reverse engineer the inner workings and analyze internal representations.. In this talk, he will discuss his paper in NeuIPS 2024 on interpreting reward models in language models using sparse autoencoders on internal representations. Further, Amir will introduce followup work studying whether internal representations can be transferred between large language models."
+
+[[speakers]]
+name = "Amir Abdullah"
+affiliation = ""
+website = "https://scholar.google.com/citations?user=jPEbq5wAAAAJ&hl=en"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4u5bj5j0jouhse93h9s044844t@google.com"
+imported_on = 2026-08-18
+needs_review = true

@@ -1,0 +1,33 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Principled Learning for Medical AI: Structure, Reliability, and Interpretability"
+date = 2026-03-30
+start_time = "10:00"
+end_time = "11:00"
+series = "Data Science & AI Lecture Series"
+location = "WEB 3780"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+The widespread deployment of AI in medicine demands not only predictive accuracy but also structural awareness, reliability under uncertainty, and interpretability for clinical trust. In this talk, I will present a unified research agenda toward principled learning for medical AI, grounded in these core pillars.
+
+First, I will discuss how incorporating explicit structure, such as topology and spatial priors, into neural networks enhances the model's ability to reason about fine-grained anatomical and pathological features, which are critical for tasks like brain and tumor segmentation. Second, I will focus on reliability, exploring how we can quantify and mitigate uncertainty arising from imperfect labels, limited data, and domain shifts, using methods such as distributional modeling, hyperparameter learning, and probabilistic inference. Third, I will show how these approaches naturally support interpretability, enabling AI systems to communicate meaningful representations that align with human clinical understanding.
+
+Through applications in radiology, pathology, neuroimaging, and large-scale population datasets, I will demonstrate how these principles facilitate scalable annotation, robust generalization, and scientific discovery. I will conclude with future directions aimed at generalizing these principles to multimodal learning, real-world deployment, and next-generation AI systems in medicine.
+"""
+
+[[speakers]]
+name = "Xiaoling Hu"
+affiliation = ""
+website = ""
+photo = ""
+bio = "Xiaoling Hu is a postdoctoral research fellow at Harvard Medical School. He received his Ph.D. in Computer Science from Stony Brook University. His research focuses on Machine Learning for Healthcare, with an emphasis on developing core AI/ML algorithms for healthcare applications. His work has been published in leading venues across machine learning, computer vision, and medical imaging, including NeurIPS, ICLR, AISTATS, CVPR, ICCV, ECCV, Medical Image Analysis, and MICCAI. Several of his papers have been selected for oral or spotlight presentations. Xiaoling has organized multiple tutorials and workshops at top-tier conferences and served as Area Chairs for venues such as NeurIPS, CVPR, AISTATS, and MICCAI. He is also a recipient of the prestigious Catacosinos Fellowship, awarded to SBU graduate students with exceptional research achievements."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "639767DF-6829-4B92-86CD-02EB8F5DBC79"
+imported_on = 2026-08-18
+needs_review = true

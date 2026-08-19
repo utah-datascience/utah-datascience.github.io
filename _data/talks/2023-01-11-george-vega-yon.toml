@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Prediction of Gene Functions by Leveraging Biological Insights with Mechanistic Machine Learning"
+date = 2023-01-11
+start_time = "10:45"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+abstract = "Biomedical sciences, in particular, bioinformaticians and computational biologists, are in a race to annotate the immense number of genes and gene products we are still learning from. In this talk, I present a new method for predicting gene functions using mechanistic machine learning. Mechanistic machine learning is a relatively new area of research where predictive ML-based algorithms are improved by incorporating domain knowledge via mechanistic models. Here, we use a theoretically-funded function evolution model that relies solely on phylogenetic trees from PantherDB and annotations from the Gene Ontology (GO) to make high-quality predictions. I will illustrate how combining the mentioned model with a large gene expression database (Bgee) in an ML model significantly improves prediction quality."
+
+[[speakers]]
+name = "George Vega Yon"
+affiliation = "Utah Epidemiology"
+website = "https://ggvy.cl/"
+photo = ""
+bio = "Dr. George G. Vega Yon is a research assistant professor of epidemiology at the University of Utah. Dr. Vega Yon is a methodologist that uses statistical computing tools to study complex systems. His research includes statistical models for social network analysis, agent-based models, and phylogenetics. Dr. Vega Yon has over ten years of experience working in data science creating scientific software, including multiple R packages in data visualization, network science, high-performance computing, and bayesian statistics. George is originally from Chile and obtained his Ph.D. in biostatistics from USC, an M.Sc. in Social Science from Caltech, and an M.A. in economics and public policy from Universidad Adolfo Ibáñez. (https://ggv.cl)"
+
+[meta]
+source = "google-calendar"
+calendar_uid = "8074B040-5817-49E8-B11C-D683AFFB00A2"
+imported_on = 2026-08-18
+needs_review = true

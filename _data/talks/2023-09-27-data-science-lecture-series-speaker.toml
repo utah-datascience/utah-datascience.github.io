@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Loss Minimization and Multi-group Fairness"
+date = 2023-09-27
+start_time = "10:30"
+end_time = "11:45"
+series = "Data Science & AI Lecture Series"
+location = "FASB 295"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "Training a predictor to minimize a loss function fixed in advance is the dominant paradigm in machine learning. However, loss minimization by itself might not guarantee desiderata like fairness and accuracy that one could reasonably expect from a predictor. In contrast, various group-fairness notions have been propsoed that constrain the predictor to share certain statistical properties of the data, even when conditioned on a rich family of subgroups. There is no explicit attempt at loss minimization.In this talk, we will explore some recently discovered connections between loss minimization and notions of multi-group fairness. We will see settings where one can lead to the other, and other settings where this is unlikely."
+
+[[speakers]]
+name = "Data Science Lecture Series. Speaker"
+affiliation = ""
+website = "https://parikg.github.io/"
+photo = ""
+bio = "Parikshit Gopalan (https://parikg.github.io/) is a machine learning researcher at Apple (https://machinelearning.apple.com/). His current interests are in fairness in machine learning, unsupervised learning and algorithms/systems for big data. In the past, he has made important contributions to erasure coding for distributed storage, coding theory and computational complexity. His work has been awarded the 2014 Joint IEEE Communication Society & Information Theory Society Paper Prize, 2013 Microsoft TCN Storage Technical Award and the best paper award for the 2012 USENIX Advanced Technology Conference. In the past, he has been a researcher at VMware, Microsoft Research (Silicon valley and Redmond), a postdoc at the University of Washington and UT Austin, a graduate student at Georgia Tech and an undergraduate at IIT Bombay."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "00m7j5ijbqpjopd1erulkvqqjj_R20230830T163000@google.com"
+imported_on = 2026-08-18
+needs_review = true

@@ -1,0 +1,31 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "The Promise and Perils of Big Data in the Cloud - Examples from the Atmospheric Sciences"
+date = 2020-03-05
+start_time = "12:15"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+From the inception of numerical weather prediction in the 1950’s, atmospheric scientists have stretched the envelope on the hardware and procedures available to write, store, and use data on mass storage systems. The opportunities now to rely on cloud resources to process, access, and disseminate environmental data offer improved capabilities for data science applications in the atmospheric sciences but also introduce complexities for university researchers.
+
+The Big Data Project of the National Oceanographic and Atmospheric Administration is assessing the potential benefits of storing in the cloud observations and weather and climate model output that are generating petabytes of data daily. Retrieving, archiving, analyzing, and disseminating only a fraction of this environmental information has required us to move beyond computational approaches traditionally used within the atmospheric science community. For example, hundreds of users rely on a 140+ Tbyte archive we maintain of High Resolution Rapid Refresh (HRRR) model output on the Pando system of the University’s Center for High Performance Computing. Computing resources available nationwide as part of the Open Science Grid- a high-throughput computing resource- have been used to analyze wildland fire events. Data analytical methods are being explored that rely on Zarr data compression to provide classes and functions for working with N-dimensional arrays.
+"""
+
+[[speakers]]
+name = "John Horel"
+affiliation = "Professor, Chair, Department of Atmospheric Sciences"
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "42t5o0blhd85v46a8f5h2s2dba_R20200116T191500@google.com"
+imported_on = 2026-08-18
+needs_review = true

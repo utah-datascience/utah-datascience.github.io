@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Blame the data, not the system: how data constraints can help in trustworthy machine learning and explain causes of data-system malfunction"
+date = 2023-09-06
+start_time = "10:30"
+end_time = "11:45"
+series = "Data Science & AI Lecture Series"
+location = "FASB 295"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "The core of modern data-driven systems comprises models learned from large datasets, and they are usually optimized to target particular data and workloads. While these data-driven systems have seen wide adoption and success, their reliability and proper function hinge on the data's continued conformance to the systems initial settings and assumptions. My research focuses on designing mechanisms to assess the trustworthiness of a system's inferences and explain causes of system malfunction due to data nonconformance. The key idea here is that since data is central to data-driven systems, it can guide us to determine whether predictions made by an ML model can be trusted, and to expose the cause of a system's unexpected behavior. In this talk, I will talk about mechanisms and explanation frameworks to facilitate trusting and understanding outcomes involving data and data systems."
+
+[[speakers]]
+name = "Data Science Lecture Series. Speaker"
+affiliation = ""
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "00m7j5ijbqpjopd1erulkvqqjj_R20230830T163000@google.com"
+imported_on = 2026-08-18
+needs_review = true

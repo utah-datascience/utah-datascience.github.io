@@ -1,0 +1,39 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "DESI: Disentangling Cosmology from Observational Artifacts"
+date = 2025-11-12
+start_time = "10:00"
+end_time = "11:00"
+series = "Data Science & AI Lecture Series"
+location = "WEB 3780"
+zoom = "https://utexas.zoom.us/j/87159746528?pwd=ouQu8lN9ARbb6aRFpvdf6Ddb1Oqa8B.1"
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+The Dark Energy Spectroscopic Instrument (DESI) has concluded three years of observation, leading to the largest spectroscopic galaxy sample ever produced. In combination with other cosmological probes, these measurements reveal hints of new physics beyond the standard cosmological model. In this talk, we will first present the observations and key measurements that led to these new constraints. We will then describe the role that neural networks and random forests play in this analysis and our tests of these machine learning algorithms against more physically-motivated, linear models.
+
+Where:
+The location and time is moved for this talk so it can coincide with the CosmicAI seminar. It will take place in WEB 3780 (the Evans Conference room in SCI) and at 10am. It will also be on Zoom at this *new* link:
+"""
+
+[[speakers]]
+name = "Kyle Dawson"
+affiliation = ""
+website = "https://profiles.faculty.utah.edu/u0634757"
+photo = ""
+bio = ""
+
+[[speakers]]
+name = "Tyler Hagen"
+affiliation = ""
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "_6t136e1g692jeb9h6h1kab9k6p33ib9p8osjgb9n6kskcga47533icpo84_R20250903T170000@google.com"
+imported_on = 2026-08-18
+needs_review = true

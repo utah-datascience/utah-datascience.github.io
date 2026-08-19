@@ -1,0 +1,34 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Global Table Extractor (GTE): A Framework for Joint Table Identification and Cell Structure Recognition Using Visual Context"
+date = 2020-10-23
+start_time = "11:50"
+end_time = "13:10"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09"
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+Documents are often the format of choice for knowledge sharing and preservation in business and science, within which are tables that capture most of the critical data. Unfortunately, most documents are stored and distributed as PDF or scanned images, which fail to preserve table formatting.
+Recent vision-based deep learning approaches have been proposed to address this gap, but most still cannot achieve state-of-the-art results.
+
+ We present Global Table Extractor (GTE), a vision-guided systematic framework for joint table detection and cell structured recognition, which could be built on top of any object detection model. With GTE-Table, we invent a new penalty based on the natural cell containment constraint of tables to train our table network aided by cell location predictions. GTE-Cell is a new hierarchical cell detection network that leverages table styles. Further, we design a method to automatically label table and cell structure in existing documents to cheaply create a large corpus of training and test data. We use this to enhance PubTabNet with cell labels and create FinTabNet, real-world and complex scientific and financial datasets with detailed table structure annotations to help train and test structure recognition.
+
+ Our deep learning framework surpasses previous state-of-the-art results on the ICDAR 2013 and ICDAR 2019 table competition test dataset in both table detection and cell structure recognition. Further experiments demonstrate a greater than 45% improvement in cell structure recognition when compared to a vanilla RetinaNet object detection model in our new financial dataset (FinTabNet).
+"""
+
+[[speakers]]
+name = "Nancy Wang"
+affiliation = "IBM"
+website = "https://researcher.watson.ibm.com/researcher/view.php?person=ibm-wangnxr"
+photo = ""
+bio = "Nancy Wang is a Researcher with IBM Research - Almaden who is currently working on applying deep learning and computer vision methods for table extraction and table understanding from documents. She graduated from the University of Washington with her PhD in Computer Science in 2018 in the area of computer vision for computational neuroscience. Her new table extraction work is under review at top-level AI conferences and is in the process of being incorporated into Watson Discovery. She was also one of the presenting tutors for the Table Extraction and Understanding Tutorial at ICDM 2019 and VLDB 2020."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "25im2jdereukeqbrt5oequoank_R20200904T175000@google.com"
+imported_on = 2026-08-18
+needs_review = true

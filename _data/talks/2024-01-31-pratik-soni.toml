@@ -1,0 +1,30 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Cryptography for Fairness"
+date = 2024-01-31
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09"
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+Location: In person (GC 2560). Will also be streamed at:
+https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09 (https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09)
+"""
+
+[[speakers]]
+name = "Pratik Soni"
+affiliation = "Utah"
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "2353s9ratq28anb7hj6h1v89up@google.com"
+imported_on = 2026-08-18
+needs_review = true

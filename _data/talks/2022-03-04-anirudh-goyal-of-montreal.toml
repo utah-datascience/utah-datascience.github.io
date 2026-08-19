@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "From Specialists to Generalists: Inductive Biases of Deep Learning for Higher Level Cognition"
+date = 2022-03-04
+start_time = "15:00"
+end_time = "16:00"
+series = "Data Science Seminar"
+location = "MEB 3147 (LCR)"
+zoom = "https://utah.zoom.us/j/94615915833?pwd=TW50Mk5GeFpQN0lBMEZQQ2Z1ZUdFUT09"
+slides = ""
+recording = ""
+canceled = false
+abstract = "A fascinating hypothesis is that human and animal intelligence could be explained by a few principles (rather than an encyclopedic list of heuristics). If that hypothesis was correct, we could more easily both understand our own intelligence and build intelligent machines. Just like in physics, the principles themselves would not be sufficient to predict the behavior of complex systems like brains, and substantial computation might be needed to simulate human-like intelligence. This hypothesis would suggest that studying the kind of inductive biases that humans and animals exploit could help both clarify these principles and provide inspiration for AI research and neuroscience theories. Deep learning already exploits several key inductive biases, and my work considers a larger list, focusing on those which concern mostly higher-level and sequential conscious processing. The objective of clarifying these particular principles is that they could potentially help us build AI systems benefiting from humans' abilities in terms of flexible out-of-distribution and systematic generalization, which is currently an area where a large gap exists between state-of-the-art machine learning and human intelligence."
+
+[[speakers]]
+name = "Anirudh Goyal of Montreal"
+affiliation = ""
+website = "https://anirudh9119.github.io/"
+photo = ""
+bio = "Anirudh Goyal is a student of science advised by Prof. Yoshua Bengio. His current research interests center around understanding how neural learners can compose and abstract their own representations in a way that can be used to better generalize to out of distribution samples. More concretely, his work focuses on designing such models by incorporating in them strong but general assumptions (inductive biases) that enable high-level reasoning about the structure of the world. During his PhD, he has spent time as a visiting researcher at UC Berkeley, MPI Tuebingen and DeepMind. He was also one of the recipients of the 2021 Google PhD Fellowship in Machine Learning."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "EB206A01-E8F7-49FE-926B-ADBC53D718C4"
+imported_on = 2026-08-18
+needs_review = true

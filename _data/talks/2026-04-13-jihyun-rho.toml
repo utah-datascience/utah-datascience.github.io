@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Supporting responsible use of AI in visual-based teaching and learning"
+date = 2026-04-13
+start_time = "13:00"
+end_time = "14:00"
+series = "Data Science & AI Lecture Series"
+location = "WEB 3780"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "Artificial intelligence (AI) is increasingly integrated into educational contexts, reshaping how teachers and students generate and interpret visual representations such as diagrams, illustrations, and data visualizations. While AI offers efficiency and flexibility, it also introduces inaccuracies and misleading interpretations that can undermine learning. In this talk, I present a research program centered on supporting the responsible use of AI in visual-based teaching and learning by promoting visual literacy. Grounded in design-based research, I design and evaluate AI-augmented learning environment where educators and students engage with AI-generated outputs as critical inquirers. This work shows that these approaches improved interpretive accuracy, deepened reasoning about visual representations, and reduce over-reliance on AI. Together, this work contributes design principles for fostering responsible AI use in visual-based educational contexts."
+
+[[speakers]]
+name = "Jihyun Rho"
+affiliation = ""
+website = ""
+photo = ""
+bio = "Jihyun Rho is a Postdoctoral Researcher at the University of Florida. She earned her Ph.D. in the Learning Sciences program in the Department of Educational Psychology at the University of Wisconsin–Madison. Her research uses design-based research and learning analytics to design and evaluate AI-augmented learning environments for visual-based learning. She studies how learners and educators interact with AI-generated representations, combining qualitative analysis of interaction processes with experimental approaches to examine learning outcomes, reasoning, and reliance on AI. Her scholarship appears in leading journals and conferences in learning sciences and AI in education."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "E9585003-22AD-4747-8A94-B9E79CA677A9"
+imported_on = 2026-08-18
+needs_review = true

@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "What Happens in the 10 Years Following a State Government-Caused Environmental Injustice? Flint's Progress Since Its Water Crisis"
+date = 2026-03-25
+start_time = "16:00"
+end_time = "17:00"
+series = "Data Science & AI Lecture Series"
+location = "MLIB 1110 | Zoom: 890 9876 9672, Passcode: 156565"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "The Flint Water Crisis was the result of decades of deliberate disinvestment and state government ineptitude. In this talk, Dr. Sadler will discuss how the crisis unfolded, and how his research - examining environmental exposures, neighborhood conditions, and blood lead levels - revealed its scale. He will also address what has changed in Flint since then, including the massive new investments in the city that have brought hope in the wake of catastrophe."
+
+[[speakers]]
+name = "Dick Sadler"
+affiliation = ""
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "94D08A7C-78DD-4581-8F09-ECDF6C333DE4"
+imported_on = 2026-08-18
+needs_review = true

@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Evaluating and Testing Natural Language Processing Models"
+date = 2021-12-10
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
+slides = ""
+recording = ""
+canceled = false
+abstract = """
+Current evaluation of the generalization of natural language processing (NLP) systems, and much of machine learning, primarily consists of measuring the accuracy on held-out instances of the dataset. Since the held-out instances are often gathered using similar annotation process as the training data, they include the same biases that act as shortcuts for machine learning models, allowing them to achieve accurate results without requiring actual natural language understanding. Thus held-out accuracy is often a poor proxy for measuring generalization. Further, aggregate metrics have little to say about where the problems may lie, and how to address them.
+In this talk, I will introduce a number of approaches we are investigating to perform a more thorough evaluation of NLP systems. I will first provide a quick overview of automated techniques for perturbing instances in the dataset that identify loopholes and shortcuts in NLP models, including semantic adversaries and universal triggers. I will then describe recent work on creating comprehensive and thorough tests and evaluation benchmarks for NLP using CheckList, that aim to directly evaluate comprehension and understanding capabilities. The talk will include a number of NLP tasks, such as sentiment analysis, textual entailment, paraphrase detection, and question answering.
+
+Dr. Sameer Singh is an Associate Professor of Computer Science at the University of California, Irvine (UCI) and an Allen AI Fellow at Allen Institute for AI. He is working primarily on robustness and interpretability of machine learning algorithms, along with models that reason with text and structure for natural language processing. Sameer was a postdoctoral researcher at the University of Washington and received his PhD from the University of Massachusetts, Amherst. He has received the NSF CAREER award, selected as a DARPA Riser, UCI Distinguished Early Career Faculty award, and the Hellman Faculty Fellowship. His group has received funding from Allen Institute for AI, Amazon, NSF, DARPA, Adobe Research, Hasso Plattner Institute, NEC, Base 11, and FICO. Sameer has published extensively at machine learning and natural language processing venues and received conference paper awards at KDD 2016, ACL 2018, EMNLP 2019, AKBC 2020, and ACL 2020. (https://sameersingh.org/)
+"""
+
+[[speakers]]
+name = "Sameer Singh"
+affiliation = "UC Irvine"
+website = "http://sameersingh.org"
+photo = ""
+bio = "Dr. Sameer Singh is an Associate Professor of Computer Science at the University of California, Irvine (UCI) and an Allen AI Fellow at Allen Institute for AI. He is working primarily on robustness and interpretability of machine learning algorithms, along with models that reason with text and structure for natural language processing. Sameer was a postdoctoral researcher at the University of Washington and received his PhD from the University of Massachusetts, Amherst. He has received the NSF CAREER award, selected as a DARPA Riser, UCI Distinguished Early Career Faculty award, and the Hellman Faculty Fellowship. His group has received funding from Allen Institute for AI, Amazon, NSF, DARPA, Adobe Research, Hasso Plattner Institute, NEC, Base 11, and FICO. Sameer has published extensively at machine learning and natural language processing venues and received conference paper awards at KDD 2016, ACL 2018, EMNLP 2019, AKBC 2020, and ACL 2020. (https://sameersingh.org/)"
+
+[meta]
+source = "google-calendar"
+calendar_uid = "9FC6B798-1BF5-49C1-A760-08701CF251B3+ZOOMMEETINGNUMBER:93778940103"
+imported_on = 2026-08-18
+needs_review = true

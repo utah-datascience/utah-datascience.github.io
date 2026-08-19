@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Generalizable, Proactive, and Agentic Learning for Open-Ended Tasks"
+date = 2026-03-16
+start_time = "10:00"
+end_time = "11:00"
+series = "Data Science & AI Lecture Series"
+location = "WEB 3780 (Evans)"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "Open-ended, human-like intelligence requires flexibility, proactivity, and social intelligence: we must learn subjective goals and adapt to novel, complex scenarios. . Current AI systems struggle to learn these behaviors because reward signals are unclear, task context information is incomplete, and the environment lacks observability. I outline a research agenda focused on building agentic learning systems that operate under such uncertainty. (1) Instead of enumerating task-specific heuristics, I propose training AI systems through self-play in an adversarial setting, where models learn by interacting, critiquing, and improving against dynamically evolving counterparts. (2) I equip agents with the ability to proactively gather missing information when task context is incomplete and 3) I reconstruct environment representations through memory to support long-horizon agentic reasoning. Together, I will show, these techniques enable AI systems to learn abstract objectives in tasks as varied as creative writing, multi-agent coordination and long-horizon problem solving, enhancing the creativity, usefulness, and strategic helpfulness of agents in open-ended environments."
+
+[[speakers]]
+name = "Tenghao Huang"
+affiliation = ""
+website = ""
+photo = ""
+bio = "Tenghao Huang is a Ph.D. candidate in Computer Science at the University of Southern California. His research focuses on proactive and agentic AI systems for open-ended tasks, including social world models that simulate how conversations unfold and how decisions emerge from social interaction. His work is recognized by an EMNLP Outstanding Paper Award, an ISI Viterbi Fellowship, and has received media coverage from leading technology presses such as MIT Technology and Microsoft’s Future of Work. He has served as Area Chair roles for ACL, EMNLP, NAACL conferences and has organized a tutorial on Creative Planning with LLMs at NAACL 2025."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "55F9E8E6-3D93-488A-BDF4-24C6AFA70A6F"
+imported_on = 2026-08-18
+needs_review = true

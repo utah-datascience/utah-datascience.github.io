@@ -1,0 +1,27 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Robot Navigation in the Wild"
+date = 2026-02-19
+start_time = "15:30"
+end_time = "16:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 3780"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+abstract = "In the last few decades, most robotics success stories have been limited to structured or controlled environments. A major challenge is to develop robot systems that can operate in complex or unstructured environments corresponding to homes, dense traffic, outdoor terrains, public places, etc. In this talk, we give an overview of our ongoing work on developing robust planning and navigation technologies that use recent advances in computer vision, sensor technologies, machine learning, and motion planning algorithms. We present new methods that utilize multi-modal observations from an RGB camera, 3D LiDAR, and robot odometry for scene perception, along with deep reinforcement learning for reliable planning. The latter is also used to compute dynamically feasible and spatial aware velocities for a robot navigating among mobile obstacles and uneven terrains. We have integrated these methods with wheeled robots, home robots, and legged platforms and highlight their performance in crowded indoor scenes, home environments, and dense outdoor terrains."
+
+[[speakers]]
+name = "Dinesh Manocha"
+affiliation = ""
+website = ""
+photo = ""
+bio = "Prof. Dinesh Manocha is Paul Chrisman-Iribe Chair in Computer Science & ECE and Distinguished University Professor at University of Maryland College Park. His research interests include virtual environments, physics-based modeling, and robotics. His group has developed several software packages that are standard and licensed to 60+ commercial vendors. He has published more than 850 papers & supervised 63 PhD dissertations. He is a Fellow of AAAI, AAAS, ACM, IEEE, and NAI and member of ACM SIGGRAPH and IEEE VR Academies, and Bézier Award from Solid Modeling Association. He received the Distinguished Alumni Award from IIT Delhi the Distinguished Career in Computer Science Award from Washington Academy of Sciences. He was a co-founder of Impulsonic, a developer of physics-based audio simulation technologies, which was acquired by Valve Inc in November of 2016."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "FBA98777-F211-4B3A-AD5D-96DBA7018758"
+imported_on = 2026-08-18
+needs_review = true
