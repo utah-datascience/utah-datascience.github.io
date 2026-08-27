@@ -17,3 +17,8 @@ _site
 
 #pycharm
 .idea
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
