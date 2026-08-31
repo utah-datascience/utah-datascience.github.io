@@ -9,6 +9,8 @@ header:
 
     [Lecture Series](/seminar.html)
     {: class="btn btn-neutral"}
+    [Subscribe (iCal)](webcal://datascience.utah.edu/talks.ics)
+    {: class="btn btn-neutral"}
   background-image: /assets/img/header-background/zion-shorter.jpg
 ---
 
@@ -226,6 +228,21 @@ lower-cased, so the search box covers all of them.
 </script>
 
 ---
+
+<h2>Subscribe</h2>
+
+<p>
+This archive is also an <a href="{{ '/talks.ics' | relative_url }}">iCalendar feed</a>, updated
+whenever a talk record changes. Add it once and every future talk shows up in your own calendar:
+</p>
+
+<ul>
+  <li><strong>One click</strong> (Apple Calendar, Outlook, most desktop apps):
+    <a href="webcal://datascience.utah.edu/talks.ics">webcal://datascience.utah.edu/talks.ics</a></li>
+  <li><strong>Google Calendar</strong>: <em>Other calendars</em> &rarr; <em>+</em> &rarr; <em>From URL</em>, and paste
+    <code>https://datascience.utah.edu/talks.ics</code></li>
+  <li><strong>Download</strong> a one-off copy: <a href="{{ '/talks.ics' | relative_url }}">talks.ics</a></li>
+</ul>
 
 <p class="text-muted">
 Talk records live in <code>_data/talks/</code> as TOML files; the pages above are generated from them.

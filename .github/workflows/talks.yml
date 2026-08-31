@@ -1,5 +1,10 @@
 name: Talk pages
 
+# The talk pages and the calendar feed are generated from _data/talks/*.toml.
+# This keeps them in step with the records without anyone having to remember:
+# whatever the generator produces is committed back to the branch. That means a
+# talk can be added or edited straight from the GitHub web UI.
+
 on:
   pull_request:
     branches:
@@ -9,18 +14,61 @@ on:
     branches:
       - main
       - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "talks-${{ github.head_ref || github.ref }}"
+  cancel-in-progress: false
 
 jobs:
-  check:
+  generate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # for pull requests, check out the branch itself so we can push to it
+          ref: ${{ github.head_ref || github.ref_name }}
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Check that _talks/ matches _data/talks/
+      - name: Generate talk pages and talks.ics
+        run: python3 scripts/generate_talks.py
+
+      - name: Commit any changes
+        id: commit
+        run: |
+          if git diff --quiet -- _talks talks.ics; then
+            echo "Talk pages and talks.ics are already up to date."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _talks talks.ics
+          git commit -m "Regenerate talk pages and talks.ics [skip ci]"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Report
+        if: steps.commit.outputs.changed == 'true'
+        run: echo "::notice::Regenerated the talk pages and talks.ics and pushed the result."
+
+  # A fork cannot be pushed to, so tell the contributor what to run instead.
+  check-fork:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check that _talks/ and talks.ics match _data/talks/
         run: python3 scripts/generate_talks.py --check

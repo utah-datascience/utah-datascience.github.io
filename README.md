@@ -154,6 +154,57 @@ speaker, or year, and land on a pre-filtered view via a link such as
 `/talks/?tag=robotics` or `/talks/?speaker=Anna%20Fariha`. Without JavaScript
 the full list still renders; only the filter controls are hidden.
 
+#### The calendar feed (talks.ics)
+
+`make talks` also writes `talks.ics`, an iCalendar feed of every talk record,
+served at <https://datascience.utah.edu/talks.ics>. It is generated and
+committed like the talk pages, and the same CI check keeps it from going stale,
+so the feed on the live site always matches the records in `_data/talks/`.
+
+**Share this URL**, and it works in every calendar app:
+
+```
+https://datascience.utah.edu/talks.ics
+```
+
+* **Google Calendar**: *Other calendars* -> *+* -> *From URL*, paste the URL
+* **Outlook** (web / Microsoft 365): *Add calendar* -> *Subscribe from web*, paste the URL
+* **Apple Calendar**: *File* -> *New Calendar Subscription*, paste the URL (or
+  open `webcal://datascience.utah.edu/talks.ics`, which does it in one click)
+* **Thunderbird and the rest**: any "subscribe to a remote calendar" option
+
+Use the GitHub Pages URL above rather than a `raw.githubusercontent.com` link.
+The raw file is served as `text/plain` (some clients refuse to subscribe), the
+URL carries the branch name in it, and it is rate limited. The Pages URL is on
+our own domain and is served as `text/calendar`.
+
+How quickly subscribers see a change is up to their client, not us: Apple
+Calendar lets the subscriber pick (five minutes to a day), Outlook re-reads
+every few hours, and Google Calendar refreshes on its own schedule, which can
+be up to a day and cannot be forced. The feed asks for hourly refreshes via
+`REFRESH-INTERVAL`, which Apple and Outlook honour. In other words this is
+right for a weekly seminar, but do not count on a subscriber seeing a room
+change made an hour before the talk.
+
+Each event carries the talk's title and speaker, the abstract, the location and
+Zoom link, its tags as categories, and a link back to the talk page. Canceled
+talks stay in the feed marked `STATUS:CANCELLED`, which is how a subscriber's
+calendar learns that a talk is off.
+
+One thing that does *not* work, in case it comes up: subscribing to this feed
+in Google Calendar and then sharing that calendar onward. A calendar added
+"from URL" is private to the account that added it -- Google offers no sharing
+settings for it at all. The `.ics` URL is the thing to share; it is the same
+link for everyone and needs no account.
+
+If the goal is instead to keep the existing shared Google Calendar in step with
+these records (so people who already have that calendar keep it), that takes
+the Google Calendar API: a service account, the calendar shared with that
+account's address, its key in a repository secret, and a workflow that upserts
+each record as an event keyed by `iCalUID`. That is a bigger change and it
+makes this repository the source of truth for the calendar -- edits made in
+Google Calendar would be overwritten on the next sync.
+
 #### Seeding records from the Google Calendar
 
 `scripts/import_calendar_talks.py` reads the series' public Google Calendar and
