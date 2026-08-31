@@ -8,9 +8,9 @@ header:
 
     [mailing list](https://mailman.cs.utah.edu/mailman3/lists/ucds-seminar.cs.utah.edu/)
     {: class="btn btn-neutral"}
-    [Calendar](https://calendar.google.com/calendar?cid=ZWtvbDd1bHFtMTRudjE1NWFuZ3V0MnJsZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
-    {: class="btn btn-neutral"}
     [Subscribe (iCal)](webcal://datascience.utah.edu/talks.ics)
+    {: class="btn btn-neutral"}
+    [All talks](/talks/)
     {: class="btn btn-neutral"}
   background-image: /assets/img/header-background/zion-shorter.jpg
 ---
@@ -42,8 +42,8 @@ Every talk we host gets its own page with the abstract, speaker bio, slides, and
 
 Subscribe to the series in your own calendar with
 [webcal://datascience.utah.edu/talks.ics](webcal://datascience.utah.edu/talks.ics)
-(in Google Calendar: *Other calendars* &rarr; *+* &rarr; *From URL*, then paste
-`https://datascience.utah.edu/talks.ics`). The feed is built from the same talk
-records as the pages above. You can also browse the schedule by week:
+&mdash; in Google Calendar, *Other calendars* &rarr; *+* &rarr; *From URL*, then paste
+`https://datascience.utah.edu/talks.ics`; in Outlook, *Add calendar* &rarr;
+*Subscribe from web*. Or browse the schedule here:
 
 {% include full_calendar.html %}

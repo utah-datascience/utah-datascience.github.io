@@ -205,10 +205,26 @@ each record as an event keyed by `iCalUID`. That is a bigger change and it
 makes this repository the source of truth for the calendar -- edits made in
 Google Calendar would be overwritten on the next sync.
 
+#### The calendar view
+
+The calendar on the seminar page (`_includes/full_calendar.html`) is
+[FullCalendar](https://fullcalendar.io/), which the repository already vendors
+under `assets/fullcalendar-4.3.1/`. It reads `talks.json` -- a FullCalendar
+event feed written by the same generator as everything else -- so the calendar,
+the talk pages, and the `.ics` feed can never disagree. It offers an 8-week
+list, a year list, and a month grid; clicking an event opens that talk's page.
+
+It used to read the Google Calendar through the Google Calendar API, with an
+API key committed in the include. That key, the `google-calendar` plugin, and
+`assets/js/fetchGoogleCalendar.js` are all gone: nothing on the site calls
+Google any more.
+
 #### Seeding records from the Google Calendar
 
-`scripts/import_calendar_talks.py` reads the series' public Google Calendar and
-writes TOML records for talks that do not have one yet:
+The site no longer *reads* the Google Calendar at page load, but the importer is
+still there for seeding: `scripts/import_calendar_talks.py` reads the series'
+public Google Calendar and writes TOML records for talks that do not have one
+yet:
 
 ```shell
 make import-talks             # or: python3 scripts/import_calendar_talks.py

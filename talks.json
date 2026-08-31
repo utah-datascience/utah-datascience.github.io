@@ -1,0 +1,2489 @@
+[
+ {
+  "title": "Chris Musco: Randomized FunctionalAnalysis",
+  "start": "2020-01-09T12:15:00-07:00",
+  "end": "2020-01-09T13:30:00-07:00",
+  "url": "/talks/2020-01-09-chris-musco/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "algorithms & theory",
+    "machine learning",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Alexander Lex: Literate Visualization: Making Visual Analysis Sessions Reproducible and Reusable",
+  "start": "2020-01-16T12:15:00-07:00",
+  "end": "2020-01-16T13:30:00-07:00",
+  "url": "/talks/2020-01-16-alexander-lex/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Harish Maringanti: Data Science projects in Marriott Library",
+  "start": "2020-01-23T12:15:00-07:00",
+  "end": "2020-01-23T13:30:00-07:00",
+  "url": "/talks/2020-01-23-harish-maringanti/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Qingyao Ai: Unbiased Learning to Rank: Theory and Practice",
+  "start": "2020-01-30T12:15:00-07:00",
+  "end": "2020-01-30T13:30:00-07:00",
+  "url": "/talks/2020-01-30-qingyao-ai/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "fairness & ethics"
+   ]
+  }
+ },
+ {
+  "title": "Gail Zasowski: Big Data, Big Universe: Data-Driven Discoveries in Astrophysics",
+  "start": "2020-02-06T12:15:00-07:00",
+  "end": "2020-02-06T13:30:00-07:00",
+  "url": "/talks/2020-02-06-gail-zasowski/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "physics & astronomy"
+   ]
+  }
+ },
+ {
+  "title": "Bei Wang: TopoAct: Exploring the Shape of Activations in Deep Learning",
+  "start": "2020-02-20T12:15:00-07:00",
+  "end": "2020-02-20T13:30:00-07:00",
+  "url": "/talks/2020-02-20-bei-wang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "deep learning",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Taylor Sparks: New Algorithms, Descriptors, and Machine Learning Techniques Tailored to the Challenges of Materials Informatics",
+  "start": "2020-02-27T12:15:00-07:00",
+  "end": "2020-02-27T13:30:00-07:00",
+  "url": "/talks/2020-02-27-taylor-sparks/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "algorithms & theory",
+    "machine learning",
+    "physics & astronomy"
+   ]
+  }
+ },
+ {
+  "title": "John Horel: The Promise and Perils of Big Data in the Cloud - Examples from the Atmospheric Sciences",
+  "start": "2020-03-05T12:15:00-07:00",
+  "end": "2020-03-05T13:30:00-07:00",
+  "url": "/talks/2020-03-05-john-horel/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "climate & environment"
+   ]
+  }
+ },
+ {
+  "title": "Vivek Gupta: InfoTabS: Inference on Tables as Semi-Structured Data",
+  "start": "2020-08-28T11:50:00-06:00",
+  "end": "2020-08-28T13:10:00-06:00",
+  "url": "/talks/2020-08-28-vivek-gupta/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "data management",
+    "education",
+    "machine learning",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Dheeraj Mekala: Contextualized Weak Supervision for Text Classification",
+  "start": "2020-09-04T11:50:00-06:00",
+  "end": "2020-09-04T13:10:00-06:00",
+  "url": "/talks/2020-09-04-dheeraj-mekala/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "machine learning",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Parthe Pandit: Characterizing the asymptotic performance of inverse problems over Deep Networks",
+  "start": "2020-09-11T11:50:00-06:00",
+  "end": "2020-09-11T13:10:00-06:00",
+  "url": "/talks/2020-09-11-parthe-pandit/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "deep learning",
+    "machine learning",
+    "optimization"
+   ]
+  }
+ },
+ {
+  "title": "Vishnu Lokhande: Optimization methods for imposing Fairness in Computer Vision Models",
+  "start": "2020-09-18T11:50:00-06:00",
+  "end": "2020-09-18T13:10:00-06:00",
+  "url": "/talks/2020-09-18-vishnu-lokhande/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "computer vision",
+    "fairness & ethics",
+    "machine learning",
+    "optimization"
+   ]
+  }
+ },
+ {
+  "title": "Matthew H. Samore, Jeffrey Humpherys: Learning to care",
+  "start": "2020-09-25T11:50:00-06:00",
+  "end": "2020-09-25T13:10:00-06:00",
+  "url": "/talks/2020-09-25-matthew-h-samore-jeffrey-humpherys/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": []
+  }
+ },
+ {
+  "title": "Ellen Riloff: Identifying Affective Events and the Reasons for their Polarity",
+  "start": "2020-10-02T11:50:00-06:00",
+  "end": "2020-10-02T13:10:00-06:00",
+  "url": "/talks/2020-10-02-ellen-riloff/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "machine learning",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Swaroop Mishra: DQI: Measuring Data Quality in NLP",
+  "start": "2020-10-09T11:50:00-06:00",
+  "end": "2020-10-09T13:10:00-06:00",
+  "url": "/talks/2020-10-09-swaroop-mishra/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "data management",
+    "fairness & ethics",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Varun Gangal: Examining Extra Sentential Abilities of Contextual Embeddings",
+  "start": "2020-10-16T11:50:00-06:00",
+  "end": "2020-10-16T13:10:00-06:00",
+  "url": "/talks/2020-10-16-varun-gangal/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "deep learning"
+   ]
+  }
+ },
+ {
+  "title": "Nancy Wang: Global Table Extractor (GTE): A Framework for Joint Table Identification and Cell Structure Recognition Using Visual Context",
+  "start": "2020-10-23T11:50:00-06:00",
+  "end": "2020-10-23T13:10:00-06:00",
+  "url": "/talks/2020-10-23-nancy-wang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "biology & genomics",
+    "computer vision",
+    "data management",
+    "deep learning"
+   ]
+  }
+ },
+ {
+  "title": "Daniel Scharfstein: Semiparametrics: A Biostatistician’s Toolbox",
+  "start": "2020-10-30T11:50:00-06:00",
+  "end": "2020-10-30T13:10:00-06:00",
+  "url": "/talks/2020-10-30-daniel-scharfstein/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "causal inference",
+    "health & medicine",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Alberto Cairo: Data Visualization: How to Make Good Decisions",
+  "start": "2020-10-30T15:30:00-06:00",
+  "end": "2020-10-30T16:30:00-06:00",
+  "url": "/talks/2020-10-30-alberto-cairo/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "human-centered computing",
+    "networks & graphs",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Bhargavi Paranjape: An Information Bottleneck Approach for Rationale Extraction",
+  "start": "2020-11-06T11:50:00-07:00",
+  "end": "2020-11-06T13:10:00-07:00",
+  "url": "/talks/2020-11-06-bhargavi-paranjape/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "education",
+    "fairness & ethics",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Akanksha Atrey: Towards High-Performance Machine Learning on the Edge",
+  "start": "2020-11-13T11:50:00-07:00",
+  "end": "2020-11-13T13:10:00-07:00",
+  "url": "/talks/2020-11-13-akanksha-atrey/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "machine learning",
+    "privacy & security"
+   ]
+  }
+ },
+ {
+  "title": "Akhil Arora: Low-rank Subspaces for Unsupervised Entity Linking",
+  "start": "2020-11-20T11:50:00-07:00",
+  "end": "2020-11-20T13:10:00-07:00",
+  "url": "/talks/2020-11-20-akhil-arora/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "deep learning",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Danish Pruthi: A Tale of Evidence and Explanations",
+  "start": "2020-12-04T11:50:00-07:00",
+  "end": "2020-12-04T13:10:00-07:00",
+  "url": "/talks/2020-12-04-danish-pruthi/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "education"
+   ]
+  }
+ },
+ {
+  "title": "Grad Student Spotlights: 1. Introduction and Logistics",
+  "start": "2021-01-22T14:00:00-07:00",
+  "end": "2021-01-22T15:00:00-07:00",
+  "url": "/talks/2021-01-22-grad-student-spotlights/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "data management",
+    "fairness & ethics"
+   ]
+  }
+ },
+ {
+  "title": "Sanghamitra Dutta: A Systematic Understanding of Exempt and Non-Exempt Algorithmic Biases",
+  "start": "2021-01-29T14:00:00-07:00",
+  "end": "2021-01-29T15:00:00-07:00",
+  "url": "/talks/2021-01-29-sanghamitra-dutta/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "causal inference",
+    "fairness & ethics",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Michal Moshkovitz: Unexpected Effects of Online no-Substitution k-means Clustering",
+  "start": "2021-02-05T14:00:00-07:00",
+  "end": "2021-02-05T15:00:00-07:00",
+  "url": "/talks/2021-02-05-michal-moshkovitz/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory"
+   ]
+  }
+ },
+ {
+  "title": "Fritz Lekschas: Visual Pattern Exploration At and Across Scales",
+  "start": "2021-02-12T14:00:00-07:00",
+  "end": "2021-02-12T15:00:00-07:00",
+  "url": "/talks/2021-02-12-fritz-lekschas/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "biology & genomics",
+    "geospatial",
+    "machine learning",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Samson Zhou: Tight Bounds for Adversarially Robust Streams and Sliding Windows via Difference Estimators",
+  "start": "2021-02-19T14:00:00-07:00",
+  "end": "2021-02-19T15:00:00-07:00",
+  "url": "/talks/2021-02-19-samson-zhou/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Rajesh Jayaram: An Improved Analysis of the Quadtree for High Dimensional EMD",
+  "start": "2021-02-26T14:00:00-07:00",
+  "end": "2021-02-26T15:00:00-07:00",
+  "url": "/talks/2021-02-26-rajesh-jayaram/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "data management",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Yaoqing Yang: Boundary thickness and robustness in learning models",
+  "start": "2021-03-12T14:00:00-07:00",
+  "end": "2021-03-12T15:00:00-07:00",
+  "url": "/talks/2021-03-12-yaoqing-yang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "machine learning",
+    "privacy & security"
+   ]
+  }
+ },
+ {
+  "title": "Vivek Gupta: Logic based classification for Low Resource Setting",
+  "start": "2021-03-19T14:00:00-06:00",
+  "end": "2021-03-19T15:00:00-06:00",
+  "url": "/talks/2021-03-19-vivek-gupta/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "machine learning",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Emily Beth Wall: As We Are: Detecting and Mitigating Human Bias in Visual Analytics",
+  "start": "2021-04-09T14:00:00-06:00",
+  "end": "2021-04-09T15:00:00-06:00",
+  "url": "/talks/2021-04-09-emily-beth-wall/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Virtual",
+   "tags": [
+    "fairness & ethics",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Arun Sai Suggala: Game Theoretic Statistics",
+  "start": "2021-04-16T14:00:00-06:00",
+  "end": "2021-04-16T15:00:00-06:00",
+  "url": "/talks/2021-04-16-arun-sai-suggala/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Virtual",
+   "tags": [
+    "algorithms & theory",
+    "machine learning",
+    "optimization",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Lizzie Kumar: Epistemic values in feature importance methods: Lessons from feminist epistemology",
+  "start": "2021-04-23T14:00:00-06:00",
+  "end": "2021-04-23T15:00:00-06:00",
+  "url": "/talks/2021-04-23-lizzie-kumar/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Virtual",
+   "tags": [
+    "algorithms & theory",
+    "fairness & ethics",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Jeff Phillips: A Visual tour of Bias Mitigation",
+  "start": "2021-08-27T14:00:00-06:00",
+  "end": "2021-08-27T15:00:00-06:00",
+  "url": "/talks/2021-08-27-jeff-phillips/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "deep learning",
+    "fairness & ethics",
+    "natural language processing",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Shandian Zhe: Multi-fidelity Learning and Optimization for Physical Simulation and AutoML",
+  "start": "2021-09-03T14:00:00-06:00",
+  "end": "2021-09-03T15:00:00-06:00",
+  "url": "/talks/2021-09-03-shandian-zhe/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "optimization"
+   ]
+  }
+ },
+ {
+  "title": "Pierre Lermusiaux: Neural Closure Models for Dynamical Systems",
+  "start": "2021-09-10T14:00:00-06:00",
+  "end": "2021-09-10T15:00:00-06:00",
+  "url": "/talks/2021-09-10-pierre-lermusiaux/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "machine learning",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Ross Whitaker: Air Quality Mapping Using Sensor Networks and Statistical Regression",
+  "start": "2021-09-17T14:00:00-06:00",
+  "end": "2021-09-17T15:00:00-06:00",
+  "url": "/talks/2021-09-17-ross-whitaker/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "climate & environment",
+    "geospatial",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "C. Seshadhri: Studying the (in)effectiveness of low dimensional graph embeddings",
+  "start": "2021-09-24T14:00:00-06:00",
+  "end": "2021-09-24T15:00:00-06:00",
+  "url": "/talks/2021-09-24-c-seshadhri/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "deep learning",
+    "machine learning",
+    "networks & graphs"
+   ]
+  }
+ },
+ {
+  "title": "Tony H. Grubesic: Estimating Potential Oil Spill Trajectories and Coastal Impacts from Near-Shore Storage Facilities: A Case Study of FSO Nabarima and the Gulf of Paria",
+  "start": "2021-10-01T14:00:00-06:00",
+  "end": "2021-10-01T15:00:00-06:00",
+  "url": "/talks/2021-10-01-tony-h-grubesic/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Anna Little: The Mathematics of the Signal-to-Noise Ratio and Insights for Data Science",
+  "start": "2021-10-08T14:00:00-06:00",
+  "end": "2021-10-08T15:00:00-06:00",
+  "url": "/talks/2021-10-08-anna-little/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "algorithms & theory",
+    "biology & genomics"
+   ]
+  }
+ },
+ {
+  "title": "Erin Wolf Chambers: Applications of topology and geometry to root analysis",
+  "start": "2021-10-22T14:00:00-06:00",
+  "end": "2021-10-22T15:00:00-06:00",
+  "url": "/talks/2021-10-22-erin-wolf-chambers/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": []
+  }
+ },
+ {
+  "title": "Bao Wang: How Differential Equations and Random Graph Insights Benefit Deep Learning",
+  "start": "2021-10-29T14:00:00-06:00",
+  "end": "2021-10-29T15:00:00-06:00",
+  "url": "/talks/2021-10-29-bao-wang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "algorithms & theory",
+    "deep learning",
+    "networks & graphs"
+   ]
+  }
+ },
+ {
+  "title": "Marina Kogan: Sequence-based approaches as human-centered data science methods for crisis informatics",
+  "start": "2021-11-05T14:00:00-06:00",
+  "end": "2021-11-05T15:00:00-06:00",
+  "url": "/talks/2021-11-05-marina-kogan/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "human-centered computing",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Mikhail Belkin: From classical statistics to modern deep learning",
+  "start": "2021-11-12T14:00:00-07:00",
+  "end": "2021-11-12T15:00:00-07:00",
+  "url": "/talks/2021-11-12-mikhail-belkin/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "deep learning",
+    "machine learning",
+    "optimization",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Michael Yeh: Towards a Near Universal Time Series Data Mining Tool: Introducing the Matrix Profile",
+  "start": "2021-11-19T14:00:00-07:00",
+  "end": "2021-11-19T15:00:00-07:00",
+  "url": "/talks/2021-11-19-michael-yeh/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "computer vision"
+   ]
+  }
+ },
+ {
+  "title": "Julia Silge: Data visualization for machine learning practitioners",
+  "start": "2021-12-03T14:00:00-07:00",
+  "end": "2021-12-03T15:00:00-07:00",
+  "url": "/talks/2021-12-03-julia-silge/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147 and Zoom",
+   "tags": [
+    "human-centered computing",
+    "machine learning",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Sameer Singh: Evaluating and Testing Natural Language Processing Models",
+  "start": "2021-12-10T14:00:00-07:00",
+  "end": "2021-12-10T15:00:00-07:00",
+  "url": "/talks/2021-12-10-sameer-singh/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "machine learning",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Yi Zhou: Understanding the Convergence of Optimization Algorithms for Minimax Machine Learning",
+  "start": "2022-01-14T15:00:00-07:00",
+  "end": "2022-01-14T16:00:00-07:00",
+  "url": "/talks/2022-01-14-yi-zhou/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1250",
+   "tags": [
+    "algorithms & theory",
+    "deep learning",
+    "machine learning",
+    "optimization"
+   ]
+  }
+ },
+ {
+  "title": "Chinmay Hedge: Designing Neural Networks for Efficient Encrypted Inference",
+  "start": "2022-01-21T15:00:00-07:00",
+  "end": "2022-01-21T16:00:00-07:00",
+  "url": "/talks/2022-01-21-chinmay-hedge/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "deep learning",
+    "privacy & security"
+   ]
+  }
+ },
+ {
+  "title": "Swaroop Mishra: Towards the Development of Models that Learn New Tasks from Instructions",
+  "start": "2022-01-28T15:00:00-07:00",
+  "end": "2022-01-28T16:00:00-07:00",
+  "url": "/talks/2022-01-28-swaroop-mishra/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147 (LCR)",
+   "tags": [
+    "education"
+   ]
+  }
+ },
+ {
+  "title": "Tuhin Chakrabarty: The Curious Case of Figurative Language",
+  "start": "2022-02-04T15:00:00-07:00",
+  "end": "2022-02-04T16:00:00-07:00",
+  "url": "/talks/2022-02-04-tuhin-chakrabarty/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147 (LCR)",
+   "tags": [
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Vaggos Chatziafratis: Neural Networks Expressivity through the lens of Dynamical Systems",
+  "start": "2022-02-11T15:00:00-07:00",
+  "end": "2022-02-11T16:00:00-07:00",
+  "url": "/talks/2022-02-11-vaggos-chatziafratis/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "deep learning"
+   ]
+  }
+ },
+ {
+  "title": "Jeff Phillips: Some Very Basic Theory of Classification (in low dimensions",
+  "start": "2022-02-18T15:00:00-07:00",
+  "end": "2022-02-18T16:00:00-07:00",
+  "url": "/talks/2022-02-18-jeff-phillips/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1250",
+   "tags": [
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Sunipa Dev: Towards Inclusive and Socially Aware Language Technologies",
+  "start": "2022-02-25T15:00:00-07:00",
+  "end": "2022-02-25T16:00:00-07:00",
+  "url": "/talks/2022-02-25-sunipa-dev/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "fairness & ethics",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Anirudh Goyal of Montreal: From Specialists to Generalists: Inductive Biases of Deep Learning for Higher Level Cognition",
+  "start": "2022-03-04T15:00:00-07:00",
+  "end": "2022-03-04T16:00:00-07:00",
+  "url": "/talks/2022-03-04-anirudh-goyal-of-montreal/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147 (LCR)",
+   "tags": [
+    "deep learning",
+    "fairness & ethics",
+    "machine learning",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Greg Herschlag, Jon Mattingly: Quantifying Gerrymandering: Hearing the Will of the People",
+  "start": "2022-03-18T15:00:00-06:00",
+  "end": "2022-03-18T16:00:00-06:00",
+  "url": "/talks/2022-03-18-greg-herschlag-jon-mattingly/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147 (LCR)",
+   "tags": [
+    "algorithms & theory",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Chad Topaz, Jude Higdon: Quantitative Approaches to Social Justice",
+  "start": "2022-03-25T15:00:00-06:00",
+  "end": "2022-03-25T16:00:00-06:00",
+  "url": "/talks/2022-03-25-chad-topaz-jude-higdon/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1250",
+   "tags": [
+    "fairness & ethics",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Debanjan Mahata: Identifying Keyphrases from Text Documents - From Heuristics to Language Models",
+  "start": "2022-04-01T15:00:00-06:00",
+  "end": "2022-04-01T16:00:00-06:00",
+  "url": "/talks/2022-04-01-debanjan-mahata/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "\"",
+   "tags": [
+    "deep learning",
+    "machine learning",
+    "natural language processing",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Tao Li: Improving Data Efficiency of Neural Models using Logic",
+  "start": "2022-04-08T15:00:00-06:00",
+  "end": "2022-04-08T16:00:00-06:00",
+  "url": "/talks/2022-04-08-tao-li/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147 (LCR)",
+   "tags": [
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Abhinav Kumar: Mathematical Modeling for Landmark and 3D Object Detection",
+  "start": "2022-04-15T15:00:00-06:00",
+  "end": "2022-04-15T16:00:00-06:00",
+  "url": "/talks/2022-04-15-abhinav-kumar/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147 (LCR)",
+   "tags": [
+    "computer vision",
+    "robotics"
+   ]
+  }
+ },
+ {
+  "title": "Khyati Chandu: Anchoring Multimodal Narrative Generation",
+  "start": "2022-04-22T15:00:00-06:00",
+  "end": "2022-04-22T16:00:00-06:00",
+  "url": "/talks/2022-04-22-khyati-chandu/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1250 and Zoom",
+   "tags": [
+    "computer vision",
+    "education",
+    "machine learning",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "James Brundage: Leveraging Unlabeled Data for Machine Learning in the Electrocardiogram",
+  "start": "2022-04-29T15:00:00-06:00",
+  "end": "2022-04-29T16:00:00-06:00",
+  "url": "/talks/2022-04-29-james-brundage/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147 (LCR)",
+   "tags": [
+    "health & medicine",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Bei Wang Phillips: On Hypergraph Analysis and Visualization",
+  "start": "2022-08-24T10:30:00-06:00",
+  "end": "2022-08-24T11:45:00-06:00",
+  "url": "/talks/2022-08-24-bei-wang-phillips/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "networks & graphs",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Casey Greene: Talk by Casey Greene",
+  "start": "2022-08-31T10:30:00-06:00",
+  "end": "2022-08-31T11:45:00-06:00",
+  "url": "/talks/2022-08-31-casey-greene/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": []
+  }
+ },
+ {
+  "title": "Kevin Moon: Scalable supervised manifold learning with random forests and neural networks",
+  "start": "2022-09-07T10:30:00-06:00",
+  "end": "2022-09-07T11:45:00-06:00",
+  "url": "/talks/2022-09-07-kevin-moon/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "deep learning",
+    "machine learning",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Elliot Smith: Human neuronal population encoding of temporal difference learning variables during risky choices",
+  "start": "2022-09-14T10:30:00-06:00",
+  "end": "2022-09-14T11:45:00-06:00",
+  "url": "/talks/2022-09-14-elliot-smith/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "biology & genomics",
+    "health & medicine",
+    "human-centered computing"
+   ]
+  }
+ },
+ {
+  "title": "Jes Ford: Model Review: Improving Transparency, Reproducibility, & Knowledge Sharing using MLflow",
+  "start": "2022-09-21T10:30:00-06:00",
+  "end": "2022-09-21T11:45:00-06:00",
+  "url": "/talks/2022-09-21-jes-ford/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Prashant Pandey: Scalability Challenges in Large-Scale Sequence Search",
+  "start": "2022-09-28T10:30:00-06:00",
+  "end": "2022-09-28T11:45:00-06:00",
+  "url": "/talks/2022-09-28-prashant-pandey/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "biology & genomics",
+    "data management"
+   ]
+  }
+ },
+ {
+  "title": "Jessica Shi: Theoretically and Practically Efficient Parallel Nucleus Decomposition",
+  "start": "2022-10-05T10:30:00-06:00",
+  "end": "2022-10-05T11:45:00-06:00",
+  "url": "/talks/2022-10-05-jessica-shi/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "algorithms & theory",
+    "education",
+    "networks & graphs"
+   ]
+  }
+ },
+ {
+  "title": "Jie Zhang: Active Sampling for Min-Max Fairness",
+  "start": "2022-10-19T10:30:00-06:00",
+  "end": "2022-10-19T11:45:00-06:00",
+  "url": "/talks/2022-10-19-jie-zhang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "fairness & ethics",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Alex Chin: Quantifying supply-demand imbalance in ridesharing systems",
+  "start": "2022-11-02T10:30:00-06:00",
+  "end": "2022-11-02T11:45:00-06:00",
+  "url": "/talks/2022-11-02-alex-chin/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Shireen Elhabian: Data-driven Shape Analysis: Methods, Applications, and Future",
+  "start": "2022-11-09T10:30:00-07:00",
+  "end": "2022-11-09T11:45:00-07:00",
+  "url": "/talks/2022-11-09-shireen-elhabian/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "health & medicine",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Bernadette Stolz: Applications of global and local persistent homology for the shape of biological data",
+  "start": "2022-11-16T10:30:00-07:00",
+  "end": "2022-11-16T11:45:00-07:00",
+  "url": "/talks/2022-11-16-bernadette-stolz/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "biology & genomics"
+   ]
+  }
+ },
+ {
+  "title": "Aaron Quinlan: Finding signals of genome mutation in the noise of DNA sequencing error",
+  "start": "2022-11-30T10:30:00-07:00",
+  "end": "2022-11-30T11:45:00-07:00",
+  "url": "/talks/2022-11-30-aaron-quinlan/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "biology & genomics"
+   ]
+  }
+ },
+ {
+  "title": "Tao Yang: Optimizing Ranking Effectiveness and Fairness",
+  "start": "2022-12-07T10:30:00-07:00",
+  "end": "2022-12-07T11:45:00-07:00",
+  "url": "/talks/2022-12-07-tao-yang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "fairness & ethics",
+    "optimization"
+   ]
+  }
+ },
+ {
+  "title": "George Vega Yon: Prediction of Gene Functions by Leveraging Biological Insights with Mechanistic Machine Learning",
+  "start": "2023-01-11T10:45:00-07:00",
+  "end": "2023-01-11T11:45:00-07:00",
+  "url": "/talks/2023-01-11-george-vega-yon/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "biology & genomics",
+    "machine learning",
+    "networks & graphs",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Echo Warner: College of Nursing, Division of Acute and Chronic Care",
+  "start": "2023-01-18T10:45:00-07:00",
+  "end": "2023-01-18T12:00:00-07:00",
+  "url": "/talks/2023-01-18-echo-warner/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Virtual:",
+   "tags": [
+    "health & medicine",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Shweta Jain: Putting Parameterization into Practice",
+  "start": "2023-01-25T10:45:00-07:00",
+  "end": "2023-01-25T11:45:00-07:00",
+  "url": "/talks/2023-01-25-shweta-jain/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "algorithms & theory",
+    "biology & genomics",
+    "networks & graphs"
+   ]
+  }
+ },
+ {
+  "title": "Ana Marsovic: “AI” That Masters Language Could Reason about Negation",
+  "start": "2023-02-01T10:45:00-07:00",
+  "end": "2023-02-01T11:45:00-07:00",
+  "url": "/talks/2023-02-01-ana-marsovic/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "large language models",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Aaron Clauset: Meritocracy or systemic bias? Untangling the drivers the productivity and prominence among scientists",
+  "start": "2023-02-08T10:45:00-07:00",
+  "end": "2023-02-08T11:45:00-07:00",
+  "url": "/talks/2023-02-08-aaron-clauset/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "fairness & ethics",
+    "networks & graphs",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Orly Alter: Solving Cancer with Data: Mathematical Discovery and Computational and Experimental Validation of Whole-Genome Genotype–Survival and Response to Treatment Phenotype Relationships in Cancer",
+  "start": "2023-02-15T10:45:00-07:00",
+  "end": "2023-02-15T11:45:00-07:00",
+  "url": "/talks/2023-02-15-orly-alter/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "algorithms & theory",
+    "biology & genomics",
+    "health & medicine"
+   ]
+  }
+ },
+ {
+  "title": "Vivek Gupta: Inference and Reasoning for Semi-structured Tables",
+  "start": "2023-02-22T10:45:00-07:00",
+  "end": "2023-02-22T11:45:00-07:00",
+  "url": "/talks/2023-02-22-vivek-gupta/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "data management",
+    "machine learning",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Emily Hadley: Applied Strategies for Advancing Racial Equity and Addressing Bias in Big Data Research",
+  "start": "2023-03-01T10:45:00-07:00",
+  "end": "2023-03-01T11:45:00-07:00",
+  "url": "/talks/2023-03-01-emily-hadley/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "fairness & ethics",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Nate Veldt: Measuring homophily in group interactions: hypergraph models and combinatorial impossibilities",
+  "start": "2023-03-15T10:45:00-06:00",
+  "end": "2023-03-15T11:45:00-06:00",
+  "url": "/talks/2023-03-15-nate-veldt/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "networks & graphs"
+   ]
+  }
+ },
+ {
+  "title": "Bailey Fosdick: Modeling Infection Fatality Rates to Assess the Burden of COVID-19 in Developing Countries",
+  "start": "2023-03-22T10:45:00-06:00",
+  "end": "2023-03-22T11:45:00-06:00",
+  "url": "/talks/2023-03-22-bailey-fosdick/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Justin Baker: Monotone Implicit Graph Neural Networks for Long-Range Dependency Learning",
+  "start": "2023-03-29T10:45:00-06:00",
+  "end": "2023-03-29T11:45:00-06:00",
+  "url": "/talks/2023-03-29-justin-baker/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "deep learning",
+    "networks & graphs"
+   ]
+  }
+ },
+ {
+  "title": "Yao-Yaun Mao: Searching for dwarf (small) galaxies in astronomical surveys",
+  "start": "2023-04-05T10:45:00-06:00",
+  "end": "2023-04-05T11:45:00-06:00",
+  "url": "/talks/2023-04-05-yao-yaun-mao/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "deep learning",
+    "machine learning",
+    "physics & astronomy"
+   ]
+  }
+ },
+ {
+  "title": "Titus Brown: Is everything everywhere all at once? Asking questions of all public microbiome shotgun data",
+  "start": "2023-04-12T10:45:00-06:00",
+  "end": "2023-04-12T11:45:00-06:00",
+  "url": "/talks/2023-04-12-titus-brown/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147",
+   "tags": [
+    "health & medicine",
+    "society & policy",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Sumana Basu: Towards Reinforcement Learning for Precision Drug Dosing",
+  "start": "2023-04-19T10:45:00-06:00",
+  "end": "2023-04-19T11:45:00-06:00",
+  "url": "/talks/2023-04-19-sumana-basu/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "health & medicine",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Bodhisattwa Majumder: User-centric Natural Language Processing",
+  "start": "2023-05-30T15:00:00-06:00",
+  "end": "2023-05-30T16:30:00-06:00",
+  "url": "/talks/2023-05-30-bodhisattwa-majumder/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Where: MEB 3147 Large Conference Room Simcast:  (Meeting ID: 965 3805 0936, Passcode: 404653)",
+   "tags": [
+    "fairness & ethics",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Blair Sullivan: Improving Fairness of Information Access in Networks",
+  "start": "2023-08-30T10:30:00-06:00",
+  "end": "2023-08-30T11:45:00-06:00",
+  "url": "/talks/2023-08-30-blair-sullivan/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "algorithms & theory",
+    "fairness & ethics",
+    "networks & graphs"
+   ]
+  }
+ },
+ {
+  "title": "Anna Fariha: Blame the data, not the system: how data constraints can help in trustworthy machine learning and explain causes of data-system malfunction",
+  "start": "2023-09-06T10:30:00-06:00",
+  "end": "2023-09-06T11:45:00-06:00",
+  "url": "/talks/2023-09-06-anna-fariha/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "David Tench: Dynamic Graph Sketching: To Infinity And Beyond",
+  "start": "2023-09-13T10:30:00-06:00",
+  "end": "2023-09-13T11:45:00-06:00",
+  "url": "/talks/2023-09-13-david-tench/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "algorithms & theory",
+    "networks & graphs"
+   ]
+  }
+ },
+ {
+  "title": "El Kindi Rezig: Data Preparation: The Biggest Roadblock in Data Science",
+  "start": "2023-09-20T10:30:00-06:00",
+  "end": "2023-09-20T11:45:00-06:00",
+  "url": "/talks/2023-09-20-el-kindi-rezig/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "data management"
+   ]
+  }
+ },
+ {
+  "title": "Parikshit Gopalan: Loss Minimization and Multi-group Fairness",
+  "start": "2023-09-27T10:30:00-06:00",
+  "end": "2023-09-27T11:45:00-06:00",
+  "url": "/talks/2023-09-27-parikshit-gopalan/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "algorithms & theory",
+    "fairness & ethics",
+    "machine learning",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Bryan Perozzi: Leveraging the Structure of Data",
+  "start": "2023-10-04T10:30:00-06:00",
+  "end": "2023-10-04T11:45:00-06:00",
+  "url": "/talks/2023-10-04-bryan-perozzi/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "algorithms & theory",
+    "machine learning",
+    "networks & graphs",
+    "optimization"
+   ]
+  }
+ },
+ {
+  "title": "Mihai Budiu: DBSP: A formal model for streaming computation and its applications to incremental computations and databases",
+  "start": "2023-10-18T10:30:00-06:00",
+  "end": "2023-10-18T11:45:00-06:00",
+  "url": "/talks/2023-10-18-mihai-budiu/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "algorithms & theory",
+    "data management"
+   ]
+  }
+ },
+ {
+  "title": "Aydin Buluc: Computational journeys in a sparse universe",
+  "start": "2023-10-25T10:30:00-06:00",
+  "end": "2023-10-25T11:45:00-06:00",
+  "url": "/talks/2023-10-25-aydin-buluc/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "biology & genomics",
+    "networks & graphs"
+   ]
+  }
+ },
+ {
+  "title": "William Kuszmaul: Linear Probing Revisited: How to Get Rid of Clustering",
+  "start": "2023-11-01T10:30:00-06:00",
+  "end": "2023-11-01T11:45:00-06:00",
+  "url": "/talks/2023-11-01-william-kuszmaul/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "algorithms & theory",
+    "data management"
+   ]
+  }
+ },
+ {
+  "title": "Bryan Perozzi: “Leveraging the Structure of Data“",
+  "start": "2023-11-22T10:30:00-07:00",
+  "end": "2023-11-22T11:45:00-07:00",
+  "url": "/talks/2023-11-22-bryan-perozzi/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "algorithms & theory",
+    "machine learning",
+    "networks & graphs",
+    "optimization"
+   ]
+  }
+ },
+ {
+  "title": "Shangdi Yu: Framework for Parallel Hierarchical Agglomerative Clustering",
+  "start": "2023-11-29T10:30:00-07:00",
+  "end": "2023-11-29T11:45:00-07:00",
+  "url": "/talks/2023-11-29-shangdi-yu/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "algorithms & theory",
+    "optimization"
+   ]
+  }
+ },
+ {
+  "title": "Julian Shun: Parallel Batch-Dynamic Graph Algorithms",
+  "start": "2023-12-06T10:30:00-07:00",
+  "end": "2023-12-06T11:45:00-07:00",
+  "url": "/talks/2023-12-06-julian-shun/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "networks & graphs",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Felix Reidl: Talk by Felix Reidl",
+  "start": "2023-12-13T10:30:00-07:00",
+  "end": "2023-12-13T11:45:00-07:00",
+  "url": "/talks/2023-12-13-felix-reidl/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "FASB 295",
+   "tags": [
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Pratik Soni: Cryptography for Fairness",
+  "start": "2024-01-31T13:30:00-07:00",
+  "end": "2024-01-31T14:30:00-07:00",
+  "url": "/talks/2024-01-31-pratik-soni/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "fairness & ethics"
+   ]
+  }
+ },
+ {
+  "title": "Swabha Swayamdipta: Understanding LLMs through their Generative Behavior, Successes and Shortcomings",
+  "start": "2024-03-13T13:30:00-06:00",
+  "end": "2024-03-13T14:30:00-06:00",
+  "url": "/talks/2024-03-13-swabha-swayamdipta/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "large language models",
+    "machine learning",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Nitin Bakshi: Service Operations for Justice-On-Time: A Data-Driven Queueing Approach",
+  "start": "2024-04-10T13:30:00-06:00",
+  "end": "2024-04-10T14:30:00-06:00",
+  "url": "/talks/2024-04-10-nitin-bakshi/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "fairness & ethics",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Jeff Phillips: == Sketching and Classifying Spatial Trajectories ==",
+  "start": "2024-08-27T12:30:00-06:00",
+  "end": "2024-08-27T13:30:00-06:00",
+  "url": "/talks/2024-08-27-jeff-phillips/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1230",
+   "tags": [
+    "algorithms & theory"
+   ]
+  }
+ },
+ {
+  "title": "Esha Datta: Topological Signatures of Out-of-Distribution Examples",
+  "start": "2024-09-03T12:30:00-06:00",
+  "end": "2024-09-03T13:30:00-06:00",
+  "url": "/talks/2024-09-03-esha-datta/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1230",
+   "tags": [
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Guanhong Tao: Are AI-enabled Systems Safe and Secure?",
+  "start": "2024-09-10T12:30:00-06:00",
+  "end": "2024-09-10T13:30:00-06:00",
+  "url": "/talks/2024-09-10-guanhong-tao/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1230",
+   "tags": [
+    "privacy & security"
+   ]
+  }
+ },
+ {
+  "title": "Aurora Clark: The Importance of Shape in Chemistry Data",
+  "start": "2024-09-17T12:30:00-06:00",
+  "end": "2024-09-17T13:30:00-06:00",
+  "url": "/talks/2024-09-17-aurora-clark/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1230",
+   "tags": [
+    "networks & graphs",
+    "optimization"
+   ]
+  }
+ },
+ {
+  "title": "Rebecca Barter: Veridical Data Science: the Practice of Responsible Data Analysis and Decision Making",
+  "start": "2024-09-24T12:30:00-06:00",
+  "end": "2024-09-24T13:30:00-06:00",
+  "url": "/talks/2024-09-24-rebecca-barter/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1230",
+   "tags": [
+    "health & medicine",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Simon Brewer: Exploring long-term ecosystem change with self-organizing maps",
+  "start": "2024-10-01T12:30:00-06:00",
+  "end": "2024-10-01T13:30:00-06:00",
+  "url": "/talks/2024-10-01-simon-brewer/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1230",
+   "tags": [
+    "biology & genomics",
+    "climate & environment",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Raghav Venkatraman: Minmax estimation rates for manifold learning",
+  "start": "2024-10-15T12:30:00-06:00",
+  "end": "2024-10-15T13:30:00-06:00",
+  "url": "/talks/2024-10-15-raghav-venkatraman/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1230",
+   "tags": [
+    "algorithms & theory",
+    "networks & graphs",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Vivek Gupta: Reasoning on Tabular and Multimodal Data",
+  "start": "2024-10-29T12:30:00-06:00",
+  "end": "2024-10-29T13:30:00-06:00",
+  "url": "/talks/2024-10-29-vivek-gupta/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1230",
+   "tags": [
+    "computer vision",
+    "data management",
+    "natural language processing",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Amir Abdullah: Interpreting Learned Feedback Patterns in Large Language Models",
+  "start": "2024-11-12T12:30:00-07:00",
+  "end": "2024-11-12T13:30:00-07:00",
+  "url": "/talks/2024-11-12-amir-abdullah/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1230",
+   "tags": [
+    "large language models",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Hoaning Xue: Computational and experimental approaches to examining short videos' persuasive effects",
+  "start": "2024-11-19T12:30:00-07:00",
+  "end": "2024-11-19T13:30:00-07:00",
+  "url": "/talks/2024-11-19-hoaning-xue/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1230",
+   "tags": [
+    "computer vision"
+   ]
+  }
+ },
+ {
+  "title": "Zhichao Xu: Representation Learning for IR and Role of Retrieval in LLM Era",
+  "start": "2024-11-26T12:30:00-07:00",
+  "end": "2024-11-26T13:30:00-07:00",
+  "url": "/talks/2024-11-26-zhichao-xu/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 1230",
+   "tags": [
+    "large language models",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Fengjiao Wang: Supervised Learning on Tabular Data",
+  "start": "2025-01-17T13:30:00-07:00",
+  "end": "2025-01-17T14:30:00-07:00",
+  "url": "/talks/2025-01-17-fengjiao-wang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Dieter Fox: Data Science & AI Day",
+  "start": "2025-01-24T14:00:00-07:00",
+  "end": "2025-01-24T15:00:00-07:00",
+  "url": "/talks/2025-01-24-dieter-fox/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Union Ballroom",
+   "tags": [
+    "robotics"
+   ]
+  }
+ },
+ {
+  "title": "Omkar Bhalerao: Triadic First-Order Logic Queries in Temporal Networks",
+  "start": "2025-02-07T13:30:00-07:00",
+  "end": "2025-02-07T14:30:00-07:00",
+  "url": "/talks/2025-02-07-omkar-bhalerao/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "algorithms & theory",
+    "data management",
+    "networks & graphs"
+   ]
+  }
+ },
+ {
+  "title": "Bao Wang: Conditional Flow Divergence Matching",
+  "start": "2025-02-14T13:30:00-07:00",
+  "end": "2025-02-14T14:30:00-07:00",
+  "url": "/talks/2025-02-14-bao-wang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "algorithms & theory",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Chenglu Li: Teaching and Learning at the Human-Technology Frontier: The Power of Artificial Intelligence and Big Data",
+  "start": "2025-02-21T13:30:00-07:00",
+  "end": "2025-02-21T14:30:00-07:00",
+  "url": "/talks/2025-02-21-chenglu-li/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "education",
+    "fairness & ethics",
+    "large language models"
+   ]
+  }
+ },
+ {
+  "title": "Bernardo Modenesi: Unveiling Hidden Patterns in Agent Behavior with Discrete-Choice and Network Theory",
+  "start": "2025-02-28T13:30:00-07:00",
+  "end": "2025-02-28T14:30:00-07:00",
+  "url": "/talks/2025-02-28-bernardo-modenesi/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "algorithms & theory",
+    "fairness & ethics",
+    "large language models",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Jeff Phillips: Robust High-Dimensional Mean Estimation With Low Data Size",
+  "start": "2025-03-21T13:30:00-06:00",
+  "end": "2025-03-21T14:30:00-06:00",
+  "url": "/talks/2025-03-21-jeff-phillips/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Seth Pettie: Everything you always wanted to know about Cardinality",
+  "start": "2025-03-28T13:30:00-06:00",
+  "end": "2025-03-28T14:30:00-06:00",
+  "url": "/talks/2025-03-28-seth-pettie/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "algorithms & theory",
+    "education",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Sabyasachi Basu: \"Triangles, Communities, and Dense Subgraphs\"",
+  "start": "2025-04-04T13:30:00-06:00",
+  "end": "2025-04-04T14:30:00-06:00",
+  "url": "/talks/2025-04-04-sabyasachi-basu/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "networks & graphs",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Peter Jacobs: Estimating High-Dimensional Zipfians & Language Distributions",
+  "start": "2025-04-11T13:30:00-06:00",
+  "end": "2025-04-11T14:30:00-06:00",
+  "url": "/talks/2025-04-11-peter-jacobs/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "natural language processing",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Tucker Hermans: Stein Variational Inference for Robotic Learning and Control",
+  "start": "2025-04-18T13:30:00-06:00",
+  "end": "2025-04-18T14:30:00-06:00",
+  "url": "/talks/2025-04-18-tucker-hermans/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "algorithms & theory",
+    "robotics"
+   ]
+  }
+ },
+ {
+  "title": "Varun Shankar: Kernel Methods for Operator Learning",
+  "start": "2025-08-20T11:00:00-06:00",
+  "end": "2025-08-20T12:00:00-06:00",
+  "url": "/talks/2025-08-20-varun-shankar/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": []
+  }
+ },
+ {
+  "title": "Konstantin Genin: Predictions as Public Reasons",
+  "start": "2025-08-27T11:00:00-06:00",
+  "end": "2025-08-27T12:00:00-06:00",
+  "url": "/talks/2025-08-27-konstantin-genin/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": []
+  }
+ },
+ {
+  "title": "Daniel Brown: Swarms, Emergent Behaviors, and Multi-Agent Systems",
+  "start": "2025-09-03T11:00:00-06:00",
+  "end": "2025-09-03T12:00:00-06:00",
+  "url": "/talks/2025-09-03-daniel-brown/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": [
+    "large language models"
+   ]
+  }
+ },
+ {
+  "title": "Bei Wang Phillips: Talk by Bei Wang Phillips",
+  "start": "2025-09-10T11:00:00-06:00",
+  "end": "2025-09-10T12:00:00-06:00",
+  "url": "/talks/2025-09-10-bei-wang-phillips/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": []
+  }
+ },
+ {
+  "title": "Aditya Bhaskara: Descent with Misaligned Gradients and Applications to Hidden Convexity",
+  "start": "2025-09-17T11:00:00-06:00",
+  "end": "2025-09-17T12:00:00-06:00",
+  "url": "/talks/2025-09-17-aditya-bhaskara/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": [
+    "optimization"
+   ]
+  }
+ },
+ {
+  "title": "Kenneth Blake Vernon: Indirect dating with mixture density networks",
+  "start": "2025-09-24T11:00:00-06:00",
+  "end": "2025-09-24T12:00:00-06:00",
+  "url": "/talks/2025-09-24-kenneth-blake-vernon/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": [
+    "geospatial"
+   ]
+  }
+ },
+ {
+  "title": "Luis Garcia: A Trip to the Neural Frontier: Neurosymbolic Sensor Fusion for Trustworthy AI-Enabled Neural Interventions",
+  "start": "2025-10-01T11:00:00-06:00",
+  "end": "2025-10-01T12:00:00-06:00",
+  "url": "/talks/2025-10-01-luis-garcia/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": []
+  }
+ },
+ {
+  "title": "Vineet Pandey: Designing human-centered systems that yield data that is minimal, relevant, and actionable",
+  "start": "2025-10-15T11:00:00-06:00",
+  "end": "2025-10-15T12:00:00-06:00",
+  "url": "/talks/2025-10-15-vineet-pandey/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": [
+    "human-centered computing"
+   ]
+  }
+ },
+ {
+  "title": "CANCELED - Kenneth Marino: VLM Agents",
+  "start": "2025-10-22T11:00:00-06:00",
+  "end": "2025-10-22T12:00:00-06:00",
+  "url": "/talks/2025-10-22-kenneth-marino/",
+  "className": "talk-canceled",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": [
+    "large language models"
+   ]
+  }
+ },
+ {
+  "title": "Anna Fariha: Understanding Data through Change Summarization and Causal Disparity Explanations",
+  "start": "2025-10-29T11:00:00-06:00",
+  "end": "2025-10-29T12:00:00-06:00",
+  "url": "/talks/2025-10-29-anna-fariha/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": [
+    "causal inference",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Jenny Lin: Talk by Jenny Lin",
+  "start": "2025-11-05T11:00:00-07:00",
+  "end": "2025-11-05T12:00:00-07:00",
+  "url": "/talks/2025-11-05-jenny-lin/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": []
+  }
+ },
+ {
+  "title": "Kyle Dawson, Tyler Hagen: DESI: Disentangling Cosmology from Observational Artifacts",
+  "start": "2025-11-12T10:00:00-07:00",
+  "end": "2025-11-12T11:00:00-07:00",
+  "url": "/talks/2025-11-12-kyle-dawson-tyler-hagen/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "machine learning",
+    "physics & astronomy"
+   ]
+  }
+ },
+ {
+  "title": "Vivek Srikumar: Talk by Vivek Srikumar",
+  "start": "2025-11-19T11:00:00-07:00",
+  "end": "2025-11-19T12:00:00-07:00",
+  "url": "/talks/2025-11-19-vivek-srikumar/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": []
+  }
+ },
+ {
+  "title": "Madison Golden, Kaylee Alexander: Data Visualization 101",
+  "start": "2025-12-03T11:00:00-07:00",
+  "end": "2025-12-03T12:00:00-07:00",
+  "url": "/talks/2025-12-03-madison-golden-kaylee-alexander/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LNCO 1100",
+   "tags": [
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Marina Kogan: Human-Centered Data Science for Crisis Informatics",
+  "start": "2026-01-09T13:30:00-07:00",
+  "end": "2026-01-09T14:30:00-07:00",
+  "url": "/talks/2026-01-09-marina-kogan/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "human-centered computing",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Andrew McNutt: Linters as Socio Technical Systems",
+  "start": "2026-01-23T13:30:00-07:00",
+  "end": "2026-01-23T14:30:00-07:00",
+  "url": "/talks/2026-01-23-andrew-mcnutt/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "human-centered computing",
+    "society & policy",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Makoto Kelp: Navigating Advances and Inflections in Machine Learning for Atmospheric Chemistry Modeling",
+  "start": "2026-02-06T13:30:00-07:00",
+  "end": "2026-02-06T14:30:00-07:00",
+  "url": "/talks/2026-02-06-makoto-kelp/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "climate & environment",
+    "machine learning",
+    "optimization"
+   ]
+  }
+ },
+ {
+  "title": "Juliana Freire: Dataset Discovery and Integration in the Era of Large Language Models",
+  "start": "2026-02-17T11:00:00-07:00",
+  "end": "2026-02-17T12:00:00-07:00",
+  "url": "/talks/2026-02-17-juliana-freire/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780 (Evans)",
+   "tags": [
+    "data management",
+    "large language models",
+    "natural language processing",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Dinesh Manocha: Robot Navigation in the Wild",
+  "start": "2026-02-19T15:30:00-07:00",
+  "end": "2026-02-19T16:30:00-07:00",
+  "url": "/talks/2026-02-19-dinesh-manocha/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "machine learning",
+    "physics & astronomy",
+    "robotics"
+   ]
+  }
+ },
+ {
+  "title": "Paul Parsons: Visualization and Judgment: Human-Centered Computing in Data-Rich Practice",
+  "start": "2026-02-24T10:30:00-07:00",
+  "end": "2026-02-24T11:30:00-07:00",
+  "url": "/talks/2026-02-24-paul-parsons/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "human-centered computing",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Zezhong Wang: Designing Narrative-Driven Data Experiences",
+  "start": "2026-02-26T10:30:00-07:00",
+  "end": "2026-02-26T11:30:00-07:00",
+  "url": "/talks/2026-02-26-zezhong-wang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Evans Conference Room (WEB 3780)",
+   "tags": [
+    "climate & environment",
+    "health & medicine",
+    "human-centered computing",
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Kenny Marino: Agents: Hype or Opportunity",
+  "start": "2026-02-27T13:40:00-07:00",
+  "end": "2026-02-27T14:40:00-07:00",
+  "url": "/talks/2026-02-27-kenny-marino/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "large language models",
+    "natural language processing",
+    "robotics"
+   ]
+  }
+ },
+ {
+  "title": "Bogdan Raita: Solving Linear PDE by Machine Learning and Commutative Algebra",
+  "start": "2026-03-02T16:00:00-07:00",
+  "end": "2026-03-02T17:00:00-07:00",
+  "url": "/talks/2026-03-02-bogdan-raita/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "LCB 222",
+   "tags": [
+    "machine learning",
+    "physics & astronomy"
+   ]
+  }
+ },
+ {
+  "title": "Grace Guo: Concepts and Counterfactuals: Human-Centered Interpretability in the Age of Foundation Models",
+  "start": "2026-03-03T10:30:00-07:00",
+  "end": "2026-03-03T11:30:00-07:00",
+  "url": "/talks/2026-03-03-grace-guo/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Evans Conference Room (WEB 3780)",
+   "tags": [
+    "causal inference",
+    "health & medicine",
+    "human-centered computing",
+    "large language models"
+   ]
+  }
+ },
+ {
+  "title": "Josh Levine: Extracting, Visualizing, and Analyzing Topological Features with Discrete Representations",
+  "start": "2026-03-05T10:30:00-07:00",
+  "end": "2026-03-05T11:30:00-07:00",
+  "url": "/talks/2026-03-05-josh-levine/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Evans Conference Room (WEB 3780)",
+   "tags": [
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Tenghao Huang: Generalizable, Proactive, and Agentic Learning for Open-Ended Tasks",
+  "start": "2026-03-16T10:00:00-06:00",
+  "end": "2026-03-16T11:00:00-06:00",
+  "url": "/talks/2026-03-16-tenghao-huang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780 (Evans)",
+   "tags": [
+    "large language models"
+   ]
+  }
+ },
+ {
+  "title": "Xueguang Ma: Breaking Information Silos: Advancing Search Systems for Unified Information Seeking",
+  "start": "2026-03-20T10:00:00-06:00",
+  "end": "2026-03-20T11:00:00-06:00",
+  "url": "/talks/2026-03-20-xueguang-ma/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MEB 3147 (LCR)",
+   "tags": [
+    "large language models",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Kate Isaacs: A Matter of Audiences: Capturing and Reporting Reasoning and Results Around Data Visualizations",
+  "start": "2026-03-20T13:30:00-06:00",
+  "end": "2026-03-20T14:30:00-06:00",
+  "url": "/talks/2026-03-20-kate-isaacs/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Benjie Wang: Bridging the Formalization Gap for Generative AI",
+  "start": "2026-03-23T10:00:00-06:00",
+  "end": "2026-03-23T11:00:00-06:00",
+  "url": "/talks/2026-03-23-benjie-wang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "large language models",
+    "natural language processing",
+    "robotics",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Dick Sadler: What Happens in the 10 Years Following a State Government-Caused Environmental Injustice? Flint's Progress Since Its Water Crisis",
+  "start": "2026-03-25T16:00:00-06:00",
+  "end": "2026-03-25T17:00:00-06:00",
+  "url": "/talks/2026-03-25-dick-sadler/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "MLIB 1110 | Zoom: 890 9876 9672, Passcode: 156565",
+   "tags": [
+    "climate & environment",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Bailing Lyu: Navigating the Human-AI Nexus in Education: Bridging Cognitive Science, Learning Analytics, and Intelligent Systems",
+  "start": "2026-03-26T10:30:00-06:00",
+  "end": "2026-03-26T11:30:00-06:00",
+  "url": "/talks/2026-03-26-bailing-lyu/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Evans Conference room (WEB 3780)",
+   "tags": [
+    "education",
+    "human-centered computing"
+   ]
+  }
+ },
+ {
+  "title": "Erdogan Kaya: From Self-Efficacy to Systemic Change: Building an Equitable Computing Education Research Program",
+  "start": "2026-03-27T10:30:00-06:00",
+  "end": "2026-03-27T11:30:00-06:00",
+  "url": "/talks/2026-03-27-erdogan-kaya/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Evans Conference room (WEB 3780)",
+   "tags": [
+    "education",
+    "fairness & ethics",
+    "robotics"
+   ]
+  }
+ },
+ {
+  "title": "Xiaoling Hu: Principled Learning for Medical AI: Structure, Reliability, and Interpretability",
+  "start": "2026-03-30T10:00:00-06:00",
+  "end": "2026-03-30T11:00:00-06:00",
+  "url": "/talks/2026-03-30-xiaoling-hu/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "computer vision",
+    "health & medicine",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "He Yin: Advancing GeoAI and Earth observation for environmental monitoring",
+  "start": "2026-03-31T10:45:00-06:00",
+  "end": "2026-03-31T11:45:00-06:00",
+  "url": "/talks/2026-03-31-he-yin/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Evans Conference room (WEB 3780)",
+   "tags": [
+    "climate & environment",
+    "geospatial",
+    "machine learning",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Md Mostafijur Rahman: Efficient and Reliable AI for Real-World Healthcare Deployment",
+  "start": "2026-04-01T10:30:00-06:00",
+  "end": "2026-04-01T11:30:00-06:00",
+  "url": "/talks/2026-04-01-md-mostafijur-rahman/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "health & medicine",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Qiang Ji: Towards Data-Efficient, Trustworthy, and Generalizable AI for Visual Understanding",
+  "start": "2026-04-06T10:30:00-06:00",
+  "end": "2026-04-06T11:30:00-06:00",
+  "url": "/talks/2026-04-06-qiang-ji/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "causal inference",
+    "computer vision",
+    "deep learning",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Si Chen: Advancing AI Literacy and Human-Centered AI for Teaching and Learning",
+  "start": "2026-04-07T10:30:00-06:00",
+  "end": "2026-04-07T11:30:00-06:00",
+  "url": "/talks/2026-04-07-si-chen/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "education",
+    "human-centered computing",
+    "large language models"
+   ]
+  }
+ },
+ {
+  "title": "Fahim Faisal: Multilingual Model Adaptation for Under-Served Languages",
+  "start": "2026-04-08T10:00:00-06:00",
+  "end": "2026-04-08T11:00:00-06:00",
+  "url": "/talks/2026-04-08-fahim-faisal/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "fairness & ethics",
+    "large language models",
+    "natural language processing",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Chase Neumann: Building and Utilizing Foundation Models for Drug Discovery and Clinical Development",
+  "start": "2026-04-10T13:30:00-06:00",
+  "end": "2026-04-10T14:30:00-06:00",
+  "url": "/talks/2026-04-10-chase-neumann/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "biology & genomics",
+    "health & medicine",
+    "large language models",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Jihyun Rho: Supporting responsible use of AI in visual-based teaching and learning",
+  "start": "2026-04-13T13:00:00-06:00",
+  "end": "2026-04-13T14:00:00-06:00",
+  "url": "/talks/2026-04-13-jihyun-rho/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "education",
+    "fairness & ethics"
+   ]
+  }
+ },
+ {
+  "title": "Sameer Honwad: Move Slow and Build Community",
+  "start": "2026-04-14T10:30:00-06:00",
+  "end": "2026-04-14T11:30:00-06:00",
+  "url": "/talks/2026-04-14-sameer-honwad/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "education",
+    "society & policy"
+   ]
+  }
+ },
+ {
+  "title": "Shiqi Yu: AI for Multi-Wavelength X-ray Analysis",
+  "start": "2026-04-15T10:00:00-06:00",
+  "end": "2026-04-15T10:30:00-06:00",
+  "url": "/talks/2026-04-15-shiqi-yu/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Dinosaur Room (CSC 206)",
+   "tags": [
+    "deep learning",
+    "machine learning",
+    "physics & astronomy"
+   ]
+  }
+ },
+ {
+  "title": "Amirali Abdullah: Controlling LLM's via Activation Geometry",
+  "start": "2026-04-15T10:30:00-06:00",
+  "end": "2026-04-15T11:00:00-06:00",
+  "url": "/talks/2026-04-15-amirali-abdullah/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Dinosaur Room (CSC 206)",
+   "tags": [
+    "large language models",
+    "natural language processing"
+   ]
+  }
+ },
+ {
+  "title": "Chengbin Deng: AI-Driven Environmental Intelligence: Scalable and System-Level Approaches for Environmental Decision Making",
+  "start": "2026-04-15T13:30:00-06:00",
+  "end": "2026-04-15T14:30:00-06:00",
+  "url": "/talks/2026-04-15-chengbin-deng/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780",
+   "tags": [
+    "climate & environment",
+    "geospatial"
+   ]
+  }
+ },
+ {
+  "title": "Daniel Sieta: Multimodal Data Augmentation for Data-Efficient Robot Manipulation",
+  "start": "2026-04-17T13:30:00-06:00",
+  "end": "2026-04-17T14:30:00-06:00",
+  "url": "/talks/2026-04-17-daniel-sieta/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB L112",
+   "tags": [
+    "computer vision",
+    "robotics"
+   ]
+  }
+ },
+ {
+  "title": "Warren Pettine: About Start-UP MTN: which involves Comptutational Neuroscience and AI",
+  "start": "2026-08-28T13:30:00-06:00",
+  "end": "2026-08-28T14:30:00-06:00",
+  "url": "/talks/2026-08-28-warren-pettine/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 2250",
+   "tags": [
+    "biology & genomics"
+   ]
+  }
+ },
+ {
+  "title": "George Vega Yon: Data Science of Tracking Measles in Utah",
+  "start": "2026-09-04T13:30:00-06:00",
+  "end": "2026-09-04T14:30:00-06:00",
+  "url": "/talks/2026-09-04-george-vega-yon/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 2250",
+   "tags": []
+  }
+ }
+]

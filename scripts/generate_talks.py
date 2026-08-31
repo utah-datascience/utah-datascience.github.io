@@ -6,6 +6,8 @@ should never be edited by hand:
 
     _talks/*.md   one Jekyll page per talk
     talks.ics     an iCalendar feed of every talk, served at /talks.ics
+    talks.json    the same talks as a FullCalendar event feed, for the
+                  calendar view on the seminar page
 
 (GitHub Pages builds Jekyll in safe mode, so custom plugins are unavailable and
 both have to be generated ahead of time and committed.)
@@ -31,6 +33,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "_data", "talks")
 OUT_DIR = os.path.join(ROOT, "_talks")
 ICS_PATH = os.path.join(ROOT, "talks.ics")
+JSON_PATH = os.path.join(ROOT, "talks.json")
 TZ = ZoneInfo("America/Denver")
 CALENDAR_NAME = "Utah Data Science & AI Lecture Series"
 CALENDAR_DESC = (
@@ -326,6 +329,38 @@ def build_ics(talks: list[dict]) -> str:
     return "\r\n".join(folded) + "\r\n"
 
 
+
+# --------------------------------------------------------------------------- #
+# Calendar view feed (FullCalendar)
+# --------------------------------------------------------------------------- #
+def build_events_json(talks: list[dict]) -> str:
+    """The event feed behind the calendar view, in FullCalendar's own format."""
+    events = []
+    for talk in sorted(talks, key=lambda item: item["starts_at"]):
+        front = talk["front"]
+        starts = talk["starts_at"]
+        ends = talk["ends_at"] or (starts + dt.timedelta(hours=1))
+        title = front["title"]
+        if front.get("speaker_names"):
+            title = f'{front["speaker_names"]}: {title}'
+        if front.get("canceled"):
+            title = f"CANCELED - {title}"
+        events.append(
+            {
+                "title": title,
+                "start": starts.isoformat(),
+                "end": ends.isoformat(),
+                "url": front["permalink"],
+                "className": "talk-canceled" if front.get("canceled") else "talk-event",
+                "extendedProps": {
+                    "location": front.get("location", ""),
+                    "tags": front.get("tags", []),
+                },
+            }
+        )
+    return json.dumps(events, indent=1, ensure_ascii=False) + "\n"
+
+
 def read_text(path: str) -> str:
     with open(path, encoding="utf-8", newline="") as handle:
         return handle.read()
@@ -370,6 +405,7 @@ def main() -> int:
         return 1
 
     pages[ICS_PATH] = build_ics(records)
+    pages[JSON_PATH] = build_events_json(records)
 
     existing = set(glob.glob(os.path.join(OUT_DIR, "*.md")))
     stale = sorted(existing - set(pages))
@@ -390,7 +426,7 @@ def main() -> int:
                 file=sys.stderr,
             )
             return 1
-        print(f"{len(records)} talk page(s) and talks.ics up to date")
+        print(f"{len(records)} talk page(s), talks.ics and talks.json up to date")
         return 0
 
     for path in changed:
@@ -402,7 +438,7 @@ def main() -> int:
 
     print(
         f"{len(records)} talk page(s) in {os.path.relpath(OUT_DIR, ROOT)}/ plus "
-        f"talks.ics ({len(changed)} written, {len(stale)} removed)"
+        f"talks.ics and talks.json ({len(changed)} written, {len(stale)} removed)"
     )
     return 0
 
