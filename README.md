@@ -1,5 +1,8 @@
 # Utah Data Science Center
 
+[![Talk pages](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/talks.yml/badge.svg)](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/talks.yml)
+[![Sync talks from Google Calendar](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/sync-talks.yml/badge.svg)](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/sync-talks.yml)
+
 Original theme: https://jamstack-argon-design.appseed.us/index.html
 
 ## Local run
@@ -71,22 +74,165 @@ The available variables are:
 ### Talks
 
 Every talk in the Data Science & AI Lecture Series has its own page on the site
-(for example `/talks/2026-09-04-george-vega-yon/`). Those pages are **generated**;
-the source of truth for each talk is a TOML file in `_data/talks/`.
+(for example `/talks/2026-09-04-george-vega-yon/`). Those pages are **generated**
+from a TOML record per talk in `_data/talks/` -- but who is allowed to edit that
+record depends on when the talk happens:
 
-To add a talk:
+* **Talks starting soon** (within the *sync window*, 90 days by default):
+  **Google Calendar is the source of truth.** Edit the calendar event; a daily
+  sync turns it into a pull request. Editing the TOML file directly is blocked
+  by CI -- see [The sync window](#the-sync-window) below.
+* **Past talks, and anything further out than the window:** the repo is the
+  source of truth. Edit the TOML file directly, the ordinary way.
 
-1. Copy `_data/talks/_TEMPLATE.toml` to `_data/talks/YYYY-MM-DD-speaker-name.toml`
-   and fill it in. The file name becomes the page URL, so keep the
-   `date-speaker` shape.
-2. Run `make talks` (equivalently `python3 scripts/generate_talks.py`). This
-   writes `_talks/YYYY-MM-DD-speaker-name.md`.
-3. Commit **both** the TOML file and the generated markdown, and open a pull
-   request. CI (`.github/workflows/talks.yml`) re-runs the generator and fails if
-   the two are out of sync.
+Nothing here ever writes back to Google Calendar in the other direction.
 
-Updating a talk later (adding slides, a recording link, or a speaker photo) is
-the same loop: edit the TOML, run `make talks`, commit both files.
+#### Adding or editing an upcoming talk
+
+Write (or edit) the calendar event's description using level 1-6 Markdown
+headers to label each field -- a header must have nothing else on its line,
+but is otherwise forgiving of case and stray whitespace (`## Title`, `##title`,
+and `###   Title   :` all work the same). Everything up to the next header is
+that field's value. Paste this in and fill it out:
+
+```markdown
+## Title
+Title of the talk
+
+## Speaker
+Speaker Name
+
+## Affiliation
+Department, University
+
+## Website
+https://example.edu/~speaker
+
+## Bio
+A short bio, in Markdown.
+
+## Abstract
+The abstract, in Markdown. Can span several paragraphs.
+
+## Tags
+machine learning, visualization
+```
+
+For a talk with more than one speaker, repeat the `## Speaker` block -- each
+one starts a new speaker, and `## Affiliation` / `## Website` / `## Bio` (and
+`## Role`, `## Email`) attach to whichever `## Speaker` came most recently
+above them:
+
+```markdown
+## Speaker
+Kyle Dawson
+
+## Affiliation
+Physics & Astronomy, University of Utah
+
+## Speaker
+Tyler Hagen
+
+## Affiliation
+Physics & Astronomy, University of Utah
+```
+
+Recognized headers (aliases in parentheses; see `TALK_LABEL_ALIASES` and
+`SPEAKER_LABEL_ALIASES` at the top of `scripts/import_calendar_talks.py` for
+the exact, current list):
+
+| Talk | Speaker |
+| --- | --- |
+| Title | Affiliation (institution, department) |
+| Abstract (summary) | Website (url, homepage, link) |
+| Tags (topics, keywords) | Bio (biography, about the speaker) |
+| Location (room, venue) | Email |
+| Zoom (meeting, meeting link) | Role (position) |
+| Slides | |
+| Recording (video) | |
+| Series | |
+
+Location, Zoom, Slides, and Recording only need a header if you want to
+override what the sync would otherwise pick up from the event's own Location
+field or a link in the description -- most entries can skip them. Tags is a
+comma-separated list; stick to the vocabulary in `scripts/tag_talks.py`
+(`machine learning`, `visualization`, `health & medicine`, and about twenty
+more) so the `/talks/` filters stay useful, or add a term to the vocabulary
+first. Slides and recording links are almost always added later, once the talk
+has already happened and its record has left the sync window -- see below.
+
+An entry that never adopts this format still gets imported, using best-effort
+heuristics on whatever plain text is there; the resulting record is flagged
+`needs_review = true` and should be checked by hand once it lands.
+
+Once the daily sync (or a maintainer running it manually) picks up the change,
+it lands as a pull request from a branch named `entry-update`. **Review and
+merge that PR** -- that's what publishes it.
+
+#### The sync window
+
+`scripts/import_calendar_talks.py --sync` is what keeps `_data/talks/` in step
+with the calendar. Given `today` and a `--window-days` (default 90, matching
+`WINDOW_DAYS_DEFAULT` in that script):
+
+| A talk starting... | is... |
+| --- | --- |
+| before today | untouched -- repo-owned, past talks are history |
+| within the window | created, updated, or deleted to match the calendar |
+| after the window | created if missing; never updated once it exists |
+
+A talk removed from the calendar while still inside the window has its record
+**deleted** (not merely marked canceled) -- a subscribed calendar re-syncs
+against the whole feed, so the event disappears there too. A talk the calendar
+still lists but marks cancelled keeps its record, with `canceled = true`; that
+is what the page badge and `talks.ics`'s `STATUS:CANCELLED` are for. As a
+safety rail against a truncated or failed calendar fetch, the sync refuses to
+run at all if the feed came back with zero events, and refuses to delete more
+than three records in one run without `--allow-bulk-delete`.
+
+**Fields the calendar does not supply are preserved, never blanked** -- a
+hand-added Slides link, a speaker photo, or tags set before the talk entered
+the window all survive a resync untouched. Two fields the calendar never
+touches at all: `paper` and a custom `slug` (see `_TEMPLATE.toml`).
+
+Because Google Calendar owns any in-window record, **editing one of those TOML
+files directly in this repo is blocked**: `.github/workflows/talks.yml` runs
+`scripts/guard_manual_edits.py` on every pull request and fails it if a changed
+record's date falls inside the window (the authoritative copy of this check,
+which is what actually blocks the site from republishing, runs again from
+`.github/workflows/pages.yml` on push to master). Edit the calendar event
+instead, and let the sync open its usual PR. For the rare edit that genuinely
+has to happen here -- add the `allow-manual-entry` label to the pull request,
+or put `[allow-manual-entry]` in its title.
+
+Running the sync yourself:
+
+```shell
+make sync-talks-dry-run       # preview what would change
+make sync-talks                # or: python3 scripts/import_calendar_talks.py --sync
+python3 scripts/import_calendar_talks.py --sync --window-days 30
+```
+
+It normally runs on its own: `.github/workflows/sync-talks.yml` triggers daily
+and opens or updates the pull request from `entry-update` -- reused across
+runs, so a week of small calendar edits accumulates into one PR rather than a
+pile of them.
+
+#### Editing a past talk, or adding one from scratch
+
+For anything outside the window -- fixing a typo in an old abstract, adding a
+recording link once one exists, or backfilling a talk that predates all of
+this -- edit (or create) the TOML file the ordinary way and open a PR. Copy
+`_data/talks/_TEMPLATE.toml` to `_data/talks/YYYY-MM-DD-speaker-name.toml` for
+a brand new record; the file name becomes the page URL, so keep the
+`date-speaker` shape. Then:
+
+1. Run `make talks` (equivalently `python3 scripts/generate_talks.py`). This
+   writes `_talks/YYYY-MM-DD-speaker-name.md`, and regenerates `talks.ics` and
+   `talks.json`.
+2. Commit the TOML file together with everything `make talks` changed, and
+   open a pull request. CI (`.github/workflows/talks.yml`) re-runs the
+   generator and fails if they are out of sync.
 
 The generated pages are wired into the site automatically:
 
@@ -219,21 +365,23 @@ API key committed in the include. That key, the `google-calendar` plugin, and
 `assets/js/fetchGoogleCalendar.js` are all gone: nothing on the site calls
 Google any more.
 
-#### Seeding records from the Google Calendar
+#### Backfilling records (one-off, not the daily sync)
 
-The site no longer *reads* the Google Calendar at page load, but the importer is
-still there for seeding: `scripts/import_calendar_talks.py` reads the series'
-public Google Calendar and writes TOML records for talks that do not have one
-yet:
+`scripts/import_calendar_talks.py`, run without `--sync`, is the original
+seeding mode: it reads the calendar's full history and writes a TOML record
+for every entry that does not already have one, using the same best-effort
+heuristics as the `--sync` fallback path (see above). Useful for a one-time
+backfill, never for keeping the window in sync (that is what `--sync` and
+`sync-talks.yml` are for):
 
 ```shell
 make import-talks             # or: python3 scripts/import_calendar_talks.py
 ```
 
-Calendar descriptions are free-form, so this is best effort — imported records
-are marked `needs_review = true` under `[meta]` and should be checked (titles,
-affiliations, and abstracts especially) before they are considered final. It
-never overwrites an existing file unless you pass `--overwrite`.
+Old calendar descriptions are free-form, so this is best effort -- imported
+records are marked `needs_review = true` under `[meta]` and should be checked
+(titles, affiliations, and abstracts especially) before they are considered
+final. It never overwrites an existing file unless you pass `--overwrite`.
 
 ### progrmas
 Add/delete/edit .md files in `_progrmas` folder to add/delete/edit members.
