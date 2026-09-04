@@ -4,6 +4,7 @@ _site
 .jekyll-cache
 .vendor
 *.lock
+!Gemfile.lock
 
 # VS code
 .vscode
