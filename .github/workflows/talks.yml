@@ -76,8 +76,8 @@ jobs:
   test-calendar-parsing:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
       - run: python3 scripts/test_calendar_parsing.py
@@ -97,10 +97,10 @@ jobs:
     if: github.event_name == 'pull_request' && github.head_ref != 'entry-update'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
       - name: Check for a manual edit to a calendar-owned talk record
