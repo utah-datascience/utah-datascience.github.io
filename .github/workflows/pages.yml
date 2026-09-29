@@ -4,9 +4,10 @@ name: Deploy site
 # source, rather than the classic "deploy from a branch" build. That is what
 # lets `deploy` require other checks (see needs:) before the site republishes.
 #
-# Rollout: this workflow builds and uploads harmlessly even while Pages is
-# still configured for the legacy branch build -- deploy-pages only takes
-# effect once Settings > Pages > Source is switched to "GitHub Actions".
+# Rollout: switch Settings > Pages > Source to "GitHub Actions" as soon as
+# this is on master. Until then the legacy branch build keeps running too, and
+# since deploy-pages accepts a deployment from the source branch either way,
+# every push publishes twice (identical output, last one wins).
 
 on:
   push:
