@@ -106,6 +106,68 @@ def test_legacy_text_is_not_structured():
     assert fields == {} and speakers == [] and unknown == []
 
 
+HEADER_VARIANTS = {
+    "#title (h1, no space)": "#title\nA\n#speaker\nJane Doe",
+    "# TITLE (trailing spaces)": "# TITLE  \nA\n# SPEAKER \nJane Doe",
+    "trailing colon": "##   Title   :\nA\n## Speaker:\nJane Doe",
+    "indented": "  ## title\nA\n  ## speaker\nJane Doe",
+    "mixed case": "## TiTlE\nA\n## SpEaKeR\nJane Doe",
+    "tab after #": "##\tTitle\nA\n##\tSpeaker\nJane Doe",
+    "CRLF": "## Title\r\nA\r\n## Speaker\r\nJane Doe\r\n",
+    "value on the header line": "## Title: A\n## Speaker: Jane Doe",
+    "html <br>": "## Title<br>A<br><br>## Speaker<br>Jane Doe",
+    "html <div> per line": "<div>## Title</div><div>A</div><div>## Speaker</div><div>Jane Doe</div>",
+    "html <p> per line": "<p>## Title</p><p>A</p><p>## Speaker</p><p>Jane Doe</p>",
+    "html bold header": "<b>## Title</b><br>A<br><b>## Speaker</b><br>Jane Doe",
+    "&nbsp; after #": "##&nbsp;Title<br>A<br>##&nbsp;Speaker<br>Jane Doe",
+}
+
+
+def test_header_variants():
+    # Every way a person plausibly types a header in Google Calendar, run
+    # through the same html_to_text step the real feed goes through.
+    for name, raw in HEADER_VARIANTS.items():
+        fields, speakers, _ = m.parse_markdown_sections(m.html_to_text(raw))
+        assert fields.get("title") == "A", f"{name}: title={fields.get('title')!r}"
+        assert speakers and speakers[0].get("name") == "Jane Doe", f"{name}: speakers={speakers}"
+
+
+def test_hash_lines_inside_a_body_are_kept():
+    # Only a *known* field header ends a section, so prose that happens to
+    # start with "#" stays in the abstract instead of silently truncating it.
+    text = (
+        "## Speaker\nJane Doe\n"
+        "## Abstract\nFirst paragraph.\n#MachineLearning is everywhere.\nLast line.\n"
+        "## Website: https://example.edu/a:b\n"
+    )
+    fields, speakers, unknown = m.parse_markdown_sections(text)
+    assert fields["abstract"] == "First paragraph.\n#MachineLearning is everywhere.\nLast line.", fields
+    assert speakers[0]["website"] == "https://example.edu/a:b"  # only the first ":" splits
+    assert unknown == [], unknown  # a single "#" glued to a word is prose, not a typo
+
+
+def test_structured_entry_is_authoritative_in_merge():
+    # Requirement: for a talk the calendar owns, the calendar wins -- even when
+    # the organizer *removes* something, the site should stop showing it.
+    existing_raw = {
+        "talk": {"title": "T", "abstract": "Old abstract", "slides": "https://s/old.pdf",
+                 "tags": ["statistics"], "paper": "https://arxiv.org/abs/x"},
+        "speakers": [{"name": "Jane Doe", "bio": "Old bio", "photo": "/p.jpg"}],
+    }
+    incoming = {
+        "title": "T", "series": "S", "location": "WEB L112", "zoom": "", "slides": "",
+        "recording": "", "abstract": "", "tags": [], "needs_review": False,
+        "speakers": [{"name": "Jane Doe", "affiliation": "", "website": "", "email": "", "bio": ""}],
+    }
+    merged = m.merge_record(incoming, existing_raw)
+    assert merged["abstract"] == "", "structured entry with no abstract clears the old one"
+    assert merged["speakers"][0]["bio"] == "", "structured entry with no bio clears the old one"
+    assert merged["speakers"][0]["photo"] == "/p.jpg", "photos are never supplied by the calendar"
+    assert merged["slides"] == "https://s/old.pdf", "slides are added in the repo"
+    assert merged["tags"] == ["statistics"], "tags are filled in by tag_talks.py"
+    assert merged["paper"] == "https://arxiv.org/abs/x"
+
+
 # --------------------------------------------------------------------------- #
 # event_to_talk: structured vs. legacy fallback, end to end
 # --------------------------------------------------------------------------- #

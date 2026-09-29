@@ -42,6 +42,12 @@ jobs:
         with:
           python-version: "3.11"
 
+      # A PR opened with GITHUB_TOKEN does not trigger other workflows, so
+      # the entry-update PR gets no CI of its own -- validate here instead,
+      # before anything is written.
+      - name: Run the calendar-parsing tests
+        run: python3 scripts/test_calendar_parsing.py
+
       - name: Sync talk records from the calendar
         id: sync
         run: |
@@ -70,7 +76,9 @@ jobs:
 
       - name: Regenerate talk pages, talks.ics, and talks.json
         if: github.event.inputs.dry_run != 'true'
-        run: python3 scripts/generate_talks.py
+        run: |
+          python3 scripts/generate_talks.py
+          python3 scripts/generate_talks.py --check
 
       - name: Open or update the sync pull request
         if: github.event.inputs.dry_run != 'true'

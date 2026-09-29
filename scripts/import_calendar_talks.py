@@ -157,8 +157,13 @@ def parse_dt(event: dict, key: str) -> dt.datetime | None:
 # Field extraction
 # --------------------------------------------------------------------------- #
 def html_to_text(raw: str) -> str:
-    text = re.sub(r"(?i)<br\s*/?>", "\n", raw)
+    text = raw.replace("\r\n", "\n").replace("\r", "\n")
+    text = re.sub(r"(?i)<br\s*/?>", "\n", text)
     text = re.sub(r"(?i)</p>", "\n\n", text)
+    # Google Calendar's editor wraps each line in <div> when text is pasted in;
+    # without these, a whole structured description collapses onto one line.
+    text = re.sub(r"(?i)<li[^>]*>", "\n- ", text)
+    text = re.sub(r"(?i)</?(?:div|li|ul|ol|h[1-6]|tr|blockquote)[^>]*>", "\n", text)
     text = re.sub(r'(?i)<a[^>]*href="([^"]+)"[^>]*>(.*?)</a>', r"\2 (\1)", text)
     text = re.sub(r"<[^>]+>", "", text)
     text = html.unescape(text).replace("\xa0", " ")
@@ -197,11 +202,14 @@ def classify_links(links: list[str]) -> dict:
 # Structured (Markdown-header) description format
 # --------------------------------------------------------------------------- #
 # The organizer-facing format this sync expects in the calendar description:
-# level 1-6 Markdown headers name a field, and everything up to the next
-# header is that field's value. A header must have nothing else on its line,
-# but is otherwise forgiving of case and whitespace -- "## Title", "##title",
-# and "###   Title   :" all work. See README for the pasteable template.
-MD_HEADER_RE = re.compile(r"^[ \t]{0,3}#{1,6}[ \t]*(?P<label>[^\n]+?)[ \t]*:?[ \t]*$", re.M)
+# a Markdown header (any level, 1-6 "#") names a field, and everything up to
+# the next such header is that field's value. Forgiving of case, spacing, and a
+# trailing colon -- "#title", "# TITLE ", "##   Title   :" all work -- and the
+# value may also follow on the same line ("## Title: Something"). Only headers
+# whose label is a known field end a section, so a stray "#" line inside an
+# abstract (a hashtag, "# 1 result") stays part of it. See README for the
+# pasteable template.
+HEADER_LINE_RE = re.compile(r"^[ \t]{0,3}(?P<hashes>#{1,6})(?P<rest>[^\n]*)$")
 
 # label (normalized: lowercased, whitespace-collapsed) -> canonical field name
 TALK_LABEL_ALIASES = {
@@ -245,6 +253,32 @@ def normalize_label(label: str) -> str:
     return re.sub(r"\s+", " ", label).strip().lower()
 
 
+def classify_header(rest: str) -> tuple[str, str, str] | None:
+    """For the text after the "#"s, return (kind, field, inline_value) if it
+    names a known field, else None. kind is "speaker" (starts a new speaker),
+    "speaker_field", or "talk"."""
+    label, _, inline = rest.partition(":")
+    label = normalize_label(label)
+    inline = inline.strip()
+    if label in ("speaker", "presenter"):
+        return "speaker", "name", inline
+    if label in SPEAKER_LABEL_ALIASES:
+        return "speaker_field", SPEAKER_LABEL_ALIASES[label], inline
+    if label in TALK_LABEL_ALIASES:
+        return "talk", TALK_LABEL_ALIASES[label], inline
+    return None
+
+
+def looks_like_unknown_header(hashes: str, rest: str) -> bool:
+    """A "#" line that is probably a mistyped field header ("## Affiliaton")
+    rather than prose that happens to start with "#" ("#MachineLearning is
+    everywhere"). Only used to warn -- the line is kept either way."""
+    if len(hashes) < 2 and not rest[:1].isspace():
+        return False
+    label = normalize_label(rest.partition(":")[0])
+    return bool(label) and len(label.split()) <= 4 and not label.endswith((".", "?", "!"))
+
+
 def parse_markdown_sections(text: str) -> tuple[dict, list[dict], list[str]]:
     """Split a structured calendar description into talk fields and speakers.
 
@@ -252,35 +286,41 @@ def parse_markdown_sections(text: str) -> tuple[dict, list[dict], list[str]]:
     the text was not written in this format at all -- the caller should fall
     back to the free-form heuristics used for older calendar entries.
     """
-    matches = list(MD_HEADER_RE.finditer(text))
+    sections: list[list] = []  # [kind, field, body_lines]
+    unknown: list[str] = []
+    current: list | None = None
+
+    for line in text.replace("\r\n", "\n").replace("\r", "\n").split("\n"):
+        match = HEADER_LINE_RE.match(line)
+        header = classify_header(match.group("rest")) if match else None
+        if header:
+            kind, field, inline = header
+            current = [kind, field, [inline] if inline else []]
+            sections.append(current)
+            continue
+        if match and looks_like_unknown_header(match.group("hashes"), match.group("rest")):
+            unknown.append(match.group("rest").strip().rstrip(":").strip())
+        if current is not None:
+            current[2].append(line)  # unknown "#" lines stay in the body
+
     talk_fields: dict = {}
     speakers: list[dict] = []
     lead_speaker_fields: dict = {}
-    unknown: list[str] = []
-    current: dict | None = None
+    speaker: dict | None = None
 
-    for i, match in enumerate(matches):
-        label = normalize_label(match.group("label"))
-        start = match.end()
-        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
-        body = text[start:end].strip()
+    for kind, field, lines in sections:
+        body = "\n".join(lines).strip()
         if not body:
             continue
-        if label in ("speaker", "presenter"):
-            current = {"name": body.split("\n")[0].strip()}
-            speakers.append(current)
-            continue
-        canon = SPEAKER_LABEL_ALIASES.get(label)
-        if canon:
-            (current if current is not None else lead_speaker_fields)[canon] = body
-            continue
-        canon = TALK_LABEL_ALIASES.get(label)
-        if canon == "tags":
-            talk_fields[canon] = [t.strip() for t in body.split(",") if t.strip()]
-        elif canon:
-            talk_fields[canon] = body
+        if kind == "speaker":
+            speaker = {"name": body.split("\n")[0].strip()}
+            speakers.append(speaker)
+        elif kind == "speaker_field":
+            (speaker if speaker is not None else lead_speaker_fields)[field] = body
+        elif field == "tags":
+            talk_fields[field] = [t.strip() for t in re.split(r"[,\n]", body) if t.strip()]
         else:
-            unknown.append(match.group("label").strip())
+            talk_fields[field] = body
 
     if not speakers and lead_speaker_fields:
         # Fields typed before any "## Speaker" header, and there never was
@@ -611,11 +651,12 @@ def normalize_person_name(name: str) -> str:
     return re.sub(r"\s+", " ", name).strip().lower()
 
 
-def merge_speakers(incoming: list[dict], existing: list[dict]) -> list[dict]:
+def merge_speakers(incoming: list[dict], existing: list[dict], *, authoritative: bool = False) -> list[dict]:
     if not incoming:
         # No speaker parsed at all almost certainly means something failed to
         # parse, not that every speaker was intentionally removed.
         return existing
+    pick = (lambda new, old: new) if authoritative else prefer
     existing_by_name = {normalize_person_name(s.get("name", "")): s for s in existing}
     merged = []
     for speaker in incoming:
@@ -623,12 +664,12 @@ def merge_speakers(incoming: list[dict], existing: list[dict]) -> list[dict]:
         merged.append(
             {
                 "name": speaker.get("name", "") or prior.get("name", ""),
-                "affiliation": prefer(speaker.get("affiliation", ""), prior.get("affiliation", "")),
-                "role": prefer(speaker.get("role", ""), prior.get("role", "")),
-                "website": prefer(speaker.get("website", ""), prior.get("website", "")),
+                "affiliation": pick(speaker.get("affiliation", ""), prior.get("affiliation", "")),
+                "role": pick(speaker.get("role", ""), prior.get("role", "")),
+                "website": pick(speaker.get("website", ""), prior.get("website", "")),
                 "photo": prior.get("photo", ""),  # never supplied by the calendar
-                "email": prefer(speaker.get("email", ""), prior.get("email", "")),
-                "bio": prefer(speaker.get("bio", ""), prior.get("bio", "")),
+                "email": pick(speaker.get("email", ""), prior.get("email", "")),
+                "bio": pick(speaker.get("bio", ""), prior.get("bio", "")),
             }
         )
     return merged
@@ -643,14 +684,28 @@ def merge_record(incoming: dict, existing_raw: dict | None) -> dict:
     existing_talk = (existing_raw or {}).get("talk", {})
     existing_speakers = (existing_raw or {}).get("speakers", []) or []
 
+    # A structured entry says exactly what the talk is: a field left empty
+    # there means "none", so it clears the old value rather than keeping it.
+    # A free-form entry was parsed by heuristics that routinely miss fields,
+    # so there an empty field only means "not found" and the old value stays.
+    authoritative = not incoming.get("needs_review", True)
+    pick = (lambda new, old: new) if authoritative else prefer
+
     merged = dict(incoming)
-    for field in ("title", "series", "location", "zoom", "slides", "recording", "abstract"):
+    for field in ("title", "series", "location", "zoom", "abstract"):
+        merged[field] = pick(incoming.get(field, ""), existing_talk.get(field, ""))
+    # Slides and recordings usually get added in the repo once they exist,
+    # and tags are filled in by tag_talks.py, so the calendar only overrides
+    # these when it actually supplies one.
+    for field in ("slides", "recording"):
         merged[field] = prefer(incoming.get(field, ""), existing_talk.get(field, ""))
     merged["tags"] = prefer(incoming.get("tags", []), existing_talk.get("tags", []))
     for field in PRESERVE_ONLY_FIELDS:
         if existing_talk.get(field):
             merged[field] = existing_talk[field]
-    merged["speakers"] = merge_speakers(incoming.get("speakers", []), existing_speakers)
+    merged["speakers"] = merge_speakers(
+        incoming.get("speakers", []), existing_speakers, authoritative=authoritative
+    )
     return merged
 
 

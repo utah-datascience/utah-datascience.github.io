@@ -90,10 +90,15 @@ Nothing here ever writes back to Google Calendar in the other direction.
 #### Adding or editing an upcoming talk
 
 Write (or edit) the calendar event's description using level 1-6 Markdown
-headers to label each field -- a header must have nothing else on its line,
-but is otherwise forgiving of case and stray whitespace (`## Title`, `##title`,
-and `###   Title   :` all work the same). Everything up to the next header is
-that field's value. Paste this in and fill it out:
+headers (any number of `#`) to label each field. Headers are forgiving of case,
+spacing, and a trailing colon -- `#title`, `# TITLE `, `## Title`, and
+`###   Title   :` all work the same -- and the value can go on the next line or
+on the same one (`## Title: Something`). Everything up to the next recognized
+header is that field's value; a line starting with `#` that is *not* a
+recognized field (a hashtag in an abstract, say) stays part of the text. A
+header that looks like a misspelled field (`## Affiliaton`) is kept as text too,
+and flagged in the sync PR's report so it can be fixed on the calendar. Paste
+this in and fill it out:
 
 ```markdown
 ## Title
@@ -190,10 +195,15 @@ safety rail against a truncated or failed calendar fetch, the sync refuses to
 run at all if the feed came back with zero events, and refuses to delete more
 than three records in one run without `--allow-bulk-delete`.
 
-**Fields the calendar does not supply are preserved, never blanked** -- a
-hand-added Slides link, a speaker photo, or tags set before the talk entered
-the window all survive a resync untouched. Two fields the calendar never
-touches at all: `paper` and a custom `slug` (see `_TEMPLATE.toml`).
+**For an entry in the structured format, the calendar wins outright**: remove
+the abstract or a bio from the event, and the next sync removes it from the
+site too. The exceptions are things the calendar is not where they come from --
+slides and recording links (added in the repo once they exist, unless the
+calendar supplies one), tags (filled in by `scripts/tag_talks.py` unless the
+event has a `## Tags` section), speaker photos, and the `paper` and custom
+`slug` fields (see `_TEMPLATE.toml`); those survive a resync untouched. For a
+free-form entry the heuristics routinely miss fields, so there a missing field
+never clears an existing value.
 
 Because Google Calendar owns any in-window record, **editing one of those TOML
 files directly in this repo is blocked**: `.github/workflows/talks.yml` runs
