@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Land Use and Transportation Planning with AI"
+date = 2026-10-30
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 2250"
+zoom = "https://utah.zoom.us/j/85983626630"
+slides = ""
+recording = ""
+paper = ""
+tags = ["geospatial"]
+canceled = false
+abstract = ""
+
+[[speakers]]
+name = "Guang Tian"
+affiliation = "UU City & Metro Planning + SCI"
+role = ""
+website = "https://profiles.faculty.utah.edu/u0750389"
+photo = ""
+email = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "57B1FB14-5060-4040-8C6A-1149EEEFE4BF"
+calendar_last_modified = "2026-08-24T22:04:16Z"
+synced_on = 2026-09-30
+needs_review = true

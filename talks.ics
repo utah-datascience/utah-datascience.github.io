@@ -5668,4 +5668,142 @@ TRANSP:OPAQUE
 LOCATION:WEB 2250 | https://utah.zoom.us/j/85983626630
 CATEGORIES:education,optimization
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-30-bei-wang-shandian-zhe@datascience.utah.edu
+DTSTAMP:20260930T180000Z
+DTSTART;TZID=America/Denver:20260930T120000
+DTEND;TZID=America/Denver:20260930T130000
+SUMMARY:Structure Without a Grid: Extracting and Tracking Topological Featu
+ res - Bei Wang\, Shandian Zhe
+DESCRIPTION:Bei Wang (&\, Shandian Zhe)\, Shandian Zhe (&\, Shandian Zhe)\n
+ \nLarge-scale scientific simulations — in fluid dynamics\, climate\,\nco
+ mbustion\, and beyond — are increasingly outpacing our ability to\nstore
+ \, transfer\, and analyze them at full resolution. A growing\nalternative 
+ to storing raw discretized grids is the continuous\nimplicit model\, such 
+ as multivariate functional approximation (MFA)\nand implicit neural repres
+ entations (INRs). These represent a\nsimulation's fields as continuous fun
+ ctions that can be queried at\narbitrary points and differentiated exactly
+ \, with no resampling\nrequired. This talk presents a line of work buildin
+ g the topological\ndata analysis toolkit needed to make such continuous re
+ presentations\npractically useful. First\, we show how to extract critical
+  points —\nthe maxima\, minima\, and saddles that organize a scalar fiel
+ d's\nstructure — directly from an MFA model\, without ever discretizing 
+ back\nto a grid. Second\, we extend this to richer topological descriptors
+ :\ncontours (isosurfaces)\, Jacobi sets (the shared critical structure\nbe
+ tween two co-registered fields\, useful for comparing related\nquantities 
+ like pressure and temperature)\, and ridge-valley graphs\,\nwhich trace fi
+ lamentary or ridge-like structure in the data. Third\, we\nintroduce a fra
+ mework for tracking these topological features\ncontinuously through time 
+ or parameter space\, following critical\npoints as smooth trajectories usi
+ ng the model's own derivatives rather\nthan resampling frame by frame — 
+ avoiding the aliasing artifacts that\nplague discrete feature tracking. To
+ gether\, these methods point toward\na workflow in which large-scale data 
+ is stored once as a continuous\nfunctional surrogate\, and structural anal
+ ysis — feature detection\,\ncomparison across fields\, and evolution ove
+ r time — happens directly\non that surrogate\, at whatever resolution th
+ e analysis demands. This\nwork is joint with Guanqun Ma\, David Lenz\, Tom
+  Peterka\, Hanqi Guo\,\nKaiyuan Tang\, and Chaoli Wang.\n\nSpeaker 2: Shan
+ dian Zhe (UU KSoC)\n\nhttps://datascience.utah.edu/talks/2026-09-30-bei-wa
+ ng-shandian-zhe/
+URL:https://datascience.utah.edu/talks/2026-09-30-bei-wang-shandian-zhe/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:WEB 3780 (Evans) | https://utexas.zoom.us/j/88630218251?pwd=OLbanw
+ 8MQXVnsiho5qaGjdPKxe98Ea.1&jst=1
+CATEGORIES:visualization
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-02-berton-earnshaw@datascience.utah.edu
+DTSTAMP:20261002T193000Z
+DTSTART;TZID=America/Denver:20261002T133000
+DTEND;TZID=America/Denver:20261002T143000
+SUMMARY:Analyzing -omics Data with High-Dimensional Embeddings: Advantages 
+ and Pitfalls - Berton Earnshaw
+DESCRIPTION:Berton Earnshaw (UU Math+Bio)\n\nHigh-dimensional embeddings of
+ fer a powerful way to summarize complex omics measurements\, such as gene-
+ expression or protein-abundance profiles\, and to compare biological condi
+ tions in a common geometric space. More dimensions can preserve weak or di
+ stributed biological signals that would be missed by a small set of featur
+ es. But additional dimensions also introduce noise\, inflate distances\, a
+ nd can make apparently large differences difficult to interpret.\n\nIn thi
+ s talk\, I will use a simple geometric test based on the squared length of
+  an embedded data vector to illustrate both sides of this tradeoff. We wil
+ l examine how statistical power depends on dimension\, sample size\, mean 
+ shifts\, variance changes\, and correlations among features. The analysis 
+ reveals several useful principles: weak signals can accumulate across many
+  coordinates\, irrelevant features can reduce sensitivity\, and changes in
+  covariance can alter power even when the average distance remains unchang
+ ed. Along the way\, I will introduce accessible ideas from hypothesis test
+ ing\, Gaussian models\, and high-dimensional geometry. The goal is to prov
+ ide practical intuition for deciding when high-dimensional embeddings help
+  reveal biological perturbations—and when they may instead obscure them.
+ \n\nhttps://datascience.utah.edu/talks/2026-10-02-berton-earnshaw/
+URL:https://datascience.utah.edu/talks/2026-10-02-berton-earnshaw/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:WEB 2250
+CATEGORIES:biology & genomics,deep learning,statistics
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-kenneth-collins@datascience.utah.edu
+DTSTAMP:20261023T193000Z
+DTSTART;TZID=America/Denver:20261023T133000
+DTEND;TZID=America/Denver:20261023T143000
+SUMMARY:The talk will consider the impact of AI in moving image works\, inc
+ luding AI filmmaking\, animation\, and video art - Kenneth Collins
+DESCRIPTION:Kenneth Collins (UU Film)\n\nhttps://datascience.utah.edu/talks
+ /2026-10-23-kenneth-collins/
+URL:https://datascience.utah.edu/talks/2026-10-23-kenneth-collins/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:WEB 2250 | https://utah.zoom.us/j/85983626630
+CATEGORIES:computer vision
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-guang-tian@datascience.utah.edu
+DTSTAMP:20261030T193000Z
+DTSTART;TZID=America/Denver:20261030T133000
+DTEND;TZID=America/Denver:20261030T143000
+SUMMARY:Land Use and Transportation Planning with AI - Guang Tian
+DESCRIPTION:Guang Tian (UU City & Metro Planning + SCI)\n\nhttps://datascie
+ nce.utah.edu/talks/2026-10-30-guang-tian/
+URL:https://datascience.utah.edu/talks/2026-10-30-guang-tian/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:WEB 2250 | https://utah.zoom.us/j/85983626630
+CATEGORIES:geospatial
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06-tom-henderson@datascience.utah.edu
+DTSTAMP:20261106T203000Z
+DTSTART;TZID=America/Denver:20261106T133000
+DTEND;TZID=America/Denver:20261106T143000
+SUMMARY:40 Years of AI ! - Tom Henderson
+DESCRIPTION:Tom Henderson (UU KSoC)\n\nhttps://datascience.utah.edu/talks/2
+ 026-11-06-tom-henderson/
+URL:https://datascience.utah.edu/talks/2026-11-06-tom-henderson/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:WEB 2250 | https://utah.zoom.us/j/85983626630
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-aik-choon-tan@datascience.utah.edu
+DTSTAMP:20261113T203000Z
+DTSTART;TZID=America/Denver:20261113T133000
+DTEND;TZID=America/Denver:20261113T143000
+SUMMARY:AI for Cancer Treatment - Aik Choon Tan
+DESCRIPTION:Aik Choon Tan (UU Oncological Sciences)\n\nhttps://datascience.
+ utah.edu/talks/2026-11-13-aik-choon-tan/
+URL:https://datascience.utah.edu/talks/2026-11-13-aik-choon-tan/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:WEB 2250 | https://utah.zoom.us/j/85983626630
+CATEGORIES:health & medicine
+END:VEVENT
 END:VCALENDAR

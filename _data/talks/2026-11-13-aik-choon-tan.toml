@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "AI for Cancer Treatment"
+date = 2026-11-13
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 2250"
+zoom = "https://utah.zoom.us/j/85983626630"
+slides = ""
+recording = ""
+paper = ""
+tags = ["health & medicine"]
+canceled = false
+abstract = ""
+
+[[speakers]]
+name = "Aik Choon Tan"
+affiliation = "UU Oncological Sciences"
+role = ""
+website = "http://tanlab.org/"
+photo = ""
+email = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "31fbgtn32hprr5aem0mocvfh7b@google.com"
+calendar_last_modified = "2026-09-25T17:00:55Z"
+synced_on = 2026-09-30
+needs_review = true

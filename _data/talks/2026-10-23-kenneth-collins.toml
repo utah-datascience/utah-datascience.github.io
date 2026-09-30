@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "The talk will consider the impact of AI in moving image works, including AI filmmaking, animation, and video art"
+date = 2026-10-23
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 2250"
+zoom = "https://utah.zoom.us/j/85983626630"
+slides = ""
+recording = ""
+paper = ""
+tags = ["computer vision"]
+canceled = false
+abstract = ""
+
+[[speakers]]
+name = "Kenneth Collins"
+affiliation = "UU Film"
+role = ""
+website = "https://profiles.faculty.utah.edu/u6049692"
+photo = ""
+email = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "B076EA48-9869-49EC-A641-DF409BEB8F40"
+calendar_last_modified = "2026-08-24T14:58:54Z"
+synced_on = 2026-09-30
+needs_review = true
