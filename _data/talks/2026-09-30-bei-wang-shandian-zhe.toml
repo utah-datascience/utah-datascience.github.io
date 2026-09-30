@@ -68,6 +68,6 @@ bio = ""
 [meta]
 source = "google-calendar"
 calendar_uid = "72C52A68-9511-4486-B6C8-ADE54D94E03D"
-calendar_last_modified = "2026-09-29T02:17:47Z"
+calendar_last_modified = "2026-09-30T06:24:33Z"
 synced_on = 2026-09-30
 needs_review = true
