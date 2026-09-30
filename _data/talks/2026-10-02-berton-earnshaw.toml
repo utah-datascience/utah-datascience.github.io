@@ -1,0 +1,36 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Analyzing -omics Data with High-Dimensional Embeddings: Advantages and Pitfalls"
+date = 2026-10-02
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 2250"
+zoom = ""
+slides = ""
+recording = ""
+paper = ""
+tags = ["biology & genomics", "deep learning", "statistics"]
+canceled = false
+abstract = """
+High-dimensional embeddings offer a powerful way to summarize complex omics measurements, such as gene-expression or protein-abundance profiles, and to compare biological conditions in a common geometric space. More dimensions can preserve weak or distributed biological signals that would be missed by a small set of features. But additional dimensions also introduce noise, inflate distances, and can make apparently large differences difficult to interpret.
+
+In this talk, I will use a simple geometric test based on the squared length of an embedded data vector to illustrate both sides of this tradeoff. We will examine how statistical power depends on dimension, sample size, mean shifts, variance changes, and correlations among features. The analysis reveals several useful principles: weak signals can accumulate across many coordinates, irrelevant features can reduce sensitivity, and changes in covariance can alter power even when the average distance remains unchanged. Along the way, I will introduce accessible ideas from hypothesis testing, Gaussian models, and high-dimensional geometry. The goal is to provide practical intuition for deciding when high-dimensional embeddings help reveal biological perturbations—and when they may instead obscure them.
+"""
+
+[[speakers]]
+name = "Berton Earnshaw"
+affiliation = "UU Math+Bio"
+role = ""
+website = "https://scholar.google.com/citations?user=xHNHuD0AAAAJ"
+photo = ""
+email = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "BC69C850-33ED-4458-B292-CE1614E6B158"
+calendar_last_modified = "2026-09-29T02:31:14Z"
+synced_on = 2026-09-30
+needs_review = true

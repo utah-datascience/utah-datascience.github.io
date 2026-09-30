@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "40 Years of AI !"
+date = 2026-11-06
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 2250"
+zoom = "https://utah.zoom.us/j/85983626630"
+slides = ""
+recording = ""
+paper = ""
+tags = []
+canceled = false
+abstract = ""
+
+[[speakers]]
+name = "Tom Henderson"
+affiliation = "UU KSoC"
+role = ""
+website = "https://www.cs.utah.edu/henderson-tom/"
+photo = ""
+email = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "02B08BD9-F8C4-4900-907F-37F63206899D"
+calendar_last_modified = "2026-08-24T22:51:47Z"
+synced_on = 2026-09-30
+needs_review = true

@@ -2606,5 +2606,83 @@
     "optimization"
    ]
   }
+ },
+ {
+  "title": "Bei Wang, Shandian Zhe: Structure Without a Grid: Extracting and Tracking Topological Features",
+  "start": "2026-09-30T12:00:00-06:00",
+  "end": "2026-09-30T13:00:00-06:00",
+  "url": "/talks/2026-09-30-bei-wang-shandian-zhe/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 3780 (Evans)",
+   "tags": [
+    "visualization"
+   ]
+  }
+ },
+ {
+  "title": "Berton Earnshaw: Analyzing -omics Data with High-Dimensional Embeddings: Advantages and Pitfalls",
+  "start": "2026-10-02T13:30:00-06:00",
+  "end": "2026-10-02T14:30:00-06:00",
+  "url": "/talks/2026-10-02-berton-earnshaw/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 2250",
+   "tags": [
+    "biology & genomics",
+    "deep learning",
+    "statistics"
+   ]
+  }
+ },
+ {
+  "title": "Kenneth Collins: The talk will consider the impact of AI in moving image works, including AI filmmaking, animation, and video art",
+  "start": "2026-10-23T13:30:00-06:00",
+  "end": "2026-10-23T14:30:00-06:00",
+  "url": "/talks/2026-10-23-kenneth-collins/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 2250",
+   "tags": [
+    "computer vision"
+   ]
+  }
+ },
+ {
+  "title": "Guang Tian: Land Use and Transportation Planning with AI",
+  "start": "2026-10-30T13:30:00-06:00",
+  "end": "2026-10-30T14:30:00-06:00",
+  "url": "/talks/2026-10-30-guang-tian/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 2250",
+   "tags": [
+    "geospatial"
+   ]
+  }
+ },
+ {
+  "title": "Tom Henderson: 40 Years of AI !",
+  "start": "2026-11-06T13:30:00-07:00",
+  "end": "2026-11-06T14:30:00-07:00",
+  "url": "/talks/2026-11-06-tom-henderson/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 2250",
+   "tags": []
+  }
+ },
+ {
+  "title": "Aik Choon Tan: AI for Cancer Treatment",
+  "start": "2026-11-13T13:30:00-07:00",
+  "end": "2026-11-13T14:30:00-07:00",
+  "url": "/talks/2026-11-13-aik-choon-tan/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 2250",
+   "tags": [
+    "health & medicine"
+   ]
+  }
  }
 ]
