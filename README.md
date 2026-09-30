@@ -1,5 +1,6 @@
 # Utah Data Science Center
 
+[![Deploy site](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/pages.yml)
 [![Talk pages](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/talks.yml/badge.svg)](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/talks.yml)
 [![Sync talks from Google Calendar](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/sync-talks.yml/badge.svg)](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/sync-talks.yml)
 

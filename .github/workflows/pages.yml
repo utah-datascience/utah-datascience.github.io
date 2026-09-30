@@ -1,0 +1,63 @@
+name: Deploy site
+
+# Builds and publishes the site via GitHub Pages' "GitHub Actions" deployment
+# source, rather than the classic "deploy from a branch" build. That is what
+# lets `deploy` require other checks (see needs:) before the site republishes.
+#
+# Rollout: switch Settings > Pages > Source to "GitHub Actions" as soon as
+# this is on master. Until then the legacy branch build keeps running too, and
+# since deploy-pages accepts a deployment from the source branch either way,
+# every push publishes twice (identical output, last one wins).
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # Pinned rather than ubuntu-latest: ubuntu-latest moves to Ubuntu 26 on
+    # 2026-10-19, and ruby/setup-ruby has no prebuilt Ruby 3.1 for it (3.1 is
+    # past end-of-life). Move off this pin together with a Ruby upgrade.
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
