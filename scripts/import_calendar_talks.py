@@ -1,16 +1,30 @@
 #!/usr/bin/env python3
-"""Import talk records from the seminar's public Google Calendar feed.
+"""Sync talk records in `_data/talks/` from the seminar's Google Calendar.
 
-This is a *seeding / convenience* tool: it turns calendar entries into TOML
-records under `_data/talks/`, which are then the source of truth for the site.
-Calendar descriptions are free-form, so the parsing here is best effort; every
-imported record should be reviewed (and the fields it could not fill in, such
-as slides or recording links, filled in by hand).
+Google Calendar is the source of truth for any talk happening soon; this
+script is what keeps `_data/talks/*.toml` in step with it. Two modes:
+
+    python3 scripts/import_calendar_talks.py --sync
+        The daily sync. Talks starting within --window-days (default 90) are
+        created, updated, or (if removed from the calendar) deleted to match
+        it. Talks outside the window are left alone -- past talks and
+        anything far out are owned by the repo, not the calendar. See
+        `parse_markdown_sections` for the structured description format this
+        expects, and the README for a pasteable template.
+
+    python3 scripts/import_calendar_talks.py
+        One-off seeding, for backfilling history: writes a new TOML file for
+        every calendar entry that does not already have one, using best-effort
+        heuristics for calendar entries that predate the structured format.
+        Never updates or deletes an existing file unless --overwrite is given.
 
 Usage:
-    python3 scripts/import_calendar_talks.py                 # fetch + import new talks
-    python3 scripts/import_calendar_talks.py --overwrite      # also rewrite existing files
-    python3 scripts/import_calendar_talks.py --ics cal.ics    # use a local .ics file
+    python3 scripts/import_calendar_talks.py --sync                    # daily sync
+    python3 scripts/import_calendar_talks.py --sync --dry-run          # preview it
+    python3 scripts/import_calendar_talks.py --sync --window-days 30
+    python3 scripts/import_calendar_talks.py                           # one-off seeding
+    python3 scripts/import_calendar_talks.py --overwrite               # also rewrite existing files
+    python3 scripts/import_calendar_talks.py --ics cal.ics             # use a local .ics file
     python3 scripts/import_calendar_talks.py --since 2025-01-01
 """
 
@@ -18,10 +32,12 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import glob
 import html
 import os
 import re
 import sys
+import tomllib
 import unicodedata
 import urllib.request
 from zoneinfo import ZoneInfo
@@ -33,9 +49,14 @@ ICS_URL = (
     + "/public/basic.ics"
 )
 TZ = ZoneInfo("America/Denver")
+WINDOW_DAYS_DEFAULT = 90
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "_data", "talks")
+
+# Talk-level fields the calendar never supplies -- carried over from whatever
+# is already on disk, verbatim, every sync.
+PRESERVE_ONLY_FIELDS = ("paper", "slug")
 
 # Boilerplate that shows up in the calendar summaries and is not part of a title.
 SERIES_NOISE = [
@@ -107,6 +128,15 @@ def get(event: dict, key: str) -> str:
     return event.get(key, ("", ""))[1]
 
 
+def event_uid(event: dict) -> str:
+    """This calendar reuses one UID across every occurrence of a recurring
+    slot, distinguishing them with RECURRENCE-ID -- so that pair, not the bare
+    UID, is what uniquely identifies a specific talk."""
+    uid = get(event, "UID")
+    rid = get(event, "RECURRENCE-ID")
+    return f"{uid}::{rid}" if rid else uid
+
+
 def parse_dt(event: dict, key: str) -> dt.datetime | None:
     if key not in event:
         return None
@@ -127,8 +157,13 @@ def parse_dt(event: dict, key: str) -> dt.datetime | None:
 # Field extraction
 # --------------------------------------------------------------------------- #
 def html_to_text(raw: str) -> str:
-    text = re.sub(r"(?i)<br\s*/?>", "\n", raw)
+    text = raw.replace("\r\n", "\n").replace("\r", "\n")
+    text = re.sub(r"(?i)<br\s*/?>", "\n", text)
     text = re.sub(r"(?i)</p>", "\n\n", text)
+    # Google Calendar's editor wraps each line in <div> when text is pasted in;
+    # without these, a whole structured description collapses onto one line.
+    text = re.sub(r"(?i)<li[^>]*>", "\n- ", text)
+    text = re.sub(r"(?i)</?(?:div|li|ul|ol|h[1-6]|tr|blockquote)[^>]*>", "\n", text)
     text = re.sub(r'(?i)<a[^>]*href="([^"]+)"[^>]*>(.*?)</a>', r"\2 (\1)", text)
     text = re.sub(r"<[^>]+>", "", text)
     text = html.unescape(text).replace("\xa0", " ")
@@ -161,6 +196,163 @@ def classify_links(links: list[str]) -> dict:
                            r"maps\.google|goo\.gl/maps|/map)", low) and not out["website"]:
             out["website"] = link
     return out
+
+
+# --------------------------------------------------------------------------- #
+# Structured (Markdown-header) description format
+# --------------------------------------------------------------------------- #
+# The organizer-facing format this sync expects in the calendar description:
+# a Markdown header (any level, 1-6 "#") names a field, and everything up to
+# the next such header is that field's value. Forgiving of case, spacing, and a
+# trailing colon -- "#title", "# TITLE ", "##   Title   :" all work -- and the
+# value may also follow on the same line ("## Title: Something"). Only headers
+# whose label is a known field end a section, so a stray "#" line inside an
+# abstract (a hashtag, "# 1 result") stays part of it. See README for the
+# pasteable template.
+HEADER_LINE_RE = re.compile(r"^[ \t]{0,3}(?P<hashes>#{1,6})(?P<rest>[^\n]*)$")
+
+# label (normalized: lowercased, whitespace-collapsed) -> canonical field name
+TALK_LABEL_ALIASES = {
+    "title": "title",
+    "talk title": "title",
+    "abstract": "abstract",
+    "summary": "abstract",
+    "tags": "tags",
+    "topics": "tags",
+    "keywords": "tags",
+    "location": "location",
+    "room": "location",
+    "venue": "location",
+    "zoom": "zoom",
+    "meeting link": "zoom",
+    "meeting": "zoom",
+    "slides": "slides",
+    "recording": "recording",
+    "video": "recording",
+    "series": "series",
+}
+SPEAKER_LABEL_ALIASES = {
+    "affiliation": "affiliation",
+    "institution": "affiliation",
+    "department": "affiliation",
+    "website": "website",
+    "url": "website",
+    "homepage": "website",
+    "link": "website",
+    "bio": "bio",
+    "biography": "bio",
+    "about the speaker": "bio",
+    "speaker bio": "bio",
+    "email": "email",
+    "role": "role",
+    "position": "role",
+}
+
+
+def normalize_label(label: str) -> str:
+    return re.sub(r"\s+", " ", label).strip().lower()
+
+
+def classify_header(rest: str) -> tuple[str, str, str] | None:
+    """For the text after the "#"s, return (kind, field, inline_value) if it
+    names a known field, else None. kind is "speaker" (starts a new speaker),
+    "speaker_field", or "talk"."""
+    label, _, inline = rest.partition(":")
+    label = normalize_label(label)
+    inline = inline.strip()
+    if label in ("speaker", "presenter"):
+        return "speaker", "name", inline
+    if label in SPEAKER_LABEL_ALIASES:
+        return "speaker_field", SPEAKER_LABEL_ALIASES[label], inline
+    if label in TALK_LABEL_ALIASES:
+        return "talk", TALK_LABEL_ALIASES[label], inline
+    return None
+
+
+def looks_like_unknown_header(hashes: str, rest: str) -> bool:
+    """A "#" line that is probably a mistyped field header ("## Affiliaton")
+    rather than prose that happens to start with "#" ("#MachineLearning is
+    everywhere"). Only used to warn -- the line is kept either way."""
+    if len(hashes) < 2 and not rest[:1].isspace():
+        return False
+    label = normalize_label(rest.partition(":")[0])
+    return bool(label) and len(label.split()) <= 4 and not label.endswith((".", "?", "!"))
+
+
+def parse_markdown_sections(text: str) -> tuple[dict, list[dict], list[str]]:
+    """Split a structured calendar description into talk fields and speakers.
+
+    Returns (talk_fields, speakers, unknown_labels). An empty `speakers` means
+    the text was not written in this format at all -- the caller should fall
+    back to the free-form heuristics used for older calendar entries.
+    """
+    sections: list[list] = []  # [kind, field, body_lines]
+    unknown: list[str] = []
+    current: list | None = None
+
+    for line in text.replace("\r\n", "\n").replace("\r", "\n").split("\n"):
+        match = HEADER_LINE_RE.match(line)
+        header = classify_header(match.group("rest")) if match else None
+        if header:
+            kind, field, inline = header
+            current = [kind, field, [inline] if inline else []]
+            sections.append(current)
+            continue
+        if match and looks_like_unknown_header(match.group("hashes"), match.group("rest")):
+            unknown.append(match.group("rest").strip().rstrip(":").strip())
+        if current is not None:
+            current[2].append(line)  # unknown "#" lines stay in the body
+
+    talk_fields: dict = {}
+    speakers: list[dict] = []
+    lead_speaker_fields: dict = {}
+    speaker: dict | None = None
+
+    for kind, field, lines in sections:
+        body = "\n".join(lines).strip()
+        if not body:
+            continue
+        if kind == "speaker":
+            speaker = {"name": body.split("\n")[0].strip()}
+            speakers.append(speaker)
+        elif kind == "speaker_field":
+            (speaker if speaker is not None else lead_speaker_fields)[field] = body
+        elif field == "tags":
+            talk_fields[field] = [t.strip() for t in re.split(r"[,\n]", body) if t.strip()]
+        else:
+            talk_fields[field] = body
+
+    if not speakers and lead_speaker_fields:
+        # Fields typed before any "## Speaker" header, and there never was
+        # one -- a single speaker, named from the calendar summary instead.
+        speakers = [dict(lead_speaker_fields)]
+    elif lead_speaker_fields and speakers:
+        # Fields typed before the first "## Speaker" header attach to it.
+        merged = dict(lead_speaker_fields)
+        merged.update(speakers[0])
+        speakers[0] = merged
+
+    return talk_fields, speakers, unknown
+
+
+def infer_series(summary: str, start: dt.datetime) -> str:
+    return (
+        "Data Science & AI Lecture Series"
+        if re.search(r"(?i)ucds\+ai|lecture series", summary) or start.year >= 2025
+        else "Data Science Seminar"
+    )
+
+
+def format_last_modified(value: str) -> str:
+    """LAST-MODIFIED as GitHub-Actions-run-agnostic ISO 8601, for the [meta]
+    block -- this is what a later sync compares to skip an unchanged event."""
+    if not value:
+        return ""
+    try:
+        stamp = dt.datetime.strptime(value, "%Y%m%dT%H%M%SZ").replace(tzinfo=dt.timezone.utc)
+    except ValueError:
+        return value
+    return stamp.isoformat().replace("+00:00", "Z")
 
 
 BOILERPLATE_LINE_RE = re.compile(
@@ -361,8 +553,15 @@ def toml_str(value: str) -> str:
 
 
 def render_toml(talk: dict) -> str:
+    needs_review = bool(talk.get("needs_review", True))
+    banner = (
+        "# Imported from the seminar Google Calendar -- please review and complete."
+        if needs_review
+        else "# Synced from the seminar Google Calendar -- edits here are overwritten"
+             "\n# while this talk is inside the sync window. See README.md#talks."
+    )
     lines = [
-        "# Imported from the seminar Google Calendar -- please review and complete.",
+        banner,
         "",
         "[talk]",
         f'title = {toml_str(talk["title"])}',
@@ -374,8 +573,13 @@ def render_toml(talk: dict) -> str:
         f'zoom = {toml_str(talk["zoom"])}',
         f'slides = {toml_str(talk["slides"])}',
         f'recording = {toml_str(talk["recording"])}',
+        f'paper = {toml_str(talk.get("paper", ""))}',
+        "tags = [" + ", ".join(toml_str(tag) for tag in talk.get("tags") or []) + "]",
         f'canceled = {"true" if talk["canceled"] else "false"}',
-        "tags = []",
+    ]
+    if talk.get("slug"):
+        lines.append(f'slug = {toml_str(talk["slug"])}')
+    lines += [
         f'abstract = {toml_str(talk["abstract"])}',
         "",
     ]
@@ -383,21 +587,126 @@ def render_toml(talk: dict) -> str:
         lines += [
             "[[speakers]]",
             f'name = {toml_str(speaker["name"])}',
-            f'affiliation = {toml_str(speaker["affiliation"])}',
-            f'website = {toml_str(speaker["website"])}',
-            'photo = ""',
-            f'bio = {toml_str(speaker["bio"])}',
+            f'affiliation = {toml_str(speaker.get("affiliation", ""))}',
+            f'role = {toml_str(speaker.get("role", ""))}',
+            f'website = {toml_str(speaker.get("website", ""))}',
+            f'photo = {toml_str(speaker.get("photo", ""))}',
+            f'email = {toml_str(speaker.get("email", ""))}',
+            f'bio = {toml_str(speaker.get("bio", ""))}',
             "",
         ]
     lines += [
         "[meta]",
         'source = "google-calendar"',
         f'calendar_uid = {toml_str(talk["uid"])}',
-        f'imported_on = {dt.date.today().isoformat()}',
-        "needs_review = true",
-        "",
     ]
+    last_modified = format_last_modified(talk.get("last_modified", ""))
+    if last_modified:
+        lines.append(f'calendar_last_modified = {toml_str(last_modified)}')
+    lines.append(f'synced_on = {dt.date.today().isoformat()}')
+    lines.append(f'needs_review = {"true" if needs_review else "false"}')
+    lines.append("")
     return "\n".join(lines)
+
+
+# --------------------------------------------------------------------------- #
+# Loading and merging existing records
+# --------------------------------------------------------------------------- #
+def load_records(data_dir: str) -> dict[str, dict]:
+    """{calendar_uid: {"path", "talk", "speakers"}} for every existing record
+    that has a calendar_uid. Records without one (hand-written, or from before
+    this sync existed) are invisible to it -- and so left untouched."""
+    records: dict[str, dict] = {}
+    for path in sorted(glob.glob(os.path.join(data_dir, "*.toml"))):
+        if os.path.basename(path).startswith("_"):
+            continue
+        with open(path, "rb") as handle:
+            try:
+                raw = tomllib.load(handle)
+            except tomllib.TOMLDecodeError as error:
+                print(
+                    f"warning: {os.path.relpath(path, ROOT)} is not valid TOML ({error}) "
+                    "-- the sync cannot see this record and will not touch it, which can "
+                    "leave a stale duplicate behind if the calendar has since renamed it",
+                    file=sys.stderr,
+                )
+                continue
+        uid = raw.get("meta", {}).get("calendar_uid")
+        if uid:
+            records[uid] = {"path": path, "raw": raw}
+    return records
+
+
+def prefer(incoming, existing):
+    """The merge rule, uniformly: whatever the calendar supplies this sync
+    wins; whatever it says nothing about survives from the existing record."""
+    if isinstance(incoming, str):
+        return incoming if incoming.strip() else existing
+    if isinstance(incoming, list):
+        return incoming if incoming else existing
+    return incoming if incoming is not None else existing
+
+
+def normalize_person_name(name: str) -> str:
+    return re.sub(r"\s+", " ", name).strip().lower()
+
+
+def merge_speakers(incoming: list[dict], existing: list[dict], *, authoritative: bool = False) -> list[dict]:
+    if not incoming:
+        # No speaker parsed at all almost certainly means something failed to
+        # parse, not that every speaker was intentionally removed.
+        return existing
+    pick = (lambda new, old: new) if authoritative else prefer
+    existing_by_name = {normalize_person_name(s.get("name", "")): s for s in existing}
+    merged = []
+    for speaker in incoming:
+        prior = existing_by_name.get(normalize_person_name(speaker.get("name", "")), {})
+        merged.append(
+            {
+                "name": speaker.get("name", "") or prior.get("name", ""),
+                "affiliation": pick(speaker.get("affiliation", ""), prior.get("affiliation", "")),
+                "role": pick(speaker.get("role", ""), prior.get("role", "")),
+                "website": pick(speaker.get("website", ""), prior.get("website", "")),
+                "photo": prior.get("photo", ""),  # never supplied by the calendar
+                "email": pick(speaker.get("email", ""), prior.get("email", "")),
+                "bio": pick(speaker.get("bio", ""), prior.get("bio", "")),
+            }
+        )
+    return merged
+
+
+def merge_record(incoming: dict, existing_raw: dict | None) -> dict:
+    """Combine a freshly parsed calendar event with whatever is already on
+    disk for this talk (None the first time a talk is seen). Fields the
+    calendar supplies (non-empty) win; fields it says nothing about are kept
+    from the existing record. date/start_time/end_time/canceled always come
+    straight from the calendar -- they are unambiguous and always present."""
+    existing_talk = (existing_raw or {}).get("talk", {})
+    existing_speakers = (existing_raw or {}).get("speakers", []) or []
+
+    # A structured entry says exactly what the talk is: a field left empty
+    # there means "none", so it clears the old value rather than keeping it.
+    # A free-form entry was parsed by heuristics that routinely miss fields,
+    # so there an empty field only means "not found" and the old value stays.
+    authoritative = not incoming.get("needs_review", True)
+    pick = (lambda new, old: new) if authoritative else prefer
+
+    merged = dict(incoming)
+    for field in ("title", "series", "location", "zoom", "abstract"):
+        merged[field] = pick(incoming.get(field, ""), existing_talk.get(field, ""))
+    # Slides and recordings usually get added in the repo once they exist,
+    # and tags are filled in by tag_talks.py, so the calendar only overrides
+    # these when it actually supplies one.
+    for field in ("slides", "recording"):
+        merged[field] = prefer(incoming.get(field, ""), existing_talk.get(field, ""))
+    merged["tags"] = prefer(incoming.get("tags", []), existing_talk.get("tags", []))
+    for field in PRESERVE_ONLY_FIELDS:
+        if existing_talk.get(field):
+            merged[field] = existing_talk[field]
+    merged["speakers"] = merge_speakers(
+        incoming.get("speakers", []), existing_speakers, authoritative=authoritative
+    )
+    return merged
 
 
 # --------------------------------------------------------------------------- #
@@ -424,91 +733,133 @@ def event_to_talk(event: dict) -> dict | None:
         location = location.split("(")[0]
     location = re.sub(r"(?i)\s*\b(and|&|or)\s*$", "", location).strip(" &|,-")
 
-    body = strip_boilerplate(description)
-    sections = split_sections(body)
-    speaker_name, title = split_speaker_and_title(summary)
+    summary_speaker_name, summary_title = split_speaker_and_title(summary)
+    summary_name, summary_affiliation = split_name_affiliation(summary_speaker_name)
 
-    # Labelled fields in the description win over whatever the summary said.
-    if sections.get("speaker"):
-        candidate = sections["speaker"].split("\n")[0].strip()
-        if candidate and not re.match(r"(?i)^tba|^tbd", candidate):
-            speaker_name = candidate
-    if sections.get("title"):
-        candidate = clean_title(sections["title"])
-        if candidate:
-            title = candidate
+    md_fields, md_speakers, unknown_headers = parse_markdown_sections(description)
 
-    blocks = paragraphs(body)
-    used: set[int] = set()
-    for i, block in enumerate(blocks):
-        if any(re.match(rf"(?i)^{expr}\s*:", block) for expr in
-               (r"abstract", r"summary", r"bio", r"speaker", r"presenter", r"(?:talk )?title")):
-            used.add(i)
+    if md_speakers:
+        # Structured description: trust it completely rather than mixing in
+        # the free-form heuristics below, which assume a layout this format
+        # does not have.
+        speakers = []
+        for entry in md_speakers:
+            name = entry.get("name", "").strip() or summary_name
+            if not name or NOT_A_PERSON_RE.search(name):
+                continue
+            speakers.append(
+                {
+                    "name": name,
+                    "affiliation": entry.get("affiliation", ""),
+                    "role": entry.get("role", ""),
+                    "website": entry.get("website", ""),
+                    "email": entry.get("email", ""),
+                    "bio": entry.get("bio", ""),
+                }
+            )
+        if not speakers:
+            return None
 
-    # Fall back to the unlabelled layout used by the older calendar entries:
-    #   <title> / <speaker + affiliation + link> / <abstract paragraphs>
-    if not title or title == "TBA":
+        title = clean_title(md_fields.get("title", "")) or clean_title(summary_title) or "TBA"
+        abstract = clean_block(md_fields.get("abstract", ""))
+        tags = md_fields.get("tags", [])
+        location = md_fields.get("location", "") or location
+        zoom = md_fields.get("zoom", "") or links["zoom"]
+        slides = md_fields.get("slides", "") or links["slides"]
+        recording = md_fields.get("recording", "") or links["recording"]
+        series = md_fields.get("series", "") or infer_series(summary, start)
+        needs_review = False
+    else:
+        # Free-form description (an entry from before this format, or one
+        # that never adopted it) -- fall back to positional heuristics.
+        body = strip_boilerplate(description)
+        sections = split_sections(body)
+        speaker_name, title = summary_speaker_name, summary_title
+
+        # Labelled fields in the description win over whatever the summary said.
+        if sections.get("speaker"):
+            candidate = sections["speaker"].split("\n")[0].strip()
+            if candidate and not re.match(r"(?i)^tba|^tbd", candidate):
+                speaker_name = candidate
+        if sections.get("title"):
+            candidate = clean_title(sections["title"])
+            if candidate:
+                title = candidate
+
+        blocks = paragraphs(body)
+        used: set[int] = set()
         for i, block in enumerate(blocks):
-            if i not in used and looks_like_title(block):
-                candidate = clean_title(block)
-                if candidate:
-                    title = candidate
+            if any(re.match(rf"(?i)^{expr}\s*:", block) for expr in
+                   (r"abstract", r"summary", r"bio", r"speaker", r"presenter", r"(?:talk )?title")):
+                used.add(i)
+
+        # Fall back to the unlabelled layout used by the older calendar entries:
+        #   <title> / <speaker + affiliation + link> / <abstract paragraphs>
+        if not title or title == "TBA":
+            for i, block in enumerate(blocks):
+                if i not in used and looks_like_title(block):
+                    candidate = clean_title(block)
+                    if candidate:
+                        title = candidate
+                        used.add(i)
+                        break
+
+        affiliation = ""
+        name, affiliation = split_name_affiliation(speaker_name)
+        if not affiliation:
+            for i, block in enumerate(blocks):
+                if i in used:
+                    continue
+                lines = [l.strip() for l in block.split("\n") if l.strip()]
+                if lines and matches_name(lines[0], name):
+                    _, affiliation = split_name_affiliation(lines[0])
+                    if not affiliation and len(lines) > 1:
+                        affiliation = clean_affiliation(
+                            ", ".join(
+                                l for l in lines[1:3] if not l.lower().startswith("http")
+                            )
+                        )
                     used.add(i)
                     break
 
-    affiliation = ""
-    name, affiliation = split_name_affiliation(speaker_name)
-    if not affiliation:
-        for i, block in enumerate(blocks):
-            if i in used:
-                continue
-            lines = [l.strip() for l in block.split("\n") if l.strip()]
-            if lines and matches_name(lines[0], name):
-                _, affiliation = split_name_affiliation(lines[0])
-                if not affiliation and len(lines) > 1:
-                    affiliation = clean_affiliation(
-                        ", ".join(
-                            l for l in lines[1:3] if not l.lower().startswith("http")
-                        )
-                    )
-                used.add(i)
-                break
+        abstract = sections.get("abstract", "")
+        if not abstract:
+            remainder = [b for i, b in enumerate(blocks) if i not in used and len(b) > 200]
+            abstract = "\n\n".join(remainder).strip()
+        abstract = clean_block(abstract)
+        bio = clean_block(sections.get("bio", ""))
 
-    abstract = sections.get("abstract", "")
-    if not abstract:
-        remainder = [b for i, b in enumerate(blocks) if i not in used and len(b) > 200]
-        abstract = "\n\n".join(remainder).strip()
-    abstract = clean_block(abstract)
-    bio = clean_block(sections.get("bio", ""))
+        if not name or re.match(r"(?i)^(speaker\s*)?(tba|tbd)\b", name):
+            return None
+        if NOT_A_PERSON_RE.search(name):  # "Data Science Lecture Series", "Sandia Information Session", ...
+            return None
 
-    if not name or re.match(r"(?i)^(speaker\s*)?(tba|tbd)\b", name):
-        return None
-    if NOT_A_PERSON_RE.search(name):  # "Data Science Lecture Series", "Sandia Information Session", ...
-        return None
+        speakers = []
+        for part in re.split(r"\s+(?:&|and)\s+|\s*,\s*(?=[A-Z][a-z]+\s+[A-Z])", name):
+            part = part.strip(" ,;:-")
+            if part:
+                speakers.append(
+                    {
+                        "name": part,
+                        "affiliation": affiliation,
+                        "website": links["website"],
+                        "bio": bio,
+                    }
+                )
+        if not speakers:
+            return None
+        if len(speakers) > 1:  # a shared bio/website belongs to nobody in particular
+            for speaker in speakers[1:]:
+                speaker["website"] = ""
 
-    speakers = []
-    for part in re.split(r"\s+(?:&|and)\s+|\s*,\s*(?=[A-Z][a-z]+\s+[A-Z])", name):
-        part = part.strip(" ,;:-")
-        if part:
-            speakers.append(
-                {
-                    "name": part,
-                    "affiliation": affiliation,
-                    "website": links["website"],
-                    "bio": bio,
-                }
-            )
-    if not speakers:
-        return None
-    if len(speakers) > 1:  # a shared bio/website belongs to nobody in particular
-        for speaker in speakers[1:]:
-            speaker["website"] = ""
+        tags = []
+        zoom = links["zoom"]
+        slides = links["slides"]
+        recording = links["recording"]
+        series = infer_series(summary, start)
+        needs_review = True
 
-    series = (
-        "Data Science & AI Lecture Series"
-        if re.search(r"(?i)ucds\+ai|lecture series", summary) or start.year >= 2025
-        else "Data Science Seminar"
-    )
+    canceled = bool(CANCELED_RE.search(summary)) or get(event, "STATUS").upper() == "CANCELLED"
 
     return {
         "title": title or "TBA",
@@ -517,40 +868,168 @@ def event_to_talk(event: dict) -> dict | None:
         "end_time": end.strftime("%H:%M"),
         "series": series,
         "location": location,
-        "zoom": links["zoom"],
-        "slides": links["slides"],
-        "recording": links["recording"],
-        "canceled": bool(CANCELED_RE.search(summary)),
+        "zoom": zoom,
+        "slides": slides,
+        "recording": recording,
+        "canceled": canceled,
         "abstract": abstract,
+        "tags": tags,
         "speakers": speakers,
-        "uid": get(event, "UID"),
+        "uid": event_uid(event),
+        "needs_review": needs_review,
+        "unknown_headers": unknown_headers,
+        "last_modified": get(event, "LAST-MODIFIED"),
     }
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--ics", help="path to a local .ics file (default: fetch the calendar)")
-    parser.add_argument("--since", default="2020-01-01", help="ignore talks before this date")
-    parser.add_argument("--until", help="ignore talks after this date")
-    parser.add_argument("--overwrite", action="store_true", help="rewrite existing TOML files")
-    args = parser.parse_args()
+def fetch_ics(path: str | None) -> str:
+    if path:
+        with open(path, encoding="utf-8") as handle:
+            return handle.read()
+    with urllib.request.urlopen(ICS_URL) as response:
+        return response.read().decode("utf-8")
 
-    if args.ics:
-        with open(args.ics, encoding="utf-8") as handle:
-            ics_text = handle.read()
-    else:
-        with urllib.request.urlopen(ICS_URL) as response:
-            ics_text = response.read().decode("utf-8")
 
+def in_window(date_str: str, window_start: dt.date, window_end: dt.date) -> bool:
+    try:
+        date = dt.date.fromisoformat(date_str)
+    except ValueError:
+        return False
+    return window_start <= date <= window_end
+
+
+def sync_talks(
+    events: list[dict],
+    *,
+    window_days: int,
+    dry_run: bool,
+    force: bool,
+    allow_bulk_delete: bool,
+) -> int:
+    """The daily sync: create, update, or delete records for talks starting
+    within `window_days` of today, and leave everything else -- past talks,
+    and anything further out that already has a record -- alone."""
+    if not events:
+        print(
+            "error: the calendar feed contained zero events; refusing to sync "
+            "(this usually means the fetch failed or was truncated)",
+            file=sys.stderr,
+        )
+        return 1
+
+    today = dt.datetime.now(TZ).date()
+    window_start = today
+    window_end = today + dt.timedelta(days=window_days)
+
+    talks_by_uid: dict[str, dict] = {}
+    for event in events:
+        talk = event_to_talk(event)
+        if talk is None:
+            continue
+        talks_by_uid[talk["uid"]] = talk
+
+    existing = load_records(DATA_DIR)
+
+    to_write: list[tuple[str, dict, str | None]] = []  # (key, merged_talk, old_path)
+    created, updated, renamed, unknown_report = [], [], [], []
+
+    for uid, talk in talks_by_uid.items():
+        if talk["date"] < window_start.isoformat():
+            continue  # a past-dated event is never created or updated here
+        record = existing.get(uid)
+        if record is None:
+            merged = merge_record(talk, None)
+        else:
+            record_date = str(record["raw"].get("talk", {}).get("date", ""))
+            record_in_window = bool(record_date) and in_window(record_date, window_start, window_end)
+            if not record_in_window and not force:
+                continue  # repo-owned: past its sync window, leave it alone
+            prior_lm = record["raw"].get("meta", {}).get("calendar_last_modified", "")
+            new_lm = format_last_modified(talk.get("last_modified", ""))
+            if prior_lm == new_lm and not force:
+                continue  # unchanged since the last sync
+            merged = merge_record(talk, record["raw"])
+
+        slug = slugify("-".join(s["name"] for s in merged["speakers"]))[:60]
+        key = f'{merged["date"]}-{slug}'
+        old_path = record["path"] if record else None
+        to_write.append((key, merged, old_path))
+        (created if record is None else updated).append(key)
+        if talk.get("unknown_headers"):
+            unknown_report.append((key, talk["unknown_headers"]))
+
+    to_delete: list[tuple[str, str]] = []  # (key-ish label, path)
+    for uid, record in existing.items():
+        if uid in talks_by_uid:
+            continue
+        record_date = str(record["raw"].get("talk", {}).get("date", ""))
+        if not record_date or not in_window(record_date, window_start, window_end):
+            continue  # out of window (or dateless): the sync does not touch it
+        label = os.path.splitext(os.path.basename(record["path"]))[0]
+        to_delete.append((label, record["path"]))
+
+    if to_delete and len(to_delete) > 3 and not allow_bulk_delete:
+        print(
+            f"error: this run would delete {len(to_delete)} record(s) in one go, which usually "
+            "means the calendar fetch was truncated or failed rather than that this many talks "
+            "were genuinely removed. Pass --allow-bulk-delete to proceed anyway.",
+            file=sys.stderr,
+        )
+        for label, _ in to_delete:
+            print(f"  would delete: {label}.toml", file=sys.stderr)
+        return 1
+
+    if not dry_run:
+        os.makedirs(DATA_DIR, exist_ok=True)
+        for key, merged, old_path in to_write:
+            new_path = os.path.join(DATA_DIR, f"{key}.toml")
+            with open(new_path, "w", encoding="utf-8") as handle:
+                handle.write(render_toml(merged))
+            if old_path and os.path.abspath(old_path) != os.path.abspath(new_path):
+                os.remove(old_path)
+        for _, path in to_delete:
+            os.remove(path)
+
+    for key, merged, old_path in to_write:
+        if old_path:
+            old_key = os.path.splitext(os.path.basename(old_path))[0]
+            if old_key != key:
+                renamed.append((old_key, key))
+
+    print(f"window: {window_start.isoformat()} .. {window_end.isoformat()} ({window_days} days)")
+    print(f"created: {len(created)}")
+    for key in created:
+        print(f"  + {key}.toml")
+    print(f"updated: {len(updated)}")
+    for key in updated:
+        print(f"  ~ {key}.toml")
+    for old_key, new_key in renamed:
+        print(f"  renamed {old_key}.toml -> {new_key}.toml")
+    print(f"deleted: {len(to_delete)}")
+    for label, _ in to_delete:
+        print(f"  - {label}.toml")
+    if unknown_report:
+        print("unrecognized headers (typo? see TALK_LABEL_ALIASES / SPEAKER_LABEL_ALIASES):")
+        for key, headers in unknown_report:
+            print(f"  {key}.toml: {', '.join(headers)}")
+    if dry_run:
+        print("\n(dry run: no files were written)")
+    return 0
+
+
+def backfill_talks(events: list[dict], *, since: str, until: str | None, overwrite: bool) -> int:
+    """One-off seeding: write a TOML file for every calendar entry that does
+    not already have one. Never updates or deletes an existing file unless
+    --overwrite is given."""
     os.makedirs(DATA_DIR, exist_ok=True)
     written, skipped, seen = 0, 0, set()
     talks = []
-    for event in parse_events(ics_text):
+    for event in events:
         talk = event_to_talk(event)
         if talk is None:
             skipped += 1
             continue
-        if talk["date"] < args.since or (args.until and talk["date"] > args.until):
+        if talk["date"] < since or (until and talk["date"] > until):
             continue
         talks.append(talk)
 
@@ -562,7 +1041,7 @@ def main() -> int:
             continue
         seen.add(key)
         path = os.path.join(DATA_DIR, f"{key}.toml")
-        if os.path.exists(path) and not args.overwrite:
+        if os.path.exists(path) and not overwrite:
             continue
         with open(path, "w", encoding="utf-8") as handle:
             handle.write(render_toml(talk))
@@ -571,6 +1050,42 @@ def main() -> int:
     print(f"imported {written} talk(s) into {os.path.relpath(DATA_DIR, ROOT)}")
     print(f"({skipped} calendar entries skipped: no speaker, placeholder, or malformed)")
     return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--ics", help="path to a local .ics file (default: fetch the calendar)")
+    parser.add_argument("--sync", action="store_true", help="run the window-aware daily sync")
+    parser.add_argument(
+        "--window-days", type=int, default=WINDOW_DAYS_DEFAULT,
+        help=f"sync mode: how many days ahead the calendar owns (default {WINDOW_DAYS_DEFAULT})",
+    )
+    parser.add_argument("--dry-run", action="store_true", help="sync mode: report only, write nothing")
+    parser.add_argument(
+        "--force", action="store_true",
+        help="sync mode: update/delete records outside the window too, and ignore LAST-MODIFIED",
+    )
+    parser.add_argument(
+        "--allow-bulk-delete", action="store_true",
+        help="sync mode: allow deleting more than 3 records in one run",
+    )
+    parser.add_argument("--since", default="2020-01-01", help="backfill mode: ignore talks before this date")
+    parser.add_argument("--until", help="backfill mode: ignore talks after this date")
+    parser.add_argument("--overwrite", action="store_true", help="backfill mode: rewrite existing TOML files")
+    args = parser.parse_args()
+
+    ics_text = fetch_ics(args.ics)
+    events = parse_events(ics_text)
+
+    if args.sync:
+        return sync_talks(
+            events,
+            window_days=args.window_days,
+            dry_run=args.dry_run,
+            force=args.force,
+            allow_bulk_delete=args.allow_bulk_delete,
+        )
+    return backfill_talks(events, since=args.since, until=args.until, overwrite=args.overwrite)
 
 
 if __name__ == "__main__":

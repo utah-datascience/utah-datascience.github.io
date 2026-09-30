@@ -39,27 +39,27 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Generate talk pages and talks.ics
+      - name: Generate talk pages, talks.ics, and talks.json
         run: python3 scripts/generate_talks.py
 
       - name: Commit any changes
         id: commit
         run: |
-          if git diff --quiet -- _talks talks.ics; then
-            echo "Talk pages and talks.ics are already up to date."
+          if git diff --quiet -- _talks talks.ics talks.json; then
+            echo "Talk pages, talks.ics, and talks.json are already up to date."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add _talks talks.ics
-          git commit -m "Regenerate talk pages and talks.ics [skip ci]"
+          git add _talks talks.ics talks.json
+          git commit -m "Regenerate talk pages, talks.ics, and talks.json [skip ci]"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Report
         if: steps.commit.outputs.changed == 'true'
-        run: echo "::notice::Regenerated the talk pages and talks.ics and pushed the result."
+        run: echo "::notice::Regenerated the talk pages, talks.ics, and talks.json and pushed the result."
 
   # A fork cannot be pushed to, so tell the contributor what to run instead.
   check-fork:
@@ -70,5 +70,44 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
-      - name: Check that _talks/ and talks.ics match _data/talks/
+      - name: Check that _talks/, talks.ics, and talks.json match _data/talks/
         run: python3 scripts/generate_talks.py --check
+
+  test-calendar-parsing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - run: python3 scripts/test_calendar_parsing.py
+
+  # Google Calendar owns any talk starting within the sync window (see
+  # scripts/import_calendar_talks.py); catches someone editing one of those
+  # records directly in a PR instead of on the calendar event, where the next
+  # scheduled sync would just overwrite (or resurrect) it. Skipped for the
+  # sync's own PR (branch entry-update), which is exactly the process that is
+  # supposed to make these edits.
+  #
+  # This is PR-time feedback only -- `needs:` cannot reach across workflow
+  # files, so it does not by itself stop a merge from publishing. The
+  # authoritative gate is the same check re-run from .github/workflows/pages.yml
+  # on push to master, ahead of the deploy job.
+  guard-manual-edits:
+    if: github.event_name == 'pull_request' && github.head_ref != 'entry-update'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Check for a manual edit to a calendar-owned talk record
+        if: >
+          !contains(github.event.pull_request.labels.*.name, 'allow-manual-entry') &&
+          !contains(github.event.pull_request.title, '[allow-manual-entry]')
+        run: >
+          python3 scripts/guard_manual_edits.py
+          ${{ github.event.pull_request.base.sha }}
+          ${{ github.event.pull_request.head.sha }}

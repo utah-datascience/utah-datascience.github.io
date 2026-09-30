@@ -1,0 +1,103 @@
+name: Sync talks from Google Calendar
+
+# Google Calendar is the source of truth for any talk starting soon (see
+# scripts/import_calendar_talks.py for the window and the description format
+# it expects). This runs the sync daily and lands whatever changed as a pull
+# request on a single reused branch -- entry-update -- rather than opening a
+# new one each time, so a week of calendar edits accumulates into one
+# reviewable diff instead of a pile of separate PRs.
+#
+# Nothing here ever writes back to Google Calendar.
+
+on:
+  schedule:
+    - cron: "0 13 * * *" # ~07:00 America/Denver (06:00 during DST)
+  workflow_dispatch:
+    inputs:
+      window_days:
+        description: "How many days ahead the calendar owns"
+        default: "90"
+      dry_run:
+        description: "Preview only -- do not write or open a PR"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-talks
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      # A PR opened with GITHUB_TOKEN does not trigger other workflows, so
+      # the entry-update PR gets no CI of its own -- validate here instead,
+      # before anything is written.
+      - name: Run the calendar-parsing tests
+        run: python3 scripts/test_calendar_parsing.py
+
+      - name: Sync talk records from the calendar
+        id: sync
+        run: |
+          set -o pipefail
+          ARGS="--sync --window-days ${{ github.event.inputs.window_days || '90' }}"
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          # ARGS deliberately holds multiple space-separated flags, so it is
+          # meant to word-split here.
+          # shellcheck disable=SC2086
+          python3 scripts/import_calendar_talks.py $ARGS 2>&1 | tee /tmp/sync-report.txt
+          # a random delimiter, since the report can contain calendar-supplied
+          # text (talk titles, etc.) that in principle could collide with a
+          # fixed one
+          delimiter="SYNC_REPORT_$(openssl rand -hex 8)"
+          {
+            echo "report<<$delimiter"
+            cat /tmp/sync-report.txt
+            echo "$delimiter"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Fill in tags for any new record
+        if: github.event.inputs.dry_run != 'true'
+        run: python3 scripts/tag_talks.py
+
+      - name: Regenerate talk pages, talks.ics, and talks.json
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          python3 scripts/generate_talks.py
+          python3 scripts/generate_talks.py --check
+
+      - name: Open or update the sync pull request
+        if: github.event.inputs.dry_run != 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: entry-update
+          delete-branch: true
+          commit-message: "Sync talks from Google Calendar"
+          title: "Sync talks from Google Calendar"
+          labels: automated
+          body: |
+            Automated sync from the seminar's Google Calendar. Talks starting
+            within the sync window are created, updated, or (if removed from
+            the calendar) deleted to match it; everything else is left alone.
+
+            ```
+            ${{ steps.sync.outputs.report }}
+            ```
+
+            This PR is reused across runs -- a later sync updates it in place
+            rather than opening a new one, so review it whenever it is
+            convenient rather than on every run.
