@@ -3300,6 +3300,44 @@ LOCATION:FASB 295
 CATEGORIES:society & policy
 END:VEVENT
 BEGIN:VEVENT
+UID:2024-01-24-anna-little@datascience.utah.edu
+DTSTAMP:20240124T203000Z
+DTSTART;TZID=America/Denver:20240124T133000
+DTEND;TZID=America/Denver:20240124T143000
+SUMMARY:Clustering and Visualization of High-dimensional Data using Path Me
+ trics - Anna Little
+DESCRIPTION:Anna Little (Utah)\n\nThis talk will explore the utility of dat
+ a-driven path metrics for the clustering and visualization of high-dimensi
+ onal data. These metrics are defined by solving an optimal path problem in
+  a proximity graph\, and are characterized by a parameter harmonizing dens
+ ity-based and geometric features. First\, we will discuss theoretical prop
+ erties of these metrics and implications for clustering: in particular\, s
+ pectral clustering with path metrics leads to strong theoretical guarantee
+ s on estimating number of clusters and cluster accuracy. Furthermore\, as 
+ the sample size converges to infinity\, the eigenvalues and eigenvectors o
+ f the discrete path metric graph Laplacian converge to those of a continuu
+ m operator\; this operator generates a diffusion which is accelerated in r
+ egions of high data density\, allowing for the rapid exploration of elonga
+ ted data structures. Secondly\, we will discuss dimension reduction with p
+ ath metrics. Despite the allure of visually striking results from dimensio
+ n reduction algorithms\, can we be sure the perceived patterns are genuine
+ ly intrinsic to the data? We will see how designing algorithms which incor
+ porate data-driven path metrics can lead to desirable and understandable p
+ roperties for data visualization\, and specifically focus on their applica
+ tion to the analysis of single cell RNA sequence data. Finally\, we will d
+ iscuss generalizations of these metrics to simplex paths\, and their utili
+ ty for multi-manifold clustering.\n\nhttps://datascience.utah.edu/talks/20
+ 24-01-24-anna-little/
+URL:https://datascience.utah.edu/talks/2024-01-24-anna-little/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMng
+ yZz09
+CATEGORIES:algorithms & theory,biology & genomics,networks & graphs,visuali
+ zation
+END:VEVENT
+BEGIN:VEVENT
 UID:2024-01-31-pratik-soni@datascience.utah.edu
 DTSTAMP:20240131T203000Z
 DTSTART;TZID=America/Denver:20240131T133000
@@ -3314,6 +3352,124 @@ TRANSP:OPAQUE
 LOCATION:https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMng
  yZz09
 CATEGORIES:fairness & ethics
+END:VEVENT
+BEGIN:VEVENT
+UID:2024-02-07-daniel-brown@datascience.utah.edu
+DTSTAMP:20240207T203000Z
+DTSTART;TZID=America/Denver:20240207T133000
+DTEND;TZID=America/Denver:20240207T143000
+SUMMARY:Challenges and Progress Towards AI Alignment via Reinforcement Lear
+ ning from Human Feedback - Daniel Brown
+DESCRIPTION:Daniel Brown (Utah)\n\nIn this talk I will discuss recent progr
+ ess and challenges towards using human feedback to develop AI systems that
+  behave in ways that are aligned with human preferences. One problem that 
+ arises when robots and other AI systems learn from human input is that the
+ re is often a large amount of uncertainty over the human’s true intent a
+ nd the corresponding desired AI behavior. To address this problem\, I will
+  discuss prior and ongoing research along three main topics: (1) Enabling 
+ robots and other AI systems to learn models of human preferences in ways t
+ hat are sample efficient and safe\, (2) Reward misidentification and causa
+ l confusion when learning from human feedback\, and (3) Active learning me
+ thods for learning better aligned features and reward functions.\n\nhttps:
+ //datascience.utah.edu/talks/2024-02-07-daniel-brown/
+URL:https://datascience.utah.edu/talks/2024-02-07-daniel-brown/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:GC 2560 (Gardner Commons) | https://utah.zoom.us/j/96005100565?pwd
+ =WmFGN25RazZwV2NoMGE2dVFGMngyZz09
+CATEGORIES:machine learning,robotics
+END:VEVENT
+BEGIN:VEVENT
+UID:2024-02-14-shivam-garg@datascience.utah.edu
+DTSTAMP:20240214T203000Z
+DTSTART;TZID=America/Denver:20240214T133000
+DTEND;TZID=America/Denver:20240214T143000
+SUMMARY:In-Context Learning: A Case Study of Simple Function Classes - Shiv
+ am Garg
+DESCRIPTION:Shivam Garg (Harvard)\n\nIn-context learning refers to the abil
+ ity of a model to learn new tasks from a sequence of input-output pairs gi
+ ven in a prompt. Crucially\, this learning happens at inference time witho
+ ut any parameter updates to the model. I will discuss our empirical effort
+ s that shed light on some basic aspects of in-context learning: To what ex
+ tent can Transformers\, or other models such as LSTMs be efficiently train
+ ed to in-context learn fundamental function classes\, such as linear funct
+ ions\, sparse linear functions\, and small decision trees? How can one eva
+ luate in-context learning algorithms? And what are the qualitative differe
+ nces between these architectures with respect to their ability to be train
+ ed to perform in-context learning? This is based on joint work with Dimitr
+ is Tsipras\, Percy Liang\, and Greg Valiant.\n\nhttps://datascience.utah.e
+ du/talks/2024-02-14-shivam-garg/
+URL:https://datascience.utah.edu/talks/2024-02-14-shivam-garg/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMng
+ yZz09
+CATEGORIES:algorithms & theory,deep learning,large language models
+END:VEVENT
+BEGIN:VEVENT
+UID:2024-02-21-tolga-tasdizen@datascience.utah.edu
+DTSTAMP:20240221T203000Z
+DTSTART;TZID=America/Denver:20240221T133000
+DTEND;TZID=America/Denver:20240221T143000
+SUMMARY:Deep Learning in Image Analysis: Applications and Challenges - Tolg
+ a Tasdizen
+DESCRIPTION:Tolga Tasdizen (Utah)\n\nMachine learning and more specifically
+  deep learning has revolutionized computer vision and images analysis prob
+ lems in a wide range of application areas. In this talk\, we will outline 
+ four applications ranging from material science to health informatics and 
+ medical image analysis. We will discuss challenges unique to each problem 
+ and our approach using machine learning. A common theme underlying these p
+ roblems is the difficulty of obtaining annotated data. Our contributions t
+ owards solving this problem ranging from new semi-supervised learning form
+ ulations to leveraging existing workflows of experts to collect annotation
+ s will be introduced.\n\nhttps://datascience.utah.edu/talks/2024-02-21-tol
+ ga-tasdizen/
+URL:https://datascience.utah.edu/talks/2024-02-21-tolga-tasdizen/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMng
+ yZz09
+CATEGORIES:computer vision,deep learning,health & medicine,machine learning
+END:VEVENT
+BEGIN:VEVENT
+UID:2024-02-28-baskar-ganapathysubramanian@datascience.utah.edu
+DTSTAMP:20240228T203000Z
+DTSTART;TZID=America/Denver:20240228T133000
+DTEND;TZID=America/Denver:20240228T143000
+SUMMARY:Neural PDE solvers with applications in manufacturing and agricultu
+ re - Baskar Ganapathysubramanian
+DESCRIPTION:Baskar Ganapathysubramanian (Iowa)\n\nNumerical simulation is a
+  critical tool in analysis\, design\, and control of complex systems\, whi
+ ch are usually described by partial differential equations (PDE). The trad
+ itional approach to solving these PDEs has been via their numerical approx
+ imations (for example\, finite difference\, finite element). Recently\, ad
+ vances in Scientific machine learning (SciML) has opened up the possibilit
+ y of training deep networks to solve complex PDEs. Several promising SciML
+  approaches –for example\, PINNs\, FNO – have recently been proposed t
+ o solve PDEs under various amounts of data availability.\n\nIn this talk\,
+  I will discuss some of my group’s contribution to this effort in traini
+ ng neural PDE solvers. This discussion will cover (a) formulating and trai
+ ning a mesh-based neural network approach that solves for a large parametr
+ ic family of PDEs\, (b) how we accelerate training a large models (for meg
+ a voxel PDE predictions) via a method analogous to the multigrid technique
+  used in numerical linear algebra\, (c) approaches to solve PDEs over doma
+ ins with irregularly shaped (non-rectilinear) geometric boundaries\, and (
+ d) applying these approaches for solving design problems in agriculture an
+ d energy technology. Whenever possible\, we perform analysis which reveals
+  theoretical insights into several sources of error incurred in the model-
+ building process.\n\nhttps://datascience.utah.edu/talks/2024-02-28-baskar-
+ ganapathysubramanian/
+URL:https://datascience.utah.edu/talks/2024-02-28-baskar-ganapathysubramani
+ an/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMng
+ yZz09
+CATEGORIES:machine learning,optimization,physics & astronomy
 END:VEVENT
 BEGIN:VEVENT
 UID:2024-03-13-swabha-swayamdipta@datascience.utah.edu
@@ -5426,5 +5582,90 @@ SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 LOCATION:WEB 2250
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-11-benjie-wang@datascience.utah.edu
+DTSTAMP:20260911T193000Z
+DTSTART;TZID=America/Denver:20260911T133000
+DTEND;TZID=America/Denver:20260911T143000
+SUMMARY:The Formalization Gap in Generative AI - Benjie Wang
+DESCRIPTION:Benjie Wang (UU Computing)\n\nGenerative models\, such as large
+  language models and diffusion models\, have tremendously increased the sc
+ ope of problems that AI can address. As such\, there is a significant tren
+ d toward incorporating generative AI to automate tasks across computing an
+ d more broadly\, from controlling robotics systems\, to software generatio
+ n and testing\, to searching over scientific knowledge. However\, there re
+ mains a significant **formalization gap** between the domain knowledge\, t
+ heories\, and logical and semantic constraints that are vital to applicati
+ ons\, and the statistical patterns over natural data represented by large 
+ generative models. In this talk\, I will demonstrate how we can systematic
+ ally bridge this formalization gap towards more reliable and efficient AI.
+  First\, drawing from examples and applications in my research\, I will sh
+ ow how to design practical inference-time strategies using probabilistic r
+ easoning that bridge between formal language and generative models at scal
+ e. Then\, I will discuss how these practical methods are underpinned by ad
+ vances in the mathematical and computational foundations of efficiently re
+ presenting joint probability distributions.\n\nhttps://datascience.utah.ed
+ u/talks/2026-09-11-benjie-wang/
+URL:https://datascience.utah.edu/talks/2026-09-11-benjie-wang/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:WEB 2250 | https://utah.zoom.us/j/85983626630
+CATEGORIES:deep learning,large language models,natural language processing,
+ robotics
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-18-polina-kukhareva@datascience.utah.edu
+DTSTAMP:20260918T193000Z
+DTSTART;TZID=America/Denver:20260918T133000
+DTEND;TZID=America/Denver:20260918T143000
+SUMMARY:Using AI and Real-World Data to Personalize Diabetes Treatment - Po
+ lina Kukhareva
+DESCRIPTION:Polina Kukhareva (UU BMI)\n\nPatients with type 2 diabetes have
+  increasingly many treatment options\, but responses to these therapies va
+ ry substantially across individuals and across outcomes such as glycemic c
+ ontrol\, weight\, cardiovascular events\, kidney outcomes\, and hypoglycem
+ ia. In this talk\, I will describe our work using large-scale electronic h
+ ealth record data\, causal inference\, and machine learning to characteriz
+ e treatment heterogeneity and develop approaches for individualized treatm
+ ent selection. I will discuss challenges in reconstructing longitudinal tr
+ eatment regimens from real-world prescribing data\, predicting multiple pa
+ tient outcomes\, and identifying the level of patient-specific resolution 
+ that can be reliably supported by available data. I will also discuss how 
+ these methods can ultimately support patient-centered treatment comparison
+ s and clinical decision making.\n\nhttps://datascience.utah.edu/talks/2026
+ -09-18-polina-kukhareva/
+URL:https://datascience.utah.edu/talks/2026-09-18-polina-kukhareva/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:WEB 2250 | https://utah.zoom.us/j/85983626630
+CATEGORIES:causal inference,health & medicine,machine learning
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-25-matthew-s-sigman@datascience.utah.edu
+DTSTAMP:20260925T193000Z
+DTSTART;TZID=America/Denver:20260925T133000
+DTEND;TZID=America/Denver:20260925T143000
+SUMMARY:Data Science Meets Chemistry - Matthew S. Sigman
+DESCRIPTION:Matthew S. Sigman (UU Chemistry)\n\nHow do chemists use data sc
+ ience to discover and understand new reactions? This talk offers an access
+ ible introduction to the distinctive challenges of chemical data: small\, 
+ complex datasets\; molecular representations\; and the need to connect pre
+ dictions with physical mechanisms. Through examples from reaction developm
+ ent\, catalyst design\, and optimization\, it will show how molecular desc
+ riptors\, statistical modeling\, and machine learning reveal relationships
+  between structure\, reactivity\, and selectivity. Along the way\, the tal
+ k will translate chemical questions for a data science audience\, highligh
+ t opportunities for automation and collaboration\, and consider how new co
+ mputational approaches might expand what chemists can discover.\n\nhttps:/
+ /datascience.utah.edu/talks/2026-09-25-matthew-s-sigman/
+URL:https://datascience.utah.edu/talks/2026-09-25-matthew-s-sigman/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:WEB 2250 | https://utah.zoom.us/j/85983626630
+CATEGORIES:education,optimization
 END:VEVENT
 END:VCALENDAR

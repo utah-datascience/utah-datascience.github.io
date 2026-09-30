@@ -233,14 +233,76 @@ def test_event_to_talk_legacy_labelled():
     assert talk["tags"] == []
 
 
-def test_event_to_talk_skips_logistics_only():
+def test_unreadable_entry_is_published_with_a_date_title():
+    # Nothing here names a speaker -- only the series and a Zoom link. It is
+    # still a talk slot on the calendar, so it gets a page rather than being
+    # silently dropped.
     event = {
-        "DTSTART": (";TZID=America/Denver", "20230101T133000"),
+        "DTSTART": (";TZID=America/Denver", "20240823T133000"),
         "SUMMARY": ("", "Data Science Lecture Series"),
         "DESCRIPTION": ("", "Zoom link: https://utah.zoom.us/j/91737198805"),
         "UID": ("", "logistics-only-uid"),
     }
-    assert m.event_to_talk(event) is None
+    talk = m.event_to_talk(event)
+    assert talk is not None
+    assert talk["title"] == "Talk of Friday, August 23rd", talk["title"]
+    assert talk["speakers"] == []
+    assert talk["needs_review"] is True
+    assert talk["zoom"] == "https://utah.zoom.us/j/91737198805"
+    assert talk["abstract"] == "", "no speaker to anchor on, so no guessed abstract"
+    assert m.record_key(talk) == "2024-08-23-talk"
+
+
+def test_fallback_keeps_labelled_fields():
+    for summary in ("TBA", "", "UCDS+AI Seminar"):
+        event = {
+            "DTSTART": (";TZID=America/Denver", "20261009T133000"),
+            "SUMMARY": ("", summary),
+            "DESCRIPTION": ("", "## Title\nA Real Title\n\n## Abstract\nA real abstract."),
+            "UID": ("", "tba-uid"),
+        }
+        talk = m.event_to_talk(event)
+        assert talk is not None, summary
+        assert talk["title"] == "A Real Title", (summary, talk["title"])
+        assert talk["abstract"] == "A real abstract."
+
+
+def test_non_talks_are_still_skipped():
+    for summary in ("No seminar", "No Data Science Seminar", "Spring Break", "Holiday",
+                    "Hold for faculty meeting", "Reserved", "UCDS Social",
+                    "Sandia Information Session (pizza)", "UCDS Seminar : canceled"):
+        event = {
+            "DTSTART": (";TZID=America/Denver", "20261009T133000"),
+            "SUMMARY": ("", summary),
+            "UID": ("", "x"),
+        }
+        assert m.event_to_talk(event) is None, summary
+
+
+def test_seminar_prefix_is_not_the_speaker():
+    speaker, _ = m.split_speaker_and_title("Seminar: Anna Little (Utah)")
+    assert m.split_name_affiliation(speaker) == ("Anna Little", "Utah"), speaker
+
+
+def test_fallback_title_ordinals():
+    import datetime as _dt
+    cases = {1: "1st", 2: "2nd", 3: "3rd", 4: "4th", 11: "11th", 12: "12th",
+             13: "13th", 21: "21st", 22: "22nd", 23: "23rd", 31: "31st"}
+    for day, expected in cases.items():
+        assert m.ordinal(day) == expected, (day, m.ordinal(day))
+    assert m.fallback_title(_dt.date(2024, 8, 23)) == "Talk of Friday, August 23rd"
+
+
+def test_fallback_does_not_downgrade_a_known_talk():
+    # A record that already knows its speaker keeps its title if a later edit
+    # to the calendar entry makes it unreadable.
+    existing_raw = {"talk": {"title": "Real Title"}, "speakers": [{"name": "Jane Doe"}]}
+    incoming = {"title": "Talk of Friday, October 9th", "series": "S", "location": "", "zoom": "",
+                "slides": "", "recording": "", "abstract": "", "tags": [], "speakers": [],
+                "needs_review": True}
+    merged = m.merge_record(incoming, existing_raw)
+    assert merged["title"] == "Real Title"
+    assert merged["speakers"] == [{"name": "Jane Doe"}]
 
 
 def test_event_uid_uses_recurrence_id():

@@ -84,9 +84,14 @@ NOT_A_PERSON_RE = re.compile(
 )
 
 CANCELED_RE = re.compile(r"\[?\b(cancell?ed|postponed)\b\]?", re.I)
+# Calendar entries that are not talks at all, and so never get a page. An entry
+# that *is* a talk but just can't be read (no speaker, "TBA", a free-form title)
+# is not skipped -- it is published under a date-based title instead; see
+# fallback_title().
 SKIP_SUMMARY_RE = re.compile(
-    r"^\s*(no (seminar|talk|lecture)|tba|tbd|holiday|spring break|fall break|"
+    r"^\s*(no\b[^|]*\b(seminar|talk|lecture)s?\b|holiday|spring break|fall break|"
     r"reserved|placeholder|hold\b|organizational|planning meeting|"
+    r"[^|]*\binformation session\b|"
     r"(ucds\+?a?i? ?)?(seminar |lecture series )?(kick ?off|welcome|social|lunch|"
     r"open (house|discussion)))",
     re.I,
@@ -335,6 +340,24 @@ def parse_markdown_sections(text: str) -> tuple[dict, list[dict], list[str]]:
     return talk_fields, speakers, unknown
 
 
+def ordinal(n: int) -> str:
+    suffix = "th" if 11 <= n % 100 <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    return f"{n}{suffix}"
+
+
+def fallback_title(start: dt.datetime | dt.date) -> str:
+    """The title for a talk whose calendar entry could not be read, e.g.
+    "Talk of Friday, August 23rd"."""
+    return f"Talk of {start:%A}, {start:%B} {ordinal(start.day)}"
+
+
+def record_key(talk: dict) -> str:
+    """File name (without .toml) for a talk: its date plus its speakers, or
+    plain "talk" when there are none."""
+    slug = slugify("-".join(s["name"] for s in talk["speakers"]))[:60] or "talk"
+    return f'{talk["date"]}-{slug}'
+
+
 def infer_series(summary: str, start: dt.datetime) -> str:
     return (
         "Data Science & AI Lecture Series"
@@ -419,6 +442,7 @@ def split_sections(text: str) -> dict:
 
 def clean_summary(summary: str) -> str:
     text = CANCELED_RE.sub("", summary)
+    text = re.sub(r"(?i)^\s*seminar\s*:\s*", "", text)  # "Seminar: Anna Little (Utah)"
     for noise in SERIES_NOISE:
         text = re.sub(re.escape(noise), "|", text, flags=re.I)
     text = re.sub(r"\s*[-–—]{2,}\s*", "|", text)
@@ -694,6 +718,11 @@ def merge_record(incoming: dict, existing_raw: dict | None) -> dict:
     merged = dict(incoming)
     for field in ("title", "series", "location", "zoom", "abstract"):
         merged[field] = pick(incoming.get(field, ""), existing_talk.get(field, ""))
+    if not incoming.get("speakers") and existing_speakers and existing_talk.get("title"):
+        # The entry no longer says who is speaking (and so fell back to a
+        # date-based title), but the record already knows: keep its title
+        # rather than downgrading it to "Talk of <date>".
+        merged["title"] = existing_talk["title"]
     # Slides and recordings usually get added in the repo once they exist,
     # and tags are filled in by tag_talks.py, so the calendar only overrides
     # these when it actually supplies one.
@@ -718,10 +747,10 @@ def event_to_talk(event: dict) -> dict | None:
         return None
     end = parse_dt(event, "DTEND") or (start + dt.timedelta(hours=1))
     summary = get(event, "SUMMARY").strip()
-    if not summary or any(
+    if summary and any(
         SKIP_SUMMARY_RE.match(part) for part in [summary] + clean_summary(summary).split("|")
     ):
-        return None
+        return None  # "No seminar", a holiday, a room hold: not a talk
 
     description = html_to_text(get(event, "DESCRIPTION"))
     location_raw = get(event, "LOCATION").strip()
@@ -757,11 +786,11 @@ def event_to_talk(event: dict) -> dict | None:
                     "bio": entry.get("bio", ""),
                 }
             )
-        if not speakers:
-            return None
 
         title = clean_title(md_fields.get("title", "")) or clean_title(summary_title) or "TBA"
         abstract = clean_block(md_fields.get("abstract", ""))
+        explicit_title = clean_title(md_fields.get("title", ""))
+        explicit_abstract = abstract
         tags = md_fields.get("tags", [])
         location = md_fields.get("location", "") or location
         zoom = md_fields.get("zoom", "") or links["zoom"]
@@ -830,9 +859,9 @@ def event_to_talk(event: dict) -> dict | None:
         bio = clean_block(sections.get("bio", ""))
 
         if not name or re.match(r"(?i)^(speaker\s*)?(tba|tbd)\b", name):
-            return None
+            name = ""
         if NOT_A_PERSON_RE.search(name):  # "Data Science Lecture Series", "Sandia Information Session", ...
-            return None
+            name = ""
 
         speakers = []
         for part in re.split(r"\s+(?:&|and)\s+|\s*,\s*(?=[A-Z][a-z]+\s+[A-Z])", name):
@@ -846,12 +875,12 @@ def event_to_talk(event: dict) -> dict | None:
                         "bio": bio,
                     }
                 )
-        if not speakers:
-            return None
         if len(speakers) > 1:  # a shared bio/website belongs to nobody in particular
             for speaker in speakers[1:]:
                 speaker["website"] = ""
 
+        explicit_title = clean_title(sections.get("title", ""))
+        explicit_abstract = clean_block(sections.get("abstract", ""))
         tags = []
         zoom = links["zoom"]
         slides = links["slides"]
@@ -860,6 +889,17 @@ def event_to_talk(event: dict) -> dict | None:
         needs_review = True
 
     canceled = bool(CANCELED_RE.search(summary)) or get(event, "STATUS").upper() == "CANCELLED"
+    if not speakers and canceled:
+        return None  # a cancelled slot with no talk in it: nothing to show
+
+    if not speakers:
+        # Nothing on this entry says who is speaking. Publish it anyway, so the
+        # site never silently misses a talk that is on the calendar -- but only
+        # trust fields that were explicitly labelled; the positional guesses
+        # above assume a speaker line to anchor on, and there wasn't one.
+        title = clean_title(md_fields.get("title", "")) or explicit_title or fallback_title(start)
+        abstract = clean_block(md_fields.get("abstract", "")) or explicit_abstract
+        needs_review = True
 
     return {
         "title": title or "TBA",
@@ -950,8 +990,7 @@ def sync_talks(
                 continue  # unchanged since the last sync
             merged = merge_record(talk, record["raw"])
 
-        slug = slugify("-".join(s["name"] for s in merged["speakers"]))[:60]
-        key = f'{merged["date"]}-{slug}'
+        key = record_key(merged)
         old_path = record["path"] if record else None
         to_write.append((key, merged, old_path))
         (created if record is None else updated).append(key)
@@ -1035,8 +1074,7 @@ def backfill_talks(events: list[dict], *, since: str, until: str | None, overwri
 
     talks.sort(key=lambda t: (t["date"], t["start_time"]))
     for talk in talks:
-        slug = slugify("-".join(s["name"] for s in talk["speakers"]))[:60]
-        key = f'{talk["date"]}-{slug}'
+        key = record_key(talk)
         if key in seen:
             continue
         seen.add(key)

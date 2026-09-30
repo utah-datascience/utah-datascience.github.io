@@ -16,10 +16,12 @@ TOML records in `_data/talks/`). Pass `include.count` to show more than one.
 <div class="mb-4">
   <h4 class="mb-1"><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h4>
   <table class="description">
+    {% if talk.speaker_names and talk.speaker_names != "" %}
     <tr>
       <th class="text-muted">Who</th>
       <td style="padding-left:5px">{{ talk.speaker_names }}</td>
     </tr>
+    {% endif %}
     <tr>
       <th class="text-muted">When</th>
       <td style="padding-left:5px">

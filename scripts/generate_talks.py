@@ -103,6 +103,11 @@ def parse_time(value, field: str, source: str) -> dt.time | None:
     raise TalkError(f"{source}: could not parse {field} {value!r} (use e.g. \"13:30\")")
 
 
+def ordinal(n: int) -> str:
+    suffix = "th" if 11 <= n % 100 <= 13 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    return f"{n}{suffix}"
+
+
 def load_talk(path: str) -> dict:
     source = os.path.basename(path)
     with open(path, "rb") as handle:
@@ -123,9 +128,11 @@ def load_talk(path: str) -> dict:
     if not isinstance(date, dt.date):
         raise TalkError(f"{source}: [talk] needs a date (e.g. date = 2026-09-04)")
 
+    # A talk with no [[speakers]] is allowed: a calendar entry that could not
+    # be read still gets a page (see fallback_title in import_calendar_talks.py).
     speakers = raw.get("speakers") or []
-    if not isinstance(speakers, list) or not speakers:
-        raise TalkError(f"{source}: needs at least one [[speakers]] entry")
+    if not isinstance(speakers, list):
+        raise TalkError(f"{source}: [[speakers]] must be a list of tables")
     for speaker in speakers:
         if not speaker.get("name"):
             raise TalkError(f"{source}: every [[speakers]] entry needs a name")
@@ -135,10 +142,14 @@ def load_talk(path: str) -> dict:
     starts_at = dt.datetime.combine(date, start or dt.time(13, 30), tzinfo=TZ)
 
     slug = talk.get("slug") or os.path.splitext(source)[0]
-    # a page headed "TBA" helps nobody; name it after whoever gave the talk
+    # a page headed "TBA" helps nobody; name it after whoever gave the talk,
+    # or failing that, when it happens
     title = str(talk["title"]).strip()
-    if re.fullmatch(r"(?i)tba|tbd", title):
-        title = "Talk by " + ", ".join(speaker["name"] for speaker in speakers)
+    if re.fullmatch(r"(?i)tba|tbd|", title):
+        if speakers:
+            title = "Talk by " + ", ".join(speaker["name"] for speaker in speakers)
+        else:
+            title = f"Talk of {date:%A}, {date:%B} {ordinal(date.day)}"
     front = {
         "layout": "talk",
         "title": title,

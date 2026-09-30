@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Clustering and Visualization of High-dimensional Data using Path Metrics"
+date = 2024-01-24
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09"
+slides = ""
+recording = ""
+paper = ""
+tags = ["algorithms & theory", "biology & genomics", "networks & graphs", "visualization"]
+canceled = false
+abstract = "This talk will explore the utility of data-driven path metrics for the clustering and visualization of high-dimensional data. These metrics are defined by solving an optimal path problem in a proximity graph, and are characterized by a parameter harmonizing density-based and geometric features. First, we will discuss theoretical properties of these metrics and implications for clustering: in particular, spectral clustering with path metrics leads to strong theoretical guarantees on estimating number of clusters and cluster accuracy. Furthermore, as the sample size converges to infinity, the eigenvalues and eigenvectors of the discrete path metric graph Laplacian converge to those of a continuum operator; this operator generates a diffusion which is accelerated in regions of high data density, allowing for the rapid exploration of elongated data structures. Secondly, we will discuss dimension reduction with path metrics. Despite the allure of visually striking results from dimension reduction algorithms, can we be sure the perceived patterns are genuinely intrinsic to the data? We will see how designing algorithms which incorporate data-driven path metrics can lead to desirable and understandable properties for data visualization, and specifically focus on their application to the analysis of single cell RNA sequence data. Finally, we will discuss generalizations of these metrics to simplex paths, and their utility for multi-manifold clustering."
+
+[[speakers]]
+name = "Anna Little"
+affiliation = "Utah"
+role = ""
+website = ""
+photo = ""
+email = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "55aerf1p89jh8smn3fu4721p4c@google.com"
+calendar_last_modified = "2024-01-15T18:59:00Z"
+synced_on = 2026-09-29
+needs_review = true

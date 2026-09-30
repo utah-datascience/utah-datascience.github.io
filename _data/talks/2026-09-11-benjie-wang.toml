@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "The Formalization Gap in Generative AI"
+date = 2026-09-11
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 2250"
+zoom = "https://utah.zoom.us/j/85983626630"
+slides = ""
+recording = ""
+paper = ""
+tags = ["deep learning", "large language models", "natural language processing", "robotics"]
+canceled = false
+abstract = "Generative models, such as large language models and diffusion models, have tremendously increased the scope of problems that AI can address. As such, there is a significant trend toward incorporating generative AI to automate tasks across computing and more broadly, from controlling robotics systems, to software generation and testing, to searching over scientific knowledge. However, there remains a significant **formalization gap** between the domain knowledge, theories, and logical and semantic constraints that are vital to applications, and the statistical patterns over natural data represented by large generative models. In this talk, I will demonstrate how we can systematically bridge this formalization gap towards more reliable and efficient AI. First, drawing from examples and applications in my research, I will show how to design practical inference-time strategies using probabilistic reasoning that bridge between formal language and generative models at scale. Then, I will discuss how these practical methods are underpinned by advances in the mathematical and computational foundations of efficiently representing joint probability distributions."
+
+[[speakers]]
+name = "Benjie Wang"
+affiliation = "UU Computing"
+role = ""
+website = "https://web.cs.ucla.edu/~benjiewang/"
+photo = ""
+email = ""
+bio = "Benjie Wang is an Assistant Professor in the Kahlert School of Computing at the University of Utah. Previously, he was a postdoctoral scholar at UCLA, a Simons-Berkeley research fellow at UC Berkeley, and received his DPhil (Ph.D.) in Computer Science from the University of Oxford. His research interests broadly span artificial intelligence, including generative modeling, probabilistic reasoning, natural language processing, and formal methods. His research develops theory and methods for embedding domain knowledge into generative AI in a reliable manner, with applications in learning biological networks, software testing, and robotics."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "0dqja5e21921lllf0inapee9bl@google.com"
+calendar_last_modified = "2026-09-09T20:45:37Z"
+synced_on = 2026-09-29
+needs_review = true

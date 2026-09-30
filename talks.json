@@ -1484,6 +1484,22 @@
   }
  },
  {
+  "title": "Anna Little: Clustering and Visualization of High-dimensional Data using Path Metrics",
+  "start": "2024-01-24T13:30:00-07:00",
+  "end": "2024-01-24T14:30:00-07:00",
+  "url": "/talks/2024-01-24-anna-little/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "biology & genomics",
+    "networks & graphs",
+    "visualization"
+   ]
+  }
+ },
+ {
   "title": "Pratik Soni: Cryptography for Fairness",
   "start": "2024-01-31T13:30:00-07:00",
   "end": "2024-01-31T14:30:00-07:00",
@@ -1493,6 +1509,66 @@
    "location": "",
    "tags": [
     "fairness & ethics"
+   ]
+  }
+ },
+ {
+  "title": "Daniel Brown: Challenges and Progress Towards AI Alignment via Reinforcement Learning from Human Feedback",
+  "start": "2024-02-07T13:30:00-07:00",
+  "end": "2024-02-07T14:30:00-07:00",
+  "url": "/talks/2024-02-07-daniel-brown/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "GC 2560 (Gardner Commons)",
+   "tags": [
+    "machine learning",
+    "robotics"
+   ]
+  }
+ },
+ {
+  "title": "Shivam Garg: In-Context Learning: A Case Study of Simple Function Classes",
+  "start": "2024-02-14T13:30:00-07:00",
+  "end": "2024-02-14T14:30:00-07:00",
+  "url": "/talks/2024-02-14-shivam-garg/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "algorithms & theory",
+    "deep learning",
+    "large language models"
+   ]
+  }
+ },
+ {
+  "title": "Tolga Tasdizen: Deep Learning in Image Analysis: Applications and Challenges",
+  "start": "2024-02-21T13:30:00-07:00",
+  "end": "2024-02-21T14:30:00-07:00",
+  "url": "/talks/2024-02-21-tolga-tasdizen/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "computer vision",
+    "deep learning",
+    "health & medicine",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Baskar Ganapathysubramanian: Neural PDE solvers with applications in manufacturing and agriculture",
+  "start": "2024-02-28T13:30:00-07:00",
+  "end": "2024-02-28T14:30:00-07:00",
+  "url": "/talks/2024-02-28-baskar-ganapathysubramanian/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "",
+   "tags": [
+    "machine learning",
+    "optimization",
+    "physics & astronomy"
    ]
   }
  },
@@ -2484,6 +2560,51 @@
   "extendedProps": {
    "location": "WEB 2250",
    "tags": []
+  }
+ },
+ {
+  "title": "Benjie Wang: The Formalization Gap in Generative AI",
+  "start": "2026-09-11T13:30:00-06:00",
+  "end": "2026-09-11T14:30:00-06:00",
+  "url": "/talks/2026-09-11-benjie-wang/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 2250",
+   "tags": [
+    "deep learning",
+    "large language models",
+    "natural language processing",
+    "robotics"
+   ]
+  }
+ },
+ {
+  "title": "Polina Kukhareva: Using AI and Real-World Data to Personalize Diabetes Treatment",
+  "start": "2026-09-18T13:30:00-06:00",
+  "end": "2026-09-18T14:30:00-06:00",
+  "url": "/talks/2026-09-18-polina-kukhareva/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 2250",
+   "tags": [
+    "causal inference",
+    "health & medicine",
+    "machine learning"
+   ]
+  }
+ },
+ {
+  "title": "Matthew S. Sigman: Data Science Meets Chemistry",
+  "start": "2026-09-25T13:30:00-06:00",
+  "end": "2026-09-25T14:30:00-06:00",
+  "url": "/talks/2026-09-25-matthew-s-sigman/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "WEB 2250",
+   "tags": [
+    "education",
+    "optimization"
+   ]
   }
  }
 ]
