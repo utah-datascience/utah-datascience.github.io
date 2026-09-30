@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Deep Learning in Image Analysis: Applications and Challenges"
+date = 2024-02-21
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09"
+slides = ""
+recording = ""
+paper = ""
+tags = ["computer vision", "deep learning", "health & medicine", "machine learning"]
+canceled = false
+abstract = "Machine learning and more specifically deep learning has revolutionized computer vision and images analysis problems in a wide range of application areas. In this talk, we will outline four applications ranging from material science to health informatics and medical image analysis. We will discuss challenges unique to each problem and our approach using machine learning. A common theme underlying these problems is the difficulty of obtaining annotated data. Our contributions towards solving this problem ranging from new semi-supervised learning formulations to leveraging existing workflows of experts to collect annotations will be introduced."
+
+[[speakers]]
+name = "Tolga Tasdizen"
+affiliation = "Utah"
+role = ""
+website = ""
+photo = ""
+email = ""
+bio = "Prof. Tasdizen received the B.S. degree in electrical and electronics engineering from Bogazici University, Istanbul, Turkey. He received the M.S. and Ph.D. degrees in engineering from Brown University. He is currently a professor at the Department of Electrical and Computer Engineering, University of Utah. His research interests include image processing and computer vision with a focus on applications in biological, medical image analysis and material science. He is a recipient of the National Science Foundation’s CAREER Award. His research has been funded by NSF, NIH, VAH, DOE and DHS."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "6l7bt011e27qp5malv0s4e0dvd@google.com"
+calendar_last_modified = "2024-02-21T12:29:40Z"
+synced_on = 2026-09-29
+needs_review = true

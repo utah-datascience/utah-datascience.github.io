@@ -97,7 +97,9 @@ layout: default
       {{ content }}
       {% endif %}
 
+      {% if page.speakers.size > 0 %}
       <h2>{% if page.speakers.size > 1 %}Speakers{% else %}Speaker{% endif %}</h2>
+      {% endif %}
       {% for speaker in page.speakers %}
       <div class="row mb-4">
         {% if speaker.photo %}

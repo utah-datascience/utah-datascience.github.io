@@ -22,7 +22,7 @@ read, so anything searchable has to end up in `data-search`.
   data-search="{{ searchable | strip_newlines | downcase | escape }}">
   <span class="talk-date text-muted">{{ talk.date | date: "%b %-d, %Y" }}</span>
   <a href="{{ talk.url | relative_url }}">{{ talk.title }}</a>
-  &mdash; {{ talk.speaker_names }}
+  {% if talk.speaker_names and talk.speaker_names != "" %}&mdash; {{ talk.speaker_names }}{% endif %}
   {% if talk.canceled %}<span class="badge badge-danger">Canceled</span>{% endif %}
   {% if talk.recording %}<a href="{{ talk.recording }}" target="_blank" rel="noopener">[recording]</a>{% endif %}
   {% if talk.slides %}<a href="{{ talk.slides }}" target="_blank" rel="noopener">[slides]</a>{% endif %}

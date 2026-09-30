@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "In-Context Learning: A Case Study of Simple Function Classes"
+date = 2024-02-14
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://utah.zoom.us/j/96005100565?pwd=WmFGN25RazZwV2NoMGE2dVFGMngyZz09"
+slides = ""
+recording = ""
+paper = ""
+tags = ["algorithms & theory", "deep learning", "large language models"]
+canceled = false
+abstract = "In-context learning refers to the ability of a model to learn new tasks from a sequence of input-output pairs given in a prompt. Crucially, this learning happens at inference time without any parameter updates to the model. I will discuss our empirical efforts that shed light on some basic aspects of in-context learning: To what extent can Transformers, or other models such as LSTMs be efficiently trained to in-context learn fundamental function classes, such as linear functions, sparse linear functions, and small decision trees? How can one evaluate in-context learning algorithms? And what are the qualitative differences between these architectures with respect to their ability to be trained to perform in-context learning? This is based on joint work with Dimitris Tsipras, Percy Liang, and Greg Valiant."
+
+[[speakers]]
+name = "Shivam Garg"
+affiliation = "Harvard"
+role = ""
+website = ""
+photo = ""
+email = ""
+bio = "Shivam Garg is a postdoctoral fellow at Harvard University, hosted by Seth Neel and Boaz Barak. Before this, he completed his PhD from Stanford University, advised by Gregory Valiant. He is interested in the foundations of intelligence, in both artificial and natural systems."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "5cv6sdrb00a3f3kalbhd6c7uia@google.com"
+calendar_last_modified = "2024-02-14T00:03:13Z"
+synced_on = 2026-09-29
+needs_review = true

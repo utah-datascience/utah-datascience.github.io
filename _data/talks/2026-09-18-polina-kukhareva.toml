@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Using AI and Real-World Data to Personalize Diabetes Treatment"
+date = 2026-09-18
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 2250"
+zoom = "https://utah.zoom.us/j/85983626630"
+slides = ""
+recording = ""
+paper = ""
+tags = ["causal inference", "health & medicine", "machine learning"]
+canceled = false
+abstract = "Patients with type 2 diabetes have increasingly many treatment options, but responses to these therapies vary substantially across individuals and across outcomes such as glycemic control, weight, cardiovascular events, kidney outcomes, and hypoglycemia. In this talk, I will describe our work using large-scale electronic health record data, causal inference, and machine learning to characterize treatment heterogeneity and develop approaches for individualized treatment selection. I will discuss challenges in reconstructing longitudinal treatment regimens from real-world prescribing data, predicting multiple patient outcomes, and identifying the level of patient-specific resolution that can be reliably supported by available data. I will also discuss how these methods can ultimately support patient-centered treatment comparisons and clinical decision making."
+
+[[speakers]]
+name = "Polina Kukhareva"
+affiliation = "UU BMI"
+role = ""
+website = "https://medicine.utah.edu/faculty/polina-v-kukhareva"
+photo = ""
+email = ""
+bio = "Polina Kukhareva, PhD, MPH, is a Research Assistant Professor of Biomedical Informatics at the University of Utah. Her research focuses on developing and evaluating methods that use electronic health record and clinical trial data to improve personalized treatment decisions. Her current work applies causal inference, machine learning, and real-world data to understand heterogeneity in treatment response, particularly for type 2 diabetes and cardiometabolic disease. She is the principal investigator of an NIH/NIDDK K01 award focused on building equitable predictive models for personalized diabetes pharmacotherapy."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "43C91C33-07E3-4226-A5C6-FD0169E3EA30"
+calendar_last_modified = "2026-09-11T21:00:09Z"
+synced_on = 2026-09-29
+needs_review = true

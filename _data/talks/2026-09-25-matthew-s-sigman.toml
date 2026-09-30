@@ -1,0 +1,36 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Data Science Meets Chemistry"
+date = 2026-09-25
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 2250"
+zoom = "https://utah.zoom.us/j/85983626630"
+slides = ""
+recording = ""
+paper = ""
+tags = ["education", "optimization"]
+canceled = false
+abstract = "How do chemists use data science to discover and understand new reactions? This talk offers an accessible introduction to the distinctive challenges of chemical data: small, complex datasets; molecular representations; and the need to connect predictions with physical mechanisms. Through examples from reaction development, catalyst design, and optimization, it will show how molecular descriptors, statistical modeling, and machine learning reveal relationships between structure, reactivity, and selectivity. Along the way, the talk will translate chemical questions for a data science audience, highlight opportunities for automation and collaboration, and consider how new computational approaches might expand what chemists can discover."
+
+[[speakers]]
+name = "Matthew S. Sigman"
+affiliation = "UU Chemistry"
+role = ""
+website = "https://www.chemistry.utah.edu/faculty/matthew-s-sigman/"
+photo = ""
+email = ""
+bio = """
+Matt Sigman was born in Los Angeles, California in 1970. He received a B.S. in chemistry from Sonoma State University in 1992 before obtaining his Ph.D. at Washington State University with Professor Bruce Eaton in 1996 in organometallic chemistry. He then moved to Harvard University to complete an NIH funded postdoctoral stint with Professor Eric Jacobsen. In 1999, he joined the faculty of the University of Utah where his research group has focused on the development of new synthetic methodology with an underlying interest in reaction mechanism. His research integrates the study/development of new chemical reactions with the invention of new data science approaches for reaction interrogation and optimization. He currently holds the rank of Distinguished Professor.
+
+Sigman’s research efforts have been recognized by several awards including the Pfizer Award for Creativity in Organic Chemistry (2004), the Camille and Henry Dreyfus Teacher Scholar Award (2004), the Arthur C. Cope Scholar Award (2010), the ACS Award for Creative Work in Synthetic Organic Chemistry (2017), and the James Flack Norris Award for Physical Organic Chemistry (2027). He has been elected as a member of the American Academy of Arts and Sciences (2026). He has also been recognized for outstanding teaching and mentoring at the University of Utah as highlighted by being named the University of Utah Distinguished Honors Professor (2008), Distinguished Teaching Award (2022) and Distinguished Mentoring Award (2025).
+"""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "6A79EF24-769C-495A-AA7F-9DB956C104F7"
+calendar_last_modified = "2026-09-21T17:30:41Z"
+synced_on = 2026-09-29
+needs_review = true

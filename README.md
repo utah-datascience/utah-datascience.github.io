@@ -169,7 +169,13 @@ has already happened and its record has left the sync window -- see below.
 
 An entry that never adopts this format still gets imported, using best-effort
 heuristics on whatever plain text is there; the resulting record is flagged
-`needs_review = true` and should be checked by hand once it lands.
+`needs_review = true` and should be checked by hand once it lands. If even the
+heuristics cannot find a speaker, the talk is still published -- under a
+date-based title such as "Talk of Friday, August 23rd", keeping only fields
+that were explicitly labelled -- so a talk on the calendar never silently goes
+missing from the site. Entries that are plainly not talks ("No seminar", a
+holiday, a room hold, a social, an information session, or a cancelled slot
+with no speaker) are the only ones left off.
 
 Once the daily sync (or a maintainer running it manually) picks up the change,
 it lands as a pull request from a branch named `entry-update`. **Review and
