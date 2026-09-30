@@ -2,12 +2,8 @@ name: Deploy site
 
 # Builds and publishes the site via GitHub Pages' "GitHub Actions" deployment
 # source, rather than the classic "deploy from a branch" build. That is what
-# lets `deploy` require other checks (see needs:) before the site republishes.
-#
-# Rollout: switch Settings > Pages > Source to "GitHub Actions" as soon as
-# this is on master. Until then the legacy branch build keeps running too, and
-# since deploy-pages accepts a deployment from the source branch either way,
-# every push publishes twice (identical output, last one wins).
+# lets the deploy wait on checks of our own -- here, `guard` -- before the site
+# republishes.
 
 on:
   push:
@@ -20,13 +16,70 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  pull-requests: read # guard: look up which pull request a push came from
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
+  # Google Calendar owns any talk starting within the sync window (see
+  # scripts/import_calendar_talks.py). If a push to master changed one of
+  # those records by hand, stop here: the site is not republished until it is
+  # fixed. This is the authoritative copy of the check; talks.yml runs the same
+  # script on pull requests, but a red PR check alone cannot stop a merge.
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Check for a manual edit to a calendar-owned talk record
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          SHA: ${{ github.sha }}
+          HEAD_MESSAGE: ${{ github.event.head_commit.message }}
+        run: |
+          if [ "$EVENT" != "push" ]; then
+            echo "Manual run: nothing new was pushed, so there is nothing to guard."
+            exit 0
+          fi
+
+          # Ask GitHub which pull request this commit came from. Unlike the
+          # commit message, this works for squash, merge, and rebase merges.
+          pr=$(gh api "repos/${GITHUB_REPOSITORY}/commits/${SHA}/pulls" \
+                 --jq '[.[] | select(.merged_at != null)][0] // {} |
+                       {branch: (.head.ref // ""), title: (.title // ""),
+                        labels: ([.labels[]?.name] | join(","))}')
+          branch=$(jq -r .branch <<<"$pr")
+          title=$(jq -r .title <<<"$pr")
+          labels=$(jq -r .labels <<<"$pr")
+          echo "Came from pull request branch: ${branch:-<none, a direct push>}"
+
+          if [ "$branch" = "entry-update" ]; then
+            echo "This is the calendar sync's own pull request; its edits are the point."
+            exit 0
+          fi
+          if [[ ",$labels," == *",allow-manual-entry,"* ]] \
+             || [[ "$title" == *"[allow-manual-entry]"* ]] \
+             || [[ "$HEAD_MESSAGE" == *"[allow-manual-entry]"* ]]; then
+            echo "::notice::allow-manual-entry is set; skipping the manual-edit guard."
+            exit 0
+          fi
+
+          python3 scripts/guard_manual_edits.py "$BEFORE" "$SHA"
+
   build:
+    needs: guard
     # Pinned rather than ubuntu-latest: ubuntu-latest moves to Ubuntu 26 on
     # 2026-10-19, and ruby/setup-ruby has no prebuilt Ruby 3.1 for it (3.1 is
     # past end-of-life). Move off this pin together with a Ruby upgrade.
@@ -34,6 +87,19 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      # Build from the records themselves rather than trusting that the
+      # generated pages were committed alongside them. talks.yml repairs
+      # stale pages by pushing a follow-up commit, but a push made with the
+      # Actions token does not trigger this workflow -- so without this step
+      # the site could go out with stale talk pages until the next push.
+      - name: Generate talk pages, talks.ics, and talks.json from _data/talks
+        run: python3 scripts/generate_talks.py
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
