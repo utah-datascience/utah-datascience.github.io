@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Inference and Reasoning for Semi-structured Tables"
+date = 2023-02-22
+start_time = "10:45"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["data management", "machine learning", "natural language processing"]
+abstract = "Understanding semi-structured tabular data, which is ubiquitous in the real world, requires an understanding of the meaning of text fragments and the implicit connections between them. We believe such data could be used to investigate how individuals and machines reason about semi-structured data. First, we present the InfoTabS dataset, which consists of human-written textual predictions based on tables collected from Wikipedia's infoboxes. Our research demonstrates that the semi-structured, multi-domain, and heterogeneous nature of the premises prompts complicated, multi-faceted reasoning, offering a modeling challenge for traditional modeling techniques. Second, we analyzed these challenges in-depth and developed simple, effective preprocessing strategies to overcome them. Thirdly, despite accurate NLI prediction, we demonstrate through rigorous probing that the existing model does not reason with the provided tabular facts. To address this, we suggest a two-stage evidence extraction and tabular inference technique for enhancing model reasoning and interpretability. We also investigate efficient methods for enhancing tabular inference datasets with semi-automatic data augmentation and pattern-based pre-training. Lastly, to ensure that tabular reasoning models work in more than one language, we introduce XInfoTabS, a unique problem of bilingual tabular inference, and a cost-effective pipeline for translating tables. In the near future, we plan to test the tabular reasoning model for temporal changes, especially for dynamic tables where information changes over time."
+
+[[speakers]]
+name = "Vivek Gupta"
+affiliation = "Utah SoC"
+website = "https://vgupta123.github.io"
+photo = ""
+bio = "Vivek is a fifth-year doctorate candidate at the Utah NLP Group's at Kahlert School of Computing, University of Utah. He is fortunate to be advised by Prof. Vivek Srikumar. He is broadly interested in NLP research in semi-structured data and low-resource languages. He is awarded Bloomberg Data Science Fellowship 2021-23, the Best paper award at the DeeLIO 2022 workshop, and the Outstanding paper award at the NLP4ConvAI 2022 workshop . He currently also serves as the Utah Data Science Club's coordinator. He used to be a Research Fellow (Microsoft Research Fellowship 2016–18) at the Microsoft Research Lab, India, where he worked with the Machine Learning and Natural Language Processing group. In 2016, he graduated from IIT Kanpur as a dual degree (BS-MS) student in the Department of Computer Science and Engineering. He was the inaugural coordinator of IIT Kanpur's Special Interest Group in Machine Learning (SIGML)"
+
+[meta]
+source = "google-calendar"
+calendar_uid = "BDC0531F-2350-4889-AF6F-868D4FEC9570"
+imported_on = 2026-08-18
+needs_review = true

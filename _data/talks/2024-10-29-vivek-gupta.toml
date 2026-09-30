@@ -1,0 +1,36 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Reasoning on Tabular and Multimodal Data"
+date = 2024-10-29
+start_time = "12:30"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "WEB 1230"
+zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
+slides = ""
+recording = ""
+canceled = false
+tags = ["computer vision", "data management", "natural language processing", "visualization"]
+abstract = """
+In this talk, I’ll walk through some of the latest AI advancements that address the challenges of working with complex data, with a focus on improving reasoning for both tabular and multimodal data.
+
+I’ll begin by introducing H-STAR, a hybrid algorithm that combines symbolic and semantic reasoning to enhance question answering for tabular data. By leveraging multi-view table extraction and adaptive reasoning, H-STAR has shown great potential in improving reasoning across tabular datasets.
+
+Then, I’ll introduce MMTabQA, a dataset we developed to evaluate how AI systems manage multimodal tables that integrate structured text and images. Our research reveals where current models struggle to process these diverse data types, highlighting key areas for improvement.
+
+To wrap up, I’ll discuss open challenges and future directions, including expanding reasoning capabilities to other complex data types—such as charts, maps, and flowcharts—and enhancing AI systems' robustness in handling numerical, temporal, and visual reasoning, particularly with large (vision) language models.
+"""
+
+[[speakers]]
+name = "Vivek Gupta"
+affiliation = "ASU & UCDS alumni"
+website = "https://vgupta123.github.io"
+photo = ""
+bio = "Vivek Gupta is an Assistant Professor of Computer Science at Arizona State University (ASU), where he works on AI systems that help computers reason with complex data like tables, charts, diagrams, and maps etc. Before ASU, he was a postdoctoral researcher at the University of Pennsylvania in the Cognitive Computation Group. He earned his Ph.D. in Computer Science from the University of Utah and has received several awards, including the Bloomberg Data Science Fellowship and NLP Best Paper Awards. You can learn more about his work at vgupta123.github.io and his group CoRAL page at coral-lab-asu.github.io."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4u5bj5j0jouhse93h9s044844t@google.com"
+imported_on = 2026-08-18
+needs_review = true

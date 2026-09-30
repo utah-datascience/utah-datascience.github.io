@@ -1,0 +1,113 @@
+name: Talk pages
+
+# The talk pages and the calendar feed are generated from _data/talks/*.toml.
+# This keeps them in step with the records without anyone having to remember:
+# whatever the generator produces is committed back to the branch. That means a
+# talk can be added or edited straight from the GitHub web UI.
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "talks-${{ github.head_ref || github.ref }}"
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          # for pull requests, check out the branch itself so we can push to it
+          ref: ${{ github.head_ref || github.ref_name }}
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Generate talk pages, talks.ics, and talks.json
+        run: python3 scripts/generate_talks.py
+
+      - name: Commit any changes
+        id: commit
+        run: |
+          if git diff --quiet -- _talks talks.ics talks.json; then
+            echo "Talk pages, talks.ics, and talks.json are already up to date."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _talks talks.ics talks.json
+          git commit -m "Regenerate talk pages, talks.ics, and talks.json [skip ci]"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Report
+        if: steps.commit.outputs.changed == 'true'
+        run: echo "::notice::Regenerated the talk pages, talks.ics, and talks.json and pushed the result."
+
+  # A fork cannot be pushed to, so tell the contributor what to run instead.
+  check-fork:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Check that _talks/, talks.ics, and talks.json match _data/talks/
+        run: python3 scripts/generate_talks.py --check
+
+  test-calendar-parsing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - run: python3 scripts/test_calendar_parsing.py
+
+  # Google Calendar owns any talk starting within the sync window (see
+  # scripts/import_calendar_talks.py); catches someone editing one of those
+  # records directly in a PR instead of on the calendar event, where the next
+  # scheduled sync would just overwrite (or resurrect) it. Skipped for the
+  # sync's own PR (branch entry-update), which is exactly the process that is
+  # supposed to make these edits.
+  #
+  # This is PR-time feedback only -- `needs:` cannot reach across workflow
+  # files, so it does not by itself stop a merge from publishing. The
+  # authoritative gate is the same check re-run from .github/workflows/pages.yml
+  # on push to master, ahead of the deploy job.
+  guard-manual-edits:
+    if: github.event_name == 'pull_request' && github.head_ref != 'entry-update'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Check for a manual edit to a calendar-owned talk record
+        if: >
+          !contains(github.event.pull_request.labels.*.name, 'allow-manual-entry') &&
+          !contains(github.event.pull_request.title, '[allow-manual-entry]')
+        run: >
+          python3 scripts/guard_manual_edits.py
+          ${{ github.event.pull_request.base.sha }}
+          ${{ github.event.pull_request.head.sha }}

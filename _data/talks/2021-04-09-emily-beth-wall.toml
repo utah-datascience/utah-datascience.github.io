@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "As We Are: Detecting and Mitigating Human Bias in Visual Analytics"
+date = 2021-04-09
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = "Virtual"
+zoom = "https://us02web.zoom.us/j/87538638627?pwd=WGZrYmIyNjFsVEtwWk5pemRuM0JsZz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["fairness & ethics", "visualization"]
+abstract = """
+Visual Analytics combines the complementary strengths of humans (perception and sensemaking capabilities) and machines (fast and accurate information processing). However, people are susceptible to inherent limitations and biases, including cognitive biases (e.g., anchoring bias), social biases borne of cultural stereotypes and prejudices (e.g., gender bias), and perceptual biases (e.g., illusions). These biases can impact data analysis and decision making in critical ways, leading to inaccurate or inefficient choices, or even propagating long-standing institutional and systemic biases.
+
+Given our knowledge of these biases and the increased use of data visualization to support decision making in data science, the goal of this research is to detect and mitigate human biases in visual data analysis. In this talk, I describe (1) which types of bias are particularly relevant in the process of visual data analysis, (2) how user interactions with data can be used to approximate human biases, and (3) how visualization systems can be designed to increase user awareness of potentially unconscious or implicit biases. By creating systems that promote real-time awareness of bias, people can reflect on their behavior and decision making and ultimately engage in a less-biased analysis and decision making process.
+"""
+
+[[speakers]]
+name = "Emily Beth Wall"
+affiliation = "Emory"
+website = ""
+photo = ""
+bio = "Dr. Emily Wall is an Assistant Professor in the Computer Science department at Emory University (beginning Summer 2021). She completed her PhD in the School of Interactive Computing at Georgia Tech in 2020 and is currently a Postdoctoral Scholar at Northwestern University. Her research interests lie at the intersection of cognitive science and data visualization. Particularly, her research has focused on increasing awareness of unconscious and implicit human biases through the design and evaluation of (1) computational approaches to quantify bias from user interaction and (2) interfaces to support visual data analysis. Her research has been supported by NSF, Pacific Northwest National Laboratory, and Siemens, among others."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "7l6e4jsrifbviegue7r9simqsh@google.com"
+imported_on = 2026-08-18
+needs_review = true

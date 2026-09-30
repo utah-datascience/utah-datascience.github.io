@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Active Sampling for Min-Max Fairness"
+date = 2022-10-19
+start_time = "10:30"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["fairness & ethics", "statistics"]
+abstract = """
+Models satisfying Min-max fairness minimizes maximum group specific losses, so that the model has a more equitable performance over all groups. Benefit of min-max fair models over other fairness notions and models include it levels up: meaning it only degrades performance of a group if the degradation improves performance on the worst off group.
+
+In this talk, I will briefly mention the prior works that defined min-max fairness. I will mainly focus on our paper “Active Sampling for Min-Max Fairness” to introduce two algorithms that find min-max fair models with convergence guarantees.
+"""
+
+[[speakers]]
+name = "Jie Zhang"
+affiliation = "U Washington"
+website = ""
+photo = ""
+bio = "Claire Zhang is a PhD student at the Paul G. Allen School of Computer Science and Engineering at the University of Washington. She is fortunate to be advised by Professor Jamie Morgenstern. She completed her undergraduate studies at the University of Utah School of Computing, and was very fortunate to be advised by professor Suresh Venkatasubramanian while at the U. Her research interests include fairness in machine learning and learning theory."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "F4F316F8-30D6-4274-8E19-4C9D755200DE"
+imported_on = 2026-08-18
+needs_review = true

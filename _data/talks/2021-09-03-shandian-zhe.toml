@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Multi-fidelity Learning and Optimization for Physical Simulation and AutoML"
+date = 2021-09-03
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["optimization"]
+abstract = """
+Multi-fidelity learning involves using training examples at different fidelities or resolutions. High-fidelity examples are of high-quality but often are much more costly to collect than inaccurate, low-fidelity examples. How to retrieve and leverage examples at multiple fidelities is the key to reduce the learning cost while maximizing efficiency.
+
+This talk will introduce our recent work in multi-fidelity learning and optimization. First, I will introduce our deep auto-regressive models that can capture complex correlations across the fidelities to integrate examples of high-dimensional outputs. These are common in applications of physical simulation. Second, I will introduce our work of deep multi-fidelity active learning and Bayesian optimization that can improve the learning and optimization efficiency while reducing the cost of generating training examples, namely maximizing the benefit-cost ratio. Finally, a batch version of the active learning and optimization technique will be presented, which can reduce the query redundancy, improve diversity, and further boost the benefit-cost ratio. I will showcase the advantage of our methods in standard benchmarks of physical simulation, topology structure optimization, and typical tasks in hyper-parameter tuning/AutoML.
+"""
+
+[[speakers]]
+name = "Shandian Zhe"
+affiliation = "Utah SoC"
+website = "https://www.cs.utah.edu/~zhe/"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "9FFA9CFC-C56B-47A9-8680-50C0DE87E0F0"
+imported_on = 2026-08-18
+needs_review = true

@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Searching for dwarf (small) galaxies in astronomical surveys"
+date = 2023-04-05
+start_time = "10:45"
+end_time = "11:45"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = "https://utah.zoom.us/j/92180148411?pwd=dG1OaXlZTTQ1d0M4R0RiSUpsb3kvdz09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["deep learning", "machine learning", "physics & astronomy"]
+abstract = "Dwarf galaxies are small fuzzy galaxies that contain much fewer stars than Milky Way-mass galaxies. Observations of these little galaxies can enhance our understanding of galaxy formation and the nature of dark matter. Finding these dwarf galaxies is, however, not an easy task because they are faint and dim from our perspective. I will describe the challenges and recent efforts on the search for nearby dwarf galaxies in astronomical surveys. One particular challenge is to identify potential dwarf galaxies with only image data that do not contain distance information. I will discuss a few traditional methods that are used to identify dwarf galaxies and obtain their astronomical distances, and why these methods are mostly used to find dwarf galaxies in specific patches of the sky. I will then discuss how the distance information can be used as training data in machine learning algorithms, such as convolutional neural networks, to derive distance information from just astronomical images. Finally, I will discuss the remaining challenges we have, and how we may improve the methods in preparation for future observations from the Rubin Observatory Legacy Survey of Space and Time (LSST) and Roman Space Telescope."
+
+[[speakers]]
+name = "Yao-Yaun Mao"
+affiliation = "Utah Astro"
+website = "https://yymao.github.io"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "A76D8FFE-A462-49A1-A7DC-AF4A37B83B46"
+imported_on = 2026-08-18
+needs_review = true

@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Predictions as Public Reasons"
+date = 2025-08-27
+start_time = "11:00"
+end_time = "12:00"
+series = "Data Science & AI Lecture Series"
+location = "LNCO 1100"
+zoom = "https://utah.zoom.us/j/7824755969?pwd=SUplL1EwUmU0TE5JRkhyQ2dtNmsvdz09"
+slides = ""
+recording = ""
+canceled = false
+tags = []
+abstract = ""
+
+[[speakers]]
+name = "Konstantin Genin"
+affiliation = ""
+website = ""
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "_6t136e1g692jeb9h6h1kab9k6p33ib9p8osjgb9n6kskcga47533icpo84_R20250827T170000@google.com"
+imported_on = 2026-08-18
+needs_review = true

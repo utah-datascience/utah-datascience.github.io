@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "AI for Multi-Wavelength X-ray Analysis"
+date = 2026-04-15
+start_time = "10:00"
+end_time = "10:30"
+series = "Data Science & AI Lecture Series"
+location = "Dinosaur Room (CSC 206)"
+zoom = "https://utexas.zoom.us/j/84742203545?pwd=lUosaf3T6bkIS1QAaIQYHYiiClE2ZP.1"
+slides = ""
+recording = ""
+canceled = false
+tags = ["deep learning", "machine learning", "physics & astronomy"]
+abstract = "Accurate parameter estimation in X-ray astronomy typically relies on traditional methods, such as likelihood-based spectral fitting, which can be computationally prohibitive as model complexity and data dimensionality increase. In this talk, I present a neural network-based framework designed to bypass iterative fitting by directly mapping spectral observations to physical parameters. Using the Circinus galaxy as a benchmark, we demonstrate how architectures trained on synthetic data from theoretical models can recover intrinsic properties, such as column density and torus geometry, with both high speed and high precision. This approach maintains the physical rigor required for broadband analysis with multiple telescopes while significantly reducing inference time. I will discuss the challenges and resolutions associated with training and predicting on multi-instrument data, as well as the potential for these AI-driven methods to enable large-scale systematic studies across various astrophysical sources and other scientific applications."
+
+[[speakers]]
+name = "Shiqi Yu"
+affiliation = ""
+website = ""
+photo = ""
+bio = "Prof. Yu is a Research Assistant Professor in the Department of Physics and Astronomy at the University of Utah. Their research focuses on the intersection of high-energy astrophysics and advanced computational methods. As a member of the IceCube Collaboration and former co-lead of the Reconstruction and Machine Learning working group, they have extensive experience applying machine learning techniques to diverse astrophysical data. Their current work focuses on developing neural network architectures for multi-wavelength analysis."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "EB37141A-E657-44A4-9F13-5B6DF6636D1D"
+imported_on = 2026-08-18
+needs_review = true

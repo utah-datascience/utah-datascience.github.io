@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "About Start-UP MTN: which involves Comptutational Neuroscience and AI"
+date = 2026-08-28
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB 2250"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["biology & genomics"]
+abstract = ""
+
+[[speakers]]
+name = "Warren Pettine"
+affiliation = "UU Psychiatry & MTN"
+website = "https://medicine.utah.edu/faculty/warren-pettine"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "D2FDD8AC-86E1-4961-A286-9596FA9D0FAE"
+imported_on = 2026-08-18
+needs_review = true

@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Data Science & AI Day"
+date = 2025-01-24
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science & AI Lecture Series"
+location = "Union Ballroom"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["robotics"]
+abstract = "The last years have seen astonishing progress in the capabilities of generative AI techniques, particularly in the areas of language and visual understanding and generation. Key to the success of these models are the use of image and text data sets of unprecedented scale along with models that are able to digest such large datasets. We are now seeing the first examples of leveraging such models to equip robots with open-world visual understanding and reasoning capabilities. Unfortunately, however, we have not achieved the RobotGPT moment; these models still struggle with reasoning about geometry and physical interactions in the real world, resulting in brittle performance on seemingly simple tasks such as manipulating objects in the open world. A crucial reason for this problem is the lack of data suitable to train powerful, general models for robot decision making and control. In this talk, I will discuss approaches to generating large datasets for training robot manipulation capabilities, with a focus on the role simulation can play in this context. I will show some of our prior work, where we demonstrated robust sim-to-real transfer of manipulation skills trained in simulation, and then discuss a promising direction toward training a model architecture that combines high-level, semantic, open-world reasoning, with low-level 3D robot policies."
+
+[[speakers]]
+name = "Dieter Fox"
+affiliation = ""
+website = "https://datascience.utah.edu/events/2025/data-science-day/"
+photo = ""
+bio = "Dieter Fox is Senior Director of Robotics Research at NVIDIA and Professor in the Allen School of Computer Science & Engineering at the University of Washington, where he heads the UW Robotics and State Estimation Lab. Dieter’s research is in robotics and artificial intelligence, with a focus on learning and perception applied to problems such as robot manipulation, mapping, and object detection and tracking. He has published more than 200 technical papers and is the co-author of the textbook “Probabilistic Robotics”. He is a Fellow of the IEEE, AAAI, and ACM, and recipient of the 2020 IEEE Pioneer in Robotics and Automation Award and the 2023 IJCAI John McCarthy Award. He was an editor of the IEEE Transactions on Robotics, program co-chair of the 2008 AAAI Conference on Artificial Intelligence, and program chair of the 2013 Robotics: Science and Systems conference."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4E8CAE38-B3D7-4A6F-988F-B75BA6C93098"
+imported_on = 2026-08-18
+needs_review = true

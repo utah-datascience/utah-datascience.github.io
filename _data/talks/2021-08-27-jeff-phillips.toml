@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "A Visual tour of Bias Mitigation"
+date = 2021-08-27
+start_time = "14:00"
+end_time = "15:00"
+series = "Data Science Seminar"
+location = "MEB 3147"
+zoom = "https://utah.zoom.us/j/93778940103?pwd=TStQRWhWVjRxd0hGV1hTK05SUFZwUT09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["deep learning", "fairness & ethics", "natural language processing", "visualization"]
+abstract = "Word vector embeddings have been shown to contain and amplify biases in data they are extracted from. Consequently, many techniques have been proposed to identify, mitigate, and attenuate these biases in word representations. In this talk, I will review a collection of state-of-the-art debiasing techniques. To aid this, we provide an open source web-based visualization tool VERB (Visualization of Embedding Representations for deBiasing) and offer hands-on experience in exploring the effects of these debiasing techniques on the geometry of high-dimensional word vectors. To help understand how various debiasing techniques change the underlying geometry, I will show how to decompose each technique into interpretable sequences of primitive operations and study their effect on the word vectors using dimensionality reduction and interactive visual exploration."
+
+[[speakers]]
+name = "Jeff Phillips"
+affiliation = "University of Utah"
+website = "https://www.cs.utah.edu/~jeffp/"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "630867A7-3CD6-490A-81C3-4AD8A2D0D7F7"
+imported_on = 2026-08-18
+needs_review = true

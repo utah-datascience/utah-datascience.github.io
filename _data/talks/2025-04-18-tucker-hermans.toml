@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Stein Variational Inference for Robotic Learning and Control"
+date = 2025-04-18
+start_time = "13:30"
+end_time = "14:30"
+series = "Data Science & AI Lecture Series"
+location = "WEB L112"
+zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
+slides = ""
+recording = ""
+canceled = false
+tags = ["algorithms & theory", "robotics"]
+abstract = """
+Probabilistic inference, the problem of estimating a distribution given data, has been a central pillar of robotic algorithms for more than two decades. Inference techniques have defined the de facto standard for robotic localization, mapping, system calibration, and online error estimation for mobile robots. Academic work has shown how these same inference problem formulations and algorithms can be used to solve problems of planning and control.
+
+In this talk I will discuss how probabilistic inference techniques can be extended for use in robotic manipulation where models may come either from engineering first-principles or in the form of large neural networks. I will then give a brief dedication of Stein variational inference, a recent nonparametric technique for probabilistic inference that is easily parallelized on modern GPUs providing much faster inference times compared to more traditional Markov chain Monte Carlo methods. I will then show a few different applications of using Stein variational inference from my lab, including planning to goal distributions, adaptive control of magnetic manipulation, and generating diverse data for training from real-world robot failures.
+"""
+
+[[speakers]]
+name = "Tucker Hermans"
+affiliation = "UU KSoC, NVIDIA"
+website = "https://robot-learning.cs.utah.edu/thermans"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4E8CAE38-B3D7-4A6F-988F-B75BA6C93098"
+imported_on = 2026-08-18
+needs_review = true

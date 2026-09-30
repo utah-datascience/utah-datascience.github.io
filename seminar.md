@@ -8,7 +8,9 @@ header:
 
     [mailing list](https://mailman.cs.utah.edu/mailman3/lists/ucds-seminar.cs.utah.edu/)
     {: class="btn btn-neutral"}
-    [Calendar](https://calendar.google.com/calendar?cid=ZWtvbDd1bHFtMTRudjE1NWFuZ3V0MnJsZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
+    [Subscribe (iCal)](webcal://datascience.utah.edu/talks.ics)
+    {: class="btn btn-neutral"}
+    [All talks](/talks/)
     {: class="btn btn-neutral"}
   background-image: /assets/img/header-background/zion-shorter.jpg
 ---
@@ -19,6 +21,8 @@ This weekly lecture series covers technical developments in data science & AI, a
 
 {% include next_talks.html %}
 
+[See all talks](/talks/){: class="btn btn-neutral"}
+
 <h2 style="margin-top: 32px;">Seminar Recordings</h2>
 <p style="margin-top: 0px;">Check out our seminar recordings here:</p>
 * [Spring 2021 Seminar Recordings](https://youtube.com/playlist?list=PLMsvlws5lSAb4i3Aa14Xf3Cajm4BCToVR){: target="_blank"}
@@ -27,6 +31,19 @@ This weekly lecture series covers technical developments in data science & AI, a
 
 ---
 
-## All Talks
+## Upcoming Talks
+
+{% include next_talks.html count=5 %}
+
+Every talk we host gets its own page with the abstract, speaker bio, slides, and
+(when available) the recording: browse the [full talk archive](/talks/).
+
+## Calendar
+
+Subscribe to the series in your own calendar with
+[webcal://datascience.utah.edu/talks.ics](webcal://datascience.utah.edu/talks.ics)
+&mdash; in Google Calendar, *Other calendars* &rarr; *+* &rarr; *From URL*, then paste
+`https://datascience.utah.edu/talks.ics`; in Outlook, *Add calendar* &rarr;
+*Subscribe from web*. Or browse the schedule here:
 
 {% include full_calendar.html %}

@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Leveraging the Structure of Data"
+date = 2023-10-04
+start_time = "10:30"
+end_time = "11:45"
+series = "Data Science & AI Lecture Series"
+location = "FASB 295"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["algorithms & theory", "machine learning", "networks & graphs", "optimization"]
+abstract = "Although predictions from machine learning models influence more and more of our lives, the standard way of posing a ML problem has remained relatively unchanged for decades. In the search for better models, a new and popular family of techniques (sometimes called Graph Machine Learning) has emerged. These techniques rely on expanding beyond the features of an individual entity and instead look to pull information from its relationships. The methods offer a tantalizing way of improving task performance by leveraging previously unused information. However, it is not a free lunch, as these models can be more complex, difficult to train, and may have challenges in interpretability. This talk will discuss the fundamentals of graph machine learning, a few models, and some insights from years of real-world applications."
+
+[[speakers]]
+name = "Bryan Perozzi"
+affiliation = "Google Research"
+website = "https://ai.google/research/teams/algorithms-optimization/"
+photo = ""
+bio = """
+Bryan Perozzi is a Research Scientist in Google Research’s Algorithms and Optimization (https://ai.google/research/teams/algorithms-optimization/) group, where he routinely analyzes some of the world’s largest (and perhaps most interesting) graphs. Bryan’s research (https://scholar.google.com/citations?hl=en&user=rZgbMs4AAAAJ&view_op=list_works) focuses on developing techniques for learning expressive representations of relational data with neural networks. These scalable algorithms are useful for prediction tasks (classification/regression), pattern discovery, and anomaly detection in large networked data sets.
+
+Bryan is an author of 40+ peer-reviewed papers at leading conferences in machine learning and data mining (such as NeurIPS, ICML, ICLR, KDD, and WWW). His doctoral work on learning network representations was awarded the prestigious SIGKDD Dissertation Award. Bryan received his Ph.D. in Computer Science from Stony Brook University in 2016, and his M.S. from the Johns Hopkins University in 2011.
+"""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "00m7j5ijbqpjopd1erulkvqqjj_R20230830T163000@google.com"
+imported_on = 2026-08-18
+needs_review = true

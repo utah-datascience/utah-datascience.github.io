@@ -1,4 +1,6 @@
 _site
+__pycache__/
+*.pyc
 .sass-cache
 .jekyll-metadata
 .jekyll-cache

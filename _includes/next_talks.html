@@ -1,35 +1,46 @@
-<div id="nextTalk"></div>
+{%- comment -%}
+Renders the next upcoming talk(s) from the `talks` collection (built from the
+TOML records in `_data/talks/`). Pass `include.count` to show more than one.
+{%- endcomment -%}
 
-<!-- For google calendar integration -->
-<script src="https://cdn.jsdelivr.net/npm/moment@2/moment.min.js"></script>
-<script src="https://apis.google.com/js/api.js"></script>
-<script src="{{ '/assets/js/fetchGoogleCalendar.js' | relative_url }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/10.0.0/markdown-it.min.js"></script>
+{%- assign count = include.count | default: 1 -%}
+{%- assign now = site.time | date: "%s" | plus: 0 -%}
+{%- assign shown = 0 -%}
+{%- assign talks = site.talks | sort: "date" -%}
 
-<script>
-  var maxResults = 1; // for fetchGoogleCalendarEvents() in fetchGoogleCalendar.js
+{% for talk in talks %}
+  {%- assign talk_time = talk.date | date: "%s" | plus: 0 -%}
+  {%- if talk_time < now or talk.canceled -%}{% continue %}{%- endif -%}
+  {%- if shown >= count -%}{% break %}{%- endif -%}
+  {%- assign shown = shown | plus: 1 -%}
+<div class="mb-4">
+  <h4 class="mb-1"><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h4>
+  <table class="description">
+    <tr>
+      <th class="text-muted">Who</th>
+      <td style="padding-left:5px">{{ talk.speaker_names }}</td>
+    </tr>
+    <tr>
+      <th class="text-muted">When</th>
+      <td style="padding-left:5px">
+        {{ talk.date | date: "%A, %B %-d, %Y" }}{% if talk.start_time %}, {{ talk.start_time }}{% if talk.end_time %} &ndash; {{ talk.end_time }}{% endif %}{% endif %}
+      </td>
+    </tr>
+    {% if talk.location %}
+    <tr><th class="text-muted">Where</th><td style="padding-left:5px">{{ talk.location }}</td></tr>
+    {% endif %}
+    {% if talk.zoom %}
+    <tr><th class="text-muted">Zoom</th><td style="padding-left:5px"><a href="{{ talk.zoom }}" target="_blank" rel="noopener">Join online</a></td></tr>
+    {% endif %}
+  </table>
+  <p class="mt-3">{{ talk.content | strip_html | truncatewords: 60 }}
+    <a href="{{ talk.url | relative_url }}">Read more</a>
+  </p>
+</div>
+{% endfor %}
 
-  // fetchGoogleCalendarEvents() in fetchGoogleCalendar.js will call show(items) after success.
-  function show(items) {
-    entry = items[0];
-    var startsAt = moment(entry.start.dateTime).format("dddd, MMMM DD, h:mma");
-    var endsAt = moment(entry.end.dateTime).format("h:mma");
-    var calendarHTML = `<div ><a href="${entry.htmlLink}" target="_blank"><h4>${entry.summary}</h4></a></div>`;
-    calendarHTML += '<table class="description">';
-    calendarHTML += `<tr><th class="text-muted">When</th><td style="padding-left:5px">${startsAt} - ${endsAt}</td></tr>`;
-    calendarHTML += `<tr><th class="text-muted">Where</th><td style="padding-left:5px">${
-      entry.location ?? "See Above"
-    }</td></tr>`;
-    calendarHTML += "</table>";
-    var md = window.markdownit();
-    var description =
-      typeof entry.description === "string"
-        ? md.render(entry.description)
-        : md.render("");
-    calendarHTML += `<div class="mt-3">${description}</div>`;
-    $("#nextTalk").html(calendarHTML);
-  }
-
-  // Loads the JavaScript client library and invokes `start` afterwards.
-  gapi.load("client", fetchGoogleCalendarEvents);
-</script>
+{% if shown == 0 %}
+<p>No talk is scheduled right now. See the <a href="{{ '/talks' | relative_url }}">talk archive</a>,
+or <a href="https://mailman.cs.utah.edu/mailman3/lists/ucds-seminar.cs.utah.edu/">join the mailing list</a>
+to hear about the next one.</p>
+{% endif %}

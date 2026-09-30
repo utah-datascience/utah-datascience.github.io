@@ -1,0 +1,39 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Characterizing the asymptotic performance of inverse problems over Deep Networks"
+date = 2020-09-11
+start_time = "11:50"
+end_time = "13:10"
+series = "Data Science Seminar"
+location = ""
+zoom = "https://us02web.zoom.us/j/83503994251?pwd=Wm01bk40UWxva2pSV0dTbFZHbGtLQT09"
+slides = ""
+recording = ""
+canceled = false
+tags = ["algorithms & theory", "deep learning", "machine learning", "optimization"]
+abstract = """
+At the heart of Machine Learning lies the question of generalizability of learned models over previously unseen data. While over-parameterized models based on neural networks are now ubiquitous in machine learning applications, our understanding of their generalization capabilities remains incomplete. This task is made harder by the non-convexity of the underlying estimation/learning problems.
+
+The solutions to some of these estimation problems can be analyzed using a class of algorithms called Approximate Message Passing, even in the presence of the non-convexity. The dynamics of this algorithm follow a simplified macroscopic description often called the State Evolution. This analytical tool allows us to provide some insights into two broad classes of problems related to Neural Networks:
+
+1. Generalization error in 1 and 2-layer Networks
+2. Image Reconstruction error with Deep Image Priors
+"""
+
+[[speakers]]
+name = "Parthe Pandit"
+affiliation = "UCLA"
+website = "https://parthe.github.io/"
+photo = ""
+bio = """
+Parthe is a 5th year Ph.D. candidate at UCLA in ECE and an MS candidate in Statistics, where he is advised by Allie K. Fletcher, Sundeep Rangan, and Arash A. Amini. He is currently a research intern with Amazon AWS and Amazon Search, working on problems in conditional text generation. He is interested in analyzing optimization problems arising out of Machine Learning, Statistics, and Information Theory. His past research includes theoretical results in Network Economics, Mechanism Design, and Approximating NP-hard problems in graph theory.
+
+Parthe is the winner of the 2019 Jack K. Wolf Best Paper award, the Gurukrupa Foundation Fellowship, and scholarships from the J. N. Tata Endowment, and K. C. Mahindra foundation. In 2015, he received a B.Tech. and M.Tech. in Electrical Engineering at IIT Bombay, where he worked on Speech and Music Processing.
+"""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "25im2jdereukeqbrt5oequoank_R20200904T175000@google.com"
+imported_on = 2026-08-18
+needs_review = true

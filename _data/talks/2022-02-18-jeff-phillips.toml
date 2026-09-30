@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Some Very Basic Theory of Classification (in low dimensions"
+date = 2022-02-18
+start_time = "15:00"
+end_time = "16:00"
+series = "Data Science Seminar"
+location = "WEB 1250"
+zoom = ""
+slides = ""
+recording = ""
+canceled = false
+tags = ["machine learning"]
+abstract = "I plan to talk about some new results on some very fundamental (but overlooked) theory questions in classification. First, how fast can you find a linear classifier that eps-approximates the optimal one in terms of miss-classification? Second, if you want to preserve a Euclidean margin between perfectly classified points for a polynomial classifier, how many samples do you need?"
+
+[[speakers]]
+name = "Jeff Phillips"
+affiliation = "Utah SoC"
+website = "https://www.cs.utah.edu/~jeffp/"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "EB206A01-E8F7-49FE-926B-ADBC53D718C4"
+imported_on = 2026-08-18
+needs_review = true

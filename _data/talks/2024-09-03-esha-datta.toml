@@ -1,0 +1,28 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Topological Signatures of Out-of-Distribution Examples"
+date = 2024-09-03
+start_time = "12:30"
+end_time = "13:30"
+series = "Data Science Seminar"
+location = "WEB 1230"
+zoom = "https://utah.zoom.us/j/93909986581?pwd=d90LoHKoVAkagz1aCpJH1vTuaME9gG.1"
+slides = ""
+recording = ""
+canceled = false
+tags = ["machine learning"]
+abstract = "Machine learning (ML) models employed for real-world tasks will invariably encounter inference data that is distributionally shifted from their training datasets. Such out-of-distribution (OOD) examples can have adverse effects on model performance and can pose significant problems in high-consequence application areas like healthcare or autonomous vehicles. We develop a topological characterization of OOD examples and present a computationally feasible methodology for detecting such data in a deployed pipeline. The approach leverages the known property that well-trained ML models induce a topological “simplification” on its training dataset. By computing the persistent homology of the hidden layer embeddings of training and test data, we demonstrate empirically our ability to identify the presence of OOD examples for a given model."
+
+[[speakers]]
+name = "Esha Datta"
+affiliation = "Sandia NL"
+website = "https://scholar.google.com/citations?user=FB5NpNQAAAAJ&hl=en"
+photo = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "4u5bj5j0jouhse93h9s044844t@google.com"
+imported_on = 2026-08-18
+needs_review = true
