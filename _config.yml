@@ -34,8 +34,9 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - node_modules
+  # ruby/setup-ruby's bundler-cache installs gems here in CI; without this,
+  # Jekyll walks the installed gems as site source and can choke on files
+  # inside them (e.g. jekyll's own site_template has an ERB date placeholder
+  # that fails Jekyll's front-matter date parser).
+  - vendor

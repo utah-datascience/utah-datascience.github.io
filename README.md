@@ -1,5 +1,7 @@
 # Utah Data Science Center
 
+[![Deploy site](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/utah-datascience/utah-datascience.github.io/actions/workflows/pages.yml)
+
 Original theme: https://jamstack-argon-design.appseed.us/index.html
 
 ## Local run
