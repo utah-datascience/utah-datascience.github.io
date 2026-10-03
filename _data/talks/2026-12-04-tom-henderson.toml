@@ -2,7 +2,7 @@
 
 [talk]
 title = "40 Years of AI !"
-date = 2026-11-06
+date = 2026-12-04
 start_time = "13:30"
 end_time = "14:30"
 series = "Data Science & AI Lecture Series"
@@ -26,7 +26,7 @@ bio = ""
 
 [meta]
 source = "google-calendar"
-calendar_uid = "02B08BD9-F8C4-4900-907F-37F63206899D"
-calendar_last_modified = "2026-08-24T22:51:47Z"
-synced_on = 2026-09-30
+calendar_uid = "575FC9A1-AF28-46EE-9FF2-EF3D41E8A0C7"
+calendar_last_modified = "2026-10-02T17:52:56Z"
+synced_on = 2026-10-03
 needs_review = true

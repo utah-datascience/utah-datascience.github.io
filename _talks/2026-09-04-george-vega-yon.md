@@ -9,6 +9,7 @@ end_time: "2:30 PM"
 series: "Data Science & AI Lecture Series"
 location: "WEB 2250"
 canceled: false
+tags: ["health & medicine", "networks & graphs", "society & policy", "statistics"]
 speakers:
   - name: "George Vega Yon"
     affiliation: "UU Epidemiology"

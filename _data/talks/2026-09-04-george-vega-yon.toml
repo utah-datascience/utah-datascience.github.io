@@ -11,7 +11,7 @@ zoom = ""
 slides = ""
 recording = ""
 canceled = false
-tags = []
+tags = ["health & medicine", "networks & graphs", "society & policy", "statistics"]
 abstract = "From high-performance computing clusters to the constraints of a local health department, this talk presents a research program in statistical computing and data science, spanning network science and public health, and goes deep on one example from each. On the public health side, agent-based simulation developed with the Utah Department of Health and Human Services turns vaccination and demographic data into school-level measles risk, routed through the state's health districts to the school districts that act on it; related outbreak-reconstruction work along the Utah-Nevada border estimated infections missed by surveillance, producing results consistent with independent genomic analyses. On the network science side, Exponential-family Random Graph Models (ERGMs)—statistical models used to characterize the structure of observed networks—I present a novel application of a pooled bipartite model of patient-provider networks in healthcare, highlighting methodological challenges in data heterogeneity and model convergence. Underneath both is scientific software built for other researchers to use: epiworld, ergmito, netdiffuseR, rgexf, slurmR, and others, under a single commitment—the same model should run on a high-performance cluster and inside a health department with far less to work with. Making powerful methods executable in constrained environments is treated here not as an implementation detail, but as a methodological contribution in its own right."
 
 [[speakers]]
