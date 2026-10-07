@@ -65,6 +65,12 @@ layout: default
       <p><span class="badge badge-success">Upcoming</span></p>
       {% endif %}
 
+      {%- comment -%}
+      Repeat the title inside the card: the white one over the hero image is
+      easy to miss. Headings are $utah-red site-wide (_sass/custom/base.scss).
+      {%- endcomment -%}
+      <h2 class="mb-3">{{ page.title }}</h2>
+
       <table class="talk-meta mb-4">
         <tr>
           <th>When</th>
