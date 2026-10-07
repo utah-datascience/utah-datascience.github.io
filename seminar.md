@@ -17,6 +17,15 @@ header:
 
 This weekly lecture series covers technical developments in data science & AI, as well as its applications to different domains, industry, and policy. It is intended for a wide audience.  Everyone is welcome to attend.  
 
+<p class="text-muted small" style="margin-top: 0;">
+  This page is synced from our
+  <a href="https://calendar.google.com/calendar/embed?src=ekol7ulqm14nv155angut2rlfo%40group.calendar.google.com" target="_blank" rel="noopener">Google Calendar</a>
+  once an hour, so it may be up to an hour behind it; check the calendar for
+  last-minute changes. Last updated:
+  <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%B %-d, %Y, %H:%M UTC" }}</time>.
+  (<a href="https://github.com/utah-datascience/utah-datascience.github.io/blob/master/docs/calendar-sync.md" target="_blank" rel="noopener">How the sync works</a>)
+</p>
+
 ## Next Talk in Lecture Series
 
 {% include next_talks.html %}
@@ -34,14 +43,6 @@ This weekly lecture series covers technical developments in data science & AI, a
 ## Upcoming Talks
 
 {% include next_talks.html count=5 %}
-
-<p class="text-muted small" style="margin-top: 0;">
-  This page is synced from our
-  <a href="https://calendar.google.com/calendar/embed?src=ekol7ulqm14nv155angut2rlfo%40group.calendar.google.com" target="_blank" rel="noopener">Google Calendar</a>
-  once an hour, so it may be up to an hour behind it; check the calendar for
-  last-minute changes. Last updated:
-  <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%B %-d, %Y, %H:%M UTC" }}</time>.
-</p>
 
 Every talk we host gets its own page with the abstract, speaker bio, slides, and
 (when available) the recording: browse the [full talk archive](/talks/).
