@@ -85,16 +85,15 @@ jobs:
   # Google Calendar owns any talk starting within the sync window (see
   # scripts/import_calendar_talks.py); catches someone editing one of those
   # records directly in a PR instead of on the calendar event, where the next
-  # scheduled sync would just overwrite (or resurrect) it. Skipped for the
-  # sync's own PR (branch entry-update), which is exactly the process that is
-  # supposed to make these edits.
+  # scheduled sync would just overwrite (or resurrect) it. The sync itself
+  # pushes straight to master, so it never opens a PR for this to check.
   #
   # This is PR-time feedback only -- `needs:` cannot reach across workflow
   # files, so it does not by itself stop a merge from publishing. The
   # authoritative gate is the same check re-run from .github/workflows/pages.yml
   # on push to master, ahead of the deploy job.
   guard-manual-edits:
-    if: github.event_name == 'pull_request' && github.head_ref != 'entry-update'
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7

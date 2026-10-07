@@ -49,6 +49,8 @@ jobs:
           SHA: ${{ github.sha }}
           HEAD_MESSAGE: ${{ github.event.head_commit.message }}
         run: |
+          # sync-talks.yml pushes its own commits and then starts this
+          # workflow by dispatch, so its edits never reach this check.
           if [ "$EVENT" != "push" ]; then
             echo "Manual run: nothing new was pushed, so there is nothing to guard."
             exit 0
@@ -65,10 +67,6 @@ jobs:
           labels=$(jq -r .labels <<<"$pr")
           echo "Came from pull request branch: ${branch:-<none, a direct push>}"
 
-          if [ "$branch" = "entry-update" ]; then
-            echo "This is the calendar sync's own pull request; its edits are the point."
-            exit 0
-          fi
           if [[ ",$labels," == *",allow-manual-entry,"* ]] \
              || [[ "$title" == *"[allow-manual-entry]"* ]] \
              || [[ "$HEAD_MESSAGE" == *"[allow-manual-entry]"* ]]; then

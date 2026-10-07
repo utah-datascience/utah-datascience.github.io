@@ -109,7 +109,7 @@ def main() -> int:
     )
     fix = (
         "Fix: make the change on the calendar event instead -- the daily sync "
-        "will open a pull request with it. If this genuinely needs to be a "
+        "will push it and republish the site. If this genuinely needs to be a "
         "manual repo edit, add the `allow-manual-entry` label to this pull "
         "request (or include `[allow-manual-entry]` in its title) and re-run."
     )

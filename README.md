@@ -81,7 +81,7 @@ record depends on when the talk happens:
 
 * **Talks starting soon** (within the *sync window*, 90 days by default):
   **Google Calendar is the source of truth.** Edit the calendar event; a daily
-  sync turns it into a pull request. Editing the TOML file directly is blocked
+  sync pushes it to master and republishes the site. Editing the TOML file directly is blocked
   by CI -- see [The sync window](#the-sync-window) below.
 * **Past talks, and anything further out than the window:** the repo is the
   source of truth. Edit the TOML file directly, the ordinary way.
@@ -98,7 +98,7 @@ on the same one (`## Title: Something`). Everything up to the next recognized
 header is that field's value; a line starting with `#` that is *not* a
 recognized field (a hashtag in an abstract, say) stays part of the text. A
 header that looks like a misspelled field (`## Affiliaton`) is kept as text too,
-and flagged in the sync PR's report so it can be fixed on the calendar. Paste
+and flagged in the sync's report (in the commit message and the workflow log) so it can be fixed on the calendar. Paste
 this in and fill it out:
 
 ```markdown
@@ -178,8 +178,9 @@ holiday, a room hold, a social, an information session, or a cancelled slot
 with no speaker) are the only ones left off.
 
 Once the daily sync (or a maintainer running it manually) picks up the change,
-it lands as a pull request from a branch named `entry-update`. **Review and
-merge that PR** -- that's what publishes it.
+it is committed straight to master and the site is redeployed -- no review
+step. Check the "Sync talks from Google Calendar" workflow run (or the commit
+it leaves on master) to see what changed.
 
 #### The sync window
 
@@ -218,7 +219,7 @@ files directly in this repo is blocked**: `.github/workflows/talks.yml` runs
 record's date falls inside the window (the authoritative copy of this check,
 which is what actually blocks the site from republishing, runs again from
 `.github/workflows/pages.yml` on push to master). Edit the calendar event
-instead, and let the sync open its usual PR. For the rare edit that genuinely
+instead, and let the sync push it. For the rare edit that genuinely
 has to happen here -- add the `allow-manual-entry` label to the pull request,
 or put `[allow-manual-entry]` in its title.
 
@@ -230,10 +231,10 @@ make sync-talks                # or: python3 scripts/import_calendar_talks.py --
 python3 scripts/import_calendar_talks.py --sync --window-days 30
 ```
 
-It normally runs on its own: `.github/workflows/sync-talks.yml` triggers daily
-and opens or updates the pull request from `entry-update` -- reused across
-runs, so a week of small calendar edits accumulates into one PR rather than a
-pile of them.
+It normally runs on its own: `.github/workflows/sync-talks.yml` triggers daily,
+commits any changes directly to master, and starts `.github/workflows/pages.yml`
+to redeploy the site. Run it from the Actions tab with `dry_run` checked to
+preview without pushing.
 
 #### Editing a past talk, or adding one from scratch
 

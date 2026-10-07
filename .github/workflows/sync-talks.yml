@@ -2,10 +2,8 @@ name: Sync talks from Google Calendar
 
 # Google Calendar is the source of truth for any talk starting soon (see
 # scripts/import_calendar_talks.py for the window and the description format
-# it expects). This runs the sync daily and lands whatever changed as a pull
-# request on a single reused branch -- entry-update -- rather than opening a
-# new one each time, so a week of calendar edits accumulates into one
-# reviewable diff instead of a pile of separate PRs.
+# it expects). This runs the sync daily, commits whatever changed straight to
+# master, and then starts the deploy so the site republishes right away.
 #
 # Nothing here ever writes back to Google Calendar.
 
@@ -18,13 +16,13 @@ on:
         description: "How many days ahead the calendar owns"
         default: "90"
       dry_run:
-        description: "Preview only -- do not write or open a PR"
+        description: "Preview only -- do not commit, push, or deploy"
         type: boolean
         default: false
 
 permissions:
   contents: write
-  pull-requests: write
+  actions: write # start pages.yml after pushing
 
 concurrency:
   group: sync-talks
@@ -42,9 +40,9 @@ jobs:
         with:
           python-version: "3.11"
 
-      # A PR opened with GITHUB_TOKEN does not trigger other workflows, so
-      # the entry-update PR gets no CI of its own -- validate here instead,
-      # before anything is written.
+      # A push made with GITHUB_TOKEN does not trigger other workflows, so the
+      # sync commit gets no CI of its own -- validate here instead, before
+      # anything is written.
       - name: Run the calendar-parsing tests
         run: python3 scripts/test_calendar_parsing.py
 
@@ -80,24 +78,41 @@ jobs:
           python3 scripts/generate_talks.py
           python3 scripts/generate_talks.py --check
 
-      - name: Open or update the sync pull request
+      - name: Commit and push to master
+        id: push
         if: github.event.inputs.dry_run != 'true'
-        uses: peter-evans/create-pull-request@v8
-        with:
-          branch: entry-update
-          delete-branch: true
-          commit-message: "Sync talks from Google Calendar"
-          title: "Sync talks from Google Calendar"
-          labels: automated
-          body: |
-            Automated sync from the seminar's Google Calendar. Talks starting
-            within the sync window are created, updated, or (if removed from
-            the calendar) deleted to match it; everything else is left alone.
+        env:
+          REPORT: ${{ steps.sync.outputs.report }}
+        run: |
+          git add -A _data/talks _talks talks.ics talks.json
+          if git diff --cached --quiet; then
+            echo "The calendar and the repo already agree; nothing to push."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          printf 'Sync talks from Google Calendar\n\n%s\n' "$REPORT" > /tmp/commit-msg.txt
+          git commit -F /tmp/commit-msg.txt
+          # master may have moved since checkout; rebase onto it and retry a
+          # few times rather than fail on a race with another push
+          for attempt in 1 2 3; do
+            if git push origin HEAD:master; then
+              echo "pushed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt); rebasing onto the latest master."
+            git pull --rebase origin master
+          done
+          echo "::error::Could not push the sync commit to master."
+          exit 1
 
-            ```
-            ${{ steps.sync.outputs.report }}
-            ```
-
-            This PR is reused across runs -- a later sync updates it in place
-            rather than opening a new one, so review it whenever it is
-            convenient rather than on every run.
+      # The push above, made with GITHUB_TOKEN, does not trigger pages.yml on
+      # its own, so start the deploy explicitly. As a workflow_dispatch run it
+      # builds the tip of master and skips the manual-edit guard, which is
+      # meant for human edits, not the sync's.
+      - name: Deploy the site
+        if: steps.push.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref master
