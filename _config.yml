@@ -43,6 +43,7 @@ exclude:
   - Gemfile.lock
   - Makefile
   - scripts
+  - docs
   - node_modules
   # ruby/setup-ruby's bundler-cache installs gems here in CI; without this,
   # Jekyll walks the installed gems as site source and can choke on files
