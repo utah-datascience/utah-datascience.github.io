@@ -10,11 +10,9 @@ name: Sync talks from Google Calendar
 
 on:
   schedule:
-    # Hourly, Sunday-Friday, 07:00-16:00 America/Denver. Cron is UTC and Denver
-    # shifts between UTC-6 (MDT) and UTC-7 (MST), so 13-23 UTC covers that
-    # window year-round (06:00-16:00 MST, 07:00-17:00 MDT). Minute 7 avoids
-    # the top-of-the-hour queue, when GitHub delays or drops scheduled runs.
-    - cron: "7 13-23 * * 0-5"
+    # Hourly, every day. Minute 7 avoids the top-of-the-hour queue, when
+    # GitHub delays or drops scheduled runs.
+    - cron: "7 * * * *"
   workflow_dispatch:
     inputs:
       window_days:
