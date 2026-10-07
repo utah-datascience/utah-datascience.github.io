@@ -2,14 +2,19 @@ name: Sync talks from Google Calendar
 
 # Google Calendar is the source of truth for any talk starting soon (see
 # scripts/import_calendar_talks.py for the window and the description format
-# it expects). This runs the sync daily, commits whatever changed straight to
-# master, and then starts the deploy so the site republishes right away.
+# it expects). This runs the sync hourly during working hours, commits
+# whatever changed straight to master, and then starts the deploy so the site
+# republishes right away.
 #
 # Nothing here ever writes back to Google Calendar.
 
 on:
   schedule:
-    - cron: "0 13 * * *" # ~07:00 America/Denver (06:00 during DST)
+    # Hourly, Sunday-Friday, 07:00-16:00 America/Denver. Cron is UTC and Denver
+    # shifts between UTC-6 (MDT) and UTC-7 (MST), so 13-23 UTC covers that
+    # window year-round (06:00-16:00 MST, 07:00-17:00 MDT). Minute 7 avoids
+    # the top-of-the-hour queue, when GitHub delays or drops scheduled runs.
+    - cron: "7 13-23 * * 0-5"
   workflow_dispatch:
     inputs:
       window_days:
