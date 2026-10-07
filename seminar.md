@@ -23,6 +23,7 @@ This weekly lecture series covers technical developments in data science & AI, a
   once an hour, so it may be up to an hour behind it; check the calendar for
   last-minute changes. Last updated:
   <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%B %-d, %Y, %H:%M UTC" }}</time>.
+  (<a href="https://github.com/utah-datascience/utah-datascience.github.io/blob/master/docs/calendar-sync.md" target="_blank" rel="noopener">How the sync works</a>)
 </p>
 
 ## Next Talk in Lecture Series
