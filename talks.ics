@@ -5768,6 +5768,32 @@ LOCATION:WEB 2250
 CATEGORIES:biology & genomics,deep learning,statistics
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-09-david-gleich@datascience.utah.edu
+DTSTAMP:20261009T180000Z
+DTSTART;TZID=America/Denver:20261009T120000
+DTEND;TZID=America/Denver:20261009T130000
+SUMMARY:Powers of magnetic graph matrix: Fourier spectrum\, walk compressio
+ n\, and applications - David Gleich
+DESCRIPTION:David Gleich (Purdue University)\n\nMagnetic graph matrices are
+  powerful tools for modeling quantum systems and directed networks\, but t
+ heir application in network analysis has been limited by a lack of combina
+ torial understanding. We present a combinatorial interpretation that funda
+ mentally reveals how these matrices encode local network structure. We fur
+ ther show that this structure information is highly compressible in real-w
+ orld networks\, enabling accurate approximations from a small number of ma
+ gnetic potentials. This fresh foundation also unlocks further applications
+ \, like identifying crucial network motifs (e.g.\, frustrated directed cyc
+ les such as feed-forward loops) and enhancing directed link prediction.\n\
+ nLink to paper:\nhttps://www.pnas.org/doi/10.1073/pnas.2516664123\n\nhttps
+ ://datascience.utah.edu/talks/2026-10-09-david-gleich/
+URL:https://datascience.utah.edu/talks/2026-10-09-david-gleich/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:WEB 2250 | https://utah.zoom.us/j/85983626630
+CATEGORIES:algorithms & theory,networks & graphs
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-23-kenneth-collins@datascience.utah.edu
 DTSTAMP:20261023T193000Z
 DTSTART;TZID=America/Denver:20261023T133000
