@@ -7,7 +7,7 @@ date = 2026-10-09
 start_time = "12:00"
 end_time = "13:00"
 series = "Data Science & AI Lecture Series"
-location = "WEB 2250"
+location = "WEB 2760"
 zoom = "https://utah.zoom.us/j/85983626630"
 slides = ""
 recording = ""
@@ -38,6 +38,6 @@ https://utah.zoom.us/j/85983626630
 [meta]
 source = "google-calendar"
 calendar_uid = "2ABBCB69-B2B6-4DEB-B7A1-7636C9EE78DB"
-calendar_last_modified = "2026-10-06T22:25:41Z"
-synced_on = 2026-10-07
+calendar_last_modified = "2026-10-09T17:39:45Z"
+synced_on = 2026-10-09
 needs_review = false

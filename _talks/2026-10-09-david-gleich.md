@@ -7,7 +7,7 @@ slug: "2026-10-09-david-gleich"
 start_time: "12:00 PM"
 end_time: "1:00 PM"
 series: "Data Science & AI Lecture Series"
-location: "WEB 2250"
+location: "WEB 2760"
 zoom: "https://utah.zoom.us/j/85983626630"
 canceled: false
 tags: ["algorithms & theory", "networks & graphs"]
