@@ -1,4 +1,4 @@
-.PHONY: help setup serve build clean talks talks-check import-talks sync-talks sync-talks-dry-run test-talks
+.PHONY: help setup serve build clean talks talks-check import-talks sync-talks sync-talks-dry-run test-talks bluesky-dry-run test-bluesky
 
 .DEFAULT_GOAL := help
 
@@ -39,3 +39,9 @@ sync-talks-dry-run: ## Preview what sync-talks would change, without writing any
 
 test-talks: ## Run the calendar-parsing test fixtures
 	python3 scripts/test_calendar_parsing.py
+
+bluesky-dry-run: ## Preview the Bluesky posts that are due now (posts nothing)
+	python3 scripts/post_bluesky.py --dry-run
+
+test-bluesky: ## Run the Bluesky posting tests
+	python3 scripts/test_post_bluesky.py
