@@ -36,6 +36,7 @@ role = ""                    # e.g. "Assistant Professor"
 website = "https://example.edu/~speaker"
 photo = ""                   # /assets/img/talk_photos/... or an external URL
 email = ""
+bluesky = ""                 # optional Bluesky handle, e.g. "name.bsky.social"; tagged in the announcement
 bio = """
 A short bio, in markdown.
 """

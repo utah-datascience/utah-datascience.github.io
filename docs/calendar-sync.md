@@ -161,7 +161,7 @@ the exact, current list):
 | Tags (topics, keywords) | Bio (biography, about the speaker) |
 | Location (room, venue) | Email |
 | Zoom (meeting, meeting link) | Role (position) |
-| Slides | |
+| Slides | Bluesky (bsky) -- a handle like `name.bsky.social`, tagged in the [Bluesky announcement](social-posting.md) |
 | Recording (video) | |
 | Series | |
 

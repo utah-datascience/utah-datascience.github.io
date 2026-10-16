@@ -1,0 +1,77 @@
+name: Post talks to Bluesky
+
+# Announces each upcoming talk on Bluesky (about a week ahead, and again the
+# morning of), from the talk records in _data/talks/. See
+# docs/social-posting.md and scripts/post_bluesky.py.
+#
+# What was posted is recorded in _data/social_posted.json and pushed to master
+# before each post goes out, so a failed run can never post twice.
+
+on:
+  schedule:
+    # Hourly, after the calendar sync (minute 7) has had time to commit.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview only -- post nothing, record nothing"
+        type: boolean
+        default: true
+      slug:
+        description: "Post about this talk regardless of timing (e.g. 2026-10-23-jane-doe); blank = whatever is due"
+        default: ""
+      kind:
+        description: "With a slug: which post"
+        type: choice
+        options: [announce, reminder]
+        default: announce
+
+permissions:
+  contents: write # push _data/social_posted.json
+  issues: write # open the LinkedIn hand-off issue
+
+concurrency:
+  group: bluesky-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Run the tests
+        run: |
+          python3 scripts/test_post_bluesky.py
+          python3 scripts/test_calendar_parsing.py
+
+      - name: Post to Bluesky
+        env:
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          GH_TOKEN: ${{ github.token }}
+          # inputs go through env, not straight into the script text
+          INPUT_DRY_RUN: ${{ github.event.inputs.dry_run }}
+          INPUT_SLUG: ${{ github.event.inputs.slug }}
+          INPUT_KIND: ${{ github.event.inputs.kind }}
+          REF: ${{ github.ref }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          ARGS=()
+          # only master may post: the state file is pushed to master
+          if [ "$INPUT_DRY_RUN" = "true" ] || [ "$REF" != "refs/heads/master" ]; then
+            ARGS+=(--dry-run)
+          else
+            ARGS+=(--push-state)
+          fi
+          if [ -n "$INPUT_SLUG" ]; then
+            ARGS+=(--slug "$INPUT_SLUG" --kind "${INPUT_KIND:-announce}")
+          fi
+          python3 scripts/post_bluesky.py "${ARGS[@]}"

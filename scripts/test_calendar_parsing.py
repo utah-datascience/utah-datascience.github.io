@@ -168,6 +168,20 @@ def test_structured_entry_is_authoritative_in_merge():
     assert merged["paper"] == "https://arxiv.org/abs/x"
 
 
+def test_speaker_bluesky_handle_round_trips():
+    # The Bluesky handle is a speaker field like any other: read from a
+    # "## Bluesky" header, written to the record, kept by the legacy
+    # (non-authoritative) merge, and -- like Website -- cleared when the
+    # calendar owner removes it from a structured entry.
+    _, speakers, _ = m.parse_markdown_sections("## Speaker\nJane Doe\n\n## Bluesky\n@jane.bsky.social\n")
+    assert speakers[0]["bluesky"] == "@jane.bsky.social", speakers
+    prior = [{"name": "Jane Doe", "bluesky": "@jane.bsky.social"}]
+    bare = [{"name": "Jane Doe"}]
+    assert m.merge_speakers(bare, prior)[0]["bluesky"] == "@jane.bsky.social", "legacy sync keeps it"
+    assert m.merge_speakers(bare, prior, authoritative=True)[0]["bluesky"] == "", "structured entry owns it"
+    assert m.merge_speakers(speakers, [])[0]["bluesky"] == "@jane.bsky.social"
+
+
 # --------------------------------------------------------------------------- #
 # event_to_talk: structured vs. legacy fallback, end to end
 # --------------------------------------------------------------------------- #

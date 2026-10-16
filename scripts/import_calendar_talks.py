@@ -249,6 +249,8 @@ SPEAKER_LABEL_ALIASES = {
     "about the speaker": "bio",
     "speaker bio": "bio",
     "email": "email",
+    "bluesky": "bluesky",
+    "bsky": "bluesky",
     "role": "role",
     "position": "role",
 }
@@ -616,6 +618,7 @@ def render_toml(talk: dict) -> str:
             f'website = {toml_str(speaker.get("website", ""))}',
             f'photo = {toml_str(speaker.get("photo", ""))}',
             f'email = {toml_str(speaker.get("email", ""))}',
+            f'bluesky = {toml_str(speaker.get("bluesky", ""))}',
             f'bio = {toml_str(speaker.get("bio", ""))}',
             "",
         ]
@@ -693,6 +696,7 @@ def merge_speakers(incoming: list[dict], existing: list[dict], *, authoritative:
                 "website": pick(speaker.get("website", ""), prior.get("website", "")),
                 "photo": prior.get("photo", ""),  # never supplied by the calendar
                 "email": pick(speaker.get("email", ""), prior.get("email", "")),
+                "bluesky": pick(speaker.get("bluesky", ""), prior.get("bluesky", "")),
                 "bio": pick(speaker.get("bio", ""), prior.get("bio", "")),
             }
         )
@@ -783,6 +787,7 @@ def event_to_talk(event: dict) -> dict | None:
                     "role": entry.get("role", ""),
                     "website": entry.get("website", ""),
                     "email": entry.get("email", ""),
+                    "bluesky": entry.get("bluesky", ""),
                     "bio": entry.get("bio", ""),
                 }
             )

@@ -1,0 +1,20 @@
+# Settings for scripts/post_bluesky.py (see docs/social-posting.md).
+
+[bluesky]
+# Handles tagged on every post, in addition to the speaker's own (set with a
+# "Bluesky" line in the calendar event, or `bluesky = "..."` in the talk record).
+# Posts are limited to 300 characters, so the first few fit in the post and the
+# rest go in a reply. Handles that do not resolve are skipped with a warning.
+mentions = [
+  # "someone.bsky.social",
+]
+hashtags = ["DataScience"]
+announce_days_before = 7   # the announcement goes out this many days ahead
+reminder_hour = 9          # ...and the reminder on the talk day, from this hour (Mountain Time)
+
+[linkedin]
+# GitHub usernames @mentioned in the "LinkedIn post: ..." issue opened with each
+# announcement; GitHub emails them the ready-to-paste text.
+notify = [
+  # "gvegayon",
+]
