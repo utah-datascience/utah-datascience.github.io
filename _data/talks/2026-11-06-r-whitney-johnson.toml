@@ -1,0 +1,33 @@
+# Synced from the seminar Google Calendar -- edits here are overwritten
+# while this talk is inside the sync window. See README.md#talks.
+
+[talk]
+title = "A Legal Perspective on AI / Ethics / IP"
+date = 2026-11-06
+start_time = "15:30"
+end_time = "16:15"
+series = "Data Science & AI Lecture Series"
+location = "TBA"
+zoom = ""
+slides = ""
+recording = ""
+paper = ""
+tags = ["fairness & ethics"]
+canceled = false
+abstract = ""
+
+[[speakers]]
+name = "R. Whitney Johnson"
+affiliation = "Foley and Lardner"
+role = ""
+website = "https://www.foley.com/people/johnson-r-whitney/"
+photo = ""
+email = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "93CB7FA1-EEBC-4106-A419-3005ABD873BC"
+calendar_last_modified = "2026-10-19T22:30:04Z"
+synced_on = 2026-10-19
+needs_review = false

@@ -5870,6 +5870,36 @@ LOCATION:WEB 2250 | https://utah.zoom.us/j/85983626630
 CATEGORIES:geospatial
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-06-peter-bakic@datascience.utah.edu
+DTSTAMP:20261106T200000Z
+DTSTART;TZID=America/Denver:20261106T130000
+DTEND;TZID=America/Denver:20261106T134500
+SUMMARY:A Mathematician's Perspective on AI / Ethics / IP - Peter Bakic
+DESCRIPTION:Peter Bakic (University of Utah Math)\n\nhttps://datascience.ut
+ ah.edu/talks/2026-11-06-peter-bakic/
+URL:https://datascience.utah.edu/talks/2026-11-06-peter-bakic/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:TBA
+CATEGORIES:fairness & ethics
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06-r-whitney-johnson@datascience.utah.edu
+DTSTAMP:20261106T223000Z
+DTSTART;TZID=America/Denver:20261106T153000
+DTEND;TZID=America/Denver:20261106T161500
+SUMMARY:A Legal Perspective on AI / Ethics / IP - R. Whitney Johnson
+DESCRIPTION:R. Whitney Johnson (Foley and Lardner)\n\nhttps://datascience.u
+ tah.edu/talks/2026-11-06-r-whitney-johnson/
+URL:https://datascience.utah.edu/talks/2026-11-06-r-whitney-johnson/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:TBA
+CATEGORIES:fairness & ethics
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-13-aik-choon-tan@datascience.utah.edu
 DTSTAMP:20261113T203000Z
 DTSTART;TZID=America/Denver:20261113T133000

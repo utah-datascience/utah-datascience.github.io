@@ -1,0 +1,33 @@
+# Synced from the seminar Google Calendar -- edits here are overwritten
+# while this talk is inside the sync window. See README.md#talks.
+
+[talk]
+title = "A Mathematician's Perspective on AI / Ethics / IP"
+date = 2026-11-06
+start_time = "13:00"
+end_time = "13:45"
+series = "Data Science & AI Lecture Series"
+location = "TBA"
+zoom = ""
+slides = ""
+recording = ""
+paper = ""
+tags = ["fairness & ethics"]
+canceled = false
+abstract = ""
+
+[[speakers]]
+name = "Peter Bakic"
+affiliation = "University of Utah Math"
+role = ""
+website = "https://www.math.utah.edu/~bakic/"
+photo = ""
+email = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "C37FC25F-7125-4C4E-99D4-46C806D74E24"
+calendar_last_modified = "2026-10-19T22:30:11Z"
+synced_on = 2026-10-19
+needs_review = false
