@@ -1,7 +1,7 @@
 # Imported from the seminar Google Calendar -- please review and complete.
 
 [talk]
-title = "The talk will consider the impact of AI in moving image works, including AI filmmaking, animation, and video art"
+title = "TITLE Human in the Loop: Performing Inside the Black Box of AI"
 date = 2026-10-23
 start_time = "13:30"
 end_time = "14:30"
@@ -13,7 +13,13 @@ recording = ""
 paper = ""
 tags = ["computer vision"]
 canceled = false
-abstract = ""
+abstract = """
+ABSTRACT
+In AI research, having a "human in the loop" is meant to be reassuring. It implies that somewhere inside the system, a person is at the helm. But spend enough time in the loop, and the phrase says something stranger. Who is actually in charge when an artist makes work with AI? In this talk, artist and director Kenneth Collins draws on 25 years of making theater with his company Temporary Distortion to explore performing inside the "black box" of artificial intelligence. Tracing a line from Norbert Wiener's wartime cybernetics through John Baldessari, Michael Fried, Allan Kaprow, and Richard Schechner, Collins suggests that understanding AI may be less a computer science problem than a performance studies one. He shares new and in-progress work that casts AI systems as performers and puts their sincerity, authority, flattery, and intimacy on stage. Works discussed include AI Making Art (after John Baldessari), Standing Silent, the album Songs to Defrag To, the video portrait series I Apologize for the Confusion and Prompt Me Harder, and the forthcoming performance series p(doom) études. The real question he proposes may not be whether a machine can make art, but whether we can be a good audience for the things it makes.
+
+BIO
+Kenneth Collins works in the gray space between the "black box" of theater and the "white cube" of the art gallery, making work at the intersection of visual art, digital media, theater, cinema, and artificial intelligence that investigates authorship, embodiment, and human expression in the age of generative media. He is best known as artistic director of Temporary Distortion (2000–present), named one of the "Best NY Theater Companies" by Time Out New York and presented in over 30 cities across 17 countries. Reflections on his work have been featured in books including La vidéo en scène: L'acteur et ses technologies, Performance & Media: Taxonomies for a Changing Field, Utopii performative: Artiști Radicali ai Scenei Americane în Secolul 21, and the theatre textbook Theatre, Brief. Academic essays on his work have appeared in Yale's Theater, NYU's The Drama Review, UCSD's TheatreForum, Queen Mary's Contemporary Theatre Review, American Theatre, Chance Magazine, and other periodicals. Collins is Assistant Professor of Film and Media Arts at the University of Utah, where he is a Responsible AI Initiative (RAI) Faculty Fellow. In Fall 2023, he became the first professor at a major university to develop and teach a dedicated course in AI filmmaking.
+"""
 
 [[speakers]]
 name = "Kenneth Collins"
@@ -27,6 +33,6 @@ bio = ""
 [meta]
 source = "google-calendar"
 calendar_uid = "B076EA48-9869-49EC-A641-DF409BEB8F40"
-calendar_last_modified = "2026-08-24T14:58:54Z"
-synced_on = 2026-09-30
+calendar_last_modified = "2026-10-19T16:51:23Z"
+synced_on = 2026-10-19
 needs_review = true
