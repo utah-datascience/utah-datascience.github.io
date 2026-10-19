@@ -1,0 +1,33 @@
+# Synced from the seminar Google Calendar -- edits here are overwritten
+# while this talk is inside the sync window. See README.md#talks.
+
+[talk]
+title = "Provable Editing of Deep Neural Networks"
+date = 2026-10-21
+start_time = "15:30"
+end_time = "16:30"
+series = "Data Science & AI Lecture Series"
+location = "3147 MEB"
+zoom = ""
+slides = ""
+recording = ""
+paper = ""
+tags = ["deep learning", "machine learning"]
+canceled = false
+abstract = "There are many applications where deep neural networks (DNNs) need to satisfy constraints, e.g., safety-critical domains or scientific machine learning. Testing and verification can determine whether DNN satisfies a constraint. This talk addresses the next step of this process: what to do once faulty behavior is identified. I will discuss recent advances in the problem of provable editing of DNNs. Given a trained DNN and a specification, provable editing makes small changes to the parameters of the DNN to guarantee that the edited DNN satisfies the given specification while still ensuring high accuracy. I will discuss efficient algorithms for this problem that support a wide range of DNN architectures and edit specifications. Our techniques have been applied to ACAS Xu, ImageNet ResNet DNNs, Vision Transformers, Llama, and Qwen models."
+
+[[speakers]]
+name = "Aditya Thakur"
+affiliation = "University of California, Davis"
+role = ""
+website = ""
+photo = ""
+email = ""
+bio = "Aditya Thakur is an Associate Professor in the Department of Computer Science at the University of California, Davis. He received his Ph.D. from the University of Wisconsin–Madison. His research interests include programming languages, machine learning, formal methods, and software engineering. He was the recipient of a NSF CAREER award, DOE Early Career Award, Facebook Probability and Programming Research Awards (2019 and 2020), and a Facebook Testing and Verification Research Award."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "D4C63662-4E27-45AF-9AD1-7678B0A755A2"
+calendar_last_modified = "2026-10-19T18:30:26Z"
+synced_on = 2026-10-19
+needs_review = false

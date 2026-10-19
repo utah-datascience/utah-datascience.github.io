@@ -5794,14 +5794,60 @@ LOCATION:WEB 2760 | https://utah.zoom.us/j/85983626630
 CATEGORIES:algorithms & theory,networks & graphs
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-23-kenneth-collins-uu-film@datascience.utah.edu
+UID:2026-10-21-aditya-thakur@datascience.utah.edu
+DTSTAMP:20261021T213000Z
+DTSTART;TZID=America/Denver:20261021T153000
+DTEND;TZID=America/Denver:20261021T163000
+SUMMARY:Provable Editing of Deep Neural Networks - Aditya Thakur
+DESCRIPTION:Aditya Thakur (University of California\, Davis)\n\nThere are m
+ any applications where deep neural networks (DNNs) need to satisfy constra
+ ints\, e.g.\, safety-critical domains or scientific machine learning. Test
+ ing and verification can determine whether DNN satisfies a constraint. Thi
+ s talk addresses the next step of this process: what to do once faulty beh
+ avior is identified. I will discuss recent advances in the problem of prov
+ able editing of DNNs. Given a trained DNN and a specification\, provable e
+ diting makes small changes to the parameters of the DNN to guarantee that 
+ the edited DNN satisfies the given specification while still ensuring high
+  accuracy. I will discuss efficient algorithms for this problem that suppo
+ rt a wide range of DNN architectures and edit specifications. Our techniqu
+ es have been applied to ACAS Xu\, ImageNet ResNet DNNs\, Vision Transforme
+ rs\, Llama\, and Qwen models.\n\nhttps://datascience.utah.edu/talks/2026-1
+ 0-21-aditya-thakur/
+URL:https://datascience.utah.edu/talks/2026-10-21-aditya-thakur/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:3147 MEB
+CATEGORIES:deep learning,machine learning
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-kenneth-collins@datascience.utah.edu
 DTSTAMP:20261023T193000Z
 DTSTART;TZID=America/Denver:20261023T133000
 DTEND;TZID=America/Denver:20261023T143000
-SUMMARY:Talk by Kenneth Collins (UU Film) - Kenneth Collins (UU Film)
-DESCRIPTION:Kenneth Collins (UU Film)\n\nhttps://datascience.utah.edu/talks
- /2026-10-23-kenneth-collins-uu-film/
-URL:https://datascience.utah.edu/talks/2026-10-23-kenneth-collins-uu-film/
+SUMMARY:Human in the Loop: Performing Inside the Black Box of AI - Kenneth 
+ Collins
+DESCRIPTION:Kenneth Collins (UU Film\n\n## Website https://profiles.faculty
+ .utah.edu/u6049692\n)\n\nIn AI research\, having a "human in the loop" is 
+ meant to be reassuring. It implies that somewhere inside the system\, a pe
+ rson is at the helm. But spend enough time in the loop\, and the phrase sa
+ ys something stranger. Who is actually in charge when an artist makes work
+  with AI? In this talk\, artist and director Kenneth Collins draws on 25 y
+ ears of making theater with his company Temporary Distortion to explore pe
+ rforming inside the "black box" of artificial intelligence. Tracing a line
+  from Norbert Wiener's wartime cybernetics through John Baldessari\, Micha
+ el Fried\, Allan Kaprow\, and Richard Schechner\, Collins suggests that un
+ derstanding AI may be less a computer science problem than a performance s
+ tudies one. He shares new and in-progress work that casts AI systems as pe
+ rformers and puts their sincerity\, authority\, flattery\, and intimacy on
+  stage. Works discussed include *AI Making Art* (*after John Baldessari*)\
+ , *Standing Silent*\, the album *Songs to Defrag To*\, the video portrait 
+ series *I Apologize for the Confusion* and *Prompt Me Harder*\, and the fo
+ rthcoming performance series *p(doom) études*. The real question he propo
+ ses may not be whether a machine can make art\, but whether we can be a go
+ od audience for the things it makes.\n\nhttps://datascience.utah.edu/talks
+ /2026-10-23-kenneth-collins/
+URL:https://datascience.utah.edu/talks/2026-10-23-kenneth-collins/
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
