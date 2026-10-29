@@ -5859,9 +5859,21 @@ UID:2026-10-30-guang-tian@datascience.utah.edu
 DTSTAMP:20261030T193000Z
 DTSTART;TZID=America/Denver:20261030T133000
 DTEND;TZID=America/Denver:20261030T143000
-SUMMARY:Land Use and Transportation Planning with AI - Guang Tian
-DESCRIPTION:Guang Tian (UU City & Metro Planning + SCI)\n\nhttps://datascie
- nce.utah.edu/talks/2026-10-30-guang-tian/
+SUMMARY:Urban Data Science for Smart\, Sustainable\, and Healthy Cities - G
+ uang Tian
+DESCRIPTION:Guang Tian (UU City & Metro Planning + SCI)\n\nCities generate 
+ data about travel\, land use\, infrastructure\, and human behavior\, yet t
+ hese data remain fragmented\, sensitive\, and difficult to translate into 
+ planning decisions. This talk presents an urban data science framework tha
+ t connects data collection\, management\, visualization\, spatial analysis
+ \, and computation. Drawing on household travel surveys and built-environm
+ ent databases\, it demonstrates how statistical models and machine learnin
+ g reveal nonlinear relationships between cities and travel behavior. Examp
+ les include computer-vision systems that inventory bus-stop amenities and 
+ measure urban design from street imagery. This talk concludes with opportu
+ nities for interdisciplinary research\, education\, and collaboration link
+ ing data science with healthy and sustainable urban planning.\n\nhttps://d
+ atascience.utah.edu/talks/2026-10-30-guang-tian/
 URL:https://datascience.utah.edu/talks/2026-10-30-guang-tian/
 SEQUENCE:0
 STATUS:CONFIRMED

@@ -1,7 +1,7 @@
 # Imported from the seminar Google Calendar -- please review and complete.
 
 [talk]
-title = "Land Use and Transportation Planning with AI"
+title = "Urban Data Science for Smart, Sustainable, and Healthy Cities"
 date = 2026-10-30
 start_time = "13:30"
 end_time = "14:30"
@@ -13,7 +13,7 @@ recording = ""
 paper = ""
 tags = ["geospatial"]
 canceled = false
-abstract = ""
+abstract = "Cities generate data about travel, land use, infrastructure, and human behavior, yet these data remain fragmented, sensitive, and difficult to translate into planning decisions. This talk presents an urban data science framework that connects data collection, management, visualization, spatial analysis, and computation. Drawing on household travel surveys and built-environment databases, it demonstrates how statistical models and machine learning reveal nonlinear relationships between cities and travel behavior. Examples include computer-vision systems that inventory bus-stop amenities and measure urban design from street imagery. This talk concludes with opportunities for interdisciplinary research, education, and collaboration linking data science with healthy and sustainable urban planning."
 
 [[speakers]]
 name = "Guang Tian"
@@ -22,11 +22,11 @@ role = ""
 website = "https://profiles.faculty.utah.edu/u0750389"
 photo = ""
 email = ""
-bio = ""
+bio = "Guang Tian, Ph.D., is an Assistant Professor of City and Metropolitan Planning and faculty member of the Scientific Computing and Imaging Institute at the University of Utah. His interests and research focus on land use and transportation planning, travel behavior and built environment, sustainability and climate, urban data science and analytics (statistics, GIS, machine learning, AI, etc.). Before joining the University of Utah, Dr. Tian was an Associate Professor and coordinator of the GIS graduate certificate at the University of New Orleans, where he founded the Center for Equitable Transit-Oriented Communities (CETOC) – a U.S. Department of Transportation designated University Transportation Center. CETOC focused on preserving the environment by promoting transit access, multimodal infrastructure, compact and efficient land use patterns, as well as resilience and climate adaptation. Dr. Tian has published dozens of academic papers in peer-reviewed journals of transportation, planning, and geography. He is recently selected as the University of Utah One-U Responsible AI (One-U RAI) faculty fellow."
 
 [meta]
 source = "google-calendar"
 calendar_uid = "57B1FB14-5060-4040-8C6A-1149EEEFE4BF"
-calendar_last_modified = "2026-08-24T22:04:16Z"
-synced_on = 2026-09-30
+calendar_last_modified = "2026-10-29T15:56:08Z"
+synced_on = 2026-10-29
 needs_review = true
