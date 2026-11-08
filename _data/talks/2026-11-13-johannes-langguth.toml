@@ -1,0 +1,41 @@
+# Synced from the seminar Google Calendar -- edits here are overwritten
+# while this talk is inside the sync window. See README.md#talks.
+
+[talk]
+title = "Strategic Disinformationand Competitive Influence Maximization Games"
+date = 2026-11-13
+start_time = "12:00"
+end_time = "13:00"
+series = "Data Science & AI Lecture Series"
+location = "MEB 3147"
+zoom = ""
+slides = ""
+recording = ""
+paper = ""
+tags = ["algorithms & theory", "networks & graphs", "society & policy"]
+canceled = false
+abstract = """
+In the past decade, Propaganda, disinformation andsimilar phenomena have been widely studied both in the social sciences and incomputer & network science. While a large part of the work is empirical,analyzing e.g. social media data for various purposes, a smaller part is algorithmic in nature, focusing on the computational problems derived frompropaganda and disinformation.
+
+Influence maximization, an NP-hard optimization problem on graphs, is among the most widely studied problems in this area. It asks for a subset of vertices of limited size that has the largest influence on the network w.r.t. asingle message. However, for most real-world situation, it is necessary to consider multiple competing messages, a scenario that is commonly studied inthe field of opinion dynamics.
+
+In order to obtain an algorithmic problem, opinion dynamic models must be restricted to computable outcomes. Doing so leads to competitive influence maximization games where two or more players attempt to spread competing messages. In such games, each move in itself is the output of a computation,and each strategy in itself is an algorithm, creating a computationally heavy problem when the game is played on a large network.
+
+In this talk, we present the background of social network analysis and the considerations for designing competitive influence maximization games, and someof the algorithmic implications of such design choices.
+"""
+
+[[speakers]]
+name = "Johannes Langguth"
+affiliation = ""
+role = ""
+website = ""
+photo = ""
+email = ""
+bio = ""
+
+[meta]
+source = "google-calendar"
+calendar_uid = "ED6466D9-8D54-4C68-AC69-87A355061324"
+calendar_last_modified = "2026-11-08T20:55:13Z"
+synced_on = 2026-11-08
+needs_review = false

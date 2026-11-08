@@ -5921,6 +5921,41 @@ LOCATION:TBA
 CATEGORIES:fairness & ethics
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-13-johannes-langguth@datascience.utah.edu
+DTSTAMP:20261113T190000Z
+DTSTART;TZID=America/Denver:20261113T120000
+DTEND;TZID=America/Denver:20261113T130000
+SUMMARY:Strategic Disinformationand Competitive Influence Maximization Game
+ s - Johannes Langguth
+DESCRIPTION:Johannes Langguth\n\nIn the past decade\, Propaganda\, disinfor
+ mation andsimilar phenomena have been widely studied both in the social sc
+ iences and incomputer & network science. While a large part of the work is
+  empirical\,analyzing e.g. social media data for various purposes\, a smal
+ ler part is algorithmic in nature\, focusing on the computational problems
+  derived frompropaganda and disinformation.\n\nInfluence maximization\, an
+  NP-hard optimization problem on graphs\, is among the most widely studied
+  problems in this area. It asks for a subset of vertices of limited size t
+ hat has the largest influence on the network w.r.t. asingle message. Howev
+ er\, for most real-world situation\, it is necessary to consider multiple 
+ competing messages\, a scenario that is commonly studied inthe field of op
+ inion dynamics.\n\nIn order to obtain an algorithmic problem\, opinion dyn
+ amic models must be restricted to computable outcomes. Doing so leads to c
+ ompetitive influence maximization games where two or more players attempt 
+ to spread competing messages. In such games\, each move in itself is the o
+ utput of a computation\,and each strategy in itself is an algorithm\, crea
+ ting a computationally heavy problem when the game is played on a large ne
+ twork.\n\nIn this talk\, we present the background of social network analy
+ sis and the considerations for designing competitive influence maximizatio
+ n games\, and someof the algorithmic implications of such design choices.\
+ n\nhttps://datascience.utah.edu/talks/2026-11-13-johannes-langguth/
+URL:https://datascience.utah.edu/talks/2026-11-13-johannes-langguth/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:MEB 3147
+CATEGORIES:algorithms & theory,networks & graphs,society & policy
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-13-aik-choon-tan@datascience.utah.edu
 DTSTAMP:20261113T203000Z
 DTSTART;TZID=America/Denver:20261113T133000
