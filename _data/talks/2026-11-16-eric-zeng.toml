@@ -1,0 +1,32 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "Seeing clearly with measurement: measuring threats to users’ security, privacy, and safety on online platforms"
+date = 2026-11-16
+start_time = "13:25"
+end_time = "14:45"
+series = "Data Science & AI Lecture Series"
+location = "CRCC 210"
+zoom = ""
+slides = ""
+recording = ""
+paper = ""
+tags = ["algorithms & theory", "health & medicine", "privacy & security", "society & policy"]
+canceled = false
+abstract = "Users are increasingly exposed to security, privacy, and safety harms via content distributed by platforms, such as ads and social media posts. Protecting users requires holding platforms accountable, by pressuring trust and safety teams and regulators. But this is challenging because content is ephemeral and targeted, and platforms rarely make such data available to outside researchers. In this talk, I will discuss how mixed-methods measurement techniques, which combine large-scale data collection with qualitative analysis, can be used to collect empirical data on harmful content served by platforms, and how this data can translate into impact. I will showcase this approach through two case studies of problematic online ads. First, I found that a specific set of ad platforms is responsible for most of the deceptive advertising on news websites. Second, I found that ad platforms on the web perform limited targeting of users based on their health conditions, but nearly half of health advertising is potentially deceptive. I will also discuss how I am extending this approach to other problem areas on online platforms, such as algorithmic social media feeds and non-consensual deepfakes."
+
+[[speakers]]
+name = "Eric Zeng"
+affiliation = ""
+role = ""
+website = "https://www.ericwzeng.com/"
+photo = ""
+email = ""
+bio = "Eric Zeng is a Fritz Postdoctoral Fellow in the Department of Computer Science and the Massive Data Institute at Georgetown University. His research identifies and measures threats to users' safety, security, and privacy on technology platforms. His research focuses on disrupting the tools and distribution channels used to create and distribute AI-generated non-consensual intimate imagery, and measuring the harmful effects of algorithmic social media feeds on users. His previous work has investigated problematic online advertising, AI for cybersecurity in industrial control systems, home IoT privacy, and deploying end-to-end encryption for civil society. He earned his PhD in Computer Science & Engineering at the University of Washington, and recently worked as a postdoctoral researcher at Carnegie Mellon University CyLab."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "0rb1skni66ut204siidb52e0qb@google.com"
+calendar_last_modified = "2026-11-10T20:59:45Z"
+synced_on = 2026-11-10
+needs_review = true

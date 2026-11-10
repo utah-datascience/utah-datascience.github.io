@@ -6009,4 +6009,37 @@ TRANSP:OPAQUE
 LOCATION:WEB 2250
 CATEGORIES:health & medicine
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-16-eric-zeng@datascience.utah.edu
+DTSTAMP:20261116T202500Z
+DTSTART;TZID=America/Denver:20261116T132500
+DTEND;TZID=America/Denver:20261116T144500
+SUMMARY:Seeing clearly with measurement: measuring threats to users’ secu
+ rity\, privacy\, and safety on online platforms - Eric Zeng
+DESCRIPTION:Eric Zeng\n\nUsers are increasingly exposed to security\, priva
+ cy\, and safety harms via content distributed by platforms\, such as ads a
+ nd social media posts. Protecting users requires holding platforms account
+ able\, by pressuring trust and safety teams and regulators. But this is ch
+ allenging because content is ephemeral and targeted\, and platforms rarely
+  make such data available to outside researchers. In this talk\, I will di
+ scuss how mixed-methods measurement techniques\, which combine large-scale
+  data collection with qualitative analysis\, can be used to collect empiri
+ cal data on harmful content served by platforms\, and how this data can tr
+ anslate into impact. I will showcase this approach through two case studie
+ s of problematic online ads. First\, I found that a specific set of ad pla
+ tforms is responsible for most of the deceptive advertising on news websit
+ es. Second\, I found that ad platforms on the web perform limited targetin
+ g of users based on their health conditions\, but nearly half of health ad
+ vertising is potentially deceptive. I will also discuss how I am extending
+  this approach to other problem areas on online platforms\, such as algori
+ thmic social media feeds and non-consensual deepfakes.\n\nhttps://datascie
+ nce.utah.edu/talks/2026-11-16-eric-zeng/
+URL:https://datascience.utah.edu/talks/2026-11-16-eric-zeng/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:CRCC 210
+CATEGORIES:algorithms & theory,health & medicine,privacy & security,society
+  & policy
+END:VEVENT
 END:VCALENDAR

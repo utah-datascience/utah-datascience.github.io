@@ -2747,5 +2747,21 @@
     "health & medicine"
    ]
   }
+ },
+ {
+  "title": "Eric Zeng: Seeing clearly with measurement: measuring threats to users’ security, privacy, and safety on online platforms",
+  "start": "2026-11-16T13:25:00-07:00",
+  "end": "2026-11-16T14:45:00-07:00",
+  "url": "/talks/2026-11-16-eric-zeng/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "CRCC 210",
+   "tags": [
+    "algorithms & theory",
+    "health & medicine",
+    "privacy & security",
+    "society & policy"
+   ]
+  }
  }
 ]
