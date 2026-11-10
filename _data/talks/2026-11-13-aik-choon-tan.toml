@@ -1,23 +1,34 @@
-# Imported from the seminar Google Calendar -- please review and complete.
+# Synced from the seminar Google Calendar -- edits here are overwritten
+# while this talk is inside the sync window. See README.md#talks.
 
 [talk]
-title = "AI for Cancer Treatment"
+title = "Data-Driven Cancer Discovery"
 date = 2026-11-13
 start_time = "13:30"
 end_time = "14:30"
 series = "Data Science & AI Lecture Series"
 location = "WEB 2250"
-zoom = "https://utah.zoom.us/j/85983626630"
+zoom = ""
 slides = ""
 recording = ""
 paper = ""
 tags = ["health & medicine"]
 canceled = false
-abstract = ""
+abstract = """
+Cancer research generates large, complex, and heterogeneous datasets spanning molecular profiles, clinical records, imaging, treatments, and outcomes. My research focuses on developing and applying artificial intelligence and machine learning methods to identify meaningful patterns in these data and translate them into clinical impact. In this presentation, I will highlight some of my research in translational bioinformatics, including biomarker discovery from multi-omics data and its application in early-phase clinical trials, as well as computational approaches for identifying and validating drug combinations. I will also discuss recent efforts to use AI and machine learning to characterize immune-related adverse events, extract these events from longitudinal clinical notes, and monitor treatment-related toxicity in clinical trials. Collectively, this work demonstrates how AI/ML can advance precision oncology and improve the development and delivery of cancer therapies.
+
+Bio:
+Aik Choon Tan received his B.Eng. degree in Chemical/Bio-process Engineering from the University of Technology Malaysia, and his Ph.D. degree in Computer Science/Bioinformatics from the University of Glasgow, UK, in 2000 and 2005, respectively. Dr. Tan conducted his post-doctoral research training at the Johns Hopkins University School of Medicine from 2004 to 2009. He was an Assistant Professor at the University of Colorado Anschutz Medical Campus in 2009 and promoted to Associate Professor in 2013. Dr. Tan was recruited to the Moffitt Cancer Center in 2019 as the Vice-Chair of the Department of Biostatistics and Bioinformatics. In 2022, Dr. Tan was appointed as the inaugural Senior Director of Data Science at the Huntsman Cancer Institute, University of Utah. He holds the Jon M. and Karen Huntsman Endowed Chair in Cancer Data Science, Tenured Professor of Oncological Sciences and Biomedical Informatics. His research interests are translational bioinformatics and cancer systems biology, primarily by developing computational and machine learning methods for the analysis and integration of high-throughput cancer "omics" data in understanding and overcoming treatment resistance mechanisms in cancer. His lab acts as "connector" to provide seamless integration of computational and statistical methods in experimental and clinical cancer research. He has published >280 manuscripts, co-edited two bioinformatics and systems biology books, and a H-index of 77 (Google Scholar). Dr. Tan is the President of the MCBIOS society, a Senior Member of the ISCB, and Co-Chair of the Data Science Research Interest Group of the Oncology Research Information Exchange Network (ORIEN).
+"""
 
 [[speakers]]
 name = "Aik Choon Tan"
-affiliation = "UU Oncological Sciences"
+affiliation = """
+Senior Director of Data Science & AI
+Huntsman Cancer Institute
+Jon M. and Karen Huntsman Endowed Chair in Cancer Data Science and Professor
+UU Oncological Sciences and and Biomedical Informatics
+"""
 role = ""
 website = "http://tanlab.org/"
 photo = ""
@@ -27,6 +38,6 @@ bio = ""
 [meta]
 source = "google-calendar"
 calendar_uid = "31fbgtn32hprr5aem0mocvfh7b@google.com"
-calendar_last_modified = "2026-09-25T17:00:55Z"
-synced_on = 2026-09-30
-needs_review = true
+calendar_last_modified = "2026-11-10T15:39:04Z"
+synced_on = 2026-11-10
+needs_review = false

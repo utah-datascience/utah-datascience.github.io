@@ -5960,14 +5960,53 @@ UID:2026-11-13-aik-choon-tan@datascience.utah.edu
 DTSTAMP:20261113T203000Z
 DTSTART;TZID=America/Denver:20261113T133000
 DTEND;TZID=America/Denver:20261113T143000
-SUMMARY:AI for Cancer Treatment - Aik Choon Tan
-DESCRIPTION:Aik Choon Tan (UU Oncological Sciences)\n\nhttps://datascience.
- utah.edu/talks/2026-11-13-aik-choon-tan/
+SUMMARY:Data-Driven Cancer Discovery - Aik Choon Tan
+DESCRIPTION:Aik Choon Tan (Senior Director of Data Science & AI\nHuntsman C
+ ancer Institute\nJon M. and Karen Huntsman Endowed Chair in Cancer Data Sc
+ ience and Professor\nUU Oncological Sciences and and Biomedical Informatic
+ s\n)\n\nCancer research generates large\, complex\, and heterogeneous data
+ sets spanning molecular profiles\, clinical records\, imaging\, treatments
+ \, and outcomes. My research focuses on developing and applying artificial
+  intelligence and machine learning methods to identify meaningful patterns
+  in these data and translate them into clinical impact. In this presentati
+ on\, I will highlight some of my research in translational bioinformatics\
+ , including biomarker discovery from multi-omics data and its application 
+ in early-phase clinical trials\, as well as computational approaches for i
+ dentifying and validating drug combinations. I will also discuss recent ef
+ forts to use AI and machine learning to characterize immune-related advers
+ e events\, extract these events from longitudinal clinical notes\, and mon
+ itor treatment-related toxicity in clinical trials. Collectively\, this wo
+ rk demonstrates how AI/ML can advance precision oncology and improve the d
+ evelopment and delivery of cancer therapies.\n\nBio:\nAik Choon Tan receiv
+ ed his B.Eng. degree in Chemical/Bio-process Engineering from the Universi
+ ty of Technology Malaysia\, and his Ph.D. degree in Computer Science/Bioin
+ formatics from the University of Glasgow\, UK\, in 2000 and 2005\, respect
+ ively. Dr. Tan conducted his post-doctoral research training at the Johns 
+ Hopkins University School of Medicine from 2004 to 2009. He was an Assista
+ nt Professor at the University of Colorado Anschutz Medical Campus in 2009
+  and promoted to Associate Professor in 2013. Dr. Tan was recruited to the
+  Moffitt Cancer Center in 2019 as the Vice-Chair of the Department of Bios
+ tatistics and Bioinformatics. In 2022\, Dr. Tan was appointed as the inaug
+ ural Senior Director of Data Science at the Huntsman Cancer Institute\, Un
+ iversity of Utah. He holds the Jon M. and Karen Huntsman Endowed Chair in 
+ Cancer Data Science\, Tenured Professor of Oncological Sciences and Biomed
+ ical Informatics. His research interests are translational bioinformatics 
+ and cancer systems biology\, primarily by developing computational and mac
+ hine learning methods for the analysis and integration of high-throughput 
+ cancer "omics" data in understanding and overcoming treatment resistance m
+ echanisms in cancer. His lab acts as "connector" to provide seamless integ
+ ration of computational and statistical methods in experimental and clinic
+ al cancer research. He has published >280 manuscripts\, co-edited two bioi
+ nformatics and systems biology books\, and a H-index of 77 (Google Scholar
+ ). Dr. Tan is the President of the MCBIOS society\, a Senior Member of the
+  ISCB\, and Co-Chair of the Data Science Research Interest Group of the On
+ cology Research Information Exchange Network (ORIEN).\n\nhttps://datascien
+ ce.utah.edu/talks/2026-11-13-aik-choon-tan/
 URL:https://datascience.utah.edu/talks/2026-11-13-aik-choon-tan/
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
-LOCATION:WEB 2250 | https://utah.zoom.us/j/85983626630
+LOCATION:WEB 2250
 CATEGORIES:health & medicine
 END:VEVENT
 END:VCALENDAR
