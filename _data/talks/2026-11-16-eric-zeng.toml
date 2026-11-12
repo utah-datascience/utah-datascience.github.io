@@ -6,7 +6,7 @@ date = 2026-11-16
 start_time = "13:25"
 end_time = "14:45"
 series = "Data Science & AI Lecture Series"
-location = "CRCC 210"
+location = "ASB 210"
 zoom = ""
 slides = ""
 recording = ""
@@ -27,6 +27,6 @@ bio = "Eric Zeng is a Fritz Postdoctoral Fellow in the Department of Computer Sc
 [meta]
 source = "google-calendar"
 calendar_uid = "0rb1skni66ut204siidb52e0qb@google.com"
-calendar_last_modified = "2026-11-10T20:59:45Z"
-synced_on = 2026-11-10
+calendar_last_modified = "2026-11-12T16:35:28Z"
+synced_on = 2026-11-12
 needs_review = true
