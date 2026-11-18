@@ -1,0 +1,36 @@
+# Imported from the seminar Google Calendar -- please review and complete.
+
+[talk]
+title = "TBA"
+date = 2026-11-19
+start_time = "12:00"
+end_time = "13:00"
+series = "Data Science & AI Lecture Series"
+location = "Meldrum Conference Room (WEB 2760)"
+zoom = ""
+slides = ""
+recording = ""
+paper = ""
+tags = ["health & medicine", "machine learning", "society & policy"]
+canceled = false
+abstract = """
+Time series are ubiquitous, underpinning critical systems across domains such as energy, healthcare, manufacturing, and transportation. Detecting anomalous patterns in these data is essential for identifying failures and ensuring system reliability. Despite decades of research, however, time-series anomaly detection remains challenging due to the diverse and complex nature of anomalies, the variability of real-world data, and the difficulty of developing solutions that generalize across applications without extensive manual configuration.
+
+In this talk, I will discuss these challenges and present our vision towards automated and reliable anomaly detection through Chameleon, an ongoing research project supported by an NSF CAREER Award. I will first introduce HYDRA (SIGMOD 2026), a standalone detector that recognizes diverse and complex anomaly patterns while substantially improving detection accuracy and maintaining fast inference. I will then discuss our efforts towards automated solutions, highlighting SENSE (VLDB 2025), MLLM4TS (TMLR 2026), and ongoing work in this direction. Finally, I will highlight our contributions to more reliable evaluation through TSB-AD (NeurIPS 2024), a comprehensive anomaly detection benchmark, and VUS (VLDB 2022), an evaluation measure widely adopted by the community. Together, these efforts aim to advance anomaly detection towards solutions that are accurate, efficient, automated, and reliable across diverse real-world applications.
+"""
+
+[[speakers]]
+name = "John Paparrizos"
+affiliation = "Ohio State University"
+role = ""
+website = ""
+photo = ""
+email = ""
+bio = "John Paparrizos is an assistant professor in the Department of Computer Science and Engineering at The Ohio State University and is also affiliated with the Aristotle University of Thessaloniki. His research lies at the intersection of data management, data mining, and machine learning, with a focus on developing scalable and reliable methods for analyzing data-intensive applications. His work has appeared in leading conferences and journals, including SIGMOD, VLDB, SIGKDD, ICML, NeurIPS, and ICDE, and has received several distinctions, including the 2026 NSF CAREER Award, the 2025 ACM SIGMOD Test-of-Time Award, and the 2023 IEEE TCDE Rising Star Award. His research has also received “Best of VLDB,” “Best of SIGMOD,” and ACM SIGMOD Research Highlight recognitions and has been featured in major media outlets, including The New York Times, The Washington Post, Forbes, and MIT Technology Review."
+
+[meta]
+source = "google-calendar"
+calendar_uid = "59c4sq9dic83ge7l9klj7acvap@google.com"
+calendar_last_modified = "2026-11-18T20:02:46Z"
+synced_on = 2026-11-18
+needs_review = true

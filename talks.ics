@@ -6042,4 +6042,40 @@ LOCATION:ASB 210
 CATEGORIES:algorithms & theory,health & medicine,privacy & security,society
   & policy
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-19-john-paparrizos@datascience.utah.edu
+DTSTAMP:20261119T190000Z
+DTSTART;TZID=America/Denver:20261119T120000
+DTEND;TZID=America/Denver:20261119T130000
+SUMMARY:Talk by John Paparrizos - John Paparrizos
+DESCRIPTION:John Paparrizos (Ohio State University)\n\nTime series are ubiq
+ uitous\, underpinning critical systems across domains such as energy\, hea
+ lthcare\, manufacturing\, and transportation. Detecting anomalous patterns
+  in these data is essential for identifying failures and ensuring system r
+ eliability. Despite decades of research\, however\, time-series anomaly de
+ tection remains challenging due to the diverse and complex nature of anoma
+ lies\, the variability of real-world data\, and the difficulty of developi
+ ng solutions that generalize across applications without extensive manual 
+ configuration.\n\nIn this talk\, I will discuss these challenges and prese
+ nt our vision towards automated and reliable anomaly detection through Cha
+ meleon\, an ongoing research project supported by an NSF CAREER Award. I w
+ ill first introduce HYDRA (SIGMOD 2026)\, a standalone detector that recog
+ nizes diverse and complex anomaly patterns while substantially improving d
+ etection accuracy and maintaining fast inference. I will then discuss our 
+ efforts towards automated solutions\, highlighting SENSE (VLDB 2025)\, MLL
+ M4TS (TMLR 2026)\, and ongoing work in this direction. Finally\, I will hi
+ ghlight our contributions to more reliable evaluation through TSB-AD (Neur
+ IPS 2024)\, a comprehensive anomaly detection benchmark\, and VUS (VLDB 20
+ 22)\, an evaluation measure widely adopted by the community. Together\, th
+ ese efforts aim to advance anomaly detection towards solutions that are ac
+ curate\, efficient\, automated\, and reliable across diverse real-world ap
+ plications.\n\nhttps://datascience.utah.edu/talks/2026-11-19-john-paparriz
+ os/
+URL:https://datascience.utah.edu/talks/2026-11-19-john-paparrizos/
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+LOCATION:Meldrum Conference Room (WEB 2760)
+CATEGORIES:health & medicine,machine learning,society & policy
+END:VEVENT
 END:VCALENDAR

@@ -2763,5 +2763,20 @@
     "society & policy"
    ]
   }
+ },
+ {
+  "title": "John Paparrizos: Talk by John Paparrizos",
+  "start": "2026-11-19T12:00:00-07:00",
+  "end": "2026-11-19T13:00:00-07:00",
+  "url": "/talks/2026-11-19-john-paparrizos/",
+  "className": "talk-event",
+  "extendedProps": {
+   "location": "Meldrum Conference Room (WEB 2760)",
+   "tags": [
+    "health & medicine",
+    "machine learning",
+    "society & policy"
+   ]
+  }
  }
 ]
